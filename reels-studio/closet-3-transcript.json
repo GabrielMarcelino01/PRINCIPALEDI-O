@@ -1,0 +1,81 @@
+{
+  "source": "assets/closet-3/CLOSET-3.mp4",
+  "source_sha256": "db9c93382b7d05b152a3dd9dce13c72c1634b74e5ba4125f79811ba98ed9bbc8",
+  "asr": {
+    "model": "OpenAI Whisper small / CTranslate2 int8",
+    "language": "pt",
+    "language_probability": 1.0,
+    "word_timestamps": true,
+    "local_offline_inference": true
+  },
+  "corrections": [
+    {
+      "from": "beijo",
+      "to": "bege",
+      "reason": "Erro evidente do ASR; a fala descreve a combinação bege com branco e o look exibido é bege/branco."
+    }
+  ],
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 3.96,
+      "group_ids": [
+        "lembre",
+        "erro-cores",
+        "erro"
+      ],
+      "text": "Lembre-se: verde neon com laranja fica horrível."
+    },
+    {
+      "start": 4.58,
+      "end": 8.34,
+      "group_ids": [
+        "look-1-cores",
+        "look-1-estilo"
+      ],
+      "text": "Combine verde com preto e fique sofisticado e autêntico."
+    },
+    {
+      "start": 8.58,
+      "end": 11.5,
+      "group_ids": [
+        "look-2-cores",
+        "look-2-estilo"
+      ],
+      "text": "Combine bege com branco e fique minimalista e chique."
+    },
+    {
+      "start": 11.92,
+      "end": 15.52,
+      "group_ids": [
+        "look-3-camisa",
+        "look-3-calca",
+        "look-3-estilo"
+      ],
+      "text": "Agora, camisa azul com calça branca fica rico e elegante."
+    },
+    {
+      "start": 15.9,
+      "end": 18.1,
+      "group_ids": [
+        "look-4-sweater",
+        "look-4-calca"
+      ],
+      "text": "Sweater vermelho com calça branca."
+    },
+    {
+      "start": 18.3,
+      "end": 19.92,
+      "group_ids": [
+        "look-4-estilo"
+      ],
+      "text": "Um visual vivo e moderno."
+    }
+  ],
+  "review_scope": "Transcrição automática com timestamps e revisão contextual pelos looks. Não houve escuta subjetiva em playback.",
+  "recovered_from": {
+    "commit": "d4d6e80",
+    "path": "reels-studio/fashion-transcript.json",
+    "reason": "Mesma fonte binária; SHA-256 confirmado."
+  }
+}

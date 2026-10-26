@@ -1,0 +1,148 @@
+{
+  "status": "PASS",
+  "scope": "Timeline, assets e correspondência textual; não substitui QA do MP4 nem revisão audiovisual.",
+  "summary": {
+    "checks": 27,
+    "passed": 27,
+    "failed": 0,
+    "caption_groups": 13,
+    "words": 45
+  },
+  "checks": [
+    {
+      "name": "dimensions",
+      "status": "pass",
+      "message": "1080x1920"
+    },
+    {
+      "name": "frame_rate",
+      "status": "pass",
+      "message": "30 fps"
+    },
+    {
+      "name": "duration",
+      "status": "pass",
+      "message": "614 frames / 20,4667 s"
+    },
+    {
+      "name": "cuts",
+      "status": "pass",
+      "message": "Cortes: [4.417643, 8.366667, 11.613021, 15.716667]"
+    },
+    {
+      "name": "groups",
+      "status": "pass",
+      "message": "13 grupos de captions"
+    },
+    {
+      "name": "normalized_video",
+      "status": "pass",
+      "message": "public/closet-3-source.mp4"
+    },
+    {
+      "name": "audio_master",
+      "status": "pass",
+      "message": "public/closet-3-soundtrack.wav"
+    },
+    {
+      "name": "film_grain",
+      "status": "pass",
+      "message": "public/closet-3-grain.png"
+    },
+    {
+      "name": "inter_font",
+      "status": "pass",
+      "message": "public/fonts/inter-latin-wght-normal.woff2"
+    },
+    {
+      "name": "playfair_font",
+      "status": "pass",
+      "message": "public/fonts/playfair-display-latin-wght-italic.woff2"
+    },
+    {
+      "name": "playfair_license",
+      "status": "pass",
+      "message": "public/fonts/PLAYFAIR-LICENSE.txt"
+    },
+    {
+      "name": "scene_boundaries",
+      "status": "pass",
+      "message": "Cinco blocos visuais alinhados aos quatro cortes"
+    },
+    {
+      "name": "group_timing",
+      "status": "pass",
+      "message": "Grupos ordenados, sem sobreposição e dentro da duração"
+    },
+    {
+      "name": "word_timing",
+      "status": "pass",
+      "message": "45 palavras com timestamps válidos"
+    },
+    {
+      "name": "line_count",
+      "status": "pass",
+      "message": "No máximo duas linhas por grupo"
+    },
+    {
+      "name": "transcript_fidelity",
+      "status": "pass",
+      "message": "Todos os seis segmentos correspondem à transcrição revisada"
+    },
+    {
+      "name": "caption_safe_area",
+      "status": "pass",
+      "message": "Bloco ancorado no centro geométrico, com margem estimada de 180px"
+    },
+    {
+      "name": "caption_scale",
+      "status": "pass",
+      "message": "106px sans / 132px serifada / 48px conectores"
+    },
+    {
+      "name": "caption_positions",
+      "status": "pass",
+      "message": "13 grupos em uma única posição central estável"
+    },
+    {
+      "name": "follow_cta",
+      "status": "pass",
+      "message": "Botão + SEGUIR somente no final e dentro da safe zone"
+    },
+    {
+      "name": "camera_static",
+      "status": "pass",
+      "message": "Cinco cenas com escala fixa 1,02 e deslocamento zero"
+    },
+    {
+      "name": "static_layout",
+      "status": "pass",
+      "message": "Sem zoom, onda, pulso, transição ou movimento de grão; captions ancoradas no centro"
+    },
+    {
+      "name": "static_design",
+      "status": "pass",
+      "message": "Nenhum motion adicionado; estabilidade documentada no projeto"
+    },
+    {
+      "name": "preview_loudness",
+      "status": "pass",
+      "message": "-14.0 LUFS"
+    },
+    {
+      "name": "preview_true_peak",
+      "status": "pass",
+      "message": "-1.0 dBTP"
+    },
+    {
+      "name": "source_integrity",
+      "status": "pass",
+      "message": "SHA-256 do original CLOSET-3 confirmado"
+    },
+    {
+      "name": "no_transition_sfx",
+      "status": "pass",
+      "message": "Sem efeitos de transição; somente voz e música"
+    }
+  ]
+}
