@@ -1,0 +1,58 @@
+{
+  "recovered_at": "2026-10-26",
+  "deleted_account": "GabrielMarques181920",
+  "projects": [
+    {
+      "path": "MOTION",
+      "original_url": "https://github.com/GabrielMarques181920/MOTION",
+      "source_url": "https://github.com/hypit-ai/hypit",
+      "commit": "e26d9142fd8a6f78bf4f3cdb800d6205f4ecca16",
+      "mode": "upstream_snapshot"
+    },
+    {
+      "path": "motion-2",
+      "original_url": "https://github.com/GabrielMarques181920/motion-2",
+      "source_url": "https://github.com/blixvip/MotionClone",
+      "commit": "9fba71f5bad421513a1afc94d2ffecc595928f94",
+      "mode": "upstream_snapshot_plus_reconstruction"
+    },
+    {
+      "path": "Official",
+      "original_url": "https://github.com/GabrielMarques181920/Official",
+      "source_url": "https://github.com/anthropics/claude-plugins-official",
+      "commit": "58267944f92187b7d6a1c822165c96c81c864806",
+      "mode": "upstream_snapshot"
+    },
+    {
+      "path": "COMPLETO",
+      "original_url": "https://github.com/GabrielMarques181920/COMPLETO",
+      "source_url": "https://github.com/tashfeenahmed/freellmapi",
+      "commit": "22b7ec74a09892d3efdb9107ec3e74c764dd71a1",
+      "mode": "upstream_snapshot"
+    },
+    {
+      "path": "Descompacto",
+      "original_url": "https://github.com/GabrielMarques181920/Descompacto",
+      "source_url": "https://github.com/morluto/rea",
+      "commit": "76e7e510bb2d7d37728ca50749d524beb5890cf8",
+      "mode": "upstream_snapshot"
+    }
+  ],
+  "reconstructed": [
+    "motion-2/remotion/src/MotionDesignComposition.jsx",
+    "motion-2/remotion/src/ReelsViralComposition.jsx",
+    "motion-2/remotion/src/design.jsx",
+    "motion-2/remotion/src/design-utils.mjs",
+    "motion-2/remotion/render.mjs",
+    "motion-2/docs/MOTION-DESIGN-PT-BR.md",
+    "motion-2/docs/REELS-VIRAL-PT-BR.md"
+  ],
+  "unrecovered": [
+    "Private or unindexed repositories and files",
+    "Untitled_Scene_10-25_20_12_37_20261025171936.mp4",
+    "Exact source of inaccessible Arena commits 2e8078c and 2e169ac"
+  ],
+  "excluded_for_safety": [
+    "COMPLETO/.claude/settings.local.json (upstream local terminal permissions)"
+  ]
+}

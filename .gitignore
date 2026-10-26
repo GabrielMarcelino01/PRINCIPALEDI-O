@@ -1,0 +1,29 @@
+# Dependências e caches
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+.cache/
+
+# Bundles e saídas de render
+.bundle/
+out/
+renders/
+artifacts/
+
+# Arquivos locais e credenciais
+.env
+.env.*
+!.env.example
+.secrets/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
