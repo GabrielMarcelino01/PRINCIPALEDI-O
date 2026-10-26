@@ -53,10 +53,12 @@ A análise foi feita por folhas de contato e quadros amostrados; não houve play
 
 - Inter + Playfair Display itálica, com licenças em `public/fonts/`;
 - 13 grupos de captions, no máximo duas linhas, fiéis à fala;
+- legenda ampliada para **76 px sans / 96 px serifada / 42 px conectores**;
+- entrada palavra por palavra nos timestamps, sublinhado progressivo e ênfase por cor;
+- “horrível” com shake curto, “minimalista” com entrada contida e “vivo” com pulso maior;
 - cores específicas para neon/laranja, verde/preto, bege/branco, azul/branco e vermelho/branco;
-- zoom contínuo discreto e pequenos punch-ins nos adjetivos;
-- flashes e whooshes curtos nos quatro cortes reais;
-- CTA “QUAL LOOK VOCÊ USARIA?” no último look;
+- **sem cabeçalhos, CTA, barra de progresso, zooms, flashes, swipes ou efeitos sonoros de transição**;
+- somente o vídeo e a legenda interativa, preservando os cortes naturais do original;
 - **nenhum frame das referências foi inserido na edição**, evitando misturar pessoas e roupas que não pertencem ao vídeo principal.
 
 ## Cortes detectados
@@ -78,7 +80,7 @@ Os tempos foram detectados por diferença de cena e conferidos contra os quadros
 - Entrega: H.264, `yuv420p`, faixa limitada, BT.709, CRF 16 e preset slow.
 - Voz original: EQ, compressão e presença; loudness original medido em −21,1 LUFS.
 - Música: composição procedural original, 112 BPM, sem samples.
-- Efeitos: síntese original nos quatro cortes.
+- Efeitos de transição removidos: somente voz e música.
 - Mix: ducking por sidechain e loudnorm em duas passagens.
 - Master do render: WAV PCM 24 bits/48 kHz; **uma única codificação AAC** no MP4.
 

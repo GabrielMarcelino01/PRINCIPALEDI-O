@@ -513,21 +513,10 @@
     "right": 100
   },
   "captionStyle": {
-    "top": 1250,
+    "top": 1210,
     "maxWidth": 940,
-    "fontSize": 62,
-    "serifFontSize": 78,
-    "smallFontSize": 36
-  },
-  "cta": {
-    "start": 18.3,
-    "text": "QUAL LOOK VOCÊ USARIA?"
-  },
-  "emphasisTimes": [
-    3.14,
-    6.6,
-    10.34,
-    14.98,
-    19.36
-  ]
+    "fontSize": 76,
+    "serifFontSize": 96,
+    "smallFontSize": 42
+  }
 }

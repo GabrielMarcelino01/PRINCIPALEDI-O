@@ -2,8 +2,8 @@
   "status": "PASS",
   "scope": "Timeline, assets e correspondência textual; não substitui QA do MP4 nem revisão audiovisual.",
   "summary": {
-    "checks": 19,
-    "passed": 19,
+    "checks": 22,
+    "passed": 22,
     "failed": 0,
     "caption_groups": 13,
     "words": 45
@@ -87,7 +87,17 @@
     {
       "name": "caption_safe_area",
       "status": "pass",
-      "message": "Bloco estimado até 1440px; limite 1500px"
+      "message": "Bloco estimado até 1420px; limite 1500px"
+    },
+    {
+      "name": "caption_scale",
+      "status": "pass",
+      "message": "76px sans / 96px serifada / 42px conectores"
+    },
+    {
+      "name": "caption_only_layout",
+      "status": "pass",
+      "message": "Somente vídeo, legendas, áudio e overlays técnicos de debug"
     },
     {
       "name": "preview_loudness",
@@ -103,6 +113,11 @@
       "name": "source_integrity",
       "status": "pass",
       "message": "SHA-256 do EDITE-ESSE original confirmado"
+    },
+    {
+      "name": "no_transition_sfx",
+      "status": "pass",
+      "message": "Sem efeitos de transição; somente voz e música"
     }
   ]
 }

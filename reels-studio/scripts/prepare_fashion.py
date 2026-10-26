@@ -116,23 +116,6 @@ def generate_music(path: Path) -> None:
     write_wav(path, np.column_stack([left, right]))
 
 
-def generate_sfx(path: Path) -> None:
-    rng = np.random.default_rng(7)
-    count = round(DURATION * SR)
-    left = np.zeros(count, dtype=np.float64)
-    right = np.zeros(count, dtype=np.float64)
-    for index, cut in enumerate(CUTS):
-        x = np.arange(round(0.24 * SR)) / SR
-        noise = rng.normal(0, 1, len(x))
-        smooth = np.convolve(noise, np.ones(15) / 15, mode="same")
-        whoosh = smooth * np.sin(np.pi * x / 0.24) ** 2
-        add(left, right, whoosh, cut - 0.08, 0.12, -0.5 if index % 2 else 0.5)
-        x = np.arange(round(0.20 * SR)) / SR
-        tick = np.sin(2 * np.pi * 95 * x) * np.exp(-x * 25)
-        add(left, right, tick, cut, 0.08)
-    write_wav(path, np.column_stack([left, right]))
-
-
 def prepare_video() -> dict:
     destination = PUBLIC / "fashion-source.mp4"
     filters = (
@@ -159,23 +142,21 @@ def measure(path: Path) -> dict[str, float | None]:
 
 def prepare_audio() -> dict:
     music = WORK / "music.wav"
-    sfx = WORK / "sfx.wav"
     premaster = WORK / "premaster.wav"
     master = PUBLIC / "fashion-soundtrack.wav"
     preview = PUBLIC / "fashion-soundtrack.m4a"
     generate_music(music)
-    generate_sfx(sfx)
     filters = (
         f"[0:a]aresample={SR},highpass=f=75,lowpass=f=16000,equalizer=f=3000:t=q:w=1:g=1.5,"
         "acompressor=threshold=0.09:ratio=2.2:attack=8:release=100:makeup=1.35,"
         f"apad=whole_dur={DURATION},atrim=0:{DURATION},asplit=2[voice][key];"
         "[1:a][key]sidechaincompress=threshold=0.02:ratio=8:attack=12:release=180[ducked];"
-        "[ducked]volume=0.30[music];[2:a]volume=0.35[sfx];[voice]volume=1.20[v];"
-        f"[v][music][sfx]amix=inputs=3:duration=longest:normalize=0,atrim=0:{DURATION},alimiter=limit=0.94[pre]"
+        "[ducked]volume=0.30[music];[voice]volume=1.20[v];"
+        f"[v][music]amix=inputs=2:duration=longest:normalize=0,atrim=0:{DURATION},alimiter=limit=0.94[pre]"
     )
     run([
         FFMPEG, "-y", "-nostdin", "-hide_banner", "-loglevel", "error", "-i", str(SOURCE),
-        "-i", str(music), "-i", str(sfx), "-filter_complex", filters, "-map", "[pre]",
+        "-i", str(music), "-filter_complex", filters, "-map", "[pre]",
         "-ar", str(SR), "-ac", "2", "-c:a", "pcm_s24le", str(premaster),
     ])
     first = run([FFMPEG, "-nostdin", "-hide_banner", "-i", str(premaster), "-af", "loudnorm=I=-14:TP=-1:LRA=7:print_format=json", "-f", "null", "-"])
@@ -195,7 +176,7 @@ def prepare_audio() -> dict:
         "target_lufs": -14.0, "target_true_peak_dbtp": -1.0, "sample_rate": SR,
         "render_master": "fashion-soundtrack.wav — PCM 24 bits; uma única codificação AAC no MP4",
         "music": "Composição procedural original, 112 BPM, sem samples",
-        "sfx": "Whooshes e impactos procedurais originais nos quatro cortes",
+        "sfx": "Sem efeitos de transição; somente voz e música",
     }
 
 
@@ -267,9 +248,7 @@ def write_project() -> None:
         "duration": DURATION, "video": "fashion-source.mp4", "audio": "fashion-soundtrack.wav",
         "cuts": CUTS, "scenes": scenes, "groups": caption_groups(), "showSafeZones": False,
         "safeZones": {"top": 200, "bottom": 420, "left": 60, "right": 100},
-        "captionStyle": {"top": 1250, "maxWidth": 940, "fontSize": 62, "serifFontSize": 78, "smallFontSize": 36},
-        "cta": {"start": 18.30, "text": "QUAL LOOK VOCÊ USARIA?"},
-        "emphasisTimes": [3.14, 6.60, 10.34, 14.98, 19.36],
+        "captionStyle": {"top": 1210, "maxWidth": 940, "fontSize": 76, "serifFontSize": 96, "smallFontSize": 42},
     }
     (ROOT / "fashion-project.json").write_text(json.dumps(project, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     def timestamp(value: float) -> str:

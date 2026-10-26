@@ -103,6 +103,6 @@
     "sample_rate": 48000,
     "render_master": "fashion-soundtrack.wav — PCM 24 bits; uma única codificação AAC no MP4",
     "music": "Composição procedural original, 112 BPM, sem samples",
-    "sfx": "Whooshes e impactos procedurais originais nos quatro cortes"
+    "sfx": "Sem efeitos de transição; somente voz e música"
   }
 }

@@ -24,109 +24,84 @@ function useEditorialFonts() {
   }, [handle, interUrl, playfairUrl]);
 }
 
-function sceneAt(project, time) {
-  return project.scenes.find((scene) => time >= scene.start && time < scene.end) || project.scenes[project.scenes.length - 1];
-}
-
-function Header({project, scene, time, frame, fps}) {
-  const enter = spring({frame: Math.max(0, frame - scene.start * fps), fps, config: {damping: 24, stiffness: 220, mass: 0.75}});
-  const showCta = time >= project.cta.start;
-  return (
-    <>
-      <div style={{position: 'absolute', left: 60, right: 100, top: 176, display: 'flex', alignItems: 'center', zIndex: 5}}>
-        <div style={{fontSize: 19, fontWeight: 800, letterSpacing: 3.4, color: 'rgba(255,255,255,0.82)'}}>GUIA DE CORES</div>
-        <div style={{marginLeft: 'auto', fontSize: 18, fontWeight: 700, letterSpacing: 2.2, color: 'rgba(255,255,255,0.68)'}}>{scene.number}</div>
-      </div>
-      <div style={{
-        position: 'absolute', left: 60, right: 100, top: 222, zIndex: 5,
-        opacity: enter * (showCta ? 0 : 1), transform: `translateY(${(1 - enter) * 18}px)`,
-      }}>
-        <div style={{display: 'flex', alignItems: 'center', gap: 18}}>
-          <span style={{fontSize: 27, fontWeight: 900, letterSpacing: 2.2, color: scene.accent}}>{scene.label}</span>
-          <span style={{width: 34, height: 2, background: scene.accent}} />
-          <span style={{fontSize: 29, fontWeight: 760, letterSpacing: -0.4, color: '#fff'}}>{scene.header}</span>
-          <div style={{marginLeft: 'auto', display: 'flex', gap: 7}}>
-            {scene.colors.map((color, index) => <span key={index} style={{width: 17, height: 17, borderRadius: '50%', background: color, border: '1px solid rgba(255,255,255,0.65)'}} />)}
-          </div>
-        </div>
-      </div>
-      {showCta && (
-        <div style={{
-          position: 'absolute', left: 60, right: 100, top: 222, zIndex: 6, textAlign: 'center',
-          color: '#fff4d2', fontSize: 31, fontWeight: 850, letterSpacing: 0.7,
-          opacity: interpolate(time, [project.cta.start, project.cta.start + 0.20], [0, 1], clamp),
-          textShadow: '0 3px 16px rgba(0,0,0,0.65)',
-        }}>{project.cta.text}</div>
-      )}
-    </>
-  );
-}
-
 function CaptionWord({item, time, frame, fps}) {
   const serif = item.style === 'serif';
   const small = item.style === 'small';
   const active = time >= item.start && time < item.end;
-  const pop = active ? spring({frame: Math.max(0, frame - item.start * fps), fps, config: {damping: 17, stiffness: 220}}) : 1;
+  const minimal = item.text === 'MINIMALISTA';
+  const localFrame = frame - item.start * fps;
+  const enter = spring({
+    frame: Math.max(0, localFrame), fps,
+    config: {damping: minimal ? 24 : serif ? 20 : 17, stiffness: minimal ? 190 : 250, mass: 0.68},
+  });
+  const release = active ? 1 : time >= item.end
+    ? interpolate(time, [item.end, item.end + 0.14], [1, 0], clamp)
+    : 0;
+  const emphasis = small ? 0 : item.text === 'VIVO' ? 0.075 : 0.045;
+  const scale = 0.88 + enter * 0.12 + release * emphasis * enter;
+  const shake = item.text === 'HORRÍVEL' && localFrame >= 0 && localFrame < 14
+    ? Math.sin(localFrame * 2.2) * (1 - localFrame / 14) * 7
+    : 0;
   const color = item.color || '#ffffff';
+  const underline = item.color && !small
+    ? interpolate(time, [item.start, item.end], [0, 100], clamp)
+    : 0;
+  const underlineOpacity = active ? 0.95 : time >= item.end
+    ? interpolate(time, [item.end, item.end + 0.15], [0.95, 0], clamp)
+    : 0;
+
   return (
     <span style={{
-      display: 'inline-block', whiteSpace: 'nowrap',
+      position: 'relative', display: 'inline-block', whiteSpace: 'nowrap',
       fontFamily: serif ? '"Playfair Display", Georgia, serif' : 'Inter, Arial, sans-serif',
       fontStyle: serif ? 'italic' : 'normal',
-      fontSize: small ? 36 : serif ? 78 : 62,
+      fontSize: small ? 42 : serif ? 96 : 76,
       fontWeight: serif ? 600 : small ? 650 : 850,
-      letterSpacing: serif ? -1.8 : small ? 0.8 : -2.1,
-      lineHeight: serif ? 1.02 : 1.08,
+      letterSpacing: serif ? -2 : small ? 0.8 : -2.4,
+      lineHeight: serif ? 1.02 : 1.06,
       color,
-      textShadow: active ? `0 3px 4px rgba(0,0,0,0.82), 0 5px 24px ${color}55` : '0 3px 5px rgba(0,0,0,0.90), 0 7px 22px rgba(0,0,0,0.72)',
-      transform: `scale(${active ? 1.06 - pop * 0.06 : 1})`, transformOrigin: 'center',
-      padding: small ? '0 1px 8px' : '0 2px',
-      background: serif ? `linear-gradient(transparent 74%, ${color}30 74%)` : 'none',
-      borderRadius: 4,
-    }}>{serif ? item.text.toLowerCase() : item.text}</span>
+      opacity: interpolate(enter, [0, 1], [0, 1], clamp),
+      textShadow: active
+        ? `0 3px 5px rgba(0,0,0,0.92), 0 7px 26px ${color}66`
+        : '0 3px 5px rgba(0,0,0,0.94), 0 8px 24px rgba(0,0,0,0.78)',
+      transform: `translateX(${shake}px) translateY(${(1 - enter) * (minimal ? 10 : small ? 12 : 24)}px) rotate(${serif && !minimal ? (1 - enter) * -2.5 : 0}deg) scale(${scale})`,
+      transformOrigin: 'center bottom',
+      padding: small ? '0 1px 10px' : '0 3px',
+    }}>
+      {serif ? item.text.toLowerCase() : item.text}
+      {item.color && !small && (
+        <span style={{
+          position: 'absolute', left: 4, bottom: small ? 3 : -5, height: 4,
+          width: `${underline}%`, background: color, borderRadius: 999,
+          opacity: underlineOpacity, boxShadow: `0 0 12px ${color}55`,
+          pointerEvents: 'none',
+        }} />
+      )}
+    </span>
   );
 }
 
 function Captions({project, time, frame, fps}) {
   const group = project.groups.find((item) => time >= item.start && time < item.end);
   if (!group) return null;
-  const enter = spring({frame: Math.max(0, frame - group.start * fps), fps, config: {damping: 24, stiffness: 250, mass: 0.7}});
-  const exit = interpolate(time, [group.end - 0.06, group.end], [1, 0], clamp);
+  const exit = interpolate(time, [group.end - 0.08, group.end], [1, 0], clamp);
   return (
     <div style={{
       position: 'absolute', left: 60, right: 100, top: project.captionStyle.top, zIndex: 8,
-      display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8,
-      opacity: enter * exit, transform: `translateY(${(1 - enter) * 22}px)`,
+      display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12,
+      opacity: exit, transform: `translateY(${(1 - exit) * 14}px)`,
     }}>
       {group.lines.map((line, lineIndex) => (
-        <div key={lineIndex} style={{maxWidth: project.captionStyle.maxWidth, display: 'flex', justifyContent: 'center', alignItems: 'baseline', flexWrap: 'wrap', columnGap: 15, rowGap: 4}}>
-          {line.map((item, index) => <CaptionWord key={`${item.text}-${index}`} item={item} time={time} frame={frame} fps={fps} />)}
+        <div key={lineIndex} style={{
+          maxWidth: project.captionStyle.maxWidth, display: 'flex', justifyContent: 'center',
+          alignItems: 'baseline', flexWrap: 'wrap', columnGap: 18, rowGap: 6,
+        }}>
+          {line.map((item, index) => (
+            <CaptionWord key={`${item.text}-${index}`} item={item} time={time} frame={frame} fps={fps} />
+          ))}
         </div>
       ))}
     </div>
-  );
-}
-
-function CutEffects({project, time}) {
-  return (
-    <>
-      {project.cuts.map((cut, index) => {
-        if (time < cut - 0.06 || time > cut + 0.18) return null;
-        const flash = interpolate(time, [cut - 0.035, cut, cut + 0.09], [0, 0.52, 0], clamp);
-        const swipe = interpolate(time, [cut - 0.06, cut + 0.16], [-360, 1440], clamp);
-        const accent = project.scenes[index + 1].accent;
-        return (
-          <React.Fragment key={cut}>
-            <AbsoluteFill style={{background: '#fff8ed', opacity: flash, pointerEvents: 'none', zIndex: 12}} />
-            <div style={{
-              position: 'absolute', top: -80, bottom: -80, left: swipe, width: 210, zIndex: 13,
-              background: `linear-gradient(90deg, transparent, ${accent}88, #ffffffaa, transparent)`,
-              transform: 'skewX(-12deg)', opacity: 0.58, pointerEvents: 'none',
-            }} />
-          </React.Fragment>
-        );
-      })}
-    </>
   );
 }
 
@@ -145,22 +120,14 @@ function SafeZones({project}) {
 export function FashionReel({project}) {
   useEditorialFonts();
   const frame = useCurrentFrame();
-  const {fps, durationInFrames} = useVideoConfig();
+  const {fps} = useVideoConfig();
   const time = frame / fps;
-  const scene = sceneAt(project, time);
-  const progress = Math.max(0, Math.min(1, (time - scene.start) / (scene.end - scene.start)));
-  const pulse = project.emphasisTimes.reduce((total, center) => total + Math.exp(-Math.pow((time - center) / 0.17, 2)) * 0.017, 0);
-  const scale = 1.012 + progress * 0.024 + pulse;
   return (
-    <AbsoluteFill style={{background: '#111', color: '#fff', fontFamily: 'Inter, Arial, sans-serif', overflow: 'hidden'}}>
-      <OffthreadVideo src={staticFile(project.video)} muted style={{width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${scale})`, transformOrigin: 'center center'}} />
-      <div style={{position: 'absolute', left: 0, right: 0, top: 0, height: 390, background: 'linear-gradient(rgba(0,0,0,0.40), transparent)', pointerEvents: 'none'}} />
-      <div style={{position: 'absolute', left: 0, right: 0, top: 880, bottom: 0, background: 'linear-gradient(transparent, rgba(0,0,0,0.12) 30%, rgba(0,0,0,0.60) 82%, rgba(0,0,0,0.70))', pointerEvents: 'none'}} />
-      <AbsoluteFill style={{background: 'radial-gradient(ellipse at center, transparent 58%, rgba(0,0,0,0.16) 100%)', pointerEvents: 'none'}} />
-      <Header project={project} scene={scene} time={time} frame={frame} fps={fps} />
+    <AbsoluteFill style={{background: '#111', color: '#fff', fontFamily: 'Inter, Arial, sans-serif', overflow: 'hidden', WebkitFontSmoothing: 'antialiased'}}>
+      <OffthreadVideo src={staticFile(project.video)} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+      <div style={{position: 'absolute', left: 0, right: 0, top: 820, bottom: 0, background: 'linear-gradient(transparent, rgba(0,0,0,0.12) 28%, rgba(0,0,0,0.58) 72%, rgba(0,0,0,0.70))', pointerEvents: 'none'}} />
+      <AbsoluteFill style={{background: 'radial-gradient(ellipse at center, transparent 62%, rgba(0,0,0,0.12) 100%)', pointerEvents: 'none'}} />
       <Captions project={project} time={time} frame={frame} fps={fps} />
-      <CutEffects project={project} time={time} />
-      <div style={{position: 'absolute', top: 0, left: 0, height: 6, width: `${Math.min(100, frame / durationInFrames * 100)}%`, background: '#f5db78', zIndex: 20}} />
       <Audio src={staticFile(project.audio)} />
       <SafeZones project={project} />
     </AbsoluteFill>

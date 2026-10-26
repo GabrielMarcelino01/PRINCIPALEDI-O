@@ -92,13 +92,18 @@ def main() -> int:
 
     caption = project["captionStyle"]
     safe_bottom = project["height"] - project["safeZones"]["bottom"]
-    check("caption_safe_area", caption["top"] + 190 <= safe_bottom, f"Bloco estimado até {caption['top'] + 190}px; limite {safe_bottom}px")
+    check("caption_safe_area", caption["top"] + 210 <= safe_bottom, f"Bloco estimado até {caption['top'] + 210}px; limite {safe_bottom}px")
+    check("caption_scale", (caption["fontSize"], caption["serifFontSize"], caption["smallFontSize"]) == (76, 96, 42), "76px sans / 96px serifada / 42px conectores")
+    component = (ROOT / "src" / "FashionReel.jsx").read_text(encoding="utf-8")
+    forbidden = ["function Header", "function CutEffects", "<Header", "<CutEffects", "project.cta", "project.emphasisTimes"]
+    check("caption_only_layout", all(token not in component for token in forbidden) and "cta" not in project and "emphasisTimes" not in project, "Somente vídeo, legendas, áudio e overlays técnicos de debug")
 
     prepare = json.loads((ROOT / "fashion-prepare-report.json").read_text(encoding="utf-8"))
     audio = prepare["audio"]["aac_preview"]
     check("preview_loudness", math.isfinite(audio["integrated_lufs"]) and abs(audio["integrated_lufs"] + 14) <= 0.5, f"{audio['integrated_lufs']} LUFS")
     check("preview_true_peak", math.isfinite(audio["true_peak_dbtp"]) and audio["true_peak_dbtp"] <= -0.999, f"{audio['true_peak_dbtp']} dBTP")
     check("source_integrity", prepare["source_sha256"] == transcript["source_sha256"], "SHA-256 do EDITE-ESSE original confirmado")
+    check("no_transition_sfx", prepare["audio"]["sfx"].startswith("Sem efeitos de transição"), prepare["audio"]["sfx"])
 
     failures = [item for item in checks if item["status"] == "fail"]
     report = {
