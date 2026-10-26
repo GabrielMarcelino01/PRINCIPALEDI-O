@@ -15,6 +15,11 @@ Repositório de recuperação e organização das skills e projetos associados �
 
 As skills também são expostas em `.claude/skills`, `.codex/skills` e `.agents/skills` por links simbólicos.
 
+## Catálogo completo e demo de Reels
+
+- O [`catálogo das 41 skills`](docs/CATALOGO-SKILLS.md) organiza cada entrada por finalidade, prioridade e relação com o fluxo de vídeo. A auditoria reproduzível está em [`docs/skills-audit.json`](docs/skills-audit.json).
+- A [`demo Reels Pro`](reels-studio/README.md) reúne composição Remotion própria, narração PT-BR, trilha original, captions queimadas + SRT e comandos de render/QA em 1080×1920 a 60 fps.
+
 ## Projetos recuperados
 
 | Pasta antiga | Origem pública identificada | Conteúdo |

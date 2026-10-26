@@ -1,0 +1,168 @@
+{
+  "file": "/home/user/PRINCIPALEDI-O/reels-studio/captions.srt",
+  "status": "pass",
+  "caption_count": 13,
+  "summary": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "issues": [],
+  "captions": [
+    {
+      "block": 1,
+      "start": 0.25,
+      "end": 1.006,
+      "duration": 0.756,
+      "text": "SEU VÍDEO",
+      "lines": 1,
+      "line_lengths": [
+        9
+      ],
+      "characters_per_second": 10.58
+    },
+    {
+      "block": 2,
+      "start": 1.006,
+      "end": 1.686,
+      "duration": 0.6799999999999999,
+      "text": "TEM TRÊS",
+      "lines": 1,
+      "line_lengths": [
+        8
+      ],
+      "characters_per_second": 10.29
+    },
+    {
+      "block": 3,
+      "start": 1.686,
+      "end": 2.566,
+      "duration": 0.8799999999999999,
+      "text": "SEGUNDOS.",
+      "lines": 1,
+      "line_lengths": [
+        9
+      ],
+      "characters_per_second": 10.23
+    },
+    {
+      "block": 4,
+      "start": 3.65,
+      "end": 4.359,
+      "duration": 0.7090000000000001,
+      "text": "A LEGENDA",
+      "lines": 1,
+      "line_lengths": [
+        9
+      ],
+      "characters_per_second": 11.28
+    },
+    {
+      "block": 5,
+      "start": 4.359,
+      "end": 5.461,
+      "duration": 1.1020000000000003,
+      "text": "GUIA O OLHAR.",
+      "lines": 1,
+      "line_lengths": [
+        13
+      ],
+      "characters_per_second": 9.98
+    },
+    {
+      "block": 6,
+      "start": 6.65,
+      "end": 7.228,
+      "duration": 0.5779999999999994,
+      "text": "O CORTE",
+      "lines": 1,
+      "line_lengths": [
+        7
+      ],
+      "characters_per_second": 10.38
+    },
+    {
+      "block": 7,
+      "start": 7.228,
+      "end": 8.455,
+      "duration": 1.2270000000000003,
+      "text": "MANTÉM O RITMO.",
+      "lines": 1,
+      "line_lengths": [
+        15
+      ],
+      "characters_per_second": 10.59
+    },
+    {
+      "block": 8,
+      "start": 9.65,
+      "end": 10.69,
+      "duration": 1.0399999999999991,
+      "text": "ÁUDIO LIMPO",
+      "lines": 1,
+      "line_lengths": [
+        11
+      ],
+      "characters_per_second": 9.62
+    },
+    {
+      "block": 9,
+      "start": 10.69,
+      "end": 11.842,
+      "duration": 1.152000000000001,
+      "text": "ELEVA TUDO.",
+      "lines": 1,
+      "line_lengths": [
+        11
+      ],
+      "characters_per_second": 8.68
+    },
+    {
+      "block": 10,
+      "start": 12.85,
+      "end": 14.644,
+      "duration": 1.7940000000000005,
+      "text": "MOTION COM INTENÇÃO,",
+      "lines": 1,
+      "line_lengths": [
+        20
+      ],
+      "characters_per_second": 10.03
+    },
+    {
+      "block": 11,
+      "start": 14.644,
+      "end": 15.92,
+      "duration": 1.2759999999999998,
+      "text": "SEM EXAGERO.",
+      "lines": 1,
+      "line_lengths": [
+        12
+      ],
+      "characters_per_second": 8.62
+    },
+    {
+      "block": 12,
+      "start": 17.05,
+      "end": 18.153,
+      "duration": 1.102999999999998,
+      "text": "QUER EDITAR ASSIM?",
+      "lines": 1,
+      "line_lengths": [
+        18
+      ],
+      "characters_per_second": 14.51
+    },
+    {
+      "block": 13,
+      "start": 18.153,
+      "end": 19.088,
+      "duration": 0.9350000000000023,
+      "text": "CHAMA AGORA.",
+      "lines": 1,
+      "line_lengths": [
+        12
+      ],
+      "characters_per_second": 11.76
+    }
+  ]
+}
