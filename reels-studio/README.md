@@ -1,4 +1,18 @@
-# Reels Pro — demo autoral em Remotion
+# Reels Studio
+
+## EDITE-ESSE — edição principal
+
+A edição de moda baseada no **EDITE-ESSE** está separada da demo. Consulte [FASHION.md](./FASHION.md) para recuperação dos originais, análise das referências, decisões e reprodução.
+
+```bash
+npm run fashion:prepare
+npm run fashion:render
+npm run qa:fashion
+```
+
+Saída: `out/edite-esse-final.mp4`. A demo `ReelsPro` abaixo foi preservada.
+
+## Reels Pro — demo autoral
 
 Demo vertical de **20 segundos, 1080×1920 e 60 fps**, construída a partir do núcleo de skills deste repositório. A composição é independente das reconstruções antigas em `recovered/motion-2`.
 

@@ -1,5 +1,11 @@
 node_modules/
 .bundle/
+.fashion-bundle/
 work/
 out/
+assets/source/
+assets/references/
+public/fashion-source.mp4
+public/fashion-soundtrack.wav
+public/fashion-soundtrack.m4a
 .DS_Store

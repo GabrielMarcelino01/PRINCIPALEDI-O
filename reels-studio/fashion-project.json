@@ -1,0 +1,533 @@
+{
+  "id": "edite-esse",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "durationInFrames": 614,
+  "duration": 20.466666666666665,
+  "video": "fashion-source.mp4",
+  "audio": "fashion-soundtrack.wav",
+  "cuts": [
+    4.417643,
+    8.366667,
+    11.613021,
+    15.716667
+  ],
+  "scenes": [
+    {
+      "id": "erro",
+      "start": 0,
+      "end": 4.417643,
+      "label": "O ERRO",
+      "header": "NEON + LARANJA",
+      "number": "",
+      "accent": "#ff706b",
+      "colors": [
+        "#b9f95a",
+        "#ffad5c"
+      ]
+    },
+    {
+      "id": "look-1",
+      "start": 4.417643,
+      "end": 8.366667,
+      "label": "LOOK 01",
+      "header": "VERDE + PRETO",
+      "number": "01 / 04",
+      "accent": "#a8e6bd",
+      "colors": [
+        "#a8e6bd",
+        "#171717"
+      ]
+    },
+    {
+      "id": "look-2",
+      "start": 8.366667,
+      "end": 11.613021,
+      "label": "LOOK 02",
+      "header": "BEGE + BRANCO",
+      "number": "02 / 04",
+      "accent": "#e7cba7",
+      "colors": [
+        "#e7cba7",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "look-3",
+      "start": 11.613021,
+      "end": 15.716667,
+      "label": "LOOK 03",
+      "header": "AZUL + BRANCO",
+      "number": "03 / 04",
+      "accent": "#91bcff",
+      "colors": [
+        "#91bcff",
+        "#ffffff"
+      ]
+    },
+    {
+      "id": "look-4",
+      "start": 15.716667,
+      "end": 20.466666666666665,
+      "label": "LOOK 04",
+      "header": "VERMELHO + BRANCO",
+      "number": "04 / 04",
+      "accent": "#ff949c",
+      "colors": [
+        "#a51435",
+        "#ffffff"
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "lembre",
+      "start": 0.3,
+      "end": 1.2,
+      "lines": [
+        [
+          {
+            "text": "LEMBRE-SE",
+            "start": 0.3,
+            "end": 0.88,
+            "style": "serif",
+            "color": "#fff4e2"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "erro-cores",
+      "start": 1.34,
+      "end": 2.86,
+      "lines": [
+        [
+          {
+            "text": "VERDE",
+            "start": 1.34,
+            "end": 1.64,
+            "style": "normal",
+            "color": "#b9f95a"
+          },
+          {
+            "text": "NEON",
+            "start": 1.64,
+            "end": 1.92,
+            "style": "normal",
+            "color": "#b9f95a"
+          }
+        ],
+        [
+          {
+            "text": "COM",
+            "start": 1.92,
+            "end": 2.26,
+            "style": "small"
+          },
+          {
+            "text": "LARANJA",
+            "start": 2.26,
+            "end": 2.86,
+            "style": "normal",
+            "color": "#ffad5c"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "erro",
+      "start": 2.86,
+      "end": 4.25,
+      "lines": [
+        [
+          {
+            "text": "FICA",
+            "start": 2.86,
+            "end": 3.14,
+            "style": "normal"
+          },
+          {
+            "text": "HORRÍVEL",
+            "start": 3.14,
+            "end": 3.96,
+            "style": "serif",
+            "color": "#ff706b"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-1-cores",
+      "start": 4.58,
+      "end": 6.42,
+      "lines": [
+        [
+          {
+            "text": "COMBINE",
+            "start": 4.58,
+            "end": 5.16,
+            "style": "normal"
+          },
+          {
+            "text": "VERDE",
+            "start": 5.16,
+            "end": 5.52,
+            "style": "normal",
+            "color": "#a8e6bd"
+          }
+        ],
+        [
+          {
+            "text": "COM",
+            "start": 5.52,
+            "end": 5.74,
+            "style": "small"
+          },
+          {
+            "text": "PRETO",
+            "start": 5.74,
+            "end": 6.28,
+            "style": "normal",
+            "color": "#f4f4f4"
+          },
+          {
+            "text": "E",
+            "start": 6.28,
+            "end": 6.42,
+            "style": "small"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-1-estilo",
+      "start": 6.42,
+      "end": 8.34,
+      "lines": [
+        [
+          {
+            "text": "FIQUE",
+            "start": 6.42,
+            "end": 6.6,
+            "style": "normal"
+          },
+          {
+            "text": "SOFISTICADO",
+            "start": 6.6,
+            "end": 7.52,
+            "style": "serif",
+            "color": "#a8e6bd"
+          }
+        ],
+        [
+          {
+            "text": "E",
+            "start": 7.52,
+            "end": 7.7,
+            "style": "small"
+          },
+          {
+            "text": "AUTÊNTICO",
+            "start": 7.7,
+            "end": 8.34,
+            "style": "normal"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-2-cores",
+      "start": 8.58,
+      "end": 10.1,
+      "lines": [
+        [
+          {
+            "text": "COMBINE",
+            "start": 8.58,
+            "end": 8.8,
+            "style": "normal"
+          },
+          {
+            "text": "BEGE",
+            "start": 8.8,
+            "end": 9.2,
+            "style": "normal",
+            "color": "#e7cba7"
+          }
+        ],
+        [
+          {
+            "text": "COM",
+            "start": 9.2,
+            "end": 9.4,
+            "style": "small"
+          },
+          {
+            "text": "BRANCO",
+            "start": 9.4,
+            "end": 9.92,
+            "style": "normal",
+            "color": "#ffffff"
+          },
+          {
+            "text": "E",
+            "start": 9.92,
+            "end": 10.1,
+            "style": "small"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-2-estilo",
+      "start": 10.1,
+      "end": 11.56,
+      "lines": [
+        [
+          {
+            "text": "FIQUE",
+            "start": 10.1,
+            "end": 10.34,
+            "style": "normal"
+          },
+          {
+            "text": "MINIMALISTA",
+            "start": 10.34,
+            "end": 11.06,
+            "style": "serif",
+            "color": "#e7cba7"
+          }
+        ],
+        [
+          {
+            "text": "E",
+            "start": 11.06,
+            "end": 11.22,
+            "style": "small"
+          },
+          {
+            "text": "CHIQUE",
+            "start": 11.22,
+            "end": 11.5,
+            "style": "normal",
+            "color": "#f5db78"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-3-camisa",
+      "start": 11.92,
+      "end": 13.16,
+      "lines": [
+        [
+          {
+            "text": "AGORA,",
+            "start": 11.92,
+            "end": 12.26,
+            "style": "small"
+          }
+        ],
+        [
+          {
+            "text": "CAMISA",
+            "start": 12.54,
+            "end": 12.86,
+            "style": "normal"
+          },
+          {
+            "text": "AZUL",
+            "start": 12.86,
+            "end": 13.16,
+            "style": "normal",
+            "color": "#91bcff"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-3-calca",
+      "start": 13.16,
+      "end": 14.04,
+      "lines": [
+        [
+          {
+            "text": "COM",
+            "start": 13.16,
+            "end": 13.32,
+            "style": "small"
+          },
+          {
+            "text": "CALÇA",
+            "start": 13.32,
+            "end": 13.68,
+            "style": "normal"
+          },
+          {
+            "text": "BRANCA",
+            "start": 13.68,
+            "end": 14.04,
+            "style": "normal",
+            "color": "#ffffff"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-3-estilo",
+      "start": 14.04,
+      "end": 15.6,
+      "lines": [
+        [
+          {
+            "text": "FICA",
+            "start": 14.04,
+            "end": 14.28,
+            "style": "normal"
+          },
+          {
+            "text": "RICO",
+            "start": 14.28,
+            "end": 14.68,
+            "style": "normal",
+            "color": "#f5db78"
+          }
+        ],
+        [
+          {
+            "text": "E",
+            "start": 14.68,
+            "end": 14.98,
+            "style": "small"
+          },
+          {
+            "text": "ELEGANTE",
+            "start": 14.98,
+            "end": 15.52,
+            "style": "serif",
+            "color": "#91bcff"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-4-sweater",
+      "start": 15.9,
+      "end": 17.04,
+      "lines": [
+        [
+          {
+            "text": "SWEATER",
+            "start": 15.9,
+            "end": 16.42,
+            "style": "normal"
+          },
+          {
+            "text": "VERMELHO",
+            "start": 16.42,
+            "end": 17.04,
+            "style": "normal",
+            "color": "#ff949c"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-4-calca",
+      "start": 17.04,
+      "end": 18.1,
+      "lines": [
+        [
+          {
+            "text": "COM",
+            "start": 17.04,
+            "end": 17.26,
+            "style": "small"
+          },
+          {
+            "text": "CALÇA",
+            "start": 17.26,
+            "end": 17.62,
+            "style": "normal"
+          },
+          {
+            "text": "BRANCA",
+            "start": 17.62,
+            "end": 18.1,
+            "style": "normal",
+            "color": "#ffffff"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-4-estilo",
+      "start": 18.3,
+      "end": 20.25,
+      "lines": [
+        [
+          {
+            "text": "UM",
+            "start": 18.3,
+            "end": 18.42,
+            "style": "small"
+          },
+          {
+            "text": "VISUAL",
+            "start": 18.42,
+            "end": 18.76,
+            "style": "normal"
+          },
+          {
+            "text": "VIVO",
+            "start": 18.76,
+            "end": 19.2,
+            "style": "normal",
+            "color": "#ff949c"
+          }
+        ],
+        [
+          {
+            "text": "E",
+            "start": 19.2,
+            "end": 19.36,
+            "style": "small"
+          },
+          {
+            "text": "MODERNO",
+            "start": 19.36,
+            "end": 19.92,
+            "style": "serif",
+            "color": "#ff949c"
+          }
+        ]
+      ]
+    }
+  ],
+  "showSafeZones": false,
+  "safeZones": {
+    "top": 200,
+    "bottom": 420,
+    "left": 60,
+    "right": 100
+  },
+  "captionStyle": {
+    "top": 1250,
+    "maxWidth": 940,
+    "fontSize": 62,
+    "serifFontSize": 78,
+    "smallFontSize": 36
+  },
+  "cta": {
+    "start": 18.3,
+    "text": "QUAL LOOK VOCÊ USARIA?"
+  },
+  "emphasisTimes": [
+    3.14,
+    6.6,
+    10.34,
+    14.98,
+    19.36
+  ]
+}
