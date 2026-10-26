@@ -12,6 +12,12 @@ npm run qa:fashion
 
 Saída: `out/edite-esse-final.mp4`. A demo `ReelsPro` abaixo foi preservada.
 
+Preview interativa do EDITE-ESSE na porta 3000, compatível com o proxy HTTPS da Arena:
+
+```bash
+npm run fashion:studio
+```
+
 ## Reels Pro — demo autoral
 
 Demo vertical de **20 segundos, 1080×1920 e 60 fps**, construída a partir do núcleo de skills deste repositório. A composição é independente das reconstruções antigas em `recovered/motion-2`.

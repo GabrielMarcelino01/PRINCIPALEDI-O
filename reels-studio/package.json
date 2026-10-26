@@ -7,6 +7,7 @@
   "scripts": {
     "audio": "python3 scripts/build_audio.py",
     "studio": "remotion studio src/Root.jsx",
+    "fashion:studio": "node scripts/start_fashion_studio.mjs",
     "render": "node render.mjs",
     "still": "node render.mjs --still --frame 55 --output out/capa.jpg",
     "fashion:prepare": "python3 scripts/prepare_fashion.py",
@@ -26,11 +27,11 @@
     "@remotion/bundler": "4.0.522",
     "@remotion/cli": "4.0.522",
     "@remotion/renderer": "4.0.522",
+    "http-proxy": "1.18.1",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.522"
   },
-  "devDependencies": {},
   "overrides": {
     "zod": "4.6.6"
   }

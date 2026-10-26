@@ -99,6 +99,12 @@ npm run fashion:render
 npm run fashion:still
 ```
 
+Preview interativa na porta 3000, incluindo o proxy de origem necessário para o HTTPS da Arena:
+
+```bash
+npm run fashion:studio
+```
+
 Se o navegador estiver fora do caminho padrão:
 
 ```bash
