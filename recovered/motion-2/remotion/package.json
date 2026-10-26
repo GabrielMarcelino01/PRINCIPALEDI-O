@@ -1,0 +1,23 @@
+{
+  "name": "motionclone-remotion",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.jsx",
+    "studio:design": "remotion studio src/design.jsx",
+    "studio:reels": "remotion studio src/design.jsx",
+    "render": "node render.mjs",
+    "render:design": "node render.mjs --selfcontained --composition MotionDesign --output out/motion-design.mp4",
+    "render:reels": "node render.mjs --selfcontained --composition ReelsViral --output out/reels-viral.mp4",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.522",
+    "@remotion/cli": "4.0.522",
+    "@remotion/renderer": "4.0.522",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.522"
+  }
+}
