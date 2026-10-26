@@ -2,8 +2,8 @@
   "status": "PASS",
   "scope": "Timeline, assets e correspondência textual; não substitui QA do MP4 nem revisão audiovisual.",
   "summary": {
-    "checks": 22,
-    "passed": 22,
+    "checks": 25,
+    "passed": 25,
     "failed": 0,
     "caption_groups": 13,
     "words": 45
@@ -95,9 +95,24 @@
       "message": "76px sans / 96px serifada / 42px conectores"
     },
     {
+      "name": "caption_positions",
+      "status": "pass",
+      "message": "13 grupos distribuídos em sete regiões seguras"
+    },
+    {
+      "name": "follow_cta",
+      "status": "pass",
+      "message": "Botão + SEGUIR somente no final e dentro da safe zone"
+    },
+    {
+      "name": "camera_motion",
+      "status": "pass",
+      "message": "Cinco movimentos suaves, escala máxima 1,06 e deslocamento máximo 8px"
+    },
+    {
       "name": "caption_only_layout",
       "status": "pass",
-      "message": "Somente vídeo, legendas, áudio e overlays técnicos de debug"
+      "message": "Sem cabeçalhos ou transições; apenas captions, movimento e follow CTA final"
     },
     {
       "name": "preview_loudness",

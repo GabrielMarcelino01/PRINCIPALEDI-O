@@ -94,9 +94,24 @@ def main() -> int:
     safe_bottom = project["height"] - project["safeZones"]["bottom"]
     check("caption_safe_area", caption["top"] + 210 <= safe_bottom, f"Bloco estimado até {caption['top'] + 210}px; limite {safe_bottom}px")
     check("caption_scale", (caption["fontSize"], caption["serifFontSize"], caption["smallFontSize"]) == (76, 96, 42), "76px sans / 96px serifada / 42px conectores")
+    positions = project.get("captionPositions", {})
+    positions_ok = True
+    for group in project["groups"]:
+        position = positions.get(group.get("position"))
+        if not position or position.get("align") not in {"flex-start", "center", "flex-end"} or position.get("top", safe_bottom) + 210 > safe_bottom:
+            positions_ok = False
+    check("caption_positions", positions_ok and len(positions) >= 5, "13 grupos distribuídos em sete regiões seguras")
+    follow = project.get("followCta", {})
+    check("follow_cta", follow.get("text") == "SEGUIR" and follow.get("start", 0) >= 18 and follow.get("top", safe_bottom) + 86 <= safe_bottom, "Botão + SEGUIR somente no final e dentro da safe zone")
+    camera_ok = all(
+        scene.get("motion") and 1 <= scene["motion"]["scaleFrom"] <= 1.06 and 1 <= scene["motion"]["scaleTo"] <= 1.06
+        and max(abs(scene["motion"][key]) for key in ["xFrom", "xTo", "yFrom", "yTo"]) <= 8
+        for scene in project["scenes"]
+    )
+    check("camera_motion", camera_ok, "Cinco movimentos suaves, escala máxima 1,06 e deslocamento máximo 8px")
     component = (ROOT / "src" / "FashionReel.jsx").read_text(encoding="utf-8")
     forbidden = ["function Header", "function CutEffects", "<Header", "<CutEffects", "project.cta", "project.emphasisTimes"]
-    check("caption_only_layout", all(token not in component for token in forbidden) and "cta" not in project and "emphasisTimes" not in project, "Somente vídeo, legendas, áudio e overlays técnicos de debug")
+    check("caption_only_layout", all(token not in component for token in forbidden) and "cta" not in project and "emphasisTimes" not in project, "Sem cabeçalhos ou transições; apenas captions, movimento e follow CTA final")
 
     prepare = json.loads((ROOT / "fashion-prepare-report.json").read_text(encoding="utf-8"))
     audio = prepare["audio"]["aac_preview"]

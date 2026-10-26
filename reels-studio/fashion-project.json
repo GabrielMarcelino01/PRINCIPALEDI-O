@@ -25,7 +25,15 @@
       "colors": [
         "#b9f95a",
         "#ffad5c"
-      ]
+      ],
+      "motion": {
+        "scaleFrom": 1.02,
+        "scaleTo": 1.048,
+        "xFrom": 0,
+        "xTo": -5,
+        "yFrom": 2,
+        "yTo": -3
+      }
     },
     {
       "id": "look-1",
@@ -38,7 +46,15 @@
       "colors": [
         "#a8e6bd",
         "#171717"
-      ]
+      ],
+      "motion": {
+        "scaleFrom": 1.045,
+        "scaleTo": 1.02,
+        "xFrom": -4,
+        "xTo": 4,
+        "yFrom": -2,
+        "yTo": 2
+      }
     },
     {
       "id": "look-2",
@@ -51,7 +67,15 @@
       "colors": [
         "#e7cba7",
         "#ffffff"
-      ]
+      ],
+      "motion": {
+        "scaleFrom": 1.022,
+        "scaleTo": 1.05,
+        "xFrom": 4,
+        "xTo": -4,
+        "yFrom": 2,
+        "yTo": -2
+      }
     },
     {
       "id": "look-3",
@@ -64,7 +88,15 @@
       "colors": [
         "#91bcff",
         "#ffffff"
-      ]
+      ],
+      "motion": {
+        "scaleFrom": 1.046,
+        "scaleTo": 1.024,
+        "xFrom": -3,
+        "xTo": 5,
+        "yFrom": -3,
+        "yTo": 2
+      }
     },
     {
       "id": "look-4",
@@ -77,7 +109,15 @@
       "colors": [
         "#a51435",
         "#ffffff"
-      ]
+      ],
+      "motion": {
+        "scaleFrom": 1.022,
+        "scaleTo": 1.046,
+        "xFrom": 3,
+        "xTo": -3,
+        "yFrom": 2,
+        "yTo": -2
+      }
     }
   ],
   "groups": [
@@ -95,7 +135,8 @@
             "color": "#fff4e2"
           }
         ]
-      ]
+      ],
+      "position": "top-left"
     },
     {
       "id": "erro-cores",
@@ -133,7 +174,8 @@
             "color": "#ffad5c"
           }
         ]
-      ]
+      ],
+      "position": "bottom"
     },
     {
       "id": "erro",
@@ -155,7 +197,8 @@
             "color": "#ff706b"
           }
         ]
-      ]
+      ],
+      "position": "center-right"
     },
     {
       "id": "look-1-cores",
@@ -198,7 +241,8 @@
             "style": "small"
           }
         ]
-      ]
+      ],
+      "position": "center-left"
     },
     {
       "id": "look-1-estilo",
@@ -234,7 +278,8 @@
             "style": "normal"
           }
         ]
-      ]
+      ],
+      "position": "bottom"
     },
     {
       "id": "look-2-cores",
@@ -277,7 +322,8 @@
             "style": "small"
           }
         ]
-      ]
+      ],
+      "position": "center-right"
     },
     {
       "id": "look-2-estilo",
@@ -314,7 +360,8 @@
             "color": "#f5db78"
           }
         ]
-      ]
+      ],
+      "position": "bottom-left"
     },
     {
       "id": "look-3-camisa",
@@ -344,7 +391,8 @@
             "color": "#91bcff"
           }
         ]
-      ]
+      ],
+      "position": "center"
     },
     {
       "id": "look-3-calca",
@@ -372,7 +420,8 @@
             "color": "#ffffff"
           }
         ]
-      ]
+      ],
+      "position": "center-right"
     },
     {
       "id": "look-3-estilo",
@@ -409,7 +458,8 @@
             "color": "#91bcff"
           }
         ]
-      ]
+      ],
+      "position": "bottom"
     },
     {
       "id": "look-4-sweater",
@@ -431,7 +481,8 @@
             "color": "#ff949c"
           }
         ]
-      ]
+      ],
+      "position": "center-left"
     },
     {
       "id": "look-4-calca",
@@ -459,7 +510,8 @@
             "color": "#ffffff"
           }
         ]
-      ]
+      ],
+      "position": "bottom-right"
     },
     {
       "id": "look-4-estilo",
@@ -502,7 +554,8 @@
             "color": "#ff949c"
           }
         ]
-      ]
+      ],
+      "position": "center"
     }
   ],
   "showSafeZones": false,
@@ -518,5 +571,40 @@
     "fontSize": 76,
     "serifFontSize": 96,
     "smallFontSize": 42
+  },
+  "captionPositions": {
+    "top-left": {
+      "top": 220,
+      "align": "flex-start"
+    },
+    "center": {
+      "top": 940,
+      "align": "center"
+    },
+    "center-left": {
+      "top": 980,
+      "align": "flex-start"
+    },
+    "center-right": {
+      "top": 960,
+      "align": "flex-end"
+    },
+    "bottom": {
+      "top": 1210,
+      "align": "center"
+    },
+    "bottom-left": {
+      "top": 1210,
+      "align": "flex-start"
+    },
+    "bottom-right": {
+      "top": 1260,
+      "align": "flex-end"
+    }
+  },
+  "followCta": {
+    "start": 18.65,
+    "top": 1390,
+    "text": "SEGUIR"
   }
 }

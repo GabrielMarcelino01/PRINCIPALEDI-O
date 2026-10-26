@@ -237,18 +237,39 @@ def caption_groups() -> list[dict]:
 
 def write_project() -> None:
     scenes = [
-        {"id": "erro", "start": 0, "end": CUTS[0], "label": "O ERRO", "header": "NEON + LARANJA", "number": "", "accent": "#ff706b", "colors": ["#b9f95a", "#ffad5c"]},
-        {"id": "look-1", "start": CUTS[0], "end": CUTS[1], "label": "LOOK 01", "header": "VERDE + PRETO", "number": "01 / 04", "accent": "#a8e6bd", "colors": ["#a8e6bd", "#171717"]},
-        {"id": "look-2", "start": CUTS[1], "end": CUTS[2], "label": "LOOK 02", "header": "BEGE + BRANCO", "number": "02 / 04", "accent": "#e7cba7", "colors": ["#e7cba7", "#ffffff"]},
-        {"id": "look-3", "start": CUTS[2], "end": CUTS[3], "label": "LOOK 03", "header": "AZUL + BRANCO", "number": "03 / 04", "accent": "#91bcff", "colors": ["#91bcff", "#ffffff"]},
-        {"id": "look-4", "start": CUTS[3], "end": DURATION, "label": "LOOK 04", "header": "VERMELHO + BRANCO", "number": "04 / 04", "accent": "#ff949c", "colors": ["#a51435", "#ffffff"]},
+        {"id": "erro", "start": 0, "end": CUTS[0], "label": "O ERRO", "header": "NEON + LARANJA", "number": "", "accent": "#ff706b", "colors": ["#b9f95a", "#ffad5c"], "motion": {"scaleFrom": 1.020, "scaleTo": 1.048, "xFrom": 0, "xTo": -5, "yFrom": 2, "yTo": -3}},
+        {"id": "look-1", "start": CUTS[0], "end": CUTS[1], "label": "LOOK 01", "header": "VERDE + PRETO", "number": "01 / 04", "accent": "#a8e6bd", "colors": ["#a8e6bd", "#171717"], "motion": {"scaleFrom": 1.045, "scaleTo": 1.020, "xFrom": -4, "xTo": 4, "yFrom": -2, "yTo": 2}},
+        {"id": "look-2", "start": CUTS[1], "end": CUTS[2], "label": "LOOK 02", "header": "BEGE + BRANCO", "number": "02 / 04", "accent": "#e7cba7", "colors": ["#e7cba7", "#ffffff"], "motion": {"scaleFrom": 1.022, "scaleTo": 1.050, "xFrom": 4, "xTo": -4, "yFrom": 2, "yTo": -2}},
+        {"id": "look-3", "start": CUTS[2], "end": CUTS[3], "label": "LOOK 03", "header": "AZUL + BRANCO", "number": "03 / 04", "accent": "#91bcff", "colors": ["#91bcff", "#ffffff"], "motion": {"scaleFrom": 1.046, "scaleTo": 1.024, "xFrom": -3, "xTo": 5, "yFrom": -3, "yTo": 2}},
+        {"id": "look-4", "start": CUTS[3], "end": DURATION, "label": "LOOK 04", "header": "VERMELHO + BRANCO", "number": "04 / 04", "accent": "#ff949c", "colors": ["#a51435", "#ffffff"], "motion": {"scaleFrom": 1.022, "scaleTo": 1.046, "xFrom": 3, "xTo": -3, "yFrom": 2, "yTo": -2}},
     ]
+    caption_positions = {
+        "top-left": {"top": 220, "align": "flex-start"},
+        "center": {"top": 940, "align": "center"},
+        "center-left": {"top": 980, "align": "flex-start"},
+        "center-right": {"top": 960, "align": "flex-end"},
+        "bottom": {"top": 1210, "align": "center"},
+        "bottom-left": {"top": 1210, "align": "flex-start"},
+        "bottom-right": {"top": 1260, "align": "flex-end"},
+    }
+    group_positions = {
+        "lembre": "top-left", "erro-cores": "bottom", "erro": "center-right",
+        "look-1-cores": "center-left", "look-1-estilo": "bottom",
+        "look-2-cores": "center-right", "look-2-estilo": "bottom-left",
+        "look-3-camisa": "center", "look-3-calca": "center-right", "look-3-estilo": "bottom",
+        "look-4-sweater": "center-left", "look-4-calca": "bottom-right", "look-4-estilo": "center",
+    }
+    groups = caption_groups()
+    for item in groups:
+        item["position"] = group_positions[item["id"]]
     project = {
         "id": "edite-esse", "width": 1080, "height": 1920, "fps": FPS, "durationInFrames": FRAMES,
         "duration": DURATION, "video": "fashion-source.mp4", "audio": "fashion-soundtrack.wav",
-        "cuts": CUTS, "scenes": scenes, "groups": caption_groups(), "showSafeZones": False,
+        "cuts": CUTS, "scenes": scenes, "groups": groups, "showSafeZones": False,
         "safeZones": {"top": 200, "bottom": 420, "left": 60, "right": 100},
         "captionStyle": {"top": 1210, "maxWidth": 940, "fontSize": 76, "serifFontSize": 96, "smallFontSize": 42},
+        "captionPositions": caption_positions,
+        "followCta": {"start": 18.65, "top": 1390, "text": "SEGUIR"},
     }
     (ROOT / "fashion-project.json").write_text(json.dumps(project, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     def timestamp(value: float) -> str:

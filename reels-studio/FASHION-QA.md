@@ -1,4 +1,4 @@
-# QA — EDITE-ESSE | legenda interativa
+# QA — EDITE-ESSE | formato completo
 
 **Data:** 2026-10-26  
 **Resultado técnico:** PASS — 0 falhas e 0 avisos nos validadores.  
@@ -9,8 +9,8 @@
 | Campo | Resultado |
 | --- | --- |
 | Caminho | `out/edite-esse-final.mp4` |
-| Tamanho | 21.647.654 bytes |
-| SHA-256 | `27e94a3d6592f405b12a9ffefc819d2c8edd2abbe8f1ac9d11e57a5a1b32ea6e` |
+| Tamanho | 19.266.952 bytes |
+| SHA-256 | `f487f22df02ccfa6655844d872a68647b0a5281c4dd0408e1b96419aefb991b4` |
 | Duração do contêiner | 20,523 s |
 | Vídeo | H.264 High, 1080×1920, 30 fps, 614 frames, 20,467 s |
 | Cor | `yuv420p`, faixa TV, primárias/transferência/matriz BT.709 |
@@ -21,16 +21,18 @@
 
 O master de render é WAV PCM 24 bits/48 kHz, convertido uma única vez para AAC. Os metadados BT.709 são aplicados por stream copy, sem reencodificação adicional.
 
-## Revisão visual desta versão
+## Formato desta versão
 
-- Somente vídeo e legenda; sem cabeçalhos, CTA ou barra de progresso.
-- Sem zoom, punch-in, flash, swipe ou outros efeitos nos quatro cortes.
-- Trilha sem whooshes/impactos de transição; somente voz e música.
+- Sem cabeçalhos, barra de progresso, flashes, swipes ou efeitos sonoros de transição.
 - Legenda ampliada para **76 px sans / 96 px serifada / 42 px conectores**.
-- Entrada palavra por palavra nos timestamps da fala.
-- Sublinhado progressivo nas palavras-chave e ênfase cromática.
+- Entrada palavra por palavra nos timestamps, sublinhado progressivo e ênfase cromática.
 - “Horrível” com shake curto; “minimalista” com entrada contida; “vivo” com pulso maior.
-- Animações implementadas com `spring`/`interpolate` do Remotion, sem dependência adicional de animação.
+- Legendas distribuídas em **sete regiões seguras**, com alinhamento à esquerda, centro ou direita conforme o enquadramento.
+- Cinco movimentos de câmera suaves, com escala entre 1,020 e 1,050 e deslocamentos máximos de 5px.
+- Botão **+ SEGUIR** a partir de 18,65s, com entrada spring, pulso discreto e brilho; sem inventar handle do perfil.
+- Trilha sem whooshes/impactos de transição; somente voz e música.
+- Animações implementadas com `spring`/`interpolate` do Remotion.
+- Preset para próximos vídeos documentado em `FASHION.md`.
 
 ## Validações executadas
 
@@ -38,13 +40,15 @@ O master de render é WAV PCM 24 bits/48 kHz, convertido uma única vez para AAC
 
 Comando: `npm run qa:fashion:project`
 
-- **22/22 checagens passaram**;
+- **25/25 checagens passaram**;
 - 13 grupos de captions e 45 palavras com timestamps válidos;
 - todos os seis segmentos conferem com a transcrição revisada;
 - tamanhos 76/96/42 confirmados;
-- ausência de cabeçalho, CTA e efeitos de transição confirmada no código;
-- trilha sem SFX de transição confirmada;
-- assets, fontes, loudness da prévia e hash do original confirmados.
+- sete regiões de captions e seus limites confirmados;
+- cinco movimentos dentro dos limites de escala/deslocamento;
+- botão de seguir no final e dentro da safe zone;
+- ausência de cabeçalhos e efeitos de transição confirmada no código;
+- trilha sem SFX de transição, assets, fontes e hash do original confirmados.
 
 Relatório: `reports/fashion-project-qa.json`.
 
@@ -84,17 +88,19 @@ Relatório: `reports/fashion-video-qa.json`.
 
 ## Revisão visual efetivamente realizada
 
-- storyboard Remotion com 12 quadros;
-- quatro frases completas em resolução cheia, incluindo as serifadas mais longas;
-- 12 amostras extraídas do MP4 codificado;
-- sequência de oito quadros da entrada/animação de “horrível”;
-- oito quadros exatos nos quatro cortes para confirmar a ausência de flashes/swipes.
+- storyboard Remotion com 12 quadros e as novas regiões de captions;
+- abertura superior, legenda central e CTA final em resolução cheia;
+- botão conferido novamente em frame extraído do MP4 codificado;
+- 12 amostras do arquivo final;
+- revisão anterior das frases completas e da sequência de oito quadros de “horrível” mantida para o formato de captions;
+- cortes sem flashes/swipes verificados na versão anterior e ausência desses componentes confirmada nesta por código.
 
-Foram verificados nessas amostras: enquadramento, tamanho das captions, ausência de corte de texto, contraste, acentos, entrada progressiva das palavras e ausência dos elementos removidos.
+Foram verificados nas amostras: enquadramento, rostos livres, posição das captions, ausência de corte de texto, contraste, acentos e dimensão/localização do botão.
 
 ## Limites desta revisão
 
 - **Não houve playback integral do MP4 nem escuta subjetiva da mixagem.** As medições de áudio são técnicas, não uma avaliação estética por escuta.
+- Os movimentos foram validados por código e frames amostrados; não houve avaliação de playback integral em tempo real.
 - A sincronia usa timestamps do Whisper e revisão visual amostrada; não houve forced alignment independente ou conferência de cada palavra por escuta.
 - As safe zones foram calculadas e conferidas nos renders, **não em um celular físico**.
 - A ausência de alertas de preto/congelamento não substitui assistir a todos os frames em tempo real.

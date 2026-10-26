@@ -14,13 +14,16 @@ if (!Number.isInteger(publicPort) || !Number.isInteger(internalPort) || publicPo
   throw new Error('As portas pública e interna do Studio precisam ser inteiros diferentes.');
 }
 
+const loopbackHook = path.join(root, 'scripts/bind-studio-loopback.cjs');
+const nodeOptions = [process.env.NODE_OPTIONS, `--require=${loopbackHook}`].filter(Boolean).join(' ');
+
 const studio = spawn(process.execPath, [
   path.join(root, 'node_modules/@remotion/cli/remotion-cli.js'),
   'studio', 'src/FashionRoot.jsx',
   '--port', String(internalPort), '--no-open', '--ipv4',
 ], {
   cwd: root,
-  env: process.env,
+  env: {...process.env, NODE_OPTIONS: nodeOptions, FASHION_STUDIO_INTERNAL_PORT: String(internalPort)},
   stdio: ['ignore', 'inherit', 'inherit'],
 });
 

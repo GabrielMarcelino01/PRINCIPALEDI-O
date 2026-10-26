@@ -57,8 +57,11 @@ A análise foi feita por folhas de contato e quadros amostrados; não houve play
 - entrada palavra por palavra nos timestamps, sublinhado progressivo e ênfase por cor;
 - “horrível” com shake curto, “minimalista” com entrada contida e “vivo” com pulso maior;
 - cores específicas para neon/laranja, verde/preto, bege/branco, azul/branco e vermelho/branco;
-- **sem cabeçalhos, CTA, barra de progresso, zooms, flashes, swipes ou efeitos sonoros de transição**;
-- somente o vídeo e a legenda interativa, preservando os cortes naturais do original;
+- **sem cabeçalhos, barra de progresso, flashes, swipes ou efeitos sonoros de transição**;
+- cinco movimentos de câmera suaves, com escala máxima de 1,05 e deslocamentos de até 5px;
+- legendas distribuídas em sete regiões seguras, com alinhamento e posição revistos para não cobrir rostos;
+- botão **+ SEGUIR** com entrada spring, pulso discreto e brilho, somente a partir de 18,65s;
+- vídeo, legenda interativa e follow CTA final, preservando os cortes naturais do original;
 - **nenhum frame das referências foi inserido na edição**, evitando misturar pessoas e roupas que não pertencem ao vídeo principal.
 
 ## Cortes detectados
@@ -89,6 +92,19 @@ Os tempos foram detectados por diferença de cena e conferidos contra os quadros
 Foi usado Whisper small/CTranslate2 int8 em inferência local e offline, com timestamps por palavra. O checksum do modelo foi validado antes do uso; o modelo não é versionado.
 
 O ASR reconheceu “beijo” na terceira frase. Foi corrigido para **“bege”** pela combinação narrada e pelo look exibido. A validação automática compara todos os grupos de captions com os seis segmentos revisados.
+
+## Preset para os próximos vídeos
+
+Manter a composição `FashionReel` e a estrutura orientada por dados de `fashion-project.json`:
+
+1. Inter/Playfair, captions 76/96/42px e no máximo duas linhas.
+2. Entrada por palavra nos timestamps, sublinhado progressivo e movimentos discretos ligados ao sentido da fala.
+3. Posições definidas por `captionPositions` e por grupo; **revisar os rostos de cada novo vídeo antes de escolher a região**.
+4. Movimentos por cena em `scenes[].motion`, sempre sutis e sem flashes/swipes entre cortes.
+5. `followCta` somente no fechamento, dentro da safe zone e sem inventar handle ou identidade do perfil.
+6. Sem cabeçalhos, barra de progresso ou SFX de transição; manter voz, música, ducking e loudness em −14 LUFS/−1 dBTP.
+
+Para um novo vídeo, devem ser substituídos o original, a transcrição, os tempos dos grupos e as cenas. O formato é reutilizado; os timestamps e enquadramentos deste EDITE-ESSE não devem ser copiados cegamente.
 
 ## Reproduzir
 
