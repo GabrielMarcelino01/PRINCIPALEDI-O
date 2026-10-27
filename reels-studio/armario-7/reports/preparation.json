@@ -1,0 +1,16 @@
+{
+  "project": "armario-7",
+  "source_sha256": "cae26c943b49b427e36b63d83f1430cf4d47fc38b74dd1294c2a8b11d9f0cc21",
+  "frames": 1293,
+  "duration": 21.55,
+  "cuts": [
+    4.99499,
+    8.76966,
+    12.5684,
+    16.4527
+  ],
+  "segments": 5,
+  "words": 42,
+  "caption_groups": 10,
+  "scenes": 5
+}

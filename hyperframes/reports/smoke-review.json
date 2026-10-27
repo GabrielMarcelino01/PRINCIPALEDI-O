@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "scope": "Revisão por quadros do projeto e do MP4 codificado; não é playback nem escuta integral.",
+  "source_snapshot_times_seconds": [
+    0,
+    0.5,
+    1.5,
+    2.95
+  ],
+  "encoded_frame_indices": [
+    0,
+    30,
+    90,
+    177
+  ],
+  "encoded_contact_sheet": "hyperframes/reports/smoke-encoded-contact-sheet.jpg",
+  "issues_found_and_fixed": [
+    {
+      "issue": "A seta Unicode virou NO GLYPH na fonte empacotada.",
+      "fix": "Substituída por > ASCII; check e snapshots repetidos.",
+      "status": "fixed"
+    }
+  ],
+  "checks": {
+    "first_frame_readable": true,
+    "text_inside_safe_area": true,
+    "no_missing_glyph_after_fix": true,
+    "motion_visible_between_samples": true,
+    "encoded_frames_match_intended_design": true
+  },
+  "audio": "Sem áudio intencionalmente; não houve escuta."
+}

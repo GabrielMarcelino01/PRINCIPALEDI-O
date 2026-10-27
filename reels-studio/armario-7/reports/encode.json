@@ -1,0 +1,40 @@
+{
+  "project": "armario-7",
+  "frames": 1293,
+  "fps": 60,
+  "duration": 21.55,
+  "source": {
+    "original": "reels-studio/assets/armario-7/ARMARIO-7.mp4",
+    "sha256": "cae26c943b49b427e36b63d83f1430cf4d47fc38b74dd1294c2a8b11d9f0cc21",
+    "indexed_frames": 1293
+  },
+  "video": {
+    "codec": "H.264 High",
+    "crf": 17,
+    "preset": "slow",
+    "pixel_format": "yuv420p",
+    "color": "BT.709 limited range"
+  },
+  "audio": {
+    "source": "Somente o áudio original; sem trilha, sound design ou efeitos",
+    "target": {
+      "i": -14,
+      "tp": -1.5,
+      "lra": 9
+    },
+    "measured": {
+      "input_i": "-24.74",
+      "input_tp": "-9.45",
+      "input_lra": "2.40",
+      "input_thresh": "-35.48",
+      "output_i": "-14.38",
+      "output_tp": "-1.50",
+      "output_lra": "1.90",
+      "output_thresh": "-24.97",
+      "normalization_type": "dynamic",
+      "target_offset": "0.38"
+    },
+    "aac_bitrate": "192k"
+  },
+  "delivery": "entregas/ARMARIO-7-EDITADO.mp4"
+}

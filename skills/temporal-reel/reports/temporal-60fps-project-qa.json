@@ -1,0 +1,203 @@
+{
+  "project": "temporal-60fps",
+  "status": "pass",
+  "summary": {
+    "checks": 28,
+    "passed": 28,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "vertical_1080x1920",
+      "status": "pass",
+      "detail": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "name": "fps_60",
+      "status": "pass",
+      "detail": 60
+    },
+    {
+      "name": "integer_frames",
+      "status": "pass",
+      "detail": 360
+    },
+    {
+      "name": "duration_matches_frames",
+      "status": "pass",
+      "detail": {
+        "frames": 360,
+        "fps": 60,
+        "duration": 6
+      }
+    },
+    {
+      "name": "pure_clock_contract",
+      "status": "pass",
+      "detail": "window.seek(t) + t = frame / fps"
+    },
+    {
+      "name": "configuration_bridge",
+      "status": "pass",
+      "detail": "window.__setTimeline(config)"
+    },
+    {
+      "name": "no_audio_placeholder",
+      "status": "pass",
+      "detail": "Demo visual sem faixa de áudio; não há silêncio apresentado como mix."
+    },
+    {
+      "name": "three_scenes",
+      "status": "pass",
+      "detail": 3
+    },
+    {
+      "name": "scene_order",
+      "status": "pass",
+      "detail": [
+        "tempo",
+        "ritmo",
+        "precisao"
+      ]
+    },
+    {
+      "name": "scene_bounds",
+      "status": "pass",
+      "detail": [
+        [
+          0,
+          2.2
+        ],
+        [
+          1.65,
+          4.25
+        ],
+        [
+          3.6,
+          6
+        ]
+      ]
+    },
+    {
+      "name": "smooth_transitions",
+      "status": "pass",
+      "detail": [
+        "continuous camera + typographic springs",
+        "time-driven horizontal mask",
+        "time-driven circular mask + final lockup"
+      ]
+    },
+    {
+      "name": "review_in_range",
+      "status": "pass",
+      "detail": [
+        0,
+        24,
+        60,
+        99,
+        108,
+        150,
+        180,
+        216,
+        240,
+        285,
+        315,
+        359
+      ]
+    },
+    {
+      "name": "first_and_last_reviewed",
+      "status": "pass",
+      "detail": {
+        "first": true,
+        "last": true
+      }
+    },
+    {
+      "name": "verification_in_range",
+      "status": "pass",
+      "detail": [
+        0,
+        99,
+        180,
+        240,
+        315,
+        359
+      ]
+    },
+    {
+      "name": "rule_randomness",
+      "status": "pass",
+      "detail": false
+    },
+    {
+      "name": "rule_cssAnimations",
+      "status": "pass",
+      "detail": false
+    },
+    {
+      "name": "rule_timers",
+      "status": "pass",
+      "detail": false
+    },
+    {
+      "name": "rule_stateCarriedBetweenFrames",
+      "status": "pass",
+      "detail": false
+    },
+    {
+      "name": "ban_math_random",
+      "status": "pass",
+      "detail": "not found"
+    },
+    {
+      "name": "ban_date_now",
+      "status": "pass",
+      "detail": "not found"
+    },
+    {
+      "name": "ban_new_date",
+      "status": "pass",
+      "detail": "not found"
+    },
+    {
+      "name": "ban_performance_now",
+      "status": "pass",
+      "detail": "not found"
+    },
+    {
+      "name": "ban_set_timeout",
+      "status": "pass",
+      "detail": "not found"
+    },
+    {
+      "name": "ban_set_interval",
+      "status": "pass",
+      "detail": "not found"
+    },
+    {
+      "name": "ban_animation_frame_clock",
+      "status": "pass",
+      "detail": "not found"
+    },
+    {
+      "name": "no_css_time_driven_animation",
+      "status": "pass",
+      "detail": "not found"
+    },
+    {
+      "name": "local_timeline_script",
+      "status": "pass",
+      "detail": "timeline.js"
+    },
+    {
+      "name": "no_remote_assets",
+      "status": "pass",
+      "detail": "all assets local"
+    }
+  ],
+  "scope": "Validação estática da timeline e do código. O render valida adicionalmente pixels repetidos fora de ordem e o MP4 codificado."
+}

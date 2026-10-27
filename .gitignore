@@ -13,6 +13,8 @@ __pycache__/
 out/
 renders/
 artifacts/
+.hyperframes/
+.hf-tmp/
 
 # Arquivos locais e credenciais
 .env

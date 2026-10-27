@@ -1,0 +1,50 @@
+{
+  "file": "out/reels-pro-demo.mp4",
+  "sha256": "d00be93c81f27149cdc280402a15906c7105ac7951d2448239a69de9695c1762",
+  "size_bytes": 6229856,
+  "top_level_boxes": [
+    "ftyp",
+    "moov",
+    "free",
+    "mdat"
+  ],
+  "faststart": true,
+  "render_audio": {
+    "source": "public/soundtrack.wav",
+    "source_format": "PCM signed 24-bit little-endian, 48 kHz stereo",
+    "lossy_audio_encodes_in_delivery": 1
+  },
+  "automated_qa": {
+    "project": "PASS",
+    "captions": "pass",
+    "video": "pass",
+    "video_failures": 0,
+    "video_warnings": 0
+  },
+  "visual_review": {
+    "scope": "Inspeção visual por amostragem; não é playback em tempo real.",
+    "composition_frames": [
+      55,
+      250,
+      430,
+      620,
+      850,
+      1100
+    ],
+    "encoded_video_samples": 20,
+    "encoded_contact_sheet": "out/final-contact.jpg",
+    "safe_zone_overlay": "out/safe-zones.jpg",
+    "corrections_after_inspection": [
+      "Separação entre anel e SEGUNDOS",
+      "Separação entre cartões de loudness e caption",
+      "Setas substituídas por SVG após NO GLYPH",
+      "Entrada de captions ajustada para microanimação curta"
+    ]
+  },
+  "not_performed": [
+    "Playback integral em tempo real",
+    "Escuta subjetiva em caixas/fones",
+    "Revisão em celular",
+    "Upload ou validação na interface do Instagram"
+  ]
+}

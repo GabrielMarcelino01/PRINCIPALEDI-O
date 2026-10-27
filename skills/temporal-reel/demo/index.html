@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1080,height=1920,initial-scale=1">
+<title>TEMPORAL — 60 fps</title>
+<style>
+@font-face{font-family:Inter;src:url('../../../reels-studio/public/fonts/inter-latin-wght-normal.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:block}
+@font-face{font-family:Playfair;src:url('../../../reels-studio/public/fonts/playfair-display-latin-wght-italic.woff2') format('woff2');font-style:italic;font-weight:400 900;font-display:block}
+:root{font-family:Inter,Arial,sans-serif;color:#f5f4ee;background:#0b1118;font-synthesis:none}
+*{box-sizing:border-box}html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#0b1118}body{position:relative}
+.scene{position:absolute;inset:0;overflow:hidden;transform-origin:50% 50%;isolation:isolate}
+.camera{position:absolute;inset:0;transform-origin:50% 50%}
+.grid{position:absolute;inset:0;opacity:.13;background-image:linear-gradient(rgba(255,255,255,.16) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.16) 1px,transparent 1px);background-size:90px 90px}
+.topbar{position:absolute;left:84px;right:84px;top:92px;display:flex;align-items:center;justify-content:space-between;font-size:25px;font-weight:650;letter-spacing:.18em;text-transform:uppercase;z-index:20}
+.topbar .brand{display:flex;align-items:center;gap:18px}.brand-dot{width:15px;height:15px;border-radius:50%;background:currentColor;box-shadow:0 0 0 8px color-mix(in srgb,currentColor 18%,transparent)}
+.topline{position:absolute;left:84px;right:84px;top:144px;height:2px;background:currentColor;opacity:.22;transform-origin:left center;z-index:20}
+.footer{position:absolute;left:84px;right:84px;bottom:82px;display:flex;justify-content:space-between;align-items:flex-end;font-size:22px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;z-index:30}
+.footer .timecode{font-variant-numeric:tabular-nums;letter-spacing:.08em;opacity:.72}
+.progress-track{position:absolute;left:84px;right:84px;bottom:54px;height:3px;background:rgba(255,255,255,.18);z-index:30}.progress-fill{height:100%;background:currentColor;transform-origin:left center}
+.kicker{font-size:25px;line-height:1.2;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+.pill{display:inline-flex;align-items:center;gap:16px;border:2px solid currentColor;border-radius:999px;padding:17px 25px;font-size:23px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.headline{margin:0;font-size:154px;line-height:.88;font-weight:820;letter-spacing:-.068em;text-transform:uppercase}
+.headline .serif,.serif{font-family:Playfair,Georgia,serif;font-style:italic;font-weight:600;text-transform:none;letter-spacing:-.045em}
+.word{display:block;transform-origin:left center;will-change:auto}
+.copy{font-size:34px;line-height:1.42;font-weight:480;letter-spacing:-.018em}
+.accent-line{height:8px;width:260px;transform-origin:left center;border-radius:8px}
+/* Cena 1 */
+#scene-1{background:#0b1118;color:#f4f2e9}
+#scene-1 .wash{position:absolute;inset:0;background:radial-gradient(circle at 79% 37%,rgba(77,255,202,.17),transparent 34%),radial-gradient(circle at 10% 80%,rgba(90,104,255,.14),transparent 37%)}
+#scene-1 .content{position:absolute;left:84px;top:330px;width:920px;z-index:5}
+#scene-1 .headline{margin-top:58px;font-size:166px}
+#scene-1 .mint{color:#9effdc}
+#scene-1 .copy{position:absolute;left:90px;top:1130px;width:590px;color:#d5dedc}
+#scene-1 .accent-line{position:absolute;left:90px;top:1070px;background:#9effdc}
+#scene-1 .formula{position:absolute;left:90px;top:1370px;font-size:27px;letter-spacing:.14em;font-weight:650;color:#9effdc}
+.orbit{position:absolute;width:610px;height:610px;right:-160px;top:840px;border:2px solid rgba(158,255,220,.42);border-radius:50%;transform-origin:center}
+.orbit.two{width:440px;height:440px;right:-75px;top:925px;border-style:dashed;opacity:.55}
+.orbit-dot{position:absolute;width:32px;height:32px;border-radius:50%;background:#9effdc;left:50%;top:-16px;box-shadow:0 0 40px rgba(158,255,220,.35)}
+.scene-number{position:absolute;right:76px;top:270px;font-size:26px;letter-spacing:.15em;writing-mode:vertical-rl;opacity:.5}
+/* Cena 2 */
+#scene-2{background:#ece6da;color:#17191c}
+#scene-2 .wash{position:absolute;inset:0;background:radial-gradient(circle at 82% 22%,rgba(255,90,54,.18),transparent 33%),linear-gradient(115deg,transparent 55%,rgba(255,255,255,.35))}
+#scene-2 .grid{background-image:linear-gradient(rgba(23,25,28,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(23,25,28,.13) 1px,transparent 1px);opacity:.18}
+#scene-2 .content{position:absolute;left:84px;top:350px;width:930px;z-index:4}
+#scene-2 .headline{font-size:151px;margin-top:52px}
+#scene-2 .orange{color:#f2542d}
+#scene-2 .copy{position:absolute;left:90px;top:1120px;width:670px;color:#3d4145}
+#scene-2 .accent-line{position:absolute;left:90px;top:1060px;background:#f2542d}
+#scene-2 .footer{color:#17191c}.progress-track.dark{background:rgba(23,25,28,.16)}
+.rhythm-bars{position:absolute;right:84px;top:1235px;width:510px;height:270px;display:flex;align-items:flex-end;gap:18px;transform:rotate(-8deg);transform-origin:right bottom}
+.rhythm-bars span{display:block;width:42px;background:#17191c;border-radius:24px 24px 4px 4px;transform-origin:center bottom}
+.rhythm-bars span:nth-child(3n){background:#f2542d}
+#scene-2 .micro{position:absolute;left:90px;top:1395px;font-size:24px;letter-spacing:.17em;font-weight:700}
+/* Cena 3 */
+#scene-3{background:#16121e;color:#f4f0fa}
+#scene-3 .wash{position:absolute;inset:0;background:radial-gradient(circle at 50% 42%,rgba(190,159,255,.22),transparent 37%),radial-gradient(circle at 90% 85%,rgba(217,255,108,.10),transparent 30%)}
+#scene-3 .content{position:absolute;left:84px;top:315px;width:930px;text-align:center;z-index:4}
+#scene-3 .headline{font-size:148px;margin-top:48px}
+#scene-3 .big-number{font-size:360px;line-height:.78;letter-spacing:-.09em;color:#d9ff6c}
+#scene-3 .lavender{color:#ceb9ff}
+#scene-3 .copy{position:absolute;left:155px;top:1110px;width:770px;text-align:center;color:#d8d1df}
+.precision-timeline{position:absolute;left:110px;right:110px;top:1370px;height:170px;border-top:2px solid rgba(255,255,255,.24);padding-top:30px}
+.ticks{height:86px;display:flex;align-items:flex-start;justify-content:space-between;gap:0}.ticks span{display:block;width:3px;height:36px;background:#8d8497;transform-origin:top center}.ticks span.major{height:74px;background:#d9ff6c}
+.playhead{position:absolute;top:-13px;width:26px;height:26px;border-radius:50%;background:#d9ff6c;box-shadow:0 0 0 12px rgba(217,255,108,.12)}
+#final-lockup{position:absolute;inset:0;z-index:10;background:linear-gradient(180deg,rgba(22,18,30,.1),rgba(22,18,30,.96) 24%,#16121e 45%);text-align:center}
+#final-lockup .inner{position:absolute;left:80px;right:80px;top:510px}
+#final-lockup .headline{font-size:137px;line-height:.92;margin-top:64px}
+#final-lockup .spec{display:inline-block;margin-top:82px;border:2px solid #d9ff6c;color:#d9ff6c;border-radius:999px;padding:20px 30px;font-size:24px;font-weight:720;letter-spacing:.13em}
+.mask-edge{position:absolute;top:0;bottom:0;width:5px;background:#f2542d;z-index:40;transform-origin:center}
+</style>
+</head>
+<body>
+<section class="scene" id="scene-1">
+  <div class="camera" id="camera-1"><div class="wash"></div><div class="grid"></div>
+    <div class="orbit" id="orbit-1"><i class="orbit-dot"></i></div><div class="orbit two" id="orbit-2"><i class="orbit-dot"></i></div>
+    <div class="content"><div class="pill" data-enter="-0.25">Motion system / 001</div>
+      <h1 class="headline"><span class="word" data-enter="-0.12">O tempo</span><span class="word mint" data-enter="0.24">move</span><span class="word serif mint" data-enter="0.42">tudo.</span></h1>
+    </div>
+    <div class="accent-line" data-line="0.86"></div><div class="copy" data-enter="0.90">Cada quadro calculado.<br>Nenhum movimento ao acaso.</div>
+    <div class="formula" data-enter="1.15">T = QUADRO / 60</div><div class="scene-number">CENA 01 — TEMPO</div>
+  </div>
+</section>
+<section class="scene" id="scene-2">
+  <div class="camera" id="camera-2"><div class="wash"></div><div class="grid"></div>
+    <div class="content"><div class="kicker" data-enter="1.82">02 / Tipografia cinética</div>
+      <h2 class="headline"><span class="word" data-enter="1.95">Ritmo</span><span class="word" data-enter="2.12">que</span><span class="word serif orange" data-enter="2.29">prende.</span></h2>
+    </div>
+    <div class="accent-line" data-line="2.58"></div><div class="copy" data-enter="2.62">Hierarquia. Entrada. Ênfase.<br>Uma ideia conduzindo a próxima.</div>
+    <div class="rhythm-bars" id="rhythm-bars"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="micro" data-enter="2.92">POP-IN → STAGGER → ÊNFASE</div><div class="scene-number">CENA 02 — RITMO</div>
+  </div><div class="mask-edge" id="mask-edge"></div>
+</section>
+<section class="scene" id="scene-3">
+  <div class="camera" id="camera-3"><div class="wash"></div><div class="grid"></div>
+    <div id="precision-main"><div class="content"><div class="kicker" data-enter="3.78">03 / Câmera + gráficos</div>
+      <div class="big-number" data-enter="3.90">60</div><h2 class="headline"><span class="word" data-enter="4.06">quadros.</span><span class="word serif lavender" data-enter="4.20">por segundo.</span></h2></div>
+      <div class="copy" data-enter="4.42">Tela, câmera e transição<br>na mesma linha do tempo.</div>
+      <div class="precision-timeline"><div class="ticks" id="ticks"></div><div class="playhead" id="playhead"></div></div>
+    </div>
+    <div id="final-lockup"><div class="inner"><div class="kicker" data-enter="5.05">Render determinístico</div>
+      <h2 class="headline"><span class="word" data-enter="5.15">Quadro</span><span class="word" data-enter="5.25">a quadro.</span><span class="word serif lavender" data-enter="5.36">até o MP4.</span></h2>
+      <div class="spec" data-enter="5.48">1080 × 1920 &nbsp;•&nbsp; 60 FPS</div></div></div>
+    <div class="scene-number">CENA 03 — PRECISÃO</div>
+  </div>
+</section>
+<div id="hud">
+  <div class="topbar"><div class="brand"><i class="brand-dot"></i><span>Temporal</span></div><span id="chapter">01 / 03</span></div><div class="topline" id="topline"></div>
+  <div class="footer"><span id="footer-label">Função do tempo</span><span class="timecode" id="timecode">T 0.000 / F 000</span></div>
+  <div class="progress-track" id="progress-track"><div class="progress-fill" id="progress"></div></div>
+</div>
+<script src="./timeline.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "source_sha256": "55010ad5a20333c661a2dec1348235bcf22a466f60fa5e67da6f54e2aedd6f1d",
+  "source_frames": 1246,
+  "source_frames_directory": "out/source-frames",
+  "sequence_manifest_sha256": "4e8c5c4ab4335e4779685b442a8426e27d37fa1b2b04900fb052387f5f52e76e",
+  "method": "Upload original -> tpad + fps=60 -> JPEG q1 indexado; o Chromium lê o arquivo do quadro, sem seek de vídeo"
+}

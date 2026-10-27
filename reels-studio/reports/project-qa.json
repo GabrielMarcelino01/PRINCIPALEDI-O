@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "scope": "Estrutura da timeline e presença de assets; não é inspeção do MP4 nem revisão audiovisual.",
+  "summary": {
+    "checks": 18,
+    "passed": 18,
+    "failed": 0,
+    "scenes": 6,
+    "caption_groups": 13,
+    "words": 29
+  },
+  "checks": [
+    {
+      "name": "dimensions",
+      "status": "pass",
+      "message": "1080x1920"
+    },
+    {
+      "name": "frame_rate",
+      "status": "pass",
+      "message": "60 fps"
+    },
+    {
+      "name": "duration",
+      "status": "pass",
+      "message": "1200 frames"
+    },
+    {
+      "name": "scene_count",
+      "status": "pass",
+      "message": "6 cenas"
+    },
+    {
+      "name": "unique_scene_ids",
+      "status": "pass",
+      "message": "IDs únicos"
+    },
+    {
+      "name": "waveform",
+      "status": "pass",
+      "message": "160 bins normalizados"
+    },
+    {
+      "name": "audio_asset",
+      "status": "pass",
+      "message": "public/soundtrack.wav"
+    },
+    {
+      "name": "font_asset",
+      "status": "pass",
+      "message": "public/fonts/inter-latin-wght-normal.woff2"
+    },
+    {
+      "name": "font_license",
+      "status": "pass",
+      "message": "public/fonts/INTER-LICENSE.txt"
+    },
+    {
+      "name": "safe_zone_horizontal",
+      "status": "pass",
+      "message": "caption <= 900 px"
+    },
+    {
+      "name": "safe_zone_vertical",
+      "status": "pass",
+      "message": "caption top 1190 px; limite inferior 1480 px"
+    },
+    {
+      "name": "scene_timeline",
+      "status": "pass",
+      "message": "Cenas contíguas, sem lacunas, total de 1.200 frames"
+    },
+    {
+      "name": "voice_fit",
+      "status": "pass",
+      "message": "Todas as locuções limpas cabem nas cenas com respiro"
+    },
+    {
+      "name": "caption_groups",
+      "status": "pass",
+      "message": "13 grupos ordenados, dentro das cenas e sem sobreposição"
+    },
+    {
+      "name": "word_timing",
+      "status": "pass",
+      "message": "29 palavras com intervalos positivos e contíguos"
+    },
+    {
+      "name": "soundtrack_loudness",
+      "status": "pass",
+      "message": "-14.0 LUFS; alvo −14 ± 0,5"
+    },
+    {
+      "name": "soundtrack_true_peak",
+      "status": "pass",
+      "message": "-1.0 dBTP; máximo −1"
+    },
+    {
+      "name": "srt_sidecar",
+      "status": "pass",
+      "message": "captions.srt presente; sintaxe validada separadamente"
+    }
+  ]
+}

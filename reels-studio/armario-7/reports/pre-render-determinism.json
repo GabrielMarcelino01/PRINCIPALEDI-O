@@ -1,0 +1,66 @@
+{
+  "method": "10 alvos em dois processos Chromium independentes, com ordens de captura invertidas; composição sem sublinhado ou brilho variável",
+  "all_byte_identical": true,
+  "results": [
+    {
+      "frame": 30,
+      "byte_identical": true,
+      "history_sha256": "f8d1e6af5ab9d73f3751647f5267f549d10e5594d22913a2184e291132738751",
+      "fresh_sha256": "f8d1e6af5ab9d73f3751647f5267f549d10e5594d22913a2184e291132738751"
+    },
+    {
+      "frame": 180,
+      "byte_identical": true,
+      "history_sha256": "a66cccaea49497a03bfc2a7f0754c2e9b20e00b7de9e4481033ac252c5b43747",
+      "fresh_sha256": "a66cccaea49497a03bfc2a7f0754c2e9b20e00b7de9e4481033ac252c5b43747"
+    },
+    {
+      "frame": 300,
+      "byte_identical": true,
+      "history_sha256": "f9f13b90830a65b49bf2b07c7116e9e61a8dfe92f9c64cc91bd6d6e113cbd675",
+      "fresh_sha256": "f9f13b90830a65b49bf2b07c7116e9e61a8dfe92f9c64cc91bd6d6e113cbd675"
+    },
+    {
+      "frame": 360,
+      "byte_identical": true,
+      "history_sha256": "d2a5c0b5383226147bfa218d2bb4ff1655029dbfaed35b2d6373b260de5da18c",
+      "fresh_sha256": "d2a5c0b5383226147bfa218d2bb4ff1655029dbfaed35b2d6373b260de5da18c"
+    },
+    {
+      "frame": 630,
+      "byte_identical": true,
+      "history_sha256": "184e2c1b7e8a194a3713d3d3c7c527894b17c8c8851b1e00d0ef448a8329ce6f",
+      "fresh_sha256": "184e2c1b7e8a194a3713d3d3c7c527894b17c8c8851b1e00d0ef448a8329ce6f"
+    },
+    {
+      "frame": 755,
+      "byte_identical": true,
+      "history_sha256": "157018a5c6f77dae13f6c83aa9cb92a63de17024d2c2297cfc9a25b62f36608e",
+      "fresh_sha256": "157018a5c6f77dae13f6c83aa9cb92a63de17024d2c2297cfc9a25b62f36608e"
+    },
+    {
+      "frame": 900,
+      "byte_identical": true,
+      "history_sha256": "c905a97f91b1e185f6ae553659e827caaad9f8f9b605d6e12e8baed003b746f2",
+      "fresh_sha256": "c905a97f91b1e185f6ae553659e827caaad9f8f9b605d6e12e8baed003b746f2"
+    },
+    {
+      "frame": 1080,
+      "byte_identical": true,
+      "history_sha256": "8971422d3350e18abab99c5c097fa74b6c3fa1433de5b3395aa99a69337cb636",
+      "fresh_sha256": "8971422d3350e18abab99c5c097fa74b6c3fa1433de5b3395aa99a69337cb636"
+    },
+    {
+      "frame": 1210,
+      "byte_identical": true,
+      "history_sha256": "3731b381efde0056c0014bf28d4b2bcd38974a907303e79ab920442d7a371242",
+      "fresh_sha256": "3731b381efde0056c0014bf28d4b2bcd38974a907303e79ab920442d7a371242"
+    },
+    {
+      "frame": 1278,
+      "byte_identical": true,
+      "history_sha256": "5d613e6bc9df19e4ad19bea91265e24e2e4bc7ac6e689fbe1da0a7d487681c19",
+      "fresh_sha256": "5d613e6bc9df19e4ad19bea91265e24e2e4bc7ac6e689fbe1da0a7d487681c19"
+    }
+  ]
+}

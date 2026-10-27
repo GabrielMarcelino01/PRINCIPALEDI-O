@@ -1,0 +1,505 @@
+{
+  "upstream_commit": "bd6bf08d8d412cc82c1bbc8f1a81638617a45cfb",
+  "static": {
+    "status": "pass",
+    "selected_ids": 68,
+    "unique_selected_ids": 68,
+    "catalog_elements": 168,
+    "packs": [
+      "camera",
+      "motion",
+      "ui"
+    ],
+    "missing_ids": [],
+    "missing_files": [],
+    "errors": []
+  },
+  "browser": {
+    "passed": 68,
+    "failed": 0,
+    "results": [
+      {
+        "id": "001",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "002",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "003",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "004",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "007",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "006",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "005",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "008",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "013",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "014",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "015",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "016",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "020",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "019",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "018",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "017",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "021",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "022",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "023",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "024",
+        "pack": "motion",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "025",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "026",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "027",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "028",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "032",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "031",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "030",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "029",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "033",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "034",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "035",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "036",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "040",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "039",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "038",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "037",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "041",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "042",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "043",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "044",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "048",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "047",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "046",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "045",
+        "pack": "camera",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "049",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "050",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "051",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "052",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "056",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "055",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "054",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "053",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "057",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "058",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "059",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "060",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "064",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "063",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "062",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "061",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "065",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "066",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "067",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "068",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "072",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "071",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "070",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      },
+      {
+        "id": "069",
+        "pack": "ui",
+        "status": "pass",
+        "visibleFrames": 5,
+        "deterministic": true
+      }
+    ],
+    "pageErrors": [],
+    "status": "pass",
+    "executed": 68,
+    "samples_per_element": 5,
+    "determinism_repeated_frame": true
+  },
+  "status": "pass"
+}
