@@ -1,0 +1,716 @@
+{
+  "id": "closet-5",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "durationInFrames": 734,
+  "duration": 24.466666666666665,
+  "video": "closet-5-source.mp4",
+  "audio": "closet-5-soundtrack.wav",
+  "grain": "closet-5-grain.png",
+  "cuts": [
+    5.552344,
+    9.807357,
+    13.861654,
+    19.244661
+  ],
+  "scenes": [
+    {
+      "id": "look-1",
+      "start": 0,
+      "end": 5.552344,
+      "label": "LOOK 01",
+      "header": "AZUL PETRÓLEO + CINZA CLARO",
+      "number": "",
+      "accent": "#69b7c4",
+      "colors": [
+        "#0f5563",
+        "#c7c9c7"
+      ],
+      "motion": {
+        "scaleFrom": 1.02,
+        "scaleTo": 1.02,
+        "xFrom": 0,
+        "xTo": 0,
+        "yFrom": 0,
+        "yTo": 0
+      }
+    },
+    {
+      "id": "look-2",
+      "start": 5.552344,
+      "end": 9.807357,
+      "label": "LOOK 02",
+      "header": "VERMELHO RUBI + AZUL NOITE",
+      "number": "",
+      "accent": "#ef7c91",
+      "colors": [
+        "#a5132c",
+        "#1c2b4b"
+      ],
+      "motion": {
+        "scaleFrom": 1.02,
+        "scaleTo": 1.02,
+        "xFrom": 0,
+        "xTo": 0,
+        "yFrom": 0,
+        "yTo": 0
+      }
+    },
+    {
+      "id": "look-3",
+      "start": 9.807357,
+      "end": 13.861654,
+      "label": "LOOK 03",
+      "header": "ROXO AMETISTA + CINZA CHUMBO",
+      "number": "",
+      "accent": "#c1a0e0",
+      "colors": [
+        "#6c3c90",
+        "#3f4145"
+      ],
+      "motion": {
+        "scaleFrom": 1.02,
+        "scaleTo": 1.02,
+        "xFrom": 0,
+        "xTo": 0,
+        "yFrom": 0,
+        "yTo": 0
+      }
+    },
+    {
+      "id": "look-4",
+      "start": 13.861654,
+      "end": 19.244661,
+      "label": "LOOK 04",
+      "header": "ROSA ANTIGO + VERDE OLIVA",
+      "number": "",
+      "accent": "#e6bcb9",
+      "colors": [
+        "#c59c9b",
+        "#5d673b"
+      ],
+      "motion": {
+        "scaleFrom": 1.02,
+        "scaleTo": 1.02,
+        "xFrom": 0,
+        "xTo": 0,
+        "yFrom": 0,
+        "yTo": 0
+      }
+    },
+    {
+      "id": "look-5",
+      "start": 19.244661,
+      "end": 24.466666666666665,
+      "label": "LOOK 05",
+      "header": "VERDE ESMERALDA + MARROM TABACO",
+      "number": "",
+      "accent": "#74c7ae",
+      "colors": [
+        "#0b725c",
+        "#76513a"
+      ],
+      "motion": {
+        "scaleFrom": 1.02,
+        "scaleTo": 1.02,
+        "xFrom": 0,
+        "xTo": 0,
+        "yFrom": 0,
+        "yTo": 0
+      }
+    }
+  ],
+  "groups": [
+    {
+      "id": "look-1-lembre",
+      "start": 0.0,
+      "end": 1.24,
+      "lines": [
+        [
+          {
+            "text": "LEMBRE-SE",
+            "start": 0.0,
+            "end": 0.94,
+            "style": "serif",
+            "color": "#69b7c4"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-1-vestido",
+      "start": 1.24,
+      "end": 2.6,
+      "lines": [
+        [
+          {
+            "text": "VESTIDO",
+            "start": 1.24,
+            "end": 1.72,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "AZUL",
+            "start": 1.72,
+            "end": 1.96,
+            "style": "normal",
+            "color": "#69b7c4"
+          },
+          {
+            "text": "PETRÓLEO",
+            "start": 1.96,
+            "end": 2.6,
+            "style": "serif",
+            "color": "#69b7c4"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-1-terno",
+      "start": 2.6,
+      "end": 4.06,
+      "lines": [
+        [
+          {
+            "text": "COM",
+            "start": 2.6,
+            "end": 2.82,
+            "style": "small"
+          },
+          {
+            "text": "TERNO",
+            "start": 2.82,
+            "end": 3.26,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "CINZA",
+            "start": 3.26,
+            "end": 3.66,
+            "style": "normal",
+            "color": "#d2d5d7"
+          },
+          {
+            "text": "CLARO",
+            "start": 3.66,
+            "end": 4.06,
+            "style": "serif",
+            "color": "#d2d5d7"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-1-estilo",
+      "start": 4.06,
+      "end": 5.44,
+      "lines": [
+        [
+          {
+            "text": "FICA",
+            "start": 4.06,
+            "end": 4.58,
+            "style": "normal"
+          },
+          {
+            "text": "ELEGANTE",
+            "start": 4.58,
+            "end": 5.44,
+            "style": "serif",
+            "color": "#69b7c4"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-2-lembre",
+      "start": 5.66,
+      "end": 6.4,
+      "lines": [
+        [
+          {
+            "text": "LEMBRE-SE",
+            "start": 5.66,
+            "end": 6.28,
+            "style": "serif",
+            "color": "#ef7c91"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-2-vestido",
+      "start": 6.4,
+      "end": 7.58,
+      "lines": [
+        [
+          {
+            "text": "VESTIDO",
+            "start": 6.4,
+            "end": 6.76,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "VERMELHO",
+            "start": 6.76,
+            "end": 7.2,
+            "style": "normal",
+            "color": "#ef7c91"
+          },
+          {
+            "text": "RUBI",
+            "start": 7.2,
+            "end": 7.58,
+            "style": "serif",
+            "color": "#ef7c91"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-2-terno",
+      "start": 7.58,
+      "end": 8.9,
+      "lines": [
+        [
+          {
+            "text": "COM",
+            "start": 7.58,
+            "end": 7.84,
+            "style": "small"
+          },
+          {
+            "text": "TERNO",
+            "start": 7.84,
+            "end": 8.26,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "AZUL",
+            "start": 8.26,
+            "end": 8.42,
+            "style": "normal",
+            "color": "#a8b9dc"
+          },
+          {
+            "text": "NOITE",
+            "start": 8.42,
+            "end": 8.9,
+            "style": "serif",
+            "color": "#a8b9dc"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-2-estilo",
+      "start": 8.9,
+      "end": 9.76,
+      "lines": [
+        [
+          {
+            "text": "É",
+            "start": 8.9,
+            "end": 9.0,
+            "style": "small"
+          },
+          {
+            "text": "PURO",
+            "start": 9.0,
+            "end": 9.32,
+            "style": "normal"
+          },
+          {
+            "text": "CHARME",
+            "start": 9.32,
+            "end": 9.76,
+            "style": "serif",
+            "color": "#ef7c91"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-3-vestido",
+      "start": 9.84,
+      "end": 11.02,
+      "lines": [
+        [
+          {
+            "text": "VESTIDO",
+            "start": 9.84,
+            "end": 10.02,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "ROXO",
+            "start": 10.02,
+            "end": 10.4,
+            "style": "normal",
+            "color": "#c1a0e0"
+          },
+          {
+            "text": "AMETISTA",
+            "start": 10.4,
+            "end": 11.02,
+            "style": "serif",
+            "color": "#c1a0e0"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-3-terno",
+      "start": 11.02,
+      "end": 12.6,
+      "lines": [
+        [
+          {
+            "text": "COM",
+            "start": 11.02,
+            "end": 11.34,
+            "style": "small"
+          },
+          {
+            "text": "TERNO",
+            "start": 11.34,
+            "end": 11.8,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "CINZA",
+            "start": 11.8,
+            "end": 12.16,
+            "style": "normal",
+            "color": "#b9bdc4"
+          },
+          {
+            "text": "CHUMBO",
+            "start": 12.16,
+            "end": 12.6,
+            "style": "serif",
+            "color": "#b9bdc4"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-3-estilo",
+      "start": 12.6,
+      "end": 13.8,
+      "lines": [
+        [
+          {
+            "text": "TRANSMITE",
+            "start": 12.6,
+            "end": 13.28,
+            "style": "normal"
+          },
+          {
+            "text": "LUXO",
+            "start": 13.28,
+            "end": 13.8,
+            "style": "serif",
+            "color": "#e7cba7"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-4-lembre",
+      "start": 14.06,
+      "end": 14.84,
+      "lines": [
+        [
+          {
+            "text": "LEMBRE-SE",
+            "start": 14.06,
+            "end": 14.58,
+            "style": "serif",
+            "color": "#e6bcb9"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-4-vestido",
+      "start": 14.84,
+      "end": 16.22,
+      "lines": [
+        [
+          {
+            "text": "VESTIDO",
+            "start": 14.84,
+            "end": 15.3,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "ROSA",
+            "start": 15.3,
+            "end": 15.6,
+            "style": "normal",
+            "color": "#e6bcb9"
+          },
+          {
+            "text": "ANTIGO",
+            "start": 15.6,
+            "end": 16.22,
+            "style": "serif",
+            "color": "#e6bcb9"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-4-terno",
+      "start": 16.22,
+      "end": 18.02,
+      "lines": [
+        [
+          {
+            "text": "COM",
+            "start": 16.22,
+            "end": 16.7,
+            "style": "small"
+          },
+          {
+            "text": "TERNO",
+            "start": 16.7,
+            "end": 17.2,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "VERDE",
+            "start": 17.2,
+            "end": 17.48,
+            "style": "normal",
+            "color": "#b4be8b"
+          },
+          {
+            "text": "OLIVA",
+            "start": 17.48,
+            "end": 18.02,
+            "style": "serif",
+            "color": "#b4be8b"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-4-estilo",
+      "start": 18.02,
+      "end": 19.12,
+      "lines": [
+        [
+          {
+            "text": "FICA",
+            "start": 18.02,
+            "end": 18.6,
+            "style": "normal"
+          },
+          {
+            "text": "CHIQUE",
+            "start": 18.6,
+            "end": 19.12,
+            "style": "serif",
+            "color": "#e6bcb9"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-5-vestido",
+      "start": 19.3,
+      "end": 20.86,
+      "lines": [
+        [
+          {
+            "text": "VESTIDO",
+            "start": 19.3,
+            "end": 19.86,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "VERDE",
+            "start": 19.86,
+            "end": 20.16,
+            "style": "normal",
+            "color": "#74c7ae"
+          },
+          {
+            "text": "ESMERALDA",
+            "start": 20.16,
+            "end": 20.86,
+            "style": "serif",
+            "color": "#74c7ae"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-5-terno",
+      "start": 20.86,
+      "end": 22.7,
+      "lines": [
+        [
+          {
+            "text": "COM",
+            "start": 20.86,
+            "end": 21.28,
+            "style": "small"
+          },
+          {
+            "text": "TERNO",
+            "start": 21.28,
+            "end": 21.76,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "MARROM",
+            "start": 21.76,
+            "end": 22.12,
+            "style": "normal",
+            "color": "#c49b7c"
+          },
+          {
+            "text": "TABACO",
+            "start": 22.12,
+            "end": 22.7,
+            "style": "serif",
+            "color": "#c49b7c"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-5-estilo",
+      "start": 22.7,
+      "end": 23.94,
+      "lines": [
+        [
+          {
+            "text": "É",
+            "start": 22.7,
+            "end": 22.98,
+            "style": "small"
+          },
+          {
+            "text": "SOFISTICADO",
+            "start": 22.98,
+            "end": 23.94,
+            "style": "serif",
+            "color": "#74c7ae"
+          }
+        ]
+      ],
+      "position": "bottom"
+    }
+  ],
+  "showSafeZones": false,
+  "safeZones": {
+    "top": 200,
+    "bottom": 420,
+    "left": 60,
+    "right": 100
+  },
+  "captionStyle": {
+    "top": 1320,
+    "anchor": "bottom",
+    "maxWidth": 920,
+    "fontSize": 82,
+    "serifFontSize": 102,
+    "smallFontSize": 37
+  },
+  "captionPositions": {
+    "bottom": {
+      "top": 1320,
+      "anchor": "bottom",
+      "align": "center"
+    }
+  },
+  "followCta": {
+    "start": 22.47,
+    "top": 1400,
+    "text": "SEGUIR"
+  },
+  "design": {
+    "title": "ARMÁRIO • COLOR EDIT",
+    "approach": "Mesma edição editorial profissional do CLOSET-4, com captions inferiores animadas, frases curtas e tipografia 82/102/37px.",
+    "motionRefs": [
+      {
+        "id": "001",
+        "name": "Pop-in",
+        "use": "Entrada das palavras sincronizada à fala e entrada única do CTA."
+      },
+      {
+        "id": "122",
+        "name": "Follow-through",
+        "use": "Sublinhados que se abrem e assentam sem deslocar o bloco."
+      },
+      {
+        "id": "125",
+        "name": "Pulse",
+        "use": "Ênfase única de até 2,5% na palavra ativa, exceto conectores."
+      },
+      {
+        "id": "130",
+        "name": "Wave text",
+        "use": "Onda curta de até 3,2px somente na serifada ativa."
+      }
+    ],
+    "stability": {
+      "captions": "fixed-bottom-baseline-1320-with-internal-motion",
+      "camera": "fixed-scale-1.02",
+      "grain": "static",
+      "header": "static",
+      "cta": "fixed-bottom-with-entry-only"
+    }
+  },
+  "captionMotion": {
+    "container": "fixed bottom baseline; no reflow or container translation",
+    "wordEntrance": "spring at each spoken word; 16px rise and 0.92–1.00 scale",
+    "activeEmphasis": "single 0.45s pulse, maximum 2.5%, excluding connectors",
+    "serifWave": "single 0.8s wave, maximum 3.2px per letter",
+    "underline": "spring scaleX at each colored word",
+    "ctaEntrance": "single spring, then fixed"
+  }
+}
