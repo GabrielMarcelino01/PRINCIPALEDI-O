@@ -13,12 +13,6 @@ on:
         required: false
         default: ''
         type: string
-  push:
-    branches:
-      - arena/09635ca6-principaledi-o
-    paths:
-      - .github/workflows/tapnextpp-smoke.yml
-      - reels-studio/tapnextpp/requirements-smoke.txt
 
 concurrency:
   group: tapnextpp-checkpoint-smoke-${{ github.ref }}
