@@ -39,7 +39,7 @@ jobs:
     timeout-minutes: 60
     env:
       CHECKPOINT_URL: https://storage.googleapis.com/gresearch/tapnextpp/tapnextpp_512.ckpt
-      CHECKPOINT_DIR: ${{ runner.temp }}/tapnextpp-checkpoint
+      CHECKPOINT_DIR: /tmp/tapnextpp-checkpoint-${{ github.run_id }}
       REPORT_DIR: artifacts/tapnextpp-smoke
       RUN_FORWARD: ${{ inputs.forward }}
       EXPECTED_CHECKPOINT_SHA256: ${{ inputs.expected_checkpoint_sha256 }}
@@ -64,7 +64,7 @@ jobs:
           printf '\n=== Memory ===\n'
           free -h
           printf '\n=== Disk before download ===\n'
-          df -h "$RUNNER_TEMP" .
+          df -h /tmp .
 
       - name: Install pinned CPU inference dependencies
         run: |
@@ -123,7 +123,7 @@ jobs:
           set -euo pipefail
           rm -rf "${CHECKPOINT_DIR:?}"
           test ! -e "$CHECKPOINT_DIR"
-          df -h "$RUNNER_TEMP" .
+          df -h /tmp .
           if [[ -d "$REPORT_DIR" ]]; then
             find "$REPORT_DIR" -maxdepth 1 -type f -printf '%f %s bytes\n'
           fi
