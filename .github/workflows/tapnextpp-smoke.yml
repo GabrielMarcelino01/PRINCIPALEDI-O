@@ -13,16 +13,7 @@ on:
         required: false
         default: ''
         type: string
-  push:
-    branches:
-      - arena/09635ca6-principaledi-o
-    paths:
-      - .github/workflows/tapnextpp-smoke.yml
-      - reels-studio/tapnextpp/smoke_checkpoint.py
-      - reels-studio/tapnextpp/requirements-smoke.txt
 
-# A push only runs this expensive job when explicitly requested in the commit
-# message. Use: git commit -m "Test TAPNext++ [tapnextpp-smoke]"
 concurrency:
   group: tapnextpp-checkpoint-smoke-${{ github.ref }}
   cancel-in-progress: false
@@ -32,9 +23,6 @@ permissions:
 
 jobs:
   smoke:
-    # Temporary one-shot push trigger. The push trigger is removed as soon as
-    # this authorized run starts; workflow_dispatch remains for future use.
-    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-24.04
     timeout-minutes: 60
     env:

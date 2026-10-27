@@ -28,7 +28,7 @@ Não há benchmark DAVIS nem download de dataset. O teste de carregamento não d
 O workflow está em `.github/workflows/tapnextpp-smoke.yml`.
 
 - **Manual:** em Actions, selecione `TAPNext++ checkpoint smoke`. A opção `forward` executa dois quadros sintéticos depois do carregamento; isso testa a passagem pelo modelo e o estado recorrente, não a precisão.
-- **Por commit nesta branch:** somente commits que alteram os arquivos do smoke e contêm `[tapnextpp-smoke]` na mensagem disparam a execução. Isso evita downloads acidentais de gigabytes em commits comuns.
+- **Execução inicial autorizada:** foi usado um gatilho temporário de `push`, removido logo após a criação da primeira execução válida. Commits posteriores não repetem o download.
 - **Checksum opcional:** depois que o hash oficial observado for registrado, ele pode ser exigido no campo `expected_checkpoint_sha256` da execução manual.
 
 Execuções pesadas são serializadas por `concurrency`. O workflow usa somente `contents: read` e não precisa de credenciais externas.
