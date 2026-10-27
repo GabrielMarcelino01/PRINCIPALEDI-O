@@ -13,6 +13,12 @@ on:
         required: false
         default: ''
         type: string
+  push:
+    branches:
+      - arena/09635ca6-principaledi-o
+    paths:
+      - .github/workflows/tapnextpp-smoke.yml
+      - reels-studio/tapnextpp/requirements-smoke.txt
 
 concurrency:
   group: tapnextpp-checkpoint-smoke-${{ github.ref }}
@@ -57,9 +63,21 @@ jobs:
       - name: Install pinned CPU inference dependencies
         run: |
           set -euo pipefail
-          python -m pip install --upgrade pip
-          python -m pip install --disable-pip-version-check \
-            -r reels-studio/tapnextpp/requirements-smoke.txt
+          mkdir -p "$REPORT_DIR"
+          if ! python -m pip install --upgrade pip \
+              --disable-pip-version-check \
+              -r reels-studio/tapnextpp/requirements-smoke.txt \
+              > "$REPORT_DIR/pip.log" 2>&1; then
+            cat "$REPORT_DIR/pip.log"
+            {
+              echo '### Dependency installation failed'
+              echo '```text'
+              tail -80 "$REPORT_DIR/pip.log"
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          tail -25 "$REPORT_DIR/pip.log"
 
       - name: Download official TAPNext++ 512 checkpoint
         run: |
@@ -96,12 +114,27 @@ jobs:
           fi
           python reels-studio/tapnextpp/smoke_checkpoint.py "${args[@]}"
 
-      - name: Upload small JSON report only
+      - name: Add result to job summary
+        if: always()
+        run: |
+          set -euo pipefail
+          if [[ -f "$REPORT_DIR/report.json" ]]; then
+            {
+              echo '### TAPNext++ smoke report'
+              echo '```json'
+              cat "$REPORT_DIR/report.json"
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload small diagnostic files only
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: tapnextpp-smoke-${{ github.run_id }}
-          path: artifacts/tapnextpp-smoke/*.json
+          path: |
+            artifacts/tapnextpp-smoke/*.json
+            artifacts/tapnextpp-smoke/*.log
           if-no-files-found: warn
           retention-days: 7
 
