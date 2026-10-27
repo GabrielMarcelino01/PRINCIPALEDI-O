@@ -97,7 +97,7 @@ def main() -> int:
     bottom_ok = caption.get("anchor") == "bottom" and caption.get("top") == 1320
     bottom_ok = bottom_ok and caption["top"] - 360 >= safe_top and caption["top"] <= safe_bottom
     check("caption_safe_area", bottom_ok, "Baseline inferior em 1320px; bloco estimado de até 360px dentro da safe zone")
-    check("caption_scale", (caption["fontSize"], caption["serifFontSize"], caption["smallFontSize"]) == (106, 132, 48), "106px sans / 132px serifada / 48px conectores")
+    check("caption_scale", (caption["fontSize"], caption["serifFontSize"], caption["smallFontSize"]) == (96, 120, 44), "96px sans / 120px serifada / 44px conectores")
     positions = project.get("captionPositions", {})
     positions_ok = set(positions) == {"bottom"} and positions.get("bottom", {}).get("anchor") == "bottom"
     positions_ok = positions_ok and positions.get("bottom", {}).get("top") == 1320

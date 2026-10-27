@@ -1,8 +1,8 @@
 {
   "project": "closet-3",
-  "revision": "lower-stabilized-kinetic-captions",
+  "revision": "lower-smaller-stabilized-kinetic-captions",
   "date": "2026-10-26",
-  "previous_version_commit": "53f40b69f809ec743e12eb11036edad153f3bbb1",
+  "previous_version_commit": "e36b7dc5c560478d766688a78d9a26b1421dec6a",
   "source": {
     "original_name": "Untitled_Scene_10-25_20_12_37_20261025171936.mp4",
     "commit": "729b718d0e61dcb9b9b5dcca12e6c54bfdcfdee0",
@@ -12,8 +12,8 @@
   },
   "master": {
     "path": "entregas/CLOSET-3-EDITADO.mp4",
-    "bytes": 22320823,
-    "sha256": "db16cfdcea45951815f65d6c9b6d9f50b36a50bd0f85ae8512bde90882dd7eae",
+    "bytes": 22232707,
+    "sha256": "ae2c70be48faeb09bc2ffe1b9a1d01092e84fa8d66c0d1aa38eae9785e4ca611",
     "container_duration_seconds": 20.523,
     "video": {
       "codec": "h264",
@@ -37,8 +37,8 @@
   },
   "preview": {
     "path": "entregas/CLOSET-3-PREVIA.mp4",
-    "bytes": 2886170,
-    "sha256": "a6e8400b888bb00e625fffcb029e77ccb9c89a9442564c3045429f318fe5af23",
+    "bytes": 2860590,
+    "sha256": "f5b1b6d4be7b406859bccb51fab66f6fe52ea4d04c8156b9cab3e45e60343a34",
     "container_duration_seconds": 20.523,
     "video": {
       "codec": "h264",
@@ -140,10 +140,11 @@
       578
     ],
     "encoded_contact_sheet_seen": true,
-    "adjustment": "Baseline inferior fixa em 1320px; movimentos internos por springs, pulso único e onda curta; tempos de controle incluem frases completas e entradas.",
+    "adjustment": "Tipografia reduzida discretamente para 96/120/44px; baseline inferior fixa em 1320px e movimentos internos preservados; 20 quadros regenerados do novo master e comparação antes/depois revisada.",
     "full_audiovisual_playback": false,
     "subjective_audio_listening": false,
-    "scope": "Revisão por quadros, folhas de contato e contact sheet; não equivale a playback integral ou escuta subjetiva."
+    "scope": "Revisão por quadros, folhas de contato e contact sheet; não equivale a playback integral ou escuta subjetiva.",
+    "size_comparison": "out/closet-3-size-comparison.jpg"
   },
   "design": {
     "caption_anchor": "fixed bottom baseline 1320px",
@@ -154,7 +155,12 @@
     "camera_translation": 0,
     "animated_grain": false,
     "transitions_added": false,
-    "cta": "single spring entrance, then fixed at 1400px"
+    "cta": "single spring entrance, then fixed at 1400px",
+    "caption_font_sizes": {
+      "sans": 96,
+      "serif": 120,
+      "connectors": 44
+    }
   },
   "organization": {
     "edited": "entregas/",

@@ -40,7 +40,7 @@ Os cortes são os do material original. Não foram adicionados flashes, dissolve
 O acabamento segue o ARMÁRIO-2:
 
 - Inter para sans serif e Playfair Display itálica para ênfases;
-- 106 px na sans, 132 px na serifada e 48 px nos conectores;
+- 96 px na sans, 120 px na serifada e 44 px nos conectores — redução discreta de cerca de 10%, preservando a posição e a hierarquia;
 - cores ligadas às combinações de roupa, sublinhados discretos e sombra de leitura;
 - header `ARMÁRIO • COLOR EDIT`, indicador de cena e paleta;
 - vinheta e grão monocromático sutis;

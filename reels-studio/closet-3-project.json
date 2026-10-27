@@ -570,9 +570,9 @@
     "top": 1320,
     "anchor": "bottom",
     "maxWidth": 920,
-    "fontSize": 106,
-    "serifFontSize": 132,
-    "smallFontSize": 48
+    "fontSize": 96,
+    "serifFontSize": 120,
+    "smallFontSize": 44
   },
   "captionPositions": {
     "bottom": {

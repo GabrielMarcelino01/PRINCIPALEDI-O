@@ -7,7 +7,7 @@ Esta pasta contém **somente vídeos finalizados e suas prévias leves**. Os upl
 | `CLOSET-2-EDITADO.mp4` | Master do CLOSET-2, preservado da entrega anterior. |
 | `ARMARIO-2-EDITADO.mp4` | Master do ARMÁRIO-2 — 1080×1920, 30 fps, 19,9 s. |
 | `ARMARIO-2-PREVIA.mp4` | Prévia leve do ARMÁRIO-2 para visualização no chat. |
-| `CLOSET-3-EDITADO.mp4` | Master do CLOSET-3 — 1080×1920, 30 fps, 614 frames (aprox. 20,5 s); captions animadas com base estável na parte inferior. |
+| `CLOSET-3-EDITADO.mp4` | Master do CLOSET-3 — 1080×1920, 30 fps, 614 frames (aprox. 20,5 s); captions inferiores animadas, com tipografia discretamente reduzida e base estável. |
 | `CLOSET-3-PREVIA.mp4` | Prévia leve do CLOSET-3 — 540×960, 30 fps, 614 frames, para visualização no chat. |
 
 ## Onde ficam os outros materiais

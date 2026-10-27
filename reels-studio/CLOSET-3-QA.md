@@ -2,7 +2,7 @@
 
 ## Resultado
 
-**PASS no escopo verificado para a versão com captions inferiores e animadas.** O master e a prévia foram renderizados novamente; os resultados da versão central estática não foram reutilizados como aprovação desta revisão.
+**PASS no escopo verificado para a versão com captions inferiores, animadas e tipografia discretamente reduzida.** O master e a prévia foram renderizados novamente; os resultados das versões anteriores não foram reutilizados como aprovação desta revisão.
 
 - Master: `../entregas/CLOSET-3-EDITADO.mp4`
 - Prévia: `../entregas/CLOSET-3-PREVIA.mp4`
@@ -21,6 +21,7 @@ Relatório: `reports/closet-3-project-qa.json`
 - seis segmentos correspondentes à transcrição revisada;
 - SHA-256 da fonte confirmado;
 - todos os grupos na mesma baseline inferior de **1320 px**;
+- tipografia reduzida para **96 px sans, 120 px serifada e 44 px nos conectores**, sem alterar o container;
 - bloco estimado dentro da safe zone e pelo menos 80 px de separação para o CTA;
 - escala de câmera fixa 1,02 e deslocamento zero;
 - springs, onda curta e sublinhados presentes, sem transições artificiais ou movimento de grão;
@@ -55,8 +56,8 @@ Relatório: `reports/closet-3-video-qa.json`
 - Master decodificado integralmente com FFmpeg, sem erros.
 - Prévia decodificada integralmente com FFmpeg, sem erros.
 - Prévia: H.264 High, 540×960, 30 fps, 614 frames, AAC estéreo 48 kHz.
-- Master: 22.320.823 bytes; SHA-256 `db16cfdcea45951815f65d6c9b6d9f50b36a50bd0f85ae8512bde90882dd7eae`.
-- Prévia: 2.886.170 bytes; SHA-256 `a6e8400b888bb00e625fffcb029e77ccb9c89a9442564c3045429f318fe5af23`.
+- Master: 22.232.707 bytes; SHA-256 `ae2c70be48faeb09bc2ffe1b9a1d01092e84fa8d66c0d1aa38eae9785e4ca611`.
+- Prévia: 2.860.590 bytes; SHA-256 `f5b1b6d4be7b406859bccb51fab66f6fe52ea4d04c8156b9cab3e45e60343a34`.
 
 ## 2. Revisão visual efetivamente realizada
 
@@ -78,9 +79,9 @@ A amostragem cobriu:
 - serifas, conectores, acentos, sublinhados e quebras de linha;
 - baseline inferior, espaçamento e separação do CTA.
 
-Os tempos de controle foram ajustados para não confundir uma palavra ainda em fade de entrada com uma legenda incompleta. Na rodada final, as frases completas estavam legíveis, sem cortes de texto ou sobreposição com o CTA. A posição mais baixa deixa mais do torso e das combinações visível que a versão central.
+Os tempos de controle foram ajustados para não confundir uma palavra ainda em fade de entrada com uma legenda incompleta. Na rodada final, as frases completas estavam legíveis, sem cortes de texto ou sobreposição com o CTA. A redução tipográfica preservou a baseline inferior e manteve mais do torso e das combinações visível.
 
-Também foi revisado o contact sheet extraído do **MP4 codificado** em `out/closet-3-contact-qa.jpg`.
+Também foram revisados o contact sheet extraído do **MP4 codificado** em `out/closet-3-contact-qa.jpg` e a comparação antes/depois em `out/closet-3-size-comparison.jpg`, nos mesmos tempos da versão anterior e da versão reduzida.
 
 ## Limites desta revisão
 
