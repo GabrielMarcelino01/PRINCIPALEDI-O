@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>ARMÁRIO-7 — Match Lab</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="project.js"></script>
+  <script src="composition.js" defer></script>
+</head>
+<body>
+  <main id="stage" aria-label="Match Lab: cinco looks de casal">
+    <canvas id="backdrop-canvas" width="1080" height="1920"></canvas>
+    <canvas id="source-canvas" width="1080" height="1920"></canvas>
+    <div id="color-wash" class="layer"></div>
+    <div id="spotlight" class="layer"></div>
+    <div id="bottom-shade" class="layer"></div>
+    <div id="grain" class="layer"></div>
+    <div id="vignette" class="layer"></div>
+    <div id="cut-wipe" class="layer"></div>
+
+    <header id="hud">
+      <div id="hud-line">
+        <div id="brand">MATCH <span>LAB</span></div>
+        <div id="look-counter">LOOK 01 / 05</div>
+      </div>
+      <div id="progress"></div>
+    </header>
+
+    <section id="intro">
+      <div id="intro-kicker">CINCO COMBINAÇÕES • UMA CONEXÃO</div>
+      <div id="intro-title">5 LOOKS. <span>1 MATCH.</span></div>
+    </section>
+    <div id="scene-code">CHERRY × ICE</div>
+    <div id="side-index">01</div>
+
+    <section id="caption-zone">
+      <div id="caption-top">
+        <div id="palette"></div>
+        <div id="caption-count">01 / 05</div>
+      </div>
+      <div id="caption"><div id="caption-groups"></div></div>
+      <div id="caption-rule"></div>
+    </section>
+
+    <section id="cta">
+      <div id="cta-kicker">CINCO LOOKS. UMA ESCOLHA.</div>
+      <div id="cta-title">QUAL MATCH É O SEU?</div>
+      <div id="cta-rule"></div>
+      <div id="cta-sub">ESCOLHA DE 01 A 05</div>
+    </section>
+
+    <section id="comment-cta">
+      <div id="comment-title">COMENTA O NÚMERO DO MATCH</div>
+      <div id="comment-numbers"></div>
+    </section>
+
+    <div id="cut-flash" class="layer"></div>
+  </main>
+</body>
+</html>

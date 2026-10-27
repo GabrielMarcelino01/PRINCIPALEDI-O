@@ -1,0 +1,57 @@
+{
+  "project": "armario-7",
+  "frames": 1293,
+  "fps": 60,
+  "duration": 21.55,
+  "source": {
+    "original": "reels-studio/assets/armario-7/ARMARIO-7.mp4",
+    "sha256": "cae26c943b49b427e36b63d83f1430cf4d47fc38b74dd1294c2a8b11d9f0cc21",
+    "indexed_frames": 1293
+  },
+  "video": {
+    "codec": "H.264 High",
+    "crf": 17,
+    "preset": "slow",
+    "pixel_format": "yuv420p",
+    "color": "BT.709 limited range"
+  },
+  "audio": {
+    "voice_target": {
+      "i": -16,
+      "tp": -2,
+      "lra": 7
+    },
+    "voice_measured": {
+      "input_i": "-25.43",
+      "input_tp": "-11.84",
+      "input_lra": "2.50",
+      "input_thresh": "-36.17",
+      "output_i": "-16.19",
+      "output_tp": "-2.34",
+      "output_lra": "1.80",
+      "output_thresh": "-26.77",
+      "normalization_type": "dynamic",
+      "target_offset": "0.19"
+    },
+    "mix_target": {
+      "i": -14,
+      "tp": -1,
+      "lra": 9
+    },
+    "mix_measured": {
+      "input_i": "-16.00",
+      "input_tp": "-2.38",
+      "input_lra": "2.60",
+      "input_thresh": "-26.76",
+      "output_i": "-14.20",
+      "output_tp": "-1.00",
+      "output_lra": "1.70",
+      "output_thresh": "-24.79",
+      "normalization_type": "dynamic",
+      "target_offset": "0.20"
+    },
+    "bed_gain": 0.32,
+    "aac_bitrate": "192k"
+  },
+  "delivery": "entregas/ARMARIO-7-EDITADO.mp4"
+}

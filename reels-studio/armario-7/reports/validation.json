@@ -1,0 +1,376 @@
+{
+  "project": "armario-7",
+  "delivery": "entregas/ARMARIO-7-EDITADO.mp4",
+  "sha256": "b41adea42db511824dff18ebcc6c946825cd88a7d5812b17a97655e9ded15ee1",
+  "checks": [
+    {
+      "name": "fonte_original_integra",
+      "passed": true,
+      "details": {
+        "sha256": "cae26c943b49b427e36b63d83f1430cf4d47fc38b74dd1294c2a8b11d9f0cc21",
+        "bytes": 20431960
+      }
+    },
+    {
+      "name": "sequencia_1293_quadros",
+      "passed": true,
+      "details": {
+        "count": 1293,
+        "expected": 1293
+      }
+    },
+    {
+      "name": "fonte_indexada_1293_quadros",
+      "passed": true,
+      "details": {
+        "count": 1293,
+        "expected": 1293
+      }
+    },
+    {
+      "name": "fonte_indexada_do_original",
+      "passed": true,
+      "details": {
+        "source_sha256": "cae26c943b49b427e36b63d83f1430cf4d47fc38b74dd1294c2a8b11d9f0cc21",
+        "source_frames": 1293,
+        "source_frames_directory": "out/source-frames",
+        "sequence_manifest_sha256": "0038fc7a76c7ca90cfbefd2dc2f626000a94ce8883842fcd3b5668b778460741",
+        "method": "Upload original -> tpad + fps=60 -> JPEG q1 indexado; o Chromium lê o arquivo do quadro, sem seek de vídeo"
+      }
+    },
+    {
+      "name": "sem_capturas_temporarias",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "entrega_existe",
+      "passed": true,
+      "details": {
+        "bytes": 14833445
+      }
+    },
+    {
+      "name": "h264_vertical_1080x1920",
+      "passed": true,
+      "details": {
+        "codec_name": "h264",
+        "profile": "High",
+        "width": 1080,
+        "height": 1920,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "60/1",
+        "nb_frames": "1293",
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709"
+      }
+    },
+    {
+      "name": "60_fps_1293_quadros",
+      "passed": true,
+      "details": {
+        "codec_name": "h264",
+        "profile": "High",
+        "width": 1080,
+        "height": 1920,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "60/1",
+        "nb_frames": "1293",
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709"
+      }
+    },
+    {
+      "name": "yuv420p_bt709",
+      "passed": true,
+      "details": {
+        "codec_name": "h264",
+        "profile": "High",
+        "width": 1080,
+        "height": 1920,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "60/1",
+        "nb_frames": "1293",
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709"
+      }
+    },
+    {
+      "name": "aac_estereo_48khz",
+      "passed": true,
+      "details": {
+        "codec_name": "aac",
+        "channels": 2,
+        "sample_rate": "48000",
+        "bit_rate": "192995"
+      }
+    },
+    {
+      "name": "duracao_preservada",
+      "passed": true,
+      "details": {
+        "duration": 21.572,
+        "expected": 21.55
+      }
+    },
+    {
+      "name": "decodificacao_video_sem_erros",
+      "passed": true,
+      "details": {
+        "returncode": 0
+      }
+    },
+    {
+      "name": "sem_preto_ou_congelamento",
+      "passed": true,
+      "details": {
+        "black": [],
+        "freeze": []
+      }
+    },
+    {
+      "name": "loudness_menos_14_lufs",
+      "passed": true,
+      "details": {
+        "input_i": "-13.99",
+        "input_tp": "-1.00",
+        "input_lra": "2.50",
+        "input_thresh": "-24.75",
+        "output_i": "-14.03",
+        "output_tp": "-1.00",
+        "output_lra": "1.80",
+        "output_thresh": "-24.61",
+        "normalization_type": "dynamic",
+        "target_offset": "0.03"
+      }
+    },
+    {
+      "name": "true_peak_seguro",
+      "passed": true,
+      "details": {
+        "input_i": "-13.99",
+        "input_tp": "-1.00",
+        "input_lra": "2.50",
+        "input_thresh": "-24.75",
+        "output_i": "-14.03",
+        "output_tp": "-1.00",
+        "output_lra": "1.80",
+        "output_thresh": "-24.61",
+        "normalization_type": "dynamic",
+        "target_offset": "0.03"
+      }
+    },
+    {
+      "name": "sem_silencio_longo",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "srt_cinco_blocos",
+      "passed": true,
+      "details": {
+        "blocks": 5
+      }
+    },
+    {
+      "name": "skill_captions_sem_alertas",
+      "passed": true,
+      "details": {
+        "returncode": 0,
+        "summary": {
+          "errors": 0,
+          "warnings": 0
+        },
+        "stderr": ""
+      }
+    },
+    {
+      "name": "transcricao_revisada",
+      "passed": true,
+      "details": {
+        "engine": "faster-whisper 1.2.1",
+        "model": "OpenAI Whisper small / CTranslate2 int8",
+        "model_sha256": "ca732cb1379efc49417d028465f543d83a39de2c61f3027678de103dc404ce73",
+        "language": "pt",
+        "word_timestamps": true,
+        "verification": "Duas decodificações independentes; texto concordante. Três decodificações adicionais do primeiro trecho mantiveram 'usado'."
+      }
+    },
+    {
+      "name": "animacao_pura_do_tempo",
+      "passed": true,
+      "details": {
+        "forbidden": []
+      }
+    },
+    {
+      "name": "tipografia_sem_transforms",
+      "passed": true,
+      "details": [
+        "canvas.style.transform = `translate3d(${x.toFixed(3)}px,${y.toFixed(3)}px,0) scale(${scale.toFixed(6)})`;",
+        "backdropCanvas.style.transform = `translate3d(${(-x * 1.7).toFixed(3)}px,0,0) scale(${(1.14 + 0.025 * cutEnergy).toFixed(6)})`;",
+        "fill.style.transform = `scaleX(${value})`;",
+        "$(\"cut-wipe\").style.transform = `translateX(${lerp(-125, 125, wipePhase)}%) skewX(-12deg)`;"
+      ]
+    },
+    {
+      "name": "folha_do_mp4_gerada",
+      "passed": true,
+      "details": {
+        "frames": [
+          30,
+          140,
+          280,
+          390,
+          510,
+          612,
+          730,
+          830,
+          950,
+          1080,
+          1195,
+          1278
+        ],
+        "returncode": 0,
+        "stderr": ""
+      }
+    },
+    {
+      "name": "poster_do_mp4_gerado",
+      "passed": true,
+      "details": 0
+    },
+    {
+      "name": "teste_previo_dez_de_dez",
+      "passed": true,
+      "details": {
+        "all_byte_identical": true
+      }
+    },
+    {
+      "name": "trilha_reproduzivel",
+      "passed": true,
+      "details": {
+        "before": "ab1e766f41537c48564a85ac2fb9c1ea11ea151c88be73b230aab312d1cf271d",
+        "after": "ab1e766f41537c48564a85ac2fb9c1ea11ea151c88be73b230aab312d1cf271d",
+        "identical": true,
+        "bytes": 4137644
+      }
+    },
+    {
+      "name": "recapturas_deterministicas",
+      "passed": true,
+      "details": {
+        "method": "Recaptura em Chromium fora de ordem; comparação de bytes e RGB decodificado.",
+        "frames": [
+          1278,
+          180,
+          755,
+          30,
+          1080,
+          360,
+          1210,
+          300,
+          900,
+          630
+        ],
+        "results": [
+          {
+            "frame": 1278,
+            "t": 21.3,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "0afae48f4b25e64ee2b8ce3fc65a9c66b835caa980513a6c2c1608d7f3d070e7",
+            "repeated_sha256": "0afae48f4b25e64ee2b8ce3fc65a9c66b835caa980513a6c2c1608d7f3d070e7"
+          },
+          {
+            "frame": 180,
+            "t": 3.0,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "a2485c80ee19e3476d06056ea1f9720d8e4b2568dc301b3fec02806eb7c1dd99",
+            "repeated_sha256": "a2485c80ee19e3476d06056ea1f9720d8e4b2568dc301b3fec02806eb7c1dd99"
+          },
+          {
+            "frame": 755,
+            "t": 12.583333333333334,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "71f98145304c40852b2028ea6659db4773fb68c822e583a6da15425f89a2ec82",
+            "repeated_sha256": "71f98145304c40852b2028ea6659db4773fb68c822e583a6da15425f89a2ec82"
+          },
+          {
+            "frame": 30,
+            "t": 0.5,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "719d7f43ab97944191b9914170adeb8513fdbeea831635d855c1588cecc8fe34",
+            "repeated_sha256": "719d7f43ab97944191b9914170adeb8513fdbeea831635d855c1588cecc8fe34"
+          },
+          {
+            "frame": 1080,
+            "t": 18.0,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "e4a7b6983ecebc8b6ed44f60377d509b57776dcaf31a82d391a6ff325bbb7b32",
+            "repeated_sha256": "e4a7b6983ecebc8b6ed44f60377d509b57776dcaf31a82d391a6ff325bbb7b32"
+          },
+          {
+            "frame": 360,
+            "t": 6.0,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "1ba05fd1ee2bd89d7730946555060c7e50121a92507858dd9cebe89570e039ce",
+            "repeated_sha256": "1ba05fd1ee2bd89d7730946555060c7e50121a92507858dd9cebe89570e039ce"
+          },
+          {
+            "frame": 1210,
+            "t": 20.166666666666668,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "50ebe89f65f05f9e392fbcc73f92b023e8427123499bbf142eb701ca88c45f91",
+            "repeated_sha256": "50ebe89f65f05f9e392fbcc73f92b023e8427123499bbf142eb701ca88c45f91"
+          },
+          {
+            "frame": 300,
+            "t": 5.0,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "508a9706c7553b34af36666fce80e82b7dcb89ad521a6666c76ede114c2c7f71",
+            "repeated_sha256": "508a9706c7553b34af36666fce80e82b7dcb89ad521a6666c76ede114c2c7f71"
+          },
+          {
+            "frame": 900,
+            "t": 15.0,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "c2f6cca8ff2d4a457b67a939ebe67aff4ddef6a66762a65b7037d7aec57571c9",
+            "repeated_sha256": "c2f6cca8ff2d4a457b67a939ebe67aff4ddef6a66762a65b7037d7aec57571c9"
+          },
+          {
+            "frame": 630,
+            "t": 10.5,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "257ec23b5d3e7ff184b68c614e7f814f8496979555c1d0e9955beb0889e2b3b2",
+            "repeated_sha256": "257ec23b5d3e7ff184b68c614e7f814f8496979555c1d0e9955beb0889e2b3b2"
+          }
+        ],
+        "all_identical": true,
+        "all_byte_identical": true
+      }
+    }
+  ],
+  "passed": 26,
+  "failed": 0,
+  "review_scope": "Verificações técnicas e revisão por quadros do MP4. Não representa playback/escuta integral."
+}

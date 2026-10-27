@@ -1,0 +1,23 @@
+{
+  "name": "armario-7-reel",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Match Lab 1080x1920 a 60 fps do ARMÁRIO-7.",
+  "scripts": {
+    "prepare": "python3 prepare_project.py",
+    "prepare:source": "node normalize-source.mjs",
+    "frames": "node render.mjs --output out/frames --skip-existing",
+    "audio": "python3 audio-design.py",
+    "encode": "node encode.mjs",
+    "determinism": "node render.mjs --output out/determinism --frames 1278,180,755,30,1080,360,1210,300,900,630 && python3 compare_determinism.py",
+    "preview": "node preview-server.mjs",
+    "validate": "python3 validate.py"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "1.1.0",
+    "@sparticuz/chromium": "153.0.0",
+    "ffprobe-static": "3.1.0",
+    "puppeteer-core": "25.16.0"
+  }
+}

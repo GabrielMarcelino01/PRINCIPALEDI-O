@@ -1,0 +1,99 @@
+{
+  "method": "Recaptura em Chromium fora de ordem; comparação de bytes e RGB decodificado.",
+  "frames": [
+    1278,
+    180,
+    755,
+    30,
+    1080,
+    360,
+    1210,
+    300,
+    900,
+    630
+  ],
+  "results": [
+    {
+      "frame": 1278,
+      "t": 21.3,
+      "byte_identical": true,
+      "pixel_identical": true,
+      "original_sha256": "0afae48f4b25e64ee2b8ce3fc65a9c66b835caa980513a6c2c1608d7f3d070e7",
+      "repeated_sha256": "0afae48f4b25e64ee2b8ce3fc65a9c66b835caa980513a6c2c1608d7f3d070e7"
+    },
+    {
+      "frame": 180,
+      "t": 3.0,
+      "byte_identical": true,
+      "pixel_identical": true,
+      "original_sha256": "a2485c80ee19e3476d06056ea1f9720d8e4b2568dc301b3fec02806eb7c1dd99",
+      "repeated_sha256": "a2485c80ee19e3476d06056ea1f9720d8e4b2568dc301b3fec02806eb7c1dd99"
+    },
+    {
+      "frame": 755,
+      "t": 12.583333333333334,
+      "byte_identical": true,
+      "pixel_identical": true,
+      "original_sha256": "71f98145304c40852b2028ea6659db4773fb68c822e583a6da15425f89a2ec82",
+      "repeated_sha256": "71f98145304c40852b2028ea6659db4773fb68c822e583a6da15425f89a2ec82"
+    },
+    {
+      "frame": 30,
+      "t": 0.5,
+      "byte_identical": true,
+      "pixel_identical": true,
+      "original_sha256": "719d7f43ab97944191b9914170adeb8513fdbeea831635d855c1588cecc8fe34",
+      "repeated_sha256": "719d7f43ab97944191b9914170adeb8513fdbeea831635d855c1588cecc8fe34"
+    },
+    {
+      "frame": 1080,
+      "t": 18.0,
+      "byte_identical": true,
+      "pixel_identical": true,
+      "original_sha256": "e4a7b6983ecebc8b6ed44f60377d509b57776dcaf31a82d391a6ff325bbb7b32",
+      "repeated_sha256": "e4a7b6983ecebc8b6ed44f60377d509b57776dcaf31a82d391a6ff325bbb7b32"
+    },
+    {
+      "frame": 360,
+      "t": 6.0,
+      "byte_identical": true,
+      "pixel_identical": true,
+      "original_sha256": "1ba05fd1ee2bd89d7730946555060c7e50121a92507858dd9cebe89570e039ce",
+      "repeated_sha256": "1ba05fd1ee2bd89d7730946555060c7e50121a92507858dd9cebe89570e039ce"
+    },
+    {
+      "frame": 1210,
+      "t": 20.166666666666668,
+      "byte_identical": true,
+      "pixel_identical": true,
+      "original_sha256": "50ebe89f65f05f9e392fbcc73f92b023e8427123499bbf142eb701ca88c45f91",
+      "repeated_sha256": "50ebe89f65f05f9e392fbcc73f92b023e8427123499bbf142eb701ca88c45f91"
+    },
+    {
+      "frame": 300,
+      "t": 5.0,
+      "byte_identical": true,
+      "pixel_identical": true,
+      "original_sha256": "508a9706c7553b34af36666fce80e82b7dcb89ad521a6666c76ede114c2c7f71",
+      "repeated_sha256": "508a9706c7553b34af36666fce80e82b7dcb89ad521a6666c76ede114c2c7f71"
+    },
+    {
+      "frame": 900,
+      "t": 15.0,
+      "byte_identical": true,
+      "pixel_identical": true,
+      "original_sha256": "c2f6cca8ff2d4a457b67a939ebe67aff4ddef6a66762a65b7037d7aec57571c9",
+      "repeated_sha256": "c2f6cca8ff2d4a457b67a939ebe67aff4ddef6a66762a65b7037d7aec57571c9"
+    },
+    {
+      "frame": 630,
+      "t": 10.5,
+      "byte_identical": true,
+      "pixel_identical": true,
+      "original_sha256": "257ec23b5d3e7ff184b68c614e7f814f8496979555c1d0e9955beb0889e2b3b2",
+      "repeated_sha256": "257ec23b5d3e7ff184b68c614e7f814f8496979555c1d0e9955beb0889e2b3b2"
+    }
+  ],
+  "all_identical": true,
+  "all_byte_identical": true
+}
