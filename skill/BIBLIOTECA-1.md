@@ -29,100 +29,7 @@
   "poster_url": "https://media.skillry.dev/opus-5-5/twoclipping-402193/original.9c664f011f.webp",
   "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/twoclipping-402193",
   "added": "2026-09-26",
-  "has_remake": true,
-  "alternate_references": [
-   {
-    "slug": "morse-369333",
-    "author": "__morse",
-    "author_url": "https://x.com/__morse",
-    "post_url": "https://x.com/__morse/status/2103485566570369333",
-    "category": "3d",
-    "tech_tags": [
-     "svg"
-    ],
-    "prompt_partial": false,
-    "poster_url": "https://media.skillry.dev/opus-5-5/morse-369333/original.519a9f00ee.webp",
-    "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/morse-369333",
-    "added": "2026-09-26",
-    "has_remake": true
-   },
-   {
-    "slug": "demonugc-525162",
-    "author": "demonugc",
-    "author_url": "https://x.com/demonugc",
-    "post_url": "https://x.com/demonugc/status/2103526713208525162",
-    "category": "motion",
-    "tech_tags": [
-     "svg"
-    ],
-    "prompt_partial": false,
-    "poster_url": "https://media.skillry.dev/opus-5-5/demonugc-525162/original.eb370273ad.webp",
-    "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/demonugc-525162",
-    "added": "2026-09-26",
-    "has_remake": true
-   },
-   {
-    "slug": "dzhohola-249003",
-    "author": "dzhohola",
-    "author_url": "https://x.com/dzhohola",
-    "post_url": "https://x.com/dzhohola/status/2103605737595249003",
-    "category": "motion",
-    "tech_tags": [
-     "css"
-    ],
-    "prompt_partial": false,
-    "poster_url": "https://media.skillry.dev/opus-5-5/dzhohola-249003/original.68ba3cb389.webp",
-    "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/dzhohola-249003",
-    "added": "2026-09-26",
-    "has_remake": true
-   },
-   {
-    "slug": "hicallmechai-878304",
-    "author": "hiCallMeChai",
-    "author_url": "https://x.com/hiCallMeChai",
-    "post_url": "https://x.com/hiCallMeChai/status/2103600312296878304",
-    "category": "motion",
-    "tech_tags": [
-     "svg",
-     "gsap"
-    ],
-    "prompt_partial": false,
-    "poster_url": "https://media.skillry.dev/opus-5-5/hicallmechai-878304/original.3f1783296a.webp",
-    "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/hicallmechai-878304",
-    "added": "2026-09-26",
-    "has_remake": true
-   },
-   {
-    "slug": "nezbuilds-294391",
-    "author": "nezbuilds",
-    "author_url": "https://x.com/nezbuilds",
-    "post_url": "https://x.com/nezbuilds/status/2103487427365294391",
-    "category": "motion",
-    "tech_tags": [
-     "svg"
-    ],
-    "prompt_partial": false,
-    "poster_url": "https://media.skillry.dev/opus-5-5/nezbuilds-294391/original.2ea16dc1f9.webp",
-    "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/nezbuilds-294391",
-    "added": "2026-09-26",
-    "has_remake": true
-   },
-   {
-    "slug": "sanjeevn72-457691",
-    "author": "sanjeevn72",
-    "author_url": "https://x.com/sanjeevn72",
-    "post_url": "https://x.com/sanjeevn72/status/2103456358125457691",
-    "category": "motion",
-    "tech_tags": [
-     "svg"
-    ],
-    "prompt_partial": false,
-    "poster_url": "https://media.skillry.dev/opus-5-5/sanjeevn72-457691/original.2285d7089e.webp",
-    "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/sanjeevn72-457691",
-    "added": "2026-09-26",
-    "has_remake": true
-   }
-  ]
+  "has_remake": true
  },
  {
   "slug": "anabology-491441",
@@ -156,74 +63,7 @@
   "poster_url": "https://media.skillry.dev/opus-5-5/moritzkremb-466494/original.dc5bd867e2.webp",
   "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/moritzkremb-466494",
   "added": "2026-09-26",
-  "has_remake": true,
-  "alternate_references": [
-   {
-    "slug": "leanzubrezki-766171",
-    "author": "LeanZubrezki",
-    "author_url": "https://x.com/LeanZubrezki",
-    "post_url": "https://x.com/LeanZubrezki/status/2103502063950766171",
-    "category": "motion",
-    "tech_tags": [
-     "svg",
-     "gsap"
-    ],
-    "prompt_partial": false,
-    "poster_url": "https://media.skillry.dev/opus-5-5/leanzubrezki-766171/original.e6da3fe4e9.webp",
-    "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/leanzubrezki-766171",
-    "added": "2026-09-26",
-    "has_remake": true
-   },
-   {
-    "slug": "hsanat-012699",
-    "author": "hSanat",
-    "author_url": "https://x.com/hSanat",
-    "post_url": "https://x.com/hSanat/status/2103358205091012699",
-    "category": "motion",
-    "tech_tags": [
-     "svg",
-     "gsap"
-    ],
-    "prompt_partial": false,
-    "poster_url": "https://media.skillry.dev/opus-5-5/hsanat-012699/original.1112d54ade.webp",
-    "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/hsanat-012699",
-    "added": "2026-09-26",
-    "has_remake": true
-   },
-   {
-    "slug": "drrickio-009558",
-    "author": "drrickio",
-    "author_url": "https://x.com/drrickio",
-    "post_url": "https://x.com/drrickio/status/2103333836130009558",
-    "category": "motion",
-    "tech_tags": [
-     "svg",
-     "gsap"
-    ],
-    "prompt_partial": false,
-    "poster_url": "https://media.skillry.dev/opus-5-5/drrickio-009558/original.0f782ca1ae.webp",
-    "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/drrickio-009558",
-    "added": "2026-09-26",
-    "has_remake": true
-   },
-   {
-    "slug": "pbteja1998-651644",
-    "author": "pbteja1998",
-    "author_url": "https://x.com/pbteja1998",
-    "post_url": "https://x.com/pbteja1998/status/2103176101497651644",
-    "category": "motion",
-    "tech_tags": [
-     "svg",
-     "gsap",
-     "css"
-    ],
-    "prompt_partial": false,
-    "poster_url": "https://media.skillry.dev/opus-5-5/pbteja1998-651644/original.1bdf8e9b65.webp",
-    "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/pbteja1998-651644",
-    "added": "2026-09-26",
-    "has_remake": true
-   }
-  ]
+  "has_remake": true
  },
  {
   "slug": "deedydas-252537",
@@ -240,23 +80,7 @@
   "poster_url": "https://media.skillry.dev/opus-5-5/deedydas-252537/original.8d653fb34b.webp",
   "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/deedydas-252537",
   "added": "2026-09-26",
-  "has_remake": true,
-  "alternate_references": [
-   {
-    "slug": "q970270495-497923",
-    "title": "Startup Promo Video",
-    "author": "q970270495",
-    "author_url": "https://x.com/q970270495",
-    "post_url": "https://x.com/q970270495/status/2105233470574497923",
-    "category": "motion",
-    "tech_tags": [],
-    "prompt_partial": false,
-    "poster_url": "https://media.skillry.dev/opus-5-5/_prompts/q970270495-497923/poster.f0c5c64d5e.webp",
-    "skillry_url": null,
-    "has_remake": false,
-    "added": "2026-10-12"
-   }
-  ]
+  "has_remake": true
  },
  {
   "slug": "melvynx-638493",
@@ -293,25 +117,7 @@
   "poster_url": "https://media.skillry.dev/opus-5-5/ajith-io-208546/original.e545567a26.webp",
   "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/ajith-io-208546",
   "added": "2026-09-26",
-  "has_remake": true,
-  "alternate_references": [
-   {
-    "slug": "itisrazak-332386",
-    "author": "itisRazak",
-    "author_url": "https://x.com/itisRazak",
-    "post_url": "https://x.com/itisRazak/status/2103517930424332386",
-    "category": "motion",
-    "tech_tags": [
-     "threejs",
-     "canvas"
-    ],
-    "prompt_partial": false,
-    "poster_url": "https://media.skillry.dev/opus-5-5/itisrazak-332386/original.db024c3c41.webp",
-    "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/itisrazak-332386",
-    "added": "2026-09-26",
-    "has_remake": true
-   }
-  ]
+  "has_remake": true
  },
  {
   "slug": "sudo-kiran-335993",
@@ -415,23 +221,7 @@
   "poster_url": "https://media.skillry.dev/opus-5-5/0xvalure-331584/original.241313ccf0.webp",
   "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/0xvalure-331584",
   "added": "2026-09-26",
-  "has_remake": true,
-  "alternate_references": [
-   {
-    "slug": "0xvalure-354245",
-    "title": "PayBox Logo Motion Design",
-    "author": "0xValure",
-    "author_url": "https://x.com/0xValure",
-    "post_url": "https://x.com/0xValure/status/2103603029224354245",
-    "category": "motion",
-    "tech_tags": [],
-    "prompt_partial": false,
-    "poster_url": "https://media.skillry.dev/opus-5-5/_prompts/0xvalure-354245/poster.75c35e2216.webp",
-    "skillry_url": null,
-    "has_remake": false,
-    "added": "2026-10-12"
-   }
-  ]
+  "has_remake": true
  },
  {
   "slug": "verbove-268381",
@@ -603,24 +393,23 @@
   "poster_url": "https://media.skillry.dev/opus-5-5/twoclipping-000267/original.87cf7f8c74.webp",
   "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/twoclipping-000267",
   "added": "2026-09-26",
-  "has_remake": true,
-  "alternate_references": [
-   {
-    "slug": "raphaelaubryy-687877",
-    "author": "RaphaelAubryy",
-    "author_url": "https://x.com/RaphaelAubryy",
-    "post_url": "https://x.com/RaphaelAubryy/status/2103413596822687877",
-    "category": "3d",
-    "tech_tags": [
-     "css"
-    ],
-    "prompt_partial": false,
-    "poster_url": "https://media.skillry.dev/opus-5-5/raphaelaubryy-687877/original.0b55ce6d62.webp",
-    "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/raphaelaubryy-687877",
-    "added": "2026-09-26",
-    "has_remake": true
-   }
-  ]
+  "has_remake": true
+ },
+ {
+  "slug": "morse-369333",
+  "author": "__morse",
+  "author_url": "https://x.com/__morse",
+  "post_url": "https://x.com/__morse/status/2103485566570369333",
+  "category": "3d",
+  "tech_tags": [
+   "svg"
+  ],
+  "prompt": "<inputs>\nAsk me for: 8 to 12 UI states I want the shape to become (e.g. button, loader, player, slider, toggle, tabs, chart, command palette, toast), pure black and white or one accent color, and a royalty-free song around 120 BPM (e.g. Mixkit, free for commercial use).\n</inputs>\n\n<direction>\nDribbble-level UI motion. One shape, never cut: every state is the same element morphing its size, radius and color while its content swaps with a short blur. A cursor drives every change with real clicks and drags. Light warm-gray canvas, black and white components, one clean UI font (Geist). Springs everywhere, a tiny overshoot at most. The camera zooms so each state fills the frame. The last frame is the first frame, so it loops.\nBanned: bouncy easing, particle bursts, glows, gradients on UI chrome, mismatched icon strokes, dead time, anything that looks like a template.\n</direction>\n\n<structure>\n120 BPM, 7 bars, something happens on every beat.\nButton → loader → check → dynamic island → music player with a play/pause morph → scrub the progress bar → it becomes a volume slider that stretches when dragged past max → a toggle flips on the beat → the knob becomes a liquid tab indicator → the tabs open into a chart that draws itself, with a tooltip on hover → it collapses into ⌘K → type to filter → enter → toast → back to the button.\n</structure>\n\n<build>\n1. One HTML file, square 1440x1440. Every style is computed from time inside seek(t): no CSS transitions, no timers, no state carried between frames.\n2. Springs are closed-form step responses. A value that changes target many times is the sum of one spring per change, so it stays a pure function of time.\n3. The tab indicator's two edges ride different springs, so the leading edge stretches ahead of the trailing one. Same trick for the toggle knob.\n4. Drags are direct manipulation: while the cursor is held, the value is computed from its position. On release it springs back from wherever it was.\n5. Analyze the song with numpy for the beat grid and start on a downbeat. Place every UI sound by its measured peak.\n6. Render with Playwright: 4 subframes per frame, blended with ffmpeg tmix for motion blur at 60fps.\n7. Render one frame per beat before the full render. Fix anything off the grid, cramped or hard to read.\n</build>\n\n<gotchas>\nNever put will-change on anything the camera scales or the text renders blurry. Text that swaps inside a morphing container needs its own enter and exit timing or it overlaps. Make the last frame identical to the first, cursor position and speed included, or the loop stutters.\n</gotchas>\n\n<start>\nAsk me for the inputs, then show me the state list on the beat grid before you write any code.\n</start>",
+  "prompt_partial": false,
+  "poster_url": "https://media.skillry.dev/opus-5-5/morse-369333/original.519a9f00ee.webp",
+  "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/morse-369333",
+  "added": "2026-09-26",
+  "has_remake": true
  },
  {
   "slug": "prasenx-693512",
@@ -671,24 +460,7 @@
   "poster_url": "https://media.skillry.dev/opus-5-5/pankajkumar-dev-718609/original.4dd61f6a13.webp",
   "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/pankajkumar-dev-718609",
   "added": "2026-09-26",
-  "has_remake": true,
-  "alternate_references": [
-   {
-    "slug": "sahilvermaai-189237",
-    "author": "sahilvermaai",
-    "author_url": "https://x.com/sahilvermaai",
-    "post_url": "https://x.com/sahilvermaai/status/2103725292095189237",
-    "category": "motion",
-    "tech_tags": [
-     "canvas"
-    ],
-    "prompt_partial": false,
-    "poster_url": "https://media.skillry.dev/opus-5-5/sahilvermaai-189237/original.8e686c39bf.webp",
-    "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/sahilvermaai-189237",
-    "added": "2026-09-26",
-    "has_remake": true
-   }
-  ]
+  "has_remake": true
  },
  {
   "slug": "nolkeeg-635633",
@@ -829,24 +601,7 @@
   "poster_url": "https://media.skillry.dev/opus-5-5/zacxbt-944604/original.1fc21723ff.webp",
   "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/zacxbt-944604",
   "added": "2026-09-26",
-  "has_remake": true,
-  "alternate_references": [
-   {
-    "slug": "majidmanzarpour-927543",
-    "author": "majidmanzarpour",
-    "author_url": "https://x.com/majidmanzarpour",
-    "post_url": "https://x.com/majidmanzarpour/status/2102476258948927543",
-    "category": "motion",
-    "tech_tags": [
-     "canvas"
-    ],
-    "prompt_partial": false,
-    "poster_url": "https://media.skillry.dev/opus-5-5/majidmanzarpour-927543/original.f5bc33c897.webp",
-    "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/majidmanzarpour-927543",
-    "added": "2026-09-26",
-    "has_remake": true
-   }
-  ]
+  "has_remake": true
  },
  {
   "slug": "lexnlin-241739",
@@ -934,6 +689,23 @@
   "has_remake": true
  },
  {
+  "slug": "itisrazak-332386",
+  "author": "itisRazak",
+  "author_url": "https://x.com/itisRazak",
+  "post_url": "https://x.com/itisRazak/status/2103517930424332386",
+  "category": "motion",
+  "tech_tags": [
+   "threejs",
+   "canvas"
+  ],
+  "prompt": "Research Distilbook.Make a dynamic 40-second motion graphics video on Distilbook that shows what an incredible motion designer you are. like it's your showreel - Go all out.",
+  "prompt_partial": false,
+  "poster_url": "https://media.skillry.dev/opus-5-5/itisrazak-332386/original.db024c3c41.webp",
+  "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/itisrazak-332386",
+  "added": "2026-09-26",
+  "has_remake": true
+ },
+ {
   "slug": "twoclipping-496100",
   "author": "twoclipping",
   "author_url": "https://x.com/twoclipping",
@@ -982,6 +754,22 @@
   "prompt_partial": false,
   "poster_url": "https://media.skillry.dev/opus-5-5/kloss-xyz-941143/original.c77fc2a47b.webp",
   "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/kloss-xyz-941143",
+  "added": "2026-09-26",
+  "has_remake": true
+ },
+ {
+  "slug": "majidmanzarpour-927543",
+  "author": "majidmanzarpour",
+  "author_url": "https://x.com/majidmanzarpour",
+  "post_url": "https://x.com/majidmanzarpour/status/2102476258948927543",
+  "category": "motion",
+  "tech_tags": [
+   "canvas"
+  ],
+  "prompt": "Create a single self-contained HTML file that renders an animated pixel art wizard casting a spell, using vanilla JavaScript and Canvas 2D. No external assets, libraries, or network requests.\n\nRENDERING\n- Draw everything to an offscreen canvas at a fixed logical resolution of 128x96, then blit to a fullscreen display canvas scaled by the largest integer factor that fits the window, centered, with imageSmoothingEnabled = false and CSS image-rendering: pixelated.\n- All drawing snaps to integer coordinates on the logical canvas. No sub-pixel positions, anti-aliasing, gradients, or shadowBlur.\n- Fixed palette of ~24 hex colors: deep blues/purples for night sky, warm robe tones, 3-4 bright magic colors. Every pixel comes from this palette.\n\nCHARACTER\n- Build the wizard procedurally from filled rects and pixel runs, ~24x32 logical pixels: pointed hat with a bend, long beard, two-shade robe with darker outline, staff with a gem at the tip.\n- Parameterize the pose (staff angle, arm raise, head tilt, robe sway). Animate parameters smoothly, then quantize to the pixel grid each frame so motion reads at an 8-12 fps pixel animation feel even though the loop runs at 60fps.\n\nANIMATION\n- Looping state machine: IDLE (2-frame bob, beard sway) -> CHARGE (staff raises, gem flickers, sparks spiral inward) -> CAST (bright burst, projectile fires across the scene, 1-2 pixel screen shake) -> RECOVER (settle back). Ease pose parameters between keyframes.\n- Pooled allocation-free particle system: preallocate and reuse. Sparks orbit the gem during CHARGE, explode outward on CAST, each particle stepping its palette index from white to magic color to dark before despawn. Snap particle positions to the grid when drawing.\n- Fixed 60hz timestep update with rAF rendering. Zero object allocation inside the loop.\n\nSCENE\n- Minimal background: dark sky, a few twinkling 1px stars, moon, stone floor line. Character silhouette must read clearly.\n- Subtle 1px rim light on the wizard from the gem, brightening during CHARGE and CAST.\n\nQUALITY BAR\n- Crisp pixels at any window size, seamless loop, stable 60fps, readable silhouette. Should look like a polished 16-bit sprite animation, not vector shapes scaled down.",
+  "prompt_partial": false,
+  "poster_url": "https://media.skillry.dev/opus-5-5/majidmanzarpour-927543/original.f5bc33c897.webp",
+  "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/majidmanzarpour-927543",
   "added": "2026-09-26",
   "has_remake": true
  },
@@ -1036,6 +824,22 @@
   "prompt_partial": false,
   "poster_url": "https://media.skillry.dev/opus-5-5/axtonliu-290566/original.421b336345.webp",
   "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/axtonliu-290566",
+  "added": "2026-09-26",
+  "has_remake": true
+ },
+ {
+  "slug": "demonugc-525162",
+  "author": "demonugc",
+  "author_url": "https://x.com/demonugc",
+  "post_url": "https://x.com/demonugc/status/2103526713208525162",
+  "category": "motion",
+  "tech_tags": [
+   "svg"
+  ],
+  "prompt": "<inputs>\nAsk me for: 8 to 12 UI states I want the shape to become (e.g. button, loader, player, slider, toggle, tabs, chart, command palette, toast), pure black and white or one accent color, and a royalty-free song around 120 BPM (e.g. Mixkit, free for commercial use).\n</inputs>\n\n<direction>\nDribbble-level UI motion. One shape, never cut: every state is the same element morphing its size, radius and color while its content swaps with a short blur. A cursor drives every change with real clicks and drags. Light warm-gray canvas, black and white components, one clean UI font (Geist). Springs everywhere, a tiny overshoot at most. The camera zooms so each state fills the frame. The last frame is the first frame, so it loops.\nBanned: bouncy easing, particle bursts, glows, gradients on UI chrome, mismatched icon strokes, dead time, anything that looks like a template.\n</direction>\n\n<structure>\n120 BPM, 7 bars, something happens on every beat.\nButton → loader → check → dynamic island → music player with a play/pause morph → scrub the progress bar → it becomes a volume slider that stretches when dragged past max → a toggle flips on the beat → the knob becomes a liquid tab indicator → the tabs open into a chart that draws itself, with a tooltip on hover → it collapses into ⌘K → type to filter → enter → toast → back to the button.\n</structure>\n\n<build>\n1. One HTML file, square 1440x1440. Every style is computed from time inside seek(t): no CSS transitions, no timers, no state carried between frames.\n2. Springs are closed-form step responses. A value that changes target many times is the sum of one spring per change, so it stays a pure function of time.\n3. The tab indicator's two edges ride different springs, so the leading edge stretches ahead of the trailing one. Same trick for the toggle knob.\n4. Drags are direct manipulation: while the cursor is held, the value is computed from its position. On release it springs back from wherever it was.\n5. Analyze the song with numpy for the beat grid and start on a downbeat. Place every UI sound by its measured peak.\n6. Render with Playwright: 4 subframes per frame, blended with ffmpeg tmix for motion blur at 60fps.\n7. Render one frame per beat before the full render. Fix anything off the grid, cramped or hard to read.\n</build>\n\n<gotchas>\nNever put will-change on anything the camera scales or the text renders blurry. Text that swaps inside a morphing container needs its own enter and exit timing or it overlaps. Make the last frame identical to the first, cursor position and speed included, or the loop stutters.\n</gotchas>\n\n<start>\nAsk me for the inputs, then show me the state list on the beat grid before you write any code.\n</start>",
+  "prompt_partial": false,
+  "poster_url": "https://media.skillry.dev/opus-5-5/demonugc-525162/original.eb370273ad.webp",
+  "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/demonugc-525162",
   "added": "2026-09-26",
   "has_remake": true
  },
@@ -1565,6 +1369,22 @@
   "has_remake": true
  },
  {
+  "slug": "sahilvermaai-189237",
+  "author": "sahilvermaai",
+  "author_url": "https://x.com/sahilvermaai",
+  "post_url": "https://x.com/sahilvermaai/status/2103725292095189237",
+  "category": "motion",
+  "tech_tags": [
+   "canvas"
+  ],
+  "prompt": "create a motion design video of a poster breaking out of its own frame.",
+  "prompt_partial": false,
+  "poster_url": "https://media.skillry.dev/opus-5-5/sahilvermaai-189237/original.8e686c39bf.webp",
+  "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/sahilvermaai-189237",
+  "added": "2026-09-26",
+  "has_remake": true
+ },
+ {
   "slug": "pound75423-464968",
   "author": "pound75423",
   "author_url": "https://x.com/pound75423",
@@ -1595,24 +1415,7 @@
   "poster_url": "https://media.skillry.dev/opus-5-5/souravbhar871-477361/original.b33abc19ad.webp",
   "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/souravbhar871-477361",
   "added": "2026-09-26",
-  "has_remake": true,
-  "alternate_references": [
-   {
-    "slug": "1littlecoder-914649",
-    "author": "1littlecoder",
-    "author_url": "https://x.com/1littlecoder",
-    "post_url": "https://x.com/1littlecoder/status/2103587706999914649",
-    "category": "motion",
-    "tech_tags": [
-     "canvas"
-    ],
-    "prompt_partial": false,
-    "poster_url": "https://media.skillry.dev/opus-5-5/1littlecoder-914649/original.b2bf84bb6f.webp",
-    "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/1littlecoder-914649",
-    "added": "2026-09-26",
-    "has_remake": true
-   }
-  ]
+  "has_remake": true
  },
  {
   "slug": "ved-cj-066575",
@@ -1852,6 +1655,22 @@
   "has_remake": true
  },
  {
+  "slug": "dzhohola-249003",
+  "author": "dzhohola",
+  "author_url": "https://x.com/dzhohola",
+  "post_url": "https://x.com/dzhohola/status/2103605737595249003",
+  "category": "motion",
+  "tech_tags": [
+   "css"
+  ],
+  "prompt": "<inputs>\nAsk me for: 8 to 12 UI states I want the shape to become (e.g. button, loader, player, slider, toggle, tabs, chart, command palette, toast), pure black and white or one accent color, and a royalty-free song around 120 BPM (e.g. Mixkit, free for commercial use).\n</inputs>\n\n<direction>\nDribbble-level UI motion. One shape, never cut: every state is the same element morphing its size, radius and color while its content swaps with a short blur. A cursor drives every change with real clicks and drags. Light warm-gray canvas, black and white components, one clean UI font (Geist). Springs everywhere, a tiny overshoot at most. The camera zooms so each state fills the frame. The last frame is the first frame, so it loops.\nBanned: bouncy easing, particle bursts, glows, gradients on UI chrome, mismatched icon strokes, dead time, anything that looks like a template.\n</direction>\n\n<structure>\n120 BPM, 7 bars, something happens on every beat.\nButton → loader → check → dynamic island → music player with a play/pause morph → scrub the progress bar → it becomes a volume slider that stretches when dragged past max → a toggle flips on the beat → the knob becomes a liquid tab indicator → the tabs open into a chart that draws itself, with a tooltip on hover → it collapses into ⌘K → type to filter → enter → toast → back to the button.\n</structure>\n\n<build>\n1. One HTML file, square 1440x1440. Every style is computed from time inside seek(t): no CSS transitions, no timers, no state carried between frames.\n2. Springs are closed-form step responses. A value that changes target many times is the sum of one spring per change, so it stays a pure function of time.\n3. The tab indicator's two edges ride different springs, so the leading edge stretches ahead of the trailing one. Same trick for the toggle knob.\n4. Drags are direct manipulation: while the cursor is held, the value is computed from its position. On release it springs back from wherever it was.\n5. Analyze the song with numpy for the beat grid and start on a downbeat. Place every UI sound by its measured peak.\n6. Render with Playwright: 4 subframes per frame, blended with ffmpeg tmix for motion blur at 60fps.\n7. Render one frame per beat before the full render. Fix anything off the grid, cramped or hard to read.\n</build>\n\n<gotchas>\nNever put will-change on anything the camera scales or the text renders blurry. Text that swaps inside a morphing container needs its own enter and exit timing or it overlaps. Make the last frame identical to the first, cursor position and speed included, or the loop stutters.\n</gotchas>\n\n<start>\nAsk me for the inputs, then show me the state list on the beat grid before you write any code.\n</start>",
+  "prompt_partial": false,
+  "poster_url": "https://media.skillry.dev/opus-5-5/dzhohola-249003/original.68ba3cb389.webp",
+  "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/dzhohola-249003",
+  "added": "2026-09-26",
+  "has_remake": true
+ },
+ {
   "slug": "madhav-xo-524440",
   "author": "Madhav_XO",
   "author_url": "https://x.com/Madhav_XO",
@@ -1901,6 +1720,39 @@
   "prompt_partial": false,
   "poster_url": "https://media.skillry.dev/opus-5-5/astrodevil-392708/original.678a3c3117.webp",
   "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/astrodevil-392708",
+  "added": "2026-09-26",
+  "has_remake": true
+ },
+ {
+  "slug": "hicallmechai-878304",
+  "author": "hiCallMeChai",
+  "author_url": "https://x.com/hiCallMeChai",
+  "post_url": "https://x.com/hiCallMeChai/status/2103600312296878304",
+  "category": "motion",
+  "tech_tags": [
+   "svg",
+   "gsap"
+  ],
+  "prompt": "<inputs>\nAsk me for: 8 to 12 UI states I want the shape to become (e.g. button, loader, player, slider, toggle, tabs, chart, command palette, toast), pure black and white or one accent color, and a royalty-free song around 120 BPM (e.g. Mixkit, free for commercial use).\n</inputs>\n\n<direction>\nDribbble-level UI motion. One shape, never cut: every state is the same element morphing its size, radius and color while its content swaps with a short blur. A cursor drives every change with real clicks and drags. Light warm-gray canvas, black and white components, one clean UI font (Geist). Springs everywhere, a tiny overshoot at most. The camera zooms so each state fills the frame. The last frame is the first frame, so it loops.\nBanned: bouncy easing, particle bursts, glows, gradients on UI chrome, mismatched icon strokes, dead time, anything that looks like a template.\n</direction>\n\n<structure>\n120 BPM, 7 bars, something happens on every beat.\nButton → loader → check → dynamic island → music player with a play/pause morph → scrub the progress bar → it becomes a volume slider that stretches when dragged past max → a toggle flips on the beat → the knob becomes a liquid tab indicator → the tabs open into a chart that draws itself, with a tooltip on hover → it collapses into ⌘K → type to filter → enter → toast → back to the button.\n</structure>\n\n<build>\n1. One HTML file, square 1440x1440. Every style is computed from time inside seek(t): no CSS transitions, no timers, no state carried between frames.\n2. Springs are closed-form step responses. A value that changes target many times is the sum of one spring per change, so it stays a pure function of time.\n3. The tab indicator's two edges ride different springs, so the leading edge stretches ahead of the trailing one. Same trick for the toggle knob.\n4. Drags are direct manipulation: while the cursor is held, the value is computed from its position. On release it springs back from wherever it was.\n5. Analyze the song with numpy for the beat grid and start on a downbeat. Place every UI sound by its measured peak.\n6. Render with Playwright: 4 subframes per frame, blended with ffmpeg tmix for motion blur at 60fps.\n7. Render one frame per beat before the full render. Fix anything off the grid, cramped or hard to read.\n</build>\n\n<gotchas>\nNever put will-change on anything the camera scales or the text renders blurry. Text that swaps inside a morphing container needs its own enter and exit timing or it overlaps. Make the last frame identical to the first, cursor position and speed included, or the loop stutters.\n</gotchas>\n\n<start>\nAsk me for the inputs, then show me the state list on the beat grid before you write any code.\n</start>",
+  "prompt_partial": false,
+  "poster_url": "https://media.skillry.dev/opus-5-5/hicallmechai-878304/original.3f1783296a.webp",
+  "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/hicallmechai-878304",
+  "added": "2026-09-26",
+  "has_remake": true
+ },
+ {
+  "slug": "1littlecoder-914649",
+  "author": "1littlecoder",
+  "author_url": "https://x.com/1littlecoder",
+  "post_url": "https://x.com/1littlecoder/status/2103587706999914649",
+  "category": "motion",
+  "tech_tags": [
+   "canvas"
+  ],
+  "prompt": "make a dynamic 10-second motion graphics video that shows who are you as Opus 5.5 - be as creative and dynamic as possible. Avoid the frames and texts on the corners which are typical ai made giveaways!",
+  "prompt_partial": false,
+  "poster_url": "https://media.skillry.dev/opus-5-5/1littlecoder-914649/original.b2bf84bb6f.webp",
+  "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/1littlecoder-914649",
   "added": "2026-09-26",
   "has_remake": true
  },
@@ -2207,6 +2059,23 @@
   "has_remake": true
  },
  {
+  "slug": "leanzubrezki-766171",
+  "author": "LeanZubrezki",
+  "author_url": "https://x.com/LeanZubrezki",
+  "post_url": "https://x.com/LeanZubrezki/status/2103502063950766171",
+  "category": "motion",
+  "tech_tags": [
+   "svg",
+   "gsap"
+  ],
+  "prompt": "I want you to create a highly professional SaaS product launch video. Go and find some SaaS, preferably just one that people know, so it's easier to identify with it. Pick that, and then make sure to get actual assets and images and all of that stuff from the internet. Turn it into these typical, very professionally edited, motion-graphics-styled product launch videos that you see people making on Twitter when they launch new SaaS products (which are showing off the features, the benefits, and all of these things).",
+  "prompt_partial": false,
+  "poster_url": "https://media.skillry.dev/opus-5-5/leanzubrezki-766171/original.e6da3fe4e9.webp",
+  "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/leanzubrezki-766171",
+  "added": "2026-09-26",
+  "has_remake": true
+ },
+ {
   "slug": "onewaysidewalks-440008",
   "author": "onewaysidewalks",
   "author_url": "https://x.com/onewaysidewalks",
@@ -2257,6 +2126,22 @@
   "prompt_partial": false,
   "poster_url": "https://media.skillry.dev/opus-5-5/anas0ra-952637/original.f5978b0fca.webp",
   "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/anas0ra-952637",
+  "added": "2026-09-26",
+  "has_remake": true
+ },
+ {
+  "slug": "nezbuilds-294391",
+  "author": "nezbuilds",
+  "author_url": "https://x.com/nezbuilds",
+  "post_url": "https://x.com/nezbuilds/status/2103487427365294391",
+  "category": "motion",
+  "tech_tags": [
+   "svg"
+  ],
+  "prompt": "<inputs>\nAsk me for: 8 to 12 UI states I want the shape to become (e.g. button, loader, player, slider, toggle, tabs, chart, command palette, toast), pure black and white or one accent color, and a royalty-free song around 120 BPM (e.g. Mixkit, free for commercial use).\n</inputs>\n\n<direction>\nDribbble-level UI motion. One shape, never cut: every state is the same element morphing its size, radius and color while its content swaps with a short blur. A cursor drives every change with real clicks and drags. Light warm-gray canvas, black and white components, one clean UI font (Geist). Springs everywhere, a tiny overshoot at most. The camera zooms so each state fills the frame. The last frame is the first frame, so it loops.\nBanned: bouncy easing, particle bursts, glows, gradients on UI chrome, mismatched icon strokes, dead time, anything that looks like a template.\n</direction>\n\n<structure>\n120 BPM, 7 bars, something happens on every beat.\nButton → loader → check → dynamic island → music player with a play/pause morph → scrub the progress bar → it becomes a volume slider that stretches when dragged past max → a toggle flips on the beat → the knob becomes a liquid tab indicator → the tabs open into a chart that draws itself, with a tooltip on hover → it collapses into ⌘K → type to filter → enter → toast → back to the button.\n</structure>\n\n<build>\n1. One HTML file, square 1440x1440. Every style is computed from time inside seek(t): no CSS transitions, no timers, no state carried between frames.\n2. Springs are closed-form step responses. A value that changes target many times is the sum of one spring per change, so it stays a pure function of time.\n3. The tab indicator's two edges ride different springs, so the leading edge stretches ahead of the trailing one. Same trick for the toggle knob.\n4. Drags are direct manipulation: while the cursor is held, the value is computed from its position. On release it springs back from wherever it was.\n5. Analyze the song with numpy for the beat grid and start on a downbeat. Place every UI sound by its measured peak.\n6. Render with Playwright: 4 subframes per frame, blended with ffmpeg tmix for motion blur at 60fps.\n7. Render one frame per beat before the full render. Fix anything off the grid, cramped or hard to read.\n</build>\n\n<gotchas>\nNever put will-change on anything the camera scales or the text renders blurry. Text that swaps inside a morphing container needs its own enter and exit timing or it overlaps. Make the last frame identical to the first, cursor position and speed included, or the loop stutters.\n</gotchas>\n\n<start>\nAsk me for the inputs, then show me the state list on the beat grid before you write any code.\n</start>",
+  "prompt_partial": false,
+  "poster_url": "https://media.skillry.dev/opus-5-5/nezbuilds-294391/original.2ea16dc1f9.webp",
+  "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/nezbuilds-294391",
   "added": "2026-09-26",
   "has_remake": true
  },
@@ -2394,6 +2279,22 @@
   "has_remake": true
  },
  {
+  "slug": "sanjeevn72-457691",
+  "author": "sanjeevn72",
+  "author_url": "https://x.com/sanjeevn72",
+  "post_url": "https://x.com/sanjeevn72/status/2103456358125457691",
+  "category": "motion",
+  "tech_tags": [
+   "svg"
+  ],
+  "prompt": "<inputs>\nAsk me for: 8 to 12 UI states I want the shape to become (e.g. button, loader, player, slider, toggle, tabs, chart, command palette, toast), pure black and white or one accent color, and a royalty-free song around 120 BPM (e.g. Mixkit, free for commercial use).\n</inputs>\n\n<direction>\nDribbble-level UI motion. One shape, never cut: every state is the same element morphing its size, radius and color while its content swaps with a short blur. A cursor drives every change with real clicks and drags. Light warm-gray canvas, black and white components, one clean UI font (Geist). Springs everywhere, a tiny overshoot at most. The camera zooms so each state fills the frame. The last frame is the first frame, so it loops.\nBanned: bouncy easing, particle bursts, glows, gradients on UI chrome, mismatched icon strokes, dead time, anything that looks like a template.\n</direction>\n\n<structure>\n120 BPM, 7 bars, something happens on every beat.\nButton → loader → check → dynamic island → music player with a play/pause morph → scrub the progress bar → it becomes a volume slider that stretches when dragged past max → a toggle flips on the beat → the knob becomes a liquid tab indicator → the tabs open into a chart that draws itself, with a tooltip on hover → it collapses into ⌘K → type to filter → enter → toast → back to the button.\n</structure>\n\n<build>\n1. One HTML file, square 1440x1440. Every style is computed from time inside seek(t): no CSS transitions, no timers, no state carried between frames.\n2. Springs are closed-form step responses. A value that changes target many times is the sum of one spring per change, so it stays a pure function of time.\n3. The tab indicator's two edges ride different springs, so the leading edge stretches ahead of the trailing one. Same trick for the toggle knob.\n4. Drags are direct manipulation: while the cursor is held, the value is computed from its position. On release it springs back from wherever it was.\n5. Analyze the song with numpy for the beat grid and start on a downbeat. Place every UI sound by its measured peak.\n6. Render with Playwright: 4 subframes per frame, blended with ffmpeg tmix for motion blur at 60fps.\n7. Render one frame per beat before the full render. Fix anything off the grid, cramped or hard to read.\n</build>\n\n<gotchas>\nNever put will-change on anything the camera scales or the text renders blurry. Text that swaps inside a morphing container needs its own enter and exit timing or it overlaps. Make the last frame identical to the first, cursor position and speed included, or the loop stutters.\n</gotchas>\n\n<start>\nAsk me for the inputs, then show me the state list on the beat grid before you write any code.\n</start>",
+  "prompt_partial": false,
+  "poster_url": "https://media.skillry.dev/opus-5-5/sanjeevn72-457691/original.2285d7089e.webp",
+  "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/sanjeevn72-457691",
+  "added": "2026-09-26",
+  "has_remake": true
+ },
+ {
   "slug": "madpencil-753990",
   "author": "madpencil_",
   "author_url": "https://x.com/madpencil_",
@@ -2492,6 +2393,22 @@
   "has_remake": true
  },
  {
+  "slug": "raphaelaubryy-687877",
+  "author": "RaphaelAubryy",
+  "author_url": "https://x.com/RaphaelAubryy",
+  "post_url": "https://x.com/RaphaelAubryy/status/2103413596822687877",
+  "category": "3d",
+  "tech_tags": [
+   "css"
+  ],
+  "prompt": "<inputs>\nAsk me for: the product name and a one-line promise, 3 to 5 UI moments to show, one accent color, 10 to 20 real vertical clips I own, and a royalty-free song with a clear drop (e.g. Mixkit, free for commercial use).\n</inputs>\n\n<direction>\nHigh-end minimal. One idea per shot, lots of empty space, one accent color, one clean sans (Geist or Inter) with tight tracking. Masked type reveals, match cuts, one smooth camera language. Real footage only, never placeholder cards. No full stops in on-screen text.\nBanned: shockwave rings, particle bursts, RGB split, camera shake, lens flares, neon glows, grid floors, flashing backgrounds, bouncy easing.\n</direction>\n\n<structure>\n10 bars at 120 BPM, 2 seconds each.\nBar 1: the hook lands word by word on the beats.\nBar 2: one hook word morphs into the product UI. A cursor types and clicks.\nThe drop: a circle opens out of the button into a dark scene.\nThen one move per bar: a wall of real clips with a scan line and 3 winners, the key output as big type, a 3D carousel of real videos with floor reflections and a motion-blurred whip onto one hero clip, the hero in a phone next to a panel that flips into results, big stats on push cuts, a 3-word ticker, a logo reveal, a fade to black.\n</structure>\n\n<build>\n1. One HTML file at 1920x1080. Every style is computed from time inside \nhttp://\nwindow.seek(t): no CSS animations, no timers, no state between frames.\n2. Real video: extract clips to 30fps JPEG sequences with ffmpeg and swap img sources per frame. seek awaits the image decodes.\n3. Analyze the song with numpy: tempo, beat grid, energy per bar, the drop. Calibrate the grid to the real kick hits. Every cut sits on a downbeat, every UI hit on a beat.\n4. Render with Playwright: 3 subframes per frame at t minus, at, and plus 1/240s, then blend with ffmpeg tmix for real motion blur at 60fps.\n5. Place each sound effect so its measured peak, not its file start, lands on the event. Keep the effects quiet under the music. Loudnorm to -14 LUFS.\n6. Probe 20 or more frames before the full render. Fix anything cluttered, overlapping or hard to read.\n</build>\n\n<gotchas>\nNever set opacity or filter on a preserve-3d element, because it flattens and both faces show. Fade its wrapper instead. Measure element positions at runtime for match cuts. Only use music and sound effects whose license allows commercial use.\n</gotchas>\n\n<start>\nAsk me for the inputs, then show me a storyboard with every timing on the beat grid before you write any code.\n</start>",
+  "prompt_partial": false,
+  "poster_url": "https://media.skillry.dev/opus-5-5/raphaelaubryy-687877/original.0b55ce6d62.webp",
+  "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/raphaelaubryy-687877",
+  "added": "2026-09-26",
+  "has_remake": true
+ },
+ {
   "slug": "techhalla-498547",
   "author": "techhalla",
   "author_url": "https://x.com/techhalla",
@@ -2557,23 +2474,7 @@
   "poster_url": "https://media.skillry.dev/opus-5-5/mtvneo-148436/original.1c5714ede4.webp",
   "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/mtvneo-148436",
   "added": "2026-09-26",
-  "has_remake": true,
-  "alternate_references": [
-   {
-    "slug": "mtvneo-819281",
-    "title": "Opus 5.5 Self-Personification Motion Graphics",
-    "author": "mtvneo_",
-    "author_url": "https://x.com/mtvneo_",
-    "post_url": "https://x.com/mtvneo_/status/2103407813355819281",
-    "category": "motion",
-    "tech_tags": [],
-    "prompt_partial": false,
-    "poster_url": "https://media.skillry.dev/opus-5-5/_prompts/mtvneo-819281/poster.594de816f1.webp",
-    "skillry_url": null,
-    "has_remake": false,
-    "added": "2026-10-12"
-   }
-  ]
+  "has_remake": true
  },
  {
   "slug": "rneayan-406275",
@@ -2661,6 +2562,23 @@
   "has_remake": true
  },
  {
+  "slug": "hsanat-012699",
+  "author": "hSanat",
+  "author_url": "https://x.com/hSanat",
+  "post_url": "https://x.com/hSanat/status/2103358205091012699",
+  "category": "motion",
+  "tech_tags": [
+   "svg",
+   "gsap"
+  ],
+  "prompt": "I want you to create a highly professional SaaS product launch video. Go and find some SaaS, preferably just one that people know, so it's easier to identify with it. Pick that, and then make sure to get actual assets and images and all of that stuff from the internet. Turn it into these typical, very professionally edited, motion-graphics-styled product launch videos that you see people making on Twitter when they launch new SaaS products (which are showing off the features, the benefits, and all of these things).",
+  "prompt_partial": false,
+  "poster_url": "https://media.skillry.dev/opus-5-5/hsanat-012699/original.1112d54ade.webp",
+  "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/hsanat-012699",
+  "added": "2026-09-26",
+  "has_remake": true
+ },
+ {
   "slug": "davidshulmanfl-842921",
   "author": "DavidShulmanFL",
   "author_url": "https://x.com/DavidShulmanFL",
@@ -2675,6 +2593,23 @@
   "prompt_partial": false,
   "poster_url": "https://media.skillry.dev/opus-5-5/davidshulmanfl-842921/original.ac16caae3b.webp",
   "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/davidshulmanfl-842921",
+  "added": "2026-09-26",
+  "has_remake": true
+ },
+ {
+  "slug": "drrickio-009558",
+  "author": "drrickio",
+  "author_url": "https://x.com/drrickio",
+  "post_url": "https://x.com/drrickio/status/2103333836130009558",
+  "category": "motion",
+  "tech_tags": [
+   "svg",
+   "gsap"
+  ],
+  "prompt": "I want you to create a highly professional SaaS product launch video. Go and find some SaaS, preferably just one that people know, so it's easier to identify with it. Pick that, and then make sure to get actual assets and images and all of that stuff from the internet. Turn it into these typical, very professionally edited, motion-graphics-styled product launch videos that you see people making on Twitter when they launch new SaaS products (which are showing off the features, the benefits, and all of these things).",
+  "prompt_partial": false,
+  "poster_url": "https://media.skillry.dev/opus-5-5/drrickio-009558/original.0f782ca1ae.webp",
+  "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/drrickio-009558",
   "added": "2026-09-26",
   "has_remake": true
  },
@@ -2988,6 +2923,24 @@
   "prompt_partial": false,
   "poster_url": "https://media.skillry.dev/opus-5-5/mycodecoach-459574/original.0ef832505b.webp",
   "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/mycodecoach-459574",
+  "added": "2026-09-26",
+  "has_remake": true
+ },
+ {
+  "slug": "pbteja1998-651644",
+  "author": "pbteja1998",
+  "author_url": "https://x.com/pbteja1998",
+  "post_url": "https://x.com/pbteja1998/status/2103176101497651644",
+  "category": "motion",
+  "tech_tags": [
+   "svg",
+   "gsap",
+   "css"
+  ],
+  "prompt": "I want you to create a highly professional SaaS product launch video. Go and find some SaaS, preferably just one that people know, so it's easier to identify with it. Pick that, and then make sure to get actual assets and images and all of that stuff from the internet. Turn it into these typical, very professionally edited, motion-graphics-styled product launch videos that you see people making on Twitter when they launch new SaaS products (which are showing off the features, the benefits, and all of these things).",
+  "prompt_partial": false,
+  "poster_url": "https://media.skillry.dev/opus-5-5/pbteja1998-651644/original.1bdf8e9b65.webp",
+  "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/pbteja1998-651644",
   "added": "2026-09-26",
   "has_remake": true
  },
@@ -4528,27 +4481,7 @@
   "poster_url": "https://media.skillry.dev/opus-5-5/op7418-814408/original.f4c57c4154.webp",
   "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/op7418-814408",
   "added": "2026-09-28",
-  "has_remake": true,
-  "alternate_references": [
-   {
-    "slug": "op7418-818226",
-    "author": "op7418",
-    "author_url": "https://x.com/op7418",
-    "post_url": "https://x.com/op7418/status/2104085484347818226",
-    "category": "interactive",
-    "tech_tags": [
-     "canvas",
-     "svg",
-     "gsap",
-     "css"
-    ],
-    "prompt_partial": false,
-    "poster_url": "https://media.skillry.dev/opus-5-5/op7418-818226/original.bd3cd48590.webp",
-    "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/op7418-818226",
-    "added": "2026-09-28",
-    "has_remake": true
-   }
-  ]
+  "has_remake": true
  },
  {
   "slug": "janlaywss-379361",
@@ -4583,6 +4516,25 @@
   "prompt_partial": true,
   "poster_url": "https://media.skillry.dev/opus-5-5/0xpai-eth-635565/original.c00e6ddbbc.webp",
   "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/0xpai-eth-635565",
+  "added": "2026-09-28",
+  "has_remake": true
+ },
+ {
+  "slug": "op7418-818226",
+  "author": "op7418",
+  "author_url": "https://x.com/op7418",
+  "post_url": "https://x.com/op7418/status/2104085484347818226",
+  "category": "interactive",
+  "tech_tags": [
+   "canvas",
+   "svg",
+   "gsap",
+   "css"
+  ],
+  "prompt": "帮我做一个原创的手游「高光时刻」动效：[主体，例如：开宝箱 / 段位晋升 / 成就解锁 / Boss 掉落 / 角色升级]。\n做成一个可以直接打开的单文件网页（HTML + CSS + JS），点一下就能完整播放，效果对标商业手游的结算 / 奖励演出。\n\n【世界观与风格】\n- 原创美术，不要模仿任何现有游戏的 IP、角色或 Logo。\n- 卡通手游风：高饱和配色，统一的深色描边（例如 #1A1033），圆润厚重的造型。\n- 配色随等级升级：[等级阶梯，例如：普通绿 → 稀有蓝 → 史诗紫 → 传说金]。每升一级都要切换主色、光效颜色和背景色调。\n- 标题用圆胖的游戏字体（如 Titan One / Lilita One），描黑边，加投影；文字逐字「砸」进画面，带回弹。\n\n【主体物：做成真 3D】\n- 用 Three.js 建模，不要用平面 SVG 贴图。要有厚度、倒角，以及符合主体的结构细节（木板缝、铆钉、包边、宝石切面、锁扣等）；木板缝这类细节用真实几何体拼出来，不要贴黑线条。\n- 着色用卡通分阶（MeshToonMaterial 加 3～4 阶的渐变贴图），配三种灯光：主光、天光、等级色的轮廓光。\n- 描边用后期边缘检测：渲染法线图 + 深度图，再用着色器画线。外轮廓粗、零件交界细，粗细全程一致；另外做 1.5 倍超采样和多重采样抗锯齿。\n  不要用「放大一圈的黑色背面」那种描边，那样粗细不均、转角会断。\n  深度判断的阈值要放宽，接缝主要靠法线判断，否则斜着看的表面会冒出细碎斜纹。\n- 活动部件要真实运动，比如箱盖绕铰链翻开、奖章绕竖轴旋转。\n- 待机时主体缓慢左右转动，让人看到侧面和厚度，同时轻微上下浮动；脚下要有随高度变化的柔和投影。\n\n【如果画面里有 2D 插画（卡面、奖励图标、角色）】\n- 三层卡通着色：底色、成块的阴影色、高光色，不要只用一层渐变。\n- 线条分粗细：外轮廓粗，内部结构线细。\n- 每个角色或物件要有自己的表情和姿态，不要所有东西共用同一张脸。\n- 脚下画投影，让主体「站」在画面里；背景按属性区分图案，不要全用同一套放射线。\n\n【演出节奏：五个阶段，缺一不可】\n1. 预备：主体待机浮动，每隔几秒抖一下提示可以点击，底部显示「点击」提示。\n2. 升级：每点一次，主体跳起、在空中转一圈、落地时压扁再回弹；同时切换到下一等级的颜色，闪一下光，冒一圈粒子，标题更新。\n3. 蓄力（约 1 秒）：主体越抖越剧烈，缝隙透出光，四周粒子往中心吸，音效音调持续上升；最后一刻猛地压扁。\n4. 爆发：从爆点向外扩散的泛光闪白、屏幕震动、镜头往前一推、多层冲击波、细长流光迸射、闪光星点、金币和宝石（带旋转）。高等级的爆发要明显更强。彩带只在最高潮用一次，不要满屏彩带。\n5. 揭晓与结算：\n   - 奖励卡片从主体里沿弧线飞出，落位时带超调和晃动收尾，数字滚动计数。\n   - 稀有物品带彩虹流光边框和「NEW!」角标。\n   - 点击领取后，金币和宝石沿贝塞尔曲线飞进右上角的余额，每到一个余额就跳一下。\n\n【揭晓舞台：让主角独占画面】\n- 最高稀有度揭晓时，其他元素收起或淡出，背后换成一层干净的渐变幕布加缓慢旋转的柔光，不要让主角压在杂乱的背景上。\n- 幕布出现时，把场景里的其他 3D 物件隐藏掉，否则后期描边会把它们的轮廓线画在幕布上。\n- 主角的外发光要放在主体背后，只从边缘溢出，不能盖在主体前面把它糊成一片白。\n- 可以加一圈围绕主角盘旋的星尘拖尾，但轨道必须完整在主角轮廓外侧，不能从主体正面扫过。\n\n【光效：必须柔和，不能有硬边】\n- 背景光芒：用带渐变过渡的 conic-gradient，不要一刀切的色块边缘；叠 2～3 层不同密度、不同转速的光。\n- 光柱：由 5～7 道带模糊的光束呈扇形散开，亮度各自轻微闪动；根部加一团柔光核心，光里有光尘缓慢上飘。\n- 闪白：从爆点向外的径向泛光（mix-blend-mode: screen），强度不超过 0.8，不要整屏纯白过曝。\n- 粒子：每个火花都带一圈低透明度的外晕；冲击波用三层描边（宽而淡、中等、细而亮）。\n\n【材质与界面】\n- 边框、名牌、按钮要有材质感：金属拉丝渐变、左上亮右下暗的倒角光、内阴影；按稀有度换镶嵌件（钢铆钉 → 银框宝石 → 金框钻石加小王冠）。\n- 小卡片上不要塞小字数值；详细数值放到揭晓时的信息面板里，面板里的数字滚动上涨，并弹出「▲+数值」。\n- 画在 Canvas 上的贴图，分辨率至少是屏幕上最大显示尺寸的 1.5 倍，否则放大时会发虚。\n\n【动画原则】\n- 用 GSAP 时间线编排。所有动作都要有挤压拉伸、超调和弹性回弹，不要匀速。\n- 粒子系统用 Canvas 2D 自己写：重力、阻力、生命周期、叠加混合，以及「吸入」「曲线飞行」「环绕」三种运动。\n- 不要用 CSS 3D 透视去翻转大尺寸元素，放大加侧翻时会被投影成铺满屏幕的平面，3D 翻转一律放在 WebGL 里做。\n- 所有「抖动」「呼吸」类的循环补间，在状态切换时要先取消再归零，避免它比停止指令晚一帧结束，又把值设回去。\n\n【音效】\n- 全部用 Web Audio 实时合成，不用音频文件：跳起、落地、升级和弦、蓄力上升音、爆炸低频加噪声、弹出音、计数滴答、金币叮当、胜利号角。\n- 第一次点击时才初始化音频；右上角放静音开关。\n\n【界面与工程】\n- 顶部 HUD：模式切换、金币和宝石余额、静音按钮。\n- 手机宽度也要能用；遵守「减少动态效果」设置（关闭震屏，减少粒子）。\n- 动画状态机要严谨：动画播放中忽略点击，不能出现点击被吞或状态错乱。\n- 目标 60fps。第一次打开时就是完整的待机画面，不能是空白。\n\n【交付前自检】\n在蓄力、爆发、揭晓、结算这几个时刻各截一张图，逐张检查：\n- 主角有没有被光晕、粒子或文字挡住？\n- 有没有过曝成一片白？\n- 背景是否杂乱，有没有穿帮的描边线？\n- 小字是否能看清？\n- 结算后是否还有东西在不该动的时候继续抖动？\n\n最后告诉我：每个阶段的时长，以及哪些参数可以调整演出强度。",
+  "prompt_partial": false,
+  "poster_url": "https://media.skillry.dev/opus-5-5/op7418-818226/original.bd3cd48590.webp",
+  "skillry_url": "https://skillry.dev/ai-videos/opus-5-5/op7418-818226",
   "added": "2026-09-28",
   "has_remake": true
  },
@@ -9126,6 +9078,21 @@
   "added": "2026-10-12"
  },
  {
+  "slug": "q970270495-497923",
+  "title": "Startup Promo Video",
+  "author": "q970270495",
+  "author_url": "https://x.com/q970270495",
+  "post_url": "https://x.com/q970270495/status/2105233470574497923",
+  "category": "motion",
+  "tech_tags": [],
+  "prompt": "make a modern slick and punchy video for a modern startup that works on inference",
+  "prompt_partial": false,
+  "poster_url": "https://media.skillry.dev/opus-5-5/_prompts/q970270495-497923/poster.f0c5c64d5e.webp",
+  "skillry_url": null,
+  "has_remake": false,
+  "added": "2026-10-12"
+ },
+ {
   "slug": "grace-sunnyy-486816",
   "title": "Solar System Explainer",
   "author": "Grace_sunnyy",
@@ -10866,6 +10833,21 @@
   "added": "2026-10-12"
  },
  {
+  "slug": "0xvalure-354245",
+  "title": "PayBox Logo Motion Design",
+  "author": "0xValure",
+  "author_url": "https://x.com/0xValure",
+  "post_url": "https://x.com/0xValure/status/2103603029224354245",
+  "category": "motion",
+  "tech_tags": [],
+  "prompt": "Make this PayBox logo into a reel. Pretend you are a world-class motion designer. Make a 10-second dynamic video like the reference",
+  "prompt_partial": false,
+  "poster_url": "https://media.skillry.dev/opus-5-5/_prompts/0xvalure-354245/poster.75c35e2216.webp",
+  "skillry_url": null,
+  "has_remake": false,
+  "added": "2026-10-12"
+ },
+ {
   "slug": "okapi-fukugyo-166351",
   "title": "UI Motion Design Animation",
   "author": "okapi_fukugyo",
@@ -11146,6 +11128,21 @@
   "prompt": "为 https://t.co/MpUyPSxZVk 制作一支 30 秒的网站宣传片，并完成配乐。\n\n你可以读取当前 Mac mini 上的代码和素材，也可以使用浏览器访问 https://t.co/fOQQgAhran。从代码和真实网站自行寻找品牌",
   "prompt_partial": false,
   "poster_url": "https://media.skillry.dev/opus-5-5/_prompts/aiwarts-815008/poster.e0a115dc1a.webp",
+  "skillry_url": null,
+  "has_remake": false,
+  "added": "2026-10-12"
+ },
+ {
+  "slug": "mtvneo-819281",
+  "title": "Opus 5.5 Self-Personification Motion Graphics",
+  "author": "mtvneo_",
+  "author_url": "https://x.com/mtvneo_",
+  "post_url": "https://x.com/mtvneo_/status/2103407813355819281",
+  "category": "motion",
+  "tech_tags": [],
+  "prompt": "make a 15 second motion graphics video. personify yourself in the video as introducing opus 5.5.",
+  "prompt_partial": false,
+  "poster_url": "https://media.skillry.dev/opus-5-5/_prompts/mtvneo-819281/poster.594de816f1.webp",
   "skillry_url": null,
   "has_remake": false,
   "added": "2026-10-12"
