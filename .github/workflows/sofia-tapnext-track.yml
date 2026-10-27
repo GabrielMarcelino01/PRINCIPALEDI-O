@@ -1,0 +1,96 @@
+name: SOFIA-1 TAPNext++ opening tracking
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/sofia-tapnext-track.yml'
+      - 'reels-studio/tapnextpp/track_sofia.py'
+
+concurrency:
+  group: sofia-tapnext-tracking-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  track:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    env:
+      CHECKPOINT_URL: https://storage.googleapis.com/gresearch/tapnextpp/tapnextpp_512.ckpt
+      CHECKPOINT_DIR: /tmp/sofia-tapnextpp-checkpoint-${{ github.run_id }}
+      REPORT_DIR: artifacts/sofia-tapnextpp
+    steps:
+      - name: Check out reviewed source and video
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 1
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+
+      - name: Install pinned CPU dependencies
+        run: |
+          set -euo pipefail
+          mkdir -p "$REPORT_DIR"
+          python -m pip install --upgrade pip --disable-pip-version-check
+          python -m pip install --disable-pip-version-check \
+            -r reels-studio/tapnextpp/requirements-smoke.txt av==18.1.0 \
+            > "$REPORT_DIR/pip.log" 2>&1 || { cat "$REPORT_DIR/pip.log"; exit 1; }
+          tail -25 "$REPORT_DIR/pip.log"
+
+      - name: Download official checkpoint on ephemeral runner
+        run: |
+          set -euo pipefail
+          mkdir -p "$CHECKPOINT_DIR" "$REPORT_DIR"
+          curl --fail --location --retry 5 --retry-all-errors --retry-delay 15 \
+            --connect-timeout 30 --continue-at - \
+            --output "$CHECKPOINT_DIR/tapnextpp_512.ckpt.part" "$CHECKPOINT_URL"
+          mv "$CHECKPOINT_DIR/tapnextpp_512.ckpt.part" "$CHECKPOINT_DIR/tapnextpp_512.ckpt"
+          test "$(stat -c %s "$CHECKPOINT_DIR/tapnextpp_512.ckpt")" -gt 1000000
+          sha256sum "$CHECKPOINT_DIR/tapnextpp_512.ckpt"
+
+      - name: Track SOFIA-1 opening gesture
+        run: |
+          set -euo pipefail
+          python reels-studio/tapnextpp/track_sofia.py \
+            --source-zip tapnet-main.zip \
+            --checkpoint "$CHECKPOINT_DIR/tapnextpp_512.ckpt" \
+            --video 'SOFIA-1 (1).mp4' \
+            --max-seconds 5.2 --threads 4 \
+            --output "$REPORT_DIR/sofia-1-opening-tracking.json"
+
+      - name: Publish small trajectory report to this branch
+        if: success()
+        run: |
+          set -euo pipefail
+          cp "$REPORT_DIR/sofia-1-opening-tracking.json" reels-studio/sofia-1-opening-tracking.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- reels-studio/sofia-1-opening-tracking.json
+          git commit -m "Add SOFIA-1 opening tracking ${{ github.run_id }}"
+          git push origin "HEAD:${{ github.ref_name }}"
+
+      - name: Upload small trajectory report only
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: sofia-tapnextpp-${{ github.run_id }}
+          path: |
+            artifacts/sofia-tapnextpp/*.json
+            artifacts/sofia-tapnextpp/*.log
+          if-no-files-found: warn
+          retention-days: 7
+
+      - name: Delete checkpoint
+        if: always()
+        run: |
+          set -euo pipefail
+          rm -rf "${CHECKPOINT_DIR:?}"
+          test ! -e "$CHECKPOINT_DIR"
+          df -h /tmp .
