@@ -1,0 +1,360 @@
+import tqdm
+
+# @title Dataset Resolution Selection {form-width: "25%"}
+model_resolution = 512  # @param [256, 512] {type:"raw"}
+
+from tapnet import evaluation_datasets
+
+davis_dataset = evaluation_datasets.create_davis_dataset(
+    davis_points_path='tapvid_davis/tapvid_davis.pkl',
+    query_mode='first',
+    full_resolution=False,
+    resolution=(model_resolution, model_resolution),
+)
+
+cached_dataset = []
+for j, batch in enumerate(davis_dataset):
+  cached_dataset.append(batch)
+  print(
+      'video id',
+      j,
+  )
+
+### TAPNext++
+
+import numpy as np
+from tapnet.tapnext.tapnext_torch import TAPNext
+from tapnet.tapnextpp.votsp2026.model import TAPNextPP
+from tapnet.tapnext.tapnext_torch_utils import tracker_certainty
+import torch.nn.functional as F
+
+def run_eval_per_frame(
+    model,
+    batch,
+    get_trackwise_metrics=True,
+    radius=8,
+    threshold=0.5,
+    use_certainty=False,
+):
+  h, w = batch['video'].shape[2:4]
+
+  # Scale queries from display scale to [0, 256] model coordinates
+  q_points = batch['query_points'].clone()
+  q_points[..., 1] = q_points[..., 1] * (256.0 / h)
+  q_points[..., 2] = q_points[..., 2] * (256.0 / w)
+
+  # Extract inner model if model is wrapped in TAPNextPP
+  inner_model = model._model if isinstance(model, TAPNextPP) else model
+
+  with torch.no_grad():
+    pred_tracks, track_logits, visible_logits, tracking_state = inner_model(
+        video=batch['video'][:, :1], query_points=q_points
+    )
+    pred_visible = visible_logits > 0
+    pred_tracks, pred_visible = [pred_tracks.cpu()], [pred_visible.cpu()]
+    pred_track_logits, pred_visible_logits = [track_logits.cpu()], [
+        visible_logits.cpu()
+    ]
+    for frame in tqdm.tqdm(range(1, batch['video'].shape[1])):
+      # ***************************************************
+      # HERE WE RUN POINT TRACKING IN PURELY ONLINE FASHION
+      # ***************************************************
+      (
+          curr_tracks,
+          curr_track_logits,
+          curr_visible_logits,
+          tracking_state,
+      ) = inner_model(
+          video=batch['video'][:, frame : frame + 1],
+          state=tracking_state,
+      )
+      curr_visible = curr_visible_logits > 0
+      # ***************************************************
+      pred_tracks.append(curr_tracks.cpu())
+      pred_visible.append(curr_visible.cpu())
+      pred_track_logits.append(curr_track_logits.cpu())
+      pred_visible_logits.append(curr_visible_logits.cpu())
+
+    tracks_256 = torch.cat(pred_tracks, dim=1).transpose(1, 2)
+    pred_visible = torch.cat(pred_visible, dim=1).transpose(1, 2)
+    track_logits = torch.cat(pred_track_logits, dim=1).transpose(1, 2)
+    visible_logits = torch.cat(pred_visible_logits, dim=1).transpose(1, 2)
+
+    # Compute certainty in model coordinate space [0, 256]
+    pred_certainty = tracker_certainty(tracks_256, track_logits, radius)
+    pred_visible_and_certain = (
+        F.sigmoid(visible_logits) * pred_certainty
+    ) > threshold
+
+    if use_certainty:
+      occluded = ~(pred_visible_and_certain.squeeze(-1))
+    else:
+      occluded = ~(pred_visible.squeeze(-1))
+
+    # Scale tracks back from [0, 256] to original display scale
+    tracks = tracks_256.clone()
+    tracks[..., 0] = tracks[..., 0] * (h / 256.0)
+    tracks[..., 1] = tracks[..., 1] * (w / 256.0)
+
+  # Scale all positions (query_points, gt_tracks, pred_tracks) to [256, 256] space for metric evaluation
+  query_points_eval = batch['query_points'].cpu().numpy().copy()
+  query_points_eval[..., 1] = query_points_eval[..., 1] * (256.0 / h)
+  query_points_eval[..., 2] = query_points_eval[..., 2] * (256.0 / w)
+
+  target_points_eval = batch['target_points'].cpu().numpy().copy()
+  target_points_eval[..., 0] = target_points_eval[..., 0] * (256.0 / w)
+  target_points_eval[..., 1] = target_points_eval[..., 1] * (256.0 / h)
+
+  pred_tracks_eval = tracks.numpy()[..., ::-1].copy() # pred_tracks is shape [1, Q, T, 2], layout [x, y]
+  pred_tracks_eval[..., 0] = pred_tracks_eval[..., 0] * (256.0 / w)
+  pred_tracks_eval[..., 1] = pred_tracks_eval[..., 1] * (256.0 / h)
+
+  scalars = evaluation_datasets.compute_tapvid_metrics(
+      query_points_eval,
+      batch['occluded'].cpu().numpy(),
+      target_points_eval,
+      occluded.numpy() + 0.0,
+      pred_tracks_eval,
+      query_mode='first',
+      get_trackwise_metrics=get_trackwise_metrics,
+  )
+  return (
+      tracks.numpy()[..., ::-1],
+      occluded.numpy(),
+      {k: v.sum(0) for k, v in scalars.items()},
+  )
+
+
+# @title Function for raw data to the input format {form-width: "25%"}
+def deterministic_eval(cached_dataset, strided=False):
+  if not strided:
+    for sample in cached_dataset:
+      batch = sample['davis'].copy()
+      # batch['video'] = (batch['video'] + 1) / 2
+      batch['visible'] = np.logical_not(batch['occluded'])[..., None]
+      batch['padding'] = np.ones(
+          batch['query_points'].shape[:2], dtype=np.bool_
+      )
+      batch['loss_mask'] = np.ones(
+          batch['target_points'].shape[:3] + (1,), dtype=np.float32
+      )
+      batch['appearance'] = np.ones(
+          batch['target_points'].shape[:3] + (1,), dtype=np.float32
+      )
+
+      yield batch
+  else:
+    for sample in cached_dataset:
+      batch = sample['davis'].copy()
+      # batch['video'] = (batch['video'] + 1) / 2
+      batch['visible'] = np.logical_not(batch['occluded'])[..., None]
+      batch['padding'] = np.ones(
+          batch['query_points'].shape[:2], dtype=np.bool_
+      )
+      batch['loss_mask'] = np.ones(
+          batch['target_points'].shape[:3] + (1,), dtype=np.float32
+      )
+      batch['appearance'] = np.ones(
+          batch['target_points'].shape[:3] + (1,), dtype=np.float32
+      )
+      backward_batch = {k: v.copy() for k, v in batch.items()}
+      for key in ['visible', 'appearance', 'loss_mask', 'target_points']:
+        backward_batch[key] = np.flip(backward_batch[key], axis=2)
+      backward_batch['video'] = np.flip(backward_batch['video'], axis=1)
+      backward_queries = (
+          backward_batch['video'].shape[1]
+          - backward_batch['query_points'][..., 0]
+          - 1
+      )
+      backward_batch['query_points'][..., 0] = backward_queries
+      yield batch, backward_batch
+
+### Create the model and load checkpoint
+
+# Load model based on configured resolution
+if model_resolution == 512:
+  ckpt_path = 'tapnextpp_512.ckpt'
+else:
+  ckpt_path = 'tapnextpp_ckpt.pt'
+
+model = TAPNextPP.from_checkpoint(
+    ckpt_path,
+    device='cuda',
+    input_resolution=model_resolution
+)
+
+### Run inference
+
+standard_eval_scalars_list = []
+preds = []
+for batch in deterministic_eval(cached_dataset):
+  batch = {k: torch.from_numpy(v).cuda().float() for k, v in batch.items()}
+  with torch.amp.autocast('cuda', dtype=torch.float16, enabled=True):
+    tracks, occluded, scores = run_eval_per_frame(
+        model, batch, get_trackwise_metrics=False, use_certainty=False
+    )
+  standard_eval_scalars_list.append(scores)
+  preds.append((tracks, occluded))
+
+
+print('')
+print(
+    'AJ',
+    np.mean([
+        standard_eval_scalars_list[k]['average_jaccard']
+        for k in range(len(standard_eval_scalars_list))
+    ]),
+)
+print(
+    'OA',
+    np.mean([
+        standard_eval_scalars_list[k]['occlusion_accuracy']
+        for k in range(len(standard_eval_scalars_list))
+    ]),
+)
+print(
+    'PTS',
+    np.mean([
+        standard_eval_scalars_list[k]['average_pts_within_thresh']
+        for k in range(len(standard_eval_scalars_list))
+    ]),
+)
+
+davis_dataset_strided = evaluation_datasets.create_davis_dataset(
+    davis_points_path='tapvid_davis/tapvid_davis.pkl',
+    query_mode='strided',
+    full_resolution=False,
+    resolution=(model_resolution, model_resolution),
+)
+
+cached_dataset_strided = []
+for j, batch in enumerate(davis_dataset_strided):
+  cached_dataset_strided.append(batch)
+  print('video id', j)
+
+eval_results = list()
+for vid, (fbatch, bbatch) in enumerate(deterministic_eval(cached_dataset_strided, strided=True)):
+  fbatch = {k: torch.from_numpy(v).cuda().float() for k, v in fbatch.items()}
+  bbatch = {k: torch.from_numpy(v.copy()).cuda().float() for k, v in bbatch.items()}
+  with torch.amp.autocast('cuda', dtype=torch.float16, enabled=True):
+    ftracks, foccluded, _ = run_eval_per_frame(model, fbatch, get_trackwise_metrics=False, use_certainty=False)
+    btracks, boccluded, _ = run_eval_per_frame(model, bbatch, get_trackwise_metrics=False, use_certainty=False)
+  btracks, boccluded = np.flip(btracks, axis=2), np.flip(boccluded, axis=2)
+  # tracks = [1, q, t, 2]
+  for q in range(fbatch['query_points'].shape[1]):
+    t = int((fbatch['query_points'][0, q, 0]).item())
+    ftracks[0, q, :t] = btracks[0, q, :t]
+    foccluded[0, q, :t] = boccluded[0, q, :t]
+  tracks, occluded = ftracks, foccluded
+
+  # Scale coordinates for strided metric evaluation to [256, 256] space
+  h, w = model_resolution, model_resolution
+  
+  query_points_eval = cached_dataset_strided[vid]['davis']['query_points'].copy()
+  query_points_eval[..., 1] = query_points_eval[..., 1] * (256.0 / h)
+  query_points_eval[..., 2] = query_points_eval[..., 2] * (256.0 / w)
+
+  target_points_eval = cached_dataset_strided[vid]['davis']['target_points'].copy()
+  target_points_eval[..., 0] = target_points_eval[..., 0] * (256.0 / w)
+  target_points_eval[..., 1] = target_points_eval[..., 1] * (256.0 / h)
+
+  pred_tracks_eval = tracks.copy()
+  pred_tracks_eval[..., 0] = pred_tracks_eval[..., 0] * (256.0 / w)
+  pred_tracks_eval[..., 1] = pred_tracks_eval[..., 1] * (256.0 / h)
+
+  scalars = evaluation_datasets.compute_tapvid_metrics(
+      query_points_eval,
+      cached_dataset_strided[vid]['davis']['occluded'],
+      target_points_eval,
+      occluded + 0.,
+      pred_tracks_eval,
+      query_mode='strided',
+      get_trackwise_metrics=False,
+  )
+  eval_results.append({k: np.sum(v, axis=0) for k, v in scalars.items()})
+
+print('')
+print(
+    'AJ',
+    np.mean([
+        eval_results[k]['average_jaccard']
+        for k in range(len(eval_results))
+    ]),
+)
+print(
+    'OA',
+    np.mean([
+        eval_results[k]['occlusion_accuracy']
+        for k in range(len(eval_results))
+    ]),
+)
+print(
+    'PTS',
+    np.mean([
+        eval_results[k]['average_pts_within_thresh']
+        for k in range(len(eval_results))
+    ]),
+)
+
+import imageio
+import cv2
+import numpy as np
+from IPython.display import HTML, display
+import base64
+import matplotlib.pyplot as plt
+
+def visualize_davis_tracks(video, tracks, occluded, output_gif_path="output.gif", fps=10):
+    """
+    Creates a GIF from the tracking results and visualizes it in the notebook.
+
+    Args:
+      video: Array of shape (T, H, W, 3) containing the video frames.
+      tracks: Array of shape (N, T, 2) containing point coordinates (x, y).
+      occluded: Array of shape (N, T) containing boolean occlusion masks.
+      output_gif_path: Local path to save the GIF.
+      fps: Frames per second for the GIF.
+    """
+    in_memory_frames = []
+    N, T, _ = tracks.shape
+
+    # Generate distinct colors for each point
+    colors = plt.cm.hsv(np.linspace(0, 1, N))[:, :3] * 255
+
+    for t in range(T):
+        frame = video[t]
+        # Handle different frame value scales (e.g., [-1, 1], [0, 1], or [0, 255])
+        if frame.dtype in [np.float32, np.float64]:
+            if frame.min() < 0:
+                frame = ((frame + 1) / 2 * 255).astype(np.uint8)
+            else:
+                frame = (frame * 255).astype(np.uint8)
+        else:
+            frame = frame.copy()
+
+        # Draw visible points
+        for n in range(N):
+            if not occluded[n, t]:
+                x, y = int(tracks[n, t, 0]), int(tracks[n, t, 1])
+                # Ensure points are within frame bounds
+                if 0 <= x < frame.shape[1] and 0 <= y < frame.shape[0]:
+                    cv2.circle(frame, (x, y), 2, colors[10].tolist(), -1)
+
+        in_memory_frames.append(frame)
+
+    # Save GIF locally
+    imageio.mimsave(output_gif_path, in_memory_frames, fps=fps, loop=0)
+    print(f"GIF saved to {output_gif_path}")
+
+    # Read and display in notebook
+    with open(output_gif_path, "rb") as f:
+        gif_bytes = f.read()
+    gif_base64 = base64.b64encode(gif_bytes).decode("ascii")
+    display(HTML(f'<img src="data:image/gif;base64,{gif_base64}" width="30%"/>'))
+
+# Visualize the first video from the dataset using the first prediction
+vid_idx = 10
+demo_video = cached_dataset[vid_idx]['davis']['video'][0]  # (T, H, W, 3)
+demo_tracks = preds[vid_idx][0][0]  # (N, T, 2)
+demo_occluded = preds[vid_idx][1][0]  # (N, T)
+
+visualize_davis_tracks(demo_video, demo_tracks, demo_occluded)
