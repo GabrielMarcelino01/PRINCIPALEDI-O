@@ -1,0 +1,40 @@
+{
+  "project": "armario-8",
+  "frames": 1485,
+  "fps": 60,
+  "duration": 24.75,
+  "source": {
+    "original": "reels-studio/assets/armario-8/CLOSET-8.mp4",
+    "sha256": "a42302bb65aa3cb5c8e21e65f239f525748d10dbefc7de2e8077ab0283bb26ed",
+    "indexed_frames": 1485
+  },
+  "video": {
+    "codec": "H.264 High",
+    "crf": 17,
+    "preset": "slow",
+    "pixel_format": "yuv420p",
+    "color": "BT.709 limited range"
+  },
+  "audio": {
+    "source": "Somente o áudio original; sem trilha, sound design ou efeitos",
+    "target": {
+      "i": -14,
+      "tp": -1.5,
+      "lra": 9
+    },
+    "measured": {
+      "input_i": "-25.20",
+      "input_tp": "-10.27",
+      "input_lra": "2.80",
+      "input_thresh": "-35.63",
+      "output_i": "-14.28",
+      "output_tp": "-1.50",
+      "output_lra": "3.20",
+      "output_thresh": "-24.78",
+      "normalization_type": "dynamic",
+      "target_offset": "0.28"
+    },
+    "aac_bitrate": "192k"
+  },
+  "delivery": "entregas/ARMARIO-8-EDITADO.mp4"
+}
