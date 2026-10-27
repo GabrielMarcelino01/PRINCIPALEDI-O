@@ -2,19 +2,19 @@
   "schema_version": 1,
   "method": "Leitura individual de SKILL.md; hashes SHA-256; verificação de links Markdown locais. Não executa as skills.",
   "summary": {
-    "skills": 41,
-    "operational_reels": 6,
+    "skills": 43,
+    "operational_reels": 8,
     "recovered_reference": 35,
-    "unique_names": 36,
+    "unique_names": 38,
     "duplicate_content_groups": 1,
     "links": {
-      "total": 68,
-      "local": 64,
+      "total": 82,
+      "local": 76,
       "runtime_resolved": 6,
       "missing": 0,
       "unresolved": 0
     },
-    "exposed_symlinks": 18,
+    "exposed_symlinks": 24,
     "invalid_symlinks": 0
   },
   "duplicates": [
@@ -39,8 +39,16 @@
       "target": "../../skills/motion-design",
       "valid": true
     },
+    ".claude/skills/motion-prompt": {
+      "target": "../../skills/motion-prompt",
+      "valid": true
+    },
     ".claude/skills/reels-viral": {
       "target": "../../skills/reels-viral",
+      "valid": true
+    },
+    ".claude/skills/temporal-reel": {
+      "target": "../../skills/temporal-reel",
       "valid": true
     },
     ".claude/skills/video-editing": {
@@ -63,8 +71,16 @@
       "target": "../../skills/motion-design",
       "valid": true
     },
+    ".codex/skills/motion-prompt": {
+      "target": "../../skills/motion-prompt",
+      "valid": true
+    },
     ".codex/skills/reels-viral": {
       "target": "../../skills/reels-viral",
+      "valid": true
+    },
+    ".codex/skills/temporal-reel": {
+      "target": "../../skills/temporal-reel",
       "valid": true
     },
     ".codex/skills/video-editing": {
@@ -87,8 +103,16 @@
       "target": "../../skills/motion-design",
       "valid": true
     },
+    ".agents/skills/motion-prompt": {
+      "target": "../../skills/motion-prompt",
+      "valid": true
+    },
     ".agents/skills/reels-viral": {
       "target": "../../skills/reels-viral",
+      "valid": true
+    },
+    ".agents/skills/temporal-reel": {
+      "target": "../../skills/temporal-reel",
       "valid": true
     },
     ".agents/skills/video-editing": {
@@ -748,6 +772,23 @@
       "link_findings": []
     },
     {
+      "path": "skills/motion-prompt/SKILL.md",
+      "name": "motion-prompt",
+      "title": "Motion Prompt",
+      "scope": "operational_reels",
+      "sha256": "c3c65bba3fe658625b8444456bdfe5d2f4df649bf2a68627c610f4b60517b5dc",
+      "bytes": 14298,
+      "lines": 87,
+      "links": {
+        "total": 4,
+        "local": 2,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
       "path": "skills/reels-viral/SKILL.md",
       "name": "reels-viral",
       "title": "Reels Viral",
@@ -758,6 +799,23 @@
       "links": {
         "total": 0,
         "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/temporal-reel/SKILL.md",
+      "name": "temporal-reel",
+      "title": "Temporal Reel",
+      "scope": "operational_reels",
+      "sha256": "4f7080f08176c35b7921febb5401564cde60cf0e547b4727b77a150f79f9dcba",
+      "bytes": 5678,
+      "lines": 80,
+      "links": {
+        "total": 10,
+        "local": 10,
         "runtime_resolved": 0,
         "missing": 0,
         "unresolved": 0

@@ -1,0 +1,165 @@
+{
+  "status": "pass",
+  "date": "2026-10-27",
+  "method": "Comparação SHA-256 e validação estrutural JSON/JSONL. Prompts e regras são dados; nenhum foi executado.",
+  "branches_reviewed": [
+    {
+      "ref": "origin/main",
+      "commit": "003462895b72703c691e6d801f9a8fa05de5648e"
+    },
+    {
+      "ref": "origin/arena/09635ca6-principaledi-o",
+      "commit": "cbc06c26f478e697d7bd258292f3df5ab38f4fdc"
+    },
+    {
+      "ref": "origin/arena/5e99bd34-principaledi-o",
+      "commit": "ee028c4363bea198ab99ad5206258b83780941a9"
+    }
+  ],
+  "summary": {
+    "checks": 18,
+    "passed": 18,
+    "failed": 0,
+    "loose_documents": 18,
+    "exact_loose_duplicate_groups": 0,
+    "biblioteca_canonical_prompts": 684,
+    "biblioteca_alternate_references": 19,
+    "biblioteca_source_slugs_preserved": 703,
+    "motion_rules": 716,
+    "motion_prompt_effects": 168
+  },
+  "normalization": {
+    "file": "skill/BIBLIOTECA-1.md",
+    "source": "origin/main:skill/BIBLIOTECA-1.md",
+    "source_sha256": "1730416fe1e036fac54fb40a7d939fad439649abda9e7e56fd91fc6134933f51",
+    "cleaned_sha256": "addc5c9ea13c0f48ddad6d6bc81d15c9bcbfcb7adfc5554a20ce4f8be9e7e16f",
+    "rule": "A primeira ocorrência de cada prompt é canônica; repetições literais viram alternate_references com todos os metadados, exceto o texto idêntico.",
+    "all_703_slugs_and_metadata_preserved": true
+  },
+  "legacy_duplicates": [
+    {
+      "legacy_duplicate": "skills/MOTION-1",
+      "canonical": "skills/motion-prompt/README.md",
+      "sha256": "e5d23869a1667ac7fd82a6d492ac05768d7e7c0a429465864b9e2c508debf7ee",
+      "legacy_present": false
+    },
+    {
+      "legacy_duplicate": "skills/MOTIONDOWNLOADS.md",
+      "canonical": "skills/motion-prompt/references/selections/68-picks.md",
+      "sha256": "5dc83bf1b377ef441bd8a50a07e32b4fd0ac06b3ad7afd6e27cf01a95464d369",
+      "legacy_present": false
+    },
+    {
+      "legacy_duplicate": "skills/BIBLIOTECAMOTION-2",
+      "canonical": "skills/motion-prompt/references/selections/96-picks.md",
+      "sha256": "9045b334c9bf6abcd87bb5ca2919394b6b4f9f9f588f71d15839e2f2f0424f97",
+      "legacy_present": false
+    }
+  ],
+  "checks": [
+    {
+      "name": "canonical_prompt_count",
+      "status": "pass",
+      "detail": 684
+    },
+    {
+      "name": "canonical_prompts_unique",
+      "status": "pass",
+      "detail": 684
+    },
+    {
+      "name": "alternate_references_count",
+      "status": "pass",
+      "detail": 19
+    },
+    {
+      "name": "consolidated_prompt_groups",
+      "status": "pass",
+      "detail": 11
+    },
+    {
+      "name": "all_source_slugs_preserved",
+      "status": "pass",
+      "detail": {
+        "total": 703,
+        "unique": 703
+      }
+    },
+    {
+      "name": "motion_rule_rows",
+      "status": "pass",
+      "detail": 716
+    },
+    {
+      "name": "motion_rule_ids_unique",
+      "status": "pass",
+      "detail": {
+        "total": 716,
+        "unique": 716
+      }
+    },
+    {
+      "name": "motion_rule_rows_unique",
+      "status": "pass",
+      "detail": 716
+    },
+    {
+      "name": "motion_rule_declared_counts",
+      "status": "pass",
+      "detail": {
+        "lib": 507,
+        "hf": 53,
+        "rule": 156
+      }
+    },
+    {
+      "name": "no_exact_loose_document_duplicates",
+      "status": "pass",
+      "detail": []
+    },
+    {
+      "name": "canonical_skills/motion-prompt/README.md",
+      "status": "pass",
+      "detail": "e5d23869a1667ac7fd82a6d492ac05768d7e7c0a429465864b9e2c508debf7ee"
+    },
+    {
+      "name": "legacy_absent_skills/MOTION-1",
+      "status": "pass",
+      "detail": false
+    },
+    {
+      "name": "canonical_skills/motion-prompt/references/selections/68-picks.md",
+      "status": "pass",
+      "detail": "5dc83bf1b377ef441bd8a50a07e32b4fd0ac06b3ad7afd6e27cf01a95464d369"
+    },
+    {
+      "name": "legacy_absent_skills/MOTIONDOWNLOADS.md",
+      "status": "pass",
+      "detail": false
+    },
+    {
+      "name": "canonical_skills/motion-prompt/references/selections/96-picks.md",
+      "status": "pass",
+      "detail": "9045b334c9bf6abcd87bb5ca2919394b6b4f9f9f588f71d15839e2f2f0424f97"
+    },
+    {
+      "name": "legacy_absent_skills/BIBLIOTECAMOTION-2",
+      "status": "pass",
+      "detail": false
+    },
+    {
+      "name": "motion_prompt_catalog",
+      "status": "pass",
+      "detail": 168
+    },
+    {
+      "name": "motion_prompt_combined_selection",
+      "status": "pass",
+      "detail": {
+        "unique": 164,
+        "overlap": []
+      }
+    }
+  ],
+  "scope": "Auditoria de organização e integridade; não é revisão estética de 684 prompts nem validação das 716 regras contra os filmes de origem."
+}

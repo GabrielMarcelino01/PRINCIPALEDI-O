@@ -1,0 +1,57 @@
+{
+  "project": "temporal-60fps",
+  "status": "pass",
+  "mode": "storyboard",
+  "clock": "t = frame / fps; every visual property is calculated inside window.seek(t)",
+  "browser": {
+    "headless": true,
+    "provider": "@sparticuz/chromium",
+    "viewport": {
+      "width": 1080,
+      "height": 1920
+    },
+    "deviceScaleFactor": 1
+  },
+  "capture": {
+    "directory": "out/storyboard",
+    "format": "PNG",
+    "frames": 12,
+    "fps": 60
+  },
+  "fonts": [
+    {
+      "family": "Inter",
+      "status": "loaded"
+    },
+    {
+      "family": "Playfair",
+      "status": "loaded"
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "determinism": {
+    "status": "pass",
+    "order": "reverse chronological verification",
+    "checks": [
+      {
+        "frame": 60,
+        "originalHash": "f34059c5036e2e543bc488e0eb8bb3afb472818fee4b4571e21ed3c40bc979e9",
+        "repeatedHash": "f34059c5036e2e543bc488e0eb8bb3afb472818fee4b4571e21ed3c40bc979e9",
+        "identical": true
+      },
+      {
+        "frame": 24,
+        "originalHash": "0a10fb309c9c507654284910d59f36b816a450689f49658b25b263d9163950d3",
+        "repeatedHash": "0a10fb309c9c507654284910d59f36b816a450689f49658b25b263d9163950d3",
+        "identical": true
+      },
+      {
+        "frame": 0,
+        "originalHash": "370785fae46e0b29c381aa467bcc0516b9821539c9df125a70e589d1f43ee7ea",
+        "repeatedHash": "370785fae46e0b29c381aa467bcc0516b9821539c9df125a70e589d1f43ee7ea",
+        "identical": true
+      }
+    ]
+  }
+}

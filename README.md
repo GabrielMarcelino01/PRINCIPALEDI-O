@@ -9,6 +9,8 @@ Repositório de recuperação e organização das skills e projetos associados �
 | [`video-editing`](skills/video-editing/SKILL.md) | Orquestrar ingestão, cortes, reenquadramento, áudio, render e entrega |
 | [`hypit`](skills/hypit/SKILL.md) | Produção completa, referências, SVML/SVS, captions, B-roll, motion e revisão |
 | [`motion-design`](skills/motion-design/SKILL.md) | Motion graphics em Remotion, easing, karaokê, split screen, líquido, CSS 3D e vox |
+| [`motion-prompt`](skills/motion-prompt/SKILL.md) | 168 efeitos com specs, Canvas, prompts, CLI, galeria e curadorias locais |
+| [`temporal-reel`](skills/temporal-reel/SKILL.md) | Animação pura do tempo, Chromium headless, captura a 60 fps, prova de determinismo e FFmpeg |
 | [`reels-viral`](skills/reels-viral/SKILL.md) | Reels/Shorts/TikToks 9:16 com superlegendas, seis cortes e CTA |
 | [`captions`](skills/captions/SKILL.md) | SRT/VTT, karaokê, sincronia, leitura e safe zones |
 | [`video-quality`](skills/video-quality/SKILL.md) | ffprobe, EBU R128, true peak, preto/congelamento e folha de contato |
@@ -17,8 +19,10 @@ As skills também são expostas em `.claude/skills`, `.codex/skills` e `.agents/
 
 ## Catálogo completo e demo de Reels
 
-- O [`catálogo das 41 skills`](docs/CATALOGO-SKILLS.md) organiza cada entrada por finalidade, prioridade e relação com o fluxo de vídeo. A auditoria reproduzível está em [`docs/skills-audit.json`](docs/skills-audit.json).
+- O [`catálogo das 43 skills`](docs/CATALOGO-SKILLS.md) organiza cada entrada por finalidade, prioridade e relação com o fluxo de vídeo. A auditoria reproduzível está em [`docs/skills-audit.json`](docs/skills-audit.json).
 - A [`demo Reels Pro`](reels-studio/README.md) reúne composição Remotion própria, narração PT-BR, trilha original, captions queimadas + SRT e comandos de render/QA em 1080×1920 a 60 fps.
+- A [`demo Temporal 60 fps`](docs/TEMPORAL-60FPS.md) comprova o render por `t = quadro/fps`: 360 PNGs capturados em Chromium, hashes reversos idênticos e MP4 unido pelo FFmpeg.
+- A [`biblioteca de skills e referências`](skills/README.md) separa o núcleo operacional dos materiais de motion, Higgsfield, design e engenharia de prompts; a limpeza de duplicatas está em [`docs/motion-library-audit.json`](docs/motion-library-audit.json).
 
 ## Projetos recuperados
 
@@ -61,6 +65,17 @@ Documentação:
 
 - [Motion Design em português](recovered/motion-2/docs/MOTION-DESIGN-PT-BR.md)
 - [Reels Viral em português](recovered/motion-2/docs/REELS-VIRAL-PT-BR.md)
+
+### Render temporal a 60 fps
+
+```bash
+npm ci --prefix skills/temporal-reel --ignore-scripts --no-audit --no-fund
+npm run --prefix skills/temporal-reel qa:demo
+npm run --prefix skills/temporal-reel storyboard:demo
+npm run --prefix skills/temporal-reel render:demo
+```
+
+A animação está em `skills/temporal-reel/demo/timeline.js`: câmera, texto, máscaras e elementos gráficos são recalculados a cada chamada de `seek(t)`, sem sorteio nem estado acumulado. O render só avança se os quadros recapturados fora de ordem tiverem hashes idênticos.
 
 ### QA de um vídeo
 
