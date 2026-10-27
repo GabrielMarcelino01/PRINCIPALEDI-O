@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "scope": "Projeto, assets e texto. Não substitui QA do MP4 nem revisão audiovisual.",
+  "summary": {
+    "checks": 22,
+    "passed": 22,
+    "failed": 0,
+    "captions": 14,
+    "words": 66
+  },
+  "checks": [
+    {
+      "name": "dimensions",
+      "status": "pass",
+      "detail": "1080x1920"
+    },
+    {
+      "name": "fps",
+      "status": "pass",
+      "detail": "60 fps"
+    },
+    {
+      "name": "duration",
+      "status": "pass",
+      "detail": "1506 frames / 25,1 s"
+    },
+    {
+      "name": "source_integrity",
+      "status": "pass",
+      "detail": "99ddaeacbe8ceffe512c37a54b3633f98672696b385085243476d72a8751a858"
+    },
+    {
+      "name": "asset:public/sofia-1-source.mp4",
+      "status": "pass",
+      "detail": "14409661 bytes"
+    },
+    {
+      "name": "asset:public/sofia-1-mix.wav",
+      "status": "pass",
+      "detail": "7228890 bytes"
+    },
+    {
+      "name": "asset:public/fonts/inter-latin-wght-normal.woff2",
+      "status": "pass",
+      "detail": "48256 bytes"
+    },
+    {
+      "name": "asset:public/fonts/playfair-display-latin-wght-italic.woff2",
+      "status": "pass",
+      "detail": "38804 bytes"
+    },
+    {
+      "name": "scene_count",
+      "status": "pass",
+      "detail": "quatro exemplos e CTA"
+    },
+    {
+      "name": "scene_frame_boundaries",
+      "status": "pass",
+      "detail": "cenas contíguas, sem gaps ou sobreposição de frames"
+    },
+    {
+      "name": "caption_count",
+      "status": "pass",
+      "detail": "14 grupos"
+    },
+    {
+      "name": "caption_order",
+      "status": "pass",
+      "detail": "blocos ordenados e sem sobreposição"
+    },
+    {
+      "name": "caption_lines",
+      "status": "pass",
+      "detail": "máximo de duas linhas"
+    },
+    {
+      "name": "word_timestamps",
+      "status": "pass",
+      "detail": "66 palavras revisadas"
+    },
+    {
+      "name": "reviewed_words",
+      "status": "pass",
+      "detail": "grafia revisada presente"
+    },
+    {
+      "name": "caption_position",
+      "status": "pass",
+      "detail": "região central, 52 px"
+    },
+    {
+      "name": "safe_zones",
+      "status": "pass",
+      "detail": "margens registradas"
+    },
+    {
+      "name": "wine_contrast",
+      "status": "pass",
+      "detail": "vinho preservado na amostra; texto claro"
+    },
+    {
+      "name": "srt_blocks",
+      "status": "pass",
+      "detail": "SRT sincronizado com a timeline"
+    },
+    {
+      "name": "pure_time_motion",
+      "status": "pass",
+      "detail": "animações derivadas de frame/t; sem sorteio ou timers"
+    },
+    {
+      "name": "integer_scene_selection",
+      "status": "pass",
+      "detail": "seleção de cena por índice inteiro de quadro"
+    },
+    {
+      "name": "ffmpeg_audio_finish",
+      "status": "pass",
+      "detail": "vídeo copiado; AAC final pelo FFmpeg"
+    }
+  ]
+}

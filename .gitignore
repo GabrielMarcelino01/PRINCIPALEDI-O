@@ -15,6 +15,7 @@ renders/
 artifacts/
 .hyperframes/
 .hf-tmp/
+entregas/SOFIA-1-*.mp4
 
 # Arquivos locais e credenciais
 .env
