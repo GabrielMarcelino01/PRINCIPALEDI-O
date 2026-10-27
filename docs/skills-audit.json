@@ -2,19 +2,19 @@
   "schema_version": 1,
   "method": "Leitura individual de SKILL.md; hashes SHA-256; verificação de links Markdown locais. Não executa as skills.",
   "summary": {
-    "skills": 43,
-    "operational_reels": 8,
+    "skills": 50,
+    "operational_reels": 15,
     "recovered_reference": 35,
-    "unique_names": 38,
+    "unique_names": 45,
     "duplicate_content_groups": 1,
     "links": {
-      "total": 82,
-      "local": 76,
+      "total": 90,
+      "local": 83,
       "runtime_resolved": 6,
       "missing": 0,
       "unresolved": 0
     },
-    "exposed_symlinks": 24,
+    "exposed_symlinks": 45,
     "invalid_symlinks": 0
   },
   "duplicates": [
@@ -31,8 +31,28 @@
       "target": "../../skills/captions",
       "valid": true
     },
+    ".claude/skills/figma": {
+      "target": "../../skills/figma",
+      "valid": true
+    },
+    ".claude/skills/hyperframes": {
+      "target": "../../skills/hyperframes",
+      "valid": true
+    },
+    ".claude/skills/hyperframes-cli": {
+      "target": "../../skills/hyperframes-cli",
+      "valid": true
+    },
+    ".claude/skills/hyperframes-registry": {
+      "target": "../../skills/hyperframes-registry",
+      "valid": true
+    },
     ".claude/skills/hypit": {
       "target": "../../skills/hypit",
+      "valid": true
+    },
+    ".claude/skills/media-use": {
+      "target": "../../skills/media-use",
       "valid": true
     },
     ".claude/skills/motion-design": {
@@ -45,6 +65,14 @@
     },
     ".claude/skills/reels-viral": {
       "target": "../../skills/reels-viral",
+      "valid": true
+    },
+    ".claude/skills/remotion-to-hyperframes": {
+      "target": "../../skills/remotion-to-hyperframes",
+      "valid": true
+    },
+    ".claude/skills/slideshow": {
+      "target": "../../skills/slideshow",
       "valid": true
     },
     ".claude/skills/temporal-reel": {
@@ -63,8 +91,28 @@
       "target": "../../skills/captions",
       "valid": true
     },
+    ".codex/skills/figma": {
+      "target": "../../skills/figma",
+      "valid": true
+    },
+    ".codex/skills/hyperframes": {
+      "target": "../../skills/hyperframes",
+      "valid": true
+    },
+    ".codex/skills/hyperframes-cli": {
+      "target": "../../skills/hyperframes-cli",
+      "valid": true
+    },
+    ".codex/skills/hyperframes-registry": {
+      "target": "../../skills/hyperframes-registry",
+      "valid": true
+    },
     ".codex/skills/hypit": {
       "target": "../../skills/hypit",
+      "valid": true
+    },
+    ".codex/skills/media-use": {
+      "target": "../../skills/media-use",
       "valid": true
     },
     ".codex/skills/motion-design": {
@@ -77,6 +125,14 @@
     },
     ".codex/skills/reels-viral": {
       "target": "../../skills/reels-viral",
+      "valid": true
+    },
+    ".codex/skills/remotion-to-hyperframes": {
+      "target": "../../skills/remotion-to-hyperframes",
+      "valid": true
+    },
+    ".codex/skills/slideshow": {
+      "target": "../../skills/slideshow",
       "valid": true
     },
     ".codex/skills/temporal-reel": {
@@ -95,8 +151,28 @@
       "target": "../../skills/captions",
       "valid": true
     },
+    ".agents/skills/figma": {
+      "target": "../../skills/figma",
+      "valid": true
+    },
+    ".agents/skills/hyperframes": {
+      "target": "../../skills/hyperframes",
+      "valid": true
+    },
+    ".agents/skills/hyperframes-cli": {
+      "target": "../../skills/hyperframes-cli",
+      "valid": true
+    },
+    ".agents/skills/hyperframes-registry": {
+      "target": "../../skills/hyperframes-registry",
+      "valid": true
+    },
     ".agents/skills/hypit": {
       "target": "../../skills/hypit",
+      "valid": true
+    },
+    ".agents/skills/media-use": {
+      "target": "../../skills/media-use",
       "valid": true
     },
     ".agents/skills/motion-design": {
@@ -109,6 +185,14 @@
     },
     ".agents/skills/reels-viral": {
       "target": "../../skills/reels-viral",
+      "valid": true
+    },
+    ".agents/skills/remotion-to-hyperframes": {
+      "target": "../../skills/remotion-to-hyperframes",
+      "valid": true
+    },
+    ".agents/skills/slideshow": {
+      "target": "../../skills/slideshow",
       "valid": true
     },
     ".agents/skills/temporal-reel": {
@@ -738,6 +822,74 @@
       "link_findings": []
     },
     {
+      "path": "skills/figma/SKILL.md",
+      "name": "figma",
+      "title": "Figma → HyperFrames",
+      "scope": "operational_reels",
+      "sha256": "d9537758a88bf3cbfc5699167742e437a6791c57c0180556c930ec6c3aae0ab6",
+      "bytes": 6167,
+      "lines": 55,
+      "links": {
+        "total": 1,
+        "local": 1,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/hyperframes-cli/SKILL.md",
+      "name": "hyperframes-cli",
+      "title": "HyperFrames CLI",
+      "scope": "operational_reels",
+      "sha256": "44a48ccfa4cbd4f4234f8306c96268a4be56a0f2376abedbf31d2167b3c21286",
+      "bytes": 7131,
+      "lines": 97,
+      "links": {
+        "total": 1,
+        "local": 1,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/hyperframes-registry/SKILL.md",
+      "name": "hyperframes-registry",
+      "title": "HyperFrames registry",
+      "scope": "operational_reels",
+      "sha256": "1c7b27632c9ea9febaafc2d9af073b377029f46be4bee70d75b5e713eb698423",
+      "bytes": 4246,
+      "lines": 56,
+      "links": {
+        "total": 1,
+        "local": 1,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/hyperframes/SKILL.md",
+      "name": "hyperframes",
+      "title": "HyperFrames",
+      "scope": "operational_reels",
+      "sha256": "180ce4eea5f33f1617105c92e2690a5a2320abf624c263186ec0cb1a78a919ef",
+      "bytes": 7167,
+      "lines": 74,
+      "links": {
+        "total": 1,
+        "local": 1,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
       "path": "skills/hypit/SKILL.md",
       "name": "hypit",
       "title": "Hypit",
@@ -748,6 +900,23 @@
       "links": {
         "total": 23,
         "local": 23,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/media-use/SKILL.md",
+      "name": "media-use",
+      "title": "Media in HyperFrames",
+      "scope": "operational_reels",
+      "sha256": "ef3976a02ff516d8e5ed0b7fff19d4bbf9358264233bace33fdacaa3aa7f37de",
+      "bytes": 5120,
+      "lines": 60,
+      "links": {
+        "total": 2,
+        "local": 1,
         "runtime_resolved": 0,
         "missing": 0,
         "unresolved": 0
@@ -799,6 +968,40 @@
       "links": {
         "total": 0,
         "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/remotion-to-hyperframes/SKILL.md",
+      "name": "remotion-to-hyperframes",
+      "title": "Import into HyperFrames",
+      "scope": "operational_reels",
+      "sha256": "f6fb227e1a5d4fc47ed5375a24efc7bbc55b47a1ac2593825e63e34f6155ca63",
+      "bytes": 5046,
+      "lines": 49,
+      "links": {
+        "total": 1,
+        "local": 1,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/slideshow/SKILL.md",
+      "name": "slideshow",
+      "title": "HyperFrames slideshow",
+      "scope": "operational_reels",
+      "sha256": "4525f1a0d468f91957b638f14599c37f4af5e00c9b3c4df519a1cbe16101c908",
+      "bytes": 4924,
+      "lines": 62,
+      "links": {
+        "total": 1,
+        "local": 1,
         "runtime_resolved": 0,
         "missing": 0,
         "unresolved": 0

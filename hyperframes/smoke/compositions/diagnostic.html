@@ -1,0 +1,211 @@
+<template>
+  <style>
+    #root {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #090c12;
+      color: #f4f7ff;
+      font-family: Inter, sans-serif;
+    }
+    #hf-scene, #hf-camera { position: absolute; inset: 0; }
+    #hf-camera { transform-origin: 50% 46%; }
+    #hf-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(124, 247, 212, 0.055) 2px, transparent 2px),
+        linear-gradient(90deg, rgba(124, 247, 212, 0.055) 2px, transparent 2px);
+      background-size: 108px 108px;
+    }
+    #hf-wash {
+      position: absolute;
+      width: 980px;
+      height: 980px;
+      left: -230px;
+      top: 40px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(42, 104, 110, 0.58), rgba(9, 12, 18, 0) 68%);
+    }
+    #hf-orbit {
+      position: absolute;
+      left: 676px;
+      top: 280px;
+      width: 292px;
+      height: 292px;
+      border: 3px solid rgba(124, 247, 212, 0.62);
+      border-radius: 50%;
+    }
+    #hf-orbit::before {
+      content: "";
+      position: absolute;
+      left: 123px;
+      top: -13px;
+      width: 40px;
+      height: 24px;
+      border-radius: 12px;
+      background: #ffde59;
+    }
+    #hf-orbit::after {
+      content: "";
+      position: absolute;
+      inset: 46px;
+      border: 2px dashed rgba(244, 247, 255, 0.24);
+      border-radius: 50%;
+    }
+    #hf-copy {
+      position: absolute;
+      left: 96px;
+      top: 238px;
+      width: 888px;
+    }
+    #hf-kicker {
+      color: #7cf7d4;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+    }
+    #hf-title {
+      margin-top: 122px;
+      font-size: 132px;
+      font-weight: 900;
+      letter-spacing: -0.065em;
+      line-height: 0.87;
+    }
+    #hf-title span { display: block; }
+    #hf-rule {
+      width: 740px;
+      height: 10px;
+      margin-top: 66px;
+      transform-origin: left center;
+      background: #ffde59;
+    }
+    #hf-format {
+      margin-top: 46px;
+      font-size: 56px;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+    }
+    #hf-specs {
+      display: flex;
+      gap: 18px;
+      margin-top: 74px;
+    }
+    .hf-chip {
+      padding: 19px 25px;
+      border: 2px solid rgba(244, 247, 255, 0.32);
+      border-radius: 14px;
+      color: #f4f7ff;
+      background: rgba(9, 12, 18, 0.74);
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    #hf-runtime {
+      margin-top: 36px;
+      color: #7cf7d4;
+      font-family: "Space Mono", monospace;
+      font-size: 30px;
+      font-weight: 700;
+    }
+    #hf-progress-track {
+      position: absolute;
+      left: 96px;
+      top: 1390px;
+      width: 888px;
+      height: 14px;
+      background: rgba(244, 247, 255, 0.15);
+    }
+    #hf-progress {
+      width: 100%;
+      height: 100%;
+      transform-origin: left center;
+      background: #7cf7d4;
+    }
+    #hf-corner {
+      position: absolute;
+      left: 96px;
+      top: 1470px;
+      width: 130px;
+      height: 130px;
+      border-left: 8px solid #ffde59;
+      border-top: 8px solid #ffde59;
+    }
+  </style>
+
+  <div data-hf-id="hf-huvv" id="root" data-composition-id="diagnostic" data-width="1080" data-height="1920" data-duration="3">
+    <section data-hf-id="hf-rjae" id="hf-scene" class="clip" data-start="0" data-duration="3" data-track-index="0">
+      <div data-hf-id="hf-z29t" id="hf-camera">
+        <div data-hf-id="hf-9xhf" id="hf-grid" data-layout-ignore></div>
+        <div data-hf-id="hf-38ei" id="hf-wash" data-layout-ignore></div>
+        <div data-hf-id="hf-vyzx" id="hf-orbit" data-layout-ignore></div>
+        <div data-hf-id="hf-hhkr" id="hf-copy">
+          <p data-hf-id="hf-7yaz" id="hf-kicker">DIAGNÓSTICO LOCAL</p>
+          <h1 data-hf-id="hf-4ucg" id="hf-title"><span data-hf-id="hf-2qf9">HYPER</span><span data-hf-id="hf-35cj">FRAMES</span></h1>
+          <div data-hf-id="hf-rvfl" id="hf-rule" data-layout-ignore></div>
+          <p data-hf-id="hf-y7i2" id="hf-format">HTML &gt; MP4</p>
+          <div data-hf-id="hf-5kro" id="hf-specs">
+            <span data-hf-id="hf-cg86" class="hf-chip">1080 × 1920</span>
+            <span data-hf-id="hf-7ji3" class="hf-chip">60 FPS</span>
+          </div>
+          <p data-hf-id="hf-zrn7" id="hf-runtime">RUNTIME 0.8.206</p>
+        </div>
+        <div data-hf-id="hf-52c0" id="hf-progress-track" data-layout-ignore><div data-hf-id="hf-pwyt" id="hf-progress"></div></div>
+        <div data-hf-id="hf-v23c" id="hf-corner" data-layout-ignore></div>
+      </div>
+    </section>
+  </div>
+
+  <script src="assets/gsap.min.js"></script>
+  <script>
+    const diagnosticTimeline = gsap.timeline({ paused: true });
+
+    // Toda propriedade visual e derivada do tempo desta timeline pausada.
+    diagnosticTimeline.fromTo(
+      "#hf-camera",
+      { scale: 0.985 },
+      { scale: 1.025, duration: 3, ease: "sine.inOut" },
+      0,
+    );
+    diagnosticTimeline.fromTo(
+      "#hf-title",
+      { y: 48, opacity: 0.88 },
+      { y: 0, opacity: 1, duration: 0.7, ease: "power3.out" },
+      0,
+    );
+    diagnosticTimeline.fromTo(
+      "#hf-specs",
+      { y: 24, opacity: 0.7 },
+      { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" },
+      0.15,
+    );
+    diagnosticTimeline.fromTo(
+      "#hf-runtime",
+      { y: 18, opacity: 0.65 },
+      { y: 0, opacity: 1, duration: 0.55, ease: "power2.out" },
+      0.35,
+    );
+    diagnosticTimeline.fromTo(
+      "#hf-rule",
+      { scaleX: 0.18 },
+      { scaleX: 1, duration: 1.4, ease: "power2.inOut" },
+      0.1,
+    );
+    diagnosticTimeline.fromTo(
+      "#hf-orbit",
+      { rotation: 0 },
+      { rotation: 120, duration: 3, ease: "none" },
+      0,
+    );
+    diagnosticTimeline.fromTo(
+      "#hf-progress",
+      { scaleX: 0 },
+      { scaleX: 1, duration: 3, ease: "none" },
+      0,
+    );
+
+    window.__timelines = window.__timelines || {};
+    window.__timelines.diagnostic = diagnosticTimeline;
+    diagnosticTimeline.seek(0);
+  </script>
+</template>

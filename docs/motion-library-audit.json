@@ -5,11 +5,11 @@
   "branches_reviewed": [
     {
       "ref": "origin/main",
-      "commit": "003462895b72703c691e6d801f9a8fa05de5648e"
+      "commit": "1423bf5bca6e4b29c464d4ccbdcad8ee8a9865a1"
     },
     {
       "ref": "origin/arena/09635ca6-principaledi-o",
-      "commit": "cbc06c26f478e697d7bd258292f3df5ab38f4fdc"
+      "commit": "b2680db4a0aea682619d0cf816f46d26ad45f034"
     },
     {
       "ref": "origin/arena/5e99bd34-principaledi-o",
@@ -20,7 +20,7 @@
     "checks": 18,
     "passed": 18,
     "failed": 0,
-    "loose_documents": 18,
+    "loose_documents": 19,
     "exact_loose_duplicate_groups": 0,
     "biblioteca_canonical_prompts": 684,
     "biblioteca_alternate_references": 19,
