@@ -2,7 +2,7 @@
   "file": "/home/user/PRINCIPALEDI-O/entregas/ARMARIO-7-EDITADO.mp4",
   "media": {
     "duration_seconds": 21.572,
-    "size_bytes": 14833445.0,
+    "size_bytes": 16311135.0,
     "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
     "video": {
       "codec": "h264",
@@ -21,7 +21,7 @@
   "analysis": {
     "loudness": {
       "integrated_lufs": -14.0,
-      "true_peak_dbtp": -1.0
+      "true_peak_dbtp": -1.5
     },
     "visual_events": {
       "black": [],
@@ -62,7 +62,7 @@
     {
       "name": "true_peak",
       "status": "pass",
-      "message": "Máximo -1.0 dBTP; encontrado -1.0."
+      "message": "Máximo -1.0 dBTP; encontrado -1.5."
     },
     {
       "name": "black",
@@ -75,7 +75,7 @@
       "message": "Nenhum evento detectado."
     }
   ],
-  "contact_sheet": "reports/skill-contact-sheet.jpg",
+  "contact_sheet": "reports/video-quality-contact-sheet.jpg",
   "status": "pass",
   "summary": {
     "failures": 0,

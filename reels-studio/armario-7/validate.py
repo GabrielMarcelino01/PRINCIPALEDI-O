@@ -88,7 +88,7 @@ freeze_events = re.findall(r"freeze_start:[^\n]+", visual_decode.stderr)
 check("decodificacao_video_sem_erros", visual_decode.returncode == 0 and "Error" not in visual_decode.stderr, {"returncode": visual_decode.returncode})
 check("sem_preto_ou_congelamento", not black_events and not freeze_events, {"black": black_events, "freeze": freeze_events})
 
-loudness = run([FFMPEG, "-nostdin", "-hide_banner", "-i", str(DELIVERY), "-vn", "-af", "loudnorm=I=-14:TP=-1:LRA=9:print_format=json", "-f", "null", "-"])
+loudness = run([FFMPEG, "-nostdin", "-hide_banner", "-i", str(DELIVERY), "-vn", "-af", "loudnorm=I=-14:TP=-1.5:LRA=9:print_format=json", "-f", "null", "-"])
 json_matches = re.findall(r'\{\s*"input_i"[\s\S]*?\}', loudness.stderr)
 loudness_data = json.loads(json_matches[-1]) if json_matches else {}
 integrated = float(loudness_data.get("input_i", "nan"))
@@ -116,8 +116,8 @@ composition = (ROOT / "composition.js").read_text(encoding="utf-8")
 forbidden = [token for token in ["Math.random", "Date.now", "setInterval", "setTimeout"] if token in composition]
 check("animacao_pura_do_tempo", not forbidden and "function renderAt(t)" in composition, {"forbidden": forbidden})
 transform_lines = [line.strip() for line in composition.splitlines() if "style.transform" in line]
-allowed_transforms = ("canvas.style.transform", "backdropCanvas.style.transform", "fill.style.transform", "$(\"cut-wipe\").style.transform")
-check("tipografia_sem_transforms", bool(transform_lines) and all(line.startswith(allowed_transforms) for line in transform_lines), transform_lines)
+check("tipografia_sem_transforms", not transform_lines, transform_lines)
+check("video_original_sem_crop_ou_filtros", "canvas.style.transform" not in composition and "canvas.style.filter" not in composition and "backdrop-canvas" not in composition and "context.drawImage(sourceImage, 0, 0, canvas.width, canvas.height)" in composition, {"full_frame": True, "filters": False, "extra_layers": False})
 
 # Folha e pôster são extraídos do MP4 final, não dos JPEGs de origem.
 selected = [30, 140, 280, 390, 510, 612, 730, 830, 950, 1080, 1195, 1278]
@@ -130,10 +130,6 @@ check("poster_do_mp4_gerado", poster.returncode == 0 and (REPORTS / "poster.jpg"
 pre_render_path = REPORTS / "pre-render-determinism.json"
 pre_render = json.loads(pre_render_path.read_text()) if pre_render_path.exists() else {}
 check("teste_previo_dez_de_dez", pre_render.get("all_byte_identical") is True and len(pre_render.get("results", [])) == 10, {"all_byte_identical": pre_render.get("all_byte_identical")})
-audio_determinism_path = REPORTS / "audio-determinism.json"
-audio_determinism = json.loads(audio_determinism_path.read_text()) if audio_determinism_path.exists() else {}
-check("trilha_reproduzivel", audio_determinism.get("identical") is True, audio_determinism)
-
 determinism_path = REPORTS / "determinism.json"
 determinism = json.loads(determinism_path.read_text()) if determinism_path.exists() else {}
 check("recapturas_deterministicas", determinism.get("all_identical") is True, determinism)

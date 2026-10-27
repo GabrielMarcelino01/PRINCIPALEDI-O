@@ -61,33 +61,14 @@ await run([
   "-movflags", "+faststart", resolve(OUT, "video-silent.mp4"),
 ]);
 
-const voicePre = "highpass=f=65,acompressor=threshold=0.1:ratio=2:attack=8:release=90:makeup=1";
-const voiceTarget = { i: -16, tp: -2, lra: 7 };
-console.log(JSON.stringify({ event: "measure-voice" }));
-const voiceMeasureResult = await run([
-  "-i", SOURCE, "-vn", "-af", `${voicePre},loudnorm=I=${voiceTarget.i}:TP=${voiceTarget.tp}:LRA=${voiceTarget.lra}:print_format=json`, "-f", "null", "-",
+const audioTarget = { i: -14, tp: -1.5, lra: 9 };
+console.log(JSON.stringify({ event: "measure-original-audio" }));
+const audioMeasureResult = await run([
+  "-i", SOURCE, "-vn", "-af", `loudnorm=I=${audioTarget.i}:TP=${audioTarget.tp}:LRA=${audioTarget.lra}:print_format=json`, "-f", "null", "-",
 ], true);
-const voiceMeasured = measuredJson(voiceMeasureResult.stderr);
+const audioMeasured = measuredJson(audioMeasureResult.stderr);
 await run([
-  "-y", "-i", SOURCE, "-vn", "-af", `${voicePre},${loudnormApply(voiceMeasured, voiceTarget)},apad`,
-  "-t", String(project.duration), "-ac", "2", "-ar", "48000", "-c:a", "pcm_s24le", resolve(OUT, "voice.wav"),
-]);
-
-console.log(JSON.stringify({ event: "mix" }));
-await run([
-  "-y", "-i", resolve(OUT, "voice.wav"), "-i", resolve(OUT, "design-bed.wav"),
-  "-filter_complex", "[1:a]volume=0.32[bed];[0:a][bed]amix=inputs=2:duration=first:dropout_transition=0,volume=2.0,alimiter=limit=0.9:level=false[mix]",
-  "-map", "[mix]", "-t", String(project.duration), "-ac", "2", "-ar", "48000", "-c:a", "pcm_s24le", resolve(OUT, "mix.wav"),
-]);
-
-const mixTarget = { i: -14, tp: -1, lra: 9 };
-console.log(JSON.stringify({ event: "measure-mix" }));
-const mixMeasureResult = await run([
-  "-i", resolve(OUT, "mix.wav"), "-af", `loudnorm=I=${mixTarget.i}:TP=${mixTarget.tp}:LRA=${mixTarget.lra}:print_format=json`, "-f", "null", "-",
-], true);
-const mixMeasured = measuredJson(mixMeasureResult.stderr);
-await run([
-  "-y", "-i", resolve(OUT, "mix.wav"), "-af", loudnormApply(mixMeasured, mixTarget),
+  "-y", "-i", SOURCE, "-vn", "-af", `${loudnormApply(audioMeasured, audioTarget)},apad`,
   "-t", String(project.duration), "-ac", "2", "-ar", "48000", "-c:a", "pcm_s24le", resolve(OUT, "final-audio.wav"),
 ]);
 
@@ -105,7 +86,7 @@ const report = {
   duration: project.duration,
   source: { original: "reels-studio/assets/armario-7/ARMARIO-7.mp4", sha256: project.sourceSha256, indexed_frames: project.frames },
   video: { codec: "H.264 High", crf: 17, preset: "slow", pixel_format: "yuv420p", color: "BT.709 limited range" },
-  audio: { voice_target: voiceTarget, voice_measured: voiceMeasured, mix_target: mixTarget, mix_measured: mixMeasured, bed_gain: 0.32, aac_bitrate: "192k" },
+  audio: { source: "Somente o áudio original; sem trilha, sound design ou efeitos", target: audioTarget, measured: audioMeasured, aac_bitrate: "192k" },
   delivery: "entregas/ARMARIO-7-EDITADO.mp4",
 };
 writeFileSync(resolve(REPORTS, "encode.json"), JSON.stringify(report, null, 2) + "\n");

@@ -20,27 +20,22 @@ scene_data = [
     {
         "id": "cherry-ice", "short": "CHERRY × ICE", "labels": ["VERMELHO CEREJA", "CINZA GELO"],
         "colors": ["#a92f45", "#c9d5d8"], "accent": "#ff8595", "secondary": "#d9edf2",
-        "camera": [0.835, 0.845, -4, 4, -96, -104],
     },
     {
         "id": "white-denim", "short": "WHITE × DENIM", "labels": ["BRANCO", "AZUL CLARO"],
         "colors": ["#f2efe7", "#8eb9d2"], "accent": "#a8ddff", "secondary": "#fff7e8",
-        "camera": [0.846, 0.836, 5, -4, -102, -96],
     },
     {
         "id": "grape-sand", "short": "GRAPE × SAND", "labels": ["ROXO UVA", "AREIA"],
         "colors": ["#573568", "#d5c2a3"], "accent": "#d2afff", "secondary": "#ecd4ac",
-        "camera": [0.836, 0.847, -4, 5, -97, -103],
     },
     {
         "id": "black-denim", "short": "BLACK × DENIM", "labels": ["PRETO", "AZUL JEANS"],
         "colors": ["#24262a", "#668dab"], "accent": "#91c8ff", "secondary": "#d3d7df",
-        "camera": [0.847, 0.837, 5, -4, -103, -97],
     },
     {
         "id": "moss-black", "short": "MOSS × BLACK", "labels": ["VERDE MUSGO", "PRETO"],
         "colors": ["#626c4d", "#24262a"], "accent": "#c4d98f", "secondary": "#d3d7df",
-        "camera": [0.836, 0.846, -4, 4, -97, -103],
     },
 ]
 
@@ -103,7 +98,7 @@ for group in groups:
 
 project = {
     "id": "armario-7",
-    "title": "ARMÁRIO-7 — Match Lab",
+    "title": "ARMÁRIO-7 — Vídeo original com superlegendas",
     "width": 1080,
     "height": 1920,
     "fps": FPS,
@@ -115,9 +110,7 @@ project = {
     "sourceCommit": "a9f47235ffd08ea0263d09bac198783e37c6d776",
     "scenes": scenes,
     "words": words,
-    "groups": groups,
-    "ctaStart": 20.12,
-    "commentStart": 20.18,
+"groups": groups,
 }
 assert project["sourceSha256"] == "cae26c943b49b427e36b63d83f1430cf4d47fc38b74dd1294c2a8b11d9f0cc21"
 (ROOT / "project.json").write_text(json.dumps(project, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

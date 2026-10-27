@@ -1,6 +1,6 @@
 {
   "id": "armario-7",
-  "title": "ARMÁRIO-7 — Match Lab",
+  "title": "ARMÁRIO-7 — Vídeo original com superlegendas",
   "width": 1080,
   "height": 1920,
   "fps": 60,
@@ -25,15 +25,7 @@
         "#c9d5d8"
       ],
       "accent": "#ff8595",
-      "secondary": "#d9edf2",
-      "camera": [
-        0.835,
-        0.845,
-        -4,
-        4,
-        -96,
-        -104
-      ]
+      "secondary": "#d9edf2"
     },
     {
       "start": 4.99499,
@@ -49,15 +41,7 @@
         "#8eb9d2"
       ],
       "accent": "#a8ddff",
-      "secondary": "#fff7e8",
-      "camera": [
-        0.846,
-        0.836,
-        5,
-        -4,
-        -102,
-        -96
-      ]
+      "secondary": "#fff7e8"
     },
     {
       "start": 8.76966,
@@ -73,15 +57,7 @@
         "#d5c2a3"
       ],
       "accent": "#d2afff",
-      "secondary": "#ecd4ac",
-      "camera": [
-        0.836,
-        0.847,
-        -4,
-        5,
-        -97,
-        -103
-      ]
+      "secondary": "#ecd4ac"
     },
     {
       "start": 12.5684,
@@ -97,15 +73,7 @@
         "#668dab"
       ],
       "accent": "#91c8ff",
-      "secondary": "#d3d7df",
-      "camera": [
-        0.847,
-        0.837,
-        5,
-        -4,
-        -103,
-        -97
-      ]
+      "secondary": "#d3d7df"
     },
     {
       "start": 16.4527,
@@ -121,15 +89,7 @@
         "#24262a"
       ],
       "accent": "#c4d98f",
-      "secondary": "#d3d7df",
-      "camera": [
-        0.836,
-        0.846,
-        -4,
-        4,
-        -97,
-        -103
-      ]
+      "secondary": "#d3d7df"
     }
   ],
   "words": [
@@ -657,7 +617,5 @@
         ]
       ]
     }
-  ],
-  "ctaStart": 20.12,
-  "commentStart": 20.18
+  ]
 }
