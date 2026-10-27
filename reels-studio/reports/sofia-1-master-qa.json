@@ -1,0 +1,193 @@
+{
+  "status": "PASS",
+  "scope": "Verificações técnicas do arquivo codificado; não é playback nem escuta subjetiva integral.",
+  "file": "/home/user/PRINCIPALEDI-O/.arena/sofia-work/entregas/SOFIA-1-EDITADO.mp4",
+  "bytes": 19631717,
+  "sha256": "b5b3529494f1071727e97091566a386b34d5ca41f3630b36e4c7cb6f60b58056",
+  "summary": {
+    "checks": 14,
+    "passed": 14,
+    "failed": 0
+  },
+  "probe": {
+    "programs": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "profile": "High",
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1920,
+        "pix_fmt": "yuv420p",
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "60/1",
+        "duration": "25.100000",
+        "nb_read_frames": "1506"
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "profile": "LC",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "duration": "25.100000",
+        "nb_read_frames": "1177"
+      }
+    ],
+    "format": {
+      "duration": "25.100000",
+      "size": "19631717",
+      "bit_rate": "6257120"
+    }
+  },
+  "loudness": {
+    "input_i": "-14.40",
+    "input_tp": "-1.12",
+    "input_lra": "1.50",
+    "input_thresh": "-24.70",
+    "output_i": "-14.16",
+    "output_tp": "-1.00",
+    "output_lra": "1.50",
+    "output_thresh": "-24.44",
+    "normalization_type": "dynamic",
+    "target_offset": "0.16"
+  },
+  "sync": [
+    {
+      "scene": "bordo",
+      "offset_ms": 0.0,
+      "correlation": 0.9754
+    },
+    {
+      "scene": "marinho",
+      "offset_ms": 0.0,
+      "correlation": 0.9474
+    },
+    {
+      "scene": "marrom",
+      "offset_ms": -0.0,
+      "correlation": 0.9803
+    },
+    {
+      "scene": "rosa",
+      "offset_ms": 0.0,
+      "correlation": 0.9868
+    },
+    {
+      "scene": "cta",
+      "offset_ms": -0.0,
+      "correlation": 0.9859
+    }
+  ],
+  "checks": [
+    {
+      "name": "codec",
+      "status": "pass",
+      "detail": "h264"
+    },
+    {
+      "name": "dimensions",
+      "status": "pass",
+      "detail": "1080x1920"
+    },
+    {
+      "name": "fps",
+      "status": "pass",
+      "detail": "60/1"
+    },
+    {
+      "name": "frames",
+      "status": "pass",
+      "detail": "1506"
+    },
+    {
+      "name": "pixel_format",
+      "status": "pass",
+      "detail": "yuv420p"
+    },
+    {
+      "name": "color",
+      "status": "pass",
+      "detail": {
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "color_range": "tv"
+      }
+    },
+    {
+      "name": "video_duration",
+      "status": "pass",
+      "detail": "25.100000"
+    },
+    {
+      "name": "audio_codec",
+      "status": "pass",
+      "detail": "aac / 48000 Hz / 2 channels"
+    },
+    {
+      "name": "audio_duration",
+      "status": "pass",
+      "detail": "25.100000"
+    },
+    {
+      "name": "loudness",
+      "status": "pass",
+      "detail": -14.4
+    },
+    {
+      "name": "true_peak",
+      "status": "pass",
+      "detail": -1.12
+    },
+    {
+      "name": "black_freeze",
+      "status": "pass",
+      "detail": []
+    },
+    {
+      "name": "decode",
+      "status": "pass",
+      "detail": "Fluxo completo decodificado com -xerror"
+    },
+    {
+      "name": "sync",
+      "status": "pass",
+      "detail": [
+        {
+          "scene": "bordo",
+          "offset_ms": 0.0,
+          "correlation": 0.9754
+        },
+        {
+          "scene": "marinho",
+          "offset_ms": 0.0,
+          "correlation": 0.9474
+        },
+        {
+          "scene": "marrom",
+          "offset_ms": -0.0,
+          "correlation": 0.9803
+        },
+        {
+          "scene": "rosa",
+          "offset_ms": 0.0,
+          "correlation": 0.9868
+        },
+        {
+          "scene": "cta",
+          "offset_ms": -0.0,
+          "correlation": 0.9859
+        }
+      ]
+    }
+  ]
+}

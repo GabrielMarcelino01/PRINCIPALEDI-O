@@ -14,6 +14,8 @@ Esta pasta contém **somente vídeos finalizados e suas prévias leves**. Os upl
 | `CLOSET-5-EDITADO.mp4` | Master do CLOSET-5 — 1080×1920, 30 fps, 734 frames / 24,47 s; cinco looks e 18 captions inferiores animadas. |
 | `CLOSET-5-PREVIA.mp4` | Prévia leve do CLOSET-5 — 540×960, 30 fps, 734 frames. |
 | `TEMPORAL-60FPS.mp4` | Demonstração visual do pipeline determinístico — 1080×1920, 60 fps, 360 frames / 6 s; sem áudio. |
+| `SOFIA-1-EDITADO.mp4` | Master do SOFIA-1 — 1080×1920, 60 fps, 1.506 frames / 25,1 s; quatro paletas animadas, 14 captions e CTA no close original. |
+| `SOFIA-1-PREVIA.mp4` | Prévia leve do SOFIA-1 — 540×960, 60 fps, 1.506 frames / 25,1 s; mesmo corte, layout e áudio do master. |
 
 ## Onde ficam os outros materiais
 
