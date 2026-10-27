@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   AbsoluteFill, Audio, OffthreadVideo, cancelRender, continueRender, delayRender,
-  staticFile, useCurrentFrame, useVideoConfig,
+  spring, staticFile, useCurrentFrame, useVideoConfig,
 } from 'remotion';
 
 function useEditorialFonts() {
@@ -22,11 +22,40 @@ function useEditorialFonts() {
   }, [handle, interUrl, playfairUrl]);
 }
 
-function CaptionWord({item, style}) {
+function WaveText({text, local}) {
+  // Uma única onda curta na palavra serifada ativa; depois ela assenta na baseline.
+  const envelope = local >= 0 && local < 0.8 ? Math.sin(Math.PI * local / 0.8) : 0;
+  return Array.from(text).map((letter, index) => {
+    const phase = Math.sin(local * 14 - index * 0.55);
+    const y = -3.2 * phase * envelope;
+    return (
+      <span key={`${letter}-${index}`} style={{display: 'inline-block', transform: `translateY(${y}px)`, whiteSpace: 'pre'}}>
+        {letter === ' ' ? ' ' : letter}
+      </span>
+    );
+  });
+}
+
+function CaptionWord({item, style, time, fps}) {
   const serif = item.style === 'serif';
   const small = item.style === 'small';
   const fontSize = serif ? style.serifFontSize : small ? style.smallFontSize : style.fontSize;
   const color = item.color || '#fff4e2';
+  const local = time - item.start;
+  const entrance = spring({
+    frame: Math.max(0, local * fps), fps, durationInFrames: 18,
+    config: {damping: 14, stiffness: 180, mass: 0.65},
+  });
+  const underline = spring({
+    frame: Math.max(0, local * fps), fps, durationInFrames: 20,
+    config: {damping: 16, stiffness: 150, mass: 0.7},
+  });
+  const active = local >= 0 && time < item.end;
+  // Pulso único e discreto; conectores não ficam oscilando.
+  const pulse = !small && active && local < 0.45 ? Math.sin(Math.PI * local / 0.45) * 0.025 : 0;
+  const opacity = Math.max(0, Math.min(1, entrance * 1.35));
+  const translateY = (1 - entrance) * 16;
+  const scale = (0.92 + entrance * 0.08) * (1 + pulse);
   return (
     <span style={{
       position: 'relative',
@@ -40,32 +69,48 @@ function CaptionWord({item, style}) {
       color,
       textShadow: '0 4px 18px rgba(0,0,0,0.68), 0 1px 3px rgba(0,0,0,0.9)',
       whiteSpace: 'pre',
+      opacity,
+      transform: `translateY(${translateY}px) scale(${scale})`,
+      transformOrigin: '50% 50%',
     }}>
-      {serif ? item.text.toLowerCase() : item.text}
+      {serif ? <WaveText text={item.text.toLowerCase()} local={local} /> : item.text}
       {item.color && (
         <span style={{
           position: 'absolute', left: '4%', right: '4%', bottom: -10, height: 5,
           borderRadius: 3, background: item.color, boxShadow: '0 2px 8px rgba(0,0,0,0.28)',
+          transform: `scaleX(${underline})`, transformOrigin: '50% 50%',
         }} />
       )}
     </span>
   );
 }
 
-function Captions({project, time}) {
+function Captions({project, time, fps}) {
   const group = project.groups.find((candidate) => time >= candidate.start && time < candidate.end);
   if (!group) return null;
+  const accent = spring({
+    frame: Math.max(0, (time - group.start) * fps), fps, durationInFrames: 18,
+    config: {damping: 16, stiffness: 160, mass: 0.7},
+  });
   return (
     <div style={{
-      position: 'absolute', left: 64, right: 100, top: '50%',
-      transform: 'translateY(-50%)', textAlign: 'center', pointerEvents: 'none',
+      position: 'absolute', left: 64, right: 100, top: project.captionStyle.top,
+      transform: 'translateY(-100%)', textAlign: 'center', pointerEvents: 'none',
     }}>
       <div style={{maxWidth: project.captionStyle.maxWidth, width: '100%', margin: '0 auto'}}>
-        <div style={{width: 64, height: 5, margin: '0 auto 8px', borderRadius: 3, background: '#f2e8d8'}} />
+        <div style={{
+          width: 64, height: 5, margin: '0 auto 8px', borderRadius: 3, background: '#f2e8d8',
+          transform: `scaleX(${accent})`, transformOrigin: '50% 50%',
+        }} />
         <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14}}>
           {group.lines.map((line, index) => (
             <div key={`${group.id}-${index}`} style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'baseline', columnGap: 16, rowGap: 6}}>
-              {line.map((item) => <CaptionWord key={`${group.id}-${item.text}-${item.start}`} item={item} style={project.captionStyle} />)}
+              {line.map((item) => (
+                <CaptionWord
+                  key={`${group.id}-${item.text}-${item.start}`}
+                  item={item} style={project.captionStyle} time={time} fps={fps}
+                />
+              ))}
             </div>
           ))}
         </div>
@@ -96,10 +141,19 @@ function EditorialHeader({project, sceneIndex, scenes}) {
   );
 }
 
-function FollowButton({project}) {
+function FollowButton({project, time, fps}) {
   const cta = project.followCta;
+  const entrance = spring({
+    frame: Math.max(0, (time - cta.start) * fps), fps, durationInFrames: 20,
+    config: {damping: 14, stiffness: 170, mass: 0.7},
+  });
   return (
-    <div style={{position: 'absolute', top: cta.top, left: 0, right: 0, display: 'flex', justifyContent: 'center'}}>
+    <div style={{
+      position: 'absolute', top: cta.top, left: 0, right: 0, display: 'flex', justifyContent: 'center',
+      opacity: Math.max(0, Math.min(1, entrance * 1.4)),
+      transform: `translateY(${(1 - entrance) * 14}px) scale(${0.9 + entrance * 0.1})`,
+      transformOrigin: '50% 0%',
+    }}>
       <div style={{
         display: 'flex', alignItems: 'center', gap: 15, padding: '17px 34px 17px 24px',
         borderRadius: 18, background: 'linear-gradient(135deg,#fff9ec,#e8d7b9)',
@@ -142,8 +196,8 @@ export function Closet3Reel({project}) {
       <AbsoluteFill style={{boxShadow: 'inset 0 0 180px rgba(0,0,0,0.30)'}} />
       <AbsoluteFill style={{backgroundImage: `url(${staticFile(project.grain)})`, backgroundRepeat: 'repeat', opacity: 0.032, mixBlendMode: 'soft-light'}} />
       <EditorialHeader project={project} sceneIndex={safeSceneIndex} scenes={project.scenes} />
-      <Captions project={project} time={time} />
-      {project.followCta && time >= project.followCta.start && <FollowButton project={project} />}
+      <Captions project={project} time={time} fps={fps} />
+      {project.followCta && time >= project.followCta.start && <FollowButton project={project} time={time} fps={fps} />}
       {project.showSafeZones && <SafeZones project={project} />}
       <Audio src={staticFile(project.audio)} volume={1} />
     </AbsoluteFill>

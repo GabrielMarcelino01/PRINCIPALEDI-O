@@ -137,7 +137,7 @@
           }
         ]
       ],
-      "position": "center"
+      "position": "bottom"
     },
     {
       "id": "erro-cores",
@@ -176,7 +176,7 @@
           }
         ]
       ],
-      "position": "center"
+      "position": "bottom"
     },
     {
       "id": "erro",
@@ -199,7 +199,7 @@
           }
         ]
       ],
-      "position": "center"
+      "position": "bottom"
     },
     {
       "id": "look-1-cores",
@@ -243,7 +243,7 @@
           }
         ]
       ],
-      "position": "center"
+      "position": "bottom"
     },
     {
       "id": "look-1-estilo",
@@ -280,7 +280,7 @@
           }
         ]
       ],
-      "position": "center"
+      "position": "bottom"
     },
     {
       "id": "look-2-cores",
@@ -324,7 +324,7 @@
           }
         ]
       ],
-      "position": "center"
+      "position": "bottom"
     },
     {
       "id": "look-2-estilo",
@@ -362,7 +362,7 @@
           }
         ]
       ],
-      "position": "center"
+      "position": "bottom"
     },
     {
       "id": "look-3-camisa",
@@ -393,7 +393,7 @@
           }
         ]
       ],
-      "position": "center"
+      "position": "bottom"
     },
     {
       "id": "look-3-calca",
@@ -422,7 +422,7 @@
           }
         ]
       ],
-      "position": "center"
+      "position": "bottom"
     },
     {
       "id": "look-3-estilo",
@@ -460,7 +460,7 @@
           }
         ]
       ],
-      "position": "center"
+      "position": "bottom"
     },
     {
       "id": "look-4-sweater",
@@ -483,7 +483,7 @@
           }
         ]
       ],
-      "position": "center"
+      "position": "bottom"
     },
     {
       "id": "look-4-calca",
@@ -512,7 +512,7 @@
           }
         ]
       ],
-      "position": "center"
+      "position": "bottom"
     },
     {
       "id": "look-4-estilo",
@@ -556,7 +556,7 @@
           }
         ]
       ],
-      "position": "center"
+      "position": "bottom"
     }
   ],
   "showSafeZones": false,
@@ -567,16 +567,17 @@
     "right": 100
   },
   "captionStyle": {
-    "top": 960,
-    "anchor": "middle",
+    "top": 1320,
+    "anchor": "bottom",
     "maxWidth": 920,
     "fontSize": 106,
     "serifFontSize": 132,
     "smallFontSize": 48
   },
   "captionPositions": {
-    "center": {
-      "anchor": "middle",
+    "bottom": {
+      "top": 1320,
+      "anchor": "bottom",
       "align": "center"
     }
   },
@@ -587,14 +588,43 @@
   },
   "design": {
     "title": "ARMÁRIO • COLOR EDIT",
-    "approach": "Mesmo design editorial do ARMÁRIO-2, com captions centralizadas e todos os movimentos adicionados removidos.",
-    "motionRefs": [],
+    "approach": "Mesmo design editorial do ARMÁRIO-2, com captions animadas e linha de base estável na parte inferior para deixar mais roupa visível.",
+    "motionRefs": [
+      {
+        "id": "001",
+        "name": "Pop-in",
+        "use": "Entrada das palavras sincronizada à fala e entrada única do CTA."
+      },
+      {
+        "id": "122",
+        "name": "Follow-through",
+        "use": "Sublinhados que se abrem e assentam sem deslocar o bloco."
+      },
+      {
+        "id": "125",
+        "name": "Pulse",
+        "use": "Ênfase única de até 2,5% na palavra ativa, exceto conectores."
+      },
+      {
+        "id": "130",
+        "name": "Wave text",
+        "use": "Onda curta de até 3,2px somente na serifada ativa."
+      }
+    ],
     "stability": {
-      "captions": "fixed-center-no-animation",
+      "captions": "fixed-bottom-baseline-1320-with-internal-motion",
       "camera": "fixed-scale-1.02",
       "grain": "static",
       "header": "static",
-      "cta": "static"
+      "cta": "fixed-bottom-with-entry-only"
     }
+  },
+  "captionMotion": {
+    "container": "fixed bottom baseline; no reflow or container translation",
+    "wordEntrance": "spring at each spoken word; 16px rise and 0.92–1.00 scale",
+    "activeEmphasis": "single 0.45s pulse, maximum 2.5%, excluding connectors",
+    "serifWave": "single 0.8s wave, maximum 3.2px per letter",
+    "underline": "spring scaleX at each colored word",
+    "ctaEntrance": "single spring, then fixed"
   }
 }

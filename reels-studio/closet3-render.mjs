@@ -72,7 +72,7 @@ async function main() {
   const browserExecutable = browser();
   const composition = await selectComposition({serveUrl, id: 'Closet3Reel', inputProps, browserExecutable});
   if (options.storyboard) {
-    const frames = [30, 75, 105, 160, 210, 270, 330, 390, 410, 450, 510, 530, 560, 590, 610, 613];
+    const frames = [30, 45, 75, 105, 192, 202, 246, 302, 313, 342, 390, 420, 465, 510, 540, 555, 560, 578, 590, 613];
     const directory = path.join(root, 'out', 'closet-3-review');
     fs.rmSync(directory, {recursive: true, force: true});
     fs.mkdirSync(directory, {recursive: true});

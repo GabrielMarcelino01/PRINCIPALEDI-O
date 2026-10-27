@@ -198,8 +198,8 @@ def write_project() -> None:
         raise RuntimeError("A timeline versionada não corresponde ao CLOSET-3 de 614 frames.")
     if project["cuts"] != CUTS or len(project["groups"]) != 13:
         raise RuntimeError("Cortes ou grupos de captions divergem do material revisado.")
-    if any(item.get("position") != "center" for item in project["groups"]):
-        raise RuntimeError("Todas as captions do CLOSET-3 devem permanecer no centro.")
+    if any(item.get("position") != "bottom" for item in project["groups"]):
+        raise RuntimeError("Todas as captions do CLOSET-3 devem permanecer na posição inferior estabilizada.")
     if any(scene["motion"]["scaleFrom"] != scene["motion"]["scaleTo"] for scene in project["scenes"]):
         raise RuntimeError("O CLOSET-3 não admite zoom de câmera.")
 

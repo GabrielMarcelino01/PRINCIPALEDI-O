@@ -94,17 +94,18 @@ def main() -> int:
     caption = project["captionStyle"]
     safe_top = project["safeZones"]["top"]
     safe_bottom = project["height"] - project["safeZones"]["bottom"]
-    center_ok = caption.get("anchor") == "middle" and caption.get("top") == 960
-    center_ok = center_ok and caption["top"] - 180 >= safe_top and caption["top"] + 180 <= safe_bottom
-    check("caption_safe_area", center_ok, "Bloco ancorado no centro geométrico, com margem estimada de 180px")
+    bottom_ok = caption.get("anchor") == "bottom" and caption.get("top") == 1320
+    bottom_ok = bottom_ok and caption["top"] - 360 >= safe_top and caption["top"] <= safe_bottom
+    check("caption_safe_area", bottom_ok, "Baseline inferior em 1320px; bloco estimado de até 360px dentro da safe zone")
     check("caption_scale", (caption["fontSize"], caption["serifFontSize"], caption["smallFontSize"]) == (106, 132, 48), "106px sans / 132px serifada / 48px conectores")
     positions = project.get("captionPositions", {})
-    positions_ok = set(positions) == {"center"} and positions.get("center", {}).get("anchor") == "middle"
-    positions_ok = positions_ok and positions.get("center", {}).get("align") == "center"
-    positions_ok = positions_ok and all(group.get("position") == "center" for group in project["groups"])
-    check("caption_positions", positions_ok, "13 grupos em uma única posição central estável")
+    positions_ok = set(positions) == {"bottom"} and positions.get("bottom", {}).get("anchor") == "bottom"
+    positions_ok = positions_ok and positions.get("bottom", {}).get("top") == 1320
+    positions_ok = positions_ok and positions.get("bottom", {}).get("align") == "center"
+    positions_ok = positions_ok and all(group.get("position") == "bottom" for group in project["groups"])
+    check("caption_positions", positions_ok, "13 grupos na mesma baseline inferior estável")
     follow = project.get("followCta", {})
-    check("follow_cta", follow.get("text") == "SEGUIR" and project["duration"] - 2 <= follow.get("start", 0) < project["duration"] and follow.get("top", safe_bottom) + 92 <= safe_bottom, "Botão + SEGUIR somente no final e dentro da safe zone")
+    check("follow_cta", follow.get("text") == "SEGUIR" and project["duration"] - 2 <= follow.get("start", 0) < project["duration"] and follow.get("top", safe_bottom) + 92 <= safe_bottom and follow.get("top", 0) - caption["top"] >= 80, "Botão + SEGUIR no final, dentro da safe zone e pelo menos 80px abaixo da baseline das captions")
     camera_ok = all(
         scene.get("motion") and scene["motion"]["scaleFrom"] == scene["motion"]["scaleTo"] == 1.02
         and all(scene["motion"][key] == 0 for key in ["xFrom", "xTo", "yFrom", "yTo"])
@@ -114,15 +115,18 @@ def main() -> int:
     component = (ROOT / "src" / "Closet3Reel.jsx").read_text(encoding="utf-8")
     forbidden = [
         "function CutEffects", "<CutEffects", "project.cta", "project.emphasisTimes",
-        "WhipPan", "CrossDissolve", "spring(", "interpolate(", "WaveText",
-        "requestAnimationFrame", "grainX", "shine",
+        "WhipPan", "CrossDissolve", "requestAnimationFrame", "grainX", "shine",
     ]
-    fixed_center = "top: '50%'" in component and "translateY(-50%)" in component
-    check("static_layout", all(token not in component for token in forbidden) and fixed_center and "cta" not in project and "emphasisTimes" not in project, "Sem zoom, onda, pulso, transição ou movimento de grão; captions ancoradas no centro")
+    fixed_bottom = "top: project.captionStyle.top" in component and "translateY(-100%)" in component
+    motion_present = all(token in component for token in ["spring(", "function WaveText", "scaleX(${underline})", "translateY(${translateY}px)"])
+    check("stabilized_motion_layout", all(token not in component for token in forbidden) and fixed_bottom and motion_present and "cta" not in project and "emphasisTimes" not in project, "Movimento interno por springs/onda curta; container, câmera e grão permanecem estáveis")
+    expected_motions = {"001", "122", "125", "130"}
     actual_motions = {item.get("id") for item in project.get("design", {}).get("motionRefs", [])}
     stability = project.get("design", {}).get("stability", {})
     stable_flags = all(stability.get(key) for key in ["captions", "camera", "grain", "header", "cta"])
-    check("static_design", actual_motions == set() and stable_flags, "Nenhum motion adicionado; estabilidade documentada no projeto")
+    caption_motion = project.get("captionMotion", {})
+    motion_keys = {"container", "wordEntrance", "activeEmphasis", "serifWave", "underline", "ctaEntrance"}
+    check("stabilized_motion_design", actual_motions == expected_motions and stable_flags and motion_keys <= set(caption_motion), "Quatro motions documentados, com baseline inferior e limites de movimento registrados")
 
     prepare = json.loads((ROOT / "closet-3-prepare-report.json").read_text(encoding="utf-8"))
     audio = prepare["audio"]["aac_preview"]

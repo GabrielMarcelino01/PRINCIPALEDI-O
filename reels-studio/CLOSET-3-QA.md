@@ -2,7 +2,7 @@
 
 ## Resultado
 
-**PASS no escopo verificado.** O master e a prévia foram gerados do original confirmado, sem usar o placeholder de 2 bytes ou um MP4 anteriormente editado.
+**PASS no escopo verificado para a versão com captions inferiores e animadas.** O master e a prévia foram renderizados novamente; os resultados da versão central estática não foram reutilizados como aprovação desta revisão.
 
 - Master: `../entregas/CLOSET-3-EDITADO.mp4`
 - Prévia: `../entregas/CLOSET-3-PREVIA.mp4`
@@ -10,7 +10,7 @@
 
 ## 1. QA automatizado/técnico
 
-### Projeto, assets e transcrição
+### Projeto, assets, posição e movimento
 
 Relatório: `reports/closet-3-project-qa.json`
 
@@ -20,9 +20,11 @@ Relatório: `reports/closet-3-project-qa.json`
 - 13 grupos e 45 palavras com timestamps válidos;
 - seis segmentos correspondentes à transcrição revisada;
 - SHA-256 da fonte confirmado;
-- captions em uma única posição central;
+- todos os grupos na mesma baseline inferior de **1320 px**;
+- bloco estimado dentro da safe zone e pelo menos 80 px de separação para o CTA;
 - escala de câmera fixa 1,02 e deslocamento zero;
-- ausência de `spring`, `interpolate`, onda, pulso, transições e movimento de grão no componente;
+- springs, onda curta e sublinhados presentes, sem transições artificiais ou movimento de grão;
+- quatro motions documentados: `001`, `122`, `125` e `130`;
 - áudio de preparação em −14,0 LUFS e −1,0 dBTP, sem SFX de transição.
 
 Essas verificações analisam código, timeline e assets; não são, por si só, uma revisão audiovisual.
@@ -53,36 +55,42 @@ Relatório: `reports/closet-3-video-qa.json`
 - Master decodificado integralmente com FFmpeg, sem erros.
 - Prévia decodificada integralmente com FFmpeg, sem erros.
 - Prévia: H.264 High, 540×960, 30 fps, 614 frames, AAC estéreo 48 kHz.
-- Master: 21.374.234 bytes; SHA-256 `4f0e452a8d1e84ad1d56df952ccaca993fcc1561c91dec727965f85c2b517445`.
-- Prévia: 2.725.519 bytes; SHA-256 `4148355b01b84b06908e128d64cdd43bc7f370ef41f2cb0b42077466a2a04aaa`.
+- Master: 22.320.823 bytes; SHA-256 `db16cfdcea45951815f65d6c9b6d9f50b36a50bd0f85ae8512bde90882dd7eae`.
+- Prévia: 2.886.170 bytes; SHA-256 `a6e8400b888bb00e625fffcb029e77ccb9c89a9442564c3045429f318fe5af23`.
 
 ## 2. Revisão visual efetivamente realizada
 
-Foram gerados e revisados **16 quadros finais** em `out/closet-3-review/`:
+Foram gerados e revisados **20 quadros de controle** em `out/closet-3-review/`:
 
-`30, 75, 105, 160, 210, 270, 330, 390, 410, 450, 510, 530, 560, 590, 610 e 613`.
+`30, 45, 75, 105, 192, 202, 246, 302, 313, 342, 390, 420, 465, 510, 540, 555, 560, 578, 590 e 613`.
+
+Também foram revisadas as duas folhas que reúnem todos esses quadros:
+
+- `out/closet-3-review-sheet-1.jpg`
+- `out/closet-3-review-sheet-2.jpg`
 
 A amostragem cobriu:
 
-- todos os **13 grupos de captions**;
-- as cinco cenas e as quatro mudanças de look;
-- serifas, conectores, acentos e sublinhados;
-- centralização, espaçamento e quebra de linhas;
-- CTA final e último frame da composição.
+- todos os **13 grupos de captions**, incluindo um momento com cada frase completa;
+- entradas de palavras nos frames 45, 202, 313 e 555;
+- entrada do CTA no frame 578 e estado assentado nos frames 590 e 613;
+- cinco cenas, quatro mudanças de look e último frame;
+- serifas, conectores, acentos, sublinhados e quebras de linha;
+- baseline inferior, espaçamento e separação do CTA.
 
-Na primeira rodada, algumas palavras da mesma linha estavam próximas demais. O espaçamento horizontal foi corrigido e o storyboard foi refeito antes do render. Na rodada final não foram observados textos cortados, sobreposição entre caption e CTA ou deslocamento da posição central.
+Os tempos de controle foram ajustados para não confundir uma palavra ainda em fade de entrada com uma legenda incompleta. Na rodada final, as frases completas estavam legíveis, sem cortes de texto ou sobreposição com o CTA. A posição mais baixa deixa mais do torso e das combinações visível que a versão central.
 
-Também foi revisado o contact sheet extraído do **MP4 codificado** em `out/closet-3-contact-qa.jpg`, confirmando que o design chegou ao master.
+Também foi revisado o contact sheet extraído do **MP4 codificado** em `out/closet-3-contact-qa.jpg`.
 
 ## Limites desta revisão
 
-- A revisão visual foi feita **por quadros e contact sheet**, não por playback audiovisual integral.
+- A revisão visual foi feita **por quadros, folhas de contato e contact sheet**, não por playback audiovisual integral.
 - Não houve escuta subjetiva completa do master; loudness, true peak, canais e decodificação são medições/testes técnicos.
-- A estabilidade foi verificada pela timeline/componente e pelos quadros amostrados. Isso não é apresentado como uma inspeção manual de cada um dos 614 frames.
+- A estabilidade do container foi verificada pela implementação e pelos quadros amostrados. Isso não é apresentado como inspeção manual de cada um dos 614 frames.
 
 ## Preservação e organização
 
 - CLOSET-2, ARMÁRIO-2 e a prévia do ARMÁRIO-2 mantiveram seus SHA-256 anteriores.
 - Masters e prévias estão em `../entregas/`.
-- Os dois exemplos originais estão em `../referencias/`, com hashes documentados.
+- Os dois exemplos originais permanecem em `../referencias/`.
 - Fonte bruta, assets e temporários do CLOSET-3 permanecem separados e ignorados pelo Git.

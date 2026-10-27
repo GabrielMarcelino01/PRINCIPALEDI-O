@@ -92,7 +92,7 @@
     {
       "name": "caption_safe_area",
       "status": "pass",
-      "message": "Bloco ancorado no centro geométrico, com margem estimada de 180px"
+      "message": "Baseline inferior em 1320px; bloco estimado de até 360px dentro da safe zone"
     },
     {
       "name": "caption_scale",
@@ -102,12 +102,12 @@
     {
       "name": "caption_positions",
       "status": "pass",
-      "message": "13 grupos em uma única posição central estável"
+      "message": "13 grupos na mesma baseline inferior estável"
     },
     {
       "name": "follow_cta",
       "status": "pass",
-      "message": "Botão + SEGUIR somente no final e dentro da safe zone"
+      "message": "Botão + SEGUIR no final, dentro da safe zone e pelo menos 80px abaixo da baseline das captions"
     },
     {
       "name": "camera_static",
@@ -115,14 +115,14 @@
       "message": "Cinco cenas com escala fixa 1,02 e deslocamento zero"
     },
     {
-      "name": "static_layout",
+      "name": "stabilized_motion_layout",
       "status": "pass",
-      "message": "Sem zoom, onda, pulso, transição ou movimento de grão; captions ancoradas no centro"
+      "message": "Movimento interno por springs/onda curta; container, câmera e grão permanecem estáveis"
     },
     {
-      "name": "static_design",
+      "name": "stabilized_motion_design",
       "status": "pass",
-      "message": "Nenhum motion adicionado; estabilidade documentada no projeto"
+      "message": "Quatro motions documentados, com baseline inferior e limites de movimento registrados"
     },
     {
       "name": "preview_loudness",

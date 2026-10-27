@@ -1,6 +1,8 @@
 {
   "project": "closet-3",
+  "revision": "lower-stabilized-kinetic-captions",
   "date": "2026-10-26",
+  "previous_version_commit": "53f40b69f809ec743e12eb11036edad153f3bbb1",
   "source": {
     "original_name": "Untitled_Scene_10-25_20_12_37_20261025171936.mp4",
     "commit": "729b718d0e61dcb9b9b5dcca12e6c54bfdcfdee0",
@@ -10,8 +12,8 @@
   },
   "master": {
     "path": "entregas/CLOSET-3-EDITADO.mp4",
-    "bytes": 21374234,
-    "sha256": "4f0e452a8d1e84ad1d56df952ccaca993fcc1561c91dec727965f85c2b517445",
+    "bytes": 22320823,
+    "sha256": "db16cfdcea45951815f65d6c9b6d9f50b36a50bd0f85ae8512bde90882dd7eae",
     "container_duration_seconds": 20.523,
     "video": {
       "codec": "h264",
@@ -35,8 +37,8 @@
   },
   "preview": {
     "path": "entregas/CLOSET-3-PREVIA.mp4",
-    "bytes": 2725519,
-    "sha256": "4148355b01b84b06908e128d64cdd43bc7f370ef41f2cb0b42077466a2a04aaa",
+    "bytes": 2886170,
+    "sha256": "a6e8400b888bb00e625fffcb029e77ccb9c89a9442564c3045429f318fe5af23",
     "container_duration_seconds": 20.523,
     "video": {
       "codec": "h264",
@@ -101,39 +103,58 @@
   "visual_review": {
     "storyboard_frames": [
       30,
+      45,
       75,
       105,
-      160,
-      210,
-      270,
-      330,
+      192,
+      202,
+      246,
+      302,
+      313,
+      342,
       390,
-      410,
-      450,
+      420,
+      465,
       510,
-      530,
+      540,
+      555,
       560,
+      578,
       590,
-      610,
       613
+    ],
+    "review_sheets": [
+      "out/closet-3-review-sheet-1.jpg",
+      "out/closet-3-review-sheet-2.jpg"
     ],
     "caption_groups_seen": 13,
     "caption_groups_total": 13,
+    "settled_groups_seen": 13,
     "scenes_seen": 5,
     "last_frame_seen": true,
+    "entry_samples": [
+      45,
+      202,
+      313,
+      555,
+      578
+    ],
     "encoded_contact_sheet_seen": true,
-    "adjustment": "Espaçamento horizontal entre palavras corrigido e storyboard repetido antes do render.",
+    "adjustment": "Baseline inferior fixa em 1320px; movimentos internos por springs, pulso único e onda curta; tempos de controle incluem frases completas e entradas.",
     "full_audiovisual_playback": false,
     "subjective_audio_listening": false,
-    "scope": "Revisão por quadros e contact sheet; não equivale a playback integral ou escuta subjetiva."
+    "scope": "Revisão por quadros, folhas de contato e contact sheet; não equivale a playback integral ou escuta subjetiva."
   },
   "design": {
-    "caption_anchor": "fixed geometric center",
-    "added_motion": false,
+    "caption_anchor": "fixed bottom baseline 1320px",
+    "caption_motion": "word springs, single active pulse, short serif wave and animated underlines",
+    "container_translation": false,
+    "layout_reflow": false,
     "camera_scale": 1.02,
     "camera_translation": 0,
     "animated_grain": false,
-    "transitions_added": false
+    "transitions_added": false,
+    "cta": "single spring entrance, then fixed at 1400px"
   },
   "organization": {
     "edited": "entregas/",

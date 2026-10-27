@@ -1,4 +1,4 @@
-# CLOSET-3 — captions centrais e edição estática
+# CLOSET-3 — captions inferiores, animadas e estabilizadas
 
 ## Entregas
 
@@ -35,7 +35,7 @@ A transcrição histórica foi recuperada de `d4d6e80:reels-studio/fashion-trans
 
 Os cortes são os do material original. Não foram adicionados flashes, dissolves, whip pans ou transições aleatórias.
 
-## Design e estabilidade
+## Posição e design
 
 O acabamento segue o ARMÁRIO-2:
 
@@ -44,16 +44,24 @@ O acabamento segue o ARMÁRIO-2:
 - cores ligadas às combinações de roupa, sublinhados discretos e sombra de leitura;
 - header `ARMÁRIO • COLOR EDIT`, indicador de cena e paleta;
 - vinheta e grão monocromático sutis;
-- CTA `+ SEGUIR` no final, dentro da safe zone.
+- CTA `+ SEGUIR` no final.
 
-Nesta versão, a instrução de estabilidade prevalece sobre qualquer preset cinético anterior:
+Para deixar mais roupa visível, todos os 13 grupos foram movidos para uma **linha de base inferior fixa em 1320 px**. O container usa `translateY(-100%)`: uma ou duas linhas crescem para cima sem mudar a base. O CTA começa em 1400 px, deixando 80 px de separação, e toda a composição permanece acima do limite inferior da safe zone em 1500 px.
 
-- captions ancoradas no centro geométrico (`top: 50%` + `translateY(-50%)`);
-- todos os 13 grupos usam a mesma posição;
-- nenhuma entrada elástica, onda de letras, pulso, zoom ou punch-in;
-- câmera com escala fixa 1,02 e deslocamento zero;
-- grão, header e CTA sem animação;
-- apenas a troca editorial de texto/cena e o movimento já existente no vídeo original permanecem.
+## Movimentação estabilizada
+
+A movimentação acontece dentro do espaço tipográfico, sem deslocar ou redimensionar o container:
+
+- **Pop-in por palavra:** entrada sincronizada ao timestamp falado, com spring, elevação de 16 px e escala inicial 0,92;
+- **ênfase ativa:** um único pulso de 0,45 s e no máximo 2,5%, excluindo conectores;
+- **serifa interativa:** uma onda única de 0,8 s e até 3,2 px por letra, assentando na baseline;
+- **sublinhados:** abertura por `scaleX` com spring;
+- **CTA:** uma única entrada elástica, permanecendo fixo depois;
+- **barra de cada grupo:** abertura curta sem alterar o layout.
+
+Câmera, grão e header continuam fixos. As palavras ocultas durante a entrada conservam seu espaço no layout, evitando reflow ou deslocamento do bloco. A câmera usa escala fixa 1,02 e deslocamento zero.
+
+Os motions documentados no projeto são `001` (Pop-in), `122` (Follow-through), `125` (Pulse) e `130` (Wave text), com limites registrados em `captionMotion`.
 
 ## Imagem e áudio
 
@@ -69,10 +77,10 @@ Nesta versão, a instrução de estabilidade prevalece sobre qualquer preset cin
 
 ## Arquivos independentes
 
-- `src/Closet3Reel.jsx` e `src/Closet3Root.jsx`: composição estática.
+- `src/Closet3Reel.jsx` e `src/Closet3Root.jsx`: composição e movimentos tipográficos.
 - `closet3-render.mjs`: bundle, storyboard, master e prévia.
 - `scripts/prepare_closet3.py`: normalização, grão, áudio e SRT.
-- `scripts/validate_closet3.py`: 27 verificações de timeline, assets, texto e estabilidade.
+- `scripts/validate_closet3.py`: 27 verificações de timeline, assets, texto, posição e movimento estabilizado.
 - `public/closet-3-*` e `work/closet-3/`: assets locais ignorados pelo Git.
 
 ## Reproduzir
