@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR" data-resolution="portrait" data-composition-variables='[{"id": "brand", "type": "string", "label": "Marca", "default": "Truque dos Mil Looks", "maxLength": 80}, {"id": "coral", "type": "color", "label": "Cor de destaque", "default": "#F26E64"}]'>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=1080,height=1920"/>
+  <title>Truque dos Mil Looks — Facebook Ads</title>
+  <script src="assets/vendor/gsap.min.js"></script>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{width:1080px;height:1920px;overflow:hidden;background:#250D18}
+    #root{position:absolute;inset:0;width:1080px;height:1920px;overflow:hidden}
+  </style>
+</head>
+<body>
+  <div id="root" data-composition-id="main" data-start="0" data-duration="87" data-fps="60" data-width="1080" data-height="1920">
+    <audio id="soundtrack" class="clip" data-start="0" data-duration="87" data-track-index="0" data-volume="1" src="assets/audio/soundtrack.wav"></audio>
+    <div id="hook" data-composition-id="hook" data-composition-src="compositions/hook.html"
+      data-start="0" data-duration="13.463048" data-track-index="2" data-track-kind="graphics"
+      data-width="1080" data-height="1920" style="z-index:2"></div>
+<div id="conflict" data-composition-id="conflict" data-composition-src="compositions/conflict.html"
+      data-start="13.463048" data-duration="11.710381" data-track-index="3" data-track-kind="graphics"
+      data-width="1080" data-height="1920" style="z-index:3"></div>
+<div id="reveal" data-composition-id="reveal" data-composition-src="compositions/reveal.html"
+      data-start="25.173429" data-duration="15.454381" data-track-index="4" data-track-kind="graphics"
+      data-width="1080" data-height="1920" style="z-index:4"></div>
+<div id="closet" data-composition-id="closet" data-composition-src="compositions/closet.html"
+      data-start="40.62781" data-duration="5.11838" data-track-index="5" data-track-kind="graphics"
+      data-width="1080" data-height="1920" style="z-index:5"></div>
+<div id="looks" data-composition-id="looks" data-composition-src="compositions/looks.html"
+      data-start="45.74619" data-duration="10.163715" data-track-index="6" data-track-kind="graphics"
+      data-width="1080" data-height="1920" style="z-index:6"></div>
+<div id="offers" data-composition-id="offers" data-composition-src="compositions/offers.html"
+      data-start="55.909905" data-duration="10.185047" data-track-index="7" data-track-kind="graphics"
+      data-width="1080" data-height="1920" style="z-index:7"></div>
+<div id="payoff" data-composition-id="payoff" data-composition-src="compositions/payoff.html"
+      data-start="66.094952" data-duration="16.105048" data-track-index="8" data-track-kind="graphics"
+      data-width="1080" data-height="1920" style="z-index:8"></div>
+<div id="endcard" data-composition-id="endcard" data-composition-src="compositions/endcard.html"
+      data-start="82.2" data-duration="4.8" data-track-index="9" data-track-kind="graphics"
+      data-width="1080" data-height="1920" style="z-index:9"></div>
+<div id="captions" data-composition-id="captions" data-composition-src="compositions/captions.html"
+  data-start="0" data-duration="87" data-track-index="30" data-track-kind="captions" data-width="1080" data-height="1920"
+  style="z-index:100" data-layout-allow-caption-zone></div>
+  </div>
+  <script>
+    window.__timelines['main']=gsap.timeline({paused:true});
+  </script>
+</body>
+</html>

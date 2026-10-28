@@ -1,0 +1,1663 @@
+{
+  "ok": true,
+  "checks": 331,
+  "caption_blocks": 51,
+  "html_files": 10,
+  "results": [
+    {
+      "name": "duration_87s",
+      "ok": true,
+      "detail": 87.0
+    },
+    {
+      "name": "fps_60",
+      "ok": true,
+      "detail": 60
+    },
+    {
+      "name": "frames_5220",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "nineteen_lines",
+      "ok": true,
+      "detail": 19
+    },
+    {
+      "name": "eight_scenes",
+      "ok": true,
+      "detail": 8
+    },
+    {
+      "name": "voice_end_85s",
+      "ok": true,
+      "detail": 85.0
+    },
+    {
+      "name": "final_hold_2s",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "brand",
+      "ok": true,
+      "detail": "Truque dos Mil Looks"
+    },
+    {
+      "name": "final_cta",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "scene_contiguous_hook",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "scene_duration_hook",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "scene_contiguous_conflict",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "scene_duration_conflict",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "scene_contiguous_reveal",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "scene_duration_reveal",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "scene_contiguous_closet",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "scene_duration_closet",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "scene_contiguous_looks",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "scene_duration_looks",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "scene_contiguous_offers",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "scene_duration_offers",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "scene_contiguous_payoff",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "scene_duration_payoff",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "scene_contiguous_endcard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "scene_duration_endcard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_00_inside_scene",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_00_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_00_0_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_00_0_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_00_0_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_00_1_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_00_1_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_00_1_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_00_end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_01_inside_scene",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_01_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_01_0_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_01_0_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_01_0_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_01_1_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_01_1_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_01_1_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_01_2_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_01_2_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_01_2_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_01_end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_02_inside_scene",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_02_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_02_0_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_02_0_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_02_0_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_02_1_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_02_1_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_02_1_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_02_end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_03_inside_scene",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_03_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_03_0_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_03_0_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_03_0_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_03_1_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_03_1_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_03_1_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_03_end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_04_inside_scene",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_04_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_04_0_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_04_0_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_04_0_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_04_1_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_04_1_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_04_1_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_04_2_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_04_2_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_04_2_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_04_end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_05_inside_scene",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_05_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_05_0_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_05_0_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_05_0_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_05_1_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_05_1_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_05_1_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_05_end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_06_inside_scene",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_06_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_06_0_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_06_0_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_06_0_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_06_1_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_06_1_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_06_1_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_06_2_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_06_2_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_06_2_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_06_end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_07_inside_scene",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_07_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_07_0_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_07_0_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_07_0_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_07_1_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_07_1_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_07_1_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_07_end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_08_inside_scene",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_08_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_08_0_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_08_0_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_08_0_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_08_1_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_08_1_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_08_1_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_08_end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_09_inside_scene",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_09_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_09_0_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_09_0_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_09_0_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_09_1_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_09_1_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_09_1_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_09_2_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_09_2_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_09_2_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_09_3_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_09_3_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_09_3_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_09_end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_10_inside_scene",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_10_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_10_0_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_10_0_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_10_0_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_10_1_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_10_1_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_10_1_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_10_2_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_10_2_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_10_2_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_10_end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_11_inside_scene",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_11_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_11_0_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_11_0_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_11_0_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_11_1_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_11_1_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_11_1_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_11_2_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_11_2_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_11_2_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_11_end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_12_inside_scene",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_12_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_12_0_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_12_0_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_12_0_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_12_1_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_12_1_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_12_1_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_12_2_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_12_2_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_12_2_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_12_end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_13_inside_scene",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_13_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_13_0_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_13_0_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_13_0_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_13_1_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_13_1_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_13_1_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_13_2_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_13_2_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_13_2_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_13_end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_14_inside_scene",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_14_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_14_0_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_14_0_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_14_0_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_14_1_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_14_1_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_14_1_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_14_2_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_14_2_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_14_2_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_14_end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_15_inside_scene",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_15_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_15_0_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_15_0_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_15_0_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_15_1_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_15_1_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_15_1_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_15_2_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_15_2_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_15_2_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_15_3_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_15_3_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_15_3_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_15_end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_16_inside_scene",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_16_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_16_0_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_16_0_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_16_0_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_16_1_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_16_1_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_16_1_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_16_2_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_16_2_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_16_2_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_16_end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_17_inside_scene",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_17_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_17_0_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_17_0_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_17_0_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_17_1_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_17_1_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_17_1_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_17_end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_18_inside_scene",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "line_18_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_18_0_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_18_0_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_18_0_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_18_1_start",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_18_1_positive",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_18_1_text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_18_end",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "caption_count_51",
+      "ok": true,
+      "detail": 51
+    },
+    {
+      "name": "deterministic_index.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "asset_index.html_assets/vendor/gsap.min.js",
+      "ok": true,
+      "detail": "assets/vendor/gsap.min.js"
+    },
+    {
+      "name": "asset_index.html_assets/audio/soundtrack.wav",
+      "ok": true,
+      "detail": "assets/audio/soundtrack.wav"
+    },
+    {
+      "name": "deterministic_captions.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "asset_captions.html_assets/fonts/Inter-Variable.woff2",
+      "ok": true,
+      "detail": "assets/fonts/Inter-Variable.woff2"
+    },
+    {
+      "name": "asset_captions.html_assets/fonts/PlayfairDisplay-Italic.woff2",
+      "ok": true,
+      "detail": "assets/fonts/PlayfairDisplay-Italic.woff2"
+    },
+    {
+      "name": "asset_captions.html_assets/fonts/EBGaramond-700.woff2",
+      "ok": true,
+      "detail": "assets/fonts/EBGaramond-700.woff2"
+    },
+    {
+      "name": "asset_captions.html_assets/images/grain.png",
+      "ok": true,
+      "detail": "assets/images/grain.png"
+    },
+    {
+      "name": "deterministic_closet.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "asset_closet.html_assets/fonts/Inter-Variable.woff2",
+      "ok": true,
+      "detail": "assets/fonts/Inter-Variable.woff2"
+    },
+    {
+      "name": "asset_closet.html_assets/fonts/PlayfairDisplay-Italic.woff2",
+      "ok": true,
+      "detail": "assets/fonts/PlayfairDisplay-Italic.woff2"
+    },
+    {
+      "name": "asset_closet.html_assets/fonts/EBGaramond-700.woff2",
+      "ok": true,
+      "detail": "assets/fonts/EBGaramond-700.woff2"
+    },
+    {
+      "name": "asset_closet.html_assets/images/grain.png",
+      "ok": true,
+      "detail": "assets/images/grain.png"
+    },
+    {
+      "name": "asset_closet.html_assets/images/app-closet.png",
+      "ok": true,
+      "detail": "assets/images/app-closet.png"
+    },
+    {
+      "name": "asset_closet.html_assets/images/app-closet-screen.jpg",
+      "ok": true,
+      "detail": "assets/images/app-closet-screen.jpg"
+    },
+    {
+      "name": "deterministic_conflict.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "asset_conflict.html_assets/fonts/Inter-Variable.woff2",
+      "ok": true,
+      "detail": "assets/fonts/Inter-Variable.woff2"
+    },
+    {
+      "name": "asset_conflict.html_assets/fonts/PlayfairDisplay-Italic.woff2",
+      "ok": true,
+      "detail": "assets/fonts/PlayfairDisplay-Italic.woff2"
+    },
+    {
+      "name": "asset_conflict.html_assets/fonts/EBGaramond-700.woff2",
+      "ok": true,
+      "detail": "assets/fonts/EBGaramond-700.woff2"
+    },
+    {
+      "name": "asset_conflict.html_assets/images/grain.png",
+      "ok": true,
+      "detail": "assets/images/grain.png"
+    },
+    {
+      "name": "asset_conflict.html_assets/images/modelo-clara.jpg",
+      "ok": true,
+      "detail": "assets/images/modelo-clara.jpg"
+    },
+    {
+      "name": "asset_conflict.html_assets/images/modelo-ana.jpg",
+      "ok": true,
+      "detail": "assets/images/modelo-ana.jpg"
+    },
+    {
+      "name": "asset_conflict.html_assets/images/modelo-ana.jpg",
+      "ok": true,
+      "detail": "assets/images/modelo-ana.jpg"
+    },
+    {
+      "name": "deterministic_endcard.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "asset_endcard.html_assets/fonts/Inter-Variable.woff2",
+      "ok": true,
+      "detail": "assets/fonts/Inter-Variable.woff2"
+    },
+    {
+      "name": "asset_endcard.html_assets/fonts/PlayfairDisplay-Italic.woff2",
+      "ok": true,
+      "detail": "assets/fonts/PlayfairDisplay-Italic.woff2"
+    },
+    {
+      "name": "asset_endcard.html_assets/fonts/EBGaramond-700.woff2",
+      "ok": true,
+      "detail": "assets/fonts/EBGaramond-700.woff2"
+    },
+    {
+      "name": "asset_endcard.html_assets/images/grain.png",
+      "ok": true,
+      "detail": "assets/images/grain.png"
+    },
+    {
+      "name": "deterministic_hook.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "asset_hook.html_assets/fonts/Inter-Variable.woff2",
+      "ok": true,
+      "detail": "assets/fonts/Inter-Variable.woff2"
+    },
+    {
+      "name": "asset_hook.html_assets/fonts/PlayfairDisplay-Italic.woff2",
+      "ok": true,
+      "detail": "assets/fonts/PlayfairDisplay-Italic.woff2"
+    },
+    {
+      "name": "asset_hook.html_assets/fonts/EBGaramond-700.woff2",
+      "ok": true,
+      "detail": "assets/fonts/EBGaramond-700.woff2"
+    },
+    {
+      "name": "asset_hook.html_assets/images/grain.png",
+      "ok": true,
+      "detail": "assets/images/grain.png"
+    },
+    {
+      "name": "asset_hook.html_assets/images/modelo-ana.jpg",
+      "ok": true,
+      "detail": "assets/images/modelo-ana.jpg"
+    },
+    {
+      "name": "asset_hook.html_assets/images/modelo-clara.jpg",
+      "ok": true,
+      "detail": "assets/images/modelo-clara.jpg"
+    },
+    {
+      "name": "asset_hook.html_assets/images/modelo-ana.jpg",
+      "ok": true,
+      "detail": "assets/images/modelo-ana.jpg"
+    },
+    {
+      "name": "deterministic_looks.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "asset_looks.html_assets/fonts/Inter-Variable.woff2",
+      "ok": true,
+      "detail": "assets/fonts/Inter-Variable.woff2"
+    },
+    {
+      "name": "asset_looks.html_assets/fonts/PlayfairDisplay-Italic.woff2",
+      "ok": true,
+      "detail": "assets/fonts/PlayfairDisplay-Italic.woff2"
+    },
+    {
+      "name": "asset_looks.html_assets/fonts/EBGaramond-700.woff2",
+      "ok": true,
+      "detail": "assets/fonts/EBGaramond-700.woff2"
+    },
+    {
+      "name": "asset_looks.html_assets/images/grain.png",
+      "ok": true,
+      "detail": "assets/images/grain.png"
+    },
+    {
+      "name": "asset_looks.html_assets/images/app-looks.png",
+      "ok": true,
+      "detail": "assets/images/app-looks.png"
+    },
+    {
+      "name": "asset_looks.html_assets/images/app-looks-screen.jpg",
+      "ok": true,
+      "detail": "assets/images/app-looks-screen.jpg"
+    },
+    {
+      "name": "asset_looks.html_assets/images/app-looks-results.jpg",
+      "ok": true,
+      "detail": "assets/images/app-looks-results.jpg"
+    },
+    {
+      "name": "deterministic_offers.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "asset_offers.html_assets/fonts/Inter-Variable.woff2",
+      "ok": true,
+      "detail": "assets/fonts/Inter-Variable.woff2"
+    },
+    {
+      "name": "asset_offers.html_assets/fonts/PlayfairDisplay-Italic.woff2",
+      "ok": true,
+      "detail": "assets/fonts/PlayfairDisplay-Italic.woff2"
+    },
+    {
+      "name": "asset_offers.html_assets/fonts/EBGaramond-700.woff2",
+      "ok": true,
+      "detail": "assets/fonts/EBGaramond-700.woff2"
+    },
+    {
+      "name": "asset_offers.html_assets/images/grain.png",
+      "ok": true,
+      "detail": "assets/images/grain.png"
+    },
+    {
+      "name": "asset_offers.html_assets/images/app-offers-detail.jpg",
+      "ok": true,
+      "detail": "assets/images/app-offers-detail.jpg"
+    },
+    {
+      "name": "deterministic_payoff.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "asset_payoff.html_assets/fonts/Inter-Variable.woff2",
+      "ok": true,
+      "detail": "assets/fonts/Inter-Variable.woff2"
+    },
+    {
+      "name": "asset_payoff.html_assets/fonts/PlayfairDisplay-Italic.woff2",
+      "ok": true,
+      "detail": "assets/fonts/PlayfairDisplay-Italic.woff2"
+    },
+    {
+      "name": "asset_payoff.html_assets/fonts/EBGaramond-700.woff2",
+      "ok": true,
+      "detail": "assets/fonts/EBGaramond-700.woff2"
+    },
+    {
+      "name": "asset_payoff.html_assets/images/grain.png",
+      "ok": true,
+      "detail": "assets/images/grain.png"
+    },
+    {
+      "name": "asset_payoff.html_assets/images/modelo-ana.jpg",
+      "ok": true,
+      "detail": "assets/images/modelo-ana.jpg"
+    },
+    {
+      "name": "asset_payoff.html_assets/images/modelo-clara.jpg",
+      "ok": true,
+      "detail": "assets/images/modelo-clara.jpg"
+    },
+    {
+      "name": "asset_payoff.html_assets/images/modelo-clara.jpg",
+      "ok": true,
+      "detail": "assets/images/modelo-clara.jpg"
+    },
+    {
+      "name": "deterministic_reveal.html",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "asset_reveal.html_assets/fonts/Inter-Variable.woff2",
+      "ok": true,
+      "detail": "assets/fonts/Inter-Variable.woff2"
+    },
+    {
+      "name": "asset_reveal.html_assets/fonts/PlayfairDisplay-Italic.woff2",
+      "ok": true,
+      "detail": "assets/fonts/PlayfairDisplay-Italic.woff2"
+    },
+    {
+      "name": "asset_reveal.html_assets/fonts/EBGaramond-700.woff2",
+      "ok": true,
+      "detail": "assets/fonts/EBGaramond-700.woff2"
+    },
+    {
+      "name": "asset_reveal.html_assets/images/grain.png",
+      "ok": true,
+      "detail": "assets/images/grain.png"
+    },
+    {
+      "name": "asset_reveal.html_assets/images/modelo-clara.jpg",
+      "ok": true,
+      "detail": "assets/images/modelo-clara.jpg"
+    },
+    {
+      "name": "asset_reveal.html_assets/images/app-inicio.png",
+      "ok": true,
+      "detail": "assets/images/app-inicio.png"
+    },
+    {
+      "name": "timeline_paused_hook",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_registered_hook",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_seek_zero_hook",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_paused_conflict",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_registered_conflict",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_seek_zero_conflict",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_paused_reveal",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_registered_reveal",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_seek_zero_reveal",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_paused_closet",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_registered_closet",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_seek_zero_closet",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_paused_looks",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_registered_looks",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_seek_zero_looks",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_paused_offers",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_registered_offers",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_seek_zero_offers",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_paused_payoff",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_registered_payoff",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_seek_zero_payoff",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_paused_endcard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_registered_endcard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "timeline_seek_zero_endcard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "voiceover.wav_sample_rate",
+      "ok": true,
+      "detail": 48000
+    },
+    {
+      "name": "voiceover.wav_channels",
+      "ok": true,
+      "detail": 1
+    },
+    {
+      "name": "voiceover.wav_duration",
+      "ok": true,
+      "detail": 87.0
+    },
+    {
+      "name": "soundtrack.wav_sample_rate",
+      "ok": true,
+      "detail": 48000
+    },
+    {
+      "name": "soundtrack.wav_channels",
+      "ok": true,
+      "detail": 2
+    },
+    {
+      "name": "soundtrack.wav_duration",
+      "ok": true,
+      "detail": 87.0
+    }
+  ]
+}
