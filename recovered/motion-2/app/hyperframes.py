@@ -18,7 +18,7 @@ from .process import Cancelled, popen, run, own_process_tree
 
 RUNTIME = Path(__file__).resolve().parents[1] / 'hyperframes'
 CLI = RUNTIME / 'node_modules/hyperframes/bin/hyperframes.mjs'
-VERSION = '0.8.33'
+VERSION = '0.8.210'
 
 
 def frame_info(path, cancel=None):
