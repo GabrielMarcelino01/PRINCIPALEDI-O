@@ -90,7 +90,11 @@ Configurar `FFMPEG_PATH`, `FFPROBE_PATH` e `REMOTION_BROWSER` quando os binário
 
 ## TAPNext++
 
-O teste de tracking real usa o wrapper oficial, checkpoint efêmero e os pontos revisados `index_fingertip=(228,535)` e `nose_reference=(369,527)` no trecho inicial. Workflow/run: `sofia-tapnext-track.yml` / `40601769423`. O resultado, a revisão da trajetória e a decisão de uso são registrados em `SOFIA-1-QA.md`; carregamento de checkpoint não é tratado como tracking concluído.
+O teste de tracking real usou o wrapper oficial, checkpoint efêmero e os pontos revisados `index_fingertip=(228,535)` e `nose_reference=(369,527)` no trecho inicial. Workflow/run: `sofia-tapnext-track.yml` / `40601769423`.
+
+Foram processados **124 frames / 5,17144 s** em CPU, com 194.202.881 parâmetros e 124 passos recorrentes. A inferência levou 2.394,235 s; isso é registrado como diagnóstico, não como benchmark otimizado. A trajetória completa está em `sofia-1-opening-tracking.json`.
+
+A revisão de 12 fotogramas aprovou somente o intervalo **0–1,0 s** do ponto do indicador. Nesse intervalo, um anel pistache e o rótulo `TOQUE DE COR` acompanham o gesto, com fade e sem cobrir o rosto. Após a abertura da mão, a trajetória não é usada na composição. Detalhes e limites: `reports/sofia-1-tracking-review.json` e `SOFIA-1-QA.md`.
 
 ## Limites do QA
 

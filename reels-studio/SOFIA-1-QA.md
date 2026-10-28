@@ -3,14 +3,14 @@
 ## Arquivos verificados
 
 - Master: `../entregas/SOFIA-1-EDITADO.mp4`
-  - 19.631.717 bytes
-  - SHA-256 `b5b3529494f1071727e97091566a386b34d5ca41f3630b36e4c7cb6f60b58056`
+  - 19.667.189 bytes
+  - SHA-256 `ca752af4bc25cd12b2291dfa7009c656cfca9844c786fadb36d85f21b0a18662`
 - Prévia: `../entregas/SOFIA-1-PREVIA.mp4`
-  - 2.879.485 bytes
-  - SHA-256 `cc7cef87804aabbbe6920eb0f28df2ad00863f03c477e604f23dc19d5433a969`
+  - 2.881.709 bytes
+  - SHA-256 `7e52f86939ac2675f7625b211e8fee606405f1b642940a5a360cd09b327895ea`
 - Fonte preservada: SHA-256 `99ddaeacbe8ceffe512c37a54b3633f98672696b385085243476d72a8751a858`
 
-Os checksums dos vídeos correspondem à versão sem o seletor TAPNext++. Se a trajetória for aprovada e incorporada, os arquivos serão renderizados e verificados novamente, e estes valores serão substituídos.
+Estes checksums correspondem à versão final com o seletor TAPNext++ limitado ao primeiro segundo. Master e prévia foram renderizados, codificados e verificados novamente depois da incorporação.
 
 ## 1. Projeto, texto e assets
 
@@ -78,7 +78,17 @@ Também foi revisada uma sobreposição de safe zones. As captions permanecem na
 
 ## 4. TAPNext++
 
-O teste real está no run `40601769423`, com checkpoint efêmero e dois pontos cuja posição inicial foi revisada no frame original. A etapa de inferência foi iniciada; a decisão final de uso e os resultados da trajetória serão acrescentados após a conclusão do job e a revisão visual dos pontos. Nenhum uso de TAPNext++ é declarado na versão atual do master.
+O teste real foi concluído no run `40601769423`, com checkpoint efêmero e dois pontos cuja posição inicial foi revisada no frame original.
+
+- **124 frames / 5,17144 s** processados; 124 passos recorrentes.
+- Inferência CPU de 2.394,235 s; carregamento de 3,377 s; 194.202.881 parâmetros.
+- Trajetória completa: `sofia-1-opening-tracking.json`.
+- Revisão de 12 fotogramas da fonte e métricas: `reports/sofia-1-tracking-review.json` e `out/sofia-1-tracking-review/tracking-sheet.jpg`.
+- O nariz apresentou passo mediano de 1,13 px; o dedo, de 8,81 px, compatível com o gesto, mas com saltos maiores em partes da trajetória.
+
+A composição usa **somente 0–1,0 s** do ponto do indicador, intervalo em que o acompanhamento foi visualmente útil para um seletor. Depois que a mão abre, a trajetória não é usada. O efeito é um anel pistache com `TOQUE DE COR`, abaixo do ponto e sem cobrir o rosto.
+
+Foram revisados ainda os frames **12, 30, 45, 54, 60 e 61 extraídos do master final codificado** (`out/sofia-1-encoded-tracking-final.jpg`). O seletor aparece em 0,20–0,90 s e está ausente em 1,00/1,02 s. Isso confirma visualmente sua presença limitada no MP4; não é uma declaração de perfeição do tracking em todos os frames.
 
 ## 5. Limites desta revisão
 

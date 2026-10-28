@@ -2,8 +2,8 @@
   "status": "PASS",
   "scope": "Verificações técnicas do arquivo codificado; não é playback nem escuta subjetiva integral.",
   "file": "/home/user/PRINCIPALEDI-O/.arena/sofia-work/entregas/SOFIA-1-PREVIA.mp4",
-  "bytes": 2879485,
-  "sha256": "cc7cef87804aabbbe6920eb0f28df2ad00863f03c477e604f23dc19d5433a969",
+  "bytes": 2881709,
+  "sha256": "7e52f86939ac2675f7625b211e8fee606405f1b642940a5a360cd09b327895ea",
   "summary": {
     "checks": 14,
     "passed": 14,
@@ -44,8 +44,8 @@
     ],
     "format": {
       "duration": "25.100000",
-      "size": "2879485",
-      "bit_rate": "917764"
+      "size": "2881709",
+      "bit_rate": "918472"
     }
   },
   "loudness": {

@@ -119,6 +119,16 @@ def main() -> None:
         "tracking": None,
         "safeZones": {"top": 80, "bottom": 250, "left": 48, "right": 110},
     }
+    tracking_path = ROOT / "sofia-1-opening-tracking.json"
+    if tracking_path.is_file():
+        tracking_report = json.loads(tracking_path.read_text(encoding="utf-8"))
+        if tracking_report.get("status") == "tracking_passed" and tracking_report.get("video", {}).get("sha256") == SOURCE_SHA256:
+            project["tracking"] = {
+                "runId": tracking_report.get("github_run_id"),
+                "model": "TAPNext++",
+                "useUntil": 1.0,
+                "samples": tracking_report["tracking"]["samples"],
+            }
     assert project["durationInFrames"] == 1506, project["durationInFrames"]
     assert all(group["start"] >= 0 and group["end"] <= project["duration"] for group in captions)
     (ROOT / "sofia-1-project.json").write_text(json.dumps(project, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

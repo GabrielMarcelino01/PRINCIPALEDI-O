@@ -158,7 +158,9 @@ function FollowCta({scene, time, fps}) {
 
 function TrackedAccent({project, scene, time}) {
   const tracking = project.tracking;
-  if (!tracking || scene.index !== 0 || time > 1.82) return null;
+  if (!tracking || scene.index !== 0) return null;
+  const useUntil = tracking.useUntil ?? 1.0;
+  if (time > useUntil) return null;
   const samples = tracking.samples;
   if (!samples || samples.length < 2) return null;
   const sourceTime = time + scene.sourceStart;
@@ -174,13 +176,13 @@ function TrackedAccent({project, scene, time}) {
   const camera = cameraAt(scene, time);
   const cx = 540 + (x - 540) * camera.scale + camera.x;
   const cy = 960 + (y - 960) * camera.scale + camera.y;
-  const appear = ease(time / 0.25) * ease((1.82 - time) / 0.30);
+  const appear = ease(time / 0.18) * ease((useUntil - time) / 0.18);
   const pulse = 1 + 0.10 * Math.sin(time * Math.PI * 4);
   return (
     <div style={{position: 'absolute', left: cx, top: cy, width: 0, height: 0, opacity: appear, pointerEvents: 'none'}}>
       <div style={{position: 'absolute', left: -42, top: -42, width: 84, height: 84, borderRadius: '50%', border: `3px solid ${scene.new}`, boxShadow: `0 0 24px ${scene.new}88`, transform: `scale(${pulse})`}} />
-      <div style={{position: 'absolute', left: 48, top: -14, width: 80, height: 3, background: scene.new}} />
-      <div style={{position: 'absolute', left: 126, top: -39, padding: '10px 16px', borderRadius: 12, background: scene.new, color: '#25301c', fontFamily: 'Inter, Arial, sans-serif', fontSize: 18, fontWeight: 900, letterSpacing: 1.4, whiteSpace: 'nowrap'}}>TOQUE DE COR</div>
+      <div style={{position: 'absolute', left: -1.5, top: 42, width: 3, height: 18, background: scene.new}} />
+      <div style={{position: 'absolute', left: 0, top: 58, transform: 'translateX(-50%)', padding: '10px 16px', borderRadius: 12, background: scene.new, color: '#25301c', fontFamily: 'Inter, Arial, sans-serif', fontSize: 18, fontWeight: 900, letterSpacing: 1.4, whiteSpace: 'nowrap'}}>TOQUE DE COR</div>
     </div>
   );
 }
