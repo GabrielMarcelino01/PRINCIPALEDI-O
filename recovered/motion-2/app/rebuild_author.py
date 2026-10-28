@@ -180,7 +180,7 @@ def write_project(folder,meta,value,*,keep_audio=True,cancel=None):
 <script src="vendor/gsap.min.js"></script><script src="project.js"></script><script src="renderer.js"></script></head><body>
 <div id="root" data-composition-id="rebuilt" data-width="{meta['width']}" data-height="{meta['height']}" data-fps="{meta['fps']}" data-duration="{meta['duration']}"><div style="position:absolute;inset:0;background:{value.background}"></div>{audio}</div>
 <script>document.addEventListener('DOMContentLoaded',()=>{{window.__timelines=window.__timelines||{{}};window.__timelines['rebuilt']=buildProject();}});</script></body></html>''',encoding='utf-8')
-    (project/'package.json').write_text(json.dumps({'private':True,'dependencies':{'hyperframes':'0.8.210'},
+    (project/'package.json').write_text(json.dumps({'private':True,'dependencies':{'hyperframes':'0.8.211'},
         'scripts':{'sync':'node sync-project.cjs','preview':'npm run sync && hyperframes preview','render':'npm run sync && hyperframes render --quality high --output output.mp4'}},indent=2),encoding='utf-8')
     (project/'sync-project.cjs').write_text("const fs=require('fs');const data=JSON.parse(fs.readFileSync('project.json','utf8'));fs.writeFileSync('project.js','window.project='+JSON.stringify(data).replace(/</g,'\\\\u003c')+';');",encoding='utf-8')
 
