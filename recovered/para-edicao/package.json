@@ -1,0 +1,23 @@
+{
+  "name": "para-edicao-caption-only",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Melhoria de imagem e superlegendas na altura do joelho, sem edições externas adicionais.",
+  "scripts": {
+    "media:prepare": "python3 scripts/prepare_para_edicao.py",
+    "render": "node para-edicao-render.mjs",
+    "storyboard": "node para-edicao-render.mjs --storyboard",
+    "validate": "python3 scripts/validate_para_edicao.py"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.522",
+    "@remotion/renderer": "4.0.522",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.522"
+  },
+  "overrides": {
+    "zod": "4.6.6"
+  }
+}

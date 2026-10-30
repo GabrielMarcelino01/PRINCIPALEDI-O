@@ -1,0 +1,292 @@
+{
+  "status": "PASS",
+  "scope": "QA técnico do MP4, decodificação integral, preservação de áudio e consistência fora das captions. Não declara escuta humana integral nem aprovação estética em playback.",
+  "file": "/home/user/PRINCIPALEDI-O/entregas/PARA-EDICAO-EDITADO.mp4",
+  "size_bytes": 27882800,
+  "sha256": "f02f9d7664b5e463c4ad01763836e7aaf8facb24968f1c90ab7fbf2e17c512ec",
+  "duration_seconds": 25.666667,
+  "video_duration_seconds": 25.666667,
+  "frames": 616,
+  "audio_delivery": "AAC original copiado sem recodificação",
+  "audio_stream_sha256": {
+    "source": "52bfe6efeb558d4bd449f17c73ddcaa03757fcb3380eefae5240e4e00f23f7e0",
+    "delivery": "52bfe6efeb558d4bd449f17c73ddcaa03757fcb3380eefae5240e4e00f23f7e0"
+  },
+  "summary": {
+    "checks": 17,
+    "passed": 17,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "delivery_exists",
+      "status": "pass",
+      "message": "/home/user/PRINCIPALEDI-O/entregas/PARA-EDICAO-EDITADO.mp4"
+    },
+    {
+      "name": "source_integrity",
+      "status": "pass",
+      "message": "Fonte original inalterada"
+    },
+    {
+      "name": "two_streams",
+      "status": "pass",
+      "message": "Somente vídeo e áudio original"
+    },
+    {
+      "name": "video_codec",
+      "status": "pass",
+      "message": "H.264/yuv420p"
+    },
+    {
+      "name": "dimensions",
+      "status": "pass",
+      "message": "1080x1920"
+    },
+    {
+      "name": "frame_rate",
+      "status": "pass",
+      "message": "24 fps"
+    },
+    {
+      "name": "color_metadata",
+      "status": "pass",
+      "message": "BT.709 completo"
+    },
+    {
+      "name": "frame_count",
+      "status": "pass",
+      "message": "616 quadros"
+    },
+    {
+      "name": "duration",
+      "status": "pass",
+      "message": "Contêiner 25.666667s; vídeo 25.666667s; fonte 25.672982s"
+    },
+    {
+      "name": "audio_codec",
+      "status": "pass",
+      "message": "AAC-LC estéreo 48 kHz"
+    },
+    {
+      "name": "audio_bitrate",
+      "status": "pass",
+      "message": "Original 128040 bit/s; master 128040 bit/s"
+    },
+    {
+      "name": "audio_bitstream_identical",
+      "status": "pass",
+      "message": "Fluxo AAC do master é idêntico ao original"
+    },
+    {
+      "name": "full_decode",
+      "status": "pass",
+      "message": "Decodificação integral sem erros"
+    },
+    {
+      "name": "loudness_preserved",
+      "status": "pass",
+      "message": "Delta 0.000 LU; final -23.5 LUFS"
+    },
+    {
+      "name": "audio_waveform",
+      "status": "pass",
+      "message": "Correlação 1.000000; RMS 1.0000"
+    },
+    {
+      "name": "audio_sync",
+      "status": "pass",
+      "message": "Deslocamento 0 amostras a 48 kHz"
+    },
+    {
+      "name": "outside_caption_consistency",
+      "status": "pass",
+      "message": "MAE máx. 2.802/255; PSNR mín. 36.04 dB fora das captions"
+    }
+  ],
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1080,
+        "height": 1920,
+        "coded_width": 1088,
+        "coded_height": 1920,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "9:16",
+        "pix_fmt": "yuv420p",
+        "level": 50,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "chroma_location": "center",
+        "field_order": "progressive",
+        "refs": 5,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/90000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 2310000,
+        "duration": "25.666667",
+        "bit_rate": "8557143",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "616",
+        "nb_read_frames": "616",
+        "extradata_size": 47,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 1227776,
+        "duration": "25.578667",
+        "bit_rate": "128040",
+        "nb_frames": "1199",
+        "nb_read_frames": "1199",
+        "extradata_size": 2,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ],
+    "format": {
+      "filename": "/home/user/PRINCIPALEDI-O/entregas/PARA-EDICAO-EDITADO.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "25.666667",
+      "size": "27882800",
+      "bit_rate": "8690742",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf58.24.100",
+        "comment": "Made with Remotion 4.0.522"
+      }
+    }
+  },
+  "loudness": {
+    "source": {
+      "integrated_lufs": -23.5,
+      "true_peak_dbtp": -6.3
+    },
+    "delivery": {
+      "integrated_lufs": -23.5,
+      "true_peak_dbtp": -6.3
+    },
+    "delta_lu": 0.0
+  },
+  "audio_comparison": {
+    "correlation": 1.0000003576278687,
+    "rms_ratio": 1.0000000796541926,
+    "best_lag_samples": 0,
+    "original_seconds": 25.578666666666667,
+    "delivery_seconds": 25.578666666666667
+  },
+  "visual_comparison": [
+    {
+      "time": 1.0,
+      "outside_caption_mae_8bit": 2.0821917057037354,
+      "outside_caption_psnr_db": 39.93862654544634
+    },
+    {
+      "time": 6.5,
+      "outside_caption_mae_8bit": 2.332456111907959,
+      "outside_caption_psnr_db": 38.90286231376642
+    },
+    {
+      "time": 11.5,
+      "outside_caption_mae_8bit": 2.8020079135894775,
+      "outside_caption_psnr_db": 36.043383228158575
+    },
+    {
+      "time": 16.5,
+      "outside_caption_mae_8bit": 2.1371610164642334,
+      "outside_caption_psnr_db": 39.765559270286005
+    },
+    {
+      "time": 21.5,
+      "outside_caption_mae_8bit": 2.187528133392334,
+      "outside_caption_psnr_db": 39.515240750294126
+    }
+  ]
+}

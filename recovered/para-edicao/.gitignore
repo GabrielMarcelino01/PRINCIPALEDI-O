@@ -1,0 +1,8 @@
+node_modules/
+.bundle/
+out/
+work/
+assets/original.mp4
+public/para-edicao-source.mp4
+public/para-edicao-audio.wav
+.DS_Store
