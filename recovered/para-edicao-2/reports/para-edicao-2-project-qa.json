@@ -1,0 +1,158 @@
+{
+  "status": "PASS",
+  "scope": "Timeline, assets, fidelidade textual e restrições da edição; não substitui QA do MP4 nem revisão audiovisual.",
+  "summary": {
+    "checks": 29,
+    "passed": 29,
+    "failed": 0,
+    "caption_groups": 11,
+    "words": 46
+  },
+  "checks": [
+    {
+      "name": "dimensions",
+      "status": "pass",
+      "message": "1080x1920"
+    },
+    {
+      "name": "frame_rate",
+      "status": "pass",
+      "message": "24 fps, cadência preservada sem interpolação"
+    },
+    {
+      "name": "duration",
+      "status": "pass",
+      "message": "548 frames / 22.833333 s"
+    },
+    {
+      "name": "cuts",
+      "status": "pass",
+      "message": "Pontos naturais de revisão: [4.1416, 5.32492, 6.24157, 7.51728, 8.85059, 9.76724, 10.8506, 13.6005, 17.7313, 18.0729]"
+    },
+    {
+      "name": "groups",
+      "status": "pass",
+      "message": "11 grupos de superlegendas, divididos para no máximo duas linhas reais"
+    },
+    {
+      "name": "normalized_video",
+      "status": "pass",
+      "message": "public/para-edicao-2-source.mp4"
+    },
+    {
+      "name": "audio_master",
+      "status": "pass",
+      "message": "public/para-edicao-2-audio.wav"
+    },
+    {
+      "name": "inter_font",
+      "status": "pass",
+      "message": "public/fonts/inter-latin-wght-normal.woff2"
+    },
+    {
+      "name": "playfair_font",
+      "status": "pass",
+      "message": "public/fonts/playfair-display-latin-wght-italic.woff2"
+    },
+    {
+      "name": "inter_license",
+      "status": "pass",
+      "message": "public/fonts/INTER-LICENSE.txt"
+    },
+    {
+      "name": "playfair_license",
+      "status": "pass",
+      "message": "public/fonts/PLAYFAIR-LICENSE.txt"
+    },
+    {
+      "name": "group_timing",
+      "status": "pass",
+      "message": "Grupos ordenados, sem sobreposição e dentro da duração"
+    },
+    {
+      "name": "word_timing",
+      "status": "pass",
+      "message": "46 palavras com timestamps válidos"
+    },
+    {
+      "name": "word_total",
+      "status": "pass",
+      "message": "46 palavras, sem omissões ou duplicações"
+    },
+    {
+      "name": "line_count",
+      "status": "pass",
+      "message": "No máximo duas linhas por grupo"
+    },
+    {
+      "name": "transcript_fidelity",
+      "status": "pass",
+      "message": "As cinco falas completas estão representadas sem omissões"
+    },
+    {
+      "name": "caption_safe_area",
+      "status": "pass",
+      "message": "Bloco estimado até 1460px; limite 1560px"
+    },
+    {
+      "name": "caption_scale",
+      "status": "pass",
+      "message": "96px sans / 120px serifada / 50px conectores"
+    },
+    {
+      "name": "caption_position",
+      "status": "pass",
+      "message": "Todos os grupos centralizados com topo em 1210px, na altura dos joelhos"
+    },
+    {
+      "name": "caption_width",
+      "status": "pass",
+      "message": "Largura dentro da área segura"
+    },
+    {
+      "name": "no_camera_motion",
+      "status": "pass",
+      "message": "Sem zoom, pan ou reenquadramento"
+    },
+    {
+      "name": "no_extra_visual_elements",
+      "status": "pass",
+      "message": "Sem CTA, cabeçalho, vinheta, grão ou elementos externos"
+    },
+    {
+      "name": "audio_preserved",
+      "status": "pass",
+      "message": "PCM 24 bits/48 kHz intermediário sem EQ, compressão, loudnorm, música, SFX ou alteração de velocidade; o master final copia o AAC original a 44,1 kHz."
+    },
+    {
+      "name": "caption_only_layout",
+      "status": "pass",
+      "message": "Somente vídeo, captions, áudio original e safe zones opcionais de revisão"
+    },
+    {
+      "name": "source_not_transformed",
+      "status": "pass",
+      "message": "OffthreadVideo sem transformações de câmera"
+    },
+    {
+      "name": "single_audio",
+      "status": "pass",
+      "message": "Uma única faixa de áudio preservada"
+    },
+    {
+      "name": "normalized_format",
+      "status": "pass",
+      "message": "H.264/yuv420p/BT.709 após melhoria de imagem"
+    },
+    {
+      "name": "audio_duration",
+      "status": "pass",
+      "message": "Áudio 22.823771s; fonte 22.823991s"
+    },
+    {
+      "name": "source_integrity",
+      "status": "pass",
+      "message": "SHA-256 do upload original confirmado"
+    }
+  ]
+}
