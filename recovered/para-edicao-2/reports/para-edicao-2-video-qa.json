@@ -1,0 +1,84 @@
+{
+  "file": "/home/user/PRINCIPALEDI-O/entregas/PARA-EDICAO-2-EDITADO.mp4",
+  "media": {
+    "duration_seconds": 22.833333,
+    "size_bytes": 25898624.0,
+    "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+    "video": {
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "fps": 24.0,
+      "pixel_format": "yuv420p"
+    },
+    "audio": {
+      "codec": "aac",
+      "sample_rate": "44100",
+      "channels": 2,
+      "channel_layout": "stereo"
+    }
+  },
+  "analysis": {
+    "loudness": {
+      "integrated_lufs": -22.8,
+      "true_peak_dbtp": -5.8
+    },
+    "visual_events": {
+      "black": [],
+      "freeze": []
+    }
+  },
+  "checks": [
+    {
+      "name": "video_stream",
+      "status": "pass",
+      "message": "h264 1080x1920 @ 24.000 fps"
+    },
+    {
+      "name": "duration",
+      "status": "pass",
+      "message": "22.833 s"
+    },
+    {
+      "name": "width",
+      "status": "pass",
+      "message": "Esperado 1080; encontrado 1080."
+    },
+    {
+      "name": "height",
+      "status": "pass",
+      "message": "Esperado 1920; encontrado 1920."
+    },
+    {
+      "name": "fps",
+      "status": "pass",
+      "message": "Mínimo 24.0; encontrado 24.0."
+    },
+    {
+      "name": "integrated_loudness",
+      "status": "pass",
+      "message": "-22.80 LUFS integrado (sem alvo configurado)."
+    },
+    {
+      "name": "true_peak",
+      "status": "pass",
+      "message": "Máximo -1.0 dBTP; encontrado -5.8."
+    },
+    {
+      "name": "black",
+      "status": "pass",
+      "message": "Nenhum evento detectado."
+    },
+    {
+      "name": "freeze",
+      "status": "pass",
+      "message": "Nenhum evento detectado."
+    }
+  ],
+  "contact_sheet": "out/para-edicao-2-video-qa-contact.jpg",
+  "status": "pass",
+  "summary": {
+    "failures": 0,
+    "warnings": 0
+  }
+}

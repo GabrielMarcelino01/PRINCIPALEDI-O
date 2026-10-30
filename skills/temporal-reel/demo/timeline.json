@@ -1,0 +1,39 @@
+{
+  "id": "temporal-60fps",
+  "title": "TEMPORAL — quadro a quadro",
+  "width": 1080,
+  "height": 1920,
+  "fps": 60,
+  "durationInFrames": 360,
+  "durationSeconds": 6,
+  "audio": null,
+  "scenes": [
+    {
+      "id": "tempo",
+      "start": 0,
+      "end": 2.2,
+      "transition": "continuous camera + typographic springs"
+    },
+    {
+      "id": "ritmo",
+      "start": 1.65,
+      "end": 4.25,
+      "transition": "time-driven horizontal mask"
+    },
+    {
+      "id": "precisao",
+      "start": 3.6,
+      "end": 6,
+      "transition": "time-driven circular mask + final lockup"
+    }
+  ],
+  "reviewFrames": [0, 24, 60, 99, 108, 150, 180, 216, 240, 285, 315, 359],
+  "verificationFrames": [0, 99, 180, 240, 315, 359],
+  "rules": {
+    "clock": "t = frame / fps",
+    "randomness": false,
+    "cssAnimations": false,
+    "timers": false,
+    "stateCarriedBetweenFrames": false
+  }
+}

@@ -1,0 +1,427 @@
+{
+  "source_commit": "48d4b7fd6366bbce6ef3a9193ecc03e5314886b8",
+  "source_sha256": "762dc340e5a744213a2f9d102dd35cb831e4d7bc42fad9dc3f11012afde10b1c",
+  "source_probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "hevc",
+        "codec_long_name": "H.265 / HEVC (High Efficiency Video Coding)",
+        "profile": "Main",
+        "codec_type": "video",
+        "codec_tag_string": "hvc1",
+        "codec_tag": "0x31637668",
+        "width": 720,
+        "height": 1280,
+        "coded_width": 720,
+        "coded_height": 1280,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 0,
+        "pix_fmt": "yuv420p",
+        "level": 93,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "chroma_location": "left",
+        "refs": 1,
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "1091000000/36366667",
+        "time_base": "1/1000000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 36366667,
+        "duration": "36.366667",
+        "bit_rate": "5046012",
+        "nb_frames": "1091",
+        "extradata_size": 109,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0
+        },
+        "tags": {
+          "creation_time": "2026-10-30T19:29:00.000000Z",
+          "language": "eng",
+          "handler_name": "VideoHandler",
+          "vendor_id": "FFMP"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "44100",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/44100",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 1604579,
+        "duration": "36.385011",
+        "bit_rate": "113908",
+        "nb_frames": "1569",
+        "extradata_size": 2,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0
+        },
+        "tags": {
+          "creation_time": "2026-10-30T19:29:00.000000Z",
+          "language": "eng",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ],
+    "format": {
+      "filename": "/home/user/PRINCIPALEDI-O/recovered/img-1680/assets/original.mov",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "36.385011",
+      "size": "23489511",
+      "bit_rate": "5164656",
+      "probe_score": 100,
+      "tags": {
+        "bitrate": "5529600",
+        "mdat_pos": "28",
+        "maxrate": "0",
+        "compatible_brands": "qt  ",
+        "moov_pos": "23457108",
+        "minor_version": "512",
+        "encoder": "Lavf57.71.100",
+        "Hw": "1",
+        "major_brand": "qt  ",
+        "creation_time": "2026-10-30T19:29:00Z",
+        "te_is_reencode": "1",
+        "DreaminaMetaInfo": "{\"data\":{}}"
+      }
+    }
+  },
+  "base_probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1080,
+        "height": 1920,
+        "coded_width": 1080,
+        "coded_height": 1920,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 42,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "60/1",
+        "time_base": "1/60000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 2111000,
+        "duration": "35.183333",
+        "bit_rate": "23170227",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "2111",
+        "extradata_size": 46,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ],
+    "format": {
+      "filename": "/home/user/PRINCIPALEDI-O/recovered/img-1680/public/img-1680-base.mp4",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "35.183333",
+      "size": "101928137",
+      "bit_rate": "23176459",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf58.24.100"
+      }
+    }
+  },
+  "before_probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1080,
+        "height": 1920,
+        "coded_width": 1080,
+        "coded_height": 1920,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 42,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "60/1",
+        "time_base": "1/60000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 218000,
+        "duration": "3.633333",
+        "bit_rate": "24054909",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "218",
+        "extradata_size": 46,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0
+        },
+        "tags": {
+          "language": "eng",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ],
+    "format": {
+      "filename": "/home/user/PRINCIPALEDI-O/recovered/img-1680/public/img-1680-before.mp4",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "3.633333",
+      "size": "10928457",
+      "bit_rate": "24062659",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf58.24.100"
+      }
+    }
+  },
+  "audio_probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "pcm_s24le",
+        "codec_long_name": "PCM signed 24-bit little-endian",
+        "codec_type": "audio",
+        "codec_tag_string": "[1][0][0][0]",
+        "codec_tag": "0x0001",
+        "sample_fmt": "s32",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 24,
+        "initial_padding": 0,
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "duration_ts": 1688843,
+        "duration": "35.184229",
+        "bit_rate": "2304000",
+        "bits_per_raw_sample": "24",
+        "disposition": {
+          "default": 0,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0
+        }
+      }
+    ],
+    "format": {
+      "filename": "/home/user/PRINCIPALEDI-O/recovered/img-1680/public/img-1680-audio.wav",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "format_name": "wav",
+      "format_long_name": "WAV / WAVE (Waveform Audio)",
+      "duration": "35.184229",
+      "size": "10133160",
+      "bit_rate": "2304023",
+      "probe_score": 99,
+      "tags": {
+        "encoder": "Lavf58.24.100"
+      }
+    }
+  },
+  "base_frames": 2111,
+  "video_filters": "fps=60,hqdn3d=0.45:0.45:0.9:0.9,scale=1080:1920:flags=lanczos:in_color_matrix=bt709:out_color_matrix=bt709,eq=contrast=1.025:brightness=0:saturation=1.025:gamma=1.005,unsharp=5:5:0.22:5:5:0,setpts=PTS-STARTPTS",
+  "edit_segments": [
+    {
+      "start": 0.0,
+      "end": 9.18
+    },
+    {
+      "start": 9.72,
+      "end": 14.22
+    },
+    {
+      "start": 14.48,
+      "end": 21.68
+    },
+    {
+      "start": 21.8,
+      "end": 24.22
+    },
+    {
+      "start": 24.5,
+      "end": 36.366667
+    }
+  ],
+  "removed_pauses": [
+    {
+      "start": 9.18,
+      "end": 9.72,
+      "duration": 0.54,
+      "reason": "Pausa longa entre duas frases; saída mascarada por punch-in."
+    },
+    {
+      "start": 14.22,
+      "end": 14.48,
+      "duration": 0.26,
+      "reason": "Pausa antes da troca de cena."
+    },
+    {
+      "start": 21.68,
+      "end": 21.8,
+      "duration": 0.12,
+      "reason": "Ajuste da pausa ao corte natural para o closet."
+    },
+    {
+      "start": 24.22,
+      "end": 24.5,
+      "duration": 0.28,
+      "reason": "Pausa antes da demonstração do produto."
+    }
+  ],
+  "removed_seconds": 1.2,
+  "quality": "Upscale Lanczos 1080x1920, BT.709, denoise leve, contraste/saturação discretos e sharpen moderado; 60 fps para motion gráfico, sem interpolação óptica.",
+  "audio_processing": "Áudio original com somente os mesmos quatro cortes de pausas; sem EQ, compressão, loudnorm, música, SFX ou alteração de velocidade.",
+  "double_scene": "Antes/agora de 3,70 a 7,266667 s; o lado esquerdo reutiliza somente o take original de 0 a 3,64 s."
+}

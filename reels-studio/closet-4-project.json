@@ -1,0 +1,629 @@
+{
+  "id": "closet-4",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "durationInFrames": 687,
+  "duration": 22.9,
+  "video": "closet-4-source.mp4",
+  "audio": "closet-4-soundtrack.wav",
+  "grain": "closet-4-grain.png",
+  "cuts": [
+    4.174023,
+    8.182031,
+    12.385352,
+    17.818359
+  ],
+  "scenes": [
+    {
+      "id": "look-1",
+      "start": 0,
+      "end": 4.174023,
+      "label": "LOOK 01",
+      "header": "CHAMPANHE + DOURADO",
+      "number": "",
+      "accent": "#e7cba7",
+      "colors": [
+        "#d8c3a5",
+        "#d4af37"
+      ],
+      "motion": {
+        "scaleFrom": 1.02,
+        "scaleTo": 1.02,
+        "xFrom": 0,
+        "xTo": 0,
+        "yFrom": 0,
+        "yTo": 0
+      }
+    },
+    {
+      "id": "look-2",
+      "start": 4.174023,
+      "end": 8.182031,
+      "label": "LOOK 02",
+      "header": "PRETO + VINHO",
+      "number": "",
+      "accent": "#d7869b",
+      "colors": [
+        "#171717",
+        "#7a1f3d"
+      ],
+      "motion": {
+        "scaleFrom": 1.02,
+        "scaleTo": 1.02,
+        "xFrom": 0,
+        "xTo": 0,
+        "yFrom": 0,
+        "yTo": 0
+      }
+    },
+    {
+      "id": "look-3",
+      "start": 8.182031,
+      "end": 12.385352,
+      "label": "LOOK 03",
+      "header": "MARROM + COBRE",
+      "number": "",
+      "accent": "#d59a73",
+      "colors": [
+        "#4b362b",
+        "#b87333"
+      ],
+      "motion": {
+        "scaleFrom": 1.02,
+        "scaleTo": 1.02,
+        "xFrom": 0,
+        "xTo": 0,
+        "yFrom": 0,
+        "yTo": 0
+      }
+    },
+    {
+      "id": "look-4",
+      "start": 12.385352,
+      "end": 17.818359,
+      "label": "LOOK 04",
+      "header": "AZUL MARINHO + AZUL CLARO",
+      "number": "",
+      "accent": "#b8d9f2",
+      "colors": [
+        "#172c49",
+        "#a9d4ea"
+      ],
+      "motion": {
+        "scaleFrom": 1.02,
+        "scaleTo": 1.02,
+        "xFrom": 0,
+        "xTo": 0,
+        "yFrom": 0,
+        "yTo": 0
+      }
+    },
+    {
+      "id": "look-5",
+      "start": 17.818359,
+      "end": 22.9,
+      "label": "LOOK 05",
+      "header": "GRAFITE + VERDE SÁLVIA",
+      "number": "",
+      "accent": "#acc8ae",
+      "colors": [
+        "#3f4548",
+        "#8fae94"
+      ],
+      "motion": {
+        "scaleFrom": 1.02,
+        "scaleTo": 1.02,
+        "xFrom": 0,
+        "xTo": 0,
+        "yFrom": 0,
+        "yTo": 0
+      }
+    }
+  ],
+  "groups": [
+    {
+      "id": "look-1-champanhe",
+      "start": 0.08,
+      "end": 1.5,
+      "lines": [
+        [
+          {
+            "text": "USEM",
+            "start": 0.08,
+            "end": 0.8,
+            "style": "normal"
+          },
+          {
+            "text": "COR",
+            "start": 0.8,
+            "end": 0.96,
+            "style": "normal"
+          },
+          {
+            "text": "CHAMPANHE",
+            "start": 0.96,
+            "end": 1.5,
+            "style": "serif",
+            "color": "#e7cba7"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-1-estilo",
+      "start": 1.5,
+      "end": 3.88,
+      "lines": [
+        [
+          {
+            "text": "E",
+            "start": 1.5,
+            "end": 1.86,
+            "style": "small"
+          },
+          {
+            "text": "FIQUEM",
+            "start": 1.86,
+            "end": 2.18,
+            "style": "normal"
+          },
+          {
+            "text": "ROMÂNTICOS",
+            "start": 2.18,
+            "end": 2.98,
+            "style": "serif",
+            "color": "#e7cba7"
+          }
+        ],
+        [
+          {
+            "text": "E",
+            "start": 2.98,
+            "end": 3.32,
+            "style": "small"
+          },
+          {
+            "text": "VIBRANTES",
+            "start": 3.32,
+            "end": 3.88,
+            "style": "normal",
+            "color": "#f5db78"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-2-cores",
+      "start": 4.48,
+      "end": 5.54,
+      "lines": [
+        [
+          {
+            "text": "PRETO",
+            "start": 4.48,
+            "end": 4.94,
+            "style": "normal",
+            "color": "#f4f4f4"
+          },
+          {
+            "text": "COM",
+            "start": 4.94,
+            "end": 5.1,
+            "style": "small"
+          },
+          {
+            "text": "VINHO",
+            "start": 5.1,
+            "end": 5.54,
+            "style": "serif",
+            "color": "#d7869b"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-2-classico",
+      "start": 5.54,
+      "end": 6.56,
+      "lines": [
+        [
+          {
+            "text": "É",
+            "start": 5.54,
+            "end": 5.94,
+            "style": "small"
+          },
+          {
+            "text": "UM",
+            "start": 5.94,
+            "end": 6.04,
+            "style": "normal"
+          },
+          {
+            "text": "CLÁSSICO",
+            "start": 6.04,
+            "end": 6.56,
+            "style": "serif",
+            "color": "#e7cba7"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-2-noite",
+      "start": 6.56,
+      "end": 7.88,
+      "lines": [
+        [
+          {
+            "text": "PARA",
+            "start": 6.56,
+            "end": 6.76,
+            "style": "small"
+          },
+          {
+            "text": "CASAMENTO",
+            "start": 6.76,
+            "end": 7.32,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "À",
+            "start": 7.32,
+            "end": 7.6,
+            "style": "small"
+          },
+          {
+            "text": "NOITE",
+            "start": 7.6,
+            "end": 7.88,
+            "style": "serif",
+            "color": "#b8c6e8"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-3-cores",
+      "start": 8.48,
+      "end": 9.92,
+      "lines": [
+        [
+          {
+            "text": "MARROM",
+            "start": 8.48,
+            "end": 8.9,
+            "style": "normal",
+            "color": "#c69a82"
+          },
+          {
+            "text": "COM",
+            "start": 8.9,
+            "end": 9.04,
+            "style": "small"
+          },
+          {
+            "text": "COBRE",
+            "start": 9.04,
+            "end": 9.5,
+            "style": "serif",
+            "color": "#d59a73"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-3-elegancia",
+      "start": 9.92,
+      "end": 12.1,
+      "lines": [
+        [
+          {
+            "text": "ELEGÂNCIA",
+            "start": 9.92,
+            "end": 10.4,
+            "style": "serif",
+            "color": "#d59a73"
+          },
+          {
+            "text": "PERFEITA",
+            "start": 10.4,
+            "end": 11.16,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "PARA",
+            "start": 11.16,
+            "end": 11.56,
+            "style": "small"
+          },
+          {
+            "text": "UM",
+            "start": 11.56,
+            "end": 11.64,
+            "style": "small"
+          },
+          {
+            "text": "CASAMENTO",
+            "start": 11.64,
+            "end": 12.1,
+            "style": "normal"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-4-lembre",
+      "start": 12.36,
+      "end": 13.32,
+      "lines": [
+        [
+          {
+            "text": "LEMBRE-SE",
+            "start": 12.36,
+            "end": 12.92,
+            "style": "serif",
+            "color": "#b8d9f2"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-4-cores",
+      "start": 13.32,
+      "end": 14.94,
+      "lines": [
+        [
+          {
+            "text": "AZUL",
+            "start": 13.32,
+            "end": 13.62,
+            "style": "normal",
+            "color": "#b8c6e8"
+          },
+          {
+            "text": "MARINHO",
+            "start": 13.62,
+            "end": 14.06,
+            "style": "normal",
+            "color": "#b8c6e8"
+          }
+        ],
+        [
+          {
+            "text": "COM",
+            "start": 14.06,
+            "end": 14.26,
+            "style": "small"
+          },
+          {
+            "text": "AZUL",
+            "start": 14.26,
+            "end": 14.52,
+            "style": "normal",
+            "color": "#b8d9f2"
+          },
+          {
+            "text": "CLARO",
+            "start": 14.52,
+            "end": 14.94,
+            "style": "serif",
+            "color": "#b8d9f2"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-4-estilo",
+      "start": 14.94,
+      "end": 17.08,
+      "lines": [
+        [
+          {
+            "text": "FICA",
+            "start": 14.94,
+            "end": 15.38,
+            "style": "normal"
+          },
+          {
+            "text": "ELEGANTE",
+            "start": 15.38,
+            "end": 16.34,
+            "style": "serif",
+            "color": "#b8d9f2"
+          }
+        ],
+        [
+          {
+            "text": "E",
+            "start": 16.34,
+            "end": 16.68,
+            "style": "small"
+          },
+          {
+            "text": "IRRESISTÍVEL",
+            "start": 16.68,
+            "end": 17.08,
+            "style": "normal"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-5-cores",
+      "start": 17.92,
+      "end": 19.84,
+      "lines": [
+        [
+          {
+            "text": "GRAFITE",
+            "start": 17.92,
+            "end": 18.48,
+            "style": "normal",
+            "color": "#d2d5d7"
+          },
+          {
+            "text": "COM",
+            "start": 18.48,
+            "end": 18.72,
+            "style": "small"
+          }
+        ],
+        [
+          {
+            "text": "VERDE",
+            "start": 18.72,
+            "end": 18.96,
+            "style": "normal",
+            "color": "#acc8ae"
+          },
+          {
+            "text": "SÁLVIA",
+            "start": 18.96,
+            "end": 19.54,
+            "style": "serif",
+            "color": "#acc8ae"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-5-combinacao",
+      "start": 19.84,
+      "end": 21.26,
+      "lines": [
+        [
+          {
+            "text": "UMA",
+            "start": 19.84,
+            "end": 19.9,
+            "style": "small"
+          },
+          {
+            "text": "COMBINAÇÃO",
+            "start": 19.9,
+            "end": 20.42,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "DISCRETA",
+            "start": 20.42,
+            "end": 21.26,
+            "style": "serif",
+            "color": "#acc8ae"
+          }
+        ]
+      ],
+      "position": "bottom"
+    },
+    {
+      "id": "look-5-estilo",
+      "start": 21.26,
+      "end": 22.24,
+      "lines": [
+        [
+          {
+            "text": "E",
+            "start": 21.26,
+            "end": 21.44,
+            "style": "small"
+          },
+          {
+            "text": "SOFISTICADA",
+            "start": 21.44,
+            "end": 22.24,
+            "style": "serif",
+            "color": "#acc8ae"
+          }
+        ]
+      ],
+      "position": "bottom"
+    }
+  ],
+  "showSafeZones": false,
+  "safeZones": {
+    "top": 200,
+    "bottom": 420,
+    "left": 60,
+    "right": 100
+  },
+  "captionStyle": {
+    "top": 1320,
+    "anchor": "bottom",
+    "maxWidth": 920,
+    "fontSize": 82,
+    "serifFontSize": 102,
+    "smallFontSize": 37
+  },
+  "captionPositions": {
+    "bottom": {
+      "top": 1320,
+      "anchor": "bottom",
+      "align": "center"
+    }
+  },
+  "followCta": {
+    "start": 20.9,
+    "top": 1400,
+    "text": "SEGUIR"
+  },
+  "design": {
+    "title": "ARMÁRIO • COLOR EDIT",
+    "approach": "Mesma edição editorial do CLOSET-3 revisado, com captions inferiores animadas e tipografia adicionalmente reduzida em 15%.",
+    "motionRefs": [
+      {
+        "id": "001",
+        "name": "Pop-in",
+        "use": "Entrada das palavras sincronizada à fala e entrada única do CTA."
+      },
+      {
+        "id": "122",
+        "name": "Follow-through",
+        "use": "Sublinhados que se abrem e assentam sem deslocar o bloco."
+      },
+      {
+        "id": "125",
+        "name": "Pulse",
+        "use": "Ênfase única de até 2,5% na palavra ativa, exceto conectores."
+      },
+      {
+        "id": "130",
+        "name": "Wave text",
+        "use": "Onda curta de até 3,2px somente na serifada ativa."
+      }
+    ],
+    "stability": {
+      "captions": "fixed-bottom-baseline-1320-with-internal-motion",
+      "camera": "fixed-scale-1.02",
+      "grain": "static",
+      "header": "static",
+      "cta": "fixed-bottom-with-entry-only"
+    }
+  },
+  "captionMotion": {
+    "container": "fixed bottom baseline; no reflow or container translation",
+    "wordEntrance": "spring at each spoken word; 16px rise and 0.92–1.00 scale",
+    "activeEmphasis": "single 0.45s pulse, maximum 2.5%, excluding connectors",
+    "serifWave": "single 0.8s wave, maximum 3.2px per letter",
+    "underline": "spring scaleX at each colored word",
+    "ctaEntrance": "single spring, then fixed"
+  }
+}

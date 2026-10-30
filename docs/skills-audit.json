@@ -1,0 +1,1063 @@
+{
+  "schema_version": 1,
+  "method": "Leitura individual de SKILL.md; hashes SHA-256; verificação de links Markdown locais. Não executa as skills.",
+  "summary": {
+    "skills": 50,
+    "operational_reels": 15,
+    "recovered_reference": 35,
+    "unique_names": 45,
+    "duplicate_content_groups": 1,
+    "links": {
+      "total": 90,
+      "local": 83,
+      "runtime_resolved": 6,
+      "missing": 0,
+      "unresolved": 0
+    },
+    "exposed_symlinks": 45,
+    "invalid_symlinks": 0
+  },
+  "duplicates": [
+    {
+      "sha256": "4525dddfb6acd7d5e3b642f783c0b806605a9465d555175d0cb4148a387ba6c8",
+      "canonical": "skills/hypit/SKILL.md",
+      "duplicates": [
+        "recovered/MOTION/skills/hypit/SKILL.md"
+      ]
+    }
+  ],
+  "exposures": {
+    ".claude/skills/captions": {
+      "target": "../../skills/captions",
+      "valid": true
+    },
+    ".claude/skills/figma": {
+      "target": "../../skills/figma",
+      "valid": true
+    },
+    ".claude/skills/hyperframes": {
+      "target": "../../skills/hyperframes",
+      "valid": true
+    },
+    ".claude/skills/hyperframes-cli": {
+      "target": "../../skills/hyperframes-cli",
+      "valid": true
+    },
+    ".claude/skills/hyperframes-registry": {
+      "target": "../../skills/hyperframes-registry",
+      "valid": true
+    },
+    ".claude/skills/hypit": {
+      "target": "../../skills/hypit",
+      "valid": true
+    },
+    ".claude/skills/media-use": {
+      "target": "../../skills/media-use",
+      "valid": true
+    },
+    ".claude/skills/motion-design": {
+      "target": "../../skills/motion-design",
+      "valid": true
+    },
+    ".claude/skills/motion-prompt": {
+      "target": "../../skills/motion-prompt",
+      "valid": true
+    },
+    ".claude/skills/reels-viral": {
+      "target": "../../skills/reels-viral",
+      "valid": true
+    },
+    ".claude/skills/remotion-to-hyperframes": {
+      "target": "../../skills/remotion-to-hyperframes",
+      "valid": true
+    },
+    ".claude/skills/slideshow": {
+      "target": "../../skills/slideshow",
+      "valid": true
+    },
+    ".claude/skills/temporal-reel": {
+      "target": "../../skills/temporal-reel",
+      "valid": true
+    },
+    ".claude/skills/video-editing": {
+      "target": "../../skills/video-editing",
+      "valid": true
+    },
+    ".claude/skills/video-quality": {
+      "target": "../../skills/video-quality",
+      "valid": true
+    },
+    ".codex/skills/captions": {
+      "target": "../../skills/captions",
+      "valid": true
+    },
+    ".codex/skills/figma": {
+      "target": "../../skills/figma",
+      "valid": true
+    },
+    ".codex/skills/hyperframes": {
+      "target": "../../skills/hyperframes",
+      "valid": true
+    },
+    ".codex/skills/hyperframes-cli": {
+      "target": "../../skills/hyperframes-cli",
+      "valid": true
+    },
+    ".codex/skills/hyperframes-registry": {
+      "target": "../../skills/hyperframes-registry",
+      "valid": true
+    },
+    ".codex/skills/hypit": {
+      "target": "../../skills/hypit",
+      "valid": true
+    },
+    ".codex/skills/media-use": {
+      "target": "../../skills/media-use",
+      "valid": true
+    },
+    ".codex/skills/motion-design": {
+      "target": "../../skills/motion-design",
+      "valid": true
+    },
+    ".codex/skills/motion-prompt": {
+      "target": "../../skills/motion-prompt",
+      "valid": true
+    },
+    ".codex/skills/reels-viral": {
+      "target": "../../skills/reels-viral",
+      "valid": true
+    },
+    ".codex/skills/remotion-to-hyperframes": {
+      "target": "../../skills/remotion-to-hyperframes",
+      "valid": true
+    },
+    ".codex/skills/slideshow": {
+      "target": "../../skills/slideshow",
+      "valid": true
+    },
+    ".codex/skills/temporal-reel": {
+      "target": "../../skills/temporal-reel",
+      "valid": true
+    },
+    ".codex/skills/video-editing": {
+      "target": "../../skills/video-editing",
+      "valid": true
+    },
+    ".codex/skills/video-quality": {
+      "target": "../../skills/video-quality",
+      "valid": true
+    },
+    ".agents/skills/captions": {
+      "target": "../../skills/captions",
+      "valid": true
+    },
+    ".agents/skills/figma": {
+      "target": "../../skills/figma",
+      "valid": true
+    },
+    ".agents/skills/hyperframes": {
+      "target": "../../skills/hyperframes",
+      "valid": true
+    },
+    ".agents/skills/hyperframes-cli": {
+      "target": "../../skills/hyperframes-cli",
+      "valid": true
+    },
+    ".agents/skills/hyperframes-registry": {
+      "target": "../../skills/hyperframes-registry",
+      "valid": true
+    },
+    ".agents/skills/hypit": {
+      "target": "../../skills/hypit",
+      "valid": true
+    },
+    ".agents/skills/media-use": {
+      "target": "../../skills/media-use",
+      "valid": true
+    },
+    ".agents/skills/motion-design": {
+      "target": "../../skills/motion-design",
+      "valid": true
+    },
+    ".agents/skills/motion-prompt": {
+      "target": "../../skills/motion-prompt",
+      "valid": true
+    },
+    ".agents/skills/reels-viral": {
+      "target": "../../skills/reels-viral",
+      "valid": true
+    },
+    ".agents/skills/remotion-to-hyperframes": {
+      "target": "../../skills/remotion-to-hyperframes",
+      "valid": true
+    },
+    ".agents/skills/slideshow": {
+      "target": "../../skills/slideshow",
+      "valid": true
+    },
+    ".agents/skills/temporal-reel": {
+      "target": "../../skills/temporal-reel",
+      "valid": true
+    },
+    ".agents/skills/video-editing": {
+      "target": "../../skills/video-editing",
+      "valid": true
+    },
+    ".agents/skills/video-quality": {
+      "target": "../../skills/video-quality",
+      "valid": true
+    }
+  },
+  "skills": [
+    {
+      "path": "recovered/Descompacto/skills/reverse-engineer-anything/SKILL.md",
+      "name": "reverse-engineer-anything",
+      "title": "REA",
+      "scope": "recovered_reference",
+      "sha256": "d8171ffcd687ae50dafc3eb77ce088b8ecd4ae49f55def569a7b4fa03f0c8512",
+      "bytes": 11094,
+      "lines": 191,
+      "links": {
+        "total": 8,
+        "local": 5,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/MOTION/skills/hypit/SKILL.md",
+      "name": "hypit",
+      "title": "Hypit",
+      "scope": "recovered_reference",
+      "sha256": "4525dddfb6acd7d5e3b642f783c0b806605a9465d555175d0cb4148a387ba6c8",
+      "bytes": 29364,
+      "lines": 328,
+      "links": {
+        "total": 23,
+        "local": 23,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/external_plugins/discord/skills/access/SKILL.md",
+      "name": "access",
+      "title": "/discord:access — Discord Channel Access Management",
+      "scope": "recovered_reference",
+      "sha256": "4fc3da872e033c37576a904b15a1bcac6b1ce6c7bc43f1f96abd7cad4855ac7a",
+      "bytes": 4357,
+      "lines": 137,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/external_plugins/discord/skills/configure/SKILL.md",
+      "name": "configure",
+      "title": "/discord:configure — Discord Channel Setup",
+      "scope": "recovered_reference",
+      "sha256": "9364d7895d6f38b917a711128e7b391884fb8b8d69a62c7d72a81e95b6e2b948",
+      "bytes": 4324,
+      "lines": 99,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/external_plugins/imessage/skills/access/SKILL.md",
+      "name": "access",
+      "title": "/imessage:access — iMessage Channel Access Management",
+      "scope": "recovered_reference",
+      "sha256": "ac994a86aab3a2724651a13a62ee9deae985196c8687a33bb79c4b7898aa5be7",
+      "bytes": 4754,
+      "lines": 140,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/external_plugins/imessage/skills/configure/SKILL.md",
+      "name": "configure",
+      "title": "/imessage:configure — iMessage Channel Setup",
+      "scope": "recovered_reference",
+      "sha256": "3afdc7e9faa36aa0ba9813dce68509c45014a75b316d366ba44c46ebd8b098aa",
+      "bytes": 3546,
+      "lines": 82,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/external_plugins/telegram/skills/access/SKILL.md",
+      "name": "access",
+      "title": "/telegram:access — Telegram Channel Access Management",
+      "scope": "recovered_reference",
+      "sha256": "6c87f59841c55a4a4f1b732c7427959581e47234f1b8c6fd633e4a5256ce6a3c",
+      "bytes": 4463,
+      "lines": 146,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/external_plugins/telegram/skills/configure/SKILL.md",
+      "name": "configure",
+      "title": "/telegram:configure — Telegram Channel Setup",
+      "scope": "recovered_reference",
+      "sha256": "16b06bf2ac5ede250d0c620ce4e6cf3878c9704246b8f52390fde5f280a17f73",
+      "bytes": 4308,
+      "lines": 108,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/claude-code-setup/skills/claude-automation-recommender/SKILL.md",
+      "name": "claude-automation-recommender",
+      "title": "Claude Automation Recommender",
+      "scope": "recovered_reference",
+      "sha256": "441c57e26f0931b64dd085deaad9213c4e3efea27d916dd7443cd33c7e338227",
+      "bytes": 10995,
+      "lines": 289,
+      "links": {
+        "total": 5,
+        "local": 5,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/claude-md-management/skills/claude-md-improver/SKILL.md",
+      "name": "claude-md-improver",
+      "title": "CLAUDE.md Improver",
+      "scope": "recovered_reference",
+      "sha256": "b06c7420be08ca1c7f6d75f7f4709fdb787624a2d363e2f8052216d8c780f85b",
+      "bytes": 6028,
+      "lines": 179,
+      "links": {
+        "total": 2,
+        "local": 2,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/claude-security/skills/claude-security/SKILL.md",
+      "name": "claude-security",
+      "title": "Claude Security",
+      "scope": "recovered_reference",
+      "sha256": "58898a55aa8d086460bc4cc9c87e75b6198bf3b7cd55fe1fa231c0d66016480f",
+      "bytes": 5569,
+      "lines": 69,
+      "links": {
+        "total": 7,
+        "local": 6,
+        "runtime_resolved": 6,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/cwc-makers/skills/cardputer-buddy/SKILL.md",
+      "name": "cardputer-buddy",
+      "title": "Cardputer Buddy app bundle",
+      "scope": "recovered_reference",
+      "sha256": "dae31d1459c8ee7b4a03d04bf55485f4ece04bdd4f5a2650ad39eb3d07d9be10",
+      "bytes": 1887,
+      "lines": 46,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/cwc-makers/skills/m5-onboard/SKILL.md",
+      "name": "m5-onboard",
+      "title": "M5Stack Onboarding",
+      "scope": "recovered_reference",
+      "sha256": "c6ba88fd06f59a3e902fead2bb863b6834f189672cfcc75248941c23ae39bd2d",
+      "bytes": 23913,
+      "lines": 185,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/example-plugin/skills/example-command/SKILL.md",
+      "name": "example-command",
+      "title": "Example Command (Skill Format)",
+      "scope": "recovered_reference",
+      "sha256": "d561981660827f3818b0daec456ae5b31894f68c22407d8c495a77b3105ba96d",
+      "bytes": 1226,
+      "lines": 39,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/example-plugin/skills/example-skill/SKILL.md",
+      "name": "example-skill",
+      "title": "Example Skill",
+      "scope": "recovered_reference",
+      "sha256": "87d90442621ace039aa3379805f99c3f95bf500e9f7b96f9e7876ac2dcf804f5",
+      "bytes": 2725,
+      "lines": 84,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/frontend-design/skills/frontend-design/SKILL.md",
+      "name": "frontend-design",
+      "title": "Frontend Design",
+      "scope": "recovered_reference",
+      "sha256": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3",
+      "bytes": 9390,
+      "lines": 71,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/hookify/skills/writing-rules/SKILL.md",
+      "name": "writing-hookify-rules",
+      "title": "Writing Hookify Rules",
+      "scope": "recovered_reference",
+      "sha256": "2994b5d3152243b1a1cbf8358e9d7c18f290f31a23920647f31053c3efdf990d",
+      "bytes": 8423,
+      "lines": 374,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/math-olympiad/skills/math-olympiad/SKILL.md",
+      "name": "math-olympiad",
+      "title": "Math Olympiad Solver",
+      "scope": "recovered_reference",
+      "sha256": "f697e195d343520f3db551bd4fb44c5120504ee2c47a9cc2016cd57767f23403",
+      "bytes": 19961,
+      "lines": 411,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/math-proof/skills/siege/SKILL.md",
+      "name": "siege",
+      "title": "math-proof: siege",
+      "scope": "recovered_reference",
+      "sha256": "f40134d3b418b256656777ad89d1cee93ad9b8a8a1aa84754262752e91d6b542",
+      "bytes": 75513,
+      "lines": 732,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/math-proof/skills/solo/SKILL.md",
+      "name": "solo",
+      "title": "math-proof: solo",
+      "scope": "recovered_reference",
+      "sha256": "2b6ecb93b01471142f928dd0fa4abd7e35782ed8f1058d498521039564387305",
+      "bytes": 6202,
+      "lines": 69,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/mcp-server-dev/skills/build-mcp-app/SKILL.md",
+      "name": "build-mcp-app",
+      "title": "Build an MCP App (Interactive UI Widgets)",
+      "scope": "recovered_reference",
+      "sha256": "d2fd94f0096506469ec855c581e48293d35480e58e6405b2bfcdba0486a0c218",
+      "bytes": 19391,
+      "lines": 392,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/mcp-server-dev/skills/build-mcp-server/SKILL.md",
+      "name": "build-mcp-server",
+      "title": "Build an MCP Server",
+      "scope": "recovered_reference",
+      "sha256": "088cd04be7f03ebbdfd24973cbcbf93c7a2e09117c4bba7b2b06bcc3e0a556f6",
+      "bytes": 12084,
+      "lines": 221,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/mcp-server-dev/skills/build-mcpb/SKILL.md",
+      "name": "build-mcpb",
+      "title": "Build an MCPB (Bundled Local MCP Server)",
+      "scope": "recovered_reference",
+      "sha256": "6bb90afd0415754e13f353ee5982d13857c14826edbcbdf5f1481fa5563cd56b",
+      "bytes": 7867,
+      "lines": 199,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/playground/skills/playground/SKILL.md",
+      "name": "playground",
+      "title": "Playground Builder",
+      "scope": "recovered_reference",
+      "sha256": "521a3d62211e5f47b65ed17b660e001b15cf8d88d058cbf31bc00e889bcb63cc",
+      "bytes": 3824,
+      "lines": 76,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/plugin-dev/skills/agent-development/SKILL.md",
+      "name": "agent-development",
+      "title": "Agent Development for Claude Code Plugins",
+      "scope": "recovered_reference",
+      "sha256": "6a2826571320828cc6f8f21ccd8e6eefd2bced62000c8c5e43a712c12e2d83a1",
+      "bytes": 11168,
+      "lines": 401,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/plugin-dev/skills/command-development/SKILL.md",
+      "name": "command-development",
+      "title": "Command Development for Claude Code",
+      "scope": "recovered_reference",
+      "sha256": "c55ad02cfe4cbb2a947eea3b1ed5fa1871e722d627c3c6792c3ed87c10c4d7a8",
+      "bytes": 19233,
+      "lines": 884,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/plugin-dev/skills/hook-development/SKILL.md",
+      "name": "hook-development",
+      "title": "Hook Development for Claude Code Plugins",
+      "scope": "recovered_reference",
+      "sha256": "f47e2d42f6360294216a859ae0c30b93caafdd2b2e5ffc007489ba4ca447fa5c",
+      "bytes": 16246,
+      "lines": 712,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/plugin-dev/skills/mcp-integration/SKILL.md",
+      "name": "mcp-integration",
+      "title": "MCP Integration for Claude Code Plugins",
+      "scope": "recovered_reference",
+      "sha256": "b9319d8e44c8f058c1c4f003168295ab2582567fd6329c8b933409116e938bc6",
+      "bytes": 12530,
+      "lines": 554,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/plugin-dev/skills/plugin-settings/SKILL.md",
+      "name": "plugin-settings",
+      "title": "Plugin Settings Pattern for Claude Code Plugins",
+      "scope": "recovered_reference",
+      "sha256": "028b955244b937ebc1a5c268a12776b8ceae4cbfb60928fbca927227f4c8851d",
+      "bytes": 12097,
+      "lines": 544,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/plugin-dev/skills/plugin-structure/SKILL.md",
+      "name": "plugin-structure",
+      "title": "Plugin Structure for Claude Code",
+      "scope": "recovered_reference",
+      "sha256": "a2dbc1e5502aacb360d0ca74732cdd7be4f6a12a49edf4f2ade4134fbc026247",
+      "bytes": 13796,
+      "lines": 476,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/plugin-dev/skills/skill-development/SKILL.md",
+      "name": "skill-development",
+      "title": "Skill Development for Claude Code Plugins",
+      "scope": "recovered_reference",
+      "sha256": "d51b4e20043b13e462aa86c47ea82d43e216eb292871538127f4b12a54e4944f",
+      "bytes": 22825,
+      "lines": 637,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/project-artifact/skills/project-artifact/SKILL.md",
+      "name": "project-artifact",
+      "title": "project-artifact — an opinionated project status page",
+      "scope": "recovered_reference",
+      "sha256": "34e13249dba8a066f33c5f723dbb7b9cb6174b80cc490dd866fbfd1736f0577f",
+      "bytes": 20425,
+      "lines": 261,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/receipts/skills/receipts/SKILL.md",
+      "name": "receipts",
+      "title": "/receipts — personal Claude Code impact report",
+      "scope": "recovered_reference",
+      "sha256": "5b2f407ff40639727310236f4b34986cacd4bf616c07d2e4198846726842e346",
+      "bytes": 17254,
+      "lines": 300,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/session-report/skills/session-report/SKILL.md",
+      "name": "session-report",
+      "title": "Session Report",
+      "scope": "recovered_reference",
+      "sha256": "ef0fbc4259a41b7fd61b517fb1c9a95f02b83ea3c79ba0b3afbeee4942570397",
+      "bytes": 3149,
+      "lines": 42,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "recovered/Official/plugins/skill-creator/skills/skill-creator/SKILL.md",
+      "name": "skill-creator",
+      "title": "Skill Creator",
+      "scope": "recovered_reference",
+      "sha256": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf",
+      "bytes": 33168,
+      "lines": 485,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/captions/SKILL.md",
+      "name": "captions",
+      "title": "Legendas",
+      "scope": "operational_reels",
+      "sha256": "668788c61fd7cd6ad4700c58ef35c8edf8f00db61d166e5b1a548486fa717934",
+      "bytes": 1921,
+      "lines": 32,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/figma/SKILL.md",
+      "name": "figma",
+      "title": "Figma → HyperFrames",
+      "scope": "operational_reels",
+      "sha256": "d9537758a88bf3cbfc5699167742e437a6791c57c0180556c930ec6c3aae0ab6",
+      "bytes": 6167,
+      "lines": 55,
+      "links": {
+        "total": 1,
+        "local": 1,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/hyperframes-cli/SKILL.md",
+      "name": "hyperframes-cli",
+      "title": "HyperFrames CLI",
+      "scope": "operational_reels",
+      "sha256": "44a48ccfa4cbd4f4234f8306c96268a4be56a0f2376abedbf31d2167b3c21286",
+      "bytes": 7131,
+      "lines": 97,
+      "links": {
+        "total": 1,
+        "local": 1,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/hyperframes-registry/SKILL.md",
+      "name": "hyperframes-registry",
+      "title": "HyperFrames registry",
+      "scope": "operational_reels",
+      "sha256": "1c7b27632c9ea9febaafc2d9af073b377029f46be4bee70d75b5e713eb698423",
+      "bytes": 4246,
+      "lines": 56,
+      "links": {
+        "total": 1,
+        "local": 1,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/hyperframes/SKILL.md",
+      "name": "hyperframes",
+      "title": "HyperFrames",
+      "scope": "operational_reels",
+      "sha256": "180ce4eea5f33f1617105c92e2690a5a2320abf624c263186ec0cb1a78a919ef",
+      "bytes": 7167,
+      "lines": 74,
+      "links": {
+        "total": 1,
+        "local": 1,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/hypit/SKILL.md",
+      "name": "hypit",
+      "title": "Hypit",
+      "scope": "operational_reels",
+      "sha256": "4525dddfb6acd7d5e3b642f783c0b806605a9465d555175d0cb4148a387ba6c8",
+      "bytes": 29364,
+      "lines": 328,
+      "links": {
+        "total": 23,
+        "local": 23,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/media-use/SKILL.md",
+      "name": "media-use",
+      "title": "Media in HyperFrames",
+      "scope": "operational_reels",
+      "sha256": "ef3976a02ff516d8e5ed0b7fff19d4bbf9358264233bace33fdacaa3aa7f37de",
+      "bytes": 5120,
+      "lines": 60,
+      "links": {
+        "total": 2,
+        "local": 1,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/motion-design/SKILL.md",
+      "name": "motion-design",
+      "title": "Motion Design",
+      "scope": "operational_reels",
+      "sha256": "f589e7e88f94efea200eede393f01caf5557eed54371b81ac986a3a3070f16c6",
+      "bytes": 1891,
+      "lines": 41,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/motion-prompt/SKILL.md",
+      "name": "motion-prompt",
+      "title": "Motion Prompt",
+      "scope": "operational_reels",
+      "sha256": "c3c65bba3fe658625b8444456bdfe5d2f4df649bf2a68627c610f4b60517b5dc",
+      "bytes": 14298,
+      "lines": 87,
+      "links": {
+        "total": 4,
+        "local": 2,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/reels-viral/SKILL.md",
+      "name": "reels-viral",
+      "title": "Reels Viral",
+      "scope": "operational_reels",
+      "sha256": "f04188ad00fa0e5a38610c642c421398748f15dc7d702e024c97534dc0ef0d2f",
+      "bytes": 2022,
+      "lines": 48,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/remotion-to-hyperframes/SKILL.md",
+      "name": "remotion-to-hyperframes",
+      "title": "Import into HyperFrames",
+      "scope": "operational_reels",
+      "sha256": "f6fb227e1a5d4fc47ed5375a24efc7bbc55b47a1ac2593825e63e34f6155ca63",
+      "bytes": 5046,
+      "lines": 49,
+      "links": {
+        "total": 1,
+        "local": 1,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/slideshow/SKILL.md",
+      "name": "slideshow",
+      "title": "HyperFrames slideshow",
+      "scope": "operational_reels",
+      "sha256": "4525f1a0d468f91957b638f14599c37f4af5e00c9b3c4df519a1cbe16101c908",
+      "bytes": 4924,
+      "lines": 62,
+      "links": {
+        "total": 1,
+        "local": 1,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/temporal-reel/SKILL.md",
+      "name": "temporal-reel",
+      "title": "Temporal Reel",
+      "scope": "operational_reels",
+      "sha256": "4f7080f08176c35b7921febb5401564cde60cf0e547b4727b77a150f79f9dcba",
+      "bytes": 5678,
+      "lines": 80,
+      "links": {
+        "total": 10,
+        "local": 10,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/video-editing/SKILL.md",
+      "name": "video-editing",
+      "title": "Edição de vídeo",
+      "scope": "operational_reels",
+      "sha256": "84ea6f1745922e2b2c2ef865f7075fa6b309e9b456bdf2a8bd19cbce867d3747",
+      "bytes": 2605,
+      "lines": 51,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    },
+    {
+      "path": "skills/video-quality/SKILL.md",
+      "name": "video-quality",
+      "title": "Qualidade de vídeo",
+      "scope": "operational_reels",
+      "sha256": "2754fd963a25819ad021bdb16b47d66893d47d05490cb139bc7e24ea8afce1d5",
+      "bytes": 2214,
+      "lines": 42,
+      "links": {
+        "total": 0,
+        "local": 0,
+        "runtime_resolved": 0,
+        "missing": 0,
+        "unresolved": 0
+      },
+      "link_findings": []
+    }
+  ]
+}

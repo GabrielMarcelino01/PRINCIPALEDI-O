@@ -1,0 +1,69 @@
+{
+  "source": "Untitled_Scene_10-27_02_36_48_20261026234440.mp4",
+  "source_commit": "0634452a1785e4bad6971dbefcb8d981607fc642",
+  "source_blob_sha": "480b89b9a23c59f58bb6914e2369f8f9f01bdfe6",
+  "source_sha256": "bc129692a791a8c222d2239ddd3030ec34212eb52c4610baf6d75f180853b3ef",
+  "language": "pt-BR",
+  "asr": "OpenAI Whisper small, CTranslate2 int8, execução local; duas passagens comparadas",
+  "review": "As cinco frases foram consistentes nas duas passagens; “verde oliva” foi grafado sem hífen. Não houve escuta audiovisual integral.",
+  "segments": [
+    {
+      "id": "look-1",
+      "start": 0.0,
+      "end": 5.44,
+      "text": "Lembre-se, vestido azul petróleo com terno cinza claro fica elegante.",
+      "group_ids": [
+        "look-1-lembre",
+        "look-1-vestido",
+        "look-1-terno",
+        "look-1-estilo"
+      ]
+    },
+    {
+      "id": "look-2",
+      "start": 5.66,
+      "end": 9.76,
+      "text": "Lembre-se, vestido vermelho rubi com terno azul noite é puro charme.",
+      "group_ids": [
+        "look-2-lembre",
+        "look-2-vestido",
+        "look-2-terno",
+        "look-2-estilo"
+      ]
+    },
+    {
+      "id": "look-3",
+      "start": 9.84,
+      "end": 13.8,
+      "text": "Vestido roxo ametista com terno cinza chumbo transmite luxo.",
+      "group_ids": [
+        "look-3-vestido",
+        "look-3-terno",
+        "look-3-estilo"
+      ]
+    },
+    {
+      "id": "look-4",
+      "start": 14.06,
+      "end": 19.12,
+      "text": "Lembre-se, vestido rosa antigo com terno verde oliva fica chique.",
+      "group_ids": [
+        "look-4-lembre",
+        "look-4-vestido",
+        "look-4-terno",
+        "look-4-estilo"
+      ]
+    },
+    {
+      "id": "look-5",
+      "start": 19.3,
+      "end": 23.94,
+      "text": "Vestido verde esmeralda com terno marrom tabaco é sofisticado.",
+      "group_ids": [
+        "look-5-vestido",
+        "look-5-terno",
+        "look-5-estilo"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-10-30",
+  "master": "entregas/IMG-1680-EDITADO.mp4",
+  "sha256": "eb2f2174a026e6f5516bbeea750aec6484d3654a3c743724418a0add9f5339c5",
+  "frames_reviewed": 40,
+  "contact_sheets": 5,
+  "source": "Quadros extraídos diretamente do MP4 final após a substituição do AAC.",
+  "checks": {
+    "captions_without_overflow": true,
+    "double_scene_order_and_labels": true,
+    "faces_preserved_during_zooms": true,
+    "app_screens_legible_at_review_scale": true,
+    "cta_preserved": true,
+    "unexpected_black_or_blank_frames": false
+  },
+  "technical_qa": {
+    "delivery": "18/18 PASS",
+    "video": "0 falhas e 0 avisos",
+    "captions": "0 erros e 0 avisos",
+    "static_project": "33/33 PASS",
+    "audio_sync_lag_samples": 0
+  },
+  "limits": [
+    "Revisão por quadros não substitui playback em tempo real ou escuta humana integral.",
+    "QA técnico não comprova aprovação estética nem performance de campanha.",
+    "Não foi executado teste A/B; não há garantia de retenção ou conversão."
+  ]
+}

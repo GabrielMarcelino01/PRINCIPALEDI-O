@@ -1,0 +1,24 @@
+{
+  "name": "closet-10-caption-only",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "CLOSET-10: melhoria de imagem e superlegendas no joelho, sem edições externas.",
+  "scripts": {
+    "media:prepare": "python3 scripts/prepare_closet_10.py",
+    "render": "node closet-10-render.mjs",
+    "storyboard": "node closet-10-render.mjs --storyboard",
+    "validate": "python3 scripts/validate_closet_10.py",
+    "validate:delivery": "python3 scripts/validate_delivery_10.py"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.522",
+    "@remotion/renderer": "4.0.522",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.522"
+  },
+  "overrides": {
+    "zod": "4.6.6"
+  }
+}

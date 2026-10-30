@@ -1,0 +1,92 @@
+<template>
+<style>
+@font-face{font-family:Inter;src:url('assets/fonts/Inter-Variable.woff2') format('woff2');font-weight:100 900;font-style:normal}
+@font-face{font-family:Playfair;src:url('assets/fonts/PlayfairDisplay-Italic.woff2') format('woff2');font-weight:400 900;font-style:italic}
+@font-face{font-family:EBG;src:url('assets/fonts/EBGaramond-700.woff2') format('woff2');font-weight:700;font-style:normal}
+*{box-sizing:border-box;margin:0;padding:0}
+#root{position:absolute;inset:0;overflow:hidden;font-family:Inter,Arial,sans-serif;background:var(--ground)}
+.clip{position:absolute}
+.shot{inset:0;overflow:hidden}
+.shot-motion{position:absolute;inset:-5%;will-change:transform}
+.shot-motion img{width:100%;height:100%;object-fit:cover;display:block}
+.shade{position:absolute;inset:0;pointer-events:none}
+.text-motion{position:relative;width:100%;height:100%;will-change:transform,clip-path,opacity}
+.display{font-family:EBG,Georgia,serif;font-weight:700;letter-spacing:-.045em;line-height:.91}
+.serif-italic{font-family:Playfair,Georgia,serif;font-style:italic}
+.kicker{font-family:Inter,Arial,sans-serif;font-size:30px;font-weight:700;letter-spacing:.13em;line-height:1.2;text-transform:uppercase}
+.body-copy{font-family:Inter,Arial,sans-serif;font-size:36px;line-height:1.3}
+.disclosure{position:absolute;left:64px;top:168px;z-index:55;font-size:28px;font-weight:700;letter-spacing:.16em;line-height:1.15;color:#F6F0E8;background:rgba(37,13,24,.84);padding:5px 10px}
+.grain{position:absolute;inset:0;z-index:45;pointer-events:none;opacity:.05;background-image:url('assets/images/grain.png');background-repeat:repeat}
+.light-sweep{position:absolute;top:-20%;bottom:-20%;left:0;width:260px;z-index:35;pointer-events:none;opacity:0;background:linear-gradient(90deg,transparent,rgba(255,244,222,.7),transparent)}
+.phone-frame{position:absolute;overflow:hidden;border:12px solid #21131a;border-radius:48px;background:#fff;box-shadow:0 30px 70px rgba(37,13,24,.24)}
+.phone-frame img{position:absolute;left:0;top:0;width:100%;display:block}
+.ui-stage{position:absolute;inset:0;background:#f6f0e8}
+.editorial-rule{height:10px;width:160px;background:var(--coral,#F26E64)}
+.feature-line{font-family:EBG,Georgia,serif;font-size:80px;font-weight:700;line-height:.95;letter-spacing:-.035em}
+
+#root{--ground:#250D18;--ink:#F6F0E8;--disclosure:#F6F0E8}
+</style>
+<div id="root" data-composition-id="reveal" data-width="1080" data-height="1920">
+
+<div id="reveal-a" class="clip shot" data-start="0" data-duration="4.624" data-track-index="1" style="z-index:1;" data-layout-allow-overflow>
+  <div id="reveal-a-motion" class="shot-motion" style="">
+    <img src="assets/images/modelo-clara.jpg" alt="" style="object-position:50% 44%;object-fit:cover"/>
+    <div class="shade" style="background:linear-gradient(180deg,rgba(37,13,24,.08),rgba(37,13,24,.84))"></div>
+  </div>
+</div>
+
+<div id="reveal-title-a" class="clip" data-start="0.12" data-duration="4.504" data-track-index="10" style="z-index:10;left:64px;top:850px;width:900px;min-height:103px" data-layout-allow-overlap>
+  <div id="reveal-title-a-motion" class="text-motion"><div class="display" style="font-size:94px;color:#F6F0E8;">O PROBLEMA<br/>NÃO ERA<br/>O ARMÁRIO.</div></div>
+</div>
+<div id="reveal-b" class="clip" data-start="4.624" data-duration="2.037333" data-track-index="1" style="z-index:1;inset:0;background:#F6F0E8"></div>
+
+<div id="reveal-title-b" class="clip" data-start="4.624" data-duration="2.037333" data-track-index="10" style="z-index:10;left:64px;top:450px;width:900px;min-height:180px" data-layout-allow-overlap>
+  <div id="reveal-title-b-motion" class="text-motion"><div class="display" style="font-size:164px;color:#2B101C;">ACEITAR?</div></div>
+</div>
+<div id="reveal-brand" class="clip" data-start="6.661333" data-duration="2.656" data-track-index="1" style="z-index:1;inset:0;background:#250D18"></div>
+
+<div id="reveal-brand-1" class="clip" data-start="6.761333" data-duration="2.556" data-track-index="10" style="z-index:10;left:64px;top:300px;width:900px;min-height:167px" data-layout-allow-overlap>
+  <div id="reveal-brand-1-motion" class="text-motion"><div class="display" style="font-size:152px;color:#F6F0E8;">TRUQUE</div></div>
+</div>
+
+<div id="reveal-brand-2" class="clip" data-start="6.941333" data-duration="2.376" data-track-index="10" style="z-index:10;left:64px;top:500px;width:900px;min-height:167px" data-layout-allow-overlap>
+  <div id="reveal-brand-2-motion" class="text-motion"><div class="display" style="font-size:152px;color:#F26E64;">DOS MIL</div></div>
+</div>
+
+<div id="reveal-brand-3" class="clip" data-start="7.121333" data-duration="2.196" data-track-index="10" style="z-index:10;left:64px;top:700px;width:900px;min-height:167px" data-layout-allow-overlap>
+  <div id="reveal-brand-3-motion" class="text-motion"><div class="display" style="font-size:152px;color:#F6F0E8;">LOOKS</div></div>
+</div>
+
+<div id="reveal-brand-sub" class="clip" data-start="7.411333" data-duration="1.906" data-track-index="10" style="z-index:10;left:70px;top:970px;width:900px;height:60px" data-layout-allow-overlap>
+  <div id="reveal-brand-sub-motion" class="text-motion"><div class="kicker" style="color:#F6F0E8">UM NOME. MIL POSSIBILIDADES.</div></div>
+</div>
+
+<div id="reveal-app" class="clip shot" data-start="9.317333" data-duration="6.137048" data-track-index="1" style="z-index:1;background:#F6F0E8" data-layout-allow-overflow>
+  <div id="reveal-app-motion" class="shot-motion" style="inset:0">
+    <img src="assets/images/app-inicio.png" alt="" style="object-position:50% 50%;object-fit:contain"/>
+    <div class="shade" style="background:none"></div>
+  </div>
+</div>
+<div id="reveal-light" class="light-sweep" data-layout-ignore></div>
+<div id="reveal-app-light" class="light-sweep" data-layout-ignore></div>
+<div id="reveal-disclosure" class="clip disclosure" data-start="0" data-duration="9.317333" data-track-index="55" data-layout-allow-overlap>DRAMATIZAÇÃO</div>
+<div class="grain" data-layout-ignore></div>
+</div>
+<script>
+const tl=gsap.timeline({paused:true});
+tl.fromTo('#reveal-a-motion',{scale:1.01,x:0},{scale:1.09,x:-24,duration:4.624,ease:'none'},0);
+tl.fromTo('#reveal-title-a-motion',{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)',duration:.52,ease:'power3.out'},0.12);
+tl.fromTo('#reveal-title-b-motion',{scale:.92,opacity:0},{scale:1,opacity:1,duration:.58,ease:'back.out(1.4)'},4.624);
+tl.fromTo('#reveal-brand-1-motion',{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)',duration:.52,ease:'power3.out'},6.761333);
+tl.fromTo('#reveal-brand-2-motion',{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)',duration:.52,ease:'power3.out'},6.941333);
+tl.fromTo('#reveal-brand-3-motion',{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)',duration:.52,ease:'power3.out'},7.121333);
+tl.fromTo('#reveal-brand-sub-motion',{y:54,opacity:0},{y:0,opacity:1,duration:.46,ease:'power3.out'},7.411333);
+tl.fromTo('#reveal-app-motion',{scale:1.0,x:0},{scale:1.0,x:0,duration:6.137048,ease:'none'},9.317333);
+tl.fromTo('#reveal-light',{x:-500,opacity:0,rotation:9},{x:1500,opacity:.3,rotation:9,duration:1.05,ease:'power2.inOut'},6.661333);
+tl.to('#reveal-light',{opacity:0,duration:.25},7.711333);
+tl.fromTo('#reveal-app-light',{x:-500,opacity:0,rotation:9},{x:1500,opacity:.3,rotation:9,duration:1.05,ease:'power2.inOut'},9.467333);
+tl.to('#reveal-app-light',{opacity:0,duration:.25},10.517333);
+window.__timelines['reveal']=tl;
+tl.seek(0);
+</script>
+</template>

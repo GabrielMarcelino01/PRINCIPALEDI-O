@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "scope": "Revisão visual por quadros do storyboard; não equivale a playback, escuta integral ou aprovação estética/resultado publicitário.",
+  "frames_reviewed": 34,
+  "frames": [
+    0,
+    94,
+    176,
+    216,
+    312,
+    329,
+    419,
+    436,
+    543,
+    550,
+    684,
+    812,
+    820,
+    823,
+    873,
+    948,
+    960,
+    1072,
+    1075,
+    1195,
+    1251,
+    1252,
+    1385,
+    1397,
+    1422,
+    1481,
+    1611,
+    1647,
+    1792,
+    1878,
+    1967,
+    2039,
+    2091,
+    2110
+  ],
+  "capture_policy": "frame 0; cada grupo em end-0,04 s; cortes; início das cenas de zoom; meio/fim da dupla cena; último quadro",
+  "corrections": [
+    {
+      "issue": "Overflow em QUANDO SUAS ROUPAS / NÃO EXPRESSAM SEU ESTILO",
+      "action": "Trecho dividido em três grupos, sem reduzir a fonte; total final de 22 grupos."
+    },
+    {
+      "issue": "Palavras curtas incompletas na captura de revisão",
+      "action": "Fade final reduzido para 0,03 s, captura em end-0,04 s e extensão de 0,10 s em COMO VOCÊ SE VÊ dentro da pausa disponível."
+    }
+  ],
+  "checks": [
+    {
+      "name": "caption_bounds",
+      "status": "pass",
+      "message": "Sem overflow ou terceira linha nos 22 grupos; 21 renderizados e CTA original preservado."
+    },
+    {
+      "name": "double_scene",
+      "status": "pass",
+      "message": "Antes/agora legível, rostos preservados, labels sem cobrir olhos e retorno correto à cena externa."
+    },
+    {
+      "name": "zoom_framing",
+      "status": "pass",
+      "message": "Zooms de até 1,10× sem cortar rostos; telas do aplicativo mantidas em 1,00×."
+    },
+    {
+      "name": "app_captions",
+      "status": "pass",
+      "message": "Capturas das telas com captions dentro das margens e sem cobrir as opções principais."
+    },
+    {
+      "name": "cta",
+      "status": "pass",
+      "message": "CTA original visível e não duplicado pela nova camada de captions."
+    }
+  ]
+}

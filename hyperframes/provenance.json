@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-27",
+  "runtime": {
+    "package": "hyperframes",
+    "version": "0.8.206",
+    "license": "Apache-2.0",
+    "repository": "https://github.com/heygen-com/hyperframes",
+    "tag": "v0.8.206",
+    "commit": "85fdc9aa888b4d26c8150fd09acae7b23fb392f5",
+    "npm_tarball": "https://registry.npmjs.org/hyperframes/-/hyperframes-0.8.206.tgz",
+    "npm_integrity": "sha512-8rf+yF3iADkiV6FTG6IxEf0sZZqXS+dhe7QZQ/f4xHXxFkr7ooUuGjPDSBrdRabxaXEvwTvYaujYIoTYTcJJPg==",
+    "npm_tarball_sha256": "ab08c116ac6040ed584ed5269472bc4ebba3b39cf96a082e38a61fe66030cdf5",
+    "upstream_node_engine": ">=22",
+    "local_node_engine": ">=22.17.0",
+    "license_file": "hyperframes/LICENSE",
+    "license_sha256": "4259155fb06f127687ee7b0a8a3682d45132db0f2da26cbc0b7a2d1e796436b8"
+  },
+  "source_document": {
+    "path": "skill/hyperframes-1.md",
+    "source_ref": "origin/main",
+    "source_commit": "1423bf5bca6e4b29c464d4ccbdcad8ee8a9865a1",
+    "sha256": "cbb206b0711a9a6612236d7b521e84761a20e02b432176e119ad154b48f39bc1",
+    "scope": "Documento enviado pelo usuário, preservado literalmente como referência; não é o runtime."
+  },
+  "skills": {
+    "source": "https://github.com/heygen-com/hyperframes/tree/v0.8.206/skills",
+    "commit": "85fdc9aa888b4d26c8150fd09acae7b23fb392f5",
+    "upstream_manifest": "hyperframes/upstream-skills-manifest.json",
+    "upstream_manifest_sha256": "ba4b094d6c3bd067d987278fd4939c5fe13c0983569fa663e7d3255b4d3cd433",
+    "tree_hash_algorithm": "SHA-256 sobre, para cada arquivo ordenado por caminho relativo POSIX: caminho + NUL + bytes + NUL.",
+    "entries": [
+      {
+        "name": "hyperframes",
+        "path": "skills/hyperframes",
+        "upstream_hash": "9aaba3205d9e3f32",
+        "files": 77,
+        "tree_sha256": "9aaba3205d9e3f329a166ac8c5fb8725c66f54ab2a33ea5afb8bf5a391f4f7ec"
+      },
+      {
+        "name": "hyperframes-cli",
+        "path": "skills/hyperframes-cli",
+        "upstream_hash": "08a4a3a815d71988",
+        "files": 13,
+        "tree_sha256": "08a4a3a815d71988225be90e40f412509848ec8c90631f00aed731f6680a4883"
+      },
+      {
+        "name": "hyperframes-registry",
+        "path": "skills/hyperframes-registry",
+        "upstream_hash": "221af9e7fbffe732",
+        "files": 13,
+        "tree_sha256": "221af9e7fbffe7325490ef99079facd5dafc574c411f6b8de0e392d370175826"
+      },
+      {
+        "name": "media-use",
+        "path": "skills/media-use",
+        "upstream_hash": "7603d1411b14d829",
+        "files": 116,
+        "tree_sha256": "7603d1411b14d829392bd86e9207fc6dee6ae788f527016381816b567f9555f5"
+      },
+      {
+        "name": "figma",
+        "path": "skills/figma",
+        "upstream_hash": "af57c9b6411c81f5",
+        "files": 2,
+        "tree_sha256": "af57c9b6411c81f5fe4d3ee3ca8b29bb6e75f9739c79eab60ee34dc363d8cd74"
+      },
+      {
+        "name": "slideshow",
+        "path": "skills/slideshow",
+        "upstream_hash": "c8a591e2aa7a6d86",
+        "files": 2,
+        "tree_sha256": "c8a591e2aa7a6d863cf8f0f5db134029285ea87488909fea2551ea84e64db2a0"
+      },
+      {
+        "name": "remotion-to-hyperframes",
+        "path": "skills/remotion-to-hyperframes",
+        "upstream_hash": "37ed4536305b3c64",
+        "files": 78,
+        "tree_sha256": "37ed4536305b3c64ccdf06ae6b5207f76c2e4b1ce4fae48516568962a8cb1ca6"
+      }
+    ]
+  },
+  "registry_metadata": {
+    "source": "https://github.com/heygen-com/hyperframes/tree/v0.8.206/registry",
+    "commit": "85fdc9aa888b4d26c8150fd09acae7b23fb392f5",
+    "path": "hyperframes/registry-metadata",
+    "includes": [
+      "registry.json",
+      "**/registry-item.json"
+    ],
+    "excludes": [
+      "HTML dos componentes",
+      "assets",
+      "vetores de busca on-device"
+    ],
+    "usable_items": 448,
+    "examples": 8,
+    "item_manifests": 456,
+    "files": 457,
+    "tree_sha256": "5e81ca23b836609d74a5884cf91d8e811d2c6a4bf4ea14a2e0c103a7eb48c008",
+    "scope": "Descoberta offline pelo cache do CLI. hyperframes add ainda requer rede para obter os arquivos do item."
+  },
+  "local_dependencies": {
+    "@sparticuz/chromium": "153.0.0",
+    "@ffmpeg-installer/ffmpeg": "1.1.0",
+    "ffprobe-static": "3.1.0"
+  },
+  "gsap": {
+    "version": "3.15.0",
+    "path": "hyperframes/smoke/assets/gsap.min.js",
+    "source": "hyperframes@0.8.206/dist/vendor/npm/gsap@3.15.0/dist/gsap.min.js",
+    "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb",
+    "license": "Standard 'no charge' license: https://gsap.com/standard-license",
+    "copyright": "Copyright 2026, GreenSock. All rights reserved; cabeçalho preservado no arquivo."
+  },
+  "legacy_integration": {
+    "path": "recovered/motion-2/hyperframes",
+    "hyperframes_version": "0.8.33",
+    "decision": "Preservada isoladamente; não atualizada nem usada como origem do ambiente canônico."
+  }
+}

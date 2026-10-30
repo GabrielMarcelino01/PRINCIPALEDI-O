@@ -1,0 +1,24 @@
+{
+  "name": "para-edicao-2-caption-only",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "PARA EDIÇÃO-2: melhoria de imagem e as mesmas superlegendas no joelho, sem edições externas.",
+  "scripts": {
+    "media:prepare": "python3 scripts/prepare_para_edicao_2.py",
+    "render": "node para-edicao-2-render.mjs",
+    "storyboard": "node para-edicao-2-render.mjs --storyboard",
+    "validate": "python3 scripts/validate_para_edicao_2.py",
+    "validate:delivery": "python3 scripts/validate_delivery_2.py"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.522",
+    "@remotion/renderer": "4.0.522",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.522"
+  },
+  "overrides": {
+    "zod": "4.6.6"
+  }
+}

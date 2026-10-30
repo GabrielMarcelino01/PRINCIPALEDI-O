@@ -1,0 +1,408 @@
+{
+  "language": "pt",
+  "probability": 1,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.54,
+      "text": "Relembre. Branco com azul marinho fica elegante, sofisticado e chama atenção na festa.",
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.82,
+          "word": " Relembre."
+        },
+        {
+          "start": 1.18,
+          "end": 1.62,
+          "word": " Branco"
+        },
+        {
+          "start": 1.62,
+          "end": 1.8,
+          "word": " com"
+        },
+        {
+          "start": 1.8,
+          "end": 2.04,
+          "word": " azul"
+        },
+        {
+          "start": 2.04,
+          "end": 2.42,
+          "word": " marinho"
+        },
+        {
+          "start": 2.42,
+          "end": 2.66,
+          "word": " fica"
+        },
+        {
+          "start": 2.66,
+          "end": 3.3,
+          "word": " elegante,"
+        },
+        {
+          "start": 3.48,
+          "end": 4.26,
+          "word": " sofisticado"
+        },
+        {
+          "start": 4.26,
+          "end": 4.46,
+          "word": " e"
+        },
+        {
+          "start": 4.46,
+          "end": 4.66,
+          "word": " chama"
+        },
+        {
+          "start": 4.66,
+          "end": 5.04,
+          "word": " atenção"
+        },
+        {
+          "start": 5.04,
+          "end": 5.22,
+          "word": " na"
+        },
+        {
+          "start": 5.22,
+          "end": 5.54,
+          "word": " festa."
+        }
+      ],
+      "id": "look-1",
+      "asr_text": "Relembre. Branco com azul marinho fica elegante, sofisticado e chama atenção na festa.",
+      "group_ids": [
+        "look-1-cores",
+        "look-1-estilo",
+        "look-1-resultado"
+      ],
+      "editorial_note": "Três passagens de Whisper small reconheceram “Relembre”; preservado sem substituir por “Lembre-se”."
+    },
+    {
+      "start": 5.98,
+      "end": 10.36,
+      "text": "Verde-menta com chocolate fica refinado, chique e deixa o casal com cara de riqueza.",
+      "words": [
+        {
+          "start": 5.98,
+          "end": 6.58,
+          "word": " Verdimenta"
+        },
+        {
+          "start": 6.58,
+          "end": 6.68,
+          "word": " com"
+        },
+        {
+          "start": 6.68,
+          "end": 7.04,
+          "word": " chocolate"
+        },
+        {
+          "start": 7.04,
+          "end": 7.38,
+          "word": " fica"
+        },
+        {
+          "start": 7.38,
+          "end": 7.96,
+          "word": " refinado,"
+        },
+        {
+          "start": 8.12,
+          "end": 8.44,
+          "word": " chique"
+        },
+        {
+          "start": 8.44,
+          "end": 8.7,
+          "word": " e"
+        },
+        {
+          "start": 8.7,
+          "end": 8.92,
+          "word": " deixa"
+        },
+        {
+          "start": 8.92,
+          "end": 9.02,
+          "word": " o"
+        },
+        {
+          "start": 9.02,
+          "end": 9.32,
+          "word": " casal"
+        },
+        {
+          "start": 9.32,
+          "end": 9.46,
+          "word": " com"
+        },
+        {
+          "start": 9.46,
+          "end": 9.7,
+          "word": " cara"
+        },
+        {
+          "start": 9.7,
+          "end": 9.86,
+          "word": " de"
+        },
+        {
+          "start": 9.86,
+          "end": 10.36,
+          "word": " riqueza."
+        }
+      ],
+      "id": "look-2",
+      "asr_text": "Verdimenta com chocolate fica refinado, chique e deixa o casal com cara de riqueza.",
+      "group_ids": [
+        "look-2-cores",
+        "look-2-estilo",
+        "look-2-resultado"
+      ],
+      "editorial_note": "Normalização ortográfica de “Verdimenta” para “verde-menta”, coerente com a cor exibida."
+    },
+    {
+      "start": 10.82,
+      "end": 15.46,
+      "text": "Pink com caramelo fica marcante, luxuoso e perfeito para roubar todos os olhares.",
+      "words": [
+        {
+          "start": 10.82,
+          "end": 11.14,
+          "word": " Pink"
+        },
+        {
+          "start": 11.14,
+          "end": 11.36,
+          "word": " com"
+        },
+        {
+          "start": 11.36,
+          "end": 11.8,
+          "word": " caramelo"
+        },
+        {
+          "start": 11.8,
+          "end": 12.04,
+          "word": " fica"
+        },
+        {
+          "start": 12.04,
+          "end": 12.58,
+          "word": " marcante,"
+        },
+        {
+          "start": 12.72,
+          "end": 13.28,
+          "word": " luxuoso"
+        },
+        {
+          "start": 13.28,
+          "end": 13.48,
+          "word": " e"
+        },
+        {
+          "start": 13.48,
+          "end": 13.96,
+          "word": " perfeito"
+        },
+        {
+          "start": 13.96,
+          "end": 14.16,
+          "word": " para"
+        },
+        {
+          "start": 14.16,
+          "end": 14.46,
+          "word": " roubar"
+        },
+        {
+          "start": 14.46,
+          "end": 14.78,
+          "word": " todos"
+        },
+        {
+          "start": 14.78,
+          "end": 15.02,
+          "word": " os"
+        },
+        {
+          "start": 15.02,
+          "end": 15.46,
+          "word": " olhares."
+        }
+      ],
+      "id": "look-3",
+      "asr_text": "Pink com caramelo fica marcante, luxuoso e perfeito para roubar todos os olhares.",
+      "group_ids": [
+        "look-3-cores",
+        "look-3-estilo",
+        "look-3-resultado-a",
+        "look-3-resultado-b"
+      ],
+      "editorial_note": "Sem normalização além de pontuação e caixa tipográfica."
+    },
+    {
+      "start": 15.86,
+      "end": 20.2,
+      "text": "Azul marinho gelo fica clássico, deslumbrante e vocês virarem o centro das atenções.",
+      "words": [
+        {
+          "start": 15.86,
+          "end": 16.16,
+          "word": " Azul"
+        },
+        {
+          "start": 16.16,
+          "end": 16.46,
+          "word": " marinho"
+        },
+        {
+          "start": 16.46,
+          "end": 16.82,
+          "word": " gelo"
+        },
+        {
+          "start": 16.82,
+          "end": 17.0,
+          "word": " fica"
+        },
+        {
+          "start": 17.0,
+          "end": 17.62,
+          "word": " clássico,"
+        },
+        {
+          "start": 17.76,
+          "end": 18.32,
+          "word": " deslumbrante"
+        },
+        {
+          "start": 18.32,
+          "end": 18.5,
+          "word": " e"
+        },
+        {
+          "start": 18.5,
+          "end": 18.64,
+          "word": " vocês"
+        },
+        {
+          "start": 18.64,
+          "end": 19.04,
+          "word": " virarem"
+        },
+        {
+          "start": 19.04,
+          "end": 19.18,
+          "word": " o"
+        },
+        {
+          "start": 19.18,
+          "end": 19.46,
+          "word": " centro"
+        },
+        {
+          "start": 19.46,
+          "end": 19.68,
+          "word": " das"
+        },
+        {
+          "start": 19.68,
+          "end": 20.2,
+          "word": " atenções."
+        }
+      ],
+      "id": "look-4",
+      "asr_text": "Azul marinho gelo fica clássico, deslumbrante e vocês virarem o centro das atenções.",
+      "group_ids": [
+        "look-4-cores",
+        "look-4-estilo",
+        "look-4-resultado-a",
+        "look-4-resultado-b"
+      ],
+      "editorial_note": "Três passagens não reconheceram “com” entre “marinho” e “gelo”; nenhuma palavra foi acrescentada. “Vocês virarem” foi preservado."
+    },
+    {
+      "start": 20.76,
+      "end": 25.24,
+      "text": "Preto com vinho fica poderoso, sensual e impossível de passar despercebido.",
+      "words": [
+        {
+          "start": 20.76,
+          "end": 21.16,
+          "word": " Preto"
+        },
+        {
+          "start": 21.16,
+          "end": 21.32,
+          "word": " com"
+        },
+        {
+          "start": 21.32,
+          "end": 21.62,
+          "word": " vinho"
+        },
+        {
+          "start": 21.62,
+          "end": 21.9,
+          "word": " fica"
+        },
+        {
+          "start": 21.9,
+          "end": 22.58,
+          "word": " poderoso,"
+        },
+        {
+          "start": 22.72,
+          "end": 23.28,
+          "word": " sensual"
+        },
+        {
+          "start": 23.28,
+          "end": 23.5,
+          "word": " e"
+        },
+        {
+          "start": 23.5,
+          "end": 24.1,
+          "word": " impossível"
+        },
+        {
+          "start": 24.1,
+          "end": 24.22,
+          "word": " de"
+        },
+        {
+          "start": 24.22,
+          "end": 24.46,
+          "word": " passar"
+        },
+        {
+          "start": 24.46,
+          "end": 25.24,
+          "word": " despercebido."
+        }
+      ],
+      "id": "look-5",
+      "asr_text": "Preto com vinho fica poderoso, sensual e impossível de passar despercebido.",
+      "group_ids": [
+        "look-5-cores",
+        "look-5-estilo",
+        "look-5-resultado"
+      ],
+      "editorial_note": "Sem normalização além de pontuação e caixa tipográfica."
+    }
+  ],
+  "source": "PARA EDIÇÃO.mp4 (nome Unicode preservado no commit de origem)",
+  "source_commit": "4b7b033914b8a7eac356d964bcef19ffa68a0b95",
+  "source_sha256": "8f53940d41227dc7ff0d2921980acc94c340e68805217534c4dd7a2d3edd6043",
+  "asr_model": "Whisper small / CTranslate2 int8; SHA-256 ca732cb1379efc49417d028465f543d83a39de2c61f3027678de103dc404ce73",
+  "review": "Duas passagens em velocidade original e uma revisão ASR a 0,75x; não equivale a escuta humana integral."
+}

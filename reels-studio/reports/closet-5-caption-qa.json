@@ -1,0 +1,238 @@
+{
+  "file": "/home/user/PRINCIPALEDI-O/reels-studio/closet-5-captions.srt",
+  "status": "pass",
+  "caption_count": 18,
+  "summary": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "issues": [],
+  "captions": [
+    {
+      "block": 1,
+      "start": 0.0,
+      "end": 1.24,
+      "duration": 1.24,
+      "text": "LEMBRE-SE",
+      "lines": 1,
+      "line_lengths": [
+        9
+      ],
+      "characters_per_second": 7.26
+    },
+    {
+      "block": 2,
+      "start": 1.24,
+      "end": 2.6,
+      "duration": 1.36,
+      "text": "VESTIDO AZUL PETRÓLEO",
+      "lines": 2,
+      "line_lengths": [
+        7,
+        13
+      ],
+      "characters_per_second": 13.97
+    },
+    {
+      "block": 3,
+      "start": 2.6,
+      "end": 4.06,
+      "duration": 1.4599999999999995,
+      "text": "COM TERNO CINZA CLARO",
+      "lines": 2,
+      "line_lengths": [
+        9,
+        11
+      ],
+      "characters_per_second": 12.33
+    },
+    {
+      "block": 4,
+      "start": 4.06,
+      "end": 5.44,
+      "duration": 1.3800000000000008,
+      "text": "FICA ELEGANTE",
+      "lines": 1,
+      "line_lengths": [
+        13
+      ],
+      "characters_per_second": 8.7
+    },
+    {
+      "block": 5,
+      "start": 5.66,
+      "end": 6.4,
+      "duration": 0.7400000000000002,
+      "text": "LEMBRE-SE",
+      "lines": 1,
+      "line_lengths": [
+        9
+      ],
+      "characters_per_second": 12.16
+    },
+    {
+      "block": 6,
+      "start": 6.4,
+      "end": 7.58,
+      "duration": 1.1799999999999997,
+      "text": "VESTIDO VERMELHO RUBI",
+      "lines": 2,
+      "line_lengths": [
+        7,
+        13
+      ],
+      "characters_per_second": 16.1
+    },
+    {
+      "block": 7,
+      "start": 7.58,
+      "end": 8.9,
+      "duration": 1.3200000000000003,
+      "text": "COM TERNO AZUL NOITE",
+      "lines": 2,
+      "line_lengths": [
+        9,
+        10
+      ],
+      "characters_per_second": 12.88
+    },
+    {
+      "block": 8,
+      "start": 8.9,
+      "end": 9.76,
+      "duration": 0.8599999999999994,
+      "text": "É PURO CHARME",
+      "lines": 1,
+      "line_lengths": [
+        13
+      ],
+      "characters_per_second": 12.79
+    },
+    {
+      "block": 9,
+      "start": 9.84,
+      "end": 11.02,
+      "duration": 1.1799999999999997,
+      "text": "VESTIDO ROXO AMETISTA",
+      "lines": 2,
+      "line_lengths": [
+        7,
+        13
+      ],
+      "characters_per_second": 16.1
+    },
+    {
+      "block": 10,
+      "start": 11.02,
+      "end": 12.6,
+      "duration": 1.58,
+      "text": "COM TERNO CINZA CHUMBO",
+      "lines": 2,
+      "line_lengths": [
+        9,
+        12
+      ],
+      "characters_per_second": 12.03
+    },
+    {
+      "block": 11,
+      "start": 12.6,
+      "end": 13.8,
+      "duration": 1.200000000000001,
+      "text": "TRANSMITE LUXO",
+      "lines": 1,
+      "line_lengths": [
+        14
+      ],
+      "characters_per_second": 10.83
+    },
+    {
+      "block": 12,
+      "start": 14.06,
+      "end": 14.84,
+      "duration": 0.7799999999999994,
+      "text": "LEMBRE-SE",
+      "lines": 1,
+      "line_lengths": [
+        9
+      ],
+      "characters_per_second": 11.54
+    },
+    {
+      "block": 13,
+      "start": 14.84,
+      "end": 16.22,
+      "duration": 1.379999999999999,
+      "text": "VESTIDO ROSA ANTIGO",
+      "lines": 2,
+      "line_lengths": [
+        7,
+        11
+      ],
+      "characters_per_second": 12.32
+    },
+    {
+      "block": 14,
+      "start": 16.22,
+      "end": 18.02,
+      "duration": 1.8000000000000007,
+      "text": "COM TERNO VERDE OLIVA",
+      "lines": 2,
+      "line_lengths": [
+        9,
+        11
+      ],
+      "characters_per_second": 10.0
+    },
+    {
+      "block": 15,
+      "start": 18.02,
+      "end": 19.12,
+      "duration": 1.1000000000000014,
+      "text": "FICA CHIQUE",
+      "lines": 1,
+      "line_lengths": [
+        11
+      ],
+      "characters_per_second": 9.09
+    },
+    {
+      "block": 16,
+      "start": 19.3,
+      "end": 20.86,
+      "duration": 1.5599999999999987,
+      "text": "VESTIDO VERDE ESMERALDA",
+      "lines": 2,
+      "line_lengths": [
+        7,
+        15
+      ],
+      "characters_per_second": 13.46
+    },
+    {
+      "block": 17,
+      "start": 20.86,
+      "end": 22.7,
+      "duration": 1.8399999999999999,
+      "text": "COM TERNO MARROM TABACO",
+      "lines": 2,
+      "line_lengths": [
+        9,
+        13
+      ],
+      "characters_per_second": 10.87
+    },
+    {
+      "block": 18,
+      "start": 22.7,
+      "end": 23.94,
+      "duration": 1.240000000000002,
+      "text": "É SOFISTICADO",
+      "lines": 1,
+      "line_lengths": [
+        13
+      ],
+      "characters_per_second": 9.68
+    }
+  ]
+}

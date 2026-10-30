@@ -1,0 +1,454 @@
+{
+  "language": "pt",
+  "language_probability": 0.9837823510169983,
+  "duration": 28.305125,
+  "duration_after_vad": 28.305125,
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 4.94,
+      "text": " Bordou com cinza fica excreto, mas bordou com verde pistache fica fashionista.",
+      "avg_logprob": -0.22586719036102296,
+      "no_speech_prob": 0.059141840785741806,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.5,
+          "word": " Bordou",
+          "probability": 0.7845627963542938
+        },
+        {
+          "start": 0.5,
+          "end": 0.68,
+          "word": " com",
+          "probability": 0.9872137308120728
+        },
+        {
+          "start": 0.68,
+          "end": 1.12,
+          "word": " cinza",
+          "probability": 0.9654335081577301
+        },
+        {
+          "start": 1.12,
+          "end": 1.34,
+          "word": " fica",
+          "probability": 0.654761791229248
+        },
+        {
+          "start": 1.34,
+          "end": 1.9,
+          "word": " excreto,",
+          "probability": 0.7596866190433502
+        },
+        {
+          "start": 2.16,
+          "end": 2.58,
+          "word": " mas",
+          "probability": 0.9425997734069824
+        },
+        {
+          "start": 2.58,
+          "end": 2.94,
+          "word": " bordou",
+          "probability": 0.9624704718589783
+        },
+        {
+          "start": 2.94,
+          "end": 3.12,
+          "word": " com",
+          "probability": 0.9948275685310364
+        },
+        {
+          "start": 3.12,
+          "end": 3.34,
+          "word": " verde",
+          "probability": 0.299879252910614
+        },
+        {
+          "start": 3.34,
+          "end": 3.92,
+          "word": " pistache",
+          "probability": 0.9201842248439789
+        },
+        {
+          "start": 3.92,
+          "end": 4.24,
+          "word": " fica",
+          "probability": 0.8034297823905945
+        },
+        {
+          "start": 4.24,
+          "end": 4.94,
+          "word": " fashionista.",
+          "probability": 0.9751608669757843
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 5.56,
+      "end": 11.04,
+      "text": " Marinho com branco fica temporal, mas marinho com amarelo manteiga fica inusitado e contemporâneo.",
+      "avg_logprob": -0.22586719036102296,
+      "no_speech_prob": 0.059141840785741806,
+      "words": [
+        {
+          "start": 5.56,
+          "end": 5.98,
+          "word": " Marinho",
+          "probability": 0.9005016386508942
+        },
+        {
+          "start": 5.98,
+          "end": 6.2,
+          "word": " com",
+          "probability": 0.9920450448989868
+        },
+        {
+          "start": 6.2,
+          "end": 6.6,
+          "word": " branco",
+          "probability": 0.9777588844299316
+        },
+        {
+          "start": 6.6,
+          "end": 6.84,
+          "word": " fica",
+          "probability": 0.9941598176956177
+        },
+        {
+          "start": 6.84,
+          "end": 7.4,
+          "word": " temporal,",
+          "probability": 0.9895477294921875
+        },
+        {
+          "start": 7.8,
+          "end": 7.94,
+          "word": " mas",
+          "probability": 0.9828183054924011
+        },
+        {
+          "start": 7.94,
+          "end": 8.26,
+          "word": " marinho",
+          "probability": 0.9093539416790009
+        },
+        {
+          "start": 8.26,
+          "end": 8.44,
+          "word": " com",
+          "probability": 0.989342212677002
+        },
+        {
+          "start": 8.44,
+          "end": 8.74,
+          "word": " amarelo",
+          "probability": 0.9546571969985962
+        },
+        {
+          "start": 8.74,
+          "end": 9.26,
+          "word": " manteiga",
+          "probability": 0.8043493330478668
+        },
+        {
+          "start": 9.26,
+          "end": 9.56,
+          "word": " fica",
+          "probability": 0.9669555425643921
+        },
+        {
+          "start": 9.56,
+          "end": 10.2,
+          "word": " inusitado",
+          "probability": 0.9837700724601746
+        },
+        {
+          "start": 10.2,
+          "end": 10.34,
+          "word": " e",
+          "probability": 0.9879419207572937
+        },
+        {
+          "start": 10.34,
+          "end": 11.04,
+          "word": " contemporâneo.",
+          "probability": 0.9775269627571106
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 11.96,
+      "end": 17.54,
+      "text": " Marrom café com bege fica clássico, mas marrom café com azul claro fica elegante e refinado.",
+      "avg_logprob": -0.22586719036102296,
+      "no_speech_prob": 0.059141840785741806,
+      "words": [
+        {
+          "start": 11.96,
+          "end": 12.32,
+          "word": " Marrom",
+          "probability": 0.9097561240196228
+        },
+        {
+          "start": 12.32,
+          "end": 12.56,
+          "word": " café",
+          "probability": 0.8476860523223877
+        },
+        {
+          "start": 12.56,
+          "end": 12.84,
+          "word": " com",
+          "probability": 0.9954931735992432
+        },
+        {
+          "start": 12.84,
+          "end": 13.24,
+          "word": " bege",
+          "probability": 0.6082596033811569
+        },
+        {
+          "start": 13.24,
+          "end": 13.56,
+          "word": " fica",
+          "probability": 0.9552180171012878
+        },
+        {
+          "start": 13.56,
+          "end": 14.14,
+          "word": " clássico,",
+          "probability": 0.9974185029665629
+        },
+        {
+          "start": 14.52,
+          "end": 14.58,
+          "word": " mas",
+          "probability": 0.9923157691955566
+        },
+        {
+          "start": 14.58,
+          "end": 14.88,
+          "word": " marrom",
+          "probability": 0.9577270448207855
+        },
+        {
+          "start": 14.88,
+          "end": 15.2,
+          "word": " café",
+          "probability": 0.997546374797821
+        },
+        {
+          "start": 15.2,
+          "end": 15.46,
+          "word": " com",
+          "probability": 0.9974542260169983
+        },
+        {
+          "start": 15.46,
+          "end": 15.68,
+          "word": " azul",
+          "probability": 0.7367600202560425
+        },
+        {
+          "start": 15.68,
+          "end": 16.0,
+          "word": " claro",
+          "probability": 0.634658694267273
+        },
+        {
+          "start": 16.0,
+          "end": 16.32,
+          "word": " fica",
+          "probability": 0.9784749746322632
+        },
+        {
+          "start": 16.32,
+          "end": 16.88,
+          "word": " elegante",
+          "probability": 0.996949315071106
+        },
+        {
+          "start": 16.88,
+          "end": 17.02,
+          "word": " e",
+          "probability": 0.920703113079071
+        },
+        {
+          "start": 17.02,
+          "end": 17.54,
+          "word": " refinado.",
+          "probability": 0.988375186920166
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 18.12,
+      "end": 23.92,
+      "text": " Rosa claro com azul bebê fica romântico, mas Rosa claro com vinho fica maduro e sofisticado.",
+      "avg_logprob": -0.22586719036102296,
+      "no_speech_prob": 0.059141840785741806,
+      "words": [
+        {
+          "start": 18.12,
+          "end": 18.3,
+          "word": " Rosa",
+          "probability": 0.7879241108894348
+        },
+        {
+          "start": 18.3,
+          "end": 18.64,
+          "word": " claro",
+          "probability": 0.8618846535682678
+        },
+        {
+          "start": 18.64,
+          "end": 18.84,
+          "word": " com",
+          "probability": 0.9935948252677917
+        },
+        {
+          "start": 18.84,
+          "end": 19.04,
+          "word": " azul",
+          "probability": 0.9244338870048523
+        },
+        {
+          "start": 19.04,
+          "end": 19.4,
+          "word": " bebê",
+          "probability": 0.6947060525417328
+        },
+        {
+          "start": 19.4,
+          "end": 19.72,
+          "word": " fica",
+          "probability": 0.9896948337554932
+        },
+        {
+          "start": 19.72,
+          "end": 20.34,
+          "word": " romântico,",
+          "probability": 0.9385838359594345
+        },
+        {
+          "start": 20.54,
+          "end": 20.68,
+          "word": " mas",
+          "probability": 0.991142988204956
+        },
+        {
+          "start": 20.68,
+          "end": 20.94,
+          "word": " Rosa",
+          "probability": 0.8201699256896973
+        },
+        {
+          "start": 20.94,
+          "end": 21.3,
+          "word": " claro",
+          "probability": 0.9849884510040283
+        },
+        {
+          "start": 21.3,
+          "end": 21.48,
+          "word": " com",
+          "probability": 0.9830294251441956
+        },
+        {
+          "start": 21.48,
+          "end": 21.88,
+          "word": " vinho",
+          "probability": 0.953150749206543
+        },
+        {
+          "start": 21.88,
+          "end": 22.6,
+          "word": " fica",
+          "probability": 0.9296387434005737
+        },
+        {
+          "start": 22.6,
+          "end": 23.04,
+          "word": " maduro",
+          "probability": 0.9869775474071503
+        },
+        {
+          "start": 23.04,
+          "end": 23.26,
+          "word": " e",
+          "probability": 0.9969208240509033
+        },
+        {
+          "start": 23.26,
+          "end": 23.92,
+          "word": " sofisticado.",
+          "probability": 0.9849897027015686
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 24.74,
+      "end": 26.98,
+      "text": " Gostou? Me segue para mais dicas de moda.",
+      "avg_logprob": -0.22586719036102296,
+      "no_speech_prob": 0.059141840785741806,
+      "words": [
+        {
+          "start": 24.74,
+          "end": 25.38,
+          "word": " Gostou?",
+          "probability": 0.986850380897522
+        },
+        {
+          "start": 25.56,
+          "end": 25.66,
+          "word": " Me",
+          "probability": 0.9694734811782837
+        },
+        {
+          "start": 25.66,
+          "end": 25.84,
+          "word": " segue",
+          "probability": 0.9939151406288147
+        },
+        {
+          "start": 25.84,
+          "end": 26.1,
+          "word": " para",
+          "probability": 0.9873183369636536
+        },
+        {
+          "start": 26.1,
+          "end": 26.32,
+          "word": " mais",
+          "probability": 0.9203327298164368
+        },
+        {
+          "start": 26.32,
+          "end": 26.54,
+          "word": " dicas",
+          "probability": 0.9498563408851624
+        },
+        {
+          "start": 26.54,
+          "end": 26.7,
+          "word": " de",
+          "probability": 0.995843231678009
+        },
+        {
+          "start": 26.7,
+          "end": 26.98,
+          "word": " moda.",
+          "probability": 0.9953029751777649
+        }
+      ]
+    }
+  ]
+}

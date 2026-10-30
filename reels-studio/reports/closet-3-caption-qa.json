@@ -1,0 +1,176 @@
+{
+  "file": "/home/user/PRINCIPALEDI-O/reels-studio/closet-3-captions.srt",
+  "status": "pass",
+  "caption_count": 13,
+  "summary": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "issues": [],
+  "captions": [
+    {
+      "block": 1,
+      "start": 0.3,
+      "end": 1.2,
+      "duration": 0.8999999999999999,
+      "text": "LEMBRE-SE",
+      "lines": 1,
+      "line_lengths": [
+        9
+      ],
+      "characters_per_second": 10.0
+    },
+    {
+      "block": 2,
+      "start": 1.34,
+      "end": 2.86,
+      "duration": 1.5199999999999998,
+      "text": "VERDE NEON COM LARANJA",
+      "lines": 2,
+      "line_lengths": [
+        10,
+        11
+      ],
+      "characters_per_second": 12.5
+    },
+    {
+      "block": 3,
+      "start": 2.86,
+      "end": 4.25,
+      "duration": 1.3900000000000001,
+      "text": "FICA HORRÍVEL",
+      "lines": 1,
+      "line_lengths": [
+        13
+      ],
+      "characters_per_second": 8.63
+    },
+    {
+      "block": 4,
+      "start": 4.58,
+      "end": 6.42,
+      "duration": 1.8399999999999999,
+      "text": "COMBINE VERDE COM PRETO E",
+      "lines": 2,
+      "line_lengths": [
+        13,
+        11
+      ],
+      "characters_per_second": 11.41
+    },
+    {
+      "block": 5,
+      "start": 6.42,
+      "end": 8.34,
+      "duration": 1.92,
+      "text": "FIQUE SOFISTICADO E AUTÊNTICO",
+      "lines": 2,
+      "line_lengths": [
+        17,
+        11
+      ],
+      "characters_per_second": 13.54
+    },
+    {
+      "block": 6,
+      "start": 8.58,
+      "end": 10.1,
+      "duration": 1.5199999999999996,
+      "text": "COMBINE BEGE COM BRANCO E",
+      "lines": 2,
+      "line_lengths": [
+        12,
+        12
+      ],
+      "characters_per_second": 13.82
+    },
+    {
+      "block": 7,
+      "start": 10.1,
+      "end": 11.56,
+      "duration": 1.4600000000000009,
+      "text": "FIQUE MINIMALISTA E CHIQUE",
+      "lines": 2,
+      "line_lengths": [
+        17,
+        8
+      ],
+      "characters_per_second": 15.75
+    },
+    {
+      "block": 8,
+      "start": 11.92,
+      "end": 13.16,
+      "duration": 1.2400000000000002,
+      "text": "AGORA, CAMISA AZUL",
+      "lines": 2,
+      "line_lengths": [
+        6,
+        11
+      ],
+      "characters_per_second": 12.9
+    },
+    {
+      "block": 9,
+      "start": 13.16,
+      "end": 14.04,
+      "duration": 0.879999999999999,
+      "text": "COM CALÇA BRANCA",
+      "lines": 1,
+      "line_lengths": [
+        16
+      ],
+      "characters_per_second": 15.91
+    },
+    {
+      "block": 10,
+      "start": 14.04,
+      "end": 15.6,
+      "duration": 1.5600000000000005,
+      "text": "FICA RICO E ELEGANTE",
+      "lines": 2,
+      "line_lengths": [
+        9,
+        10
+      ],
+      "characters_per_second": 10.9
+    },
+    {
+      "block": 11,
+      "start": 15.9,
+      "end": 17.04,
+      "duration": 1.1399999999999988,
+      "text": "SWEATER VERMELHO",
+      "lines": 1,
+      "line_lengths": [
+        16
+      ],
+      "characters_per_second": 13.16
+    },
+    {
+      "block": 12,
+      "start": 17.04,
+      "end": 18.1,
+      "duration": 1.0600000000000023,
+      "text": "COM CALÇA BRANCA",
+      "lines": 1,
+      "line_lengths": [
+        16
+      ],
+      "characters_per_second": 13.21
+    },
+    {
+      "block": 13,
+      "start": 18.3,
+      "end": 20.25,
+      "duration": 1.9499999999999993,
+      "text": "UM VISUAL VIVO E MODERNO",
+      "lines": 2,
+      "line_lengths": [
+        14,
+        9
+      ],
+      "characters_per_second": 10.26
+    }
+  ]
+}

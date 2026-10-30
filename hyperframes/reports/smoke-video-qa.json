@@ -1,0 +1,70 @@
+{
+  "file": "/home/user/PRINCIPALEDI-O/hyperframes/out/HYPERFRAMES-SMOKE.mp4",
+  "media": {
+    "duration_seconds": 3.0,
+    "size_bytes": 998345.0,
+    "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+    "video": {
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "fps": 60.0,
+      "pixel_format": "yuv420p"
+    },
+    "audio": null
+  },
+  "analysis": {
+    "visual_events": {
+      "black": [],
+      "freeze": []
+    }
+  },
+  "checks": [
+    {
+      "name": "video_stream",
+      "status": "pass",
+      "message": "h264 1080x1920 @ 60.000 fps"
+    },
+    {
+      "name": "duration",
+      "status": "pass",
+      "message": "3.000 s"
+    },
+    {
+      "name": "width",
+      "status": "pass",
+      "message": "Esperado 1080; encontrado 1080."
+    },
+    {
+      "name": "height",
+      "status": "pass",
+      "message": "Esperado 1920; encontrado 1920."
+    },
+    {
+      "name": "fps",
+      "status": "pass",
+      "message": "Mínimo 60.0; encontrado 60.0."
+    },
+    {
+      "name": "audio_stream",
+      "status": "warning",
+      "message": "Nenhum stream de áudio; confirme que o vídeo deve ser mudo."
+    },
+    {
+      "name": "black",
+      "status": "pass",
+      "message": "Nenhum evento detectado."
+    },
+    {
+      "name": "freeze",
+      "status": "pass",
+      "message": "Nenhum evento detectado."
+    }
+  ],
+  "contact_sheet": "hyperframes/out/encoded-review/contact-sheet.jpg",
+  "status": "warning",
+  "summary": {
+    "failures": 0,
+    "warnings": 1
+  }
+}

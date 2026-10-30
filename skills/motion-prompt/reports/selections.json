@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "date": "2026-10-26",
+  "catalog_elements": 168,
+  "selection_68": {
+    "file": "references/selections/68-picks.md",
+    "ids": 68,
+    "unique_ids": 68,
+    "sha256": "5dc83bf1b377ef441bd8a50a07e32b4fd0ac06b3ad7afd6e27cf01a95464d369"
+  },
+  "selection_96": {
+    "file": "references/selections/96-picks.md",
+    "ids": 96,
+    "unique_ids": 96,
+    "sha256": "9045b334c9bf6abcd87bb5ca2919394b6b4f9f9f588f71d15839e2f2f0424f97",
+    "missing_catalog_ids": [],
+    "missing_spec_files": []
+  },
+  "combined_unique_ids": 164,
+  "overlap": [],
+  "not_selected": ["009", "010", "011", "012"],
+  "scope": "Integridade das duas curadorias. O smoke test de validation.json executa individualmente a seleção inicial de 68; a galeria completa foi aberta com 168 cartões e nenhum erro de página."
+}

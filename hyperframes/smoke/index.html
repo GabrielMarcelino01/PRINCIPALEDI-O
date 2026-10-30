@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR" data-resolution="portrait" data-fps="60">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>HyperFrames — diagnóstico vertical 60 fps</title>
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #090c12;
+      }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        font-family: Inter, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-hf-id="hf-pqeg"
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="3"
+      data-fps="60"
+      data-width="1080"
+      data-height="1920"
+    >
+      <div data-hf-id="hf-qu0z"
+        id="diagnostic"
+        class="clip"
+        data-composition-id="diagnostic"
+        data-composition-src="compositions/diagnostic.html"
+        data-start="0"
+        data-duration="3"
+        data-track-index="0"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+      ></div>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      const mainTimeline = gsap.timeline({ paused: true });
+      window.__timelines.main = mainTimeline;
+      mainTimeline.seek(0);
+    </script>
+  </body>
+</html>
