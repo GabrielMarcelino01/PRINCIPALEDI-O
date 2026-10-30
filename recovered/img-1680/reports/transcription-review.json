@@ -1,0 +1,56 @@
+{
+  "scope": "Revisão de transcrição por ASR; não equivale a escuta humana integral.",
+  "model": "faster-whisper small CTranslate2 int8",
+  "analysis_audio": "Mono PCM 16 kHz extraído da fonte; o trecho a 0,75× foi usado somente para análise, nunca no master.",
+  "passes": [
+    {
+      "name": "integral-1",
+      "condition_on_previous_text": true,
+      "beam_size": 5,
+      "texts": [
+        "Você precisa parar de achar que roupa apertada é sinônimo de elegância.",
+        "O segredo está em descobrir o que realmente valoriza você.",
+        "Eu achava que me faltavam roupas.",
+        "Mas quando aprendi a combinar melhor, comecei a me sentir muito mais elegante.",
+        "Quando suas roupas não expressam seu estilo, até um armário cheio parece vazio.",
+        "Uma boa combinação muda a forma como você se vê.",
+        "Foi aí que conheci o Truque dos Mil Looks.",
+        "Eu fotografo minhas peças e o aplicativo me ajuda a organizar meu Closet.",
+        "Escolha a ocasião, descubra combinações e salve seus looks favoritos.",
+        "Aproveite melhor o que já tem com o Truque dos Mil Looks.",
+        "Toque em Saiba Mais."
+      ]
+    },
+    {
+      "name": "integral-2",
+      "condition_on_previous_text": false,
+      "beam_size": 8,
+      "difference": "Reconheceu expressam o seu estilo e agrupou as duas últimas falas; os demais conteúdos foram equivalentes."
+    },
+    {
+      "name": "estilo-isolado",
+      "text": "Quando suas roupas não expressam seu estilo, até um armário cheio parece vazio."
+    },
+    {
+      "name": "estilo-isolado-075",
+      "text": "Quando suas roupas não expressam seu estilo, até um armário cheio parece vazio."
+    }
+  ],
+  "decisions": [
+    {
+      "topic": "expressam seu estilo",
+      "decision": "Sem o artigo o",
+      "note": "Duas análises isoladas, normal e 0,75×, confirmaram a forma sem o artigo. Nenhuma palavra foi acrescentada na legenda."
+    },
+    {
+      "topic": "nomenclatura",
+      "decision": "Truque dos Mil Looks e Toque em Saiba Mais",
+      "note": "Mantidas as formas da fala e do CTA visível. Closet recebeu apenas normalização editorial para minúsculas."
+    },
+    {
+      "topic": "cta",
+      "decision": "Não duplicar a última frase",
+      "note": "O grupo permanece no SRT e na transcrição, mas a camada nova não o repete porque a fonte já apresenta TOQUE EM SAIBA MAIS."
+    }
+  ]
+}

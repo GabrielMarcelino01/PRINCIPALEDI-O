@@ -1,0 +1,24 @@
+{
+  "name": "img-1680-facebook-ad",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "IMG_1680: criativo vertical para Facebook Ads com superlegendas, dupla cena, zooms e cortes de pausas.",
+  "scripts": {
+    "media:prepare": "python3 scripts/prepare_img_1680.py",
+    "render": "node img-1680-render.mjs",
+    "storyboard": "node img-1680-render.mjs --storyboard",
+    "validate": "python3 scripts/validate_img_1680.py",
+    "validate:delivery": "python3 scripts/validate_delivery_1680.py"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.522",
+    "@remotion/renderer": "4.0.522",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.522"
+  },
+  "overrides": {
+    "zod": "4.6.6"
+  }
+}
