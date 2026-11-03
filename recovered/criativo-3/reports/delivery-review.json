@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "review_type": "Revisão técnica e visual por quadros extraídos do master codificado",
+  "frames_reviewed": 84,
+  "sheets_reviewed": 7,
+  "caption_cues_reviewed": 32,
+  "cut_boundaries_reviewed": 15,
+  "first_last_reviewed": true,
+  "uniform_samples_reviewed": true,
+  "full_resolution_reviews": [
+    "work/final-review/frame-0007.png",
+    "work/final-review/frame-0034.png",
+    "work/final-review/frame-0043.png",
+    "work/final-review/frame-0061.png",
+    "work/final-review/frame-0075.png",
+    "work/final-review/frame-0082.png",
+    "work/final-review/frame-0084.png"
+  ],
+  "observations": [
+    "Gradiente central discreto e legível sobre as duas cenas, sem obscurecer o rosto ou o conteúdo principal.",
+    "Todas as captions permanecem em uma linha, dentro da largura segura, sem cortes ou sobreposições.",
+    "Os arredores dos 15 cortes preservam a continuidade visual e as entradas das cenas de demonstração e do CTA.",
+    "As telas do aplicativo foram verificadas também em resolução nativa de 720 x 1280.",
+    "O primeiro quadro contém o gancho e o último preserva a marca; o CTA e o gesto de clique estão visíveis."
+  ],
+  "limitations": [
+    "Esta revisão por quadros e medições não equivale a escuta humana integral ou aprovação estética em playback em tempo real.",
+    "Não há evidência de performance ou conversão de campanha; isso exige veiculação e dados reais."
+  ]
+}

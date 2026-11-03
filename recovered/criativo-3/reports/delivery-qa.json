@@ -1,0 +1,214 @@
+{
+  "status": "PASS",
+  "checks": 34,
+  "passed": 34,
+  "failed": 0,
+  "file": "/home/user/PRINCIPALEDI-O/entregas/CRIATIVO-3-EDITADO.mp4",
+  "size_bytes": 13815997,
+  "sha256": "2e8bbce2740b45a3597e812881478b70a354704f496b5523b25176704a7c20d3",
+  "duration_seconds": 44.666667,
+  "frames": 1072,
+  "loudness": {
+    "integrated_lufs": -16.0,
+    "true_peak_dbtp": -1.5
+  },
+  "audio_comparison": {
+    "lag_samples": 0,
+    "correlation": 0.9999949932098389,
+    "rms_ratio": 0.999556839466095,
+    "reference_seconds": 44.63333333333333,
+    "decoded_seconds": 44.63333333333333
+  },
+  "results": [
+    {
+      "name": "source_sha256",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "source_drive_md5",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "final_exists",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "final_size",
+      "status": "PASS",
+      "detail": 13815997
+    },
+    {
+      "name": "source_and_delivery_distinct",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "video_codec",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "dimensions",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "fps",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "frame_count",
+      "status": "PASS",
+      "detail": "1072"
+    },
+    {
+      "name": "video_duration",
+      "status": "PASS",
+      "detail": "44.666667"
+    },
+    {
+      "name": "container_duration",
+      "status": "PASS",
+      "detail": "44.666667"
+    },
+    {
+      "name": "audio_codec",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "audio_format",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "audio_duration",
+      "status": "PASS",
+      "detail": "44.633333"
+    },
+    {
+      "name": "bt709",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "limited_range",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "full_decode",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "loudness_measurement",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "integrated_loudness",
+      "status": "PASS",
+      "detail": {
+        "integrated_lufs": -16.0,
+        "true_peak_dbtp": -1.5
+      }
+    },
+    {
+      "name": "true_peak",
+      "status": "PASS",
+      "detail": {
+        "integrated_lufs": -16.0,
+        "true_peak_dbtp": -1.5
+      }
+    },
+    {
+      "name": "audio_sync_zero_lag",
+      "status": "PASS",
+      "detail": {
+        "lag_samples": 0,
+        "correlation": 0.9999949932098389,
+        "rms_ratio": 0.999556839466095,
+        "reference_seconds": 44.63333333333333,
+        "decoded_seconds": 44.63333333333333
+      }
+    },
+    {
+      "name": "audio_correlation",
+      "status": "PASS",
+      "detail": 0.9999949932098389
+    },
+    {
+      "name": "audio_rms",
+      "status": "PASS",
+      "detail": 0.999556839466095
+    },
+    {
+      "name": "caption_count",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "caption_cps",
+      "status": "PASS",
+      "detail": 20.80536912751675
+    },
+    {
+      "name": "caption_one_line",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "caption_width",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "caption_timing",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "caption_qa",
+      "status": "PASS",
+      "detail": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "name": "video_qa",
+      "status": "PASS",
+      "detail": {
+        "failures": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "name": "project_qa",
+      "status": "PASS",
+      "detail": "38/38"
+    },
+    {
+      "name": "natural_speed",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "no_placeholder_text",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "visual_review",
+      "status": "PASS",
+      "detail": {
+        "frames": 84
+      }
+    }
+  ]
+}

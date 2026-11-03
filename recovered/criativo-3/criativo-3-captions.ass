@@ -1,0 +1,47 @@
+[Script Info]
+Title: CRIATIVO-3 — superlegendas centrais de uma linha
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption,Inter Caption,40,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0.1,0,1,2.4,1.0,5,40,40,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.46,Caption,,0,0,0,,{\fad(50,50)\fs40}{\1c&H00A7D8F2&}Nunca mais{\1c&H00FFFFFF&} perca tempo
+Dialogue: 0,0:00:01.46,0:00:02.67,Caption,,0,0,0,,{\fad(50,50)\fs40}sem saber {\1c&H00A7D8F2&}o que vestir{\1c&H00FFFFFF&}.
+Dialogue: 0,0:00:02.77,0:00:03.81,Caption,,0,0,0,,{\fad(50,50)\fs40}O {\1c&H00A7D8F2&}Truque dos Mil Looks{\1c&H00FFFFFF&}
+Dialogue: 0,0:00:03.81,0:00:05.54,Caption,,0,0,0,,{\fad(50,50)\fs40}ajuda você a {\1c&H00A7D8F2&}sair do básico{\1c&H00FFFFFF&}.
+Dialogue: 0,0:00:05.60,0:00:07.10,Caption,,0,0,0,,{\fad(50,50)\fs40}Descubra {\1c&H00A7D8F2&}combinações elegantes{\1c&H00FFFFFF&}
+Dialogue: 0,0:00:07.10,0:00:08.22,Caption,,0,0,0,,{\fad(50,50)\fs40}com as {\1c&H00A7D8F2&}roupas que já tem{\1c&H00FFFFFF&}
+Dialogue: 0,0:00:08.22,0:00:09.71,Caption,,0,0,0,,{\fad(50,50)\fs40}no armário, {\1c&H00A7D8F2&}sem precisar comprar{\1c&H00FFFFFF&}
+Dialogue: 0,0:00:09.71,0:00:11.04,Caption,,0,0,0,,{\fad(50,50)\fs40}{\1c&H00A7D8F2&}peças novas{\1c&H00FFFFFF&} toda hora.
+Dialogue: 0,0:00:11.16,0:00:12.46,Caption,,0,0,0,,{\fad(50,50)\fs40}E se quiser {\1c&H00A7D8F2&}completar um look{\1c&H00FFFFFF&},
+Dialogue: 0,0:00:12.66,0:00:14.08,Caption,,0,0,0,,{\fad(50,50)\fs40}encontre {\1c&H00A7D8F2&}indicações de peças{\1c&H00FFFFFF&}
+Dialogue: 0,0:00:14.08,0:00:15.50,Caption,,0,0,0,,{\fad(50,50)\fs40}e {\1c&H00A7D8F2&}links{\1c&H00FFFFFF&} para procurar opções
+Dialogue: 0,0:00:15.50,0:00:16.60,Caption,,0,0,0,,{\fad(50,50)\fs40}que {\1c&H00A7D8F2&}cabem no bolso{\1c&H00FFFFFF&}.
+Dialogue: 0,0:00:16.67,0:00:18.33,Caption,,0,0,0,,{\fad(50,50)\fs40}O segredo é seu {\1c&H00A7D8F2&}Closet Virtual{\1c&H00FFFFFF&}.
+Dialogue: 0,0:00:18.48,0:00:19.67,Caption,,0,0,0,,{\fad(50,50)\fs40}{\1c&H00A7D8F2&}Fotografe{\1c&H00FFFFFF&} suas roupas.
+Dialogue: 0,0:00:19.73,0:00:20.45,Caption,,0,0,0,,{\fad(50,50)\fs40}E as {\1c&H00A7D8F2&}peças{\1c&H00FFFFFF&}?
+Dialogue: 0,0:00:20.49,0:00:21.98,Caption,,0,0,0,,{\fad(50,50)\fs37}veja novas maneiras de {\1c&H00A7D8F2&}combiná-las{\1c&H00FFFFFF&}.
+Dialogue: 0,0:00:22.10,0:00:23.15,Caption,,0,0,0,,{\fad(50,50)\fs40}Escolha a {\1c&H00A7D8F2&}ocasião{\1c&H00FFFFFF&}.
+Dialogue: 0,0:00:23.23,0:00:25.23,Caption,,0,0,0,,{\fad(50,50)\fs40}Trabalho, festa, jantar ou passeio.
+Dialogue: 0,0:00:25.39,0:00:26.35,Caption,,0,0,0,,{\fad(50,50)\fs40}O {\1c&H00A7D8F2&}aplicativo{\1c&H00FFFFFF&} encontra
+Dialogue: 0,0:00:26.35,0:00:27.36,Caption,,0,0,0,,{\fad(50,50)\fs40}{\1c&H00A7D8F2&}ideias{\1c&H00FFFFFF&} para o momento.
+Dialogue: 0,0:00:27.50,0:00:29.31,Caption,,0,0,0,,{\fad(50,50)\fs40}Olha só, {\1c&H00A7D8F2&}uma única camisa{\1c&H00FFFFFF&}
+Dialogue: 0,0:00:29.31,0:00:30.71,Caption,,0,0,0,,{\fad(50,50)\fs40}pode ganhar {\1c&H00A7D8F2&}outros estilos{\1c&H00FFFFFF&}.
+Dialogue: 0,0:00:30.75,0:00:31.89,Caption,,0,0,0,,{\fad(50,50)\fs40}Com a calça, o {\1c&H00A7D8F2&}blazer{\1c&H00FFFFFF&}
+Dialogue: 0,0:00:31.89,0:00:33.03,Caption,,0,0,0,,{\fad(50,50)\fs40}e {\1c&H00A7D8F2&}acessórios certos{\1c&H00FFFFFF&}.
+Dialogue: 0,0:00:33.14,0:00:34.98,Caption,,0,0,0,,{\fad(50,50)\fs40}Até o {\1c&H00A7D8F2&}visual mais simples{\1c&H00FFFFFF&} muda
+Dialogue: 0,0:00:34.98,0:00:36.56,Caption,,0,0,0,,{\fad(50,50)\fs40}quando você {\1c&H00A7D8F2&}aprende a coordenar{\1c&H00FFFFFF&}
+Dialogue: 0,0:00:36.56,0:00:37.72,Caption,,0,0,0,,{\fad(50,50)\fs40}as peças que {\1c&H00A7D8F2&}já possui{\1c&H00FFFFFF&}.
+Dialogue: 0,0:00:37.74,0:00:38.82,Caption,,0,0,0,,{\fad(50,50)\fs40}É sobre {\1c&H00A7D8F2&}saber combinar{\1c&H00FFFFFF&}.
+Dialogue: 0,0:00:38.91,0:00:40.27,Caption,,0,0,0,,{\fad(50,50)\fs40}Chega de olhar o {\1c&H00A7D8F2&}guarda-roupa{\1c&H00FFFFFF&}
+Dialogue: 0,0:00:40.27,0:00:41.42,Caption,,0,0,0,,{\fad(50,50)\fs40}e dizer que {\1c&H00A7D8F2&}não tem nada{\1c&H00FFFFFF&}.
+Dialogue: 0,0:00:41.55,0:00:43.11,Caption,,0,0,0,,{\fad(50,50)\fs40}Conheça o {\1c&H00A7D8F2&}Truque dos Mil Looks{\1c&H00FFFFFF&}.
+Dialogue: 0,0:00:43.23,0:00:44.62,Caption,,0,0,0,,{\fad(50,50)\fs40}Toque em {\1c&H00A7D8F2&}Saiba Mais{\1c&H00FFFFFF&}.

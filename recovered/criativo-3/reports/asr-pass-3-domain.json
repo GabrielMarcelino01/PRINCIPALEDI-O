@@ -1,0 +1,1123 @@
+{
+  "pass": 3,
+  "model": "whisper-small-ctranslate2-int8",
+  "language": "pt",
+  "elapsed_seconds": 35.48663592338562,
+  "options": {
+    "language": "pt",
+    "task": "transcribe",
+    "beam_size": 10,
+    "best_of": 10,
+    "patience": 1.5,
+    "word_timestamps": true,
+    "temperature": 0.0,
+    "condition_on_previous_text": true,
+    "vad_filter": false,
+    "initial_prompt": "Truque dos Mil Looks. Closet Virtual. combiná-las. blazer. aplicativo. ocasião."
+  },
+  "segments": [
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 0.0,
+      "end": 2.62,
+      "text": " Nunca mais perca tempo sem saber o que vestir.",
+      "avg_logprob": -0.10006630535942415,
+      "no_speech_prob": 0.03314812853932381,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.62,
+          "word": " Nunca",
+          "probability": 0.9540717601776123
+        },
+        {
+          "start": 0.62,
+          "end": 0.86,
+          "word": " mais",
+          "probability": 0.9990336894989014
+        },
+        {
+          "start": 0.86,
+          "end": 1.14,
+          "word": " perca",
+          "probability": 0.9921023845672607
+        },
+        {
+          "start": 1.14,
+          "end": 1.46,
+          "word": " tempo",
+          "probability": 0.9124360680580139
+        },
+        {
+          "start": 1.46,
+          "end": 1.7,
+          "word": " sem",
+          "probability": 0.9324336647987366
+        },
+        {
+          "start": 1.7,
+          "end": 2.0,
+          "word": " saber",
+          "probability": 0.9985452890396118
+        },
+        {
+          "start": 2.0,
+          "end": 2.12,
+          "word": " o",
+          "probability": 0.998290479183197
+        },
+        {
+          "start": 2.12,
+          "end": 2.2,
+          "word": " que",
+          "probability": 0.9941356182098389
+        },
+        {
+          "start": 2.2,
+          "end": 2.62,
+          "word": " vestir.",
+          "probability": 0.9922299981117249
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 3.02,
+      "end": 5.7,
+      "text": " O Truque dos Mil Looks ajuda você a sair do básico.",
+      "avg_logprob": -0.10006630535942415,
+      "no_speech_prob": 0.03314812853932381,
+      "words": [
+        {
+          "start": 3.02,
+          "end": 3.18,
+          "word": " O",
+          "probability": 0.9629076719284058
+        },
+        {
+          "start": 3.18,
+          "end": 3.42,
+          "word": " Truque",
+          "probability": 0.6386516988277435
+        },
+        {
+          "start": 3.42,
+          "end": 3.58,
+          "word": " dos",
+          "probability": 0.9573044180870056
+        },
+        {
+          "start": 3.58,
+          "end": 3.74,
+          "word": " Mil",
+          "probability": 0.5749030709266663
+        },
+        {
+          "start": 3.74,
+          "end": 4.02,
+          "word": " Looks",
+          "probability": 0.28824010491371155
+        },
+        {
+          "start": 4.02,
+          "end": 4.36,
+          "word": " ajuda",
+          "probability": 0.9422078132629395
+        },
+        {
+          "start": 4.36,
+          "end": 4.7,
+          "word": " você",
+          "probability": 0.9949045181274414
+        },
+        {
+          "start": 4.7,
+          "end": 4.86,
+          "word": " a",
+          "probability": 0.9939354062080383
+        },
+        {
+          "start": 4.86,
+          "end": 5.04,
+          "word": " sair",
+          "probability": 0.9962819218635559
+        },
+        {
+          "start": 5.04,
+          "end": 5.2,
+          "word": " do",
+          "probability": 0.996776282787323
+        },
+        {
+          "start": 5.2,
+          "end": 5.7,
+          "word": " básico.",
+          "probability": 0.993890792131424
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 6.14,
+      "end": 9.24,
+      "text": " Descubra combinações elegantes com as roupas que já tem no armário,",
+      "avg_logprob": -0.10006630535942415,
+      "no_speech_prob": 0.03314812853932381,
+      "words": [
+        {
+          "start": 6.14,
+          "end": 6.54,
+          "word": " Descubra",
+          "probability": 0.9810872673988342
+        },
+        {
+          "start": 6.54,
+          "end": 7.06,
+          "word": " combinações",
+          "probability": 0.9952978690465292
+        },
+        {
+          "start": 7.06,
+          "end": 7.6,
+          "word": " elegantes",
+          "probability": 0.9942428469657898
+        },
+        {
+          "start": 7.6,
+          "end": 7.82,
+          "word": " com",
+          "probability": 0.997961163520813
+        },
+        {
+          "start": 7.82,
+          "end": 7.96,
+          "word": " as",
+          "probability": 0.9976093769073486
+        },
+        {
+          "start": 7.96,
+          "end": 8.28,
+          "word": " roupas",
+          "probability": 0.9974570274353027
+        },
+        {
+          "start": 8.28,
+          "end": 8.4,
+          "word": " que",
+          "probability": 0.9959250688552856
+        },
+        {
+          "start": 8.4,
+          "end": 8.6,
+          "word": " já",
+          "probability": 0.9957742094993591
+        },
+        {
+          "start": 8.6,
+          "end": 8.72,
+          "word": " tem",
+          "probability": 0.6491715312004089
+        },
+        {
+          "start": 8.72,
+          "end": 8.84,
+          "word": " no",
+          "probability": 0.9861370325088501
+        },
+        {
+          "start": 8.84,
+          "end": 9.24,
+          "word": " armário,",
+          "probability": 0.9982112348079681
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 9.54,
+      "end": 11.7,
+      "text": " sem precisar comprar peças novas toda hora.",
+      "avg_logprob": -0.10006630535942415,
+      "no_speech_prob": 0.03314812853932381,
+      "words": [
+        {
+          "start": 9.54,
+          "end": 9.76,
+          "word": " sem",
+          "probability": 0.9902804493904114
+        },
+        {
+          "start": 9.76,
+          "end": 10.16,
+          "word": " precisar",
+          "probability": 0.9989883005619049
+        },
+        {
+          "start": 10.16,
+          "end": 10.42,
+          "word": " comprar",
+          "probability": 0.9980489015579224
+        },
+        {
+          "start": 10.42,
+          "end": 10.78,
+          "word": " peças",
+          "probability": 0.9889577925205231
+        },
+        {
+          "start": 10.78,
+          "end": 11.16,
+          "word": " novas",
+          "probability": 0.9930398762226105
+        },
+        {
+          "start": 11.16,
+          "end": 11.36,
+          "word": " toda",
+          "probability": 0.9925824403762817
+        },
+        {
+          "start": 11.36,
+          "end": 11.7,
+          "word": " hora.",
+          "probability": 0.9815766215324402
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 12.16,
+      "end": 13.42,
+      "text": " E se quiser completar um look,",
+      "avg_logprob": -0.10006630535942415,
+      "no_speech_prob": 0.03314812853932381,
+      "words": [
+        {
+          "start": 12.16,
+          "end": 12.28,
+          "word": " E",
+          "probability": 0.8970949053764343
+        },
+        {
+          "start": 12.28,
+          "end": 12.32,
+          "word": " se",
+          "probability": 0.6820180416107178
+        },
+        {
+          "start": 12.32,
+          "end": 12.58,
+          "word": " quiser",
+          "probability": 0.997837483882904
+        },
+        {
+          "start": 12.58,
+          "end": 13.02,
+          "word": " completar",
+          "probability": 0.9968723952770233
+        },
+        {
+          "start": 13.02,
+          "end": 13.18,
+          "word": " um",
+          "probability": 0.9798413515090942
+        },
+        {
+          "start": 13.18,
+          "end": 13.42,
+          "word": " look,",
+          "probability": 0.8799181580543518
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "seek": 0,
+      "start": 13.82,
+      "end": 17.68,
+      "text": " encontre indicações de peças e links para procurar opções que cabem no bolso.",
+      "avg_logprob": -0.10006630535942415,
+      "no_speech_prob": 0.03314812853932381,
+      "words": [
+        {
+          "start": 13.82,
+          "end": 14.12,
+          "word": " encontre",
+          "probability": 0.8379279971122742
+        },
+        {
+          "start": 14.12,
+          "end": 14.66,
+          "word": " indicações",
+          "probability": 0.9863183697064718
+        },
+        {
+          "start": 14.66,
+          "end": 14.84,
+          "word": " de",
+          "probability": 0.9978808164596558
+        },
+        {
+          "start": 14.84,
+          "end": 15.2,
+          "word": " peças",
+          "probability": 0.9970313012599945
+        },
+        {
+          "start": 15.2,
+          "end": 15.38,
+          "word": " e",
+          "probability": 0.9942224621772766
+        },
+        {
+          "start": 15.38,
+          "end": 15.62,
+          "word": " links",
+          "probability": 0.9942324757575989
+        },
+        {
+          "start": 15.62,
+          "end": 15.86,
+          "word": " para",
+          "probability": 0.9774745106697083
+        },
+        {
+          "start": 15.86,
+          "end": 16.22,
+          "word": " procurar",
+          "probability": 0.9986252188682556
+        },
+        {
+          "start": 16.22,
+          "end": 16.62,
+          "word": " opções",
+          "probability": 0.9977053701877594
+        },
+        {
+          "start": 16.62,
+          "end": 16.86,
+          "word": " que",
+          "probability": 0.9984902143478394
+        },
+        {
+          "start": 16.86,
+          "end": 17.16,
+          "word": " cabem",
+          "probability": 0.9916142821311951
+        },
+        {
+          "start": 17.16,
+          "end": 17.28,
+          "word": " no",
+          "probability": 0.9959793090820312
+        },
+        {
+          "start": 17.28,
+          "end": 17.68,
+          "word": " bolso.",
+          "probability": 0.9956176578998566
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "seek": 0,
+      "start": 18.16,
+      "end": 19.74,
+      "text": " O segredo é seu Closet Virtual.",
+      "avg_logprob": -0.10006630535942415,
+      "no_speech_prob": 0.03314812853932381,
+      "words": [
+        {
+          "start": 18.16,
+          "end": 18.3,
+          "word": " O",
+          "probability": 0.9929314851760864
+        },
+        {
+          "start": 18.3,
+          "end": 18.72,
+          "word": " segredo",
+          "probability": 0.9951342940330505
+        },
+        {
+          "start": 18.72,
+          "end": 18.82,
+          "word": " é",
+          "probability": 0.9973082542419434
+        },
+        {
+          "start": 18.82,
+          "end": 18.98,
+          "word": " seu",
+          "probability": 0.9216188788414001
+        },
+        {
+          "start": 18.98,
+          "end": 19.4,
+          "word": " Closet",
+          "probability": 0.8083296418190002
+        },
+        {
+          "start": 19.4,
+          "end": 19.74,
+          "word": " Virtual.",
+          "probability": 0.6737072467803955
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "seek": 0,
+      "start": 20.06,
+      "end": 21.18,
+      "text": " Fotografe suas roupas.",
+      "avg_logprob": -0.10006630535942415,
+      "no_speech_prob": 0.03314812853932381,
+      "words": [
+        {
+          "start": 20.06,
+          "end": 20.54,
+          "word": " Fotografe",
+          "probability": 0.8473252058029175
+        },
+        {
+          "start": 20.54,
+          "end": 20.68,
+          "word": " suas",
+          "probability": 0.9274288415908813
+        },
+        {
+          "start": 20.68,
+          "end": 21.18,
+          "word": " roupas.",
+          "probability": 0.9978484511375427
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "seek": 0,
+      "start": 21.48,
+      "end": 23.64,
+      "text": " E as peças, veja novas maneiras de combiná-las.",
+      "avg_logprob": -0.10006630535942415,
+      "no_speech_prob": 0.03314812853932381,
+      "words": [
+        {
+          "start": 21.48,
+          "end": 21.6,
+          "word": " E",
+          "probability": 0.9307254552841187
+        },
+        {
+          "start": 21.6,
+          "end": 21.74,
+          "word": " as",
+          "probability": 0.9903278946876526
+        },
+        {
+          "start": 21.74,
+          "end": 22.1,
+          "word": " peças,",
+          "probability": 0.9972943663597107
+        },
+        {
+          "start": 22.24,
+          "end": 22.46,
+          "word": " veja",
+          "probability": 0.9950902462005615
+        },
+        {
+          "start": 22.46,
+          "end": 22.72,
+          "word": " novas",
+          "probability": 0.9906410276889801
+        },
+        {
+          "start": 22.72,
+          "end": 23.1,
+          "word": " maneiras",
+          "probability": 0.9981142580509186
+        },
+        {
+          "start": 23.1,
+          "end": 23.2,
+          "word": " de",
+          "probability": 0.9563985466957092
+        },
+        {
+          "start": 23.2,
+          "end": 23.5,
+          "word": " combiná",
+          "probability": 0.5130480155348778
+        },
+        {
+          "start": 23.5,
+          "end": 23.64,
+          "word": "-las.",
+          "probability": 0.994034618139267
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "seek": 0,
+      "start": 24.16,
+      "end": 25.08,
+      "text": " Escolha a ocasião.",
+      "avg_logprob": -0.10006630535942415,
+      "no_speech_prob": 0.03314812853932381,
+      "words": [
+        {
+          "start": 24.16,
+          "end": 24.54,
+          "word": " Escolha",
+          "probability": 0.9400215546290079
+        },
+        {
+          "start": 24.54,
+          "end": 24.62,
+          "word": " a",
+          "probability": 0.9607107043266296
+        },
+        {
+          "start": 24.62,
+          "end": 25.08,
+          "word": " ocasião.",
+          "probability": 0.9363893071810404
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "seek": 0,
+      "start": 25.44,
+      "end": 27.4,
+      "text": " Trabalho, festa, jantar ou passeio.",
+      "avg_logprob": -0.10006630535942415,
+      "no_speech_prob": 0.03314812853932381,
+      "words": [
+        {
+          "start": 25.44,
+          "end": 25.94,
+          "word": " Trabalho,",
+          "probability": 0.9518798987070719
+        },
+        {
+          "start": 26.1,
+          "end": 26.24,
+          "word": " festa,",
+          "probability": 0.9899430274963379
+        },
+        {
+          "start": 26.48,
+          "end": 26.78,
+          "word": " jantar",
+          "probability": 0.9877185225486755
+        },
+        {
+          "start": 26.78,
+          "end": 26.92,
+          "word": " ou",
+          "probability": 0.987697422504425
+        },
+        {
+          "start": 26.92,
+          "end": 27.4,
+          "word": " passeio.",
+          "probability": 0.9950711131095886
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "seek": 0,
+      "start": 27.6,
+      "end": 29.46,
+      "text": " O aplicativo a encontrar ideias para momento.",
+      "avg_logprob": -0.10006630535942415,
+      "no_speech_prob": 0.03314812853932381,
+      "words": [
+        {
+          "start": 27.6,
+          "end": 27.64,
+          "word": " O",
+          "probability": 0.9955310225486755
+        },
+        {
+          "start": 27.64,
+          "end": 28.12,
+          "word": " aplicativo",
+          "probability": 0.9944464564323425
+        },
+        {
+          "start": 28.12,
+          "end": 28.22,
+          "word": " a",
+          "probability": 0.47491273283958435
+        },
+        {
+          "start": 28.22,
+          "end": 28.52,
+          "word": " encontrar",
+          "probability": 0.9942346215248108
+        },
+        {
+          "start": 28.52,
+          "end": 29.04,
+          "word": " ideias",
+          "probability": 0.9533829689025879
+        },
+        {
+          "start": 29.04,
+          "end": 29.18,
+          "word": " para",
+          "probability": 0.9858422875404358
+        },
+        {
+          "start": 29.18,
+          "end": 29.46,
+          "word": " momento.",
+          "probability": 0.8507921099662781
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "seek": 2946,
+      "start": 29.46,
+      "end": 33.54,
+      "text": " Olha só, uma única camisa pode ganhar outros estilos.",
+      "avg_logprob": -0.09541239906792287,
+      "no_speech_prob": 0.02597113512456417,
+      "words": [
+        {
+          "start": 29.46,
+          "end": 30.38,
+          "word": " Olha",
+          "probability": 0.677189826965332
+        },
+        {
+          "start": 30.38,
+          "end": 30.66,
+          "word": " só,",
+          "probability": 0.9927500486373901
+        },
+        {
+          "start": 31.12,
+          "end": 31.34,
+          "word": " uma",
+          "probability": 0.9816945195198059
+        },
+        {
+          "start": 31.34,
+          "end": 31.64,
+          "word": " única",
+          "probability": 0.9891812205314636
+        },
+        {
+          "start": 31.64,
+          "end": 32.14,
+          "word": " camisa",
+          "probability": 0.997912734746933
+        },
+        {
+          "start": 32.14,
+          "end": 32.36,
+          "word": " pode",
+          "probability": 0.9874373078346252
+        },
+        {
+          "start": 32.36,
+          "end": 32.66,
+          "word": " ganhar",
+          "probability": 0.99480801820755
+        },
+        {
+          "start": 32.66,
+          "end": 33.0,
+          "word": " outros",
+          "probability": 0.9968144297599792
+        },
+        {
+          "start": 33.0,
+          "end": 33.54,
+          "word": " estilos.",
+          "probability": 0.9874732792377472
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "seek": 2946,
+      "start": 33.62,
+      "end": 35.8,
+      "text": " Com a calça, o blazer e acessórios certos.",
+      "avg_logprob": -0.09541239906792287,
+      "no_speech_prob": 0.02597113512456417,
+      "words": [
+        {
+          "start": 33.62,
+          "end": 33.66,
+          "word": " Com",
+          "probability": 0.9356817603111267
+        },
+        {
+          "start": 33.66,
+          "end": 33.78,
+          "word": " a",
+          "probability": 0.9949216246604919
+        },
+        {
+          "start": 33.78,
+          "end": 34.18,
+          "word": " calça,",
+          "probability": 0.9946023225784302
+        },
+        {
+          "start": 34.36,
+          "end": 34.4,
+          "word": " o",
+          "probability": 0.973770260810852
+        },
+        {
+          "start": 34.4,
+          "end": 34.72,
+          "word": " blazer",
+          "probability": 0.6457868665456772
+        },
+        {
+          "start": 34.72,
+          "end": 34.84,
+          "word": " e",
+          "probability": 0.46093299984931946
+        },
+        {
+          "start": 34.84,
+          "end": 35.26,
+          "word": " acessórios",
+          "probability": 0.7894297614693642
+        },
+        {
+          "start": 35.26,
+          "end": 35.8,
+          "word": " certos.",
+          "probability": 0.9984719753265381
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "seek": 2946,
+      "start": 36.24,
+      "end": 40.76,
+      "text": " Até o visual mais simples muda quando você aprende a coordenar as peças que já possui.",
+      "avg_logprob": -0.09541239906792287,
+      "no_speech_prob": 0.02597113512456417,
+      "words": [
+        {
+          "start": 36.24,
+          "end": 36.48,
+          "word": " Até",
+          "probability": 0.9800951480865479
+        },
+        {
+          "start": 36.48,
+          "end": 36.6,
+          "word": " o",
+          "probability": 0.9937509894371033
+        },
+        {
+          "start": 36.6,
+          "end": 36.88,
+          "word": " visual",
+          "probability": 0.9963388442993164
+        },
+        {
+          "start": 36.88,
+          "end": 37.1,
+          "word": " mais",
+          "probability": 0.9939343333244324
+        },
+        {
+          "start": 37.1,
+          "end": 37.48,
+          "word": " simples",
+          "probability": 0.9993789196014404
+        },
+        {
+          "start": 37.48,
+          "end": 38.02,
+          "word": " muda",
+          "probability": 0.9930581152439117
+        },
+        {
+          "start": 38.02,
+          "end": 38.38,
+          "word": " quando",
+          "probability": 0.8948031663894653
+        },
+        {
+          "start": 38.38,
+          "end": 38.66,
+          "word": " você",
+          "probability": 0.9936078786849976
+        },
+        {
+          "start": 38.66,
+          "end": 39.12,
+          "word": " aprende",
+          "probability": 0.9930426478385925
+        },
+        {
+          "start": 39.12,
+          "end": 39.16,
+          "word": " a",
+          "probability": 0.9970635771751404
+        },
+        {
+          "start": 39.16,
+          "end": 39.6,
+          "word": " coordenar",
+          "probability": 0.9946612517038981
+        },
+        {
+          "start": 39.6,
+          "end": 39.74,
+          "word": " as",
+          "probability": 0.9857509136199951
+        },
+        {
+          "start": 39.74,
+          "end": 40.04,
+          "word": " peças",
+          "probability": 0.9949164688587189
+        },
+        {
+          "start": 40.04,
+          "end": 40.22,
+          "word": " que",
+          "probability": 0.9963952898979187
+        },
+        {
+          "start": 40.22,
+          "end": 40.38,
+          "word": " já",
+          "probability": 0.9933068156242371
+        },
+        {
+          "start": 40.38,
+          "end": 40.76,
+          "word": " possui.",
+          "probability": 0.844563901424408
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "seek": 2946,
+      "start": 40.78,
+      "end": 41.82,
+      "text": " É sobre saber combinar.",
+      "avg_logprob": -0.09541239906792287,
+      "no_speech_prob": 0.02597113512456417,
+      "words": [
+        {
+          "start": 40.78,
+          "end": 40.84,
+          "word": " É",
+          "probability": 0.9741264581680298
+        },
+        {
+          "start": 40.84,
+          "end": 41.06,
+          "word": " sobre",
+          "probability": 0.9889589548110962
+        },
+        {
+          "start": 41.06,
+          "end": 41.36,
+          "word": " saber",
+          "probability": 0.9964243769645691
+        },
+        {
+          "start": 41.36,
+          "end": 41.82,
+          "word": " combinar.",
+          "probability": 0.9947819709777832
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "seek": 2946,
+      "start": 42.2,
+      "end": 44.62,
+      "text": " Chega de olhar o guarda-roupa e dizer que não tem nada.",
+      "avg_logprob": -0.09541239906792287,
+      "no_speech_prob": 0.02597113512456417,
+      "words": [
+        {
+          "start": 42.2,
+          "end": 42.42,
+          "word": " Chega",
+          "probability": 0.985722154378891
+        },
+        {
+          "start": 42.42,
+          "end": 42.54,
+          "word": " de",
+          "probability": 0.9964848756790161
+        },
+        {
+          "start": 42.54,
+          "end": 42.72,
+          "word": " olhar",
+          "probability": 0.9976851940155029
+        },
+        {
+          "start": 42.72,
+          "end": 42.86,
+          "word": " o",
+          "probability": 0.9962108135223389
+        },
+        {
+          "start": 42.86,
+          "end": 43.14,
+          "word": " guarda",
+          "probability": 0.9797846078872681
+        },
+        {
+          "start": 43.14,
+          "end": 43.52,
+          "word": "-roupa",
+          "probability": 0.9617414027452469
+        },
+        {
+          "start": 43.52,
+          "end": 43.58,
+          "word": " e",
+          "probability": 0.9880168437957764
+        },
+        {
+          "start": 43.58,
+          "end": 43.82,
+          "word": " dizer",
+          "probability": 0.9980124235153198
+        },
+        {
+          "start": 43.82,
+          "end": 44.0,
+          "word": " que",
+          "probability": 0.9987418055534363
+        },
+        {
+          "start": 44.0,
+          "end": 44.12,
+          "word": " não",
+          "probability": 0.9945628046989441
+        },
+        {
+          "start": 44.12,
+          "end": 44.28,
+          "word": " tem",
+          "probability": 0.9927489161491394
+        },
+        {
+          "start": 44.28,
+          "end": 44.62,
+          "word": " nada.",
+          "probability": 0.9991841912269592
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "seek": 2946,
+      "start": 44.82,
+      "end": 46.32,
+      "text": " Conheça o Truque dos Mil Looks.",
+      "avg_logprob": -0.09541239906792287,
+      "no_speech_prob": 0.02597113512456417,
+      "words": [
+        {
+          "start": 44.82,
+          "end": 45.26,
+          "word": " Conheça",
+          "probability": 0.9922819336255392
+        },
+        {
+          "start": 45.26,
+          "end": 45.38,
+          "word": " o",
+          "probability": 0.9493658542633057
+        },
+        {
+          "start": 45.38,
+          "end": 45.7,
+          "word": " Truque",
+          "probability": 0.5373484268784523
+        },
+        {
+          "start": 45.7,
+          "end": 45.84,
+          "word": " dos",
+          "probability": 0.9820241332054138
+        },
+        {
+          "start": 45.84,
+          "end": 46.02,
+          "word": " Mil",
+          "probability": 0.7108033895492554
+        },
+        {
+          "start": 46.02,
+          "end": 46.32,
+          "word": " Looks.",
+          "probability": 0.4544394016265869
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "seek": 2946,
+      "start": 46.62,
+      "end": 47.6,
+      "text": " Toque em Saiba Mais.",
+      "avg_logprob": -0.09541239906792287,
+      "no_speech_prob": 0.02597113512456417,
+      "words": [
+        {
+          "start": 46.62,
+          "end": 46.96,
+          "word": " Toque",
+          "probability": 0.4781712293624878
+        },
+        {
+          "start": 46.96,
+          "end": 47.06,
+          "word": " em",
+          "probability": 0.9964680671691895
+        },
+        {
+          "start": 47.06,
+          "end": 47.38,
+          "word": " Saiba",
+          "probability": 0.8523711562156677
+        },
+        {
+          "start": 47.38,
+          "end": 47.6,
+          "word": " Mais.",
+          "probability": 0.6445611119270325
+        }
+      ]
+    }
+  ]
+}

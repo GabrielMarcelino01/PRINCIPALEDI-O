@@ -1,0 +1,396 @@
+{
+  "file": "/home/user/PRINCIPALEDI-O/recovered/criativo-3/criativo-3-captions.srt",
+  "status": "pass",
+  "caption_count": 32,
+  "summary": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "issues": [],
+  "captions": [
+    {
+      "block": 1,
+      "start": 0.0,
+      "end": 1.46,
+      "duration": 1.46,
+      "text": "Nunca mais perca tempo",
+      "lines": 1,
+      "line_lengths": [
+        22
+      ],
+      "characters_per_second": 13.01
+    },
+    {
+      "block": 2,
+      "start": 1.46,
+      "end": 2.67,
+      "duration": 1.21,
+      "text": "sem saber o que vestir.",
+      "lines": 1,
+      "line_lengths": [
+        23
+      ],
+      "characters_per_second": 15.7
+    },
+    {
+      "block": 3,
+      "start": 2.7720000000000002,
+      "end": 3.8120000000000003,
+      "duration": 1.04,
+      "text": "O Truque dos Mil Looks",
+      "lines": 1,
+      "line_lengths": [
+        22
+      ],
+      "characters_per_second": 17.31
+    },
+    {
+      "block": 4,
+      "start": 3.8120000000000003,
+      "end": 5.542,
+      "duration": 1.7299999999999995,
+      "text": "ajuda você a sair do básico.",
+      "lines": 1,
+      "line_lengths": [
+        28
+      ],
+      "characters_per_second": 13.29
+    },
+    {
+      "block": 5,
+      "start": 5.6,
+      "end": 7.1,
+      "duration": 1.5,
+      "text": "Descubra combinações elegantes",
+      "lines": 1,
+      "line_lengths": [
+        30
+      ],
+      "characters_per_second": 18.67
+    },
+    {
+      "block": 6,
+      "start": 7.1,
+      "end": 8.22,
+      "duration": 1.120000000000001,
+      "text": "com as roupas que já tem",
+      "lines": 1,
+      "line_lengths": [
+        24
+      ],
+      "characters_per_second": 16.96
+    },
+    {
+      "block": 7,
+      "start": 8.22,
+      "end": 9.712,
+      "duration": 1.491999999999999,
+      "text": "no armário, sem precisar comprar",
+      "lines": 1,
+      "line_lengths": [
+        32
+      ],
+      "characters_per_second": 18.77
+    },
+    {
+      "block": 8,
+      "start": 9.712,
+      "end": 11.042,
+      "duration": 1.33,
+      "text": "peças novas toda hora.",
+      "lines": 1,
+      "line_lengths": [
+        22
+      ],
+      "characters_per_second": 14.29
+    },
+    {
+      "block": 9,
+      "start": 11.162,
+      "end": 12.462,
+      "duration": 1.299999999999999,
+      "text": "E se quiser completar um look,",
+      "lines": 1,
+      "line_lengths": [
+        30
+      ],
+      "characters_per_second": 19.23
+    },
+    {
+      "block": 10,
+      "start": 12.655,
+      "end": 14.075,
+      "duration": 1.42,
+      "text": "encontre indicações de peças",
+      "lines": 1,
+      "line_lengths": [
+        28
+      ],
+      "characters_per_second": 17.61
+    },
+    {
+      "block": 11,
+      "start": 14.075,
+      "end": 15.495,
+      "duration": 1.42,
+      "text": "e links para procurar opções",
+      "lines": 1,
+      "line_lengths": [
+        28
+      ],
+      "characters_per_second": 16.9
+    },
+    {
+      "block": 12,
+      "start": 15.495,
+      "end": 16.605,
+      "duration": 1.1100000000000012,
+      "text": "que cabem no bolso.",
+      "lines": 1,
+      "line_lengths": [
+        19
+      ],
+      "characters_per_second": 14.41
+    },
+    {
+      "block": 13,
+      "start": 16.672,
+      "end": 18.332,
+      "duration": 1.6600000000000001,
+      "text": "O segredo é seu Closet Virtual.",
+      "lines": 1,
+      "line_lengths": [
+        31
+      ],
+      "characters_per_second": 15.66
+    },
+    {
+      "block": 14,
+      "start": 18.478,
+      "end": 19.668,
+      "duration": 1.1899999999999977,
+      "text": "Fotografe suas roupas.",
+      "lines": 1,
+      "line_lengths": [
+        22
+      ],
+      "characters_per_second": 16.81
+    },
+    {
+      "block": 15,
+      "start": 19.732,
+      "end": 20.452,
+      "duration": 0.7200000000000024,
+      "text": "E as peças?",
+      "lines": 1,
+      "line_lengths": [
+        11
+      ],
+      "characters_per_second": 12.5
+    },
+    {
+      "block": 16,
+      "start": 20.492,
+      "end": 21.982,
+      "duration": 1.4899999999999984,
+      "text": "veja novas maneiras de combiná-las.",
+      "lines": 1,
+      "line_lengths": [
+        35
+      ],
+      "characters_per_second": 20.81
+    },
+    {
+      "block": 17,
+      "start": 22.1,
+      "end": 23.15,
+      "duration": 1.0499999999999972,
+      "text": "Escolha a ocasião.",
+      "lines": 1,
+      "line_lengths": [
+        18
+      ],
+      "characters_per_second": 15.24
+    },
+    {
+      "block": 18,
+      "start": 23.233,
+      "end": 25.233,
+      "duration": 2.0,
+      "text": "Trabalho, festa, jantar ou passeio.",
+      "lines": 1,
+      "line_lengths": [
+        35
+      ],
+      "characters_per_second": 15.5
+    },
+    {
+      "block": 19,
+      "start": 25.393,
+      "end": 26.353,
+      "duration": 0.9600000000000009,
+      "text": "O aplicativo encontra",
+      "lines": 1,
+      "line_lengths": [
+        21
+      ],
+      "characters_per_second": 19.79
+    },
+    {
+      "block": 20,
+      "start": 26.353,
+      "end": 27.363,
+      "duration": 1.009999999999998,
+      "text": "ideias para o momento.",
+      "lines": 1,
+      "line_lengths": [
+        22
+      ],
+      "characters_per_second": 18.81
+    },
+    {
+      "block": 21,
+      "start": 27.498,
+      "end": 29.307,
+      "duration": 1.8089999999999975,
+      "text": "Olha só, uma única camisa",
+      "lines": 1,
+      "line_lengths": [
+        25
+      ],
+      "characters_per_second": 11.61
+    },
+    {
+      "block": 22,
+      "start": 29.307,
+      "end": 30.707,
+      "duration": 1.4000000000000021,
+      "text": "pode ganhar outros estilos.",
+      "lines": 1,
+      "line_lengths": [
+        27
+      ],
+      "characters_per_second": 17.14
+    },
+    {
+      "block": 23,
+      "start": 30.747,
+      "end": 31.887,
+      "duration": 1.1400000000000006,
+      "text": "Com a calça, o blazer",
+      "lines": 1,
+      "line_lengths": [
+        21
+      ],
+      "characters_per_second": 14.91
+    },
+    {
+      "block": 24,
+      "start": 31.887,
+      "end": 33.027,
+      "duration": 1.1400000000000006,
+      "text": "e acessórios certos.",
+      "lines": 1,
+      "line_lengths": [
+        20
+      ],
+      "characters_per_second": 15.79
+    },
+    {
+      "block": 25,
+      "start": 33.138,
+      "end": 34.978,
+      "duration": 1.8400000000000034,
+      "text": "Até o visual mais simples muda",
+      "lines": 1,
+      "line_lengths": [
+        30
+      ],
+      "characters_per_second": 13.59
+    },
+    {
+      "block": 26,
+      "start": 34.978,
+      "end": 36.558,
+      "duration": 1.5799999999999983,
+      "text": "quando você aprende a coordenar",
+      "lines": 1,
+      "line_lengths": [
+        31
+      ],
+      "characters_per_second": 17.09
+    },
+    {
+      "block": 27,
+      "start": 36.558,
+      "end": 37.718,
+      "duration": 1.1600000000000037,
+      "text": "as peças que já possui.",
+      "lines": 1,
+      "line_lengths": [
+        23
+      ],
+      "characters_per_second": 16.38
+    },
+    {
+      "block": 28,
+      "start": 37.738,
+      "end": 38.818,
+      "duration": 1.0799999999999983,
+      "text": "É sobre saber combinar.",
+      "lines": 1,
+      "line_lengths": [
+        23
+      ],
+      "characters_per_second": 18.52
+    },
+    {
+      "block": 29,
+      "start": 38.91,
+      "end": 40.27,
+      "duration": 1.3600000000000065,
+      "text": "Chega de olhar o guarda-roupa",
+      "lines": 1,
+      "line_lengths": [
+        29
+      ],
+      "characters_per_second": 18.38
+    },
+    {
+      "block": 30,
+      "start": 40.27,
+      "end": 41.42,
+      "duration": 1.1499999999999986,
+      "text": "e dizer que não tem nada.",
+      "lines": 1,
+      "line_lengths": [
+        25
+      ],
+      "characters_per_second": 17.39
+    },
+    {
+      "block": 31,
+      "start": 41.55,
+      "end": 43.11,
+      "duration": 1.5600000000000023,
+      "text": "Conheça o Truque dos Mil Looks.",
+      "lines": 1,
+      "line_lengths": [
+        31
+      ],
+      "characters_per_second": 16.67
+    },
+    {
+      "block": 32,
+      "start": 43.227,
+      "end": 44.617,
+      "duration": 1.3900000000000006,
+      "text": "Toque em Saiba Mais.",
+      "lines": 1,
+      "line_lengths": [
+        20
+      ],
+      "characters_per_second": 12.23
+    }
+  ]
+}

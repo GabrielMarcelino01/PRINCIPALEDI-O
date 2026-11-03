@@ -16,6 +16,7 @@ Esta pasta contém **somente vídeos finalizados e suas prévias leves**. Os upl
 | `TEMPORAL-60FPS.mp4` | Demonstração visual do pipeline determinístico — 1080×1920, 60 fps, 360 frames / 6 s; sem áudio. |
 | `SOFIA-1-EDITADO.mp4` | Master do SOFIA-1 — 1080×1920, 60 fps, 1.506 frames / 25,1 s; quatro paletas animadas, 14 captions e CTA no close original. |
 | `SOFIA-1-PREVIA.mp4` | Prévia leve do SOFIA-1 — 540×960, 60 fps, 1.506 frames / 25,1 s; mesmo corte, layout e áudio do master. |
+| `CRIATIVO-3-EDITADO.mp4` | Master do CRIATIVO-3 — 720×1280, 24 fps, 1.072 frames / 44,67 s; gradiente e 32 captions centrais de uma linha, 15 pausas encurtadas e áudio masterizado. |
 
 ## Onde ficam os outros materiais
 
@@ -31,3 +32,4 @@ Esta pasta contém **somente vídeos finalizados e suas prévias leves**. Os upl
 - `../reels-studio/CLOSET-5.md`, `CLOSET-5-QA.md` e `reports/closet-5-*.json`: especificação e QA do CLOSET-5.
 - `../skills/temporal-reel/`: skill, timeline, código e relatórios da demonstração temporal.
 - `../docs/TEMPORAL-60FPS.md`: escopo do render e da revisão da demonstração visual.
+- `../recovered/criativo-3/`: projeto, SRT/ASS, fonte licenciada, gradiente, scripts e relatórios do CRIATIVO-3.

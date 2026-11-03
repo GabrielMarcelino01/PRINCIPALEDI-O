@@ -1,0 +1,23 @@
+{
+  "target": {
+    "integrated_lufs": -16.0,
+    "true_peak_dbtp": -1.5,
+    "lra_lu": 7.0
+  },
+  "first_pass": {
+    "input_i": "-22.43",
+    "input_tp": "-6.43",
+    "input_lra": "2.00",
+    "input_thresh": "-32.45",
+    "output_i": "-16.35",
+    "output_tp": "-1.50",
+    "output_lra": "1.90",
+    "output_thresh": "-26.37",
+    "normalization_type": "dynamic",
+    "target_offset": "0.35"
+  },
+  "second_pass": "loudnorm=I=-16:TP=-1.5:LRA=7:measured_I=-22.43:measured_LRA=2.00:measured_TP=-6.43:measured_thresh=-32.45:offset=0.35:linear=true:print_format=summary,aresample=48000",
+  "duration_seconds": 44.666666666666664,
+  "tempo": 1.0,
+  "pitch_preserved": true
+}
