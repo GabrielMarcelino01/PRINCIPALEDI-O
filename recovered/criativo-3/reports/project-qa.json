@@ -1,7 +1,7 @@
 {
   "status": "PASS",
-  "checks": 38,
-  "passed": 38,
+  "checks": 49,
+  "passed": 49,
   "failed": 0,
   "results": [
     {
@@ -140,6 +140,31 @@
       "detail": ""
     },
     {
+      "name": "caption_formats",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "caption_units",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "unit_text",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "unit_timing",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "unit_geometry",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
       "name": "font_exists",
       "status": "PASS",
       "detail": ""
@@ -165,6 +190,11 @@
       "detail": ""
     },
     {
+      "name": "gradient_pure_black",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
       "name": "gradient_fades",
       "status": "PASS",
       "detail": ""
@@ -181,6 +211,31 @@
     },
     {
       "name": "ass_no_wrap",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ass_event_count",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ass_text_events",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ass_shape_events",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ass_vector_formats",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ass_one_line",
       "status": "PASS",
       "detail": ""
     },

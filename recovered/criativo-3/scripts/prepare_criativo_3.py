@@ -153,9 +153,185 @@ def reviewed_words() -> tuple[list[dict], list[dict]]:
     return words, segments
 
 
+GOLD = "#F2D8A7"
+MINT = "#A7E3D0"
+ROSE = "#F2A7B8"
+DARK = "#17140F"
+BURGUNDY = "#7D2140"
+UNDERLINE_CUES = {3, 13, 28, 31}
+CTA_CUE = 32
+# Escala calibrada com quadros do libass para esta combinação de fonte/ASS.
+# A geometria dos desenhos usa a mesma escala para ficar registrada na palavra.
+ASS_LAYOUT_SCALE = 2 ** -0.5
+
+
+def caption_format(cue_id: int) -> str:
+    if cue_id == CTA_CUE:
+        return "cta_pill"
+    if cue_id in UNDERLINE_CUES:
+        return "active_underline"
+    return "active_pill"
+
+
+def caption_accent(cue_id: int) -> str:
+    if 5 <= cue_id <= 20:
+        return MINT
+    if 21 <= cue_id <= 28:
+        return ROSE
+    return GOLD
+
+
+def build_units(selected: list[dict], first_word: int, cue_start: float, cue_end: float,
+                font: ImageFont.FreeTypeFont, full_width: float) -> list[dict]:
+    units: list[dict] = []
+    for offset, raw in enumerate(selected):
+        token = raw["word"].strip()
+        if not token:
+            continue
+        if token.startswith("-") and units:
+            units[-1]["text"] += token
+            units[-1]["source_end"] = raw["end"]
+            units[-1]["raw_words"].append(first_word + offset)
+        else:
+            units.append({
+                "text": token, "source_start": raw["start"], "source_end": raw["end"],
+                "raw_words": [first_word + offset],
+            })
+    x = (720 - full_width) / 2
+    space_width = font.getlength(" ")
+    for index, unit in enumerate(units):
+        unit["x_px"] = round(x, 3)
+        unit["width_px"] = round(font.getlength(unit["text"]), 3)
+        x += font.getlength(unit["text"])
+        if index < len(units) - 1:
+            x += space_width
+    start = cue_start
+    for index, unit in enumerate(units):
+        end = map_time(units[index + 1]["source_start"]) if index + 1 < len(units) else cue_end
+        if end <= start:
+            raise ValueError(f"Unidade sem duração: {unit['text']!r}")
+        unit["start"], unit["end"] = start, end
+        start = end
+    return units
+
+
+def ass_color(hex_color: str) -> str:
+    value = hex_color.lstrip("#")
+    red, green, blue = value[0:2], value[2:4], value[4:6]
+    return f"&H00{blue}{green}{red}&"
+
+
+def rounded_rect(x0: float, y0: float, x1: float, y1: float, radius: float) -> str:
+    x0, y0, x1, y1, r = [round(v) for v in [x0, y0, x1, y1, radius]]
+    k = round(r * 0.5522847498)
+    return (
+        f"m {x0+r} {y0} l {x1-r} {y0} "
+        f"b {x1-r+k} {y0} {x1} {y0+r-k} {x1} {y0+r} "
+        f"l {x1} {y1-r} b {x1} {y1-r+k} {x1-r+k} {y1} {x1-r} {y1} "
+        f"l {x0+r} {y1} b {x0+r-k} {y1} {x0} {y1-r+k} {x0} {y1-r} "
+        f"l {x0} {y0+r} b {x0} {y0+r-k} {x0+r-k} {y0} {x0+r} {y0}"
+    )
+
+
+def ass_unit_geometry(unit: dict) -> tuple[float, float]:
+    return (
+        360 + (unit["x_px"] - 360) * ASS_LAYOUT_SCALE,
+        unit["width_px"] * ASS_LAYOUT_SCALE,
+    )
+
+
+def fade_prefix(first: bool, last: bool) -> str:
+    if first:
+        return r"\fad(50,0)"
+    if last:
+        return r"\fad(0,50)"
+    return ""
+
+
+def shape_event(cue: dict, unit: dict, first: bool, last: bool) -> str:
+    accent = ass_color(cue["accent_color"])
+    unit_x, unit_width = ass_unit_geometry(unit)
+    if cue["format"] == "active_pill":
+        x0 = unit_x - 9
+        x1 = unit_x + unit_width + 9
+        y0, y1, radius = 613, 667, 15
+    else:
+        x0 = unit_x + 1
+        x1 = unit_x + unit_width - 1
+        y0, y1, radius = 666, 672, 3
+    drawing = rounded_rect(x0, y0, x1, y1, radius)
+    tags = rf"{{\an7\pos(0,0)\p1\bord0\shad0\1c{accent}{fade_prefix(first, last)}}}"
+    return f'Dialogue: 0,{ass_time(unit["start"])},{ass_time(unit["end"])},Caption,,0,0,0,,{tags}{drawing}'
+
+
+def cta_shape_event(cue: dict) -> str:
+    rendered_width = cue["text_width_px"] * ASS_LAYOUT_SCALE
+    x0 = (720 - rendered_width) / 2 - 22
+    x1 = (720 + rendered_width) / 2 + 22
+    drawing = rounded_rect(x0, 607, x1, 673, 22)
+    tags = rf"{{\an7\pos(0,0)\p1\bord0\shad0\1c{ass_color(GOLD)}\fad(50,50)}}"
+    return f'Dialogue: 0,{ass_time(cue["start"])},{ass_time(cue["end"])},Caption,,0,0,0,,{tags}{drawing}'
+
+
+def caption_text(cue: dict, active_index: int) -> str:
+    parts = []
+    for index, unit in enumerate(cue["units"]):
+        if index:
+            parts.append(" ")
+        if index != active_index:
+            parts.append(unit["text"])
+            continue
+        if cue["format"] == "active_underline":
+            active = ass_color(cue["accent_color"])
+            inactive = ass_color("#FFFFFF")
+            parts.append(rf"{{\1c{active}}}{unit['text']}{{\1c{inactive}}}")
+        elif cue["format"] == "active_pill":
+            active, inactive = ass_color(DARK), ass_color("#FFFFFF")
+            parts.append(rf"{{\1c{active}\bord0\shad0}}{unit['text']}{{\1c{inactive}\bord2.4\shad1}}")
+        else:
+            active, inactive = ass_color(BURGUNDY), ass_color(DARK)
+            parts.append(rf"{{\1c{active}}}{unit['text']}{{\1c{inactive}}}")
+    return "".join(parts)
+
+
+def build_ass(cues: list[dict]) -> str:
+    header = """[Script Info]
+Title: CRIATIVO-3 — superlegendas ativas de uma linha
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption,Inter Caption,40,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0.1,0,1,2.4,1.0,5,40,40,0,1
+Style: CtaCaption,Inter Caption,40,&H000F1417,&H000F1417,&H00000000,&H00000000,-1,0,0,0,100,100,0.1,0,1,0,0,5,40,40,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+"""
+    events = []
+    for cue in cues:
+        if cue["format"] == "cta_pill":
+            events.append(cta_shape_event(cue))
+        for index, unit in enumerate(cue["units"]):
+            first, last = index == 0, index == len(cue["units"]) - 1
+            if cue["format"] != "cta_pill":
+                events.append(shape_event(cue, unit, first, last))
+            style = "CtaCaption" if cue["format"] == "cta_pill" else "Caption"
+            prefix = rf"{{\fs{cue['font_size']}{fade_prefix(first, last)}}}"
+            events.append(
+                f'Dialogue: 1,{ass_time(unit["start"])},{ass_time(unit["end"])},{style},,0,0,0,,'
+                f'{prefix}{caption_text(cue, index)}'
+            )
+    return header + "\n".join(events) + "\n"
+
+
 def build_gradient() -> None:
     GRADIENT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    center, half_height, max_alpha = 640, 145, 105
+    center, half_height, max_alpha = 640, 140, 150
     strip = Image.new("RGBA", (1, 1280), (0, 0, 0, 0))
     pixels = []
     for y in range(1280):
@@ -164,7 +340,7 @@ def build_gradient() -> None:
             alpha = 0
         else:
             alpha = round(max_alpha * (0.5 + 0.5 * math.cos(math.pi * distance / half_height)))
-        pixels.append((10, 8, 12, alpha))
+        pixels.append((0, 0, 0, alpha))
     strip.putdata(pixels)
     strip.resize((720, 1280), Image.Resampling.NEAREST).save(GRADIENT_PATH, optimize=True)
 
@@ -188,13 +364,15 @@ def build_project() -> dict:
         if width > 640:
             raise ValueError(f"Legenda excede 640 px no bloco {idx}: {width:.1f} px")
         visible_characters = len(re.sub(r"\s+", "", text))
+        units = build_units(selected, first, start, end, ImageFont.truetype(str(FONT_PATH), font_size), width)
         cues.append({
             "id": idx, "first_word": first, "last_word": last,
             "source_start": source_start, "source_end": source_end,
             "start": start, "end": end, "duration": end - start,
             "lines": [text], "text": text, "emphasis": emphasis,
             "font_size": font_size, "text_width_px": round(width, 3),
-            "cps": visible_characters / (end - start),
+            "format": caption_format(idx), "accent_color": caption_accent(idx),
+            "units": units, "cps": visible_characters / (end - start),
         })
     if covered != list(range(149)):
         raise ValueError("As captions precisam cobrir cada unidade transcrita exatamente uma vez")
@@ -214,11 +392,13 @@ def build_project() -> dict:
             "output_frames": OUTPUT_FRAMES, "output_duration": OUTPUT_DURATION,
         },
         "look": {
-            "description": "Gradiente escuro central, contraste moderado e destaques champanhe",
+            "description": "Gradiente preto central e superlegendas ativas com pílulas, sublinhados e CTA",
             "font": "Inter Caption", "font_size": 40, "min_font_size": 36,
             "max_lines": 1, "max_text_width_px": 640, "alignment": 5,
             "caption_center_y": 640, "gradient_center_y": 640,
-            "gradient_half_height": 145, "gradient_max_alpha": 105,
+            "gradient_half_height": 140, "gradient_max_alpha": 150, "gradient_rgb": [0, 0, 0],
+            "caption_formats": ["active_pill", "active_underline", "cta_pill"],
+            "palette": {"gold": GOLD, "mint": MINT, "rose": ROSE, "dark": DARK, "burgundy": BURGUNDY},
             "color_space": "BT.709", "vignette": False,
         },
         "captions": cues,
@@ -229,32 +409,7 @@ def build_project() -> dict:
     for cue in cues:
         srt.extend([str(cue["id"]), f'{srt_time(cue["start"])} --> {srt_time(cue["end"])}', cue["text"], ""])
     SRT_PATH.write_text("\n".join(srt))
-    header = """[Script Info]
-Title: CRIATIVO-3 — superlegendas centrais de uma linha
-ScriptType: v4.00+
-PlayResX: 720
-PlayResY: 1280
-WrapStyle: 2
-ScaledBorderAndShadow: yes
-YCbCr Matrix: TV.709
-
-[V4+ Styles]
-Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Caption,Inter Caption,40,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0.1,0,1,2.4,1.0,5,40,40,0,1
-
-[Events]
-Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-"""
-    events = []
-    for cue in cues:
-        text = cue["text"]
-        for phrase in cue["emphasis"]:
-            if phrase not in text:
-                raise ValueError(f'Ênfase não encontrada: {phrase!r} no bloco {cue["id"]}')
-            text = text.replace(phrase, r"{\1c&H00A7D8F2&}" + phrase + r"{\1c&H00FFFFFF&}", 1)
-        prefix = rf"{{\fad(50,50)\fs{cue['font_size']}}}"
-        events.append(f'Dialogue: 0,{ass_time(cue["start"])},{ass_time(cue["end"])},Caption,,0,0,0,,{prefix}{text}')
-    ASS_PATH.write_text(header + "\n".join(events) + "\n")
+    ASS_PATH.write_text(build_ass(cues))
     return project
 
 
@@ -308,6 +463,8 @@ def main() -> None:
     audio = build_audio()
     summary = {
         "status": "PASS", "captions": len(project["captions"]), "words": 149,
+        "caption_units": sum(len(c["units"]) for c in project["captions"]),
+        "caption_formats": {f: sum(c["format"] == f for c in project["captions"]) for f in ["active_pill", "active_underline", "cta_pill"]},
         "cut_intervals": len(CUT_FRAMES), "removed_seconds": project["edit"]["removed_seconds"],
         "output_frames": OUTPUT_FRAMES, "output_duration": OUTPUT_DURATION,
         "max_cps": max(c["cps"] for c in project["captions"]),

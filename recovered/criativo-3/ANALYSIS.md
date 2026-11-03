@@ -29,4 +29,4 @@ Os silêncios e os tempos por palavra foram cruzados. Um corte inicialmente cand
 
 ## Evidência visual
 
-O Watch local gerou 39 quadros da fonte, com cobertura uniforme de quase todo o intervalo. Essa evidência foi complementada por revisão em resolução nativa e, depois do render, por 84 quadros do master: amostragem uniforme, todas as captions, extremos e os dois lados de cada corte. Nenhum vídeo foi enviado a Gemini ou outro serviço externo de análise.
+O Watch local gerou 39 quadros da fonte, com cobertura uniforme de quase todo o intervalo. Essa evidência foi complementada por revisão em resolução nativa e, depois do render, por 84 quadros do master: amostragem uniforme, todas as captions, extremos e os dois lados de cada corte. Na segunda revisão, foram inspecionados também quadros nativos das pílulas, sublinhados, legenda longa e CTA. Nenhum vídeo foi enviado a Gemini ou outro serviço externo de análise.

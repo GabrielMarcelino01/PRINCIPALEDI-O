@@ -4,8 +4,8 @@
   "passed": 34,
   "failed": 0,
   "file": "/home/user/PRINCIPALEDI-O/entregas/CRIATIVO-3-EDITADO.mp4",
-  "size_bytes": 13815997,
-  "sha256": "2e8bbce2740b45a3597e812881478b70a354704f496b5523b25176704a7c20d3",
+  "size_bytes": 13855794,
+  "sha256": "4fd2da77fd40e45a0f3b6eea96c24889359c62be55705795fd7bd214f4ff3bb6",
   "duration_seconds": 44.666667,
   "frames": 1072,
   "loudness": {
@@ -38,7 +38,7 @@
     {
       "name": "final_size",
       "status": "PASS",
-      "detail": 13815997
+      "detail": 13855794
     },
     {
       "name": "source_and_delivery_distinct",
@@ -191,7 +191,7 @@
     {
       "name": "project_qa",
       "status": "PASS",
-      "detail": "38/38"
+      "detail": "49/49"
     },
     {
       "name": "natural_speed",

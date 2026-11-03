@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "output": "/home/user/PRINCIPALEDI-O/entregas/CRIATIVO-3-EDITADO.mp4",
+  "output": "/home/user/PRINCIPALEDI-O/recovered/criativo-3/out/criativo-3-master-v2.mp4",
   "preview": false,
   "video": {
     "codec_name": "h264",
@@ -23,5 +23,5 @@
     "bit_rate": "252321"
   },
   "container_duration": "44.666667",
-  "size_bytes": 13815997
+  "size_bytes": 13855794
 }

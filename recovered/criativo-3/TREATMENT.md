@@ -6,12 +6,13 @@ Manter a estrutura de duas cenas e transformar sua divisão horizontal em um ele
 
 ## Gradiente e captions
 
-- Gradiente escuro neutro, centrado em y=640, com 145 px de meia-altura e alpha máximo 105/255.
+- Gradiente de preto puro, centrado em y=640, com 140 px de meia-altura e alpha máximo 150/255; as bordas chegam a alpha zero antes dos extremos dos painéis.
 - 32 captions de uma única linha, centralizadas horizontal e verticalmente.
-- Inter Caption, 40 px; somente o bloco mais longo usa 36 px para permanecer em uma linha.
+- Inter Caption, 40 px; somente o bloco mais longo usa 37 px para permanecer em uma linha.
 - Largura máxima medida de 639 px em um canvas de 720 px; nenhum texto ultrapassa a margem.
-- Contorno discreto, sombra curta e fade de 50 ms; destaques champanhe em palavras-chave, sem animação contínua ou salto decorativo.
-- SRT e ASS exportados; os tempos foram recalculados após cada corte.
+- 146 unidades de texto ativas: pílulas arredondadas com texto escuro na palavra falada, sublinhados animados em quatro blocos de marca/conceito e um CTA com pílula própria e destaque vinho.
+- Champanhe, menta e rosa são aplicados deterministicamente por seção; os desenhos ASS usam curvas cúbicas e acompanham a métrica real do renderizador.
+- SRT e ASS exportados; os tempos foram recalculados após cada corte e cada transição é uma função determinística do tempo.
 
 ## Montagem e imagem
 

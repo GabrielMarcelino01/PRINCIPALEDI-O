@@ -16,7 +16,7 @@ Esta pasta contém **somente vídeos finalizados e suas prévias leves**. Os upl
 | `TEMPORAL-60FPS.mp4` | Demonstração visual do pipeline determinístico — 1080×1920, 60 fps, 360 frames / 6 s; sem áudio. |
 | `SOFIA-1-EDITADO.mp4` | Master do SOFIA-1 — 1080×1920, 60 fps, 1.506 frames / 25,1 s; quatro paletas animadas, 14 captions e CTA no close original. |
 | `SOFIA-1-PREVIA.mp4` | Prévia leve do SOFIA-1 — 540×960, 60 fps, 1.506 frames / 25,1 s; mesmo corte, layout e áudio do master. |
-| `CRIATIVO-3-EDITADO.mp4` | Master do CRIATIVO-3 — 720×1280, 24 fps, 1.072 frames / 44,67 s; gradiente e 32 captions centrais de uma linha, 15 pausas encurtadas e áudio masterizado. |
+| `CRIATIVO-3-EDITADO.mp4` | Master revisado do CRIATIVO-3 — 720×1280, 24 fps, 1.072 frames / 44,67 s; gradiente preto central e 32 captions de uma linha com pílulas, sublinhados e CTA colorido, 15 pausas encurtadas e áudio masterizado. |
 
 ## Onde ficam os outros materiais
 

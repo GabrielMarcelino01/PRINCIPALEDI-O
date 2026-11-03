@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "output": "/home/user/PRINCIPALEDI-O/recovered/criativo-3/out/criativo-3-preview.mp4",
+  "output": "/home/user/PRINCIPALEDI-O/recovered/criativo-3/out/criativo-3-preview-v2.mp4",
   "preview": true,
   "video": {
     "codec_name": "h264",
@@ -23,5 +23,5 @@
     "bit_rate": "255479"
   },
   "container_duration": "12.000000",
-  "size_bytes": 1971358
+  "size_bytes": 3078030
 }
