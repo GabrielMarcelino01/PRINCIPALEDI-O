@@ -1,0 +1,779 @@
+{
+  "source": "/home/user/PRINCIPALEDI-O/entregas/CRIATIVO-3-EDITADO.mp4",
+  "unique_frames": 84,
+  "caption_cues": 32,
+  "cut_boundaries": 15,
+  "uniform_interval_frames": 48,
+  "first_last": true,
+  "frames": [
+    {
+      "sequence": 1,
+      "path": "work/final-review/frame-0001.png",
+      "frame": 0,
+      "time_seconds": 0.0,
+      "reasons": [
+        "FIRST",
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 2,
+      "path": "work/final-review/frame-0002.png",
+      "frame": 18,
+      "time_seconds": 0.75,
+      "reasons": [
+        "CUE01"
+      ]
+    },
+    {
+      "sequence": 3,
+      "path": "work/final-review/frame-0003.png",
+      "frame": 48,
+      "time_seconds": 2.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 4,
+      "path": "work/final-review/frame-0004.png",
+      "frame": 50,
+      "time_seconds": 2.0833333333333335,
+      "reasons": [
+        "CUE02"
+      ]
+    },
+    {
+      "sequence": 5,
+      "path": "work/final-review/frame-0005.png",
+      "frame": 64,
+      "time_seconds": 2.6666666666666665,
+      "reasons": [
+        "CUT01_BEFORE"
+      ]
+    },
+    {
+      "sequence": 6,
+      "path": "work/final-review/frame-0006.png",
+      "frame": 65,
+      "time_seconds": 2.7083333333333335,
+      "reasons": [
+        "CUT01_AFTER"
+      ]
+    },
+    {
+      "sequence": 7,
+      "path": "work/final-review/frame-0007.png",
+      "frame": 79,
+      "time_seconds": 3.2916666666666665,
+      "reasons": [
+        "CUE03"
+      ]
+    },
+    {
+      "sequence": 8,
+      "path": "work/final-review/frame-0008.png",
+      "frame": 96,
+      "time_seconds": 4.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 9,
+      "path": "work/final-review/frame-0009.png",
+      "frame": 112,
+      "time_seconds": 4.666666666666667,
+      "reasons": [
+        "CUE04"
+      ]
+    },
+    {
+      "sequence": 10,
+      "path": "work/final-review/frame-0010.png",
+      "frame": 133,
+      "time_seconds": 5.541666666666667,
+      "reasons": [
+        "CUT02_BEFORE"
+      ]
+    },
+    {
+      "sequence": 11,
+      "path": "work/final-review/frame-0011.png",
+      "frame": 134,
+      "time_seconds": 5.583333333333333,
+      "reasons": [
+        "CUT02_AFTER"
+      ]
+    },
+    {
+      "sequence": 12,
+      "path": "work/final-review/frame-0012.png",
+      "frame": 144,
+      "time_seconds": 6.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 13,
+      "path": "work/final-review/frame-0013.png",
+      "frame": 152,
+      "time_seconds": 6.333333333333333,
+      "reasons": [
+        "CUE05"
+      ]
+    },
+    {
+      "sequence": 14,
+      "path": "work/final-review/frame-0014.png",
+      "frame": 184,
+      "time_seconds": 7.666666666666667,
+      "reasons": [
+        "CUE06"
+      ]
+    },
+    {
+      "sequence": 15,
+      "path": "work/final-review/frame-0015.png",
+      "frame": 192,
+      "time_seconds": 8.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 16,
+      "path": "work/final-review/frame-0016.png",
+      "frame": 210,
+      "time_seconds": 8.75,
+      "reasons": [
+        "CUT03_BEFORE"
+      ]
+    },
+    {
+      "sequence": 17,
+      "path": "work/final-review/frame-0017.png",
+      "frame": 211,
+      "time_seconds": 8.791666666666666,
+      "reasons": [
+        "CUT03_AFTER"
+      ]
+    },
+    {
+      "sequence": 18,
+      "path": "work/final-review/frame-0018.png",
+      "frame": 215,
+      "time_seconds": 8.958333333333334,
+      "reasons": [
+        "CUE07"
+      ]
+    },
+    {
+      "sequence": 19,
+      "path": "work/final-review/frame-0019.png",
+      "frame": 240,
+      "time_seconds": 10.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 20,
+      "path": "work/final-review/frame-0020.png",
+      "frame": 249,
+      "time_seconds": 10.375,
+      "reasons": [
+        "CUE08"
+      ]
+    },
+    {
+      "sequence": 21,
+      "path": "work/final-review/frame-0021.png",
+      "frame": 265,
+      "time_seconds": 11.041666666666666,
+      "reasons": [
+        "CUT04_BEFORE"
+      ]
+    },
+    {
+      "sequence": 22,
+      "path": "work/final-review/frame-0022.png",
+      "frame": 266,
+      "time_seconds": 11.083333333333334,
+      "reasons": [
+        "CUT04_AFTER"
+      ]
+    },
+    {
+      "sequence": 23,
+      "path": "work/final-review/frame-0023.png",
+      "frame": 283,
+      "time_seconds": 11.791666666666666,
+      "reasons": [
+        "CUE09"
+      ]
+    },
+    {
+      "sequence": 24,
+      "path": "work/final-review/frame-0024.png",
+      "frame": 288,
+      "time_seconds": 12.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 25,
+      "path": "work/final-review/frame-0025.png",
+      "frame": 300,
+      "time_seconds": 12.5,
+      "reasons": [
+        "CUT05_BEFORE"
+      ]
+    },
+    {
+      "sequence": 26,
+      "path": "work/final-review/frame-0026.png",
+      "frame": 301,
+      "time_seconds": 12.541666666666666,
+      "reasons": [
+        "CUT05_AFTER"
+      ]
+    },
+    {
+      "sequence": 27,
+      "path": "work/final-review/frame-0027.png",
+      "frame": 321,
+      "time_seconds": 13.375,
+      "reasons": [
+        "CUE10"
+      ]
+    },
+    {
+      "sequence": 28,
+      "path": "work/final-review/frame-0028.png",
+      "frame": 336,
+      "time_seconds": 14.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 29,
+      "path": "work/final-review/frame-0029.png",
+      "frame": 355,
+      "time_seconds": 14.791666666666666,
+      "reasons": [
+        "CUE11"
+      ]
+    },
+    {
+      "sequence": 30,
+      "path": "work/final-review/frame-0030.png",
+      "frame": 384,
+      "time_seconds": 16.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 31,
+      "path": "work/final-review/frame-0031.png",
+      "frame": 385,
+      "time_seconds": 16.041666666666668,
+      "reasons": [
+        "CUE12"
+      ]
+    },
+    {
+      "sequence": 32,
+      "path": "work/final-review/frame-0032.png",
+      "frame": 399,
+      "time_seconds": 16.625,
+      "reasons": [
+        "CUT06_BEFORE"
+      ]
+    },
+    {
+      "sequence": 33,
+      "path": "work/final-review/frame-0033.png",
+      "frame": 400,
+      "time_seconds": 16.666666666666668,
+      "reasons": [
+        "CUT06_AFTER"
+      ]
+    },
+    {
+      "sequence": 34,
+      "path": "work/final-review/frame-0034.png",
+      "frame": 420,
+      "time_seconds": 17.5,
+      "reasons": [
+        "CUE13"
+      ]
+    },
+    {
+      "sequence": 35,
+      "path": "work/final-review/frame-0035.png",
+      "frame": 432,
+      "time_seconds": 18.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 36,
+      "path": "work/final-review/frame-0036.png",
+      "frame": 441,
+      "time_seconds": 18.375,
+      "reasons": [
+        "CUT07_BEFORE"
+      ]
+    },
+    {
+      "sequence": 37,
+      "path": "work/final-review/frame-0037.png",
+      "frame": 442,
+      "time_seconds": 18.416666666666668,
+      "reasons": [
+        "CUT07_AFTER"
+      ]
+    },
+    {
+      "sequence": 38,
+      "path": "work/final-review/frame-0038.png",
+      "frame": 458,
+      "time_seconds": 19.083333333333332,
+      "reasons": [
+        "CUE14"
+      ]
+    },
+    {
+      "sequence": 39,
+      "path": "work/final-review/frame-0039.png",
+      "frame": 472,
+      "time_seconds": 19.666666666666668,
+      "reasons": [
+        "CUT08_BEFORE"
+      ]
+    },
+    {
+      "sequence": 40,
+      "path": "work/final-review/frame-0040.png",
+      "frame": 473,
+      "time_seconds": 19.708333333333332,
+      "reasons": [
+        "CUT08_AFTER"
+      ]
+    },
+    {
+      "sequence": 41,
+      "path": "work/final-review/frame-0041.png",
+      "frame": 480,
+      "time_seconds": 20.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 42,
+      "path": "work/final-review/frame-0042.png",
+      "frame": 482,
+      "time_seconds": 20.083333333333332,
+      "reasons": [
+        "CUE15"
+      ]
+    },
+    {
+      "sequence": 43,
+      "path": "work/final-review/frame-0043.png",
+      "frame": 510,
+      "time_seconds": 21.25,
+      "reasons": [
+        "CUE16"
+      ]
+    },
+    {
+      "sequence": 44,
+      "path": "work/final-review/frame-0044.png",
+      "frame": 528,
+      "time_seconds": 22.0,
+      "reasons": [
+        "CUT09_BEFORE",
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 45,
+      "path": "work/final-review/frame-0045.png",
+      "frame": 529,
+      "time_seconds": 22.041666666666668,
+      "reasons": [
+        "CUT09_AFTER"
+      ]
+    },
+    {
+      "sequence": 46,
+      "path": "work/final-review/frame-0046.png",
+      "frame": 543,
+      "time_seconds": 22.625,
+      "reasons": [
+        "CUE17"
+      ]
+    },
+    {
+      "sequence": 47,
+      "path": "work/final-review/frame-0047.png",
+      "frame": 556,
+      "time_seconds": 23.166666666666668,
+      "reasons": [
+        "CUT10_BEFORE"
+      ]
+    },
+    {
+      "sequence": 48,
+      "path": "work/final-review/frame-0048.png",
+      "frame": 557,
+      "time_seconds": 23.208333333333332,
+      "reasons": [
+        "CUT10_AFTER"
+      ]
+    },
+    {
+      "sequence": 49,
+      "path": "work/final-review/frame-0049.png",
+      "frame": 576,
+      "time_seconds": 24.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 50,
+      "path": "work/final-review/frame-0050.png",
+      "frame": 582,
+      "time_seconds": 24.25,
+      "reasons": [
+        "CUE18"
+      ]
+    },
+    {
+      "sequence": 51,
+      "path": "work/final-review/frame-0051.png",
+      "frame": 621,
+      "time_seconds": 25.875,
+      "reasons": [
+        "CUE19"
+      ]
+    },
+    {
+      "sequence": 52,
+      "path": "work/final-review/frame-0052.png",
+      "frame": 624,
+      "time_seconds": 26.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 53,
+      "path": "work/final-review/frame-0053.png",
+      "frame": 645,
+      "time_seconds": 26.875,
+      "reasons": [
+        "CUE20"
+      ]
+    },
+    {
+      "sequence": 54,
+      "path": "work/final-review/frame-0054.png",
+      "frame": 657,
+      "time_seconds": 27.375,
+      "reasons": [
+        "CUT11_BEFORE"
+      ]
+    },
+    {
+      "sequence": 55,
+      "path": "work/final-review/frame-0055.png",
+      "frame": 658,
+      "time_seconds": 27.416666666666668,
+      "reasons": [
+        "CUT11_AFTER"
+      ]
+    },
+    {
+      "sequence": 56,
+      "path": "work/final-review/frame-0056.png",
+      "frame": 672,
+      "time_seconds": 28.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 57,
+      "path": "work/final-review/frame-0057.png",
+      "frame": 676,
+      "time_seconds": 28.166666666666668,
+      "reasons": [
+        "CUT12_BEFORE"
+      ]
+    },
+    {
+      "sequence": 58,
+      "path": "work/final-review/frame-0058.png",
+      "frame": 677,
+      "time_seconds": 28.208333333333332,
+      "reasons": [
+        "CUT12_AFTER"
+      ]
+    },
+    {
+      "sequence": 59,
+      "path": "work/final-review/frame-0059.png",
+      "frame": 682,
+      "time_seconds": 28.416666666666668,
+      "reasons": [
+        "CUE21"
+      ]
+    },
+    {
+      "sequence": 60,
+      "path": "work/final-review/frame-0060.png",
+      "frame": 720,
+      "time_seconds": 30.0,
+      "reasons": [
+        "CUE22",
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 61,
+      "path": "work/final-review/frame-0061.png",
+      "frame": 752,
+      "time_seconds": 31.333333333333332,
+      "reasons": [
+        "CUE23"
+      ]
+    },
+    {
+      "sequence": 62,
+      "path": "work/final-review/frame-0062.png",
+      "frame": 768,
+      "time_seconds": 32.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 63,
+      "path": "work/final-review/frame-0063.png",
+      "frame": 779,
+      "time_seconds": 32.458333333333336,
+      "reasons": [
+        "CUE24"
+      ]
+    },
+    {
+      "sequence": 64,
+      "path": "work/final-review/frame-0064.png",
+      "frame": 793,
+      "time_seconds": 33.041666666666664,
+      "reasons": [
+        "CUT13_BEFORE"
+      ]
+    },
+    {
+      "sequence": 65,
+      "path": "work/final-review/frame-0065.png",
+      "frame": 794,
+      "time_seconds": 33.083333333333336,
+      "reasons": [
+        "CUT13_AFTER"
+      ]
+    },
+    {
+      "sequence": 66,
+      "path": "work/final-review/frame-0066.png",
+      "frame": 816,
+      "time_seconds": 34.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 67,
+      "path": "work/final-review/frame-0067.png",
+      "frame": 817,
+      "time_seconds": 34.041666666666664,
+      "reasons": [
+        "CUE25"
+      ]
+    },
+    {
+      "sequence": 68,
+      "path": "work/final-review/frame-0068.png",
+      "frame": 858,
+      "time_seconds": 35.75,
+      "reasons": [
+        "CUE26"
+      ]
+    },
+    {
+      "sequence": 69,
+      "path": "work/final-review/frame-0069.png",
+      "frame": 864,
+      "time_seconds": 36.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 70,
+      "path": "work/final-review/frame-0070.png",
+      "frame": 891,
+      "time_seconds": 37.125,
+      "reasons": [
+        "CUE27"
+      ]
+    },
+    {
+      "sequence": 71,
+      "path": "work/final-review/frame-0071.png",
+      "frame": 912,
+      "time_seconds": 38.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 72,
+      "path": "work/final-review/frame-0072.png",
+      "frame": 919,
+      "time_seconds": 38.291666666666664,
+      "reasons": [
+        "CUE28"
+      ]
+    },
+    {
+      "sequence": 73,
+      "path": "work/final-review/frame-0073.png",
+      "frame": 932,
+      "time_seconds": 38.833333333333336,
+      "reasons": [
+        "CUT14_BEFORE"
+      ]
+    },
+    {
+      "sequence": 74,
+      "path": "work/final-review/frame-0074.png",
+      "frame": 933,
+      "time_seconds": 38.875,
+      "reasons": [
+        "CUT14_AFTER"
+      ]
+    },
+    {
+      "sequence": 75,
+      "path": "work/final-review/frame-0075.png",
+      "frame": 950,
+      "time_seconds": 39.583333333333336,
+      "reasons": [
+        "CUE29"
+      ]
+    },
+    {
+      "sequence": 76,
+      "path": "work/final-review/frame-0076.png",
+      "frame": 960,
+      "time_seconds": 40.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 77,
+      "path": "work/final-review/frame-0077.png",
+      "frame": 980,
+      "time_seconds": 40.833333333333336,
+      "reasons": [
+        "CUE30"
+      ]
+    },
+    {
+      "sequence": 78,
+      "path": "work/final-review/frame-0078.png",
+      "frame": 1008,
+      "time_seconds": 42.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 79,
+      "path": "work/final-review/frame-0079.png",
+      "frame": 1016,
+      "time_seconds": 42.333333333333336,
+      "reasons": [
+        "CUE31"
+      ]
+    },
+    {
+      "sequence": 80,
+      "path": "work/final-review/frame-0080.png",
+      "frame": 1035,
+      "time_seconds": 43.125,
+      "reasons": [
+        "CUT15_BEFORE"
+      ]
+    },
+    {
+      "sequence": 81,
+      "path": "work/final-review/frame-0081.png",
+      "frame": 1036,
+      "time_seconds": 43.166666666666664,
+      "reasons": [
+        "CUT15_AFTER"
+      ]
+    },
+    {
+      "sequence": 82,
+      "path": "work/final-review/frame-0082.png",
+      "frame": 1054,
+      "time_seconds": 43.916666666666664,
+      "reasons": [
+        "CUE32"
+      ]
+    },
+    {
+      "sequence": 83,
+      "path": "work/final-review/frame-0083.png",
+      "frame": 1056,
+      "time_seconds": 44.0,
+      "reasons": [
+        "UNIFORM"
+      ]
+    },
+    {
+      "sequence": 84,
+      "path": "work/final-review/frame-0084.png",
+      "frame": 1071,
+      "time_seconds": 44.625,
+      "reasons": [
+        "LAST",
+        "UNIFORM"
+      ]
+    }
+  ],
+  "sheets": [
+    "work/final-review/sheet-01.jpg",
+    "work/final-review/sheet-02.jpg",
+    "work/final-review/sheet-03.jpg",
+    "work/final-review/sheet-04.jpg",
+    "work/final-review/sheet-05.jpg",
+    "work/final-review/sheet-06.jpg",
+    "work/final-review/sheet-07.jpg"
+  ]
+}

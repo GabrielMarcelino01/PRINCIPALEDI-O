@@ -1,0 +1,64 @@
+{
+  "source": "Untitled_Scene_10-27_01_25_58_20261026223117.mp4",
+  "source_commit": "53636c41aa69626668424c0aa597d77fbb5d95c7",
+  "source_blob_sha": "7f3b8c454d5d07c3d1a0b588a6f2fb9905bf5985",
+  "source_sha256": "f2d30a24055c413f15f2424ab5891a700164df66e11be24421fbf0360178e12f",
+  "language": "pt-BR",
+  "asr": "OpenAI Whisper small, CTranslate2 int8, execução local; duas passagens comparadas",
+  "review": "Grafia “champanhe” revisada contextualmente a partir da saída ASR “cor-champão”; as outras quatro frases foram consistentes nas duas passagens. Não houve escuta audiovisual integral.",
+  "segments": [
+    {
+      "id": "look-1",
+      "start": 0.08,
+      "end": 3.88,
+      "text": "Usem cor champanhe e fiquem românticos e vibrantes.",
+      "group_ids": [
+        "look-1-champanhe",
+        "look-1-estilo"
+      ]
+    },
+    {
+      "id": "look-2",
+      "start": 4.48,
+      "end": 7.88,
+      "text": "Preto com vinho é um clássico para casamento à noite.",
+      "group_ids": [
+        "look-2-cores",
+        "look-2-classico",
+        "look-2-noite"
+      ]
+    },
+    {
+      "id": "look-3",
+      "start": 8.48,
+      "end": 12.1,
+      "text": "Marrom com cobre, elegância perfeita para um casamento.",
+      "group_ids": [
+        "look-3-cores",
+        "look-3-elegancia"
+      ]
+    },
+    {
+      "id": "look-4",
+      "start": 12.36,
+      "end": 17.08,
+      "text": "Lembre-se, azul marinho com azul claro fica elegante e irresistível.",
+      "group_ids": [
+        "look-4-lembre",
+        "look-4-cores",
+        "look-4-estilo"
+      ]
+    },
+    {
+      "id": "look-5",
+      "start": 17.92,
+      "end": 22.24,
+      "text": "Grafite com verde sálvia, uma combinação discreta e sofisticada.",
+      "group_ids": [
+        "look-5-cores",
+        "look-5-combinacao",
+        "look-5-estilo"
+      ]
+    }
+  ]
+}

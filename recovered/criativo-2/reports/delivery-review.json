@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "reviewed_at": "2026-11-03",
+  "master": "entregas/CRIATIVO-2-EDITADO.mp4",
+  "sha256": "afdacc103a966e478599c3802b1db8538f4bf1b3776a188223176adc57b0802c",
+  "frames_reviewed": 40,
+  "contact_sheets": 5,
+  "source": "Quadros extraídos diretamente do MP4 final, incluindo todos os 25 blocos de caption, cenas e primeiro/último quadro.",
+  "checks": {
+    "captions_without_overflow": true,
+    "smaller_caption_size_confirmed": true,
+    "faces_and_essential_actions_clear": true,
+    "app_screens_legible_at_review_scale": true,
+    "cinematic_grade_consistent": true,
+    "unexpected_black_or_blank_frames": false,
+    "final_frame_valid": true
+  },
+  "limits": [
+    "Revisão por quadros não substitui playback em tempo real ou escuta humana integral.",
+    "A aparência cinematográfica foi obtida por contraste, temperatura e vinheta; não é uma reconstituição de iluminação ou HDR.",
+    "Não foi executado teste A/B ou validação de performance de campanha."
+  ]
+}

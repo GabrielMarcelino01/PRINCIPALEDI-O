@@ -1,0 +1,83 @@
+<template>
+<style>
+@font-face{font-family:Inter;src:url('assets/fonts/Inter-Variable.woff2') format('woff2');font-weight:100 900;font-style:normal}
+@font-face{font-family:Playfair;src:url('assets/fonts/PlayfairDisplay-Italic.woff2') format('woff2');font-weight:400 900;font-style:italic}
+@font-face{font-family:EBG;src:url('assets/fonts/EBGaramond-700.woff2') format('woff2');font-weight:700;font-style:normal}
+*{box-sizing:border-box;margin:0;padding:0}
+#root{position:absolute;inset:0;overflow:hidden;font-family:Inter,Arial,sans-serif;background:var(--ground)}
+.clip{position:absolute}
+.shot{inset:0;overflow:hidden}
+.shot-motion{position:absolute;inset:-5%;will-change:transform}
+.shot-motion img{width:100%;height:100%;object-fit:cover;display:block}
+.shade{position:absolute;inset:0;pointer-events:none}
+.text-motion{position:relative;width:100%;height:100%;will-change:transform,clip-path,opacity}
+.display{font-family:EBG,Georgia,serif;font-weight:700;letter-spacing:-.045em;line-height:.91}
+.serif-italic{font-family:Playfair,Georgia,serif;font-style:italic}
+.kicker{font-family:Inter,Arial,sans-serif;font-size:30px;font-weight:700;letter-spacing:.13em;line-height:1.2;text-transform:uppercase}
+.body-copy{font-family:Inter,Arial,sans-serif;font-size:36px;line-height:1.3}
+.disclosure{position:absolute;left:64px;top:168px;z-index:55;font-size:28px;font-weight:700;letter-spacing:.16em;line-height:1.15;color:#F6F0E8;background:rgba(37,13,24,.84);padding:5px 10px}
+.grain{position:absolute;inset:0;z-index:45;pointer-events:none;opacity:.05;background-image:url('assets/images/grain.png');background-repeat:repeat}
+.light-sweep{position:absolute;top:-20%;bottom:-20%;left:0;width:260px;z-index:35;pointer-events:none;opacity:0;background:linear-gradient(90deg,transparent,rgba(255,244,222,.7),transparent)}
+.phone-frame{position:absolute;overflow:hidden;border:12px solid #21131a;border-radius:48px;background:#fff;box-shadow:0 30px 70px rgba(37,13,24,.24)}
+.phone-frame img{position:absolute;left:0;top:0;width:100%;display:block}
+.ui-stage{position:absolute;inset:0;background:#f6f0e8}
+.editorial-rule{height:10px;width:160px;background:var(--coral,#F26E64)}
+.feature-line{font-family:EBG,Georgia,serif;font-size:80px;font-weight:700;line-height:.95;letter-spacing:-.035em}
+
+#root{--ground:#F6F0E8;--ink:#2B101C;--disclosure:#2B101C}
+</style>
+<div id="root" data-composition-id="looks" data-width="1080" data-height="1920">
+
+<div id="looks-full" class="clip shot" data-start="0" data-duration="0.9" data-track-index="1" style="z-index:1;background:#F6F0E8" data-layout-allow-overflow>
+  <div id="looks-full-motion" class="shot-motion" style="inset:0">
+    <img src="assets/images/app-looks.png" alt="" style="object-position:50% 50%;object-fit:contain"/>
+    <div class="shade" style="background:none"></div>
+  </div>
+</div>
+
+<div id="looks-demo" class="clip" data-start="0.9" data-duration="3.3" data-track-index="2" style="z-index:2;inset:0;background:#F6F0E8">
+  <div class="kicker" style="position:absolute;left:64px;top:230px;color:#7C6870">COMBINAÇÕES INTELIGENTES</div>
+  <div class="display" style="position:absolute;left:64px;top:295px;width:940px;font-size:82px;color:#2B101C">UMA PEÇA.<br/>VÁRIOS LOOKS.</div>
+  <div class="phone-frame" style="left:152px;top:520px;width:776px;height:715px">
+    <img id="looks-scroll" src="assets/images/app-looks-screen.jpg" alt="Tela real de combinações inteligentes"/>
+  </div>
+</div>
+
+<div id="looks-results" class="clip" data-start="4.2" data-duration="5.963715" data-track-index="2" style="z-index:2;inset:0;background:#F6F0E8;overflow:hidden">
+  <div class="kicker" style="position:absolute;left:64px;top:230px;color:#7C6870">O MESMO BLAZER. TRÊS OCASIÕES.</div>
+  <div id="looks-results-motion" style="position:absolute;left:90px;top:450px;width:900px;height:800px;overflow:hidden">
+    <img src="assets/images/app-looks-results.jpg" alt="Looks reais para trabalho, fim de semana e jantar" style="width:100%;display:block"/>
+  </div>
+</div>
+
+<div id="looks-cat-0" class="clip" data-start="4.35" data-duration="1.9" data-track-index="10" style="z-index:10;left:64px;top:285px;width:940px;height:160px" data-layout-allow-overlap>
+  <div id="looks-cat-0-motion" class="text-motion"><div class="display" style="font-size:86px;color:#2B101C">TRABALHO</div><div class="editorial-rule" style="margin-top:22px"></div></div>
+</div>
+
+<div id="looks-cat-1" class="clip" data-start="6.25" data-duration="1.9" data-track-index="10" style="z-index:10;left:64px;top:285px;width:940px;height:160px" data-layout-allow-overlap>
+  <div id="looks-cat-1-motion" class="text-motion"><div class="display" style="font-size:86px;color:#2B101C">FIM DE SEMANA</div><div class="editorial-rule" style="margin-top:22px"></div></div>
+</div>
+
+<div id="looks-cat-2" class="clip" data-start="8.15" data-duration="2.013715" data-track-index="10" style="z-index:10;left:64px;top:285px;width:940px;height:160px" data-layout-allow-overlap>
+  <div id="looks-cat-2-motion" class="text-motion"><div class="display" style="font-size:86px;color:#2B101C">JANTAR</div><div class="editorial-rule" style="margin-top:22px"></div></div>
+</div>
+<div id="looks-light" class="light-sweep" data-layout-ignore></div>
+<div id="looks-disclosure" class="clip disclosure" data-start="0.9" data-duration="9.263715" data-track-index="55" data-layout-allow-overlap>DRAMATIZAÇÃO</div>
+<div class="grain" data-layout-ignore></div>
+</div>
+<script>
+const tl=gsap.timeline({paused:true});
+tl.fromTo('#looks-full-motion',{scale:1.0,x:0},{scale:1.0,x:0,duration:0.9,ease:'none'},0);
+tl.fromTo('#looks-demo',{clipPath:'inset(0 0 0 100%)'},{clipPath:'inset(0 0 0 0%)',duration:.55,ease:'power3.out'},.9);
+tl.fromTo('#looks-scroll',{y:0},{y:-690,duration:2.7,ease:'none'},1.25);
+tl.fromTo('#looks-results',{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)',duration:.55,ease:'power3.out'},4.2);
+tl.fromTo('#looks-results-motion',{x:70,scale:1.04},{x:-70,scale:1.12,duration:5.963715,ease:'none'},4.2);
+tl.fromTo('#looks-cat-0-motion',{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)',duration:.52,ease:'power3.out'},4.35);
+tl.fromTo('#looks-cat-1-motion',{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)',duration:.52,ease:'power3.out'},6.25);
+tl.fromTo('#looks-cat-2-motion',{clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)',duration:.52,ease:'power3.out'},8.15);
+tl.fromTo('#looks-light',{x:-500,opacity:0,rotation:9},{x:1500,opacity:.3,rotation:9,duration:1.05,ease:'power2.inOut'},4.2);
+tl.to('#looks-light',{opacity:0,duration:.25},5.25);
+window.__timelines['looks']=tl;
+tl.seek(0);
+</script>
+</template>

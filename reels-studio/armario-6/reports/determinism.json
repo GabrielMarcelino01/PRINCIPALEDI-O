@@ -1,0 +1,81 @@
+{
+  "method": "Recaptura em Chromium fora de ordem; comparação de bytes e RGB decodificado.",
+  "frames": [
+    1230,
+    120,
+    738,
+    30,
+    990,
+    500,
+    1164,
+    250
+  ],
+  "results": [
+    {
+      "frame": 1230,
+      "t": 20.5,
+      "byte_identical": true,
+      "pixel_identical": true,
+      "original_sha256": "ef19d77a1162f717988feff580878ae9200aca5ccf3dcb463968c5c8513fecbb",
+      "repeated_sha256": "ef19d77a1162f717988feff580878ae9200aca5ccf3dcb463968c5c8513fecbb"
+    },
+    {
+      "frame": 120,
+      "t": 2.0,
+      "byte_identical": true,
+      "pixel_identical": true,
+      "original_sha256": "6c8a2e03fc78c663389c0fe38feb03072ae7cb878d4126c12f3ef8a391e85d3b",
+      "repeated_sha256": "6c8a2e03fc78c663389c0fe38feb03072ae7cb878d4126c12f3ef8a391e85d3b"
+    },
+    {
+      "frame": 738,
+      "t": 12.3,
+      "byte_identical": true,
+      "pixel_identical": true,
+      "original_sha256": "556b4ad148b93a85aaed9e2c70cac1a63d35810fad73cab68811923dfe5d32b7",
+      "repeated_sha256": "556b4ad148b93a85aaed9e2c70cac1a63d35810fad73cab68811923dfe5d32b7"
+    },
+    {
+      "frame": 30,
+      "t": 0.5,
+      "byte_identical": true,
+      "pixel_identical": true,
+      "original_sha256": "9dd9a52c802947ee7b03bc90c3d866327817f8f0a8d1d48da2cf71311904d81c",
+      "repeated_sha256": "9dd9a52c802947ee7b03bc90c3d866327817f8f0a8d1d48da2cf71311904d81c"
+    },
+    {
+      "frame": 990,
+      "t": 16.5,
+      "byte_identical": true,
+      "pixel_identical": true,
+      "original_sha256": "44ca678aa92bcec3d745d0f6810ed460c24812fbcaaabe8c6883727c1681cc67",
+      "repeated_sha256": "44ca678aa92bcec3d745d0f6810ed460c24812fbcaaabe8c6883727c1681cc67"
+    },
+    {
+      "frame": 500,
+      "t": 8.333333333333334,
+      "byte_identical": true,
+      "pixel_identical": true,
+      "original_sha256": "a3b73d5b1cea969a3dacb160adb4ac7763bf1198a16ec21e3b4518922a7aacfa",
+      "repeated_sha256": "a3b73d5b1cea969a3dacb160adb4ac7763bf1198a16ec21e3b4518922a7aacfa"
+    },
+    {
+      "frame": 1164,
+      "t": 19.4,
+      "byte_identical": true,
+      "pixel_identical": true,
+      "original_sha256": "daf99febc8103e96b2227d64691194d45c7e50658fc773fc0b6b09b0bf785f0f",
+      "repeated_sha256": "daf99febc8103e96b2227d64691194d45c7e50658fc773fc0b6b09b0bf785f0f"
+    },
+    {
+      "frame": 250,
+      "t": 4.166666666666667,
+      "byte_identical": true,
+      "pixel_identical": true,
+      "original_sha256": "2584d86db6df4f01412f648e9eea031b0c80d23f89b4f7844024cb2f2b1f7558",
+      "repeated_sha256": "2584d86db6df4f01412f648e9eea031b0c80d23f89b4f7844024cb2f2b1f7558"
+    }
+  ],
+  "all_identical": true,
+  "all_byte_identical": true
+}

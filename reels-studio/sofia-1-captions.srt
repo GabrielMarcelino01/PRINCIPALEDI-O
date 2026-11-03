@@ -1,0 +1,67 @@
+1
+00:00:00,000 --> 00:00:01,900
+Bordô com cinza
+fica discreto,
+
+2
+00:00:02,160 --> 00:00:03,920
+mas bordô com
+verde pistache
+
+3
+00:00:03,920 --> 00:00:05,040
+fica fashionista.
+
+4
+00:00:05,180 --> 00:00:07,020
+Marinho com branco
+fica atemporal,
+
+5
+00:00:07,420 --> 00:00:08,880
+mas marinho com
+amarelo manteiga
+
+6
+00:00:08,880 --> 00:00:10,760
+fica inusitado
+e contemporâneo.
+
+7
+00:00:10,860 --> 00:00:13,040
+Marrom café com bege
+fica clássico,
+
+8
+00:00:13,420 --> 00:00:14,900
+mas marrom café
+com azul claro
+
+9
+00:00:14,900 --> 00:00:16,540
+fica elegante
+e refinado.
+
+10
+00:00:16,640 --> 00:00:18,860
+Rosa claro com azul bebê
+fica romântico,
+
+11
+00:00:19,060 --> 00:00:20,400
+mas rosa claro
+com vinho
+
+12
+00:00:20,400 --> 00:00:22,540
+fica maduro
+e sofisticado.
+
+13
+00:00:22,640 --> 00:00:23,280
+Gostou?
+
+14
+00:00:23,460 --> 00:00:24,980
+Me segue para mais
+dicas de moda.

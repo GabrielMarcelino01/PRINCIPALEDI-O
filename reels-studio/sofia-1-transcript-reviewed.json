@@ -1,0 +1,649 @@
+{
+  "language": "pt",
+  "scenes": [
+    {
+      "id": "bordo",
+      "sourceStart": 0.0,
+      "sourceEnd": 5.08,
+      "switch": 2.16,
+      "baseName": "BORDÔ",
+      "base": "#711F3B",
+      "oldName": "CINZA",
+      "old": "#929598",
+      "newName": "PISTACHE",
+      "new": "#B9D97B",
+      "oldDescriptor": "DISCRETO",
+      "newDescriptor": "FASHIONISTA",
+      "index": 0,
+      "start": 0.0,
+      "end": 5.08,
+      "duration": 5.08,
+      "startFrame": 0,
+      "endFrame": 305,
+      "switchOutput": 2.16,
+      "durationInFrames": 305,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.5,
+          "probability": 0.7845627963542938,
+          "text": "Bordô",
+          "startOutput": 0.0,
+          "endOutput": 0.5
+        },
+        {
+          "start": 0.5,
+          "end": 0.68,
+          "probability": 0.9872137308120728,
+          "text": "com",
+          "startOutput": 0.5,
+          "endOutput": 0.68
+        },
+        {
+          "start": 0.68,
+          "end": 1.12,
+          "probability": 0.9654335081577301,
+          "text": "cinza",
+          "startOutput": 0.68,
+          "endOutput": 1.12
+        },
+        {
+          "start": 1.12,
+          "end": 1.34,
+          "probability": 0.654761791229248,
+          "text": "fica",
+          "startOutput": 1.12,
+          "endOutput": 1.34
+        },
+        {
+          "start": 1.34,
+          "end": 1.9,
+          "probability": 0.7596866190433502,
+          "text": "discreto,",
+          "startOutput": 1.34,
+          "endOutput": 1.9
+        },
+        {
+          "start": 2.16,
+          "end": 2.58,
+          "probability": 0.9425997734069824,
+          "text": "mas",
+          "startOutput": 2.16,
+          "endOutput": 2.58
+        },
+        {
+          "start": 2.58,
+          "end": 2.94,
+          "probability": 0.9624704718589783,
+          "text": "bordô",
+          "startOutput": 2.58,
+          "endOutput": 2.94
+        },
+        {
+          "start": 2.94,
+          "end": 3.12,
+          "probability": 0.9948275685310364,
+          "text": "com",
+          "startOutput": 2.94,
+          "endOutput": 3.12
+        },
+        {
+          "start": 3.12,
+          "end": 3.34,
+          "probability": 0.299879252910614,
+          "text": "verde",
+          "startOutput": 3.12,
+          "endOutput": 3.34
+        },
+        {
+          "start": 3.34,
+          "end": 3.92,
+          "probability": 0.9201842248439789,
+          "text": "pistache",
+          "startOutput": 3.34,
+          "endOutput": 3.92
+        },
+        {
+          "start": 3.92,
+          "end": 4.24,
+          "probability": 0.8034297823905945,
+          "text": "fica",
+          "startOutput": 3.92,
+          "endOutput": 4.24
+        },
+        {
+          "start": 4.24,
+          "end": 4.94,
+          "probability": 0.9751608669757843,
+          "text": "fashionista.",
+          "startOutput": 4.24,
+          "endOutput": 4.94
+        }
+      ]
+    },
+    {
+      "id": "marinho",
+      "sourceStart": 5.46,
+      "sourceEnd": 11.14,
+      "switch": 7.8,
+      "baseName": "MARINHO",
+      "base": "#172B49",
+      "oldName": "BRANCO",
+      "old": "#F1EFE7",
+      "newName": "MANTEIGA",
+      "new": "#F2D78E",
+      "oldDescriptor": "ATEMPORAL",
+      "newDescriptor": "CONTEMPORÂNEO",
+      "index": 1,
+      "start": 5.08,
+      "end": 10.760000000000002,
+      "duration": 5.680000000000001,
+      "startFrame": 305,
+      "endFrame": 646,
+      "switchOutput": 7.419999999999999,
+      "durationInFrames": 341,
+      "words": [
+        {
+          "start": 5.56,
+          "end": 5.98,
+          "probability": 0.9005016386508942,
+          "text": "Marinho",
+          "startOutput": 5.180000000000001,
+          "endOutput": 5.6000000000000005
+        },
+        {
+          "start": 5.98,
+          "end": 6.2,
+          "probability": 0.9920450448989868,
+          "text": "com",
+          "startOutput": 5.6000000000000005,
+          "endOutput": 5.820000000000001
+        },
+        {
+          "start": 6.2,
+          "end": 6.6,
+          "probability": 0.9777588844299316,
+          "text": "branco",
+          "startOutput": 5.820000000000001,
+          "endOutput": 6.22
+        },
+        {
+          "start": 6.6,
+          "end": 6.84,
+          "probability": 0.9941598176956177,
+          "text": "fica",
+          "startOutput": 6.22,
+          "endOutput": 6.46
+        },
+        {
+          "start": 6.84,
+          "end": 7.4,
+          "probability": 0.9895477294921875,
+          "text": "atemporal,",
+          "startOutput": 6.46,
+          "endOutput": 7.0200000000000005
+        },
+        {
+          "start": 7.8,
+          "end": 7.94,
+          "probability": 0.9828183054924011,
+          "text": "mas",
+          "startOutput": 7.419999999999999,
+          "endOutput": 7.56
+        },
+        {
+          "start": 7.94,
+          "end": 8.26,
+          "probability": 0.9093539416790009,
+          "text": "marinho",
+          "startOutput": 7.56,
+          "endOutput": 7.88
+        },
+        {
+          "start": 8.26,
+          "end": 8.44,
+          "probability": 0.989342212677002,
+          "text": "com",
+          "startOutput": 7.88,
+          "endOutput": 8.059999999999999
+        },
+        {
+          "start": 8.44,
+          "end": 8.74,
+          "probability": 0.9546571969985962,
+          "text": "amarelo",
+          "startOutput": 8.059999999999999,
+          "endOutput": 8.36
+        },
+        {
+          "start": 8.74,
+          "end": 9.26,
+          "probability": 0.8043493330478668,
+          "text": "manteiga",
+          "startOutput": 8.36,
+          "endOutput": 8.879999999999999
+        },
+        {
+          "start": 9.26,
+          "end": 9.56,
+          "probability": 0.9669555425643921,
+          "text": "fica",
+          "startOutput": 8.879999999999999,
+          "endOutput": 9.18
+        },
+        {
+          "start": 9.56,
+          "end": 10.2,
+          "probability": 0.9837700724601746,
+          "text": "inusitado",
+          "startOutput": 9.18,
+          "endOutput": 9.82
+        },
+        {
+          "start": 10.2,
+          "end": 10.34,
+          "probability": 0.9879419207572937,
+          "text": "e",
+          "startOutput": 9.82,
+          "endOutput": 9.96
+        },
+        {
+          "start": 10.34,
+          "end": 11.04,
+          "probability": 0.9775269627571106,
+          "text": "contemporâneo.",
+          "startOutput": 9.96,
+          "endOutput": 10.659999999999997
+        }
+      ]
+    },
+    {
+      "id": "marrom",
+      "sourceStart": 11.86,
+      "sourceEnd": 17.64,
+      "switch": 14.52,
+      "baseName": "MARROM CAFÉ",
+      "base": "#5B3729",
+      "oldName": "BEGE",
+      "old": "#D4BE9E",
+      "newName": "AZUL CLARO",
+      "new": "#A8CDDA",
+      "oldDescriptor": "CLÁSSICO",
+      "newDescriptor": "REFINADO",
+      "index": 2,
+      "start": 10.760000000000002,
+      "end": 16.540000000000003,
+      "duration": 5.780000000000001,
+      "startFrame": 646,
+      "endFrame": 992,
+      "switchOutput": 13.420000000000002,
+      "durationInFrames": 346,
+      "words": [
+        {
+          "start": 11.96,
+          "end": 12.32,
+          "probability": 0.9097561240196228,
+          "text": "Marrom",
+          "startOutput": 10.860000000000003,
+          "endOutput": 11.220000000000002
+        },
+        {
+          "start": 12.32,
+          "end": 12.56,
+          "probability": 0.8476860523223877,
+          "text": "café",
+          "startOutput": 11.220000000000002,
+          "endOutput": 11.46
+        },
+        {
+          "start": 12.56,
+          "end": 12.84,
+          "probability": 0.9954931735992432,
+          "text": "com",
+          "startOutput": 11.46,
+          "endOutput": 11.740000000000002
+        },
+        {
+          "start": 12.84,
+          "end": 13.24,
+          "probability": 0.6082596033811569,
+          "text": "bege",
+          "startOutput": 11.740000000000002,
+          "endOutput": 12.14
+        },
+        {
+          "start": 13.24,
+          "end": 13.56,
+          "probability": 0.9552180171012878,
+          "text": "fica",
+          "startOutput": 12.14,
+          "endOutput": 12.46
+        },
+        {
+          "start": 13.56,
+          "end": 14.14,
+          "probability": 0.9974185029665629,
+          "text": "clássico,",
+          "startOutput": 12.46,
+          "endOutput": 13.040000000000003
+        },
+        {
+          "start": 14.52,
+          "end": 14.58,
+          "probability": 0.9923157691955566,
+          "text": "mas",
+          "startOutput": 13.420000000000002,
+          "endOutput": 13.480000000000004
+        },
+        {
+          "start": 14.58,
+          "end": 14.88,
+          "probability": 0.9577270448207855,
+          "text": "marrom",
+          "startOutput": 13.480000000000004,
+          "endOutput": 13.780000000000001
+        },
+        {
+          "start": 14.88,
+          "end": 15.2,
+          "probability": 0.997546374797821,
+          "text": "café",
+          "startOutput": 13.780000000000001,
+          "endOutput": 14.100000000000001
+        },
+        {
+          "start": 15.2,
+          "end": 15.46,
+          "probability": 0.9974542260169983,
+          "text": "com",
+          "startOutput": 14.100000000000001,
+          "endOutput": 14.360000000000003
+        },
+        {
+          "start": 15.46,
+          "end": 15.68,
+          "probability": 0.7367600202560425,
+          "text": "azul",
+          "startOutput": 14.360000000000003,
+          "endOutput": 14.580000000000002
+        },
+        {
+          "start": 15.68,
+          "end": 16.0,
+          "probability": 0.634658694267273,
+          "text": "claro",
+          "startOutput": 14.580000000000002,
+          "endOutput": 14.900000000000002
+        },
+        {
+          "start": 16.0,
+          "end": 16.32,
+          "probability": 0.9784749746322632,
+          "text": "fica",
+          "startOutput": 14.900000000000002,
+          "endOutput": 15.220000000000002
+        },
+        {
+          "start": 16.32,
+          "end": 16.88,
+          "probability": 0.996949315071106,
+          "text": "elegante",
+          "startOutput": 15.220000000000002,
+          "endOutput": 15.780000000000001
+        },
+        {
+          "start": 16.88,
+          "end": 17.02,
+          "probability": 0.920703113079071,
+          "text": "e",
+          "startOutput": 15.780000000000001,
+          "endOutput": 15.920000000000002
+        },
+        {
+          "start": 17.02,
+          "end": 17.54,
+          "probability": 0.988375186920166,
+          "text": "refinado.",
+          "startOutput": 15.920000000000002,
+          "endOutput": 16.44
+        }
+      ]
+    },
+    {
+      "id": "rosa",
+      "sourceStart": 18.02,
+      "sourceEnd": 24.02,
+      "switch": 20.54,
+      "baseName": "ROSA CLARO",
+      "base": "#E5A9B8",
+      "oldName": "AZUL BEBÊ",
+      "old": "#ADD3E2",
+      "newName": "VINHO",
+      "new": "#781F3C",
+      "textAccent": "#F0B7C7",
+      "oldDescriptor": "ROMÂNTICO",
+      "newDescriptor": "SOFISTICADO",
+      "index": 3,
+      "start": 16.540000000000003,
+      "end": 22.540000000000003,
+      "duration": 6.0,
+      "startFrame": 992,
+      "endFrame": 1352,
+      "switchOutput": 19.06,
+      "durationInFrames": 360,
+      "words": [
+        {
+          "start": 18.12,
+          "end": 18.3,
+          "probability": 0.7879241108894348,
+          "text": "Rosa",
+          "startOutput": 16.640000000000004,
+          "endOutput": 16.820000000000004
+        },
+        {
+          "start": 18.3,
+          "end": 18.64,
+          "probability": 0.8618846535682678,
+          "text": "claro",
+          "startOutput": 16.820000000000004,
+          "endOutput": 17.160000000000007
+        },
+        {
+          "start": 18.64,
+          "end": 18.84,
+          "probability": 0.9935948252677917,
+          "text": "com",
+          "startOutput": 17.160000000000007,
+          "endOutput": 17.360000000000003
+        },
+        {
+          "start": 18.84,
+          "end": 19.04,
+          "probability": 0.9244338870048523,
+          "text": "azul",
+          "startOutput": 17.360000000000003,
+          "endOutput": 17.56
+        },
+        {
+          "start": 19.04,
+          "end": 19.4,
+          "probability": 0.6947060525417328,
+          "text": "bebê",
+          "startOutput": 17.56,
+          "endOutput": 17.919999999999998
+        },
+        {
+          "start": 19.4,
+          "end": 19.72,
+          "probability": 0.9896948337554932,
+          "text": "fica",
+          "startOutput": 17.919999999999998,
+          "endOutput": 18.240000000000006
+        },
+        {
+          "start": 19.72,
+          "end": 20.34,
+          "probability": 0.9385838359594345,
+          "text": "romântico,",
+          "startOutput": 18.240000000000006,
+          "endOutput": 18.860000000000003
+        },
+        {
+          "start": 20.54,
+          "end": 20.68,
+          "probability": 0.991142988204956,
+          "text": "mas",
+          "startOutput": 19.06,
+          "endOutput": 19.2
+        },
+        {
+          "start": 20.68,
+          "end": 20.94,
+          "probability": 0.8201699256896973,
+          "text": "rosa",
+          "startOutput": 19.2,
+          "endOutput": 19.460000000000004
+        },
+        {
+          "start": 20.94,
+          "end": 21.3,
+          "probability": 0.9849884510040283,
+          "text": "claro",
+          "startOutput": 19.460000000000004,
+          "endOutput": 19.820000000000004
+        },
+        {
+          "start": 21.3,
+          "end": 21.48,
+          "probability": 0.9830294251441956,
+          "text": "com",
+          "startOutput": 19.820000000000004,
+          "endOutput": 20.000000000000004
+        },
+        {
+          "start": 21.48,
+          "end": 21.88,
+          "probability": 0.953150749206543,
+          "text": "vinho",
+          "startOutput": 20.000000000000004,
+          "endOutput": 20.400000000000002
+        },
+        {
+          "start": 21.88,
+          "end": 22.6,
+          "probability": 0.9296387434005737,
+          "text": "fica",
+          "startOutput": 20.400000000000002,
+          "endOutput": 21.12
+        },
+        {
+          "start": 22.6,
+          "end": 23.04,
+          "probability": 0.9869775474071503,
+          "text": "maduro",
+          "startOutput": 21.12,
+          "endOutput": 21.56
+        },
+        {
+          "start": 23.04,
+          "end": 23.26,
+          "probability": 0.9969208240509033,
+          "text": "e",
+          "startOutput": 21.56,
+          "endOutput": 21.780000000000005
+        },
+        {
+          "start": 23.26,
+          "end": 23.92,
+          "probability": 0.9849897027015686,
+          "text": "sofisticado.",
+          "startOutput": 21.780000000000005,
+          "endOutput": 22.44000000000001
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "sourceStart": 24.64,
+      "sourceEnd": 27.2,
+      "cta": true,
+      "baseName": "MODA",
+      "base": "#711F3B",
+      "new": "#B9D97B",
+      "index": 4,
+      "start": 22.540000000000003,
+      "end": 25.1,
+      "duration": 2.5599999999999987,
+      "startFrame": 1352,
+      "endFrame": 1506,
+      "switchOutput": null,
+      "durationInFrames": 154,
+      "words": [
+        {
+          "start": 24.74,
+          "end": 25.38,
+          "probability": 0.986850380897522,
+          "text": "Gostou?",
+          "startOutput": 22.64,
+          "endOutput": 23.28
+        },
+        {
+          "start": 25.56,
+          "end": 25.66,
+          "probability": 0.9694734811782837,
+          "text": "Me",
+          "startOutput": 23.46,
+          "endOutput": 23.560000000000002
+        },
+        {
+          "start": 25.66,
+          "end": 25.84,
+          "probability": 0.9939151406288147,
+          "text": "segue",
+          "startOutput": 23.560000000000002,
+          "endOutput": 23.740000000000002
+        },
+        {
+          "start": 25.84,
+          "end": 26.1,
+          "probability": 0.9873183369636536,
+          "text": "para",
+          "startOutput": 23.740000000000002,
+          "endOutput": 24.0
+        },
+        {
+          "start": 26.1,
+          "end": 26.32,
+          "probability": 0.9203327298164368,
+          "text": "mais",
+          "startOutput": 24.0,
+          "endOutput": 24.22
+        },
+        {
+          "start": 26.32,
+          "end": 26.54,
+          "probability": 0.9498563408851624,
+          "text": "dicas",
+          "startOutput": 24.22,
+          "endOutput": 24.439999999999998
+        },
+        {
+          "start": 26.54,
+          "end": 26.7,
+          "probability": 0.995843231678009,
+          "text": "de",
+          "startOutput": 24.439999999999998,
+          "endOutput": 24.6
+        },
+        {
+          "start": 26.7,
+          "end": 26.98,
+          "probability": 0.9953029751777649,
+          "text": "moda.",
+          "startOutput": 24.6,
+          "endOutput": 24.880000000000003
+        }
+      ]
+    }
+  ]
+}

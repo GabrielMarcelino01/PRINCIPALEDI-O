@@ -1,0 +1,444 @@
+<template>
+<style>
+@font-face{font-family:Inter;src:url('assets/fonts/Inter-Variable.woff2') format('woff2');font-weight:100 900;font-style:normal}
+@font-face{font-family:Playfair;src:url('assets/fonts/PlayfairDisplay-Italic.woff2') format('woff2');font-weight:400 900;font-style:italic}
+@font-face{font-family:EBG;src:url('assets/fonts/EBGaramond-700.woff2') format('woff2');font-weight:700;font-style:normal}
+*{box-sizing:border-box;margin:0;padding:0}
+#root{position:absolute;inset:0;overflow:hidden;font-family:Inter,Arial,sans-serif;background:var(--ground)}
+.clip{position:absolute}
+.shot{inset:0;overflow:hidden}
+.shot-motion{position:absolute;inset:-5%;will-change:transform}
+.shot-motion img{width:100%;height:100%;object-fit:cover;display:block}
+.shade{position:absolute;inset:0;pointer-events:none}
+.text-motion{position:relative;width:100%;height:100%;will-change:transform,clip-path,opacity}
+.display{font-family:EBG,Georgia,serif;font-weight:700;letter-spacing:-.045em;line-height:.91}
+.serif-italic{font-family:Playfair,Georgia,serif;font-style:italic}
+.kicker{font-family:Inter,Arial,sans-serif;font-size:30px;font-weight:700;letter-spacing:.13em;line-height:1.2;text-transform:uppercase}
+.body-copy{font-family:Inter,Arial,sans-serif;font-size:36px;line-height:1.3}
+.disclosure{position:absolute;left:64px;top:168px;z-index:55;font-size:28px;font-weight:700;letter-spacing:.16em;line-height:1.15;color:#F6F0E8;background:rgba(37,13,24,.84);padding:5px 10px}
+.grain{position:absolute;inset:0;z-index:45;pointer-events:none;opacity:.05;background-image:url('assets/images/grain.png');background-repeat:repeat}
+.light-sweep{position:absolute;top:-20%;bottom:-20%;left:0;width:260px;z-index:35;pointer-events:none;opacity:0;background:linear-gradient(90deg,transparent,rgba(255,244,222,.7),transparent)}
+.phone-frame{position:absolute;overflow:hidden;border:12px solid #21131a;border-radius:48px;background:#fff;box-shadow:0 30px 70px rgba(37,13,24,.24)}
+.phone-frame img{position:absolute;left:0;top:0;width:100%;display:block}
+.ui-stage{position:absolute;inset:0;background:#f6f0e8}
+.editorial-rule{height:10px;width:160px;background:var(--coral,#F26E64)}
+.feature-line{font-family:EBG,Georgia,serif;font-size:80px;font-weight:700;line-height:.95;letter-spacing:-.035em}
+
+#root{--ground:transparent;--ink:#2B101C;--disclosure:#F6F0E8}
+</style>
+<div id="root" data-composition-id="captions" data-width="1080" data-height="1920">
+
+<div id="cap-00-0" class="clip" data-start="0.35" data-duration="1.200262" data-track-index="1" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-00-0-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Ana, o que aconteceu?</div>
+  </div>
+</div>
+
+<div id="cap-00-1" class="clip" data-start="1.550262" data-duration="1.615738" data-track-index="1" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-00-1-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Dá para ver que você está triste.</div>
+  </div>
+</div>
+
+<div id="cap-01-0" class="clip" data-start="3.326" data-duration="1.598222" data-track-index="2" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-01-0-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Eu não entendia por que todo look</div>
+  </div>
+</div>
+
+<div id="cap-01-1" class="clip" data-start="4.924222" data-duration="1.984" data-track-index="2" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-01-1-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">parecia ficar melhor nas outras pessoas</div>
+  </div>
+</div>
+
+<div id="cap-01-2" class="clip" data-start="6.908222" data-duration="1.047111" data-track-index="2" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-01-2-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">do que em mim.</div>
+  </div>
+</div>
+
+<div id="cap-02-0" class="clip" data-start="8.115333" data-duration="2.216507" data-track-index="3" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-02-0-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Eu copiava ideias, comprava peças novas</div>
+  </div>
+</div>
+
+<div id="cap-02-1" class="clip" data-start="10.33184" data-duration="2.647493" data-track-index="3" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-02-1-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">e ainda sentia que nada combinava comigo.</div>
+  </div>
+</div>
+
+<div id="cap-03-0" class="clip" data-start="13.703048" data-duration="1.224" data-track-index="4" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-03-0-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">E o jantar do trabalho?</div>
+  </div>
+</div>
+
+<div id="cap-03-1" class="clip" data-start="14.927048" data-duration="0.952" data-track-index="4" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-03-1-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Você vai, não é?</div>
+  </div>
+</div>
+
+<div id="cap-04-0" class="clip" data-start="16.039048" data-duration="1.331063" data-track-index="5" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-04-0-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Não sei. Toda vez é igual:</div>
+  </div>
+</div>
+
+<div id="cap-04-1" class="clip" data-start="17.370111" data-duration="1.736171" data-track-index="5" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-04-1-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">eu provo tudo, não sei o que vestir</div>
+  </div>
+</div>
+
+<div id="cap-04-2" class="clip" data-start="19.106282" data-duration="2.372766" data-track-index="5" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-04-2-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">e acabo querendo me esconder nas fotos.</div>
+  </div>
+</div>
+
+<div id="cap-05-0" class="clip" data-start="21.639048" data-duration="1.525333" data-track-index="6" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-05-0-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Por que era tão difícil descobrir</div>
+  </div>
+</div>
+
+<div id="cap-05-1" class="clip" data-start="23.164381" data-duration="1.525333" data-track-index="6" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-05-1-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">o que funcionava para mim?</div>
+  </div>
+</div>
+
+<div id="cap-06-0" class="clip" data-start="25.413429" data-duration="1.545365" data-track-index="7" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-06-0-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Eu também me sentia assim.</div>
+  </div>
+</div>
+
+<div id="cap-06-1" class="clip" data-start="26.958794" data-duration="1.339317" data-track-index="7" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-06-1-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Até descobrir que o problema</div>
+  </div>
+</div>
+
+<div id="cap-06-2" class="clip" data-start="28.298111" data-duration="1.339318" data-track-index="7" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-06-2-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">não era o meu armário.</div>
+  </div>
+</div>
+
+<div id="cap-07-0" class="clip" data-start="29.797429" data-duration="0.914598" data-track-index="8" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-07-0-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">E você simplesmente</div>
+  </div>
+</div>
+
+<div id="cap-07-1" class="clip" data-start="30.712027" data-duration="0.962735" data-track-index="8" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-07-1-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">aceitou isso?</div>
+  </div>
+</div>
+
+<div id="cap-08-0" class="clip" data-start="31.834762" data-duration="1.2" data-track-index="9" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-08-0-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Não. Eu descobri um truque:</div>
+  </div>
+</div>
+
+<div id="cap-08-1" class="clip" data-start="33.034762" data-duration="1.296" data-track-index="9" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-08-1-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">o <span style="color:#F26E64">Truque dos Mil Looks</span>.</div>
+  </div>
+</div>
+
+<div id="cap-09-0" class="clip" data-start="34.490762" data-duration="1.173333" data-track-index="10" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-09-0-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Ele mostra combinações</div>
+  </div>
+</div>
+
+<div id="cap-09-1" class="clip" data-start="35.664095" data-duration="1.813334" data-track-index="10" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-09-1-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">com as roupas que a gente já tem.</div>
+  </div>
+</div>
+
+<div id="cap-09-2" class="clip" data-start="37.477429" data-duration="1.44" data-track-index="10" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-09-2-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Foi assim que eu parei de achar</div>
+  </div>
+</div>
+
+<div id="cap-09-3" class="clip" data-start="38.917429" data-duration="1.226666" data-track-index="10" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-09-3-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">que me vestia mal.</div>
+  </div>
+</div>
+
+<div id="cap-10-0" class="clip" data-start="40.86781" data-duration="1.426839" data-track-index="11" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-10-0-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Você fotografa suas peças,</div>
+  </div>
+</div>
+
+<div id="cap-10-1" class="clip" data-start="42.294649" data-duration="1.483914" data-track-index="11" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-10-1-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">e a inteligência artificial</div>
+  </div>
+</div>
+
+<div id="cap-10-2" class="clip" data-start="43.778563" data-duration="1.483913" data-track-index="11" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-10-2-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">organiza seu closet.</div>
+  </div>
+</div>
+
+<div id="cap-11-0" class="clip" data-start="45.98619" data-duration="1.805663" data-track-index="12" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-11-0-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Depois, cria looks para trabalho,</div>
+  </div>
+</div>
+
+<div id="cap-11-1" class="clip" data-start="47.791853" data-duration="1.223191" data-track-index="12" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-11-1-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">fim de semana e jantar,</div>
+  </div>
+</div>
+
+<div id="cap-11-2" class="clip" data-start="49.015044" data-duration="2.155146" data-track-index="12" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-11-2-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">tudo com o que já está aí na sua casa.</div>
+  </div>
+</div>
+
+<div id="cap-12-0" class="clip" data-start="51.33019" data-duration="1.509053" data-track-index="13" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-12-0-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Uma peça, <span style="color:#F26E64">vários looks</span>.</div>
+  </div>
+</div>
+
+<div id="cap-12-1" class="clip" data-start="52.839243" data-duration="1.562947" data-track-index="13" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-12-1-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Sem precisar comprar roupa nova</div>
+  </div>
+</div>
+
+<div id="cap-12-2" class="clip" data-start="54.40219" data-duration="1.024" data-track-index="13" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-12-2-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">toda semana.</div>
+  </div>
+</div>
+
+<div id="cap-13-0" class="clip" data-start="56.149905" data-duration="1.652198" data-track-index="14" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-13-0-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">E quando você quiser algo novo,</div>
+  </div>
+</div>
+
+<div id="cap-13-1" class="clip" data-start="57.802103" data-duration="1.357163" data-track-index="14" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-13-1-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">o app também indica lojas</div>
+  </div>
+</div>
+
+<div id="cap-13-2" class="clip" data-start="59.159266" data-duration="2.537305" data-track-index="14" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-13-2-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">com descontos de até <span style="color:#F26E64">cinquenta por cento</span>.</div>
+  </div>
+</div>
+
+<div id="cap-14-0" class="clip" data-start="61.856571" data-duration="1.625155" data-track-index="15" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-14-0-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Tem sugestões para o seu estilo,</div>
+  </div>
+</div>
+
+<div id="cap-14-1" class="clip" data-start="63.481726" data-duration="1.064756" data-track-index="15" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-14-1-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">favoritos, ofertas</div>
+  </div>
+</div>
+
+<div id="cap-14-2" class="clip" data-start="64.546482" data-duration="1.064756" data-track-index="15" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-14-2-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">e muito mais.</div>
+  </div>
+</div>
+
+<div id="cap-15-0" class="clip" data-start="66.334952" data-duration="1.144424" data-track-index="16" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-15-0-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Três semanas depois,</div>
+  </div>
+</div>
+
+<div id="cap-15-1" class="clip" data-start="67.479376" data-duration="1.602193" data-track-index="16" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-15-1-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">eu parei de me esconder.</div>
+  </div>
+</div>
+
+<div id="cap-15-2" class="clip" data-start="69.081569" data-duration="1.373309" data-track-index="16" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-15-2-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Entrava numa sala e sentia</div>
+  </div>
+</div>
+
+<div id="cap-15-3" class="clip" data-start="70.454878" data-duration="2.002741" data-track-index="16" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-15-3-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">que finalmente parecia comigo.</div>
+  </div>
+</div>
+
+<div id="cap-16-0" class="clip" data-start="72.617619" data-duration="1.776485" data-track-index="17" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-16-0-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Não é sobre mudar quem você é.</div>
+  </div>
+</div>
+
+<div id="cap-16-1" class="clip" data-start="74.394104" data-duration="1.832" data-track-index="17" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-16-1-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">É sobre enxergar <span style="color:#F26E64">mil possibilidades</span></div>
+  </div>
+</div>
+
+<div id="cap-16-2" class="clip" data-start="76.226104" data-duration="1.276848" data-track-index="17" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-16-2-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">no que você já tem.</div>
+  </div>
+</div>
+
+<div id="cap-17-0" class="clip" data-start="77.662952" data-duration="2.23453" data-track-index="18" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-17-0-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Meu próximo look já estava no meu armário.</div>
+  </div>
+</div>
+
+<div id="cap-17-1" class="clip" data-start="79.897482" data-duration="1.818804" data-track-index="18" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-17-1-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #F26E64;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#F26E64;margin-bottom:8px">ANA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Eu só precisava do truque certo.</div>
+  </div>
+</div>
+
+<div id="cap-18-0" class="clip" data-start="82.44" data-duration="0.977455" data-track-index="19" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-18-0-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Clique no link.</div>
+  </div>
+</div>
+
+<div id="cap-18-1" class="clip" data-start="83.417455" data-duration="1.582545" data-track-index="19" style="z-index:20;left:64px;top:1315px;width:860px" data-layout-allow-caption-zone>
+  <div id="cap-18-1-motion" style="background:rgba(37,13,24,.94);border-left:8px solid #D9E8DF;padding:20px 26px 22px;box-shadow:0 12px 32px rgba(0,0,0,.18)">
+    <div style="font-size:28px;font-weight:700;letter-spacing:.12em;color:#D9E8DF;margin-bottom:8px">CLARA</div>
+    <div style="font-family:Inter,Arial,sans-serif;font-size:46px;font-weight:650;line-height:1.12;color:#F6F0E8">Conheça o <span style="color:#F26E64">Truque dos Mil Looks</span>.</div>
+  </div>
+</div>
+</div>
+<script>
+const tl=gsap.timeline({paused:true});
+tl.fromTo('#cap-00-0-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},0.35);
+tl.fromTo('#cap-00-1-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},1.550262);
+tl.fromTo('#cap-01-0-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},3.326);
+tl.fromTo('#cap-01-1-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},4.924222);
+tl.fromTo('#cap-01-2-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},6.908222);
+tl.fromTo('#cap-02-0-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},8.115333);
+tl.fromTo('#cap-02-1-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},10.33184);
+tl.fromTo('#cap-03-0-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},13.703048);
+tl.fromTo('#cap-03-1-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},14.927048);
+tl.fromTo('#cap-04-0-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},16.039048);
+tl.fromTo('#cap-04-1-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},17.370111);
+tl.fromTo('#cap-04-2-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},19.106282);
+tl.fromTo('#cap-05-0-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},21.639048);
+tl.fromTo('#cap-05-1-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},23.164381);
+tl.fromTo('#cap-06-0-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},25.413429);
+tl.fromTo('#cap-06-1-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},26.958794);
+tl.fromTo('#cap-06-2-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},28.298111);
+tl.fromTo('#cap-07-0-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},29.797429);
+tl.fromTo('#cap-07-1-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},30.712027);
+tl.fromTo('#cap-08-0-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},31.834762);
+tl.fromTo('#cap-08-1-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},33.034762);
+tl.fromTo('#cap-09-0-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},34.490762);
+tl.fromTo('#cap-09-1-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},35.664095);
+tl.fromTo('#cap-09-2-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},37.477429);
+tl.fromTo('#cap-09-3-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},38.917429);
+tl.fromTo('#cap-10-0-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},40.86781);
+tl.fromTo('#cap-10-1-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},42.294649);
+tl.fromTo('#cap-10-2-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},43.778563);
+tl.fromTo('#cap-11-0-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},45.98619);
+tl.fromTo('#cap-11-1-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},47.791853);
+tl.fromTo('#cap-11-2-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},49.015044);
+tl.fromTo('#cap-12-0-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},51.33019);
+tl.fromTo('#cap-12-1-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},52.839243);
+tl.fromTo('#cap-12-2-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},54.40219);
+tl.fromTo('#cap-13-0-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},56.149905);
+tl.fromTo('#cap-13-1-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},57.802103);
+tl.fromTo('#cap-13-2-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},59.159266);
+tl.fromTo('#cap-14-0-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},61.856571);
+tl.fromTo('#cap-14-1-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},63.481726);
+tl.fromTo('#cap-14-2-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},64.546482);
+tl.fromTo('#cap-15-0-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},66.334952);
+tl.fromTo('#cap-15-1-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},67.479376);
+tl.fromTo('#cap-15-2-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},69.081569);
+tl.fromTo('#cap-15-3-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},70.454878);
+tl.fromTo('#cap-16-0-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},72.617619);
+tl.fromTo('#cap-16-1-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},74.394104);
+tl.fromTo('#cap-16-2-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},76.226104);
+tl.fromTo('#cap-17-0-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},77.662952);
+tl.fromTo('#cap-17-1-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},79.897482);
+tl.fromTo('#cap-18-0-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},82.44);
+tl.fromTo('#cap-18-1-motion',{y:18,opacity:0},{y:0,opacity:1,duration:.18,ease:'power2.out'},83.417455);
+window.__timelines['captions']=tl;
+tl.seek(0);
+</script>
+</template>

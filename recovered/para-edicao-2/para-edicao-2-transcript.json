@@ -1,0 +1,309 @@
+{
+  "language": "pt",
+  "language_probability": 1,
+  "source_commit": "142becb1309f29523250f3e992d292d2101b5c7d",
+  "source_sha256": "fccbe853e0220eaf9cd64da0e222022945cf90e9798ea383b85d881de7d714a1",
+  "segments": [
+    {
+      "id": "look-1",
+      "start": 0.0,
+      "end": 4.14,
+      "text": "Lembre-se, rosa-chá com marrom chocolate fica usado e sofisticado.",
+      "words": [
+        {
+          "start": 0,
+          "end": 0.64,
+          "word": " Lembre-se,"
+        },
+        {
+          "start": 0.86,
+          "end": 1.38,
+          "word": " Rosa-chá"
+        },
+        {
+          "start": 1.38,
+          "end": 1.52,
+          "word": " com"
+        },
+        {
+          "start": 1.52,
+          "end": 1.82,
+          "word": " marrom"
+        },
+        {
+          "start": 1.82,
+          "end": 2.4,
+          "word": " chocolate"
+        },
+        {
+          "start": 2.4,
+          "end": 2.64,
+          "word": " fica"
+        },
+        {
+          "start": 2.64,
+          "end": 3.24,
+          "word": " usado"
+        },
+        {
+          "start": 3.24,
+          "end": 3.46,
+          "word": " e"
+        },
+        {
+          "start": 3.46,
+          "end": 4.14,
+          "word": " sofisticado."
+        }
+      ],
+      "group_ids": [
+        "look-1-cores-a",
+        "look-1-cores-b",
+        "look-1-resultado"
+      ],
+      "asr_text": "Lembre-se, rosa chá com marrom chocolate fica usado e sofisticado.",
+      "editorial_note": "Quatro passagens reconheceram “fica usado”; preservado apesar da construção incomum. As análises isoladas normal e a 0,75× indicaram “sofisticado”. Bloco limitado a 4,14 s na troca de look. “Marrom chocolate” foi separado em duas palavras na legenda para preservar o tamanho padrão e evitar overflow, como no tratamento de “azul marinho” do vídeo anterior."
+    },
+    {
+      "id": "look-2",
+      "start": 4.26,
+      "end": 8.56,
+      "text": "Use preto com caramelo e fique sofisticada e irresistível.",
+      "words": [
+        {
+          "start": 4.26,
+          "end": 4.46,
+          "word": " Use"
+        },
+        {
+          "start": 4.46,
+          "end": 4.94,
+          "word": " preto"
+        },
+        {
+          "start": 4.94,
+          "end": 5.06,
+          "word": " com"
+        },
+        {
+          "start": 5.06,
+          "end": 5.68,
+          "word": " caramelo"
+        },
+        {
+          "start": 6.04,
+          "end": 6.28,
+          "word": " e"
+        },
+        {
+          "start": 6.28,
+          "end": 6.52,
+          "word": " fique"
+        },
+        {
+          "start": 6.52,
+          "end": 7.44,
+          "word": " sofisticada"
+        },
+        {
+          "start": 7.44,
+          "end": 7.7,
+          "word": " e"
+        },
+        {
+          "start": 7.7,
+          "end": 8.56,
+          "word": " irresistível."
+        }
+      ],
+      "group_ids": [
+        "look-2-cores",
+        "look-2-resultado"
+      ],
+      "asr_text": "Use preto com caramelo, e fique sofisticada e irresistível.",
+      "editorial_note": "Duas passagens integrais convergentes; apenas a vírgula editorial foi omitida na legenda das cores."
+    },
+    {
+      "id": "look-3",
+      "start": 9.58,
+      "end": 13.56,
+      "text": "Use rosa-queimado com marrom e fique moderna e poderosa.",
+      "words": [
+        {
+          "start": 9.58,
+          "end": 9.94,
+          "word": " Use"
+        },
+        {
+          "start": 9.94,
+          "end": 10.8,
+          "word": " Rosa-queimado"
+        },
+        {
+          "start": 10.8,
+          "end": 11.0,
+          "word": " com"
+        },
+        {
+          "start": 11.0,
+          "end": 11.48,
+          "word": " marrom"
+        },
+        {
+          "start": 11.9,
+          "end": 11.94,
+          "word": " e"
+        },
+        {
+          "start": 11.94,
+          "end": 12.18,
+          "word": " fique"
+        },
+        {
+          "start": 12.18,
+          "end": 12.8,
+          "word": " moderna"
+        },
+        {
+          "start": 12.8,
+          "end": 12.94,
+          "word": " e"
+        },
+        {
+          "start": 12.94,
+          "end": 13.56,
+          "word": " poderosa."
+        }
+      ],
+      "group_ids": [
+        "look-3-cores",
+        "look-3-resultado"
+      ],
+      "asr_text": "Use rosa-queimado com marrom, e fique moderna e poderosa.",
+      "editorial_note": "Duas passagens integrais convergentes."
+    },
+    {
+      "id": "look-4",
+      "start": 14.2,
+      "end": 17.6,
+      "text": "Use verde-oliva com bege e fique chique e autêntica.",
+      "words": [
+        {
+          "start": 14.2,
+          "end": 14.42,
+          "word": " Use"
+        },
+        {
+          "start": 14.42,
+          "end": 15.12,
+          "word": " Verde-oliva"
+        },
+        {
+          "start": 15.12,
+          "end": 15.28,
+          "word": " com"
+        },
+        {
+          "start": 15.28,
+          "end": 15.72,
+          "word": " bege"
+        },
+        {
+          "start": 16.0,
+          "end": 16.06,
+          "word": " e"
+        },
+        {
+          "start": 16.06,
+          "end": 16.24,
+          "word": " fique"
+        },
+        {
+          "start": 16.24,
+          "end": 16.72,
+          "word": " chique"
+        },
+        {
+          "start": 16.72,
+          "end": 16.96,
+          "word": " e"
+        },
+        {
+          "start": 16.96,
+          "end": 17.6,
+          "word": " autêntica."
+        }
+      ],
+      "group_ids": [
+        "look-4-cores",
+        "look-4-resultado"
+      ],
+      "asr_text": "Use verde-oliva com beje, e fique chique e autêntica.",
+      "editorial_note": "Somente a grafia “beje” foi normalizada para “bege”, sem mudança de pronúncia ou conteúdo."
+    },
+    {
+      "id": "look-5",
+      "start": 18.86,
+      "end": 22.4,
+      "text": "Use vinho com cinza claro e fique elegante e marcante.",
+      "words": [
+        {
+          "start": 18.86,
+          "end": 19.12,
+          "word": " Use"
+        },
+        {
+          "start": 19.12,
+          "end": 19.46,
+          "word": " vinho"
+        },
+        {
+          "start": 19.46,
+          "end": 19.66,
+          "word": " com"
+        },
+        {
+          "start": 19.66,
+          "end": 20.02,
+          "word": " cinza"
+        },
+        {
+          "start": 20.02,
+          "end": 20.38,
+          "word": " claro"
+        },
+        {
+          "start": 20.8,
+          "end": 20.86,
+          "word": " e"
+        },
+        {
+          "start": 20.86,
+          "end": 21.1,
+          "word": " fique"
+        },
+        {
+          "start": 21.1,
+          "end": 21.7,
+          "word": " elegante"
+        },
+        {
+          "start": 21.7,
+          "end": 21.92,
+          "word": " e"
+        },
+        {
+          "start": 21.92,
+          "end": 22.4,
+          "word": " marcante."
+        }
+      ],
+      "group_ids": [
+        "look-5-cores",
+        "look-5-resultado"
+      ],
+      "asr_text": "Use vinho com cinza claro, e fique elegante e marcante.",
+      "editorial_note": "Duas passagens integrais convergentes."
+    }
+  ]
+}

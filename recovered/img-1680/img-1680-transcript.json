@@ -1,0 +1,775 @@
+{
+  "language": "pt",
+  "language_probability": 1,
+  "source_commit": "48d4b7fd6366bbce6ef3a9193ecc03e5314886b8",
+  "source_blob": "bc5dc713bc96990c13045225e42a6afe7aa8292c",
+  "source_sha256": "762dc340e5a744213a2f9d102dd35cb831e4d7bc42fad9dc3f11012afde10b1c",
+  "reviewed": true,
+  "review_method": "Duas passagens integrais de ASR e passagens isoladas normal/0,75× para a divergência; sem escuta humana integral.",
+  "review_notes": [
+    "A segunda passagem inseriu o em expressam o seu estilo; as análises isoladas normal e 0,75× confirmaram expressam seu estilo.",
+    "Normalização editorial de Closet para closet. Truque dos Mil Looks e Saiba Mais seguem a nomenclatura visível do próprio criativo."
+  ],
+  "segments": [
+    {
+      "id": "scene-01",
+      "start": 0.0,
+      "end": 3.64,
+      "text": "Você precisa parar de achar que roupa apertada é sinônimo de elegância.",
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.26,
+          "word": "Você",
+          "confidence": 0.737402
+        },
+        {
+          "start": 0.26,
+          "end": 0.58,
+          "word": "precisa",
+          "confidence": 0.997697
+        },
+        {
+          "start": 0.58,
+          "end": 0.94,
+          "word": "parar",
+          "confidence": 0.991142
+        },
+        {
+          "start": 0.94,
+          "end": 1.14,
+          "word": "de",
+          "confidence": 0.99794
+        },
+        {
+          "start": 1.14,
+          "end": 1.44,
+          "word": "achar",
+          "confidence": 0.998951
+        },
+        {
+          "start": 1.44,
+          "end": 1.6,
+          "word": "que",
+          "confidence": 0.989759
+        },
+        {
+          "start": 1.6,
+          "end": 1.86,
+          "word": "roupa",
+          "confidence": 0.980331
+        },
+        {
+          "start": 1.86,
+          "end": 2.36,
+          "word": "apertada",
+          "confidence": 0.998835
+        },
+        {
+          "start": 2.36,
+          "end": 2.54,
+          "word": "é",
+          "confidence": 0.992739
+        },
+        {
+          "start": 2.54,
+          "end": 2.96,
+          "word": "sinônimo",
+          "confidence": 0.96857
+        },
+        {
+          "start": 2.96,
+          "end": 3.1,
+          "word": "de",
+          "confidence": 0.9991
+        },
+        {
+          "start": 3.1,
+          "end": 3.64,
+          "word": "elegância.",
+          "confidence": 0.954817
+        }
+      ]
+    },
+    {
+      "id": "scene-02",
+      "start": 3.98,
+      "end": 7.02,
+      "text": "O segredo está em descobrir o que realmente valoriza você.",
+      "words": [
+        {
+          "start": 3.98,
+          "end": 4.1,
+          "word": "O",
+          "confidence": 0.980051
+        },
+        {
+          "start": 4.1,
+          "end": 4.52,
+          "word": "segredo",
+          "confidence": 0.994048
+        },
+        {
+          "start": 4.52,
+          "end": 4.7,
+          "word": "está",
+          "confidence": 0.994496
+        },
+        {
+          "start": 4.7,
+          "end": 4.82,
+          "word": "em",
+          "confidence": 0.99684
+        },
+        {
+          "start": 4.82,
+          "end": 5.24,
+          "word": "descobrir",
+          "confidence": 0.986935
+        },
+        {
+          "start": 5.24,
+          "end": 5.46,
+          "word": "o",
+          "confidence": 0.998319
+        },
+        {
+          "start": 5.46,
+          "end": 5.56,
+          "word": "que",
+          "confidence": 0.998925
+        },
+        {
+          "start": 5.56,
+          "end": 6.06,
+          "word": "realmente",
+          "confidence": 0.995752
+        },
+        {
+          "start": 6.06,
+          "end": 6.66,
+          "word": "valoriza",
+          "confidence": 0.995422
+        },
+        {
+          "start": 6.66,
+          "end": 7.02,
+          "word": "você.",
+          "confidence": 0.998328
+        }
+      ]
+    },
+    {
+      "id": "scene-03",
+      "start": 7.32,
+      "end": 9.08,
+      "text": "Eu achava que me faltavam roupas.",
+      "words": [
+        {
+          "start": 7.32,
+          "end": 7.44,
+          "word": "Eu",
+          "confidence": 0.872759
+        },
+        {
+          "start": 7.44,
+          "end": 7.84,
+          "word": "achava",
+          "confidence": 0.99503
+        },
+        {
+          "start": 7.84,
+          "end": 7.98,
+          "word": "que",
+          "confidence": 0.998997
+        },
+        {
+          "start": 7.98,
+          "end": 8.1,
+          "word": "me",
+          "confidence": 0.991297
+        },
+        {
+          "start": 8.1,
+          "end": 8.54,
+          "word": "faltavam",
+          "confidence": 0.995579
+        },
+        {
+          "start": 8.54,
+          "end": 9.08,
+          "word": "roupas.",
+          "confidence": 0.997868
+        }
+      ]
+    },
+    {
+      "id": "scene-04",
+      "start": 9.9,
+      "end": 14.1,
+      "text": "Mas quando aprendi a combinar melhor, comecei a me sentir muito mais elegante.",
+      "words": [
+        {
+          "start": 9.9,
+          "end": 10.12,
+          "word": "Mas",
+          "confidence": 0.986971
+        },
+        {
+          "start": 10.12,
+          "end": 10.3,
+          "word": "quando",
+          "confidence": 0.909693
+        },
+        {
+          "start": 10.3,
+          "end": 10.76,
+          "word": "aprendi",
+          "confidence": 0.95416
+        },
+        {
+          "start": 10.76,
+          "end": 10.82,
+          "word": "a",
+          "confidence": 0.997069
+        },
+        {
+          "start": 10.82,
+          "end": 11.16,
+          "word": "combinar",
+          "confidence": 0.997727
+        },
+        {
+          "start": 11.16,
+          "end": 11.52,
+          "word": "melhor,",
+          "confidence": 0.998621
+        },
+        {
+          "start": 11.98,
+          "end": 12.48,
+          "word": "comecei",
+          "confidence": 0.993316
+        },
+        {
+          "start": 12.48,
+          "end": 12.52,
+          "word": "a",
+          "confidence": 0.99913
+        },
+        {
+          "start": 12.52,
+          "end": 12.6,
+          "word": "me",
+          "confidence": 0.990907
+        },
+        {
+          "start": 12.6,
+          "end": 12.86,
+          "word": "sentir",
+          "confidence": 0.99897
+        },
+        {
+          "start": 12.86,
+          "end": 13.34,
+          "word": "muito",
+          "confidence": 0.998649
+        },
+        {
+          "start": 13.34,
+          "end": 13.54,
+          "word": "mais",
+          "confidence": 0.999066
+        },
+        {
+          "start": 13.54,
+          "end": 14.1,
+          "word": "elegante.",
+          "confidence": 0.997471
+        }
+      ]
+    },
+    {
+      "id": "scene-05",
+      "start": 14.6,
+      "end": 18.7,
+      "text": "Quando suas roupas não expressam seu estilo, até um armário cheio parece vazio.",
+      "words": [
+        {
+          "start": 14.6,
+          "end": 14.76,
+          "word": "Quando",
+          "confidence": 0.991418
+        },
+        {
+          "start": 14.76,
+          "end": 15.0,
+          "word": "suas",
+          "confidence": 0.984983
+        },
+        {
+          "start": 15.0,
+          "end": 15.38,
+          "word": "roupas",
+          "confidence": 0.997985
+        },
+        {
+          "start": 15.38,
+          "end": 15.52,
+          "word": "não",
+          "confidence": 0.998434
+        },
+        {
+          "start": 15.52,
+          "end": 16.02,
+          "word": "expressam",
+          "confidence": 0.991229
+        },
+        {
+          "start": 16.02,
+          "end": 16.2,
+          "word": "seu",
+          "confidence": 0.617896
+        },
+        {
+          "start": 16.2,
+          "end": 16.6,
+          "word": "estilo,",
+          "confidence": 0.996595
+        },
+        {
+          "start": 16.84,
+          "end": 17.04,
+          "word": "até",
+          "confidence": 0.995476
+        },
+        {
+          "start": 17.04,
+          "end": 17.2,
+          "word": "um",
+          "confidence": 0.965454
+        },
+        {
+          "start": 17.2,
+          "end": 17.5,
+          "word": "armário",
+          "confidence": 0.997135
+        },
+        {
+          "start": 17.5,
+          "end": 17.88,
+          "word": "cheio",
+          "confidence": 0.998724
+        },
+        {
+          "start": 17.88,
+          "end": 18.1,
+          "word": "parece",
+          "confidence": 0.994546
+        },
+        {
+          "start": 18.1,
+          "end": 18.7,
+          "word": "vazio.",
+          "confidence": 0.998317
+        }
+      ]
+    },
+    {
+      "id": "scene-06",
+      "start": 19.08,
+      "end": 21.58,
+      "text": "Uma boa combinação muda a forma como você se vê.",
+      "words": [
+        {
+          "start": 19.08,
+          "end": 19.26,
+          "word": "Uma",
+          "confidence": 0.99414
+        },
+        {
+          "start": 19.26,
+          "end": 19.46,
+          "word": "boa",
+          "confidence": 0.998671
+        },
+        {
+          "start": 19.46,
+          "end": 20.0,
+          "word": "combinação",
+          "confidence": 0.996258
+        },
+        {
+          "start": 20.0,
+          "end": 20.38,
+          "word": "muda",
+          "confidence": 0.99868
+        },
+        {
+          "start": 20.38,
+          "end": 20.48,
+          "word": "a",
+          "confidence": 0.986588
+        },
+        {
+          "start": 20.48,
+          "end": 20.74,
+          "word": "forma",
+          "confidence": 0.997291
+        },
+        {
+          "start": 20.74,
+          "end": 20.96,
+          "word": "como",
+          "confidence": 0.992568
+        },
+        {
+          "start": 20.96,
+          "end": 21.22,
+          "word": "você",
+          "confidence": 0.991958
+        },
+        {
+          "start": 21.22,
+          "end": 21.42,
+          "word": "se",
+          "confidence": 0.99758
+        },
+        {
+          "start": 21.42,
+          "end": 21.58,
+          "word": "vê.",
+          "confidence": 0.989392
+        }
+      ]
+    },
+    {
+      "id": "scene-07",
+      "start": 21.9,
+      "end": 24.04,
+      "text": "Foi aí que conheci o Truque dos Mil Looks.",
+      "words": [
+        {
+          "start": 21.9,
+          "end": 22.08,
+          "word": "Foi",
+          "confidence": 0.981254
+        },
+        {
+          "start": 22.08,
+          "end": 22.28,
+          "word": "aí",
+          "confidence": 0.990519
+        },
+        {
+          "start": 22.28,
+          "end": 22.44,
+          "word": "que",
+          "confidence": 0.994745
+        },
+        {
+          "start": 22.44,
+          "end": 22.86,
+          "word": "conheci",
+          "confidence": 0.855997
+        },
+        {
+          "start": 22.86,
+          "end": 23.04,
+          "word": "o",
+          "confidence": 0.940497
+        },
+        {
+          "start": 23.04,
+          "end": 23.4,
+          "word": "Truque",
+          "confidence": 0.617896
+        },
+        {
+          "start": 23.4,
+          "end": 23.56,
+          "word": "dos",
+          "confidence": 0.964252
+        },
+        {
+          "start": 23.56,
+          "end": 23.74,
+          "word": "Mil",
+          "confidence": 0.811589
+        },
+        {
+          "start": 23.74,
+          "end": 24.04,
+          "word": "Looks.",
+          "confidence": 0.338524
+        }
+      ]
+    },
+    {
+      "id": "scene-08",
+      "start": 24.52,
+      "end": 28.68,
+      "text": "Eu fotografo minhas peças e o aplicativo me ajuda a organizar meu closet.",
+      "words": [
+        {
+          "start": 24.52,
+          "end": 24.66,
+          "word": "Eu",
+          "confidence": 0.992254
+        },
+        {
+          "start": 24.66,
+          "end": 25.22,
+          "word": "fotografo",
+          "confidence": 0.7659
+        },
+        {
+          "start": 25.22,
+          "end": 25.5,
+          "word": "minhas",
+          "confidence": 0.989104
+        },
+        {
+          "start": 25.5,
+          "end": 25.92,
+          "word": "peças",
+          "confidence": 0.995508
+        },
+        {
+          "start": 25.92,
+          "end": 26.42,
+          "word": "e",
+          "confidence": 0.453733
+        },
+        {
+          "start": 26.42,
+          "end": 26.5,
+          "word": "o",
+          "confidence": 0.99714
+        },
+        {
+          "start": 26.5,
+          "end": 27.04,
+          "word": "aplicativo",
+          "confidence": 0.995777
+        },
+        {
+          "start": 27.04,
+          "end": 27.22,
+          "word": "me",
+          "confidence": 0.998979
+        },
+        {
+          "start": 27.22,
+          "end": 27.46,
+          "word": "ajuda",
+          "confidence": 0.996331
+        },
+        {
+          "start": 27.46,
+          "end": 27.62,
+          "word": "a",
+          "confidence": 0.990847
+        },
+        {
+          "start": 27.62,
+          "end": 28.08,
+          "word": "organizar",
+          "confidence": 0.993368
+        },
+        {
+          "start": 28.08,
+          "end": 28.22,
+          "word": "meu",
+          "confidence": 0.960983
+        },
+        {
+          "start": 28.22,
+          "end": 28.68,
+          "word": "closet.",
+          "confidence": 0.749869
+        }
+      ]
+    },
+    {
+      "id": "scene-09",
+      "start": 28.68,
+      "end": 32.54,
+      "text": "Escolha a ocasião, descubra combinações e salve seus looks favoritos.",
+      "words": [
+        {
+          "start": 28.68,
+          "end": 29.5,
+          "word": "Escolha",
+          "confidence": 0.740382
+        },
+        {
+          "start": 29.5,
+          "end": 29.54,
+          "word": "a",
+          "confidence": 0.955113
+        },
+        {
+          "start": 29.54,
+          "end": 30.02,
+          "word": "ocasião,",
+          "confidence": 0.948647
+        },
+        {
+          "start": 30.16,
+          "end": 30.56,
+          "word": "descubra",
+          "confidence": 0.966155
+        },
+        {
+          "start": 30.56,
+          "end": 31.1,
+          "word": "combinações",
+          "confidence": 0.993888
+        },
+        {
+          "start": 31.1,
+          "end": 31.32,
+          "word": "e",
+          "confidence": 0.996019
+        },
+        {
+          "start": 31.32,
+          "end": 31.62,
+          "word": "salve",
+          "confidence": 0.926324
+        },
+        {
+          "start": 31.62,
+          "end": 31.76,
+          "word": "seus",
+          "confidence": 0.990075
+        },
+        {
+          "start": 31.76,
+          "end": 32.0,
+          "word": "looks",
+          "confidence": 0.859207
+        },
+        {
+          "start": 32.0,
+          "end": 32.54,
+          "word": "favoritos.",
+          "confidence": 0.99944
+        }
+      ]
+    },
+    {
+      "id": "scene-10",
+      "start": 32.78,
+      "end": 35.08,
+      "text": "Aproveite melhor o que já tem com o Truque dos Mil Looks.",
+      "words": [
+        {
+          "start": 32.78,
+          "end": 33.22,
+          "word": "Aproveite",
+          "confidence": 0.990325
+        },
+        {
+          "start": 33.22,
+          "end": 33.46,
+          "word": "melhor",
+          "confidence": 0.990198
+        },
+        {
+          "start": 33.46,
+          "end": 33.6,
+          "word": "o",
+          "confidence": 0.99816
+        },
+        {
+          "start": 33.6,
+          "end": 33.7,
+          "word": "que",
+          "confidence": 0.999566
+        },
+        {
+          "start": 33.7,
+          "end": 33.86,
+          "word": "já",
+          "confidence": 0.997597
+        },
+        {
+          "start": 33.86,
+          "end": 34.02,
+          "word": "tem",
+          "confidence": 0.992206
+        },
+        {
+          "start": 34.02,
+          "end": 34.18,
+          "word": "com",
+          "confidence": 0.987205
+        },
+        {
+          "start": 34.18,
+          "end": 34.28,
+          "word": "o",
+          "confidence": 0.980267
+        },
+        {
+          "start": 34.28,
+          "end": 34.52,
+          "word": "Truque",
+          "confidence": 0.590606
+        },
+        {
+          "start": 34.52,
+          "end": 34.66,
+          "word": "dos",
+          "confidence": 0.948737
+        },
+        {
+          "start": 34.66,
+          "end": 34.82,
+          "word": "Mil",
+          "confidence": 0.515833
+        },
+        {
+          "start": 34.82,
+          "end": 35.08,
+          "word": "Looks.",
+          "confidence": 0.696742
+        }
+      ]
+    },
+    {
+      "id": "scene-11",
+      "start": 35.3,
+      "end": 36.08,
+      "text": "Toque em Saiba Mais.",
+      "words": [
+        {
+          "start": 35.3,
+          "end": 35.56,
+          "word": "Toque",
+          "confidence": 0.517887
+        },
+        {
+          "start": 35.56,
+          "end": 35.66,
+          "word": "em",
+          "confidence": 0.996099
+        },
+        {
+          "start": 35.66,
+          "end": 35.9,
+          "word": "Saiba",
+          "confidence": 0.815552
+        },
+        {
+          "start": 35.9,
+          "end": 36.08,
+          "word": "Mais.",
+          "confidence": 0.557256
+        }
+      ]
+    }
+  ]
+}

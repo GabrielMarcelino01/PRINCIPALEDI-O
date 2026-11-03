@@ -1,0 +1,40 @@
+[Script Info]
+Title: CRIATIVO-2 — superlegendas editadas
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption,Inter Caption,40,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0.2,0,1,2.6,1.2,2,48,48,205,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.85,Caption,,0,0,0,,{\fad(50,50)}Toda brasileira que quer\N{\1c&H00A7D8F2&}se vestir melhor{\1c&H00FFFFFF&}
+Dialogue: 0,0:00:01.85,0:00:02.80,Caption,,0,0,0,,{\fad(50,50)}{\1c&H00A7D8F2&}precisa entender{\1c&H00FFFFFF&}.
+Dialogue: 0,0:00:02.99,0:00:04.28,Caption,,0,0,0,,{\fad(50,50)}Não é ter {\1c&H00A7D8F2&}muitas roupas{\1c&H00FFFFFF&}.
+Dialogue: 0,0:00:04.61,0:00:06.02,Caption,,0,0,0,,{\fad(50,50)}É saber {\1c&H00A7D8F2&}combinar{\1c&H00FFFFFF&}\Nas que tem.
+Dialogue: 0,0:00:06.25,0:00:07.45,Caption,,0,0,0,,{\fad(50,50)}Eu tinha o {\1c&H00A7D8F2&}armário cheio{\1c&H00FFFFFF&},
+Dialogue: 0,0:00:07.61,0:00:08.81,Caption,,0,0,0,,{\fad(50,50)}mas saía {\1c&H00A7D8F2&}sempre igual{\1c&H00FFFFFF&}.
+Dialogue: 0,0:00:09.02,0:00:10.46,Caption,,0,0,0,,{\fad(50,50)}A roupa parecia {\1c&H00A7D8F2&}sem graça{\1c&H00FFFFFF&},
+Dialogue: 0,0:00:10.68,0:00:11.94,Caption,,0,0,0,,{\fad(50,50)}e eu {\1c&H00A7D8F2&}não entendia{\1c&H00FFFFFF&}\Npor quê.
+Dialogue: 0,0:00:12.08,0:00:13.41,Caption,,0,0,0,,{\fad(50,50)}A camisa ficava {\1c&H00A7D8F2&}solta{\1c&H00FFFFFF&},
+Dialogue: 0,0:00:13.58,0:00:14.81,Caption,,0,0,0,,{\fad(50,50)}a calça parecia {\1c&H00A7D8F2&}errada{\1c&H00FFFFFF&}
+Dialogue: 0,0:00:14.81,0:00:16.41,Caption,,0,0,0,,{\fad(50,50)}e {\1c&H00A7D8F2&}nenhum acessório{\1c&H00FFFFFF&}\Ncombinava.
+Dialogue: 0,0:00:16.66,0:00:18.53,Caption,,0,0,0,,{\fad(50,50)}Eu simplesmente {\1c&H00A7D8F2&}não gostava{\1c&H00FFFFFF&}\Ndo resultado.
+Dialogue: 0,0:00:18.71,0:00:20.15,Caption,,0,0,0,,{\fad(50,50)}Todo dia era\Na {\1c&H00A7D8F2&}mesma coisa{\1c&H00FFFFFF&},
+Dialogue: 0,0:00:20.30,0:00:21.69,Caption,,0,0,0,,{\fad(50,50)}experimentava {\1c&H00A7D8F2&}várias peças{\1c&H00FFFFFF&},
+Dialogue: 0,0:00:21.91,0:00:25.17,Caption,,0,0,0,,{\fad(50,50)}me atrasava e acabava usando\Naquele {\1c&H00A7D8F2&}mesmo look sem graça{\1c&H00FFFFFF&}.
+Dialogue: 0,0:00:25.29,0:00:27.52,Caption,,0,0,0,,{\fad(50,50)}Comecei até a {\1c&H00A7D8F2&}evitar{\1c&H00FFFFFF&}\Nfotos e encontros,
+Dialogue: 0,0:00:27.75,0:00:29.31,Caption,,0,0,0,,{\fad(50,50)}mas {\1c&H00A7D8F2&}descobri uma coisa{\1c&H00FFFFFF&}.
+Dialogue: 0,0:00:29.49,0:00:31.25,Caption,,0,0,0,,{\fad(50,50)}Eu {\1c&H00A7D8F2&}não precisava{\1c&H00FFFFFF&}\Ncomprar mais roupas.
+Dialogue: 0,0:00:31.55,0:00:32.77,Caption,,0,0,0,,{\fad(50,50)}No {\1c&H00A7D8F2&}Truque dos Mil Looks{\1c&H00FFFFFF&},
+Dialogue: 0,0:00:32.85,0:00:34.12,Caption,,0,0,0,,{\fad(50,50)}{\1c&H00A7D8F2&}fotografei{\1c&H00FFFFFF&} minhas peças.
+Dialogue: 0,0:00:34.23,0:00:35.33,Caption,,0,0,0,,{\fad(50,50)}Organizei meu {\1c&H00A7D8F2&}closet{\1c&H00FFFFFF&}
+Dialogue: 0,0:00:35.33,0:00:37.86,Caption,,0,0,0,,{\fad(50,50)}e descobri {\1c&H00A7D8F2&}combinações{\1c&H00FFFFFF&}\Nque nem imaginava.
+Dialogue: 0,0:00:37.98,0:00:40.47,Caption,,0,0,0,,{\fad(50,50)}Agora monto {\1c&H00A7D8F2&}looks elegantes{\1c&H00FFFFFF&}\Ncom as roupas que já tenho.
+Dialogue: 0,0:00:40.67,0:00:43.45,Caption,,0,0,0,,{\fad(50,50)}Conheça o {\1c&H00A7D8F2&}Truque dos Mil Looks{\1c&H00FFFFFF&}\Ne descubra {\1c&H00A7D8F2&}novas combinações{\1c&H00FFFFFF&}.
+Dialogue: 0,0:00:43.54,0:00:44.28,Caption,,0,0,0,,{\fad(50,50)}{\1c&H00A7D8F2&}Saiba mais!{\1c&H00FFFFFF&}

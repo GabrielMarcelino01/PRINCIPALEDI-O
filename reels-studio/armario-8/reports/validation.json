@@ -1,0 +1,391 @@
+{
+  "project": "armario-8",
+  "delivery": "entregas/ARMARIO-8-EDITADO.mp4",
+  "sha256": "c887d4420c78089857073e49342ebbef083690886c507754dcf0474a00db2725",
+  "checks": [
+    {
+      "name": "fonte_original_integra",
+      "passed": true,
+      "details": {
+        "sha256": "a42302bb65aa3cb5c8e21e65f239f525748d10dbefc7de2e8077ab0283bb26ed",
+        "bytes": 23284995
+      }
+    },
+    {
+      "name": "sequencia_1485_quadros",
+      "passed": true,
+      "details": {
+        "count": 1485,
+        "expected": 1485
+      }
+    },
+    {
+      "name": "fonte_indexada_1485_quadros",
+      "passed": true,
+      "details": {
+        "count": 1485,
+        "expected": 1485
+      }
+    },
+    {
+      "name": "fonte_indexada_do_original",
+      "passed": true,
+      "details": {
+        "source_sha256": "a42302bb65aa3cb5c8e21e65f239f525748d10dbefc7de2e8077ab0283bb26ed",
+        "source_frames": 1485,
+        "source_frames_directory": "out/source-frames",
+        "sequence_manifest_sha256": "01bad1ee96573ae35ea73455624aafef0e15157ceef4bc1302270ac2bf763eca",
+        "method": "Upload original -> tpad + fps=60 -> JPEG q1 indexado; o Chromium lê o arquivo do quadro, sem seek de vídeo"
+      }
+    },
+    {
+      "name": "sem_capturas_temporarias",
+      "passed": true,
+      "details": true
+    },
+    {
+      "name": "entrega_existe",
+      "passed": true,
+      "details": {
+        "bytes": 19217058
+      }
+    },
+    {
+      "name": "h264_vertical_1080x1920",
+      "passed": true,
+      "details": {
+        "codec_name": "h264",
+        "profile": "High",
+        "width": 1080,
+        "height": 1920,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "60/1",
+        "nb_frames": "1485",
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709"
+      }
+    },
+    {
+      "name": "60_fps_1485_quadros",
+      "passed": true,
+      "details": {
+        "codec_name": "h264",
+        "profile": "High",
+        "width": 1080,
+        "height": 1920,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "60/1",
+        "nb_frames": "1485",
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709"
+      }
+    },
+    {
+      "name": "yuv420p_bt709",
+      "passed": true,
+      "details": {
+        "codec_name": "h264",
+        "profile": "High",
+        "width": 1080,
+        "height": 1920,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "60/1",
+        "nb_frames": "1485",
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709"
+      }
+    },
+    {
+      "name": "aac_estereo_48khz",
+      "passed": true,
+      "details": {
+        "codec_name": "aac",
+        "channels": 2,
+        "sample_rate": "48000",
+        "bit_rate": "193501"
+      }
+    },
+    {
+      "name": "duracao_preservada",
+      "passed": true,
+      "details": {
+        "duration": 24.772,
+        "expected": 24.75
+      }
+    },
+    {
+      "name": "decodificacao_video_sem_erros",
+      "passed": true,
+      "details": {
+        "returncode": 0
+      }
+    },
+    {
+      "name": "sem_preto_ou_congelamento",
+      "passed": true,
+      "details": {
+        "black": [],
+        "freeze": []
+      }
+    },
+    {
+      "name": "loudness_menos_14_lufs",
+      "passed": true,
+      "details": {
+        "input_i": "-14.07",
+        "input_tp": "-1.50",
+        "input_lra": "3.10",
+        "input_thresh": "-24.52",
+        "output_i": "-13.84",
+        "output_tp": "-1.50",
+        "output_lra": "3.00",
+        "output_thresh": "-24.34",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.16"
+      }
+    },
+    {
+      "name": "true_peak_seguro",
+      "passed": true,
+      "details": {
+        "input_i": "-14.07",
+        "input_tp": "-1.50",
+        "input_lra": "3.10",
+        "input_thresh": "-24.52",
+        "output_i": "-13.84",
+        "output_tp": "-1.50",
+        "output_lra": "3.00",
+        "output_thresh": "-24.34",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.16"
+      }
+    },
+    {
+      "name": "sem_silencio_inesperado",
+      "passed": true,
+      "details": {
+        "events": [],
+        "pausa_original_permitida": "17,19–18,82 s"
+      }
+    },
+    {
+      "name": "srt_seis_blocos",
+      "passed": true,
+      "details": {
+        "blocks": 6
+      }
+    },
+    {
+      "name": "skill_captions_sem_alertas",
+      "passed": true,
+      "details": {
+        "returncode": 0,
+        "summary": {
+          "errors": 0,
+          "warnings": 0
+        },
+        "stderr": ""
+      }
+    },
+    {
+      "name": "transcricao_revisada",
+      "passed": true,
+      "details": {
+        "engine": "faster-whisper 1.2.1",
+        "model": "OpenAI Whisper small / CTranslate2 int8",
+        "model_sha256": "ca732cb1379efc49417d028465f543d83a39de2c61f3027678de103dc404ce73",
+        "language": "pt",
+        "word_timestamps": true,
+        "verification": "Duas decodificações completas independentes; texto concordante. Três decodificações adicionais do trecho 'lilás' foram revisadas para a grafia 'fit'."
+      }
+    },
+    {
+      "name": "animacao_pura_do_tempo",
+      "passed": true,
+      "details": {
+        "forbidden": []
+      }
+    },
+    {
+      "name": "tipografia_sem_transforms",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "video_original_sem_crop_ou_filtros",
+      "passed": true,
+      "details": {
+        "full_frame": true,
+        "filters": false,
+        "extra_layers": false
+      }
+    },
+    {
+      "name": "seguir_da_biblioteca_somente_no_final",
+      "passed": true,
+      "details": {
+        "start": 22.75,
+        "top": 1430,
+        "text": "+ SEGUIR",
+        "library": "instagram-follow",
+        "libraryCommit": "85fdc9aa888b4d26c8150fd09acae7b23fb392f5"
+      }
+    },
+    {
+      "name": "somente_video_legendas_e_seguir",
+      "passed": true,
+      "details": {
+        "extra_elements": false
+      }
+    },
+    {
+      "name": "folha_do_mp4_gerada",
+      "passed": true,
+      "details": {
+        "frames": [
+          30,
+          180,
+          330,
+          510,
+          660,
+          800,
+          930,
+          1050,
+          1140,
+          1230,
+          1380,
+          1470
+        ],
+        "returncode": 0,
+        "stderr": ""
+      }
+    },
+    {
+      "name": "poster_do_mp4_gerado",
+      "passed": true,
+      "details": 0
+    },
+    {
+      "name": "teste_previo_dez_de_dez",
+      "passed": true,
+      "details": {
+        "all_byte_identical": true
+      }
+    },
+    {
+      "name": "recapturas_deterministicas",
+      "passed": true,
+      "details": {
+        "method": "Recaptura em Chromium fora de ordem; comparação de bytes e RGB decodificado.",
+        "frames": [
+          1470,
+          180,
+          1140,
+          30,
+          1380,
+          900,
+          630,
+          360,
+          1080,
+          1320
+        ],
+        "results": [
+          {
+            "frame": 1470,
+            "t": 24.5,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "d23580ac743e48229dc4fbda7becd567e79ced8146f0f6164026a5a788a2d564",
+            "repeated_sha256": "d23580ac743e48229dc4fbda7becd567e79ced8146f0f6164026a5a788a2d564"
+          },
+          {
+            "frame": 180,
+            "t": 3.0,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "80afeab00d7f04f4fe1169c4ef0f4cb68e7a4891c6fe103d31237c79fcd4381f",
+            "repeated_sha256": "80afeab00d7f04f4fe1169c4ef0f4cb68e7a4891c6fe103d31237c79fcd4381f"
+          },
+          {
+            "frame": 1140,
+            "t": 19.0,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "a7b26be010df25b563c9e4831c84ce8a4064a3b5898e802540e6607e5e004b36",
+            "repeated_sha256": "a7b26be010df25b563c9e4831c84ce8a4064a3b5898e802540e6607e5e004b36"
+          },
+          {
+            "frame": 30,
+            "t": 0.5,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "95f2c8504964138b4b7bbecc72a491fe19f20b77f473425673d5745dc9e258eb",
+            "repeated_sha256": "95f2c8504964138b4b7bbecc72a491fe19f20b77f473425673d5745dc9e258eb"
+          },
+          {
+            "frame": 1380,
+            "t": 23.0,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "abf84e0d7179c733acb8ead3c71c867181e0812450150675bacefe3ea558341c",
+            "repeated_sha256": "abf84e0d7179c733acb8ead3c71c867181e0812450150675bacefe3ea558341c"
+          },
+          {
+            "frame": 900,
+            "t": 15.0,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "8d69d8b01fa16247a4541187ae17355e02b64075bb2c7556f31574c6036d46ff",
+            "repeated_sha256": "8d69d8b01fa16247a4541187ae17355e02b64075bb2c7556f31574c6036d46ff"
+          },
+          {
+            "frame": 630,
+            "t": 10.5,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "6e305e279d9e331f6bcf3aaa1775c7a7a64773367e29b51f33963e1962198965",
+            "repeated_sha256": "6e305e279d9e331f6bcf3aaa1775c7a7a64773367e29b51f33963e1962198965"
+          },
+          {
+            "frame": 360,
+            "t": 6.0,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "cbba482104117c2f1ed1538db281a031d9ce7783879ca02480a8d73ed3aa8f93",
+            "repeated_sha256": "cbba482104117c2f1ed1538db281a031d9ce7783879ca02480a8d73ed3aa8f93"
+          },
+          {
+            "frame": 1080,
+            "t": 18.0,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "a8e4ddf862d27f6b1f80ad46bbce676b7becf64da7416000fafe8d3aa11e8219",
+            "repeated_sha256": "a8e4ddf862d27f6b1f80ad46bbce676b7becf64da7416000fafe8d3aa11e8219"
+          },
+          {
+            "frame": 1320,
+            "t": 22.0,
+            "byte_identical": true,
+            "pixel_identical": true,
+            "original_sha256": "6666555aa5707b6602cb6f3aa027f1f531c8de72d53a1642be2d9ee278da2080",
+            "repeated_sha256": "6666555aa5707b6602cb6f3aa027f1f531c8de72d53a1642be2d9ee278da2080"
+          }
+        ],
+        "all_identical": true,
+        "all_byte_identical": true
+      }
+    }
+  ],
+  "passed": 28,
+  "failed": 0,
+  "review_scope": "Verificações técnicas e revisão por quadros do MP4. Não representa playback/escuta integral."
+}

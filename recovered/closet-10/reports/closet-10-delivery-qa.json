@@ -1,0 +1,292 @@
+{
+  "status": "PASS",
+  "scope": "QA técnico do MP4, decodificação integral, preservação de áudio e consistência fora das captions. Não declara escuta humana integral nem aprovação estética em playback.",
+  "file": "/home/user/PRINCIPALEDI-O/entregas/CLOSET-10-EDITADO.mp4",
+  "size_bytes": 24453099,
+  "sha256": "2c87f8fe7718321c473e151bd53e5ea500de174855b1c4ba40e8fa1b1683192b",
+  "duration_seconds": 24.0,
+  "video_duration_seconds": 24.0,
+  "frames": 576,
+  "audio_delivery": "AAC original copiado sem recodificação",
+  "audio_stream_sha256": {
+    "source": "748043245f374f09b731cd0404c85b7af734b8923c5a5e5c18f6a2246d67552d",
+    "delivery": "748043245f374f09b731cd0404c85b7af734b8923c5a5e5c18f6a2246d67552d"
+  },
+  "summary": {
+    "checks": 17,
+    "passed": 17,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "name": "delivery_exists",
+      "status": "pass",
+      "message": "/home/user/PRINCIPALEDI-O/entregas/CLOSET-10-EDITADO.mp4"
+    },
+    {
+      "name": "source_integrity",
+      "status": "pass",
+      "message": "Fonte original inalterada"
+    },
+    {
+      "name": "two_streams",
+      "status": "pass",
+      "message": "Somente vídeo e áudio original"
+    },
+    {
+      "name": "video_codec",
+      "status": "pass",
+      "message": "H.264/yuv420p"
+    },
+    {
+      "name": "dimensions",
+      "status": "pass",
+      "message": "1080x1920"
+    },
+    {
+      "name": "frame_rate",
+      "status": "pass",
+      "message": "24 fps"
+    },
+    {
+      "name": "color_metadata",
+      "status": "pass",
+      "message": "BT.709 completo"
+    },
+    {
+      "name": "frame_count",
+      "status": "pass",
+      "message": "576 quadros"
+    },
+    {
+      "name": "duration",
+      "status": "pass",
+      "message": "Contêiner 24.000000s; vídeo 24.000000s; fonte 24.000000s"
+    },
+    {
+      "name": "audio_codec",
+      "status": "pass",
+      "message": "AAC-LC estéreo 48.0 kHz, igual à fonte"
+    },
+    {
+      "name": "audio_bitrate",
+      "status": "pass",
+      "message": "Original 128030 bit/s; master 128030 bit/s"
+    },
+    {
+      "name": "audio_bitstream_identical",
+      "status": "pass",
+      "message": "Fluxo AAC do master é idêntico ao original"
+    },
+    {
+      "name": "full_decode",
+      "status": "pass",
+      "message": "Decodificação integral sem erros"
+    },
+    {
+      "name": "loudness_preserved",
+      "status": "pass",
+      "message": "Delta 0.000 LU; final -22.7 LUFS"
+    },
+    {
+      "name": "audio_waveform",
+      "status": "pass",
+      "message": "Correlação 1.000000; RMS 1.0000"
+    },
+    {
+      "name": "audio_sync",
+      "status": "pass",
+      "message": "Deslocamento 0 amostras a 48 kHz"
+    },
+    {
+      "name": "outside_caption_consistency",
+      "status": "pass",
+      "message": "MAE máx. 2.832/255; PSNR mín. 35.67 dB fora das captions"
+    }
+  ],
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1080,
+        "height": 1920,
+        "coded_width": 1088,
+        "coded_height": 1920,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "9:16",
+        "pix_fmt": "yuv420p",
+        "level": 50,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "chroma_location": "center",
+        "field_order": "progressive",
+        "refs": 5,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/90000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 2160000,
+        "duration": "24.000000",
+        "bit_rate": "8016977",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "576",
+        "nb_read_frames": "576",
+        "extradata_size": 47,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 1152000,
+        "duration": "24.000000",
+        "bit_rate": "128030",
+        "nb_frames": "1125",
+        "nb_read_frames": "1125",
+        "extradata_size": 2,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ],
+    "format": {
+      "filename": "/home/user/PRINCIPALEDI-O/entregas/CLOSET-10-EDITADO.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "24.000000",
+      "size": "24453099",
+      "bit_rate": "8151033",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf58.24.100",
+        "comment": "Made with Remotion 4.0.522"
+      }
+    }
+  },
+  "loudness": {
+    "source": {
+      "integrated_lufs": -22.7,
+      "true_peak_dbtp": -7.5
+    },
+    "delivery": {
+      "integrated_lufs": -22.7,
+      "true_peak_dbtp": -7.5
+    },
+    "delta_lu": 0.0
+  },
+  "audio_comparison": {
+    "correlation": 1.0000003576278687,
+    "rms_ratio": 1.0,
+    "best_lag_samples": 0,
+    "original_seconds": 24.0,
+    "delivery_seconds": 24.0
+  },
+  "visual_comparison": [
+    {
+      "time": 1.0,
+      "outside_caption_mae_8bit": 2.0023632049560547,
+      "outside_caption_psnr_db": 40.26530227278815
+    },
+    {
+      "time": 6.5,
+      "outside_caption_mae_8bit": 2.741731882095337,
+      "outside_caption_psnr_db": 35.9812269008765
+    },
+    {
+      "time": 11.5,
+      "outside_caption_mae_8bit": 2.8322973251342773,
+      "outside_caption_psnr_db": 35.672706613889254
+    },
+    {
+      "time": 16.5,
+      "outside_caption_mae_8bit": 2.0732197761535645,
+      "outside_caption_psnr_db": 39.97412253158197
+    },
+    {
+      "time": 21.5,
+      "outside_caption_mae_8bit": 1.9123084545135498,
+      "outside_caption_psnr_db": 40.527234429227654
+    }
+  ]
+}

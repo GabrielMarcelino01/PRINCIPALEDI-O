@@ -1,0 +1,25 @@
+{
+  "name": "principal-edicao-hyperframes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Ambiente local e reproduzível do HyperFrames para o PRINCIPAL EDIÇÃO.",
+  "engines": {
+    "node": ">=22.17.0"
+  },
+  "scripts": {
+    "hf": "node scripts/hyperframes.mjs",
+    "doctor": "node scripts/hyperframes.mjs doctor --json",
+    "registry:seed": "node scripts/seed-registry-cache.mjs",
+    "check:smoke": "node scripts/hyperframes.mjs check smoke --json --strict",
+    "snapshot:smoke": "node scripts/hyperframes.mjs snapshot smoke --at 0,0.5,1.5,2.95 --output out/smoke-snapshots --no-end --json",
+    "render:smoke": "node scripts/hyperframes.mjs render smoke --output out/HYPERFRAMES-SMOKE.mp4 --fps 60 --quality draft --workers 1 --no-browser-gpu --strict-all",
+    "preview:smoke": "HYPERFRAMES_PREVIEW_HOST=0.0.0.0 node scripts/hyperframes.mjs preview smoke --foreground --port 3002 --no-open --no-browser-gpu"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "1.1.0",
+    "@sparticuz/chromium": "153.0.0",
+    "ffprobe-static": "3.1.0",
+    "hyperframes": "0.8.206"
+  }
+}

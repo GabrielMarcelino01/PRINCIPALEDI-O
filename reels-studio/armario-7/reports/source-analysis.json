@@ -1,0 +1,69 @@
+{
+  "source": "CLOSET-7.mp4",
+  "commit": "a9f47235ffd08ea0263d09bac198783e37c6d776",
+  "sha256": "cae26c943b49b427e36b63d83f1430cf4d47fc38b74dd1294c2a8b11d9f0cc21",
+  "bytes": 20431960,
+  "duration": 21.537,
+  "streams": [
+    {
+      "codec_type": "video",
+      "codec_name": "h264",
+      "profile": "High",
+      "width": 720,
+      "height": 1280,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "24/1",
+      "avg_frame_rate": "7925760/330793",
+      "nb_frames": "516",
+      "sample_rate": null,
+      "channels": null,
+      "duration": "21.536979",
+      "color_range": "tv",
+      "color_space": "smpte170m",
+      "color_transfer": "iec61966-2-1",
+      "color_primaries": "bt709"
+    },
+    {
+      "codec_type": "audio",
+      "codec_name": "aac",
+      "profile": "LC",
+      "width": null,
+      "height": null,
+      "pix_fmt": null,
+      "r_frame_rate": "0/0",
+      "avg_frame_rate": "0/0",
+      "nb_frames": "1008",
+      "sample_rate": "48000",
+      "channels": 2,
+      "duration": "21.504000",
+      "color_range": null,
+      "color_space": null,
+      "color_transfer": null,
+      "color_primaries": null
+    }
+  ],
+  "natural_cuts": [
+    4.99499,
+    8.76966,
+    12.5684,
+    16.4527
+  ],
+  "audio_analysis": {
+    "input_i": "-24.74",
+    "input_tp": "-9.45",
+    "input_lra": "2.40",
+    "input_thresh": "-35.48",
+    "output_i": "-14.33",
+    "output_tp": "-1.00",
+    "output_lra": "1.90",
+    "output_thresh": "-24.91",
+    "normalization_type": "dynamic",
+    "target_offset": "0.33"
+  },
+  "asr": {
+    "complete_passes": 2,
+    "text_identical": true,
+    "additional_first_phrase_passes": 3,
+    "word_timestamps": true
+  }
+}

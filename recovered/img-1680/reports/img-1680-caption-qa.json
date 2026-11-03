@@ -1,0 +1,294 @@
+{
+  "file": "/home/user/PRINCIPALEDI-O/recovered/img-1680/img-1680-captions.srt",
+  "status": "pass",
+  "caption_count": 22,
+  "summary": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "issues": [],
+  "captions": [
+    {
+      "block": 1,
+      "start": 0.0,
+      "end": 1.6,
+      "duration": 1.6,
+      "text": "VOCÊ PRECISA PARAR DE ACHAR QUE",
+      "lines": 2,
+      "line_lengths": [
+        18,
+        12
+      ],
+      "characters_per_second": 16.25
+    },
+    {
+      "block": 2,
+      "start": 1.6,
+      "end": 2.96,
+      "duration": 1.3599999999999999,
+      "text": "ROUPA APERTADA É SINÔNIMO",
+      "lines": 2,
+      "line_lengths": [
+        14,
+        10
+      ],
+      "characters_per_second": 16.18
+    },
+    {
+      "block": 3,
+      "start": 2.96,
+      "end": 3.64,
+      "duration": 0.6800000000000002,
+      "text": "DE ELEGÂNCIA.",
+      "lines": 1,
+      "line_lengths": [
+        13
+      ],
+      "characters_per_second": 17.65
+    },
+    {
+      "block": 4,
+      "start": 3.98,
+      "end": 5.24,
+      "duration": 1.2600000000000002,
+      "text": "O SEGREDO ESTÁ EM DESCOBRIR",
+      "lines": 2,
+      "line_lengths": [
+        14,
+        12
+      ],
+      "characters_per_second": 18.25
+    },
+    {
+      "block": 5,
+      "start": 5.24,
+      "end": 7.02,
+      "duration": 1.7799999999999994,
+      "text": "O QUE REALMENTE VALORIZA VOCÊ.",
+      "lines": 2,
+      "line_lengths": [
+        15,
+        14
+      ],
+      "characters_per_second": 14.61
+    },
+    {
+      "block": 6,
+      "start": 7.32,
+      "end": 9.08,
+      "duration": 1.7599999999999998,
+      "text": "EU ACHAVA QUE ME FALTAVAM ROUPAS.",
+      "lines": 2,
+      "line_lengths": [
+        13,
+        19
+      ],
+      "characters_per_second": 15.91
+    },
+    {
+      "block": 7,
+      "start": 9.36,
+      "end": 11.44,
+      "duration": 2.08,
+      "text": "MAS QUANDO APRENDI A COMBINAR MELHOR,",
+      "lines": 2,
+      "line_lengths": [
+        18,
+        18
+      ],
+      "characters_per_second": 15.38
+    },
+    {
+      "block": 8,
+      "start": 11.44,
+      "end": 13.56,
+      "duration": 2.120000000000001,
+      "text": "COMECEI A ME SENTIR MUITO MAIS ELEGANTE.",
+      "lines": 2,
+      "line_lengths": [
+        19,
+        20
+      ],
+      "characters_per_second": 16.04
+    },
+    {
+      "block": 9,
+      "start": 13.8,
+      "end": 14.58,
+      "duration": 0.7799999999999994,
+      "text": "QUANDO SUAS ROUPAS",
+      "lines": 1,
+      "line_lengths": [
+        18
+      ],
+      "characters_per_second": 20.51
+    },
+    {
+      "block": 10,
+      "start": 14.58,
+      "end": 16.04,
+      "duration": 1.459999999999999,
+      "text": "NÃO EXPRESSAM SEU ESTILO,",
+      "lines": 2,
+      "line_lengths": [
+        13,
+        11
+      ],
+      "characters_per_second": 15.07
+    },
+    {
+      "block": 11,
+      "start": 16.04,
+      "end": 17.9,
+      "duration": 1.8599999999999994,
+      "text": "ATÉ UM ARMÁRIO CHEIO PARECE VAZIO.",
+      "lines": 2,
+      "line_lengths": [
+        14,
+        19
+      ],
+      "characters_per_second": 15.59
+    },
+    {
+      "block": 12,
+      "start": 18.28,
+      "end": 19.94,
+      "duration": 1.6600000000000001,
+      "text": "UMA BOA COMBINAÇÃO MUDA A FORMA",
+      "lines": 2,
+      "line_lengths": [
+        18,
+        12
+      ],
+      "characters_per_second": 15.66
+    },
+    {
+      "block": 13,
+      "start": 19.94,
+      "end": 20.88,
+      "duration": 0.9399999999999977,
+      "text": "COMO VOCÊ SE VÊ.",
+      "lines": 1,
+      "line_lengths": [
+        16
+      ],
+      "characters_per_second": 13.83
+    },
+    {
+      "block": 14,
+      "start": 20.98,
+      "end": 23.12,
+      "duration": 2.1400000000000006,
+      "text": "FOI AÍ QUE CONHECI O TRUQUE DOS MIL LOOKS.",
+      "lines": 2,
+      "line_lengths": [
+        18,
+        23
+      ],
+      "characters_per_second": 15.89
+    },
+    {
+      "block": 15,
+      "start": 23.32,
+      "end": 24.72,
+      "duration": 1.3999999999999986,
+      "text": "EU FOTOGRAFO MINHAS PEÇAS",
+      "lines": 2,
+      "line_lengths": [
+        12,
+        12
+      ],
+      "characters_per_second": 15.71
+    },
+    {
+      "block": 16,
+      "start": 24.72,
+      "end": 26.88,
+      "duration": 2.16,
+      "text": "E O APLICATIVO ME AJUDA A ORGANIZAR",
+      "lines": 2,
+      "line_lengths": [
+        14,
+        20
+      ],
+      "characters_per_second": 13.43
+    },
+    {
+      "block": 17,
+      "start": 26.88,
+      "end": 27.48,
+      "duration": 0.6000000000000014,
+      "text": "MEU CLOSET.",
+      "lines": 1,
+      "line_lengths": [
+        11
+      ],
+      "characters_per_second": 16.67
+    },
+    {
+      "block": 18,
+      "start": 27.48,
+      "end": 29.9,
+      "duration": 2.419999999999998,
+      "text": "ESCOLHA A OCASIÃO, DESCUBRA COMBINAÇÕES",
+      "lines": 2,
+      "line_lengths": [
+        18,
+        20
+      ],
+      "characters_per_second": 14.46
+    },
+    {
+      "block": 19,
+      "start": 29.9,
+      "end": 31.34,
+      "duration": 1.4400000000000013,
+      "text": "E SALVE SEUS LOOKS FAVORITOS.",
+      "lines": 2,
+      "line_lengths": [
+        12,
+        16
+      ],
+      "characters_per_second": 17.36
+    },
+    {
+      "block": 20,
+      "start": 31.5,
+      "end": 32.82,
+      "duration": 1.3200000000000003,
+      "text": "APROVEITE MELHOR O QUE JÁ TEM",
+      "lines": 2,
+      "line_lengths": [
+        16,
+        12
+      ],
+      "characters_per_second": 18.18
+    },
+    {
+      "block": 21,
+      "start": 32.82,
+      "end": 34.02,
+      "duration": 1.2000000000000028,
+      "text": "COM O TRUQUE DOS MIL LOOKS.",
+      "lines": 2,
+      "line_lengths": [
+        5,
+        21
+      ],
+      "characters_per_second": 18.33
+    },
+    {
+      "block": 22,
+      "start": 34.1,
+      "end": 34.88,
+      "duration": 0.7800000000000011,
+      "text": "TOQUE EM SAIBA MAIS.",
+      "lines": 2,
+      "line_lengths": [
+        8,
+        11
+      ],
+      "characters_per_second": 21.79
+    }
+  ]
+}

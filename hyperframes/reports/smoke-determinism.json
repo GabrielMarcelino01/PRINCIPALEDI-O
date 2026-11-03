@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "method": "Dois renders independentes; ffmpeg -map 0:v:0 -f framemd5; comparação byte a byte dos hashes de todos os quadros decodificados.",
+  "renders": [
+    "hyperframes/out/HYPERFRAMES-SMOKE.mp4",
+    "hyperframes/out/HYPERFRAMES-SMOKE-REPEAT.mp4"
+  ],
+  "frames_compared": 180,
+  "framemd5_sha256": [
+    "cba98ae47711304e2a5aa495dcd6b728eda106c111176ba509eec7d764badb2c",
+    "cba98ae47711304e2a5aa495dcd6b728eda106c111176ba509eec7d764badb2c"
+  ],
+  "mp4_sha256": [
+    "63f30eeaa2f139c8876471d2a059c90c66dda5956b6052165eb629ac28d72173",
+    "63f30eeaa2f139c8876471d2a059c90c66dda5956b6052165eb629ac28d72173"
+  ],
+  "decoded_frames_identical": true,
+  "mp4_bytes_identical": true,
+  "scope": "Determinismo técnico; não equivale a playback ou escuta integral."
+}

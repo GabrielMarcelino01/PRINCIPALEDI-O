@@ -1,0 +1,95 @@
+{
+  "ok": true,
+  "file": "/home/user/work/PRINCIPALEDI-O/entregas/truque-dos-mil-looks-87s-9x16.mp4",
+  "bytes": 87696070,
+  "sha256": "3ccd05eb98f35d8b80a776142cded4d5383bf1b129d50ed57b295be7e8ffba21",
+  "metadata": {
+    "programs": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "60/1",
+        "duration": "87.000000",
+        "nb_read_frames": "5220"
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "duration": "87.000000",
+        "nb_read_frames": "4079"
+      }
+    ],
+    "format": {
+      "duration": "87.000000",
+      "size": "87696070"
+    }
+  },
+  "loudness": {
+    "input_i": "-14.11",
+    "input_tp": "-1.20",
+    "input_lra": "2.00",
+    "input_thresh": "-24.65",
+    "output_i": "-13.88",
+    "output_tp": "-1.50",
+    "output_lra": "2.00",
+    "output_thresh": "-24.34",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.12"
+  },
+  "full_decode": "ok",
+  "checks": {
+    "codec_h264": {
+      "ok": true,
+      "actual": "h264"
+    },
+    "dimensions_1080x1920": {
+      "ok": true,
+      "actual": [
+        1080,
+        1920
+      ]
+    },
+    "fps_60": {
+      "ok": true,
+      "actual": "60/1"
+    },
+    "frames_5220": {
+      "ok": true,
+      "actual": "5220"
+    },
+    "codec_aac": {
+      "ok": true,
+      "actual": "aac"
+    },
+    "audio_48khz": {
+      "ok": true,
+      "actual": "48000"
+    },
+    "audio_stereo": {
+      "ok": true,
+      "actual": 2
+    },
+    "duration_87s": {
+      "ok": true,
+      "actual": "87.000000"
+    },
+    "loudness_near_minus_14": {
+      "ok": true,
+      "actual": "-14.11"
+    },
+    "true_peak_below_minus_1": {
+      "ok": true,
+      "actual": "-1.20"
+    }
+  }
+}

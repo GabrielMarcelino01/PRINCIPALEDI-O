@@ -1,0 +1,11 @@
+node_modules/
+.bundle/
+out/
+work/
+__pycache__/
+*.pyc
+assets/original.mov
+public/img-1680-base.mp4
+public/img-1680-before.mp4
+public/img-1680-audio.wav
+.DS_Store

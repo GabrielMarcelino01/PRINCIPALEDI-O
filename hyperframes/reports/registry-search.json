@@ -1,0 +1,215 @@
+{
+  "query": "bottom-up-letters",
+  "tier": "words",
+  "tier_detail": "local word match",
+  "dropped": 0,
+  "unindexed": 0,
+  "shown": 12,
+  "total": 448,
+  "report_gap": "npx hyperframes feedback --search-miss \"bottom-up-letters\" --wanted \"<the move you needed>\" --tier words",
+  "results": [
+    {
+      "name": "bottom-up-letters",
+      "type": "component",
+      "title": "Bottom Up Letters",
+      "description": "Splits text into letters and reveals each glyph from below with deterministic staggered timing",
+      "tags": [
+        "motion-primitive",
+        "text",
+        "letters",
+        "reveal"
+      ],
+      "preview": {
+        "poster": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/components/bottom-up-letters.png"
+      }
+    },
+    {
+      "name": "top-down-letters",
+      "type": "component",
+      "title": "Top-Down Letters",
+      "description": "Letters descend from above in a pronounced staircase with zero blur.",
+      "tags": [
+        "video-primitive",
+        "motion-primitive",
+        "typography"
+      ],
+      "preview": {
+        "poster": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/components/top-down-letters.png"
+      }
+    },
+    {
+      "name": "tracking-in",
+      "type": "component",
+      "title": "Tracking In",
+      "description": "A precise letter-spacing reveal for premium headings and interface labels",
+      "tags": [
+        "motion-primitive",
+        "text",
+        "reveal",
+        "typography"
+      ],
+      "preview": {
+        "poster": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/components/tracking-in.png"
+      }
+    },
+    {
+      "name": "wireframe-portal-title",
+      "type": "block",
+      "title": "Wireframe Portal Title",
+      "description": "A wireframe portal bursts open, the title comes through, then its letters swap into a second phrase.",
+      "tags": [
+        "3d-motion",
+        "title-card",
+        "wireframe",
+        "portal",
+        "burst",
+        "typography",
+        "post-processing",
+        "phrase-swap"
+      ],
+      "dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "duration": 8,
+      "preview": {
+        "video": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/blocks/wireframe-portal-title.mp4",
+        "poster": "https://static.heygen.ai/hyperframes-oss/docs/images/catalog/blocks/wireframe-portal-title.png"
+      }
+    },
+    {
+      "name": "sheet-spring-up",
+      "type": "component",
+      "title": "Sheet Spring-Up",
+      "description": "A bottom sheet rushes up from below the frame on a real spring sampled frame by frame from reference footage, overshooting its resting place and settling back without an approximated ease",
+      "tags": [
+        "video-primitive",
+        "sheet",
+        "spring",
+        "mock-ui",
+        "overlay"
+      ]
+    },
+    {
+      "name": "share-sheet-carousel",
+      "type": "block",
+      "title": "Share-Sheet Carousel",
+      "description": "A share sheet springs up from the bottom of the phone and cycles previews inside its card on a fast cut rhythm while the blurred ground swaps behind it, ending on an accept tap",
+      "tags": [
+        "showcase",
+        "mock-ui",
+        "share-sheet",
+        "vertical",
+        "ad-template"
+      ],
+      "dimensions": {
+        "width": 1080,
+        "height": 1920
+      },
+      "duration": 7.2333,
+      "preview": {
+        "video": "https://static.heygen.ai/hyperframes/templates/promoted/254fe4bd8a3f00c1e70ac5e38a1bce25060f7590/share-sheet-carousel/preview.mp4",
+        "poster": "https://static.heygen.ai/hyperframes/templates/promoted/254fe4bd8a3f00c1e70ac5e38a1bce25060f7590/share-sheet-carousel/poster.jpg"
+      }
+    },
+    {
+      "name": "extruded-logo",
+      "type": "block",
+      "title": "Extruded Logo",
+      "description": "Beveled 3D letters flip up one by one, the word swings so light runs across the bevels, then settles for a readable hold. Chrome, gold or matte.",
+      "tags": [
+        "3d-object",
+        "three-js",
+        "webgl",
+        "logo",
+        "text",
+        "extruded",
+        "title-card"
+      ],
+      "dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "duration": 5
+    },
+    {
+      "name": "line-swap",
+      "type": "component",
+      "title": "Line Swap",
+      "description": "A masked full-line beat replacement: line A holds center then exits up through an overflow-hidden mask as line B enters bottom-up on the same beat, with an optional accent underline drawing beneath one word of line B.",
+      "tags": [
+        "motion-primitive",
+        "text-effects",
+        "swap",
+        "beat",
+        "deterministic"
+      ]
+    },
+    {
+      "name": "scroll-camera-story",
+      "type": "component",
+      "title": "Scroll Camera Story",
+      "description": "A compressed forced-scroll cinematic pass: a tall scene of slotted sections travels past the camera top to bottom, depth layers parallax at different rates, each section rises as the camera reaches it, and the pass decelerates into a held final section.",
+      "tags": [
+        "camera",
+        "scroll",
+        "parallax",
+        "story",
+        "sections",
+        "slot",
+        "servo"
+      ]
+    },
+    {
+      "name": "notes-reveal",
+      "type": "block",
+      "title": "Notes Reveal",
+      "description": "A personal note is typed character by character in a notes app - caret riding every letter, the page scrolling up on measured settle curves as each line lands - then cuts to a hand-lettered paper card with a marker headline and a ticked checklist",
+      "tags": [
+        "showcase",
+        "mock-ui",
+        "notes",
+        "typing",
+        "vertical",
+        "ad-template"
+      ],
+      "dimensions": {
+        "width": 1080,
+        "height": 1920
+      },
+      "duration": 24.85,
+      "preview": {
+        "video": "https://static.heygen.ai/hyperframes/templates/promoted/254fe4bd8a3f00c1e70ac5e38a1bce25060f7590/notes-reveal/preview.mp4",
+        "poster": "https://static.heygen.ai/hyperframes/templates/promoted/254fe4bd8a3f00c1e70ac5e38a1bce25060f7590/notes-reveal/poster.jpg"
+      }
+    },
+    {
+      "name": "logo-brand-close",
+      "type": "component",
+      "title": "Logo Brand Close",
+      "description": "A display-scale wordmark cascades letter by letter into a centered lockup, the accent brand period lands last, an optional tagline and wide-tracked mono URL settle beneath, and the finished identity holds dead still to the end of the film.",
+      "tags": [
+        "motion-primitive",
+        "typography",
+        "brand",
+        "logo",
+        "end-card",
+        "close"
+      ]
+    },
+    {
+      "name": "stitched-text-draw",
+      "type": "component",
+      "title": "Stitched Text Draw",
+      "description": "Text drawn as thread stitches: a single-stroke display alphabet draws via attribute-driven dashoffset with stitch-tuned dash patterns, seeded angle jitter, needle-hole dots, a leading needle, and a thread-tail overshoot per letter.",
+      "tags": [
+        "motion-primitive",
+        "experiment",
+        "type",
+        "craft",
+        "stitch",
+        "deterministic"
+      ]
+    }
+  ]
+}

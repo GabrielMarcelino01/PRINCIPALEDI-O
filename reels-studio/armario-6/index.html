@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1080, initial-scale=1">
+  <title>ARMÁRIO-6 — O código das cores</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="stage" aria-label="Reels ARMÁRIO-6">
+    <div id="camera">
+      <canvas id="source-canvas" width="1080" height="1920"></canvas>
+    </div>
+    <div id="color-wash" class="layer"></div>
+    <div id="spotlight" class="layer"></div>
+    <div id="bottom-shade" class="layer"></div>
+    <div id="grain" class="layer"></div>
+    <div id="vignette" class="layer"></div>
+    <div id="cut-wipe" class="layer"></div>
+
+    <header id="hud">
+      <div id="hud-line">
+        <div id="brand">CÓDIGO DE ESTILO</div>
+        <div id="look-counter">LOOK 01 / 05</div>
+      </div>
+      <div id="progress"></div>
+    </header>
+
+    <section id="intro">
+      <div id="intro-kicker">05 COMBINAÇÕES • 01 CÓDIGO</div>
+      <div id="intro-title">O CÓDIGO</div>
+      <div id="intro-serif">das cores</div>
+    </section>
+
+    <section id="palette" aria-label="Paleta do look"></section>
+    <div id="scene-number">01</div>
+
+    <section id="caption" aria-live="off">
+      <div id="caption-kicker">CÓDIGO 01</div>
+      <div id="caption-groups"></div>
+      <div id="caption-rule"></div>
+    </section>
+
+    <section id="cta">
+      <div id="cta-kicker">O ÚLTIMO É SÓ O COMEÇO</div>
+      <div id="cta-title">QUAL LOOK É O SEU?</div>
+      <div id="cta-rule"></div>
+      <div id="cta-sub">ESCOLHA DE 01 A 05</div>
+    </section>
+
+    <section id="comment-cta">
+      <div id="comment-title">COMENTE O NÚMERO DO LOOK</div>
+      <div id="comment-numbers"></div>
+    </section>
+
+    <div id="cut-flash" class="layer"></div>
+  </main>
+  <script src="project.js"></script>
+  <script src="composition.js"></script>
+</body>
+</html>

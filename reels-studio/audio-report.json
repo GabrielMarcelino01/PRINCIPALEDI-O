@@ -1,0 +1,33 @@
+{
+  "target_lufs": -14.0,
+  "target_true_peak_dbtp": -1.0,
+  "integrated_lufs": -14.0,
+  "true_peak_dbtp": -1.0,
+  "loudnorm_first_pass": {
+    "input_i": "-16.91",
+    "input_tp": "-2.87",
+    "input_lra": "1.30",
+    "input_thresh": "-28.42",
+    "output_i": "-13.68",
+    "output_tp": "-1.00",
+    "output_lra": "1.90",
+    "output_thresh": "-25.24",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.32"
+  },
+  "sample_rate": 48000,
+  "channels": 2,
+  "duration_seconds": 20.0,
+  "render_master": "soundtrack.wav — PCM 24 bits; uma única codificação AAC no MP4",
+  "aac_preview": "soundtrack.m4a — prévia e medição independente",
+  "voice_files": {
+    "01-hook.mp3": 2.11567,
+    "02-captions.mp3": 1.61062,
+    "03-cuts.mp3": 1.60512,
+    "04-audio.mp3": 1.99246,
+    "05-motion.mp3": 2.87021,
+    "06-cta.mp3": 1.83825
+  },
+  "music": "Composição procedural original, sem samples",
+  "sfx": "Síntese procedural original, sem samples"
+}

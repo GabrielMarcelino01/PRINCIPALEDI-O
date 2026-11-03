@@ -1,0 +1,198 @@
+{
+  "status": "PASS",
+  "checks": 31,
+  "passed": 31,
+  "failed": 0,
+  "file": "/home/user/PRINCIPALEDI-O/entregas/CRIATIVO-2-EDITADO.mp4",
+  "size_bytes": 19763760,
+  "sha256": "afdacc103a966e478599c3802b1db8538f4bf1b3776a188223176adc57b0802c",
+  "duration_seconds": 44.333333,
+  "frames": 1064,
+  "loudness": {
+    "integrated_lufs": -16.0,
+    "true_peak_dbtp": -1.5
+  },
+  "audio_comparison": {
+    "lag_samples": 0,
+    "correlation": 0.9993412494659424,
+    "rms_ratio": 0.9991819858551025,
+    "reference_seconds": 44.333333333333336,
+    "decoded_seconds": 44.352
+  },
+  "effective_speed": 1.200187969924812,
+  "results": [
+    {
+      "name": "source_sha256",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "source_drive_md5",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "final_exists",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "final_size",
+      "status": "PASS",
+      "detail": 19763760
+    },
+    {
+      "name": "source_and_delivery_distinct",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "video_codec",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "dimensions",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "fps",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "frame_count",
+      "status": "PASS",
+      "detail": "1064"
+    },
+    {
+      "name": "video_duration",
+      "status": "PASS",
+      "detail": "44.333333"
+    },
+    {
+      "name": "container_duration",
+      "status": "PASS",
+      "detail": "44.333333"
+    },
+    {
+      "name": "audio_codec",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "audio_format",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "audio_duration",
+      "status": "PASS",
+      "detail": "44.333000"
+    },
+    {
+      "name": "bt709",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "limited_range",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "full_decode",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "loudness_measurement",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "integrated_loudness",
+      "status": "PASS",
+      "detail": {
+        "integrated_lufs": -16.0,
+        "true_peak_dbtp": -1.5
+      }
+    },
+    {
+      "name": "true_peak",
+      "status": "PASS",
+      "detail": {
+        "integrated_lufs": -16.0,
+        "true_peak_dbtp": -1.5
+      }
+    },
+    {
+      "name": "audio_sync_zero_lag",
+      "status": "PASS",
+      "detail": {
+        "lag_samples": 0,
+        "correlation": 0.9993412494659424,
+        "rms_ratio": 0.9991819858551025,
+        "reference_seconds": 44.333333333333336,
+        "decoded_seconds": 44.352
+      }
+    },
+    {
+      "name": "audio_correlation",
+      "status": "PASS",
+      "detail": 0.9993412494659424
+    },
+    {
+      "name": "audio_rms",
+      "status": "PASS",
+      "detail": 0.9991819858551025
+    },
+    {
+      "name": "caption_count",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "caption_cps",
+      "status": "PASS",
+      "detail": 21.74496644295295
+    },
+    {
+      "name": "caption_lines",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "caption_timing",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "caption_qa",
+      "status": "PASS",
+      "detail": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "name": "video_qa",
+      "status": "PASS",
+      "detail": {
+        "failures": 0,
+        "warnings": 0
+      }
+    },
+    {
+      "name": "effective_speed_1_2x",
+      "status": "PASS",
+      "detail": 1.200187969924812
+    },
+    {
+      "name": "no_placeholder_text",
+      "status": "PASS",
+      "detail": null
+    }
+  ]
+}

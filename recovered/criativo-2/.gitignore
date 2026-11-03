@@ -1,0 +1,6 @@
+out/
+work/
+assets/original.mp4
+public/criativo-2-audio.wav
+__pycache__/
+*.pyc

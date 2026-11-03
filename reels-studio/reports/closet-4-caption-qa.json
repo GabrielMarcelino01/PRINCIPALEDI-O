@@ -1,0 +1,175 @@
+{
+  "file": "/home/user/PRINCIPALEDI-O/reels-studio/closet-4-captions.srt",
+  "status": "pass",
+  "caption_count": 13,
+  "summary": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "issues": [],
+  "captions": [
+    {
+      "block": 1,
+      "start": 0.08,
+      "end": 1.5,
+      "duration": 1.42,
+      "text": "USEM COR CHAMPANHE",
+      "lines": 1,
+      "line_lengths": [
+        18
+      ],
+      "characters_per_second": 11.27
+    },
+    {
+      "block": 2,
+      "start": 1.5,
+      "end": 3.88,
+      "duration": 2.38,
+      "text": "E FIQUEM ROMÂNTICOS E VIBRANTES",
+      "lines": 2,
+      "line_lengths": [
+        19,
+        11
+      ],
+      "characters_per_second": 11.34
+    },
+    {
+      "block": 3,
+      "start": 4.48,
+      "end": 5.54,
+      "duration": 1.0599999999999996,
+      "text": "PRETO COM VINHO",
+      "lines": 1,
+      "line_lengths": [
+        15
+      ],
+      "characters_per_second": 12.26
+    },
+    {
+      "block": 4,
+      "start": 5.54,
+      "end": 6.5600000000000005,
+      "duration": 1.0200000000000005,
+      "text": "É UM CLÁSSICO",
+      "lines": 1,
+      "line_lengths": [
+        13
+      ],
+      "characters_per_second": 10.78
+    },
+    {
+      "block": 5,
+      "start": 6.5600000000000005,
+      "end": 7.88,
+      "duration": 1.3199999999999994,
+      "text": "PARA CASAMENTO À NOITE",
+      "lines": 2,
+      "line_lengths": [
+        14,
+        7
+      ],
+      "characters_per_second": 14.39
+    },
+    {
+      "block": 6,
+      "start": 8.48,
+      "end": 9.92,
+      "duration": 1.4399999999999995,
+      "text": "MARROM COM COBRE",
+      "lines": 1,
+      "line_lengths": [
+        16
+      ],
+      "characters_per_second": 9.72
+    },
+    {
+      "block": 7,
+      "start": 9.92,
+      "end": 12.1,
+      "duration": 2.1799999999999997,
+      "text": "ELEGÂNCIA PERFEITA PARA UM CASAMENTO",
+      "lines": 2,
+      "line_lengths": [
+        18,
+        17
+      ],
+      "characters_per_second": 14.68
+    },
+    {
+      "block": 8,
+      "start": 12.36,
+      "end": 13.32,
+      "duration": 0.9600000000000009,
+      "text": "LEMBRE-SE",
+      "lines": 1,
+      "line_lengths": [
+        9
+      ],
+      "characters_per_second": 9.37
+    },
+    {
+      "block": 9,
+      "start": 13.32,
+      "end": 14.94,
+      "duration": 1.6199999999999992,
+      "text": "AZUL MARINHO COM AZUL CLARO",
+      "lines": 2,
+      "line_lengths": [
+        12,
+        14
+      ],
+      "characters_per_second": 14.2
+    },
+    {
+      "block": 10,
+      "start": 14.94,
+      "end": 17.08,
+      "duration": 2.139999999999999,
+      "text": "FICA ELEGANTE E IRRESISTÍVEL",
+      "lines": 2,
+      "line_lengths": [
+        13,
+        14
+      ],
+      "characters_per_second": 11.68
+    },
+    {
+      "block": 11,
+      "start": 17.92,
+      "end": 19.84,
+      "duration": 1.9199999999999982,
+      "text": "GRAFITE COM VERDE SÁLVIA",
+      "lines": 2,
+      "line_lengths": [
+        11,
+        12
+      ],
+      "characters_per_second": 10.94
+    },
+    {
+      "block": 12,
+      "start": 19.84,
+      "end": 21.26,
+      "duration": 1.4200000000000017,
+      "text": "UMA COMBINAÇÃO DISCRETA",
+      "lines": 2,
+      "line_lengths": [
+        14,
+        8
+      ],
+      "characters_per_second": 14.79
+    },
+    {
+      "block": 13,
+      "start": 21.26,
+      "end": 22.24,
+      "duration": 0.9799999999999969,
+      "text": "E SOFISTICADA",
+      "lines": 1,
+      "line_lengths": [
+        13
+      ],
+      "characters_per_second": 12.24
+    }
+  ]
+}

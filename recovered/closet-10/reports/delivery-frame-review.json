@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "scope": "Revisão visual por quadros extraídos do MP4 final; não equivale a playback, escuta humana integral ou aprovação estética.",
+  "file": "entregas/CLOSET-10-EDITADO.mp4",
+  "frames_reviewed": 23,
+  "frames": [
+    0,
+    56,
+    72,
+    101,
+    134,
+    144,
+    172,
+    216,
+    220,
+    253,
+    280,
+    288,
+    320,
+    360,
+    363,
+    403,
+    423,
+    432,
+    465,
+    504,
+    512,
+    565,
+    575
+  ],
+  "additional_motion_frames": [
+    72,
+    216,
+    360,
+    504
+  ],
+  "checks": [
+    {
+      "name": "encoded_captions",
+      "status": "pass",
+      "message": "Os 14 grupos estão legíveis, em no máximo duas linhas e sem corte lateral nos quadros de máxima revelação."
+    },
+    {
+      "name": "word_reveal",
+      "status": "pass",
+      "message": "Quadros intermediários 72, 216, 360 e 504 sem sobreposição ou quebra indevida durante a revelação."
+    },
+    {
+      "name": "cuts",
+      "status": "pass",
+      "message": "Quadros 144, 288 e 432 preservam as trocas de look, sem caption residual."
+    },
+    {
+      "name": "scope",
+      "status": "pass",
+      "message": "Nenhum CTA, logotipo, moldura, cabeçalho, transição ou elemento decorativo adicionado."
+    },
+    {
+      "name": "endpoints",
+      "status": "pass",
+      "message": "Primeiro e último quadros íntegros; último quadro sem legenda residual."
+    }
+  ]
+}

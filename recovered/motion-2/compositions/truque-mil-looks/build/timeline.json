@@ -1,0 +1,621 @@
+{
+  "brand": "Truque dos Mil Looks",
+  "duration": 87.0,
+  "fps": 60,
+  "sample_rate": 48000,
+  "speed": 1.25,
+  "extra_scene_gap": 0.3437142857142866,
+  "voice_end": 85.0,
+  "loudnorm_input": {
+    "input_i": "-19.70",
+    "input_tp": "-1.84",
+    "input_lra": "2.80",
+    "input_thresh": "-30.26",
+    "output_i": "-14.32",
+    "output_tp": "-1.50",
+    "output_lra": "2.00",
+    "output_thresh": "-24.79",
+    "normalization_type": "dynamic",
+    "target_offset": "0.32"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "start": 0.0,
+      "first_line": 0,
+      "end": 13.463048,
+      "duration": 13.463048
+    },
+    {
+      "id": "conflict",
+      "start": 13.463048,
+      "first_line": 3,
+      "end": 25.173429000000002,
+      "duration": 11.710381
+    },
+    {
+      "id": "reveal",
+      "start": 25.173429000000002,
+      "first_line": 6,
+      "end": 40.62781,
+      "duration": 15.454381
+    },
+    {
+      "id": "closet",
+      "start": 40.62781,
+      "first_line": 10,
+      "end": 45.74619,
+      "duration": 5.11838
+    },
+    {
+      "id": "looks",
+      "start": 45.74619,
+      "first_line": 11,
+      "end": 55.909904999999995,
+      "duration": 10.163715
+    },
+    {
+      "id": "offers",
+      "start": 55.909904999999995,
+      "first_line": 13,
+      "end": 66.094952,
+      "duration": 10.185047
+    },
+    {
+      "id": "payoff",
+      "start": 66.094952,
+      "first_line": 15,
+      "end": 82.2,
+      "duration": 16.105048
+    },
+    {
+      "id": "endcard",
+      "start": 82.2,
+      "first_line": 18,
+      "end": 87.0,
+      "duration": 4.8
+    }
+  ],
+  "lines": [
+    {
+      "speaker": "Clara",
+      "scene": "hook",
+      "text": "Ana, o que aconteceu? Dá para ver que você está triste.",
+      "parts": [
+        {
+          "text": "Ana, o que aconteceu?",
+          "start": 0.35,
+          "end": 1.550262
+        },
+        {
+          "text": "Dá para ver que você está triste.",
+          "start": 1.550262,
+          "end": 3.166
+        }
+      ],
+      "index": 0,
+      "voice": "af_sarah",
+      "voice_speed": 1.25,
+      "spoken": "Ana, o que aconteceu? Dá para ver que você está triste.",
+      "speech_duration": 2.816,
+      "start": 0.35,
+      "end": 3.166,
+      "duration": 2.816
+    },
+    {
+      "speaker": "Ana",
+      "scene": "hook",
+      "text": "Eu não entendia por que todo look parecia ficar melhor nas outras pessoas do que em mim.",
+      "parts": [
+        {
+          "text": "Eu não entendia por que todo look",
+          "start": 3.326,
+          "end": 4.924222
+        },
+        {
+          "text": "parecia ficar melhor nas outras pessoas",
+          "start": 4.924222,
+          "end": 6.908222
+        },
+        {
+          "text": "do que em mim.",
+          "start": 6.908222,
+          "end": 7.955333
+        }
+      ],
+      "index": 1,
+      "voice": "af_heart",
+      "voice_speed": 1.25,
+      "spoken": "Eu não entendia por que todo lúk parecia ficar melhor nas outras pessoas do que em mim.",
+      "speech_duration": 4.629333333333333,
+      "start": 3.326,
+      "end": 7.955333,
+      "duration": 4.629333
+    },
+    {
+      "speaker": "Ana",
+      "scene": "hook",
+      "text": "Eu copiava ideias, comprava peças novas e ainda sentia que nada combinava comigo.",
+      "parts": [
+        {
+          "text": "Eu copiava ideias, comprava peças novas",
+          "start": 8.115333,
+          "end": 10.33184
+        },
+        {
+          "text": "e ainda sentia que nada combinava comigo.",
+          "start": 10.33184,
+          "end": 12.979333
+        }
+      ],
+      "index": 2,
+      "voice": "af_heart",
+      "voice_speed": 1.25,
+      "spoken": "Eu copiava ideias, comprava peças novas e ainda sentia que nada combinava comigo.",
+      "speech_duration": 4.864,
+      "start": 8.115333,
+      "end": 12.979333,
+      "duration": 4.864
+    },
+    {
+      "speaker": "Clara",
+      "scene": "conflict",
+      "text": "E o jantar do trabalho? Você vai, não é?",
+      "parts": [
+        {
+          "text": "E o jantar do trabalho?",
+          "start": 13.703048,
+          "end": 14.927048
+        },
+        {
+          "text": "Você vai, não é?",
+          "start": 14.927048,
+          "end": 15.879048
+        }
+      ],
+      "index": 3,
+      "voice": "af_sarah",
+      "voice_speed": 1.25,
+      "spoken": "E o jantar do trabalho? Você vai, não é?",
+      "speech_duration": 2.176,
+      "start": 13.703048,
+      "end": 15.879048,
+      "duration": 2.176
+    },
+    {
+      "speaker": "Ana",
+      "scene": "conflict",
+      "text": "Não sei. Toda vez é igual: eu provo tudo, não sei o que vestir e acabo querendo me esconder nas fotos.",
+      "parts": [
+        {
+          "text": "Não sei. Toda vez é igual:",
+          "start": 16.039048,
+          "end": 17.370111
+        },
+        {
+          "text": "eu provo tudo, não sei o que vestir",
+          "start": 17.370111,
+          "end": 19.106282
+        },
+        {
+          "text": "e acabo querendo me esconder nas fotos.",
+          "start": 19.106282,
+          "end": 21.479048
+        }
+      ],
+      "index": 4,
+      "voice": "af_heart",
+      "voice_speed": 1.25,
+      "spoken": "Não sei. Toda vez é igual: eu provo tudo, não sei o que vestir e acabo querendo me esconder nas fotos.",
+      "speech_duration": 5.44,
+      "start": 16.039048,
+      "end": 21.479048,
+      "duration": 5.44
+    },
+    {
+      "speaker": "Ana",
+      "scene": "conflict",
+      "text": "Por que era tão difícil descobrir o que funcionava para mim?",
+      "parts": [
+        {
+          "text": "Por que era tão difícil descobrir",
+          "start": 21.639048,
+          "end": 23.164381
+        },
+        {
+          "text": "o que funcionava para mim?",
+          "start": 23.164381,
+          "end": 24.689714
+        }
+      ],
+      "index": 5,
+      "voice": "af_heart",
+      "voice_speed": 1.25,
+      "spoken": "Por que era tão difícil descobrir o que funcionava para mim?",
+      "speech_duration": 3.050666666666667,
+      "start": 21.639048,
+      "end": 24.689714,
+      "duration": 3.050667
+    },
+    {
+      "speaker": "Clara",
+      "scene": "reveal",
+      "text": "Eu também me sentia assim. Até descobrir que o problema não era o meu armário.",
+      "parts": [
+        {
+          "text": "Eu também me sentia assim.",
+          "start": 25.413429,
+          "end": 26.958794
+        },
+        {
+          "text": "Até descobrir que o problema",
+          "start": 26.958794,
+          "end": 28.298111
+        },
+        {
+          "text": "não era o meu armário.",
+          "start": 28.298111,
+          "end": 29.637429
+        }
+      ],
+      "index": 6,
+      "voice": "af_sarah",
+      "voice_speed": 1.25,
+      "spoken": "Eu também me sentia assim. Até descobrir que o problema não era o meu armário.",
+      "speech_duration": 4.224,
+      "start": 25.413429,
+      "end": 29.637429,
+      "duration": 4.224
+    },
+    {
+      "speaker": "Ana",
+      "scene": "reveal",
+      "text": "E você simplesmente aceitou isso?",
+      "parts": [
+        {
+          "text": "E você simplesmente",
+          "start": 29.797429,
+          "end": 30.712027
+        },
+        {
+          "text": "aceitou isso?",
+          "start": 30.712027,
+          "end": 31.674762
+        }
+      ],
+      "index": 7,
+      "voice": "af_heart",
+      "voice_speed": 1.25,
+      "spoken": "E você simplesmente aceitou isso?",
+      "speech_duration": 1.8773333333333333,
+      "start": 29.797429,
+      "end": 31.674762,
+      "duration": 1.877333
+    },
+    {
+      "speaker": "Clara",
+      "scene": "reveal",
+      "text": "Não. Eu descobri um truque: o Truque dos Mil Looks.",
+      "parts": [
+        {
+          "text": "Não. Eu descobri um truque:",
+          "start": 31.834762,
+          "end": 33.034762
+        },
+        {
+          "text": "o Truque dos Mil Looks.",
+          "start": 33.034762,
+          "end": 34.330762
+        }
+      ],
+      "index": 8,
+      "voice": "af_sarah",
+      "voice_speed": 1.25,
+      "spoken": "Não. Eu descobri um truque: o Truque dos Mil, Lúks.",
+      "speech_duration": 2.496,
+      "start": 31.834762,
+      "end": 34.330762,
+      "duration": 2.496
+    },
+    {
+      "speaker": "Clara",
+      "scene": "reveal",
+      "text": "Ele mostra combinações com as roupas que a gente já tem. Foi assim que eu parei de achar que me vestia mal.",
+      "parts": [
+        {
+          "text": "Ele mostra combinações",
+          "start": 34.490762,
+          "end": 35.664095
+        },
+        {
+          "text": "com as roupas que a gente já tem.",
+          "start": 35.664095,
+          "end": 37.477429
+        },
+        {
+          "text": "Foi assim que eu parei de achar",
+          "start": 37.477429,
+          "end": 38.917429
+        },
+        {
+          "text": "que me vestia mal.",
+          "start": 38.917429,
+          "end": 40.144095
+        }
+      ],
+      "index": 9,
+      "voice": "af_sarah",
+      "voice_speed": 1.25,
+      "spoken": "Ele mostra combinações com as roupas que a gente já tem. Foi assim que eu parei de achar que me vestia mal.",
+      "speech_duration": 5.653333333333333,
+      "start": 34.490762,
+      "end": 40.144095,
+      "duration": 5.653333
+    },
+    {
+      "speaker": "Clara",
+      "scene": "closet",
+      "text": "Você fotografa suas peças, e a inteligência artificial organiza seu closet.",
+      "parts": [
+        {
+          "text": "Você fotografa suas peças,",
+          "start": 40.86781,
+          "end": 42.294649
+        },
+        {
+          "text": "e a inteligência artificial",
+          "start": 42.294649,
+          "end": 43.778563
+        },
+        {
+          "text": "organiza seu closet.",
+          "start": 43.778563,
+          "end": 45.262476
+        }
+      ],
+      "index": 10,
+      "voice": "af_sarah",
+      "voice_speed": 1.25,
+      "spoken": "Você fotografa suas peças, e a inteligência artificial organiza seu clóset.",
+      "speech_duration": 4.394666666666667,
+      "start": 40.86781,
+      "end": 45.262476,
+      "duration": 4.394667
+    },
+    {
+      "speaker": "Clara",
+      "scene": "looks",
+      "text": "Depois, cria looks para trabalho, fim de semana e jantar, tudo com o que já está aí na sua casa.",
+      "parts": [
+        {
+          "text": "Depois, cria looks para trabalho,",
+          "start": 45.98619,
+          "end": 47.791853
+        },
+        {
+          "text": "fim de semana e jantar,",
+          "start": 47.791853,
+          "end": 49.015044
+        },
+        {
+          "text": "tudo com o que já está aí na sua casa.",
+          "start": 49.015044,
+          "end": 51.17019
+        }
+      ],
+      "index": 11,
+      "voice": "af_sarah",
+      "voice_speed": 1.25,
+      "spoken": "Depois, cria lúks para trabalho, fim de semana e jantar, tudo com o que já está aí na sua casa.",
+      "speech_duration": 5.184,
+      "start": 45.98619,
+      "end": 51.17019,
+      "duration": 5.184
+    },
+    {
+      "speaker": "Ana",
+      "scene": "looks",
+      "text": "Uma peça, vários looks. Sem precisar comprar roupa nova toda semana.",
+      "parts": [
+        {
+          "text": "Uma peça, vários looks.",
+          "start": 51.33019,
+          "end": 52.839243
+        },
+        {
+          "text": "Sem precisar comprar roupa nova",
+          "start": 52.839243,
+          "end": 54.40219
+        },
+        {
+          "text": "toda semana.",
+          "start": 54.40219,
+          "end": 55.42619
+        }
+      ],
+      "index": 12,
+      "voice": "af_heart",
+      "voice_speed": 1.25,
+      "spoken": "Uma peça, vários lúks. Sem precisar comprar roupa nova toda semana.",
+      "speech_duration": 4.096,
+      "start": 51.33019,
+      "end": 55.42619,
+      "duration": 4.096
+    },
+    {
+      "speaker": "Clara",
+      "scene": "offers",
+      "text": "E quando você quiser algo novo, o app também indica lojas com descontos de até cinquenta por cento.",
+      "parts": [
+        {
+          "text": "E quando você quiser algo novo,",
+          "start": 56.149905,
+          "end": 57.802103
+        },
+        {
+          "text": "o app também indica lojas",
+          "start": 57.802103,
+          "end": 59.159266
+        },
+        {
+          "text": "com descontos de até cinquenta por cento.",
+          "start": 59.159266,
+          "end": 61.696571
+        }
+      ],
+      "index": 13,
+      "voice": "af_sarah",
+      "voice_speed": 1.25,
+      "spoken": "E quando você quiser algo novo, o app também indica lojas com descontos de até cinquenta por cento.",
+      "speech_duration": 5.546666666666667,
+      "start": 56.149905,
+      "end": 61.696571,
+      "duration": 5.546667
+    },
+    {
+      "speaker": "Clara",
+      "scene": "offers",
+      "text": "Tem sugestões para o seu estilo, favoritos, ofertas e muito mais.",
+      "parts": [
+        {
+          "text": "Tem sugestões para o seu estilo,",
+          "start": 61.856571,
+          "end": 63.481726
+        },
+        {
+          "text": "favoritos, ofertas",
+          "start": 63.481726,
+          "end": 64.546482
+        },
+        {
+          "text": "e muito mais.",
+          "start": 64.546482,
+          "end": 65.611238
+        }
+      ],
+      "index": 14,
+      "voice": "af_sarah",
+      "voice_speed": 1.25,
+      "spoken": "Tem sugestões para o seu estilo, favoritos, ofertas e muito mais.",
+      "speech_duration": 3.7546666666666666,
+      "start": 61.856571,
+      "end": 65.611238,
+      "duration": 3.754667
+    },
+    {
+      "speaker": "Ana",
+      "scene": "payoff",
+      "text": "Três semanas depois, eu parei de me esconder. Entrava numa sala e sentia que finalmente parecia comigo.",
+      "parts": [
+        {
+          "text": "Três semanas depois,",
+          "start": 66.334952,
+          "end": 67.479376
+        },
+        {
+          "text": "eu parei de me esconder.",
+          "start": 67.479376,
+          "end": 69.081569
+        },
+        {
+          "text": "Entrava numa sala e sentia",
+          "start": 69.081569,
+          "end": 70.454878
+        },
+        {
+          "text": "que finalmente parecia comigo.",
+          "start": 70.454878,
+          "end": 72.457619
+        }
+      ],
+      "index": 15,
+      "voice": "af_heart",
+      "voice_speed": 1.25,
+      "spoken": "Três semanas depois, eu parei de me esconder. Entrava numa sala e sentia que finalmente parecia comigo.",
+      "speech_duration": 6.1226666666666665,
+      "start": 66.334952,
+      "end": 72.457619,
+      "duration": 6.122667
+    },
+    {
+      "speaker": "Clara",
+      "scene": "payoff",
+      "text": "Não é sobre mudar quem você é. É sobre enxergar mil possibilidades no que você já tem.",
+      "parts": [
+        {
+          "text": "Não é sobre mudar quem você é.",
+          "start": 72.617619,
+          "end": 74.394104
+        },
+        {
+          "text": "É sobre enxergar mil possibilidades",
+          "start": 74.394104,
+          "end": 76.226104
+        },
+        {
+          "text": "no que você já tem.",
+          "start": 76.226104,
+          "end": 77.502952
+        }
+      ],
+      "index": 16,
+      "voice": "af_sarah",
+      "voice_speed": 1.25,
+      "spoken": "Não é sobre mudar quem você é. É sobre enxergar mil possibilidades no que você já tem.",
+      "speech_duration": 4.8853333333333335,
+      "start": 72.617619,
+      "end": 77.502952,
+      "duration": 4.885333
+    },
+    {
+      "speaker": "Ana",
+      "scene": "payoff",
+      "text": "Meu próximo look já estava no meu armário. Eu só precisava do truque certo.",
+      "parts": [
+        {
+          "text": "Meu próximo look já estava no meu armário.",
+          "start": 77.662952,
+          "end": 79.897482
+        },
+        {
+          "text": "Eu só precisava do truque certo.",
+          "start": 79.897482,
+          "end": 81.716286
+        }
+      ],
+      "index": 17,
+      "voice": "af_heart",
+      "voice_speed": 1.25,
+      "spoken": "Meu próximo lúk já estava no meu armário. Eu só precisava do truque certo.",
+      "speech_duration": 4.053333333333334,
+      "start": 77.662952,
+      "end": 81.716286,
+      "duration": 4.053333
+    },
+    {
+      "speaker": "Clara",
+      "scene": "endcard",
+      "text": "Clique no link. Conheça o Truque dos Mil Looks.",
+      "parts": [
+        {
+          "text": "Clique no link.",
+          "start": 82.44,
+          "end": 83.417455
+        },
+        {
+          "text": "Conheça o Truque dos Mil Looks.",
+          "start": 83.417455,
+          "end": 85.0
+        }
+      ],
+      "index": 18,
+      "voice": "af_sarah",
+      "voice_speed": 1.1,
+      "spoken": "Clique no link. Conheça o Truque dos Mil, Lúks.",
+      "speech_duration": 2.56,
+      "start": 82.44,
+      "end": 85.0,
+      "duration": 2.56
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+[Script Info]
+Title: CRIATIVO-3 — superlegendas ativas de uma linha
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption,Inter Caption,40,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,0,0,0,0,100,100,0.1,0,1,2.4,1.0,5,40,40,0,1
+Style: CtaCaption,Inter Caption,40,&H000F1417,&H000F1417,&H00000000,&H00000000,-1,0,0,0,100,100,0.1,0,1,0,0,5,40,40,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.62,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&\fad(50,0)}m 202 613 l 276 613 b 284 613 291 620 291 628 l 291 652 b 291 660 284 667 276 667 l 202 667 b 194 667 187 660 187 652 l 187 628 b 187 620 194 613 202 613
+Dialogue: 1,0:00:00.00,0:00:00.62,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}Nunca{\1c&H00FFFFFF&\bord2.4\shad1} mais perca tempo
+Dialogue: 0,0:00:00.62,0:00:00.86,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 294 613 l 346 613 b 354 613 361 620 361 628 l 361 652 b 361 660 354 667 346 667 l 294 667 b 286 667 279 660 279 652 l 279 628 b 279 620 286 613 294 613
+Dialogue: 1,0:00:00.62,0:00:00.86,Caption,,0,0,0,,{\fs40}Nunca {\1c&H000F1417&\bord0\shad0}mais{\1c&H00FFFFFF&\bord2.4\shad1} perca tempo
+Dialogue: 0,0:00:00.86,0:00:01.14,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 364 613 l 427 613 b 435 613 442 620 442 628 l 442 652 b 442 660 435 667 427 667 l 364 667 b 356 667 349 660 349 652 l 349 628 b 349 620 356 613 364 613
+Dialogue: 1,0:00:00.86,0:00:01.14,Caption,,0,0,0,,{\fs40}Nunca mais {\1c&H000F1417&\bord0\shad0}perca{\1c&H00FFFFFF&\bord2.4\shad1} tempo
+Dialogue: 0,0:00:01.14,0:00:01.46,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&\fad(0,50)}m 445 613 l 518 613 b 526 613 533 620 533 628 l 533 652 b 533 660 526 667 518 667 l 445 667 b 437 667 430 660 430 652 l 430 628 b 430 620 437 613 445 613
+Dialogue: 1,0:00:01.14,0:00:01.46,Caption,,0,0,0,,{\fs40\fad(0,50)}Nunca mais perca {\1c&H000F1417&\bord0\shad0}tempo{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:01.46,0:00:01.70,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&\fad(50,0)}m 212 613 l 256 613 b 264 613 271 620 271 628 l 271 652 b 271 660 264 667 256 667 l 212 667 b 204 667 197 660 197 652 l 197 628 b 197 620 204 613 212 613
+Dialogue: 1,0:00:01.46,0:00:01.70,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}sem{\1c&H00FFFFFF&\bord2.4\shad1} saber o que vestir.
+Dialogue: 0,0:00:01.70,0:00:02.00,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 275 613 l 338 613 b 346 613 353 620 353 628 l 353 652 b 353 660 346 667 338 667 l 275 667 b 267 667 260 660 260 652 l 260 628 b 260 620 267 613 275 613
+Dialogue: 1,0:00:01.70,0:00:02.00,Caption,,0,0,0,,{\fs40}sem {\1c&H000F1417&\bord0\shad0}saber{\1c&H00FFFFFF&\bord2.4\shad1} o que vestir.
+Dialogue: 0,0:00:02.00,0:00:02.12,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 356 613 l 360 613 b 368 613 375 620 375 628 l 375 652 b 375 660 368 667 360 667 l 356 667 b 348 667 341 660 341 652 l 341 628 b 341 620 348 613 356 613
+Dialogue: 1,0:00:02.00,0:00:02.12,Caption,,0,0,0,,{\fs40}sem saber {\1c&H000F1417&\bord0\shad0}o{\1c&H00FFFFFF&\bord2.4\shad1} que vestir.
+Dialogue: 0,0:00:02.12,0:00:02.20,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 379 613 l 417 613 b 425 613 432 620 432 628 l 432 652 b 432 660 425 667 417 667 l 379 667 b 371 667 364 660 364 652 l 364 628 b 364 620 371 613 379 613
+Dialogue: 1,0:00:02.12,0:00:02.20,Caption,,0,0,0,,{\fs40}sem saber o {\1c&H000F1417&\bord0\shad0}que{\1c&H00FFFFFF&\bord2.4\shad1} vestir.
+Dialogue: 0,0:00:02.20,0:00:02.67,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&\fad(0,50)}m 435 613 l 508 613 b 516 613 523 620 523 628 l 523 652 b 523 660 516 667 508 667 l 435 667 b 427 667 420 660 420 652 l 420 628 b 420 620 427 613 435 613
+Dialogue: 1,0:00:02.20,0:00:02.67,Caption,,0,0,0,,{\fs40\fad(0,50)}sem saber o que {\1c&H000F1417&\bord0\shad0}vestir.{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:02.77,0:00:02.97,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&\fad(50,0)}m 208 666 l 222 666 b 224 666 225 667 225 669 l 225 669 b 225 671 224 672 222 672 l 208 672 b 206 672 205 671 205 669 l 205 669 b 205 667 206 666 208 666
+Dialogue: 1,0:00:02.77,0:00:02.97,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H00A7D8F2&}O{\1c&H00FFFFFF&} Truque dos Mil Looks
+Dialogue: 0,0:00:02.97,0:00:03.19,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 236 666 l 324 666 b 326 666 327 667 327 669 l 327 669 b 327 671 326 672 324 672 l 236 672 b 234 672 233 671 233 669 l 233 669 b 233 667 234 666 236 666
+Dialogue: 1,0:00:02.97,0:00:03.19,Caption,,0,0,0,,{\fs40}O {\1c&H00A7D8F2&}Truque{\1c&H00FFFFFF&} dos Mil Looks
+Dialogue: 0,0:00:03.19,0:00:03.37,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 339 666 l 379 666 b 381 666 382 667 382 669 l 382 669 b 382 671 381 672 379 672 l 339 672 b 337 672 336 671 336 669 l 336 669 b 336 667 337 666 339 666
+Dialogue: 1,0:00:03.19,0:00:03.37,Caption,,0,0,0,,{\fs40}O Truque {\1c&H00A7D8F2&}dos{\1c&H00FFFFFF&} Mil Looks
+Dialogue: 0,0:00:03.37,0:00:03.53,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 394 666 l 426 666 b 428 666 429 667 429 669 l 429 669 b 429 671 428 672 426 672 l 394 672 b 392 672 391 671 391 669 l 391 669 b 391 667 392 666 394 666
+Dialogue: 1,0:00:03.37,0:00:03.53,Caption,,0,0,0,,{\fs40}O Truque dos {\1c&H00A7D8F2&}Mil{\1c&H00FFFFFF&} Looks
+Dialogue: 0,0:00:03.53,0:00:03.81,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&\fad(0,50)}m 440 666 l 512 666 b 514 666 515 667 515 669 l 515 669 b 515 671 514 672 512 672 l 440 672 b 438 672 437 671 437 669 l 437 669 b 437 667 438 666 440 666
+Dialogue: 1,0:00:03.53,0:00:03.81,Caption,,0,0,0,,{\fs40\fad(0,50)}O Truque dos Mil {\1c&H00A7D8F2&}Looks{\1c&H00FFFFFF&}
+Dialogue: 0,0:00:03.81,0:00:04.15,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&\fad(50,0)}m 185 613 l 245 613 b 253 613 260 620 260 628 l 260 652 b 260 660 253 667 245 667 l 185 667 b 177 667 170 660 170 652 l 170 628 b 170 620 177 613 185 613
+Dialogue: 1,0:00:03.81,0:00:04.15,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}ajuda{\1c&H00FFFFFF&\bord2.4\shad1} você a sair do básico.
+Dialogue: 0,0:00:04.15,0:00:04.49,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 264 613 l 316 613 b 324 613 331 620 331 628 l 331 652 b 331 660 324 667 316 667 l 264 667 b 256 667 249 660 249 652 l 249 628 b 249 620 256 613 264 613
+Dialogue: 1,0:00:04.15,0:00:04.49,Caption,,0,0,0,,{\fs40}ajuda {\1c&H000F1417&\bord0\shad0}você{\1c&H00FFFFFF&\bord2.4\shad1} a sair do básico.
+Dialogue: 0,0:00:04.49,0:00:04.65,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 335 613 l 338 613 b 346 613 353 620 353 628 l 353 652 b 353 660 346 667 338 667 l 335 667 b 327 667 320 660 320 652 l 320 628 b 320 620 327 613 335 613
+Dialogue: 1,0:00:04.49,0:00:04.65,Caption,,0,0,0,,{\fs40}ajuda você {\1c&H000F1417&\bord0\shad0}a{\1c&H00FFFFFF&\bord2.4\shad1} sair do básico.
+Dialogue: 0,0:00:04.65,0:00:04.85,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 356 613 l 394 613 b 402 613 409 620 409 628 l 409 652 b 409 660 402 667 394 667 l 356 667 b 348 667 341 660 341 652 l 341 628 b 341 620 348 613 356 613
+Dialogue: 1,0:00:04.65,0:00:04.85,Caption,,0,0,0,,{\fs40}ajuda você a {\1c&H000F1417&\bord0\shad0}sair{\1c&H00FFFFFF&\bord2.4\shad1} do básico.
+Dialogue: 0,0:00:04.85,0:00:04.99,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 412 613 l 434 613 b 442 613 449 620 449 628 l 449 652 b 449 660 442 667 434 667 l 412 667 b 404 667 397 660 397 652 l 397 628 b 397 620 404 613 412 613
+Dialogue: 1,0:00:04.85,0:00:04.99,Caption,,0,0,0,,{\fs40}ajuda você a sair {\1c&H000F1417&\bord0\shad0}do{\1c&H00FFFFFF&\bord2.4\shad1} básico.
+Dialogue: 0,0:00:04.99,0:00:05.54,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&\fad(0,50)}m 452 613 l 535 613 b 543 613 550 620 550 628 l 550 652 b 550 660 543 667 535 667 l 452 667 b 444 667 437 660 437 652 l 437 628 b 437 620 444 613 452 613
+Dialogue: 1,0:00:04.99,0:00:05.54,Caption,,0,0,0,,{\fs40\fad(0,50)}ajuda você a sair do {\1c&H000F1417&\bord0\shad0}básico.{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:05.60,0:00:06.04,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(50,0)}m 141 613 l 257 613 b 265 613 272 620 272 628 l 272 652 b 272 660 265 667 257 667 l 141 667 b 133 667 126 660 126 652 l 126 628 b 126 620 133 613 141 613
+Dialogue: 1,0:00:05.60,0:00:06.04,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}Descubra{\1c&H00FFFFFF&\bord2.4\shad1} combinações elegantes
+Dialogue: 0,0:00:06.04,0:00:06.54,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 275 613 l 441 613 b 449 613 456 620 456 628 l 456 652 b 456 660 449 667 441 667 l 275 667 b 267 667 260 660 260 652 l 260 628 b 260 620 267 613 275 613
+Dialogue: 1,0:00:06.04,0:00:06.54,Caption,,0,0,0,,{\fs40}Descubra {\1c&H000F1417&\bord0\shad0}combinações{\1c&H00FFFFFF&\bord2.4\shad1} elegantes
+Dialogue: 0,0:00:06.54,0:00:07.10,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(0,50)}m 459 613 l 579 613 b 587 613 594 620 594 628 l 594 652 b 594 660 587 667 579 667 l 459 667 b 451 667 444 660 444 652 l 444 628 b 444 620 451 613 459 613
+Dialogue: 1,0:00:06.54,0:00:07.10,Caption,,0,0,0,,{\fs40\fad(0,50)}Descubra combinações {\1c&H000F1417&\bord0\shad0}elegantes{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:07.10,0:00:07.32,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(50,0)}m 198 613 l 242 613 b 250 613 257 620 257 628 l 257 652 b 257 660 250 667 242 667 l 198 667 b 190 667 183 660 183 652 l 183 628 b 183 620 190 613 198 613
+Dialogue: 1,0:00:07.10,0:00:07.32,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}com{\1c&H00FFFFFF&\bord2.4\shad1} as roupas que já tem
+Dialogue: 0,0:00:07.32,0:00:07.46,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 261 613 l 280 613 b 288 613 295 620 295 628 l 295 652 b 295 660 288 667 280 667 l 261 667 b 253 667 246 660 246 652 l 246 628 b 246 620 253 613 261 613
+Dialogue: 1,0:00:07.32,0:00:07.46,Caption,,0,0,0,,{\fs40}com {\1c&H000F1417&\bord0\shad0}as{\1c&H00FFFFFF&\bord2.4\shad1} roupas que já tem
+Dialogue: 0,0:00:07.46,0:00:07.78,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 298 613 l 378 613 b 386 613 393 620 393 628 l 393 652 b 393 660 386 667 378 667 l 298 667 b 290 667 283 660 283 652 l 283 628 b 283 620 290 613 298 613
+Dialogue: 1,0:00:07.46,0:00:07.78,Caption,,0,0,0,,{\fs40}com as {\1c&H000F1417&\bord0\shad0}roupas{\1c&H00FFFFFF&\bord2.4\shad1} que já tem
+Dialogue: 0,0:00:07.78,0:00:07.90,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 396 613 l 435 613 b 443 613 450 620 450 628 l 450 652 b 450 660 443 667 435 667 l 396 667 b 388 667 381 660 381 652 l 381 628 b 381 620 388 613 396 613
+Dialogue: 1,0:00:07.78,0:00:07.90,Caption,,0,0,0,,{\fs40}com as roupas {\1c&H000F1417&\bord0\shad0}que{\1c&H00FFFFFF&\bord2.4\shad1} já tem
+Dialogue: 0,0:00:07.90,0:00:08.10,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 453 613 l 464 613 b 472 613 479 620 479 628 l 479 652 b 479 660 472 667 464 667 l 453 667 b 445 667 438 660 438 652 l 438 628 b 438 620 445 613 453 613
+Dialogue: 1,0:00:07.90,0:00:08.10,Caption,,0,0,0,,{\fs40}com as roupas que {\1c&H000F1417&\bord0\shad0}já{\1c&H00FFFFFF&\bord2.4\shad1} tem
+Dialogue: 0,0:00:08.10,0:00:08.22,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(0,50)}m 483 613 l 522 613 b 530 613 537 620 537 628 l 537 652 b 537 660 530 667 522 667 l 483 667 b 475 667 468 660 468 652 l 468 628 b 468 620 475 613 483 613
+Dialogue: 1,0:00:08.10,0:00:08.22,Caption,,0,0,0,,{\fs40\fad(0,50)}com as roupas que já {\1c&H000F1417&\bord0\shad0}tem{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:08.22,0:00:08.34,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(50,0)}m 144 613 l 166 613 b 174 613 181 620 181 628 l 181 652 b 181 660 174 667 166 667 l 144 667 b 136 667 129 660 129 652 l 129 628 b 129 620 136 613 144 613
+Dialogue: 1,0:00:08.22,0:00:08.34,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}no{\1c&H00FFFFFF&\bord2.4\shad1} armário, sem precisar comprar
+Dialogue: 0,0:00:08.34,0:00:08.83,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 184 613 l 281 613 b 289 613 296 620 296 628 l 296 652 b 296 660 289 667 281 667 l 184 667 b 176 667 169 660 169 652 l 169 628 b 169 620 176 613 184 613
+Dialogue: 1,0:00:08.34,0:00:08.83,Caption,,0,0,0,,{\fs40}no {\1c&H000F1417&\bord0\shad0}armário,{\1c&H00FFFFFF&\bord2.4\shad1} sem precisar comprar
+Dialogue: 0,0:00:08.83,0:00:09.05,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 299 613 l 344 613 b 352 613 359 620 359 628 l 359 652 b 359 660 352 667 344 667 l 299 667 b 291 667 284 660 284 652 l 284 628 b 284 620 291 613 299 613
+Dialogue: 1,0:00:08.83,0:00:09.05,Caption,,0,0,0,,{\fs40}no armário, {\1c&H000F1417&\bord0\shad0}sem{\1c&H00FFFFFF&\bord2.4\shad1} precisar comprar
+Dialogue: 0,0:00:09.05,0:00:09.45,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 362 613 l 459 613 b 467 613 474 620 474 628 l 474 652 b 474 660 467 667 459 667 l 362 667 b 354 667 347 660 347 652 l 347 628 b 347 620 354 613 362 613
+Dialogue: 1,0:00:09.05,0:00:09.45,Caption,,0,0,0,,{\fs40}no armário, sem {\1c&H000F1417&\bord0\shad0}precisar{\1c&H00FFFFFF&\bord2.4\shad1} comprar
+Dialogue: 0,0:00:09.45,0:00:09.71,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(0,50)}m 477 613 l 576 613 b 584 613 591 620 591 628 l 591 652 b 591 660 584 667 576 667 l 477 667 b 469 667 462 660 462 652 l 462 628 b 462 620 469 613 477 613
+Dialogue: 1,0:00:09.45,0:00:09.71,Caption,,0,0,0,,{\fs40\fad(0,50)}no armário, sem precisar {\1c&H000F1417&\bord0\shad0}comprar{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:09.71,0:00:10.07,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(50,0)}m 213 613 l 281 613 b 289 613 296 620 296 628 l 296 652 b 296 660 289 667 281 667 l 213 667 b 205 667 198 660 198 652 l 198 628 b 198 620 205 613 213 613
+Dialogue: 1,0:00:09.71,0:00:10.07,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}peças{\1c&H00FFFFFF&\bord2.4\shad1} novas toda hora.
+Dialogue: 0,0:00:10.07,0:00:10.45,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 299 613 l 368 613 b 376 613 383 620 383 628 l 383 652 b 383 660 376 667 368 667 l 299 667 b 291 667 284 660 284 652 l 284 628 b 284 620 291 613 299 613
+Dialogue: 1,0:00:10.07,0:00:10.45,Caption,,0,0,0,,{\fs40}peças {\1c&H000F1417&\bord0\shad0}novas{\1c&H00FFFFFF&\bord2.4\shad1} toda hora.
+Dialogue: 0,0:00:10.45,0:00:10.65,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 386 613 l 434 613 b 442 613 449 620 449 628 l 449 652 b 449 660 442 667 434 667 l 386 667 b 378 667 371 660 371 652 l 371 628 b 371 620 378 613 386 613
+Dialogue: 1,0:00:10.45,0:00:10.65,Caption,,0,0,0,,{\fs40}peças novas {\1c&H000F1417&\bord0\shad0}toda{\1c&H00FFFFFF&\bord2.4\shad1} hora.
+Dialogue: 0,0:00:10.65,0:00:11.04,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(0,50)}m 452 613 l 507 613 b 515 613 522 620 522 628 l 522 652 b 522 660 515 667 507 667 l 452 667 b 444 667 437 660 437 652 l 437 628 b 437 620 444 613 452 613
+Dialogue: 1,0:00:10.65,0:00:11.04,Caption,,0,0,0,,{\fs40\fad(0,50)}peças novas toda {\1c&H000F1417&\bord0\shad0}hora.{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:11.16,0:00:11.32,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(50,0)}m 164 613 l 169 613 b 177 613 184 620 184 628 l 184 652 b 184 660 177 667 169 667 l 164 667 b 156 667 149 660 149 652 l 149 628 b 149 620 156 613 164 613
+Dialogue: 1,0:00:11.16,0:00:11.32,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}E{\1c&H00FFFFFF&\bord2.4\shad1} se quiser completar um look,
+Dialogue: 0,0:00:11.32,0:00:11.36,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 188 613 l 208 613 b 216 613 223 620 223 628 l 223 652 b 223 660 216 667 208 667 l 188 667 b 180 667 173 660 173 652 l 173 628 b 173 620 180 613 188 613
+Dialogue: 1,0:00:11.32,0:00:11.36,Caption,,0,0,0,,{\fs40}E {\1c&H000F1417&\bord0\shad0}se{\1c&H00FFFFFF&\bord2.4\shad1} quiser completar um look,
+Dialogue: 0,0:00:11.36,0:00:11.62,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 226 613 l 298 613 b 306 613 313 620 313 628 l 313 652 b 313 660 306 667 298 667 l 226 667 b 218 667 211 660 211 652 l 211 628 b 211 620 218 613 226 613
+Dialogue: 1,0:00:11.36,0:00:11.62,Caption,,0,0,0,,{\fs40}E se {\1c&H000F1417&\bord0\shad0}quiser{\1c&H00FFFFFF&\bord2.4\shad1} completar um look,
+Dialogue: 0,0:00:11.62,0:00:12.06,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 317 613 l 438 613 b 446 613 453 620 453 628 l 453 652 b 453 660 446 667 438 667 l 317 667 b 309 667 302 660 302 652 l 302 628 b 302 620 309 613 317 613
+Dialogue: 1,0:00:11.62,0:00:12.06,Caption,,0,0,0,,{\fs40}E se quiser {\1c&H000F1417&\bord0\shad0}completar{\1c&H00FFFFFF&\bord2.4\shad1} um look,
+Dialogue: 0,0:00:12.06,0:00:12.22,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 457 613 l 486 613 b 494 613 501 620 501 628 l 501 652 b 501 660 494 667 486 667 l 457 667 b 449 667 442 660 442 652 l 442 628 b 442 620 449 613 457 613
+Dialogue: 1,0:00:12.06,0:00:12.22,Caption,,0,0,0,,{\fs40}E se quiser completar {\1c&H000F1417&\bord0\shad0}um{\1c&H00FFFFFF&\bord2.4\shad1} look,
+Dialogue: 0,0:00:12.22,0:00:12.46,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(0,50)}m 505 613 l 556 613 b 564 613 571 620 571 628 l 571 652 b 571 660 564 667 556 667 l 505 667 b 497 667 490 660 490 652 l 490 628 b 490 620 497 613 505 613
+Dialogue: 1,0:00:12.22,0:00:12.46,Caption,,0,0,0,,{\fs40\fad(0,50)}E se quiser completar um {\1c&H000F1417&\bord0\shad0}look,{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:12.66,0:00:13.00,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(50,0)}m 168 613 l 276 613 b 284 613 291 620 291 628 l 291 652 b 291 660 284 667 276 667 l 168 667 b 160 667 153 660 153 652 l 153 628 b 153 620 160 613 168 613
+Dialogue: 1,0:00:12.66,0:00:13.00,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}encontre{\1c&H00FFFFFF&\bord2.4\shad1} indicações de peças
+Dialogue: 0,0:00:13.00,0:00:13.52,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 294 613 l 426 613 b 434 613 441 620 441 628 l 441 652 b 441 660 434 667 426 667 l 294 667 b 286 667 279 660 279 652 l 279 628 b 279 620 286 613 294 613
+Dialogue: 1,0:00:13.00,0:00:13.52,Caption,,0,0,0,,{\fs40}encontre {\1c&H000F1417&\bord0\shad0}indicações{\1c&H00FFFFFF&\bord2.4\shad1} de peças
+Dialogue: 0,0:00:13.52,0:00:13.72,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 444 613 l 466 613 b 474 613 481 620 481 628 l 481 652 b 481 660 474 667 466 667 l 444 667 b 436 667 429 660 429 652 l 429 628 b 429 620 436 613 444 613
+Dialogue: 1,0:00:13.52,0:00:13.72,Caption,,0,0,0,,{\fs40}encontre indicações {\1c&H000F1417&\bord0\shad0}de{\1c&H00FFFFFF&\bord2.4\shad1} peças
+Dialogue: 0,0:00:13.72,0:00:14.08,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(0,50)}m 484 613 l 552 613 b 560 613 567 620 567 628 l 567 652 b 567 660 560 667 552 667 l 484 667 b 476 667 469 660 469 652 l 469 628 b 469 620 476 613 484 613
+Dialogue: 1,0:00:13.72,0:00:14.08,Caption,,0,0,0,,{\fs40\fad(0,50)}encontre indicações de {\1c&H000F1417&\bord0\shad0}peças{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:14.08,0:00:14.26,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(50,0)}m 179 613 l 184 613 b 192 613 199 620 199 628 l 199 652 b 199 660 192 667 184 667 l 179 667 b 171 667 164 660 164 652 l 164 628 b 164 620 171 613 179 613
+Dialogue: 1,0:00:14.08,0:00:14.26,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}e{\1c&H00FFFFFF&\bord2.4\shad1} links para procurar opções
+Dialogue: 0,0:00:14.26,0:00:14.50,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 202 613 l 253 613 b 261 613 268 620 268 628 l 268 652 b 268 660 261 667 253 667 l 202 667 b 194 667 187 660 187 652 l 187 628 b 187 620 194 613 202 613
+Dialogue: 1,0:00:14.26,0:00:14.50,Caption,,0,0,0,,{\fs40}e {\1c&H000F1417&\bord0\shad0}links{\1c&H00FFFFFF&\bord2.4\shad1} para procurar opções
+Dialogue: 0,0:00:14.50,0:00:14.74,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 271 613 l 318 613 b 326 613 333 620 333 628 l 333 652 b 333 660 326 667 318 667 l 271 667 b 263 667 256 660 256 652 l 256 628 b 256 620 263 613 271 613
+Dialogue: 1,0:00:14.50,0:00:14.74,Caption,,0,0,0,,{\fs40}e links {\1c&H000F1417&\bord0\shad0}para{\1c&H00FFFFFF&\bord2.4\shad1} procurar opções
+Dialogue: 0,0:00:14.74,0:00:15.10,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 336 613 l 437 613 b 445 613 452 620 452 628 l 452 652 b 452 660 445 667 437 667 l 336 667 b 328 667 321 660 321 652 l 321 628 b 321 620 328 613 336 613
+Dialogue: 1,0:00:14.74,0:00:15.10,Caption,,0,0,0,,{\fs40}e links para {\1c&H000F1417&\bord0\shad0}procurar{\1c&H00FFFFFF&\bord2.4\shad1} opções
+Dialogue: 0,0:00:15.10,0:00:15.50,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(0,50)}m 456 613 l 541 613 b 549 613 556 620 556 628 l 556 652 b 556 660 549 667 541 667 l 456 667 b 448 667 441 660 441 652 l 441 628 b 441 620 448 613 456 613
+Dialogue: 1,0:00:15.10,0:00:15.50,Caption,,0,0,0,,{\fs40\fad(0,50)}e links para procurar {\1c&H000F1417&\bord0\shad0}opções{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:15.50,0:00:15.74,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(50,0)}m 230 613 l 268 613 b 276 613 283 620 283 628 l 283 652 b 283 660 276 667 268 667 l 230 667 b 222 667 215 660 215 652 l 215 628 b 215 620 222 613 230 613
+Dialogue: 1,0:00:15.50,0:00:15.74,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}que{\1c&H00FFFFFF&\bord2.4\shad1} cabem no bolso.
+Dialogue: 0,0:00:15.74,0:00:16.04,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 287 613 l 364 613 b 372 613 379 620 379 628 l 379 652 b 379 660 372 667 364 667 l 287 667 b 279 667 272 660 272 652 l 272 628 b 272 620 279 613 287 613
+Dialogue: 1,0:00:15.74,0:00:16.04,Caption,,0,0,0,,{\fs40}que {\1c&H000F1417&\bord0\shad0}cabem{\1c&H00FFFFFF&\bord2.4\shad1} no bolso.
+Dialogue: 0,0:00:16.04,0:00:16.16,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 382 613 l 403 613 b 411 613 418 620 418 628 l 418 652 b 418 660 411 667 403 667 l 382 667 b 374 667 367 660 367 652 l 367 628 b 367 620 374 613 382 613
+Dialogue: 1,0:00:16.04,0:00:16.16,Caption,,0,0,0,,{\fs40}que cabem {\1c&H000F1417&\bord0\shad0}no{\1c&H00FFFFFF&\bord2.4\shad1} bolso.
+Dialogue: 0,0:00:16.16,0:00:16.60,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(0,50)}m 422 613 l 490 613 b 498 613 505 620 505 628 l 505 652 b 505 660 498 667 490 667 l 422 667 b 414 667 407 660 407 652 l 407 628 b 407 620 414 613 422 613
+Dialogue: 1,0:00:16.16,0:00:16.60,Caption,,0,0,0,,{\fs40\fad(0,50)}que cabem no {\1c&H000F1417&\bord0\shad0}bolso.{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:16.67,0:00:16.84,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(50,0)}m 159 666 l 172 666 b 174 666 175 667 175 669 l 175 669 b 175 671 174 672 172 672 l 159 672 b 157 672 156 671 156 669 l 156 669 b 156 667 157 666 159 666
+Dialogue: 1,0:00:16.67,0:00:16.84,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H00D0E3A7&}O{\1c&H00FFFFFF&} segredo é seu Closet Virtual.
+Dialogue: 0,0:00:16.84,0:00:17.26,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 187 666 l 287 666 b 289 666 290 667 290 669 l 290 669 b 290 671 289 672 287 672 l 187 672 b 185 672 184 671 184 669 l 184 669 b 184 667 185 666 187 666
+Dialogue: 1,0:00:16.84,0:00:17.26,Caption,,0,0,0,,{\fs40}O {\1c&H00D0E3A7&}segredo{\1c&H00FFFFFF&} é seu Closet Virtual.
+Dialogue: 0,0:00:17.26,0:00:17.36,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 302 666 l 310 666 b 312 666 313 667 313 669 l 313 669 b 313 671 312 672 310 672 l 302 672 b 300 672 299 671 299 669 l 299 669 b 299 667 300 666 302 666
+Dialogue: 1,0:00:17.26,0:00:17.36,Caption,,0,0,0,,{\fs40}O segredo {\1c&H00D0E3A7&}é{\1c&H00FFFFFF&} seu Closet Virtual.
+Dialogue: 0,0:00:17.36,0:00:17.52,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 324 666 l 365 666 b 367 666 368 667 368 669 l 368 669 b 368 671 367 672 365 672 l 324 672 b 322 672 321 671 321 669 l 321 669 b 321 667 322 666 324 666
+Dialogue: 1,0:00:17.36,0:00:17.52,Caption,,0,0,0,,{\fs40}O segredo é {\1c&H00D0E3A7&}seu{\1c&H00FFFFFF&} Closet Virtual.
+Dialogue: 0,0:00:17.52,0:00:17.94,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 380 666 l 458 666 b 460 666 461 667 461 669 l 461 669 b 461 671 460 672 458 672 l 380 672 b 378 672 377 671 377 669 l 377 669 b 377 667 378 666 380 666
+Dialogue: 1,0:00:17.52,0:00:17.94,Caption,,0,0,0,,{\fs40}O segredo é seu {\1c&H00D0E3A7&}Closet{\1c&H00FFFFFF&} Virtual.
+Dialogue: 0,0:00:17.94,0:00:18.33,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(0,50)}m 472 666 l 561 666 b 563 666 564 667 564 669 l 564 669 b 564 671 563 672 561 672 l 472 672 b 470 672 469 671 469 669 l 469 669 b 469 667 470 666 472 666
+Dialogue: 1,0:00:17.94,0:00:18.33,Caption,,0,0,0,,{\fs40\fad(0,50)}O segredo é seu Closet {\1c&H00D0E3A7&}Virtual.{\1c&H00FFFFFF&}
+Dialogue: 0,0:00:18.48,0:00:19.00,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(50,0)}m 213 613 l 331 613 b 339 613 346 620 346 628 l 346 652 b 346 660 339 667 331 667 l 213 667 b 205 667 198 660 198 652 l 198 628 b 198 620 205 613 213 613
+Dialogue: 1,0:00:18.48,0:00:19.00,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}Fotografe{\1c&H00FFFFFF&\bord2.4\shad1} suas roupas.
+Dialogue: 0,0:00:19.00,0:00:19.14,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 349 613 l 401 613 b 409 613 416 620 416 628 l 416 652 b 416 660 409 667 401 667 l 349 667 b 341 667 334 660 334 652 l 334 628 b 334 620 341 613 349 613
+Dialogue: 1,0:00:19.00,0:00:19.14,Caption,,0,0,0,,{\fs40}Fotografe {\1c&H000F1417&\bord0\shad0}suas{\1c&H00FFFFFF&\bord2.4\shad1} roupas.
+Dialogue: 0,0:00:19.14,0:00:19.67,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(0,50)}m 419 613 l 507 613 b 515 613 522 620 522 628 l 522 652 b 522 660 515 667 507 667 l 419 667 b 411 667 404 660 404 652 l 404 628 b 404 620 411 613 419 613
+Dialogue: 1,0:00:19.14,0:00:19.67,Caption,,0,0,0,,{\fs40\fad(0,50)}Fotografe suas {\1c&H000F1417&\bord0\shad0}roupas.{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:19.73,0:00:19.89,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(50,0)}m 288 613 l 292 613 b 300 613 307 620 307 628 l 307 652 b 307 660 300 667 292 667 l 288 667 b 280 667 273 660 273 652 l 273 628 b 273 620 280 613 288 613
+Dialogue: 1,0:00:19.73,0:00:19.89,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}E{\1c&H00FFFFFF&\bord2.4\shad1} as peças?
+Dialogue: 0,0:00:19.89,0:00:20.03,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 311 613 l 330 613 b 338 613 345 620 345 628 l 345 652 b 345 660 338 667 330 667 l 311 667 b 303 667 296 660 296 652 l 296 628 b 296 620 303 613 311 613
+Dialogue: 1,0:00:19.89,0:00:20.03,Caption,,0,0,0,,{\fs40}E {\1c&H000F1417&\bord0\shad0}as{\1c&H00FFFFFF&\bord2.4\shad1} peças?
+Dialogue: 0,0:00:20.03,0:00:20.45,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(0,50)}m 348 613 l 432 613 b 440 613 447 620 447 628 l 447 652 b 447 660 440 667 432 667 l 348 667 b 340 667 333 660 333 652 l 333 628 b 333 620 340 613 348 613
+Dialogue: 1,0:00:20.03,0:00:20.45,Caption,,0,0,0,,{\fs40\fad(0,50)}E as {\1c&H000F1417&\bord0\shad0}peças?{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:20.49,0:00:20.75,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(50,0)}m 140 613 l 179 613 b 187 613 194 620 194 628 l 194 652 b 194 660 187 667 179 667 l 140 667 b 132 667 125 660 125 652 l 125 628 b 125 620 132 613 140 613
+Dialogue: 1,0:00:20.49,0:00:20.75,Caption,,0,0,0,,{\fs37\fad(50,0)}{\1c&H000F1417&\bord0\shad0}veja{\1c&H00FFFFFF&\bord2.4\shad1} novas maneiras de combiná-las.
+Dialogue: 0,0:00:20.75,0:00:21.01,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 197 613 l 259 613 b 267 613 274 620 274 628 l 274 652 b 274 660 267 667 259 667 l 197 667 b 189 667 182 660 182 652 l 182 628 b 182 620 189 613 197 613
+Dialogue: 1,0:00:20.75,0:00:21.01,Caption,,0,0,0,,{\fs37}veja {\1c&H000F1417&\bord0\shad0}novas{\1c&H00FFFFFF&\bord2.4\shad1} maneiras de combiná-las.
+Dialogue: 0,0:00:21.01,0:00:21.39,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 277 613 l 378 613 b 386 613 393 620 393 628 l 393 652 b 393 660 386 667 378 667 l 277 667 b 269 667 262 660 262 652 l 262 628 b 262 620 269 613 277 613
+Dialogue: 1,0:00:21.01,0:00:21.39,Caption,,0,0,0,,{\fs37}veja novas {\1c&H000F1417&\bord0\shad0}maneiras{\1c&H00FFFFFF&\bord2.4\shad1} de combiná-las.
+Dialogue: 0,0:00:21.39,0:00:21.49,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 395 613 l 414 613 b 422 613 429 620 429 628 l 429 652 b 429 660 422 667 414 667 l 395 667 b 387 667 380 660 380 652 l 380 628 b 380 620 387 613 395 613
+Dialogue: 1,0:00:21.39,0:00:21.49,Caption,,0,0,0,,{\fs37}veja novas maneiras {\1c&H000F1417&\bord0\shad0}de{\1c&H00FFFFFF&\bord2.4\shad1} combiná-las.
+Dialogue: 0,0:00:21.49,0:00:21.98,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(0,50)}m 432 613 l 580 613 b 588 613 595 620 595 628 l 595 652 b 595 660 588 667 580 667 l 432 667 b 424 667 417 660 417 652 l 417 628 b 417 620 424 613 432 613
+Dialogue: 1,0:00:21.49,0:00:21.98,Caption,,0,0,0,,{\fs37\fad(0,50)}veja novas maneiras de {\1c&H000F1417&\bord0\shad0}combiná-las.{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:22.10,0:00:22.54,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(50,0)}m 245 613 l 337 613 b 345 613 352 620 352 628 l 352 652 b 352 660 345 667 337 667 l 245 667 b 237 667 230 660 230 652 l 230 628 b 230 620 237 613 245 613
+Dialogue: 1,0:00:22.10,0:00:22.54,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}Escolha{\1c&H00FFFFFF&\bord2.4\shad1} a ocasião.
+Dialogue: 0,0:00:22.54,0:00:22.62,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 355 613 l 359 613 b 367 613 374 620 374 628 l 374 652 b 374 660 367 667 359 667 l 355 667 b 347 667 340 660 340 652 l 340 628 b 340 620 347 613 355 613
+Dialogue: 1,0:00:22.54,0:00:22.62,Caption,,0,0,0,,{\fs40}Escolha {\1c&H000F1417&\bord0\shad0}a{\1c&H00FFFFFF&\bord2.4\shad1} ocasião.
+Dialogue: 0,0:00:22.62,0:00:23.15,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(0,50)}m 377 613 l 475 613 b 483 613 490 620 490 628 l 490 652 b 490 660 483 667 475 667 l 377 667 b 369 667 362 660 362 652 l 362 628 b 362 620 369 613 377 613
+Dialogue: 1,0:00:22.62,0:00:23.15,Caption,,0,0,0,,{\fs40\fad(0,50)}Escolha a {\1c&H000F1417&\bord0\shad0}ocasião.{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:23.23,0:00:23.91,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(50,0)}m 141 613 l 254 613 b 262 613 269 620 269 628 l 269 652 b 269 660 262 667 254 667 l 141 667 b 133 667 126 660 126 652 l 126 628 b 126 620 133 613 141 613
+Dialogue: 1,0:00:23.23,0:00:23.91,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}Trabalho,{\1c&H00FFFFFF&\bord2.4\shad1} festa, jantar ou passeio.
+Dialogue: 0,0:00:23.91,0:00:24.29,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 273 613 l 338 613 b 346 613 353 620 353 628 l 353 652 b 353 660 346 667 338 667 l 273 667 b 265 667 258 660 258 652 l 258 628 b 258 620 265 613 273 613
+Dialogue: 1,0:00:23.91,0:00:24.29,Caption,,0,0,0,,{\fs40}Trabalho, {\1c&H000F1417&\bord0\shad0}festa,{\1c&H00FFFFFF&\bord2.4\shad1} jantar ou passeio.
+Dialogue: 0,0:00:24.29,0:00:24.61,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 356 613 l 421 613 b 429 613 436 620 436 628 l 436 652 b 436 660 429 667 421 667 l 356 667 b 348 667 341 660 341 652 l 341 628 b 341 620 348 613 356 613
+Dialogue: 1,0:00:24.29,0:00:24.61,Caption,,0,0,0,,{\fs40}Trabalho, festa, {\1c&H000F1417&\bord0\shad0}jantar{\1c&H00FFFFFF&\bord2.4\shad1} ou passeio.
+Dialogue: 0,0:00:24.61,0:00:24.75,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 440 613 l 461 613 b 469 613 476 620 476 628 l 476 652 b 476 660 469 667 461 667 l 440 667 b 432 667 425 660 425 652 l 425 628 b 425 620 432 613 440 613
+Dialogue: 1,0:00:24.61,0:00:24.75,Caption,,0,0,0,,{\fs40}Trabalho, festa, jantar {\1c&H000F1417&\bord0\shad0}ou{\1c&H00FFFFFF&\bord2.4\shad1} passeio.
+Dialogue: 0,0:00:24.75,0:00:25.23,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(0,50)}m 479 613 l 579 613 b 587 613 594 620 594 628 l 594 652 b 594 660 587 667 579 667 l 479 667 b 471 667 464 660 464 652 l 464 628 b 464 620 471 613 479 613
+Dialogue: 1,0:00:24.75,0:00:25.23,Caption,,0,0,0,,{\fs40\fad(0,50)}Trabalho, festa, jantar ou {\1c&H000F1417&\bord0\shad0}passeio.{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:25.39,0:00:25.47,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(50,0)}m 225 613 l 234 613 b 242 613 249 620 249 628 l 249 652 b 249 660 242 667 234 667 l 225 667 b 217 667 210 660 210 652 l 210 628 b 210 620 217 613 225 613
+Dialogue: 1,0:00:25.39,0:00:25.47,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}O{\1c&H00FFFFFF&\bord2.4\shad1} aplicativo encontra
+Dialogue: 0,0:00:25.47,0:00:26.05,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 253 613 l 370 613 b 378 613 385 620 385 628 l 385 652 b 385 660 378 667 370 667 l 253 667 b 245 667 238 660 238 652 l 238 628 b 238 620 245 613 253 613
+Dialogue: 1,0:00:25.47,0:00:26.05,Caption,,0,0,0,,{\fs40}O {\1c&H000F1417&\bord0\shad0}aplicativo{\1c&H00FFFFFF&\bord2.4\shad1} encontra
+Dialogue: 0,0:00:26.05,0:00:26.35,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(0,50)}m 388 613 l 495 613 b 503 613 510 620 510 628 l 510 652 b 510 660 503 667 495 667 l 388 667 b 380 667 373 660 373 652 l 373 628 b 373 620 380 613 388 613
+Dialogue: 1,0:00:26.05,0:00:26.35,Caption,,0,0,0,,{\fs40\fad(0,50)}O aplicativo {\1c&H000F1417&\bord0\shad0}encontra{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:26.35,0:00:26.87,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(50,0)}m 212 613 l 280 613 b 288 613 295 620 295 628 l 295 652 b 295 660 288 667 280 667 l 212 667 b 204 667 197 660 197 652 l 197 628 b 197 620 204 613 212 613
+Dialogue: 1,0:00:26.35,0:00:26.87,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}ideias{\1c&H00FFFFFF&\bord2.4\shad1} para o momento.
+Dialogue: 0,0:00:26.87,0:00:27.01,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&}m 298 613 l 368 613 b 376 613 383 620 383 628 l 383 652 b 383 660 376 667 368 667 l 298 667 b 290 667 283 660 283 652 l 283 628 b 283 620 290 613 298 613
+Dialogue: 1,0:00:26.87,0:00:27.01,Caption,,0,0,0,,{\fs40}ideias {\1c&H000F1417&\bord0\shad0}para o{\1c&H00FFFFFF&\bord2.4\shad1} momento.
+Dialogue: 0,0:00:27.01,0:00:27.36,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00D0E3A7&\fad(0,50)}m 386 613 l 508 613 b 516 613 523 620 523 628 l 523 652 b 523 660 516 667 508 667 l 386 667 b 378 667 371 660 371 652 l 371 628 b 371 620 378 613 386 613
+Dialogue: 1,0:00:27.01,0:00:27.36,Caption,,0,0,0,,{\fs40\fad(0,50)}ideias para o {\1c&H000F1417&\bord0\shad0}momento.{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:27.50,0:00:27.84,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&\fad(50,0)}m 191 613 l 239 613 b 247 613 254 620 254 628 l 254 652 b 254 660 247 667 239 667 l 191 667 b 183 667 176 660 176 652 l 176 628 b 176 620 183 613 191 613
+Dialogue: 1,0:00:27.50,0:00:27.84,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}Olha{\1c&H00FFFFFF&\bord2.4\shad1} só, uma única camisa
+Dialogue: 0,0:00:27.84,0:00:28.29,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 258 613 l 285 613 b 293 613 300 620 300 628 l 300 652 b 300 660 293 667 285 667 l 258 667 b 250 667 243 660 243 652 l 243 628 b 243 620 250 613 258 613
+Dialogue: 1,0:00:27.84,0:00:28.29,Caption,,0,0,0,,{\fs40}Olha {\1c&H000F1417&\bord0\shad0}só,{\1c&H00FFFFFF&\bord2.4\shad1} uma única camisa
+Dialogue: 0,0:00:28.29,0:00:28.51,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 304 613 l 349 613 b 357 613 364 620 364 628 l 364 652 b 364 660 357 667 349 667 l 304 667 b 296 667 289 660 289 652 l 289 628 b 289 620 296 613 304 613
+Dialogue: 1,0:00:28.29,0:00:28.51,Caption,,0,0,0,,{\fs40}Olha só, {\1c&H000F1417&\bord0\shad0}uma{\1c&H00FFFFFF&\bord2.4\shad1} única camisa
+Dialogue: 0,0:00:28.51,0:00:28.81,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 367 613 l 428 613 b 436 613 443 620 443 628 l 443 652 b 443 660 436 667 428 667 l 367 667 b 359 667 352 660 352 652 l 352 628 b 352 620 359 613 367 613
+Dialogue: 1,0:00:28.51,0:00:28.81,Caption,,0,0,0,,{\fs40}Olha só, uma {\1c&H000F1417&\bord0\shad0}única{\1c&H00FFFFFF&\bord2.4\shad1} camisa
+Dialogue: 0,0:00:28.81,0:00:29.31,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&\fad(0,50)}m 447 613 l 529 613 b 537 613 544 620 544 628 l 544 652 b 544 660 537 667 529 667 l 447 667 b 439 667 432 660 432 652 l 432 628 b 432 620 439 613 447 613
+Dialogue: 1,0:00:28.81,0:00:29.31,Caption,,0,0,0,,{\fs40\fad(0,50)}Olha só, uma única {\1c&H000F1417&\bord0\shad0}camisa{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:29.31,0:00:29.53,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&\fad(50,0)}m 185 613 l 240 613 b 248 613 255 620 255 628 l 255 652 b 255 660 248 667 240 667 l 185 667 b 177 667 170 660 170 652 l 170 628 b 170 620 177 613 185 613
+Dialogue: 1,0:00:29.31,0:00:29.53,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}pode{\1c&H00FFFFFF&\bord2.4\shad1} ganhar outros estilos.
+Dialogue: 0,0:00:29.53,0:00:29.83,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 258 613 l 339 613 b 347 613 354 620 354 628 l 354 652 b 354 660 347 667 339 667 l 258 667 b 250 667 243 660 243 652 l 243 628 b 243 620 250 613 258 613
+Dialogue: 1,0:00:29.53,0:00:29.83,Caption,,0,0,0,,{\fs40}pode {\1c&H000F1417&\bord0\shad0}ganhar{\1c&H00FFFFFF&\bord2.4\shad1} outros estilos.
+Dialogue: 0,0:00:29.83,0:00:30.17,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 357 613 l 431 613 b 439 613 446 620 446 628 l 446 652 b 446 660 439 667 431 667 l 357 667 b 349 667 342 660 342 652 l 342 628 b 342 620 349 613 357 613
+Dialogue: 1,0:00:29.83,0:00:30.17,Caption,,0,0,0,,{\fs40}pode ganhar {\1c&H000F1417&\bord0\shad0}outros{\1c&H00FFFFFF&\bord2.4\shad1} estilos.
+Dialogue: 0,0:00:30.17,0:00:30.71,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&\fad(0,50)}m 450 613 l 535 613 b 543 613 550 620 550 628 l 550 652 b 550 660 543 667 535 667 l 450 667 b 442 667 435 660 435 652 l 435 628 b 435 620 442 613 450 613
+Dialogue: 1,0:00:30.17,0:00:30.71,Caption,,0,0,0,,{\fs40\fad(0,50)}pode ganhar outros {\1c&H000F1417&\bord0\shad0}estilos.{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:30.75,0:00:30.83,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&\fad(50,0)}m 227 613 l 277 613 b 285 613 292 620 292 628 l 292 652 b 292 660 285 667 277 667 l 227 667 b 219 667 212 660 212 652 l 212 628 b 212 620 219 613 227 613
+Dialogue: 1,0:00:30.75,0:00:30.83,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}Com{\1c&H00FFFFFF&\bord2.4\shad1} a calça, o blazer
+Dialogue: 0,0:00:30.83,0:00:30.95,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 295 613 l 299 613 b 307 613 314 620 314 628 l 314 652 b 314 660 307 667 299 667 l 295 667 b 287 667 280 660 280 652 l 280 628 b 280 620 287 613 295 613
+Dialogue: 1,0:00:30.83,0:00:30.95,Caption,,0,0,0,,{\fs40}Com {\1c&H000F1417&\bord0\shad0}a{\1c&H00FFFFFF&\bord2.4\shad1} calça, o blazer
+Dialogue: 0,0:00:30.95,0:00:31.53,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 317 613 l 382 613 b 390 613 397 620 397 628 l 397 652 b 397 660 390 667 382 667 l 317 667 b 309 667 302 660 302 652 l 302 628 b 302 620 309 613 317 613
+Dialogue: 1,0:00:30.95,0:00:31.53,Caption,,0,0,0,,{\fs40}Com a {\1c&H000F1417&\bord0\shad0}calça,{\1c&H00FFFFFF&\bord2.4\shad1} o blazer
+Dialogue: 0,0:00:31.53,0:00:31.57,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 401 613 l 405 613 b 413 613 420 620 420 628 l 420 652 b 420 660 413 667 405 667 l 401 667 b 393 667 386 660 386 652 l 386 628 b 386 620 393 613 401 613
+Dialogue: 1,0:00:31.53,0:00:31.57,Caption,,0,0,0,,{\fs40}Com a calça, {\1c&H000F1417&\bord0\shad0}o{\1c&H00FFFFFF&\bord2.4\shad1} blazer
+Dialogue: 0,0:00:31.57,0:00:31.89,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&\fad(0,50)}m 423 613 l 493 613 b 501 613 508 620 508 628 l 508 652 b 508 660 501 667 493 667 l 423 667 b 415 667 408 660 408 652 l 408 628 b 408 620 415 613 423 613
+Dialogue: 1,0:00:31.57,0:00:31.89,Caption,,0,0,0,,{\fs40\fad(0,50)}Com a calça, o {\1c&H000F1417&\bord0\shad0}blazer{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:31.89,0:00:32.03,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&\fad(50,0)}m 233 613 l 237 613 b 245 613 252 620 252 628 l 252 652 b 252 660 245 667 237 667 l 233 667 b 225 667 218 660 218 652 l 218 628 b 218 620 225 613 233 613
+Dialogue: 1,0:00:31.89,0:00:32.03,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}e{\1c&H00FFFFFF&\bord2.4\shad1} acessórios certos.
+Dialogue: 0,0:00:32.03,0:00:32.43,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 255 613 l 388 613 b 396 613 403 620 403 628 l 403 652 b 403 660 396 667 388 667 l 255 667 b 247 667 240 660 240 652 l 240 628 b 240 620 247 613 255 613
+Dialogue: 1,0:00:32.03,0:00:32.43,Caption,,0,0,0,,{\fs40}e {\1c&H000F1417&\bord0\shad0}acessórios{\1c&H00FFFFFF&\bord2.4\shad1} certos.
+Dialogue: 0,0:00:32.43,0:00:33.03,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&\fad(0,50)}m 407 613 l 487 613 b 495 613 502 620 502 628 l 502 652 b 502 660 495 667 487 667 l 407 667 b 399 667 392 660 392 652 l 392 628 b 392 620 399 613 407 613
+Dialogue: 1,0:00:32.43,0:00:33.03,Caption,,0,0,0,,{\fs40\fad(0,50)}e acessórios {\1c&H000F1417&\bord0\shad0}certos.{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:33.14,0:00:33.44,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&\fad(50,0)}m 158 613 l 193 613 b 201 613 208 620 208 628 l 208 652 b 208 660 201 667 193 667 l 158 667 b 150 667 143 660 143 652 l 143 628 b 143 620 150 613 158 613
+Dialogue: 1,0:00:33.14,0:00:33.44,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}Até{\1c&H00FFFFFF&\bord2.4\shad1} o visual mais simples muda
+Dialogue: 0,0:00:33.44,0:00:33.56,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 211 613 l 216 613 b 224 613 231 620 231 628 l 231 652 b 231 660 224 667 216 667 l 211 667 b 203 667 196 660 196 652 l 196 628 b 196 620 203 613 211 613
+Dialogue: 1,0:00:33.44,0:00:33.56,Caption,,0,0,0,,{\fs40}Até {\1c&H000F1417&\bord0\shad0}o{\1c&H00FFFFFF&\bord2.4\shad1} visual mais simples muda
+Dialogue: 0,0:00:33.56,0:00:33.84,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 234 613 l 301 613 b 309 613 316 620 316 628 l 316 652 b 316 660 309 667 301 667 l 234 667 b 226 667 219 660 219 652 l 219 628 b 219 620 226 613 234 613
+Dialogue: 1,0:00:33.56,0:00:33.84,Caption,,0,0,0,,{\fs40}Até o {\1c&H000F1417&\bord0\shad0}visual{\1c&H00FFFFFF&\bord2.4\shad1} mais simples muda
+Dialogue: 0,0:00:33.84,0:00:34.06,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 320 613 l 371 613 b 379 613 386 620 386 628 l 386 652 b 386 660 379 667 371 667 l 320 667 b 312 667 305 660 305 652 l 305 628 b 305 620 312 613 320 613
+Dialogue: 1,0:00:33.84,0:00:34.06,Caption,,0,0,0,,{\fs40}Até o visual {\1c&H000F1417&\bord0\shad0}mais{\1c&H00FFFFFF&\bord2.4\shad1} simples muda
+Dialogue: 0,0:00:34.06,0:00:34.44,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 390 613 l 482 613 b 490 613 497 620 497 628 l 497 652 b 497 660 490 667 482 667 l 390 667 b 382 667 375 660 375 652 l 375 628 b 375 620 382 613 390 613
+Dialogue: 1,0:00:34.06,0:00:34.44,Caption,,0,0,0,,{\fs40}Até o visual mais {\1c&H000F1417&\bord0\shad0}simples{\1c&H00FFFFFF&\bord2.4\shad1} muda
+Dialogue: 0,0:00:34.44,0:00:34.98,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&\fad(0,50)}m 500 613 l 562 613 b 570 613 577 620 577 628 l 577 652 b 577 660 570 667 562 667 l 500 667 b 492 667 485 660 485 652 l 485 628 b 485 620 492 613 500 613
+Dialogue: 1,0:00:34.44,0:00:34.98,Caption,,0,0,0,,{\fs40\fad(0,50)}Até o visual mais simples {\1c&H000F1417&\bord0\shad0}muda{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:34.98,0:00:35.32,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&\fad(50,0)}m 141 613 l 229 613 b 237 613 244 620 244 628 l 244 652 b 244 660 237 667 229 667 l 141 667 b 133 667 126 660 126 652 l 126 628 b 126 620 133 613 141 613
+Dialogue: 1,0:00:34.98,0:00:35.32,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}quando{\1c&H00FFFFFF&\bord2.4\shad1} você aprende a coordenar
+Dialogue: 0,0:00:35.32,0:00:35.62,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 247 613 l 300 613 b 308 613 315 620 315 628 l 315 652 b 315 660 308 667 300 667 l 247 667 b 239 667 232 660 232 652 l 232 628 b 232 620 239 613 247 613
+Dialogue: 1,0:00:35.32,0:00:35.62,Caption,,0,0,0,,{\fs40}quando {\1c&H000F1417&\bord0\shad0}você{\1c&H00FFFFFF&\bord2.4\shad1} aprende a coordenar
+Dialogue: 0,0:00:35.62,0:00:36.08,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 318 613 l 416 613 b 424 613 431 620 431 628 l 431 652 b 431 660 424 667 416 667 l 318 667 b 310 667 303 660 303 652 l 303 628 b 303 620 310 613 318 613
+Dialogue: 1,0:00:35.62,0:00:36.08,Caption,,0,0,0,,{\fs40}quando você {\1c&H000F1417&\bord0\shad0}aprende{\1c&H00FFFFFF&\bord2.4\shad1} a coordenar
+Dialogue: 0,0:00:36.08,0:00:36.12,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 434 613 l 437 613 b 445 613 452 620 452 628 l 452 652 b 452 660 445 667 437 667 l 434 667 b 426 667 419 660 419 652 l 419 628 b 419 620 426 613 434 613
+Dialogue: 1,0:00:36.08,0:00:36.12,Caption,,0,0,0,,{\fs40}quando você aprende {\1c&H000F1417&\bord0\shad0}a{\1c&H00FFFFFF&\bord2.4\shad1} coordenar
+Dialogue: 0,0:00:36.12,0:00:36.56,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&\fad(0,50)}m 456 613 l 579 613 b 587 613 594 620 594 628 l 594 652 b 594 660 587 667 579 667 l 456 667 b 448 667 441 660 441 652 l 441 628 b 441 620 448 613 456 613
+Dialogue: 1,0:00:36.12,0:00:36.56,Caption,,0,0,0,,{\fs40\fad(0,50)}quando você aprende a {\1c&H000F1417&\bord0\shad0}coordenar{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:36.56,0:00:36.70,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&\fad(50,0)}m 213 613 l 232 613 b 240 613 247 620 247 628 l 247 652 b 247 660 240 667 232 667 l 213 667 b 205 667 198 660 198 652 l 198 628 b 198 620 205 613 213 613
+Dialogue: 1,0:00:36.56,0:00:36.70,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}as{\1c&H00FFFFFF&\bord2.4\shad1} peças que já possui.
+Dialogue: 0,0:00:36.70,0:00:37.00,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 250 613 l 318 613 b 326 613 333 620 333 628 l 333 652 b 333 660 326 667 318 667 l 250 667 b 242 667 235 660 235 652 l 235 628 b 235 620 242 613 250 613
+Dialogue: 1,0:00:36.70,0:00:37.00,Caption,,0,0,0,,{\fs40}as {\1c&H000F1417&\bord0\shad0}peças{\1c&H00FFFFFF&\bord2.4\shad1} que já possui.
+Dialogue: 0,0:00:37.00,0:00:37.18,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 336 613 l 375 613 b 383 613 390 620 390 628 l 390 652 b 390 660 383 667 375 667 l 336 667 b 328 667 321 660 321 652 l 321 628 b 321 620 328 613 336 613
+Dialogue: 1,0:00:37.00,0:00:37.18,Caption,,0,0,0,,{\fs40}as peças {\1c&H000F1417&\bord0\shad0}que{\1c&H00FFFFFF&\bord2.4\shad1} já possui.
+Dialogue: 0,0:00:37.18,0:00:37.34,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 393 613 l 404 613 b 412 613 419 620 419 628 l 419 652 b 419 660 412 667 404 667 l 393 667 b 385 667 378 660 378 652 l 378 628 b 378 620 385 613 393 613
+Dialogue: 1,0:00:37.18,0:00:37.34,Caption,,0,0,0,,{\fs40}as peças que {\1c&H000F1417&\bord0\shad0}já{\1c&H00FFFFFF&\bord2.4\shad1} possui.
+Dialogue: 0,0:00:37.34,0:00:37.72,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&\fad(0,50)}m 423 613 l 507 613 b 515 613 522 620 522 628 l 522 652 b 522 660 515 667 507 667 l 423 667 b 415 667 408 660 408 652 l 408 628 b 408 620 415 613 423 613
+Dialogue: 1,0:00:37.34,0:00:37.72,Caption,,0,0,0,,{\fs40\fad(0,50)}as peças que já {\1c&H000F1417&\bord0\shad0}possui.{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:37.74,0:00:37.80,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&\fad(50,0)}m 205 666 l 214 666 b 216 666 217 667 217 669 l 217 669 b 217 671 216 672 214 672 l 205 672 b 203 672 202 671 202 669 l 202 669 b 202 667 203 666 205 666
+Dialogue: 1,0:00:37.74,0:00:37.80,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H00B8A7F2&}É{\1c&H00FFFFFF&} sobre saber combinar.
+Dialogue: 0,0:00:37.80,0:00:38.02,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 228 666 l 296 666 b 298 666 299 667 299 669 l 299 669 b 299 671 298 672 296 672 l 228 672 b 226 672 225 671 225 669 l 225 669 b 225 667 226 666 228 666
+Dialogue: 1,0:00:37.80,0:00:38.02,Caption,,0,0,0,,{\fs40}É {\1c&H00B8A7F2&}sobre{\1c&H00FFFFFF&} saber combinar.
+Dialogue: 0,0:00:38.02,0:00:38.32,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&}m 310 666 l 377 666 b 379 666 380 667 380 669 l 380 669 b 380 671 379 672 377 672 l 310 672 b 308 672 307 671 307 669 l 307 669 b 307 667 308 666 310 666
+Dialogue: 1,0:00:38.02,0:00:38.32,Caption,,0,0,0,,{\fs40}É sobre {\1c&H00B8A7F2&}saber{\1c&H00FFFFFF&} combinar.
+Dialogue: 0,0:00:38.32,0:00:38.82,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00B8A7F2&\fad(0,50)}m 391 666 l 515 666 b 517 666 518 667 518 669 l 518 669 b 518 671 517 672 515 672 l 391 672 b 389 672 388 671 388 669 l 388 669 b 388 667 389 666 391 666
+Dialogue: 1,0:00:38.32,0:00:38.82,Caption,,0,0,0,,{\fs40\fad(0,50)}É sobre saber {\1c&H00B8A7F2&}combinar.{\1c&H00FFFFFF&}
+Dialogue: 0,0:00:38.91,0:00:39.17,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&\fad(50,0)}m 162 613 l 236 613 b 244 613 251 620 251 628 l 251 652 b 251 660 244 667 236 667 l 162 667 b 154 667 147 660 147 652 l 147 628 b 147 620 154 613 162 613
+Dialogue: 1,0:00:38.91,0:00:39.17,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}Chega{\1c&H00FFFFFF&\bord2.4\shad1} de olhar o guarda-roupa
+Dialogue: 0,0:00:39.17,0:00:39.29,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 254 613 l 276 613 b 284 613 291 620 291 628 l 291 652 b 291 660 284 667 276 667 l 254 667 b 246 667 239 660 239 652 l 239 628 b 239 620 246 613 254 613
+Dialogue: 1,0:00:39.17,0:00:39.29,Caption,,0,0,0,,{\fs40}Chega {\1c&H000F1417&\bord0\shad0}de{\1c&H00FFFFFF&\bord2.4\shad1} olhar o guarda-roupa
+Dialogue: 0,0:00:39.29,0:00:39.47,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 294 613 l 348 613 b 356 613 363 620 363 628 l 363 652 b 363 660 356 667 348 667 l 294 667 b 286 667 279 660 279 652 l 279 628 b 279 620 286 613 294 613
+Dialogue: 1,0:00:39.29,0:00:39.47,Caption,,0,0,0,,{\fs40}Chega de {\1c&H000F1417&\bord0\shad0}olhar{\1c&H00FFFFFF&\bord2.4\shad1} o guarda-roupa
+Dialogue: 0,0:00:39.47,0:00:39.61,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 367 613 l 371 613 b 379 613 386 620 386 628 l 386 652 b 386 660 379 667 371 667 l 367 667 b 359 667 352 660 352 652 l 352 628 b 352 620 359 613 367 613
+Dialogue: 1,0:00:39.47,0:00:39.61,Caption,,0,0,0,,{\fs40}Chega de olhar {\1c&H000F1417&\bord0\shad0}o{\1c&H00FFFFFF&\bord2.4\shad1} guarda-roupa
+Dialogue: 0,0:00:39.61,0:00:40.27,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&\fad(0,50)}m 389 613 l 558 613 b 566 613 573 620 573 628 l 573 652 b 573 660 566 667 558 667 l 389 667 b 381 667 374 660 374 652 l 374 628 b 374 620 381 613 389 613
+Dialogue: 1,0:00:39.61,0:00:40.27,Caption,,0,0,0,,{\fs40\fad(0,50)}Chega de olhar o {\1c&H000F1417&\bord0\shad0}guarda-roupa{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:40.27,0:00:40.33,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&\fad(50,0)}m 197 613 l 201 613 b 209 613 216 620 216 628 l 216 652 b 216 660 209 667 201 667 l 197 667 b 189 667 182 660 182 652 l 182 628 b 182 620 189 613 197 613
+Dialogue: 1,0:00:40.27,0:00:40.33,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H000F1417&\bord0\shad0}e{\1c&H00FFFFFF&\bord2.4\shad1} dizer que não tem nada.
+Dialogue: 0,0:00:40.33,0:00:40.55,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 220 613 l 274 613 b 282 613 289 620 289 628 l 289 652 b 289 660 282 667 274 667 l 220 667 b 212 667 205 660 205 652 l 205 628 b 205 620 212 613 220 613
+Dialogue: 1,0:00:40.33,0:00:40.55,Caption,,0,0,0,,{\fs40}e {\1c&H000F1417&\bord0\shad0}dizer{\1c&H00FFFFFF&\bord2.4\shad1} que não tem nada.
+Dialogue: 0,0:00:40.55,0:00:40.75,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 292 613 l 331 613 b 339 613 346 620 346 628 l 346 652 b 346 660 339 667 331 667 l 292 667 b 284 667 277 660 277 652 l 277 628 b 277 620 284 613 292 613
+Dialogue: 1,0:00:40.55,0:00:40.75,Caption,,0,0,0,,{\fs40}e dizer {\1c&H000F1417&\bord0\shad0}que{\1c&H00FFFFFF&\bord2.4\shad1} não tem nada.
+Dialogue: 0,0:00:40.75,0:00:40.87,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 349 613 l 386 613 b 394 613 401 620 401 628 l 401 652 b 401 660 394 667 386 667 l 349 667 b 341 667 334 660 334 652 l 334 628 b 334 620 341 613 349 613
+Dialogue: 1,0:00:40.75,0:00:40.87,Caption,,0,0,0,,{\fs40}e dizer que {\1c&H000F1417&\bord0\shad0}não{\1c&H00FFFFFF&\bord2.4\shad1} tem nada.
+Dialogue: 0,0:00:40.87,0:00:41.03,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 404 613 l 444 613 b 452 613 459 620 459 628 l 459 652 b 459 660 452 667 444 667 l 404 667 b 396 667 389 660 389 652 l 389 628 b 389 620 396 613 404 613
+Dialogue: 1,0:00:40.87,0:00:41.03,Caption,,0,0,0,,{\fs40}e dizer que não {\1c&H000F1417&\bord0\shad0}tem{\1c&H00FFFFFF&\bord2.4\shad1} nada.
+Dialogue: 0,0:00:41.03,0:00:41.42,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&\fad(0,50)}m 462 613 l 523 613 b 531 613 538 620 538 628 l 538 652 b 538 660 531 667 523 667 l 462 667 b 454 667 447 660 447 652 l 447 628 b 447 620 454 613 462 613
+Dialogue: 1,0:00:41.03,0:00:41.42,Caption,,0,0,0,,{\fs40\fad(0,50)}e dizer que não tem {\1c&H000F1417&\bord0\shad0}nada.{\1c&H00FFFFFF&\bord2.4\shad1}
+Dialogue: 0,0:00:41.55,0:00:42.01,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&\fad(50,0)}m 145 666 l 255 666 b 257 666 258 667 258 669 l 258 669 b 258 671 257 672 255 672 l 145 672 b 143 672 142 671 142 669 l 142 669 b 142 667 143 666 145 666
+Dialogue: 1,0:00:41.55,0:00:42.01,Caption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H00A7D8F2&}Conheça{\1c&H00FFFFFF&} o Truque dos Mil Looks.
+Dialogue: 0,0:00:42.01,0:00:42.13,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 269 666 l 278 666 b 280 666 281 667 281 669 l 281 669 b 281 671 280 672 278 672 l 269 672 b 267 672 266 671 266 669 l 266 669 b 266 667 267 666 269 666
+Dialogue: 1,0:00:42.01,0:00:42.13,Caption,,0,0,0,,{\fs40}Conheça {\1c&H00A7D8F2&}o{\1c&H00FFFFFF&} Truque dos Mil Looks.
+Dialogue: 0,0:00:42.13,0:00:42.43,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 292 666 l 380 666 b 382 666 383 667 383 669 l 383 669 b 383 671 382 672 380 672 l 292 672 b 290 672 289 671 289 669 l 289 669 b 289 667 290 666 292 666
+Dialogue: 1,0:00:42.13,0:00:42.43,Caption,,0,0,0,,{\fs40}Conheça o {\1c&H00A7D8F2&}Truque{\1c&H00FFFFFF&} dos Mil Looks.
+Dialogue: 0,0:00:42.43,0:00:42.59,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 394 666 l 435 666 b 437 666 438 667 438 669 l 438 669 b 438 671 437 672 435 672 l 394 672 b 392 672 391 671 391 669 l 391 669 b 391 667 392 666 394 666
+Dialogue: 1,0:00:42.43,0:00:42.59,Caption,,0,0,0,,{\fs40}Conheça o Truque {\1c&H00A7D8F2&}dos{\1c&H00FFFFFF&} Mil Looks.
+Dialogue: 0,0:00:42.59,0:00:42.77,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&}m 450 666 l 482 666 b 484 666 485 667 485 669 l 485 669 b 485 671 484 672 482 672 l 450 672 b 448 672 447 671 447 669 l 447 669 b 447 667 448 666 450 666
+Dialogue: 1,0:00:42.59,0:00:42.77,Caption,,0,0,0,,{\fs40}Conheça o Truque dos {\1c&H00A7D8F2&}Mil{\1c&H00FFFFFF&} Looks.
+Dialogue: 0,0:00:42.77,0:00:43.11,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&\fad(0,50)}m 496 666 l 575 666 b 577 666 578 667 578 669 l 578 669 b 578 671 577 672 575 672 l 496 672 b 494 672 493 671 493 669 l 493 669 b 493 667 494 666 496 666
+Dialogue: 1,0:00:42.77,0:00:43.11,Caption,,0,0,0,,{\fs40\fad(0,50)}Conheça o Truque dos Mil {\1c&H00A7D8F2&}Looks.{\1c&H00FFFFFF&}
+Dialogue: 0,0:00:43.23,0:00:44.62,Caption,,0,0,0,,{\an7\pos(0,0)\p1\bord0\shad0\1c&H00A7D8F2&\fad(50,50)}m 214 607 l 506 607 b 518 607 528 617 528 629 l 528 651 b 528 663 518 673 506 673 l 214 673 b 202 673 192 663 192 651 l 192 629 b 192 617 202 607 214 607
+Dialogue: 1,0:00:43.23,0:00:43.61,CtaCaption,,0,0,0,,{\fs40\fad(50,0)}{\1c&H0040217D&}Toque{\1c&H000F1417&} em Saiba Mais.
+Dialogue: 1,0:00:43.61,0:00:43.73,CtaCaption,,0,0,0,,{\fs40}Toque {\1c&H0040217D&}em{\1c&H000F1417&} Saiba Mais.
+Dialogue: 1,0:00:43.73,0:00:44.05,CtaCaption,,0,0,0,,{\fs40}Toque em {\1c&H0040217D&}Saiba{\1c&H000F1417&} Mais.
+Dialogue: 1,0:00:44.05,0:00:44.62,CtaCaption,,0,0,0,,{\fs40\fad(0,50)}Toque em Saiba {\1c&H0040217D&}Mais.{\1c&H000F1417&}

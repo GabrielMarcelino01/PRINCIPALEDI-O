@@ -1,0 +1,1212 @@
+{
+  "id": "img-1680",
+  "width": 1080,
+  "height": 1920,
+  "fps": 60,
+  "durationInFrames": 2111,
+  "duration": 35.18333333333333,
+  "video": "img-1680-base.mp4",
+  "beforeVideo": "img-1680-before.mp4",
+  "audio": "img-1680-audio.wav",
+  "editSegments": [
+    {
+      "start": 0.0,
+      "end": 9.18,
+      "outputStart": 0.0,
+      "outputEnd": 9.18
+    },
+    {
+      "start": 9.72,
+      "end": 14.22,
+      "outputStart": 9.18,
+      "outputEnd": 13.68
+    },
+    {
+      "start": 14.48,
+      "end": 21.68,
+      "outputStart": 13.68,
+      "outputEnd": 20.88
+    },
+    {
+      "start": 21.8,
+      "end": 24.22,
+      "outputStart": 20.88,
+      "outputEnd": 23.299999999999997
+    },
+    {
+      "start": 24.5,
+      "end": 36.366667,
+      "outputStart": 23.299999999999997,
+      "outputEnd": 35.166667
+    }
+  ],
+  "removedPauses": [
+    {
+      "start": 9.18,
+      "end": 9.72,
+      "duration": 0.54,
+      "reason": "Pausa longa entre duas frases; saída mascarada por punch-in."
+    },
+    {
+      "start": 14.22,
+      "end": 14.48,
+      "duration": 0.26,
+      "reason": "Pausa antes da troca de cena."
+    },
+    {
+      "start": 21.68,
+      "end": 21.8,
+      "duration": 0.12,
+      "reason": "Ajuste da pausa ao corte natural para o closet."
+    },
+    {
+      "start": 24.22,
+      "end": 24.5,
+      "duration": 0.28,
+      "reason": "Pausa antes da demonstração do produto."
+    }
+  ],
+  "doubleScene": {
+    "start": 3.7,
+    "end": 7.266667,
+    "leftLabel": "ANTES",
+    "rightLabel": "AGORA"
+  },
+  "zoomScenes": [
+    {
+      "start": 0.0,
+      "end": 3.7,
+      "from": 1.0,
+      "to": 1.08
+    },
+    {
+      "start": 7.266667,
+      "end": 9.18,
+      "from": 1.02,
+      "to": 1.05
+    },
+    {
+      "start": 9.18,
+      "end": 13.733333,
+      "from": 1.1,
+      "to": 1.06
+    },
+    {
+      "start": 13.733333,
+      "end": 15.8,
+      "from": 1.0,
+      "to": 1.05
+    },
+    {
+      "start": 15.8,
+      "end": 17.933333,
+      "from": 1.03,
+      "to": 1.08
+    },
+    {
+      "start": 17.933333,
+      "end": 20.88,
+      "from": 1.0,
+      "to": 1.06
+    },
+    {
+      "start": 20.88,
+      "end": 23.7,
+      "from": 1.02,
+      "to": 1.08
+    },
+    {
+      "start": 23.7,
+      "end": 35.18333333333333,
+      "from": 1.0,
+      "to": 1.0
+    }
+  ],
+  "groups": [
+    {
+      "id": "scene-01-hook-a",
+      "segmentId": "scene-01",
+      "start": 0.0,
+      "end": 1.6,
+      "sourceStart": 0.0,
+      "sourceEnd": 1.6,
+      "layout": "bottom",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "VOCÊ",
+            "start": 0.0,
+            "end": 0.26,
+            "style": "normal"
+          },
+          {
+            "text": "PRECISA",
+            "start": 0.26,
+            "end": 0.58,
+            "style": "normal"
+          },
+          {
+            "text": "PARAR",
+            "start": 0.58,
+            "end": 0.94,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "DE",
+            "start": 0.94,
+            "end": 1.14,
+            "style": "small"
+          },
+          {
+            "text": "ACHAR",
+            "start": 1.14,
+            "end": 1.44,
+            "style": "normal"
+          },
+          {
+            "text": "QUE",
+            "start": 1.44,
+            "end": 1.6,
+            "style": "normal"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-01-hook-b",
+      "segmentId": "scene-01",
+      "start": 1.6,
+      "end": 2.96,
+      "sourceStart": 1.6,
+      "sourceEnd": 2.96,
+      "layout": "bottom",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "ROUPA",
+            "start": 1.6,
+            "end": 1.86,
+            "style": "normal",
+            "color": "#f0c792"
+          },
+          {
+            "text": "APERTADA",
+            "start": 1.86,
+            "end": 2.36,
+            "style": "normal",
+            "color": "#f0c792"
+          }
+        ],
+        [
+          {
+            "text": "É",
+            "start": 2.36,
+            "end": 2.54,
+            "style": "small"
+          },
+          {
+            "text": "SINÔNIMO",
+            "start": 2.54,
+            "end": 2.96,
+            "style": "normal",
+            "color": "#f0c792"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-01-hook-c",
+      "segmentId": "scene-01",
+      "start": 2.96,
+      "end": 3.64,
+      "sourceStart": 2.96,
+      "sourceEnd": 3.64,
+      "layout": "bottom",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "DE",
+            "start": 2.96,
+            "end": 3.1,
+            "style": "small"
+          },
+          {
+            "text": "ELEGÂNCIA.",
+            "start": 3.1,
+            "end": 3.64,
+            "style": "serif",
+            "color": "#f0c792"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-02-segredo-a",
+      "segmentId": "scene-02",
+      "start": 3.98,
+      "end": 5.24,
+      "sourceStart": 3.98,
+      "sourceEnd": 5.24,
+      "layout": "bottom",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "O",
+            "start": 3.98,
+            "end": 4.1,
+            "style": "small"
+          },
+          {
+            "text": "SEGREDO",
+            "start": 4.1,
+            "end": 4.52,
+            "style": "normal",
+            "color": "#f0c792"
+          },
+          {
+            "text": "ESTÁ",
+            "start": 4.52,
+            "end": 4.7,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "EM",
+            "start": 4.7,
+            "end": 4.82,
+            "style": "small"
+          },
+          {
+            "text": "DESCOBRIR",
+            "start": 4.82,
+            "end": 5.24,
+            "style": "normal"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-02-segredo-b",
+      "segmentId": "scene-02",
+      "start": 5.24,
+      "end": 7.02,
+      "sourceStart": 5.24,
+      "sourceEnd": 7.02,
+      "layout": "bottom",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "O",
+            "start": 5.24,
+            "end": 5.46,
+            "style": "small"
+          },
+          {
+            "text": "QUE",
+            "start": 5.46,
+            "end": 5.56,
+            "style": "small"
+          },
+          {
+            "text": "REALMENTE",
+            "start": 5.56,
+            "end": 6.06,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "VALORIZA",
+            "start": 6.06,
+            "end": 6.66,
+            "style": "normal"
+          },
+          {
+            "text": "VOCÊ.",
+            "start": 6.66,
+            "end": 7.02,
+            "style": "serif",
+            "color": "#f0c792"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-03-faltavam",
+      "segmentId": "scene-03",
+      "start": 7.32,
+      "end": 9.08,
+      "sourceStart": 7.32,
+      "sourceEnd": 9.08,
+      "layout": "bottom",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "EU",
+            "start": 7.32,
+            "end": 7.44,
+            "style": "normal"
+          },
+          {
+            "text": "ACHAVA",
+            "start": 7.44,
+            "end": 7.84,
+            "style": "normal"
+          },
+          {
+            "text": "QUE",
+            "start": 7.84,
+            "end": 7.98,
+            "style": "small"
+          }
+        ],
+        [
+          {
+            "text": "ME",
+            "start": 7.98,
+            "end": 8.1,
+            "style": "small"
+          },
+          {
+            "text": "FALTAVAM",
+            "start": 8.1,
+            "end": 8.54,
+            "style": "normal",
+            "color": "#f0c792"
+          },
+          {
+            "text": "ROUPAS.",
+            "start": 8.54,
+            "end": 9.08,
+            "style": "normal",
+            "color": "#f0c792"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-04-combinar-a",
+      "segmentId": "scene-04",
+      "start": 9.359999999999998,
+      "end": 11.44,
+      "sourceStart": 9.9,
+      "sourceEnd": 11.98,
+      "layout": "bottom",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "MAS",
+            "start": 9.359999999999998,
+            "end": 9.579999999999997,
+            "style": "normal"
+          },
+          {
+            "text": "QUANDO",
+            "start": 9.579999999999997,
+            "end": 9.76,
+            "style": "normal"
+          },
+          {
+            "text": "APRENDI",
+            "start": 9.76,
+            "end": 10.219999999999997,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "A",
+            "start": 10.219999999999997,
+            "end": 10.28,
+            "style": "small"
+          },
+          {
+            "text": "COMBINAR",
+            "start": 10.28,
+            "end": 10.62,
+            "style": "normal",
+            "color": "#f0c792"
+          },
+          {
+            "text": "MELHOR,",
+            "start": 10.62,
+            "end": 10.979999999999999,
+            "style": "normal",
+            "color": "#f0c792"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-04-combinar-b",
+      "segmentId": "scene-04",
+      "start": 11.44,
+      "end": 13.56,
+      "sourceStart": 11.98,
+      "sourceEnd": 14.1,
+      "layout": "bottom",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "COMECEI",
+            "start": 11.44,
+            "end": 11.94,
+            "style": "normal"
+          },
+          {
+            "text": "A",
+            "start": 11.94,
+            "end": 11.979999999999999,
+            "style": "small"
+          },
+          {
+            "text": "ME",
+            "start": 11.979999999999999,
+            "end": 12.06,
+            "style": "small"
+          },
+          {
+            "text": "SENTIR",
+            "start": 12.06,
+            "end": 12.319999999999999,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "MUITO",
+            "start": 12.319999999999999,
+            "end": 12.799999999999999,
+            "style": "normal"
+          },
+          {
+            "text": "MAIS",
+            "start": 12.799999999999999,
+            "end": 12.999999999999998,
+            "style": "normal"
+          },
+          {
+            "text": "ELEGANTE.",
+            "start": 12.999999999999998,
+            "end": 13.56,
+            "style": "serif",
+            "color": "#f0c792"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-05-estilo-a",
+      "segmentId": "scene-05",
+      "start": 13.8,
+      "end": 14.580000000000002,
+      "sourceStart": 14.6,
+      "sourceEnd": 15.38,
+      "layout": "bottom",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "QUANDO",
+            "start": 13.8,
+            "end": 13.959999999999997,
+            "style": "normal"
+          },
+          {
+            "text": "SUAS",
+            "start": 13.959999999999997,
+            "end": 14.2,
+            "style": "normal"
+          },
+          {
+            "text": "ROUPAS",
+            "start": 14.2,
+            "end": 14.580000000000002,
+            "style": "normal",
+            "color": "#f0c792"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-05-estilo-b",
+      "segmentId": "scene-05",
+      "start": 14.580000000000002,
+      "end": 16.04,
+      "sourceStart": 15.38,
+      "sourceEnd": 16.84,
+      "layout": "bottom",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "NÃO",
+            "start": 14.580000000000002,
+            "end": 14.719999999999999,
+            "style": "normal"
+          },
+          {
+            "text": "EXPRESSAM",
+            "start": 14.719999999999999,
+            "end": 15.219999999999999,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "SEU",
+            "start": 15.219999999999999,
+            "end": 15.399999999999999,
+            "style": "small"
+          },
+          {
+            "text": "ESTILO,",
+            "start": 15.399999999999999,
+            "end": 15.8,
+            "style": "serif",
+            "color": "#f0c792"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-05-estilo-c",
+      "segmentId": "scene-05",
+      "start": 16.04,
+      "end": 17.899999999999995,
+      "sourceStart": 16.84,
+      "sourceEnd": 18.7,
+      "layout": "bottom",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "ATÉ",
+            "start": 16.04,
+            "end": 16.24,
+            "style": "normal"
+          },
+          {
+            "text": "UM",
+            "start": 16.24,
+            "end": 16.4,
+            "style": "small"
+          },
+          {
+            "text": "ARMÁRIO",
+            "start": 16.4,
+            "end": 16.7,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "CHEIO",
+            "start": 16.7,
+            "end": 17.08,
+            "style": "normal"
+          },
+          {
+            "text": "PARECE",
+            "start": 17.08,
+            "end": 17.3,
+            "style": "normal"
+          },
+          {
+            "text": "VAZIO.",
+            "start": 17.3,
+            "end": 17.899999999999995,
+            "style": "serif",
+            "color": "#f0c792"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-06-combinacao-a",
+      "segmentId": "scene-06",
+      "start": 18.279999999999998,
+      "end": 19.94,
+      "sourceStart": 19.08,
+      "sourceEnd": 20.74,
+      "layout": "bottom",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "UMA",
+            "start": 18.279999999999998,
+            "end": 18.459999999999997,
+            "style": "normal"
+          },
+          {
+            "text": "BOA",
+            "start": 18.459999999999997,
+            "end": 18.66,
+            "style": "normal"
+          },
+          {
+            "text": "COMBINAÇÃO",
+            "start": 18.66,
+            "end": 19.2,
+            "style": "normal",
+            "color": "#f0c792"
+          }
+        ],
+        [
+          {
+            "text": "MUDA",
+            "start": 19.2,
+            "end": 19.580000000000002,
+            "style": "normal"
+          },
+          {
+            "text": "A",
+            "start": 19.580000000000002,
+            "end": 19.679999999999996,
+            "style": "small"
+          },
+          {
+            "text": "FORMA",
+            "start": 19.679999999999996,
+            "end": 19.94,
+            "style": "normal"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-06-combinacao-b",
+      "segmentId": "scene-06",
+      "start": 19.94,
+      "end": 20.88,
+      "sourceStart": 20.74,
+      "sourceEnd": 21.68,
+      "layout": "bottom",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "COMO",
+            "start": 19.94,
+            "end": 20.16,
+            "style": "normal"
+          },
+          {
+            "text": "VOCÊ",
+            "start": 20.16,
+            "end": 20.419999999999998,
+            "style": "normal"
+          },
+          {
+            "text": "SE",
+            "start": 20.419999999999998,
+            "end": 20.62,
+            "style": "small"
+          },
+          {
+            "text": "VÊ.",
+            "start": 20.62,
+            "end": 20.779999999999998,
+            "style": "serif",
+            "color": "#f0c792"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-07-produto",
+      "segmentId": "scene-07",
+      "start": 20.98,
+      "end": 23.12,
+      "sourceStart": 21.9,
+      "sourceEnd": 24.04,
+      "layout": "bottom",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "FOI",
+            "start": 20.98,
+            "end": 21.159999999999993,
+            "style": "normal"
+          },
+          {
+            "text": "AÍ",
+            "start": 21.159999999999993,
+            "end": 21.359999999999996,
+            "style": "normal"
+          },
+          {
+            "text": "QUE",
+            "start": 21.359999999999996,
+            "end": 21.52,
+            "style": "small"
+          },
+          {
+            "text": "CONHECI",
+            "start": 21.52,
+            "end": 21.939999999999994,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "O",
+            "start": 21.939999999999994,
+            "end": 22.12,
+            "style": "small"
+          },
+          {
+            "text": "TRUQUE",
+            "start": 22.12,
+            "end": 22.48,
+            "style": "normal",
+            "color": "#f2b6c5"
+          },
+          {
+            "text": "DOS",
+            "start": 22.48,
+            "end": 22.639999999999997,
+            "style": "small"
+          },
+          {
+            "text": "MIL",
+            "start": 22.639999999999997,
+            "end": 22.819999999999997,
+            "style": "normal",
+            "color": "#f2b6c5"
+          },
+          {
+            "text": "LOOKS.",
+            "start": 22.819999999999997,
+            "end": 23.12,
+            "style": "normal",
+            "color": "#f2b6c5"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-08-fotografo",
+      "segmentId": "scene-08",
+      "start": 23.319999999999993,
+      "end": 24.72,
+      "sourceStart": 24.52,
+      "sourceEnd": 25.92,
+      "layout": "app",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "EU",
+            "start": 23.319999999999993,
+            "end": 23.459999999999994,
+            "style": "small"
+          },
+          {
+            "text": "FOTOGRAFO",
+            "start": 23.459999999999994,
+            "end": 24.019999999999996,
+            "style": "normal",
+            "color": "#f0c792"
+          }
+        ],
+        [
+          {
+            "text": "MINHAS",
+            "start": 24.019999999999996,
+            "end": 24.299999999999997,
+            "style": "normal"
+          },
+          {
+            "text": "PEÇAS",
+            "start": 24.299999999999997,
+            "end": 24.72,
+            "style": "normal",
+            "color": "#f0c792"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-08-aplicativo",
+      "segmentId": "scene-08",
+      "start": 24.72,
+      "end": 26.879999999999995,
+      "sourceStart": 25.92,
+      "sourceEnd": 28.08,
+      "layout": "app",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "E",
+            "start": 24.72,
+            "end": 25.22,
+            "style": "small"
+          },
+          {
+            "text": "O",
+            "start": 25.22,
+            "end": 25.299999999999997,
+            "style": "small"
+          },
+          {
+            "text": "APLICATIVO",
+            "start": 25.299999999999997,
+            "end": 25.839999999999996,
+            "style": "normal",
+            "color": "#f0c792"
+          }
+        ],
+        [
+          {
+            "text": "ME",
+            "start": 25.839999999999996,
+            "end": 26.019999999999996,
+            "style": "small"
+          },
+          {
+            "text": "AJUDA",
+            "start": 26.019999999999996,
+            "end": 26.259999999999998,
+            "style": "normal"
+          },
+          {
+            "text": "A",
+            "start": 26.259999999999998,
+            "end": 26.42,
+            "style": "small"
+          },
+          {
+            "text": "ORGANIZAR",
+            "start": 26.42,
+            "end": 26.879999999999995,
+            "style": "normal",
+            "color": "#f0c792"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-08-closet",
+      "segmentId": "scene-08",
+      "start": 26.879999999999995,
+      "end": 27.479999999999997,
+      "sourceStart": 28.08,
+      "sourceEnd": 28.68,
+      "layout": "app",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "MEU",
+            "start": 26.879999999999995,
+            "end": 27.019999999999996,
+            "style": "small"
+          },
+          {
+            "text": "CLOSET.",
+            "start": 27.019999999999996,
+            "end": 27.479999999999997,
+            "style": "serif",
+            "color": "#f0c792"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-09-ocasiao",
+      "segmentId": "scene-09",
+      "start": 27.479999999999997,
+      "end": 29.9,
+      "sourceStart": 28.68,
+      "sourceEnd": 31.1,
+      "layout": "app",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "ESCOLHA",
+            "start": 27.479999999999997,
+            "end": 28.299999999999997,
+            "style": "normal",
+            "color": "#f0c792"
+          },
+          {
+            "text": "A",
+            "start": 28.299999999999997,
+            "end": 28.339999999999996,
+            "style": "small"
+          },
+          {
+            "text": "OCASIÃO,",
+            "start": 28.339999999999996,
+            "end": 28.819999999999993,
+            "style": "normal",
+            "color": "#f0c792"
+          }
+        ],
+        [
+          {
+            "text": "DESCUBRA",
+            "start": 28.959999999999994,
+            "end": 29.36,
+            "style": "normal"
+          },
+          {
+            "text": "COMBINAÇÕES",
+            "start": 29.36,
+            "end": 29.9,
+            "style": "normal",
+            "color": "#f0c792"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-09-favoritos",
+      "segmentId": "scene-09",
+      "start": 29.9,
+      "end": 31.339999999999996,
+      "sourceStart": 31.1,
+      "sourceEnd": 32.54,
+      "layout": "app",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "E",
+            "start": 29.9,
+            "end": 30.119999999999997,
+            "style": "small"
+          },
+          {
+            "text": "SALVE",
+            "start": 30.119999999999997,
+            "end": 30.42,
+            "style": "normal"
+          },
+          {
+            "text": "SEUS",
+            "start": 30.42,
+            "end": 30.560000000000002,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "LOOKS",
+            "start": 30.560000000000002,
+            "end": 30.799999999999997,
+            "style": "normal",
+            "color": "#f0c792"
+          },
+          {
+            "text": "FAVORITOS.",
+            "start": 30.799999999999997,
+            "end": 31.339999999999996,
+            "style": "serif",
+            "color": "#f0c792"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-10-aproveite",
+      "segmentId": "scene-10",
+      "start": 31.5,
+      "end": 32.82,
+      "sourceStart": 32.7,
+      "sourceEnd": 34.02,
+      "layout": "top",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "APROVEITE",
+            "start": 31.58,
+            "end": 32.019999999999996,
+            "style": "normal",
+            "color": "#f0c792"
+          },
+          {
+            "text": "MELHOR",
+            "start": 32.019999999999996,
+            "end": 32.26,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "O",
+            "start": 32.26,
+            "end": 32.4,
+            "style": "small"
+          },
+          {
+            "text": "QUE",
+            "start": 32.4,
+            "end": 32.5,
+            "style": "small"
+          },
+          {
+            "text": "JÁ",
+            "start": 32.5,
+            "end": 32.66,
+            "style": "normal",
+            "color": "#f0c792"
+          },
+          {
+            "text": "TEM",
+            "start": 32.66,
+            "end": 32.82,
+            "style": "normal",
+            "color": "#f0c792"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-10-beneficio-produto",
+      "segmentId": "scene-10",
+      "start": 32.82,
+      "end": 34.019999999999996,
+      "sourceStart": 34.02,
+      "sourceEnd": 35.22,
+      "layout": "top",
+      "embeddedOnly": false,
+      "lines": [
+        [
+          {
+            "text": "COM",
+            "start": 32.82,
+            "end": 32.98,
+            "style": "small"
+          },
+          {
+            "text": "O",
+            "start": 32.98,
+            "end": 33.08,
+            "style": "small"
+          }
+        ],
+        [
+          {
+            "text": "TRUQUE",
+            "start": 33.08,
+            "end": 33.32,
+            "style": "normal",
+            "color": "#f2b6c5"
+          },
+          {
+            "text": "DOS",
+            "start": 33.32,
+            "end": 33.459999999999994,
+            "style": "small"
+          },
+          {
+            "text": "MIL",
+            "start": 33.459999999999994,
+            "end": 33.62,
+            "style": "normal",
+            "color": "#f2b6c5"
+          },
+          {
+            "text": "LOOKS.",
+            "start": 33.62,
+            "end": 33.879999999999995,
+            "style": "normal",
+            "color": "#f2b6c5"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "scene-11-cta-original",
+      "segmentId": "scene-11",
+      "start": 34.099999999999994,
+      "end": 34.879999999999995,
+      "sourceStart": 35.3,
+      "sourceEnd": 36.08,
+      "layout": "embedded",
+      "embeddedOnly": true,
+      "lines": [
+        [
+          {
+            "text": "TOQUE",
+            "start": 34.099999999999994,
+            "end": 34.36,
+            "style": "normal"
+          },
+          {
+            "text": "EM",
+            "start": 34.36,
+            "end": 34.459999999999994,
+            "style": "small"
+          }
+        ],
+        [
+          {
+            "text": "SAIBA",
+            "start": 34.459999999999994,
+            "end": 34.699999999999996,
+            "style": "normal",
+            "color": "#f0c792"
+          },
+          {
+            "text": "MAIS.",
+            "start": 34.699999999999996,
+            "end": 34.879999999999995,
+            "style": "normal",
+            "color": "#f0c792"
+          }
+        ]
+      ]
+    }
+  ],
+  "showSafeZones": false,
+  "safeZones": {
+    "top": 90,
+    "bottom": 180,
+    "left": 50,
+    "right": 50
+  },
+  "captionStyles": {
+    "bottom": {
+      "top": 1370,
+      "maxWidth": 960,
+      "fontSize": 88,
+      "serifFontSize": 108,
+      "smallFontSize": 46
+    },
+    "app": {
+      "top": 1530,
+      "maxWidth": 920,
+      "fontSize": 72,
+      "serifFontSize": 88,
+      "smallFontSize": 40
+    },
+    "top": {
+      "top": 120,
+      "maxWidth": 920,
+      "fontSize": 76,
+      "serifFontSize": 94,
+      "smallFontSize": 42
+    }
+  },
+  "audioProcessing": "original-with-four-pause-cuts",
+  "conversionNote": "Estrutura orientada a retenção e clareza do produto; nenhuma conversão é garantida."
+}

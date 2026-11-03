@@ -1,0 +1,194 @@
+{
+  "file": "/home/user/PRINCIPALEDI-O/recovered/closet-10/closet-10-captions.srt",
+  "status": "pass",
+  "caption_count": 14,
+  "summary": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "issues": [],
+  "captions": [
+    {
+      "block": 1,
+      "start": 0.0,
+      "end": 2.44,
+      "duration": 2.44,
+      "text": "RELEMBRE, MARFIM COM AZUL PETRÓLEO",
+      "lines": 2,
+      "line_lengths": [
+        20,
+        13
+      ],
+      "characters_per_second": 12.3
+    },
+    {
+      "block": 2,
+      "start": 2.44,
+      "end": 4.32,
+      "duration": 1.8800000000000003,
+      "text": "FICA ELEGANTE, SOFISTICADO",
+      "lines": 2,
+      "line_lengths": [
+        14,
+        11
+      ],
+      "characters_per_second": 12.77
+    },
+    {
+      "block": 3,
+      "start": 4.32,
+      "end": 5.7,
+      "duration": 1.38,
+      "text": "E CHAMA ATENÇÃO NA FESTA.",
+      "lines": 2,
+      "line_lengths": [
+        15,
+        9
+      ],
+      "characters_per_second": 15.22
+    },
+    {
+      "block": 4,
+      "start": 6.16,
+      "end": 7.3,
+      "duration": 1.1399999999999997,
+      "text": "PINK COM CARAMELO",
+      "lines": 2,
+      "line_lengths": [
+        4,
+        12
+      ],
+      "characters_per_second": 13.16
+    },
+    {
+      "block": 5,
+      "start": 7.3,
+      "end": 9.3,
+      "duration": 2.000000000000001,
+      "text": "FICA MARCANTE, LUXUOSO",
+      "lines": 2,
+      "line_lengths": [
+        14,
+        7
+      ],
+      "characters_per_second": 10.0
+    },
+    {
+      "block": 6,
+      "start": 9.3,
+      "end": 10.68,
+      "duration": 1.379999999999999,
+      "text": "E PERFEITO PARA ROUBAR",
+      "lines": 2,
+      "line_lengths": [
+        10,
+        11
+      ],
+      "characters_per_second": 13.77
+    },
+    {
+      "block": 7,
+      "start": 10.68,
+      "end": 11.78,
+      "duration": 1.0999999999999996,
+      "text": "TODOS OS OLHARES.",
+      "lines": 2,
+      "line_lengths": [
+        8,
+        8
+      ],
+      "characters_per_second": 13.64
+    },
+    {
+      "block": 8,
+      "start": 12.14,
+      "end": 13.46,
+      "duration": 1.3200000000000003,
+      "text": "VERDE-SÁLVIA COM CHOCOLATE",
+      "lines": 2,
+      "line_lengths": [
+        12,
+        13
+      ],
+      "characters_per_second": 18.18
+    },
+    {
+      "block": 9,
+      "start": 13.46,
+      "end": 15.24,
+      "duration": 1.7799999999999994,
+      "text": "FICA REFINADO, CHIQUE",
+      "lines": 2,
+      "line_lengths": [
+        14,
+        6
+      ],
+      "characters_per_second": 10.67
+    },
+    {
+      "block": 10,
+      "start": 15.24,
+      "end": 16.9,
+      "duration": 1.6599999999999984,
+      "text": "E DEIXA O CASAL COM CARA DE",
+      "lines": 2,
+      "line_lengths": [
+        15,
+        11
+      ],
+      "characters_per_second": 12.65
+    },
+    {
+      "block": 11,
+      "start": 16.9,
+      "end": 17.74,
+      "duration": 0.8399999999999999,
+      "text": "MUITA RIQUEZA.",
+      "lines": 2,
+      "line_lengths": [
+        5,
+        8
+      ],
+      "characters_per_second": 15.48
+    },
+    {
+      "block": 12,
+      "start": 18.2,
+      "end": 19.5,
+      "duration": 1.3000000000000007,
+      "text": "PRETO COM CEREJA ESCURO",
+      "lines": 2,
+      "line_lengths": [
+        5,
+        17
+      ],
+      "characters_per_second": 15.38
+    },
+    {
+      "block": 13,
+      "start": 19.5,
+      "end": 21.44,
+      "duration": 1.9400000000000013,
+      "text": "FICA PODEROSO, SENSUAL",
+      "lines": 2,
+      "line_lengths": [
+        14,
+        7
+      ],
+      "characters_per_second": 10.31
+    },
+    {
+      "block": 14,
+      "start": 21.44,
+      "end": 23.68,
+      "duration": 2.2399999999999984,
+      "text": "E IMPOSSÍVEL DE PASSAR DESPERCEBIDO.",
+      "lines": 2,
+      "line_lengths": [
+        15,
+        20
+      ],
+      "characters_per_second": 14.29
+    }
+  ]
+}

@@ -1,0 +1,657 @@
+{
+  "id": "para-edicao",
+  "width": 1080,
+  "height": 1920,
+  "fps": 24,
+  "durationInFrames": 616,
+  "duration": 25.666666666666668,
+  "video": "para-edicao-source.mp4",
+  "audio": "para-edicao-audio.wav",
+  "cuts": [
+    5.64297,
+    10.5923,
+    15.5507,
+    20.423
+  ],
+  "groups": [
+    {
+      "id": "look-1-cores",
+      "start": 0.0,
+      "end": 2.42,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "RELEMBRE,",
+            "start": 0.0,
+            "end": 0.82,
+            "style": "small"
+          },
+          {
+            "text": "BRANCO",
+            "start": 1.18,
+            "end": 1.62,
+            "style": "normal",
+            "color": "#ffffff"
+          },
+          {
+            "text": "COM",
+            "start": 1.62,
+            "end": 1.8,
+            "style": "small"
+          }
+        ],
+        [
+          {
+            "text": "AZUL",
+            "start": 1.8,
+            "end": 2.04,
+            "style": "normal",
+            "color": "#91bcff"
+          },
+          {
+            "text": "MARINHO",
+            "start": 2.04,
+            "end": 2.42,
+            "style": "normal",
+            "color": "#91bcff"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-1-estilo",
+      "start": 2.42,
+      "end": 4.26,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "FICA",
+            "start": 2.42,
+            "end": 2.66,
+            "style": "small"
+          },
+          {
+            "text": "ELEGANTE,",
+            "start": 2.66,
+            "end": 3.3,
+            "style": "serif",
+            "color": "#fff4e2"
+          }
+        ],
+        [
+          {
+            "text": "SOFISTICADO",
+            "start": 3.48,
+            "end": 4.26,
+            "style": "normal",
+            "color": "#ffffff"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-1-resultado",
+      "start": 4.26,
+      "end": 5.54,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "E",
+            "start": 4.26,
+            "end": 4.46,
+            "style": "small"
+          },
+          {
+            "text": "CHAMA",
+            "start": 4.46,
+            "end": 4.66,
+            "style": "normal"
+          },
+          {
+            "text": "ATENÇÃO",
+            "start": 4.66,
+            "end": 5.04,
+            "style": "serif",
+            "color": "#91bcff"
+          }
+        ],
+        [
+          {
+            "text": "NA",
+            "start": 5.04,
+            "end": 5.22,
+            "style": "small"
+          },
+          {
+            "text": "FESTA.",
+            "start": 5.22,
+            "end": 5.54,
+            "style": "normal"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-2-cores",
+      "start": 5.98,
+      "end": 7.04,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "VERDE-MENTA",
+            "start": 5.98,
+            "end": 6.58,
+            "style": "normal",
+            "color": "#b7d69b"
+          }
+        ],
+        [
+          {
+            "text": "COM",
+            "start": 6.58,
+            "end": 6.68,
+            "style": "small"
+          },
+          {
+            "text": "CHOCOLATE",
+            "start": 6.68,
+            "end": 7.04,
+            "style": "normal",
+            "color": "#d2a087"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-2-estilo",
+      "start": 7.04,
+      "end": 8.44,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "FICA",
+            "start": 7.04,
+            "end": 7.38,
+            "style": "small"
+          },
+          {
+            "text": "REFINADO,",
+            "start": 7.38,
+            "end": 7.96,
+            "style": "serif",
+            "color": "#fff4e2"
+          }
+        ],
+        [
+          {
+            "text": "CHIQUE",
+            "start": 8.12,
+            "end": 8.44,
+            "style": "normal",
+            "color": "#b7d69b"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-2-resultado",
+      "start": 8.44,
+      "end": 10.36,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "E",
+            "start": 8.44,
+            "end": 8.7,
+            "style": "small"
+          },
+          {
+            "text": "DEIXA",
+            "start": 8.7,
+            "end": 8.92,
+            "style": "normal"
+          },
+          {
+            "text": "O",
+            "start": 8.92,
+            "end": 9.02,
+            "style": "small"
+          },
+          {
+            "text": "CASAL",
+            "start": 9.02,
+            "end": 9.32,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "COM",
+            "start": 9.32,
+            "end": 9.46,
+            "style": "small"
+          },
+          {
+            "text": "CARA",
+            "start": 9.46,
+            "end": 9.7,
+            "style": "normal"
+          },
+          {
+            "text": "DE",
+            "start": 9.7,
+            "end": 9.86,
+            "style": "small"
+          },
+          {
+            "text": "RIQUEZA.",
+            "start": 9.86,
+            "end": 10.36,
+            "style": "serif",
+            "color": "#d2a087"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-3-cores",
+      "start": 10.82,
+      "end": 11.8,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "PINK",
+            "start": 10.82,
+            "end": 11.14,
+            "style": "normal",
+            "color": "#ffb3c1"
+          }
+        ],
+        [
+          {
+            "text": "COM",
+            "start": 11.14,
+            "end": 11.36,
+            "style": "small"
+          },
+          {
+            "text": "CARAMELO",
+            "start": 11.36,
+            "end": 11.8,
+            "style": "normal",
+            "color": "#d2a087"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-3-estilo",
+      "start": 11.8,
+      "end": 13.28,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "FICA",
+            "start": 11.8,
+            "end": 12.04,
+            "style": "small"
+          },
+          {
+            "text": "MARCANTE,",
+            "start": 12.04,
+            "end": 12.58,
+            "style": "serif",
+            "color": "#ffb3c1"
+          }
+        ],
+        [
+          {
+            "text": "LUXUOSO",
+            "start": 12.72,
+            "end": 13.28,
+            "style": "normal",
+            "color": "#d2a087"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-3-resultado-a",
+      "start": 13.28,
+      "end": 14.46,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "E",
+            "start": 13.28,
+            "end": 13.48,
+            "style": "small"
+          },
+          {
+            "text": "PERFEITO",
+            "start": 13.48,
+            "end": 13.96,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "PARA",
+            "start": 13.96,
+            "end": 14.16,
+            "style": "small"
+          },
+          {
+            "text": "ROUBAR",
+            "start": 14.16,
+            "end": 14.46,
+            "style": "normal",
+            "color": "#ffb3c1"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-3-resultado-b",
+      "start": 14.46,
+      "end": 15.46,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "TODOS",
+            "start": 14.46,
+            "end": 14.78,
+            "style": "normal"
+          },
+          {
+            "text": "OS",
+            "start": 14.78,
+            "end": 15.02,
+            "style": "small"
+          }
+        ],
+        [
+          {
+            "text": "OLHARES.",
+            "start": 15.02,
+            "end": 15.46,
+            "style": "serif",
+            "color": "#ffb3c1"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-4-cores",
+      "start": 15.86,
+      "end": 16.82,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "AZUL",
+            "start": 15.86,
+            "end": 16.16,
+            "style": "normal",
+            "color": "#91bcff"
+          },
+          {
+            "text": "MARINHO",
+            "start": 16.16,
+            "end": 16.46,
+            "style": "normal",
+            "color": "#91bcff"
+          }
+        ],
+        [
+          {
+            "text": "GELO",
+            "start": 16.46,
+            "end": 16.82,
+            "style": "normal",
+            "color": "#d9f3ff"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-4-estilo",
+      "start": 16.82,
+      "end": 18.32,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "FICA",
+            "start": 16.82,
+            "end": 17.0,
+            "style": "small"
+          },
+          {
+            "text": "CLÁSSICO,",
+            "start": 17.0,
+            "end": 17.62,
+            "style": "serif",
+            "color": "#fff4e2"
+          }
+        ],
+        [
+          {
+            "text": "DESLUMBRANTE",
+            "start": 17.76,
+            "end": 18.32,
+            "style": "normal",
+            "color": "#d9f3ff"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-4-resultado-a",
+      "start": 18.32,
+      "end": 19.04,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "E",
+            "start": 18.32,
+            "end": 18.5,
+            "style": "small"
+          },
+          {
+            "text": "VOCÊS",
+            "start": 18.5,
+            "end": 18.64,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "VIRAREM",
+            "start": 18.64,
+            "end": 19.04,
+            "style": "normal"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-4-resultado-b",
+      "start": 19.04,
+      "end": 20.2,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "O",
+            "start": 19.04,
+            "end": 19.18,
+            "style": "small"
+          },
+          {
+            "text": "CENTRO",
+            "start": 19.18,
+            "end": 19.46,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "DAS",
+            "start": 19.46,
+            "end": 19.68,
+            "style": "small"
+          },
+          {
+            "text": "ATENÇÕES.",
+            "start": 19.68,
+            "end": 20.2,
+            "style": "serif",
+            "color": "#91bcff"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-5-cores",
+      "start": 20.76,
+      "end": 21.62,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "PRETO",
+            "start": 20.76,
+            "end": 21.16,
+            "style": "normal",
+            "color": "#f4f4f4"
+          }
+        ],
+        [
+          {
+            "text": "COM",
+            "start": 21.16,
+            "end": 21.32,
+            "style": "small"
+          },
+          {
+            "text": "VINHO",
+            "start": 21.32,
+            "end": 21.62,
+            "style": "normal",
+            "color": "#c97585"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-5-estilo",
+      "start": 21.62,
+      "end": 23.28,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "FICA",
+            "start": 21.62,
+            "end": 21.9,
+            "style": "small"
+          },
+          {
+            "text": "PODEROSO,",
+            "start": 21.9,
+            "end": 22.58,
+            "style": "serif",
+            "color": "#c97585"
+          }
+        ],
+        [
+          {
+            "text": "SENSUAL",
+            "start": 22.72,
+            "end": 23.28,
+            "style": "normal",
+            "color": "#ffb3c1"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-5-resultado",
+      "start": 23.28,
+      "end": 25.24,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "E",
+            "start": 23.28,
+            "end": 23.5,
+            "style": "small"
+          },
+          {
+            "text": "IMPOSSÍVEL",
+            "start": 23.5,
+            "end": 24.1,
+            "style": "normal"
+          },
+          {
+            "text": "DE",
+            "start": 24.1,
+            "end": 24.22,
+            "style": "small"
+          }
+        ],
+        [
+          {
+            "text": "PASSAR",
+            "start": 24.22,
+            "end": 24.46,
+            "style": "small"
+          },
+          {
+            "text": "DESPERCEBIDO.",
+            "start": 24.46,
+            "end": 25.24,
+            "style": "serif",
+            "color": "#c97585"
+          }
+        ]
+      ]
+    }
+  ],
+  "showSafeZones": false,
+  "safeZones": {
+    "top": 200,
+    "bottom": 360,
+    "left": 60,
+    "right": 60
+  },
+  "captionStyle": {
+    "top": 1210,
+    "maxWidth": 960,
+    "fontSize": 96,
+    "serifFontSize": 120,
+    "smallFontSize": 50
+  },
+  "captionPositions": {
+    "knee": {
+      "top": 1210,
+      "align": "center"
+    }
+  },
+  "cameraMotion": false,
+  "extraVisualElements": [],
+  "audioProcessing": "preserve"
+}

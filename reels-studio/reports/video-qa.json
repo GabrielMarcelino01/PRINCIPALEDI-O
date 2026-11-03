@@ -1,0 +1,84 @@
+{
+  "file": "/home/user/PRINCIPALEDI-O/reels-studio/out/reels-pro-demo.mp4",
+  "media": {
+    "duration_seconds": 20.054,
+    "size_bytes": 6229856.0,
+    "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+    "video": {
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "fps": 60.0,
+      "pixel_format": "yuv420p"
+    },
+    "audio": {
+      "codec": "aac",
+      "sample_rate": "48000",
+      "channels": 2,
+      "channel_layout": "stereo"
+    }
+  },
+  "analysis": {
+    "loudness": {
+      "integrated_lufs": -13.9,
+      "true_peak_dbtp": -1.0
+    },
+    "visual_events": {
+      "black": [],
+      "freeze": []
+    }
+  },
+  "checks": [
+    {
+      "name": "video_stream",
+      "status": "pass",
+      "message": "h264 1080x1920 @ 60.000 fps"
+    },
+    {
+      "name": "duration",
+      "status": "pass",
+      "message": "20.054 s"
+    },
+    {
+      "name": "width",
+      "status": "pass",
+      "message": "Esperado 1080; encontrado 1080."
+    },
+    {
+      "name": "height",
+      "status": "pass",
+      "message": "Esperado 1920; encontrado 1920."
+    },
+    {
+      "name": "fps",
+      "status": "pass",
+      "message": "Mínimo 60.0; encontrado 60.0."
+    },
+    {
+      "name": "integrated_loudness",
+      "status": "pass",
+      "message": "Alvo -14.0 ± 0.5 LUFS; encontrado -13.9."
+    },
+    {
+      "name": "true_peak",
+      "status": "pass",
+      "message": "Máximo -1.0 dBTP; encontrado -1.0."
+    },
+    {
+      "name": "black",
+      "status": "pass",
+      "message": "Nenhum evento detectado."
+    },
+    {
+      "name": "freeze",
+      "status": "pass",
+      "message": "Nenhum evento detectado."
+    }
+  ],
+  "contact_sheet": "out/contact-qa.jpg",
+  "status": "pass",
+  "summary": {
+    "failures": 0,
+    "warnings": 0
+  }
+}

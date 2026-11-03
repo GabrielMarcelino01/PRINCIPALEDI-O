@@ -1,0 +1,549 @@
+{
+  "id": "closet-10",
+  "width": 1080,
+  "height": 1920,
+  "fps": 24,
+  "durationInFrames": 576,
+  "duration": 24.0,
+  "video": "closet-10-source.mp4",
+  "audio": "closet-10-audio.wav",
+  "cuts": [
+    6.0,
+    12.0,
+    18.0
+  ],
+  "groups": [
+    {
+      "id": "look-1-cores",
+      "start": 0.0,
+      "end": 2.44,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "RELEMBRE,",
+            "start": 0.0,
+            "end": 0.7,
+            "style": "small"
+          },
+          {
+            "text": "MARFIM",
+            "start": 0.96,
+            "end": 1.48,
+            "style": "normal",
+            "color": "#fff4e2"
+          },
+          {
+            "text": "COM",
+            "start": 1.48,
+            "end": 1.64,
+            "style": "small"
+          }
+        ],
+        [
+          {
+            "text": "AZUL",
+            "start": 1.64,
+            "end": 1.92,
+            "style": "normal",
+            "color": "#79b7c8"
+          },
+          {
+            "text": "PETRÓLEO",
+            "start": 1.92,
+            "end": 2.44,
+            "style": "normal",
+            "color": "#79b7c8"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-1-estilo",
+      "start": 2.44,
+      "end": 4.32,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "FICA",
+            "start": 2.44,
+            "end": 2.72,
+            "style": "small"
+          },
+          {
+            "text": "ELEGANTE,",
+            "start": 2.72,
+            "end": 3.36,
+            "style": "serif",
+            "color": "#fff4e2"
+          }
+        ],
+        [
+          {
+            "text": "SOFISTICADO",
+            "start": 3.56,
+            "end": 4.32,
+            "style": "normal",
+            "color": "#ffffff"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-1-resultado",
+      "start": 4.32,
+      "end": 5.7,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "E",
+            "start": 4.32,
+            "end": 4.52,
+            "style": "small"
+          },
+          {
+            "text": "CHAMA",
+            "start": 4.52,
+            "end": 4.76,
+            "style": "normal"
+          },
+          {
+            "text": "ATENÇÃO",
+            "start": 4.76,
+            "end": 5.16,
+            "style": "serif",
+            "color": "#79b7c8"
+          }
+        ],
+        [
+          {
+            "text": "NA",
+            "start": 5.16,
+            "end": 5.32,
+            "style": "small"
+          },
+          {
+            "text": "FESTA.",
+            "start": 5.32,
+            "end": 5.7,
+            "style": "normal"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-2-cores",
+      "start": 6.16,
+      "end": 7.3,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "PINK",
+            "start": 6.16,
+            "end": 6.48,
+            "style": "normal",
+            "color": "#ffb3c1"
+          }
+        ],
+        [
+          {
+            "text": "COM",
+            "start": 6.48,
+            "end": 6.72,
+            "style": "small"
+          },
+          {
+            "text": "CARAMELO",
+            "start": 6.72,
+            "end": 7.3,
+            "style": "normal",
+            "color": "#d7a06f"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-2-estilo",
+      "start": 7.3,
+      "end": 9.3,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "FICA",
+            "start": 7.3,
+            "end": 7.7,
+            "style": "small"
+          },
+          {
+            "text": "MARCANTE,",
+            "start": 7.7,
+            "end": 8.36,
+            "style": "serif",
+            "color": "#ffb3c1"
+          }
+        ],
+        [
+          {
+            "text": "LUXUOSO",
+            "start": 8.66,
+            "end": 9.3,
+            "style": "normal",
+            "color": "#d7a06f"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-2-resultado-a",
+      "start": 9.3,
+      "end": 10.68,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "E",
+            "start": 9.3,
+            "end": 9.54,
+            "style": "small"
+          },
+          {
+            "text": "PERFEITO",
+            "start": 9.54,
+            "end": 10.08,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "PARA",
+            "start": 10.08,
+            "end": 10.32,
+            "style": "small"
+          },
+          {
+            "text": "ROUBAR",
+            "start": 10.32,
+            "end": 10.68,
+            "style": "normal",
+            "color": "#ffb3c1"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-2-resultado-b",
+      "start": 10.68,
+      "end": 11.78,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "TODOS",
+            "start": 10.68,
+            "end": 10.96,
+            "style": "normal"
+          },
+          {
+            "text": "OS",
+            "start": 10.96,
+            "end": 11.24,
+            "style": "small"
+          }
+        ],
+        [
+          {
+            "text": "OLHARES.",
+            "start": 11.24,
+            "end": 11.78,
+            "style": "serif",
+            "color": "#ffb3c1"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-3-cores",
+      "start": 12.14,
+      "end": 13.46,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "VERDE-SÁLVIA",
+            "start": 12.14,
+            "end": 12.88,
+            "style": "normal",
+            "color": "#b7d69b"
+          }
+        ],
+        [
+          {
+            "text": "COM",
+            "start": 12.88,
+            "end": 13.02,
+            "style": "small"
+          },
+          {
+            "text": "CHOCOLATE",
+            "start": 13.02,
+            "end": 13.46,
+            "style": "normal",
+            "color": "#d2a087"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-3-estilo",
+      "start": 13.46,
+      "end": 15.24,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "FICA",
+            "start": 13.46,
+            "end": 13.86,
+            "style": "small"
+          },
+          {
+            "text": "REFINADO,",
+            "start": 13.86,
+            "end": 14.56,
+            "style": "serif",
+            "color": "#fff4e2"
+          }
+        ],
+        [
+          {
+            "text": "CHIQUE",
+            "start": 14.78,
+            "end": 15.24,
+            "style": "normal",
+            "color": "#b7d69b"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-3-resultado-a",
+      "start": 15.24,
+      "end": 16.9,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "E",
+            "start": 15.24,
+            "end": 15.7,
+            "style": "small"
+          },
+          {
+            "text": "DEIXA",
+            "start": 15.7,
+            "end": 15.92,
+            "style": "normal"
+          },
+          {
+            "text": "O",
+            "start": 15.92,
+            "end": 16.02,
+            "style": "small"
+          },
+          {
+            "text": "CASAL",
+            "start": 16.02,
+            "end": 16.36,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "COM",
+            "start": 16.36,
+            "end": 16.5,
+            "style": "small"
+          },
+          {
+            "text": "CARA",
+            "start": 16.5,
+            "end": 16.72,
+            "style": "normal"
+          },
+          {
+            "text": "DE",
+            "start": 16.72,
+            "end": 16.9,
+            "style": "small"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-3-resultado-b",
+      "start": 16.9,
+      "end": 17.74,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "MUITA",
+            "start": 16.9,
+            "end": 17.18,
+            "style": "normal"
+          }
+        ],
+        [
+          {
+            "text": "RIQUEZA.",
+            "start": 17.18,
+            "end": 17.74,
+            "style": "serif",
+            "color": "#d2a087"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-4-cores",
+      "start": 18.2,
+      "end": 19.5,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "PRETO",
+            "start": 18.2,
+            "end": 18.54,
+            "style": "normal",
+            "color": "#ffffff"
+          }
+        ],
+        [
+          {
+            "text": "COM",
+            "start": 18.54,
+            "end": 18.68,
+            "style": "small"
+          },
+          {
+            "text": "CEREJA",
+            "start": 18.68,
+            "end": 19.1,
+            "style": "normal",
+            "color": "#c97585"
+          },
+          {
+            "text": "ESCURO",
+            "start": 19.1,
+            "end": 19.5,
+            "style": "normal",
+            "color": "#c97585"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-4-estilo",
+      "start": 19.5,
+      "end": 21.44,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "FICA",
+            "start": 19.5,
+            "end": 19.8,
+            "style": "small"
+          },
+          {
+            "text": "PODEROSO,",
+            "start": 19.8,
+            "end": 20.52,
+            "style": "serif",
+            "color": "#c97585"
+          }
+        ],
+        [
+          {
+            "text": "SENSUAL",
+            "start": 20.74,
+            "end": 21.44,
+            "style": "normal",
+            "color": "#ffb3c1"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "look-4-resultado",
+      "start": 21.44,
+      "end": 23.68,
+      "position": "knee",
+      "lines": [
+        [
+          {
+            "text": "E",
+            "start": 21.44,
+            "end": 21.7,
+            "style": "small"
+          },
+          {
+            "text": "IMPOSSÍVEL",
+            "start": 21.7,
+            "end": 22.48,
+            "style": "normal"
+          },
+          {
+            "text": "DE",
+            "start": 22.48,
+            "end": 22.58,
+            "style": "small"
+          }
+        ],
+        [
+          {
+            "text": "PASSAR",
+            "start": 22.58,
+            "end": 22.86,
+            "style": "small"
+          },
+          {
+            "text": "DESPERCEBIDO.",
+            "start": 22.86,
+            "end": 23.68,
+            "style": "serif",
+            "color": "#c97585"
+          }
+        ]
+      ]
+    }
+  ],
+  "showSafeZones": false,
+  "safeZones": {
+    "top": 200,
+    "bottom": 360,
+    "left": 60,
+    "right": 60
+  },
+  "captionStyle": {
+    "top": 1210,
+    "maxWidth": 960,
+    "fontSize": 96,
+    "serifFontSize": 120,
+    "smallFontSize": 50
+  },
+  "captionPositions": {
+    "knee": {
+      "top": 1210,
+      "align": "center"
+    }
+  },
+  "cameraMotion": false,
+  "extraVisualElements": [],
+  "audioProcessing": "preserve"
+}

@@ -1,0 +1,47 @@
+{
+  "app-closet.png": {
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "bytes": 1841320,
+    "sha256": "e89bc70a659d11daacbc6510868a5b6a9f0c35e9f86f3c9816e943537a2a8458"
+  },
+  "app-inicio.png": {
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "bytes": 2016683,
+    "sha256": "a9511998c2a8571e1c4b3915c64f7faa26d337ab30dd3f51389e9e4a0f6e044b"
+  },
+  "app-looks.png": {
+    "size": [
+      941,
+      1672
+    ],
+    "mode": "RGB",
+    "bytes": 1913438,
+    "sha256": "4423f701f1a0ef4e2a4ad696871e4f59904fec848de14f54d37f3f79c7a1efbc"
+  },
+  "modelo-ana.jpg": {
+    "size": [
+      2048,
+      2048
+    ],
+    "mode": "RGB",
+    "bytes": 264305,
+    "sha256": "03ce43469e2751ac6686f279bd078125f2de71a688ef15a067001a2c1f7af681"
+  },
+  "modelo-clara.jpg": {
+    "size": [
+      1122,
+      1402
+    ],
+    "mode": "RGB",
+    "bytes": 527006,
+    "sha256": "5ca50efc9dde366e4185c706ddf6407328ddf418cea665fc1fd384abf1f45247"
+  }
+}

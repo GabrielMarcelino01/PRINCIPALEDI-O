@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "outputDir": "/home/user/PRINCIPALEDI-O/hyperframes/out/smoke-snapshots",
+  "frames": [
+    {
+      "path": "/home/user/PRINCIPALEDI-O/hyperframes/out/smoke-snapshots/frame-00-at-0s.png",
+      "time": 0
+    },
+    {
+      "path": "/home/user/PRINCIPALEDI-O/hyperframes/out/smoke-snapshots/frame-01-at-0.5s.png",
+      "time": 0.5
+    },
+    {
+      "path": "/home/user/PRINCIPALEDI-O/hyperframes/out/smoke-snapshots/frame-02-at-1.5s.png",
+      "time": 1.5
+    },
+    {
+      "path": "/home/user/PRINCIPALEDI-O/hyperframes/out/smoke-snapshots/frame-03-at-2.95s.png",
+      "time": 2.95
+    }
+  ],
+  "contactSheets": [
+    "/home/user/PRINCIPALEDI-O/hyperframes/out/smoke-snapshots/contact-sheet.jpg"
+  ],
+  "_meta": {
+    "version": "0.8.206",
+    "updateAvailable": false
+  }
+}

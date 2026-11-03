@@ -1,0 +1,10 @@
+# CPU-only smoke environment for the official TAPNext++ PyTorch wrapper.
+# The +cpu wheels avoid downloading CUDA packages on the GitHub-hosted runner.
+--index-url https://pypi.org/simple
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+numpy==2.3.4
+einops==0.8.1
+pillow==12.1.1
+torch==2.9.1+cpu
+torchvision==0.24.1+cpu

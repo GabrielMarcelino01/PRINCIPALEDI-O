@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "date": "2026-10-26",
+  "method": "Servidor pick --local; requisições HTTP e abertura em Chromium via Puppeteer; screenshot da viewport inspecionado.",
+  "http": 200,
+  "title": "Motion Prompt — a library of names for the things you ask an AI to make",
+  "cards": 168,
+  "canvases": 169,
+  "page_errors": [],
+  "screenshot_visual_check": "Página, filtros, tipografia e primeiros cartões visíveis; sem tela vazia ou erro aparente.",
+  "scope": "Smoke test da galeria, não revisão estética individual dos 168 efeitos."
+}

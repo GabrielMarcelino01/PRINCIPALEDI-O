@@ -1,0 +1,169 @@
+{
+  "project": "temporal-60fps",
+  "status": "pass",
+  "mode": "mp4",
+  "clock": "t = frame / fps; every visual property is calculated inside window.seek(t)",
+  "browser": {
+    "headless": true,
+    "provider": "@sparticuz/chromium",
+    "viewport": {
+      "width": 1080,
+      "height": 1920
+    },
+    "deviceScaleFactor": 1
+  },
+  "capture": {
+    "directory": "skills/temporal-reel/out/frames",
+    "format": "PNG",
+    "frames": 360,
+    "fps": 60
+  },
+  "fonts": [
+    {
+      "family": "Inter",
+      "status": "loaded"
+    },
+    {
+      "family": "Playfair",
+      "status": "loaded"
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "determinism": {
+    "status": "pass",
+    "order": "reverse chronological verification",
+    "checks": [
+      {
+        "frame": 359,
+        "originalHash": "9c17ad79c53d6c94cd4f69241368db3661a213ecba8e8f21594a6d4643c6f5cc",
+        "repeatedHash": "9c17ad79c53d6c94cd4f69241368db3661a213ecba8e8f21594a6d4643c6f5cc",
+        "identical": true
+      },
+      {
+        "frame": 315,
+        "originalHash": "219fa8eb93c7b18c6ab21d8248998669dd7744693566c60435b75602d34915c0",
+        "repeatedHash": "219fa8eb93c7b18c6ab21d8248998669dd7744693566c60435b75602d34915c0",
+        "identical": true
+      },
+      {
+        "frame": 240,
+        "originalHash": "3f6cf4c3d88debdc595831514ca7461deeee40f462a0e6d8676617e6718b88f6",
+        "repeatedHash": "3f6cf4c3d88debdc595831514ca7461deeee40f462a0e6d8676617e6718b88f6",
+        "identical": true
+      },
+      {
+        "frame": 180,
+        "originalHash": "6630021b580b4d25ec499d715ceed24c3224402fcaf3d2a014c545587eca7db9",
+        "repeatedHash": "6630021b580b4d25ec499d715ceed24c3224402fcaf3d2a014c545587eca7db9",
+        "identical": true
+      },
+      {
+        "frame": 99,
+        "originalHash": "dde5fe81c286c4805682034e871dad5886e433744dd4efafdd236e2509ec01a9",
+        "repeatedHash": "dde5fe81c286c4805682034e871dad5886e433744dd4efafdd236e2509ec01a9",
+        "identical": true
+      },
+      {
+        "frame": 0,
+        "originalHash": "370785fae46e0b29c381aa467bcc0516b9821539c9df125a70e589d1f43ee7ea",
+        "repeatedHash": "370785fae46e0b29c381aa467bcc0516b9821539c9df125a70e589d1f43ee7ea",
+        "identical": true
+      }
+    ]
+  },
+  "ffmpeg": {
+    "path": "/home/user/PRINCIPALEDI-O/skills/temporal-reel/node_modules/@ffmpeg-installer/linux-x64/ffmpeg",
+    "input": "frame-%06d.png",
+    "joinedFrames": 360,
+    "codec": "H.264 High / CRF 16 / yuv420p / BT.709"
+  },
+  "output": {
+    "path": "entregas/TEMPORAL-60FPS.mp4",
+    "bytes": 2987886,
+    "sha256": "c4cd18a287e4e6a0edc185e4e71256a6555e81a5941913ccf1451e7c39a2d2bd"
+  },
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_time_base": "1/120",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1080,
+        "height": 1920,
+        "coded_width": 1088,
+        "coded_height": 1920,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 42,
+        "color_range": "tv",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "chroma_location": "left",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "60/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 92160,
+        "duration": "6.000000",
+        "bit_rate": "3977166",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "360",
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler"
+        }
+      }
+    ],
+    "format": {
+      "filename": "/home/user/PRINCIPALEDI-O/entregas/TEMPORAL-60FPS.mp4",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "6.000000",
+      "size": "2987886",
+      "bit_rate": "3983848",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf58.24.100"
+      }
+    }
+  },
+  "mp4Checks": {
+    "h264": true,
+    "width": true,
+    "height": true,
+    "fps": true,
+    "frames": true,
+    "pixelFormat": true
+  }
+}

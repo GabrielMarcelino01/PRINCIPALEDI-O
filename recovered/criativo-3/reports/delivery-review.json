@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "revision": 2,
+  "review_type": "Revisão técnica e visual por quadros extraídos do master codificado",
+  "master_sha256": "4fd2da77fd40e45a0f3b6eea96c24889359c62be55705795fd7bd214f4ff3bb6",
+  "frames_reviewed": 84,
+  "sheets_reviewed": 7,
+  "caption_cues_reviewed": 32,
+  "caption_text_events_validated": 146,
+  "cut_boundaries_reviewed": 15,
+  "first_last_reviewed": true,
+  "uniform_samples_reviewed": true,
+  "full_resolution_reviews": [
+    "work/final-review/frame-0007.png",
+    "work/final-review/frame-0034.png",
+    "work/final-review/frame-0043.png",
+    "work/final-review/frame-0061.png",
+    "work/final-review/frame-0075.png",
+    "work/final-review/frame-0082.png",
+    "work/final-review/frame-0084.png"
+  ],
+  "targeted_native_reviews": [
+    "work/review-v2-targeted/frame-17.00.png",
+    "work/review-v2-targeted/frame-20.90.png",
+    "work/review-v2-targeted/frame-24.00.png",
+    "work/review-v2-targeted/frame-38.00.png",
+    "work/review-v2-targeted/frame-42.00.png",
+    "work/review-v2-targeted/frame-43.50.png",
+    "work/review-v2-targeted/frame-44.40.png"
+  ],
+  "observations": [
+    "O gradiente de preto puro separa a junção dos painéis e mantém rosto, aplicativo, marca e CTA legíveis nos quadros revisados.",
+    "As 32 captions permanecem em uma linha; as 146 unidades de texto têm tempos positivos, cobertura das palavras exibidas e geometria validada.",
+    "As pílulas arredondadas acompanham a palavra ativa; os quatro blocos com sublinhado e o CTA com pílula própria foram inspecionados em resolução nativa.",
+    "Os arredores dos 15 cortes preservam a continuidade visual e as entradas das cenas de demonstração e do CTA.",
+    "O primeiro quadro contém o gancho e o último preserva a marca; o CTA e o gesto de clique estão visíveis."
+  ],
+  "limitations": [
+    "Esta revisão por quadros e medições não equivale a escuta humana integral ou aprovação estética em playback em tempo real.",
+    "Não há evidência de performance ou conversão de campanha; isso exige veiculação e dados reais."
+  ]
+}

@@ -1,0 +1,8 @@
+node_modules/
+.bundle/
+out/
+work/
+assets/original.mp4
+public/closet-10-source.mp4
+public/closet-10-audio.wav
+.DS_Store

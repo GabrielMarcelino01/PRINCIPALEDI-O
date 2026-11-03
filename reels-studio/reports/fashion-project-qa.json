@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "scope": "Timeline, assets e correspondência textual; não substitui QA do MP4 nem revisão audiovisual.",
+  "summary": {
+    "checks": 25,
+    "passed": 25,
+    "failed": 0,
+    "caption_groups": 13,
+    "words": 45
+  },
+  "checks": [
+    {
+      "name": "dimensions",
+      "status": "pass",
+      "message": "1080x1920"
+    },
+    {
+      "name": "frame_rate",
+      "status": "pass",
+      "message": "30 fps"
+    },
+    {
+      "name": "duration",
+      "status": "pass",
+      "message": "614 frames / 20,4667 s"
+    },
+    {
+      "name": "cuts",
+      "status": "pass",
+      "message": "Cortes: [4.417643, 8.366667, 11.613021, 15.716667]"
+    },
+    {
+      "name": "groups",
+      "status": "pass",
+      "message": "13 grupos de captions"
+    },
+    {
+      "name": "normalized_video",
+      "status": "pass",
+      "message": "public/fashion-source.mp4"
+    },
+    {
+      "name": "audio_master",
+      "status": "pass",
+      "message": "public/fashion-soundtrack.wav"
+    },
+    {
+      "name": "inter_font",
+      "status": "pass",
+      "message": "public/fonts/inter-latin-wght-normal.woff2"
+    },
+    {
+      "name": "playfair_font",
+      "status": "pass",
+      "message": "public/fonts/playfair-display-latin-wght-italic.woff2"
+    },
+    {
+      "name": "playfair_license",
+      "status": "pass",
+      "message": "public/fonts/PLAYFAIR-LICENSE.txt"
+    },
+    {
+      "name": "scene_boundaries",
+      "status": "pass",
+      "message": "Cinco blocos visuais alinhados aos quatro cortes"
+    },
+    {
+      "name": "group_timing",
+      "status": "pass",
+      "message": "Grupos ordenados, sem sobreposição e dentro da duração"
+    },
+    {
+      "name": "word_timing",
+      "status": "pass",
+      "message": "45 palavras com timestamps válidos"
+    },
+    {
+      "name": "line_count",
+      "status": "pass",
+      "message": "No máximo duas linhas por grupo"
+    },
+    {
+      "name": "transcript_fidelity",
+      "status": "pass",
+      "message": "Todos os seis segmentos correspondem à fala revisada, sem omissões"
+    },
+    {
+      "name": "caption_safe_area",
+      "status": "pass",
+      "message": "Bloco estimado até 1420px; limite 1500px"
+    },
+    {
+      "name": "caption_scale",
+      "status": "pass",
+      "message": "76px sans / 96px serifada / 42px conectores"
+    },
+    {
+      "name": "caption_positions",
+      "status": "pass",
+      "message": "13 grupos distribuídos em sete regiões seguras"
+    },
+    {
+      "name": "follow_cta",
+      "status": "pass",
+      "message": "Botão + SEGUIR somente no final e dentro da safe zone"
+    },
+    {
+      "name": "camera_motion",
+      "status": "pass",
+      "message": "Cinco movimentos suaves, escala máxima 1,06 e deslocamento máximo 8px"
+    },
+    {
+      "name": "caption_only_layout",
+      "status": "pass",
+      "message": "Sem cabeçalhos ou transições; apenas captions, movimento e follow CTA final"
+    },
+    {
+      "name": "preview_loudness",
+      "status": "pass",
+      "message": "-14.0 LUFS"
+    },
+    {
+      "name": "preview_true_peak",
+      "status": "pass",
+      "message": "-1.0 dBTP"
+    },
+    {
+      "name": "source_integrity",
+      "status": "pass",
+      "message": "SHA-256 do EDITE-ESSE original confirmado"
+    },
+    {
+      "name": "no_transition_sfx",
+      "status": "pass",
+      "message": "Sem efeitos de transição; somente voz e música"
+    }
+  ]
+}

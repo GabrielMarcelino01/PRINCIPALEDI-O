@@ -1,0 +1,178 @@
+{
+  "status": "PASS",
+  "scope": "Timeline, assets, fidelidade textual e motion; não substitui storyboard, QA do MP4 nem revisão audiovisual.",
+  "summary": {
+    "checks": 33,
+    "passed": 33,
+    "failed": 0,
+    "caption_groups": 22,
+    "words": 112
+  },
+  "checks": [
+    {
+      "name": "dimensions",
+      "status": "pass",
+      "message": "1080x1920 vertical"
+    },
+    {
+      "name": "frame_rate",
+      "status": "pass",
+      "message": "60 fps para captions e motion gráfico"
+    },
+    {
+      "name": "duration",
+      "status": "pass",
+      "message": "2111 frames / 35.183333 s"
+    },
+    {
+      "name": "trimmed_duration",
+      "status": "pass",
+      "message": "Duração esperada aproximada 35.166667 s"
+    },
+    {
+      "name": "pause_cuts",
+      "status": "pass",
+      "message": "Quatro pausas removidas, total 1,20 s"
+    },
+    {
+      "name": "edit_segments",
+      "status": "pass",
+      "message": "Trechos de origem ordenados e saída contínua"
+    },
+    {
+      "name": "base_video",
+      "status": "pass",
+      "message": "public/img-1680-base.mp4"
+    },
+    {
+      "name": "before_video",
+      "status": "pass",
+      "message": "public/img-1680-before.mp4"
+    },
+    {
+      "name": "audio_master",
+      "status": "pass",
+      "message": "public/img-1680-audio.wav"
+    },
+    {
+      "name": "inter_font",
+      "status": "pass",
+      "message": "public/fonts/inter-latin-wght-normal.woff2"
+    },
+    {
+      "name": "playfair_font",
+      "status": "pass",
+      "message": "public/fonts/playfair-display-latin-wght-italic.woff2"
+    },
+    {
+      "name": "inter_license",
+      "status": "pass",
+      "message": "public/fonts/INTER-LICENSE.txt"
+    },
+    {
+      "name": "playfair_license",
+      "status": "pass",
+      "message": "public/fonts/PLAYFAIR-LICENSE.txt"
+    },
+    {
+      "name": "groups",
+      "status": "pass",
+      "message": "22 grupos: 21 renderizados e CTA original preservado"
+    },
+    {
+      "name": "group_timing",
+      "status": "pass",
+      "message": "Grupos ordenados, sem sobreposição e com lead-in limitado"
+    },
+    {
+      "name": "word_timing",
+      "status": "pass",
+      "message": "112 palavras com timestamps remapeados válidos"
+    },
+    {
+      "name": "word_total",
+      "status": "pass",
+      "message": "112 palavras, sem omissões ou duplicações"
+    },
+    {
+      "name": "line_count",
+      "status": "pass",
+      "message": "No máximo duas linhas declaradas por grupo"
+    },
+    {
+      "name": "layouts",
+      "status": "pass",
+      "message": "Layouts bottom/app/top e CTA embedded"
+    },
+    {
+      "name": "embedded_cta",
+      "status": "pass",
+      "message": "Somente o CTA final usa o texto já existente na fonte"
+    },
+    {
+      "name": "transcript_fidelity",
+      "status": "pass",
+      "message": "As onze falas completas estão representadas"
+    },
+    {
+      "name": "caption_safe_bottom",
+      "status": "pass",
+      "message": "Blocos bottom e app dentro da área segura estimada"
+    },
+    {
+      "name": "caption_safe_top",
+      "status": "pass",
+      "message": "Bloco superior abaixo da margem segura"
+    },
+    {
+      "name": "caption_scales",
+      "status": "pass",
+      "message": "Escalas independentes para pessoas, telas e bloco superior"
+    },
+    {
+      "name": "double_scene",
+      "status": "pass",
+      "message": "Dupla cena antes/agora no contraste de looks"
+    },
+    {
+      "name": "zoom_range",
+      "status": "pass",
+      "message": "Zooms discretos de 1,00× a 1,10×"
+    },
+    {
+      "name": "app_not_cropped",
+      "status": "pass",
+      "message": "Telas do aplicativo sem zoom ou crop digital"
+    },
+    {
+      "name": "deterministic_motion",
+      "status": "pass",
+      "message": "Motion determinístico em função do frame/tempo"
+    },
+    {
+      "name": "single_audio",
+      "status": "pass",
+      "message": "Uma única faixa de áudio editada"
+    },
+    {
+      "name": "double_scene_assets",
+      "status": "pass",
+      "message": "Main, take anterior e metade direita da dupla cena"
+    },
+    {
+      "name": "base_format",
+      "status": "pass",
+      "message": "H.264/yuv420p/BT.709/60 fps"
+    },
+    {
+      "name": "audio_duration",
+      "status": "pass",
+      "message": "Áudio 35.184229s; vídeo 35.183333s"
+    },
+    {
+      "name": "source_integrity",
+      "status": "pass",
+      "message": "SHA-256 do upload original confirmado"
+    }
+  ]
+}

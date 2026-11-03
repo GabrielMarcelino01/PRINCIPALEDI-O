@@ -1,0 +1,122 @@
+{
+  "brand": "Truque dos Mil Looks",
+  "duration": 87.0,
+  "fps": 60,
+  "disclosure": "DRAMATIZAÇÃO",
+  "lines": [
+    {
+      "speaker": "Clara",
+      "scene": "hook",
+      "text": "Ana, o que aconteceu? Dá para ver que você está triste.",
+      "parts": ["Ana, o que aconteceu?", "Dá para ver que você está triste."]
+    },
+    {
+      "speaker": "Ana",
+      "scene": "hook",
+      "text": "Eu não entendia por que todo look parecia ficar melhor nas outras pessoas do que em mim.",
+      "parts": ["Eu não entendia por que todo look", "parecia ficar melhor nas outras pessoas", "do que em mim."]
+    },
+    {
+      "speaker": "Ana",
+      "scene": "hook",
+      "text": "Eu copiava ideias, comprava peças novas e ainda sentia que nada combinava comigo.",
+      "parts": ["Eu copiava ideias, comprava peças novas", "e ainda sentia que nada combinava comigo."]
+    },
+    {
+      "speaker": "Clara",
+      "scene": "conflict",
+      "text": "E o jantar do trabalho? Você vai, não é?",
+      "parts": ["E o jantar do trabalho?", "Você vai, não é?"]
+    },
+    {
+      "speaker": "Ana",
+      "scene": "conflict",
+      "text": "Não sei. Toda vez é igual: eu provo tudo, não sei o que vestir e acabo querendo me esconder nas fotos.",
+      "parts": ["Não sei. Toda vez é igual:", "eu provo tudo, não sei o que vestir", "e acabo querendo me esconder nas fotos."]
+    },
+    {
+      "speaker": "Ana",
+      "scene": "conflict",
+      "text": "Por que era tão difícil descobrir o que funcionava para mim?",
+      "parts": ["Por que era tão difícil descobrir", "o que funcionava para mim?"]
+    },
+    {
+      "speaker": "Clara",
+      "scene": "reveal",
+      "text": "Eu também me sentia assim. Até descobrir que o problema não era o meu armário.",
+      "parts": ["Eu também me sentia assim.", "Até descobrir que o problema", "não era o meu armário."]
+    },
+    {
+      "speaker": "Ana",
+      "scene": "reveal",
+      "text": "E você simplesmente aceitou isso?",
+      "parts": ["E você simplesmente", "aceitou isso?"]
+    },
+    {
+      "speaker": "Clara",
+      "scene": "reveal",
+      "text": "Não. Eu descobri um truque: o Truque dos Mil Looks.",
+      "parts": ["Não. Eu descobri um truque:", "o Truque dos Mil Looks."]
+    },
+    {
+      "speaker": "Clara",
+      "scene": "reveal",
+      "text": "Ele mostra combinações com as roupas que a gente já tem. Foi assim que eu parei de achar que me vestia mal.",
+      "parts": ["Ele mostra combinações", "com as roupas que a gente já tem.", "Foi assim que eu parei de achar", "que me vestia mal."]
+    },
+    {
+      "speaker": "Clara",
+      "scene": "closet",
+      "text": "Você fotografa suas peças, e a inteligência artificial organiza seu closet.",
+      "parts": ["Você fotografa suas peças,", "e a inteligência artificial", "organiza seu closet."]
+    },
+    {
+      "speaker": "Clara",
+      "scene": "looks",
+      "text": "Depois, cria looks para trabalho, fim de semana e jantar, tudo com o que já está aí na sua casa.",
+      "parts": ["Depois, cria looks para trabalho,", "fim de semana e jantar,", "tudo com o que já está aí na sua casa."]
+    },
+    {
+      "speaker": "Ana",
+      "scene": "looks",
+      "text": "Uma peça, vários looks. Sem precisar comprar roupa nova toda semana.",
+      "parts": ["Uma peça, vários looks.", "Sem precisar comprar roupa nova", "toda semana."]
+    },
+    {
+      "speaker": "Clara",
+      "scene": "offers",
+      "text": "E quando você quiser algo novo, o app também indica lojas com descontos de até cinquenta por cento.",
+      "parts": ["E quando você quiser algo novo,", "o app também indica lojas", "com descontos de até cinquenta por cento."]
+    },
+    {
+      "speaker": "Clara",
+      "scene": "offers",
+      "text": "Tem sugestões para o seu estilo, favoritos, ofertas e muito mais.",
+      "parts": ["Tem sugestões para o seu estilo,", "favoritos, ofertas", "e muito mais."]
+    },
+    {
+      "speaker": "Ana",
+      "scene": "payoff",
+      "text": "Três semanas depois, eu parei de me esconder. Entrava numa sala e sentia que finalmente parecia comigo.",
+      "parts": ["Três semanas depois,", "eu parei de me esconder.", "Entrava numa sala e sentia", "que finalmente parecia comigo."]
+    },
+    {
+      "speaker": "Clara",
+      "scene": "payoff",
+      "text": "Não é sobre mudar quem você é. É sobre enxergar mil possibilidades no que você já tem.",
+      "parts": ["Não é sobre mudar quem você é.", "É sobre enxergar mil possibilidades", "no que você já tem."]
+    },
+    {
+      "speaker": "Ana",
+      "scene": "payoff",
+      "text": "Meu próximo look já estava no meu armário. Eu só precisava do truque certo.",
+      "parts": ["Meu próximo look já estava no meu armário.", "Eu só precisava do truque certo."]
+    },
+    {
+      "speaker": "Clara",
+      "scene": "endcard",
+      "text": "Clique no link. Conheça o Truque dos Mil Looks.",
+      "parts": ["Clique no link.", "Conheça o Truque dos Mil Looks."]
+    }
+  ]
+}

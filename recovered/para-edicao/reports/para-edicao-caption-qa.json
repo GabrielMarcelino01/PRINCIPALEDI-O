@@ -1,0 +1,233 @@
+{
+  "file": "/home/user/PRINCIPALEDI-O/recovered/para-edicao/para-edicao-captions.srt",
+  "status": "pass",
+  "caption_count": 17,
+  "summary": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "issues": [],
+  "captions": [
+    {
+      "block": 1,
+      "start": 0.0,
+      "end": 2.42,
+      "duration": 2.42,
+      "text": "RELEMBRE, BRANCO COM AZUL MARINHO",
+      "lines": 2,
+      "line_lengths": [
+        20,
+        12
+      ],
+      "characters_per_second": 11.98
+    },
+    {
+      "block": 2,
+      "start": 2.42,
+      "end": 4.26,
+      "duration": 1.8399999999999999,
+      "text": "FICA ELEGANTE, SOFISTICADO",
+      "lines": 2,
+      "line_lengths": [
+        14,
+        11
+      ],
+      "characters_per_second": 13.04
+    },
+    {
+      "block": 3,
+      "start": 4.26,
+      "end": 5.54,
+      "duration": 1.2800000000000002,
+      "text": "E CHAMA ATENÇÃO NA FESTA.",
+      "lines": 2,
+      "line_lengths": [
+        15,
+        9
+      ],
+      "characters_per_second": 16.41
+    },
+    {
+      "block": 4,
+      "start": 5.98,
+      "end": 7.04,
+      "duration": 1.0599999999999996,
+      "text": "VERDE-MENTA COM CHOCOLATE",
+      "lines": 2,
+      "line_lengths": [
+        11,
+        13
+      ],
+      "characters_per_second": 21.7
+    },
+    {
+      "block": 5,
+      "start": 7.04,
+      "end": 8.44,
+      "duration": 1.3999999999999995,
+      "text": "FICA REFINADO, CHIQUE",
+      "lines": 2,
+      "line_lengths": [
+        14,
+        6
+      ],
+      "characters_per_second": 13.57
+    },
+    {
+      "block": 6,
+      "start": 8.44,
+      "end": 10.36,
+      "duration": 1.92,
+      "text": "E DEIXA O CASAL COM CARA DE RIQUEZA.",
+      "lines": 2,
+      "line_lengths": [
+        15,
+        20
+      ],
+      "characters_per_second": 15.1
+    },
+    {
+      "block": 7,
+      "start": 10.82,
+      "end": 11.8,
+      "duration": 0.9800000000000004,
+      "text": "PINK COM CARAMELO",
+      "lines": 2,
+      "line_lengths": [
+        4,
+        12
+      ],
+      "characters_per_second": 15.31
+    },
+    {
+      "block": 8,
+      "start": 11.8,
+      "end": 13.28,
+      "duration": 1.4799999999999986,
+      "text": "FICA MARCANTE, LUXUOSO",
+      "lines": 2,
+      "line_lengths": [
+        14,
+        7
+      ],
+      "characters_per_second": 13.51
+    },
+    {
+      "block": 9,
+      "start": 13.28,
+      "end": 14.46,
+      "duration": 1.1800000000000015,
+      "text": "E PERFEITO PARA ROUBAR",
+      "lines": 2,
+      "line_lengths": [
+        10,
+        11
+      ],
+      "characters_per_second": 16.1
+    },
+    {
+      "block": 10,
+      "start": 14.46,
+      "end": 15.46,
+      "duration": 1.0,
+      "text": "TODOS OS OLHARES.",
+      "lines": 2,
+      "line_lengths": [
+        8,
+        8
+      ],
+      "characters_per_second": 15.0
+    },
+    {
+      "block": 11,
+      "start": 15.86,
+      "end": 16.82,
+      "duration": 0.9600000000000009,
+      "text": "AZUL MARINHO GELO",
+      "lines": 2,
+      "line_lengths": [
+        12,
+        4
+      ],
+      "characters_per_second": 15.62
+    },
+    {
+      "block": 12,
+      "start": 16.82,
+      "end": 18.32,
+      "duration": 1.5,
+      "text": "FICA CLÁSSICO, DESLUMBRANTE",
+      "lines": 2,
+      "line_lengths": [
+        14,
+        12
+      ],
+      "characters_per_second": 16.67
+    },
+    {
+      "block": 13,
+      "start": 18.32,
+      "end": 19.04,
+      "duration": 0.7199999999999989,
+      "text": "E VOCÊS VIRAREM",
+      "lines": 2,
+      "line_lengths": [
+        7,
+        7
+      ],
+      "characters_per_second": 18.06
+    },
+    {
+      "block": 14,
+      "start": 19.04,
+      "end": 20.2,
+      "duration": 1.1600000000000001,
+      "text": "O CENTRO DAS ATENÇÕES.",
+      "lines": 2,
+      "line_lengths": [
+        8,
+        13
+      ],
+      "characters_per_second": 16.38
+    },
+    {
+      "block": 15,
+      "start": 20.76,
+      "end": 21.62,
+      "duration": 0.8599999999999994,
+      "text": "PRETO COM VINHO",
+      "lines": 2,
+      "line_lengths": [
+        5,
+        9
+      ],
+      "characters_per_second": 15.12
+    },
+    {
+      "block": 16,
+      "start": 21.62,
+      "end": 23.28,
+      "duration": 1.6600000000000001,
+      "text": "FICA PODEROSO, SENSUAL",
+      "lines": 2,
+      "line_lengths": [
+        14,
+        7
+      ],
+      "characters_per_second": 12.05
+    },
+    {
+      "block": 17,
+      "start": 23.28,
+      "end": 25.24,
+      "duration": 1.9599999999999973,
+      "text": "E IMPOSSÍVEL DE PASSAR DESPERCEBIDO.",
+      "lines": 2,
+      "line_lengths": [
+        15,
+        20
+      ],
+      "characters_per_second": 16.33
+    }
+  ]
+}

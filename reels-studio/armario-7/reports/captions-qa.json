@@ -1,0 +1,77 @@
+{
+  "file": "/home/user/PRINCIPALEDI-O/reels-studio/armario-7/armario-7-captions.srt",
+  "status": "pass",
+  "caption_count": 5,
+  "summary": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "issues": [],
+  "captions": [
+    {
+      "block": 1,
+      "start": 0.0,
+      "end": 4.9,
+      "duration": 4.9,
+      "text": "Lembre-se, vermelho cereja com cinza gelo fica usado e magnético.",
+      "lines": 2,
+      "line_lengths": [
+        41,
+        23
+      ],
+      "characters_per_second": 11.43
+    },
+    {
+      "block": 2,
+      "start": 5.24,
+      "end": 8.72,
+      "duration": 3.4800000000000004,
+      "text": "Branco com azul claro fica criativo e descontraído.",
+      "lines": 2,
+      "line_lengths": [
+        21,
+        29
+      ],
+      "characters_per_second": 12.64
+    },
+    {
+      "block": 3,
+      "start": 9.0,
+      "end": 12.44,
+      "duration": 3.4399999999999995,
+      "text": "Roxo uva com areia fica autêntico e inesquecível.",
+      "lines": 2,
+      "line_lengths": [
+        18,
+        30
+      ],
+      "characters_per_second": 12.21
+    },
+    {
+      "block": 4,
+      "start": 12.86,
+      "end": 16.2,
+      "duration": 3.34,
+      "text": "Preto com azul jeans fica espetacular e carismático.",
+      "lines": 2,
+      "line_lengths": [
+        20,
+        31
+      ],
+      "characters_per_second": 13.47
+    },
+    {
+      "block": 5,
+      "start": 16.82,
+      "end": 20.06,
+      "duration": 3.2399999999999984,
+      "text": "Verde musgo com preto fica imponente e irreverente.",
+      "lines": 2,
+      "line_lengths": [
+        21,
+        29
+      ],
+      "characters_per_second": 13.58
+    }
+  ]
+}

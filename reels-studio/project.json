@@ -1,0 +1,497 @@
+{
+  "width": 1080,
+  "height": 1920,
+  "fps": 60,
+  "durationInFrames": 1200,
+  "audio": "soundtrack.wav",
+  "font": "Inter",
+  "showSafeZones": false,
+  "safeZones": {
+    "top": 220,
+    "bottom": 440,
+    "right": 120,
+    "left": 60
+  },
+  "captionStyle": {
+    "top": 1190,
+    "maxWidth": 900,
+    "fontSize": 78
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "label": "01 / GANCHO",
+      "visual": "hook",
+      "title": "O GANCHO VEM PRIMEIRO",
+      "subtitle": "pare o scroll antes de explicar",
+      "accent": "#ffc24b",
+      "startFrame": 0,
+      "durationInFrames": 204,
+      "start": 0.0,
+      "voiceStart": 0.25,
+      "voiceDuration": 2.11567,
+      "groups": [
+        {
+          "start": 0.25,
+          "end": 1.0056,
+          "words": [
+            {
+              "text": "SEU",
+              "start": 0.25,
+              "end": 0.55224
+            },
+            {
+              "text": "VÍDEO",
+              "start": 0.55224,
+              "end": 1.0056
+            }
+          ]
+        },
+        {
+          "start": 1.0056,
+          "end": 1.68563,
+          "words": [
+            {
+              "text": "TEM",
+              "start": 1.0056,
+              "end": 1.30783
+            },
+            {
+              "text": "TRÊS",
+              "start": 1.30783,
+              "end": 1.68563
+            }
+          ]
+        },
+        {
+          "start": 1.68563,
+          "end": 2.56567,
+          "words": [
+            {
+              "text": "SEGUNDOS.",
+              "start": 1.68563,
+              "end": 2.36567
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guide",
+      "label": "02 / LEITURA",
+      "visual": "guide",
+      "title": "UMA COISA DE CADA VEZ",
+      "subtitle": "a legenda conduz, não compete",
+      "accent": "#67e8f9",
+      "startFrame": 204,
+      "durationInFrames": 180,
+      "start": 3.4,
+      "voiceStart": 3.65,
+      "voiceDuration": 1.61062,
+      "groups": [
+        {
+          "start": 3.65,
+          "end": 4.35867,
+          "words": [
+            {
+              "text": "A",
+              "start": 3.65,
+              "end": 3.84327
+            },
+            {
+              "text": "LEGENDA",
+              "start": 3.84327,
+              "end": 4.35867
+            }
+          ]
+        },
+        {
+          "start": 4.35867,
+          "end": 5.46062,
+          "words": [
+            {
+              "text": "GUIA",
+              "start": 4.35867,
+              "end": 4.6808
+            },
+            {
+              "text": "O",
+              "start": 4.6808,
+              "end": 4.87407
+            },
+            {
+              "text": "OLHAR.",
+              "start": 4.87407,
+              "end": 5.26062
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cuts",
+      "label": "03 / RITMO",
+      "visual": "cuts",
+      "title": "CORTE COM INTENÇÃO",
+      "subtitle": "ritmo não é pressa sem critério",
+      "accent": "#fb7185",
+      "startFrame": 384,
+      "durationInFrames": 180,
+      "start": 6.4,
+      "voiceStart": 6.65,
+      "voiceDuration": 1.60512,
+      "groups": [
+        {
+          "start": 6.65,
+          "end": 7.22785,
+          "words": [
+            {
+              "text": "O",
+              "start": 6.65,
+              "end": 6.84262
+            },
+            {
+              "text": "CORTE",
+              "start": 6.84262,
+              "end": 7.22785
+            }
+          ]
+        },
+        {
+          "start": 7.22785,
+          "end": 8.45512,
+          "words": [
+            {
+              "text": "MANTÉM",
+              "start": 7.22785,
+              "end": 7.67728
+            },
+            {
+              "text": "O",
+              "start": 7.67728,
+              "end": 7.8699
+            },
+            {
+              "text": "RITMO.",
+              "start": 7.8699,
+              "end": 8.25512
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audio",
+      "label": "04 / ÁUDIO",
+      "visual": "audio",
+      "title": "VOZ NA FRENTE",
+      "subtitle": "música e efeitos abrem espaço",
+      "accent": "#6ee7b7",
+      "startFrame": 564,
+      "durationInFrames": 192,
+      "start": 9.4,
+      "voiceStart": 9.65,
+      "voiceDuration": 1.99246,
+      "groups": [
+        {
+          "start": 9.65,
+          "end": 10.68954,
+          "words": [
+            {
+              "text": "ÁUDIO",
+              "start": 9.65,
+              "end": 10.16977
+            },
+            {
+              "text": "LIMPO",
+              "start": 10.16977,
+              "end": 10.68954
+            }
+          ]
+        },
+        {
+          "start": 10.68954,
+          "end": 11.84246,
+          "words": [
+            {
+              "text": "ELEVA",
+              "start": 10.68954,
+              "end": 11.20931
+            },
+            {
+              "text": "TUDO.",
+              "start": 11.20931,
+              "end": 11.64246
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "motion",
+      "label": "05 / MOTION",
+      "visual": "motion",
+      "title": "MOVIMENTO COM PROPÓSITO",
+      "subtitle": "a ação explica a mudança",
+      "accent": "#c4b5fd",
+      "startFrame": 756,
+      "durationInFrames": 252,
+      "start": 12.6,
+      "voiceStart": 12.85,
+      "voiceDuration": 2.87021,
+      "groups": [
+        {
+          "start": 12.85,
+          "end": 14.64388,
+          "words": [
+            {
+              "text": "MOTION",
+              "start": 12.85,
+              "end": 13.47786
+            },
+            {
+              "text": "COM",
+              "start": 13.47786,
+              "end": 13.83663
+            },
+            {
+              "text": "INTENÇÃO,",
+              "start": 13.83663,
+              "end": 14.64388
+            }
+          ]
+        },
+        {
+          "start": 14.64388,
+          "end": 15.92021,
+          "words": [
+            {
+              "text": "SEM",
+              "start": 14.64388,
+              "end": 15.00266
+            },
+            {
+              "text": "EXAGERO.",
+              "start": 15.00266,
+              "end": 15.72021
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "label": "06 / CTA",
+      "visual": "cta",
+      "title": "VAMOS EDITAR?",
+      "subtitle": "sua próxima versão começa aqui",
+      "accent": "#ffc24b",
+      "startFrame": 1008,
+      "durationInFrames": 192,
+      "start": 16.8,
+      "voiceStart": 17.05,
+      "voiceDuration": 1.83825,
+      "groups": [
+        {
+          "start": 17.05,
+          "end": 18.15295,
+          "words": [
+            {
+              "text": "QUER",
+              "start": 17.05,
+              "end": 17.35637
+            },
+            {
+              "text": "EDITAR",
+              "start": 17.35637,
+              "end": 17.7853
+            },
+            {
+              "text": "ASSIM?",
+              "start": 17.7853,
+              "end": 18.15295
+            }
+          ]
+        },
+        {
+          "start": 18.15295,
+          "end": 19.08825,
+          "words": [
+            {
+              "text": "CHAMA",
+              "start": 18.15295,
+              "end": 18.5206
+            },
+            {
+              "text": "AGORA.",
+              "start": 18.5206,
+              "end": 18.88825
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "waveform": [
+    0.0,
+    0.0,
+    0.3115,
+    0.9805,
+    0.549,
+    0.5439,
+    0.6926,
+    0.6522,
+    0.2822,
+    0.8682,
+    0.3083,
+    0.4519,
+    0.8856,
+    0.4337,
+    0.7707,
+    0.4687,
+    0.394,
+    0.151,
+    0.2739,
+    0.0001,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.6797,
+    0.7279,
+    0.4904,
+    0.7539,
+    0.7424,
+    0.5994,
+    0.5165,
+    0.8511,
+    0.9182,
+    0.8769,
+    0.8064,
+    0.504,
+    0.2039,
+    0.0313,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.482,
+    0.6619,
+    0.9815,
+    0.2485,
+    0.7072,
+    0.8838,
+    0.5871,
+    0.7446,
+    0.8066,
+    0.3822,
+    0.5186,
+    0.4206,
+    0.3716,
+    0.0131,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.7714,
+    0.8615,
+    0.8918,
+    0.8204,
+    0.8395,
+    0.4861,
+    0.6935,
+    0.114,
+    0.0424,
+    0.7943,
+    0.784,
+    0.5996,
+    0.2877,
+    0.4335,
+    0.5465,
+    0.2564,
+    0.0459,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.3473,
+    1,
+    0.9153,
+    0.535,
+    0.8054,
+    0.7619,
+    0.1165,
+    0.9883,
+    0.7704,
+    0.6638,
+    0.5869,
+    0.5593,
+    0.5977,
+    0.1065,
+    0.001,
+    0.0003,
+    0.0005,
+    0.3359,
+    0.7333,
+    0.8989,
+    0.6525,
+    0.4083,
+    0.4876,
+    0.097,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.6554,
+    0.7769,
+    0.6024,
+    0.5061,
+    0.6255,
+    0.6628,
+    0.6212,
+    0.013,
+    0.0005,
+    0.0045,
+    0.2616,
+    0.7055,
+    0.7787,
+    0.8742,
+    0.4818,
+    0.0722,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

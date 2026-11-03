@@ -1,0 +1,75 @@
+{
+  "scope": "Revisão de transcrição por múltiplas passagens de ASR; não equivale a escuta humana integral.",
+  "model": "faster-whisper small CTranslate2 int8",
+  "analysis_audio": "Mono PCM 16 kHz extraído da fonte; trechos a 0,75× foram usados somente para análise, nunca no master.",
+  "passes": [
+    {
+      "name": "integral-1",
+      "condition_on_previous_text": true,
+      "beam_size": 5,
+      "texts": [
+        "Lembre, marfim com azul petróleo fica elegante, sofisticado e chama atenção na festa.",
+        "Pink com caramelo fica marcante, luxuoso e perfeito para roubar todos os olhares.",
+        "Verde salvia com chocolate fica refinado, chique e deixa o casal com cara de muita riqueza.",
+        "Preto com cerejo escuro fica poderoso, sensual e impossível de passar despercebido."
+      ]
+    },
+    {
+      "name": "integral-2",
+      "condition_on_previous_text": false,
+      "beam_size": 8,
+      "texts": [
+        "Lembre, marfim com azul petróleo fica elegante, sofisticado e chama atenção na festa.",
+        "Pink com caramelo fica marcante, luxuoso e perfeito para roubar todos os olhares.",
+        "Verde salvia com chocolate fica refinado, chique e deixa o casal com cara de muita riqueza.",
+        "Preto com cerejo escuro fica poderoso, sensual e impossível de passar despercebido."
+      ]
+    },
+    {
+      "name": "abertura-isolada",
+      "text": "Relembre."
+    },
+    {
+      "name": "abertura-isolada-075",
+      "text": "RELEMBRE!"
+    },
+    {
+      "name": "ultima-cor-isolada",
+      "text": "preto com sereja escuro..."
+    },
+    {
+      "name": "ultima-cor-isolada-075",
+      "text": "preto com cerejo escuro"
+    },
+    {
+      "name": "ultima-cor-contexto-ampliado",
+      "text": "Preto com sereja escuro fica..."
+    },
+    {
+      "name": "ultima-cor-contexto-ampliado-literal",
+      "text": "Preto com sereja escuro fica..."
+    }
+  ],
+  "decisions": [
+    {
+      "look": "look-1",
+      "text": "Relembre, marfim com azul petróleo fica elegante, sofisticado e chama atenção na festa.",
+      "note": "As passagens integrais omitiram o prefixo e reconheceram Lembre; as análises isoladas normal e 0,75× reconheceram Relembre. Adotado Relembre, sem acrescentar -se."
+    },
+    {
+      "look": "look-2",
+      "text": "Pink com caramelo fica marcante, luxuoso e perfeito para roubar todos os olhares.",
+      "note": "Duas passagens integrais convergentes; nenhuma alteração de conteúdo."
+    },
+    {
+      "look": "look-3",
+      "text": "Verde-sálvia com chocolate fica refinado, chique e deixa o casal com cara de muita riqueza.",
+      "note": "Somente a grafia verde salvia foi normalizada para verde-sálvia. A cor composta permanece em uma única palavra de legenda para não criar quebra indevida."
+    },
+    {
+      "look": "look-4",
+      "text": "Preto com cereja escuro fica poderoso, sensual e impossível de passar despercebido.",
+      "note": "Houve divergência do ASR entre cerejo e sereja/cereja. Duas análises isoladas em velocidade normal, com e sem prompt literal, favoreceram a forma correspondente a cereja; essa grafia foi adotada. Escuro foi consistente em todas as passagens e não foi substituído por escura. A divergência permanece registrada; não se declara confirmação por escuta humana."
+    }
+  ]
+}

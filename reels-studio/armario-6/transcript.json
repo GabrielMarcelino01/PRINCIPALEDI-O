@@ -1,0 +1,331 @@
+{
+  "language": "pt",
+  "language_probability": 1,
+  "duration": 20.6933125,
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.76,
+      "text": "Lembre-se, creme com marrom café é elegância de verdade.",
+      "avg_logprob": -0.22195536964818052,
+      "no_speech_prob": 0.010597261600196362,
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.62,
+          "word": " Lembre",
+          "probability": 0.9535727500915527
+        },
+        {
+          "start": 0.62,
+          "end": 0.8,
+          "word": "-se,",
+          "probability": 0.9966774582862854
+        },
+        {
+          "start": 0.98,
+          "end": 1.36,
+          "word": " creme",
+          "probability": 0.895833283662796
+        },
+        {
+          "start": 1.36,
+          "end": 1.54,
+          "word": " com",
+          "probability": 0.9881226420402527
+        },
+        {
+          "start": 1.54,
+          "end": 1.86,
+          "word": " marrom",
+          "probability": 0.9451138079166412
+        },
+        {
+          "start": 1.86,
+          "end": 2.24,
+          "word": " café",
+          "probability": 0.7185781002044678
+        },
+        {
+          "start": 2.24,
+          "end": 2.66,
+          "word": " é",
+          "probability": 0.9844592809677124
+        },
+        {
+          "start": 2.66,
+          "end": 3.24,
+          "word": " elegância",
+          "probability": 0.8748635351657867
+        },
+        {
+          "start": 3.24,
+          "end": 3.4,
+          "word": " de",
+          "probability": 0.9962958693504333
+        },
+        {
+          "start": 3.4,
+          "end": 3.76,
+          "word": " verdade.",
+          "probability": 0.9988358616828918
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 4.4,
+      "end": 8.14,
+      "text": "Verde oliva e caramelo, combinação de muito bom gosto.",
+      "avg_logprob": -0.22195536964818052,
+      "no_speech_prob": 0.010597261600196362,
+      "words": [
+        {
+          "start": 4.4,
+          "end": 4.86,
+          "word": " Verde",
+          "probability": 0.9575147330760956
+        },
+        {
+          "start": 4.86,
+          "end": 5.28,
+          "word": " oliva",
+          "probability": 0.7568576335906982
+        },
+        {
+          "start": 5.28,
+          "end": 5.56,
+          "word": " e",
+          "probability": 0.9884516000747681
+        },
+        {
+          "start": 5.56,
+          "end": 6.2,
+          "word": " caramelo,",
+          "probability": 0.9647514621416727
+        },
+        {
+          "start": 6.52,
+          "end": 7.08,
+          "word": " combinação",
+          "probability": 0.982122153043747
+        },
+        {
+          "start": 7.08,
+          "end": 7.36,
+          "word": " de",
+          "probability": 0.9956437349319458
+        },
+        {
+          "start": 7.36,
+          "end": 7.68,
+          "word": " muito",
+          "probability": 0.9950703382492065
+        },
+        {
+          "start": 7.68,
+          "end": 7.92,
+          "word": " bom",
+          "probability": 0.955353319644928
+        },
+        {
+          "start": 7.92,
+          "end": 8.14,
+          "word": " gosto.",
+          "probability": 0.8099308013916016
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 8.62,
+      "end": 12.22,
+      "text": "Vinho com cinza grafite fica caro e atemporal.",
+      "avg_logprob": -0.22195536964818052,
+      "no_speech_prob": 0.010597261600196362,
+      "words": [
+        {
+          "start": 8.62,
+          "end": 9.08,
+          "word": " Vinho",
+          "probability": 0.9035962820053101
+        },
+        {
+          "start": 9.08,
+          "end": 9.3,
+          "word": " com",
+          "probability": 0.9970834851264954
+        },
+        {
+          "start": 9.3,
+          "end": 9.72,
+          "word": " cinza",
+          "probability": 0.9134624004364014
+        },
+        {
+          "start": 9.72,
+          "end": 10.28,
+          "word": " grafite",
+          "probability": 0.822679360707601
+        },
+        {
+          "start": 10.28,
+          "end": 10.7,
+          "word": " fica",
+          "probability": 0.8683823943138123
+        },
+        {
+          "start": 10.7,
+          "end": 11.32,
+          "word": " caro",
+          "probability": 0.9945683181285858
+        },
+        {
+          "start": 11.32,
+          "end": 11.5,
+          "word": " e",
+          "probability": 0.9887771010398865
+        },
+        {
+          "start": 11.5,
+          "end": 12.22,
+          "word": " atemporal.",
+          "probability": 0.9562841852506002
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 12.42,
+      "end": 16.12,
+      "text": "Azul claro com bege é riqueza, riqueza sem exagero.",
+      "avg_logprob": -0.22195536964818052,
+      "no_speech_prob": 0.010597261600196362,
+      "words": [
+        {
+          "start": 12.42,
+          "end": 12.74,
+          "word": " Azul",
+          "probability": 0.9318473935127258
+        },
+        {
+          "start": 12.74,
+          "end": 13.06,
+          "word": " claro",
+          "probability": 0.8482440114021301
+        },
+        {
+          "start": 13.06,
+          "end": 13.26,
+          "word": " com",
+          "probability": 0.9640019536018372
+        },
+        {
+          "start": 13.26,
+          "end": 13.78,
+          "word": " bege",
+          "probability": 0.5793594643473625
+        },
+        {
+          "start": 13.78,
+          "end": 14.06,
+          "word": " é",
+          "probability": 0.8592069745063782
+        },
+        {
+          "start": 14.06,
+          "end": 14.64,
+          "word": " riqueza,",
+          "probability": 0.9930612842241923
+        },
+        {
+          "start": 14.72,
+          "end": 15.26,
+          "word": " riqueza",
+          "probability": 0.9974147280057272
+        },
+        {
+          "start": 15.26,
+          "end": 15.52,
+          "word": " sem",
+          "probability": 0.9092086553573608
+        },
+        {
+          "start": 15.52,
+          "end": 16.12,
+          "word": " exagero.",
+          "probability": 0.9470784068107605
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 16.36,
+      "end": 20.02,
+      "text": "Azul marinho com marfim deixa qualquer casal sofisticado.",
+      "avg_logprob": -0.22195536964818052,
+      "no_speech_prob": 0.010597261600196362,
+      "words": [
+        {
+          "start": 16.36,
+          "end": 16.68,
+          "word": " Azul",
+          "probability": 0.9919070899486542
+        },
+        {
+          "start": 16.68,
+          "end": 17.02,
+          "word": " marinho",
+          "probability": 0.993469774723053
+        },
+        {
+          "start": 17.02,
+          "end": 17.2,
+          "word": " com",
+          "probability": 0.9946638345718384
+        },
+        {
+          "start": 17.2,
+          "end": 17.68,
+          "word": " marfim",
+          "probability": 0.9049974083900452
+        },
+        {
+          "start": 17.68,
+          "end": 18.02,
+          "word": " deixa",
+          "probability": 0.8789479732513428
+        },
+        {
+          "start": 18.02,
+          "end": 18.46,
+          "word": " qualquer",
+          "probability": 0.9950889945030212
+        },
+        {
+          "start": 18.46,
+          "end": 19.1,
+          "word": " casal",
+          "probability": 0.9798811674118042
+        },
+        {
+          "start": 19.1,
+          "end": 20.02,
+          "word": " sofisticado.",
+          "probability": 0.9970855712890625
+        }
+      ]
+    }
+  ],
+  "source": "../assets/armario-6/ARMARIO-6.mp4",
+  "source_sha256": "55010ad5a20333c661a2dec1348235bcf22a466f60fa5e67da6f54e2aedd6f1d",
+  "asr": {
+    "engine": "faster-whisper 1.2.1",
+    "model": "OpenAI Whisper small / CTranslate2 int8",
+    "model_sha256": "ca732cb1379efc49417d028465f543d83a39de2c61f3027678de103dc404ce73",
+    "language": "pt",
+    "word_timestamps": true,
+    "verification": "Duas decodificações independentes; texto concordante. Ortografia de bege revisada."
+  }
+}

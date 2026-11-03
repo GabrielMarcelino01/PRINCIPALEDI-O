@@ -1,0 +1,307 @@
+{
+  "source": "CLOSET-7.mp4",
+  "language": "pt-BR",
+  "asr": {
+    "engine": "faster-whisper 1.2.1",
+    "model": "OpenAI Whisper small / CTranslate2 int8",
+    "model_sha256": "ca732cb1379efc49417d028465f543d83a39de2c61f3027678de103dc404ce73",
+    "language": "pt",
+    "word_timestamps": true,
+    "verification": "Duas decodificações independentes; texto concordante. Três decodificações adicionais do primeiro trecho mantiveram 'usado'."
+  },
+  "review": "Tempos por palavra preservados; apenas 'Lembre' + '-se' foram unidos para exibição. Nenhuma fala foi reescrita.",
+  "segments": [
+    {
+      "id": 0,
+      "start": 0.0,
+      "end": 4.9,
+      "text": "Lembre-se, vermelho cereja com cinza gelo fica usado e magnético.",
+      "words": [
+        {
+          "text": "Lembre-se,",
+          "start": 0.0,
+          "end": 1.56,
+          "probability": 0.504593
+        },
+        {
+          "text": "vermelho",
+          "start": 1.66,
+          "end": 2.04,
+          "probability": 0.933331
+        },
+        {
+          "text": "cereja",
+          "start": 2.04,
+          "end": 2.54,
+          "probability": 0.847122
+        },
+        {
+          "text": "com",
+          "start": 2.54,
+          "end": 2.7,
+          "probability": 0.978824
+        },
+        {
+          "text": "cinza",
+          "start": 2.7,
+          "end": 3.06,
+          "probability": 0.912362
+        },
+        {
+          "text": "gelo",
+          "start": 3.06,
+          "end": 3.48,
+          "probability": 0.814593
+        },
+        {
+          "text": "fica",
+          "start": 3.48,
+          "end": 3.7,
+          "probability": 0.972201
+        },
+        {
+          "text": "usado",
+          "start": 3.7,
+          "end": 4.2,
+          "probability": 0.992726
+        },
+        {
+          "text": "e",
+          "start": 4.2,
+          "end": 4.3,
+          "probability": 0.642834
+        },
+        {
+          "text": "magnético.",
+          "start": 4.3,
+          "end": 4.9,
+          "probability": 0.988445
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "start": 5.24,
+      "end": 8.72,
+      "text": "Branco com azul claro fica criativo e descontraído.",
+      "words": [
+        {
+          "text": "Branco",
+          "start": 5.24,
+          "end": 5.74,
+          "probability": 0.903536
+        },
+        {
+          "text": "com",
+          "start": 5.74,
+          "end": 5.96,
+          "probability": 0.923025
+        },
+        {
+          "text": "azul",
+          "start": 5.96,
+          "end": 6.2,
+          "probability": 0.982967
+        },
+        {
+          "text": "claro",
+          "start": 6.2,
+          "end": 6.58,
+          "probability": 0.956329
+        },
+        {
+          "text": "fica",
+          "start": 6.58,
+          "end": 6.9,
+          "probability": 0.937108
+        },
+        {
+          "text": "criativo",
+          "start": 6.9,
+          "end": 7.62,
+          "probability": 0.994328
+        },
+        {
+          "text": "e",
+          "start": 7.62,
+          "end": 7.88,
+          "probability": 0.989762
+        },
+        {
+          "text": "descontraído.",
+          "start": 7.88,
+          "end": 8.72,
+          "probability": 0.984217
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 9.0,
+      "end": 12.44,
+      "text": "Roxo uva com areia fica autêntico e inesquecível.",
+      "words": [
+        {
+          "text": "Roxo",
+          "start": 9.0,
+          "end": 9.4,
+          "probability": 0.78829
+        },
+        {
+          "text": "uva",
+          "start": 9.4,
+          "end": 9.74,
+          "probability": 0.957354
+        },
+        {
+          "text": "com",
+          "start": 9.74,
+          "end": 9.88,
+          "probability": 0.993594
+        },
+        {
+          "text": "areia",
+          "start": 9.88,
+          "end": 10.26,
+          "probability": 0.968134
+        },
+        {
+          "text": "fica",
+          "start": 10.26,
+          "end": 10.54,
+          "probability": 0.966209
+        },
+        {
+          "text": "autêntico",
+          "start": 10.54,
+          "end": 11.36,
+          "probability": 0.987579
+        },
+        {
+          "text": "e",
+          "start": 11.36,
+          "end": 11.62,
+          "probability": 0.991369
+        },
+        {
+          "text": "inesquecível.",
+          "start": 11.62,
+          "end": 12.44,
+          "probability": 0.97633
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 12.86,
+      "end": 16.2,
+      "text": "Preto com azul jeans fica espetacular e carismático.",
+      "words": [
+        {
+          "text": "Preto",
+          "start": 12.86,
+          "end": 13.28,
+          "probability": 0.980731
+        },
+        {
+          "text": "com",
+          "start": 13.28,
+          "end": 13.42,
+          "probability": 0.990744
+        },
+        {
+          "text": "azul",
+          "start": 13.42,
+          "end": 13.68,
+          "probability": 0.910921
+        },
+        {
+          "text": "jeans",
+          "start": 13.68,
+          "end": 13.96,
+          "probability": 0.960022
+        },
+        {
+          "text": "fica",
+          "start": 13.96,
+          "end": 14.34,
+          "probability": 0.987744
+        },
+        {
+          "text": "espetacular",
+          "start": 14.34,
+          "end": 15.22,
+          "probability": 0.986477
+        },
+        {
+          "text": "e",
+          "start": 15.22,
+          "end": 15.5,
+          "probability": 0.994011
+        },
+        {
+          "text": "carismático.",
+          "start": 15.5,
+          "end": 16.2,
+          "probability": 0.972777
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 16.82,
+      "end": 20.06,
+      "text": "Verde musgo com preto fica imponente e irreverente.",
+      "words": [
+        {
+          "text": "Verde",
+          "start": 16.82,
+          "end": 17.12,
+          "probability": 0.969806
+        },
+        {
+          "text": "musgo",
+          "start": 17.12,
+          "end": 17.5,
+          "probability": 0.905546
+        },
+        {
+          "text": "com",
+          "start": 17.5,
+          "end": 17.66,
+          "probability": 0.992966
+        },
+        {
+          "text": "preto",
+          "start": 17.66,
+          "end": 18.14,
+          "probability": 0.994405
+        },
+        {
+          "text": "fica",
+          "start": 18.14,
+          "end": 18.38,
+          "probability": 0.980945
+        },
+        {
+          "text": "imponente",
+          "start": 18.38,
+          "end": 19.16,
+          "probability": 0.995994
+        },
+        {
+          "text": "e",
+          "start": 19.16,
+          "end": 19.38,
+          "probability": 0.995711
+        },
+        {
+          "text": "irreverente.",
+          "start": 19.38,
+          "end": 20.06,
+          "probability": 0.994843
+        }
+      ]
+    }
+  ]
+}

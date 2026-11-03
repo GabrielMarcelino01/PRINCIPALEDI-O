@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "source": "CRIATIVO-2.mp4",
+  "language": "pt-BR",
+  "method": "Duas passagens integrais com Whisper small CTranslate2 int8; comparação de segmentos e timestamps por palavra.",
+  "pass_1": "reports/asr-pass-1.json",
+  "pass_2": "reports/asr-pass-2.json",
+  "segments_pass_1": 15,
+  "segments_pass_2": 18,
+  "words": 132,
+  "content_agreement": true,
+  "editorial_corrections": [
+    "Pontuação e capitalização de Truque dos Mil Looks.",
+    "porquê -> por quê na interrogação indireta.",
+    "têm -> tem, com sujeito genérico implícito, sem alterar a fonética.",
+    "Closet -> closet como substantivo comum."
+  ],
+  "limits": [
+    "ASR e comparação entre passes não equivalem a escuta humana integral.",
+    "Nenhuma fala foi reconstruída ou dublada; captions seguem o áudio editado."
+  ]
+}

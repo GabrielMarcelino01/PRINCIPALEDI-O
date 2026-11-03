@@ -1,0 +1,400 @@
+{
+  "language": "pt",
+  "duration": 24.0,
+  "source": "assets/original.mp4",
+  "audio": "work/audio-16k.wav",
+  "model": "faster-whisper small CTranslate2 int8",
+  "reviewed": true,
+  "review_method": "Transcrição automática em múltiplas passagens e revisão editorial por texto; sem escuta humana integral.",
+  "review_notes": [
+    "Abertura: passagens globais leram Lembre; trechos isolados normal e 0,75× leram Relembre. Adotado Relembre.",
+    "Última cor: passagens globais e 0,75× divergiram entre cerejo/cereja; trechos isolados em velocidade normal favoreceram cereja. Mantido escuro, presente em todas as passagens.",
+    "Normalização editorial: verde-sálvia. Não se presume equivalência a revisão humana integral."
+  ],
+  "segments": [
+    {
+      "id": "look-1",
+      "start": 0.0,
+      "end": 5.7,
+      "text": "Relembre, marfim com azul petróleo fica elegante, sofisticado e chama atenção na festa.",
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.7,
+          "confidence": 0.535968,
+          "word": "Relembre,"
+        },
+        {
+          "start": 0.96,
+          "end": 1.48,
+          "confidence": 0.751824,
+          "word": "marfim"
+        },
+        {
+          "start": 1.48,
+          "end": 1.64,
+          "confidence": 0.99152,
+          "word": "com"
+        },
+        {
+          "start": 1.64,
+          "end": 1.92,
+          "confidence": 0.921057,
+          "word": "azul"
+        },
+        {
+          "start": 1.92,
+          "end": 2.44,
+          "confidence": 0.982347,
+          "word": "petróleo"
+        },
+        {
+          "start": 2.44,
+          "end": 2.72,
+          "confidence": 0.985186,
+          "word": "fica"
+        },
+        {
+          "start": 2.72,
+          "end": 3.36,
+          "confidence": 0.994916,
+          "word": "elegante,"
+        },
+        {
+          "start": 3.56,
+          "end": 4.32,
+          "confidence": 0.996497,
+          "word": "sofisticado"
+        },
+        {
+          "start": 4.32,
+          "end": 4.52,
+          "confidence": 0.937811,
+          "word": "e"
+        },
+        {
+          "start": 4.52,
+          "end": 4.76,
+          "confidence": 0.991807,
+          "word": "chama"
+        },
+        {
+          "start": 4.76,
+          "end": 5.16,
+          "confidence": 0.572589,
+          "word": "atenção"
+        },
+        {
+          "start": 5.16,
+          "end": 5.32,
+          "confidence": 0.987864,
+          "word": "na"
+        },
+        {
+          "start": 5.32,
+          "end": 5.7,
+          "confidence": 0.99427,
+          "word": "festa."
+        }
+      ],
+      "group_ids": [
+        "look-1-cores",
+        "look-1-estilo",
+        "look-1-resultado"
+      ],
+      "asr_text": "Lembre, marfim com azul petróleo fica elegante, sofisticado e chama atenção na festa.",
+      "editorial_note": "Abertura revista em trecho isolado normal e 0,75×: Relembre."
+    },
+    {
+      "id": "look-2",
+      "start": 6.16,
+      "end": 11.78,
+      "text": "Pink com caramelo fica marcante, luxuoso e perfeito para roubar todos os olhares.",
+      "words": [
+        {
+          "start": 6.16,
+          "end": 6.48,
+          "confidence": 0.572555,
+          "word": "Pink"
+        },
+        {
+          "start": 6.48,
+          "end": 6.72,
+          "confidence": 0.990061,
+          "word": "com"
+        },
+        {
+          "start": 6.72,
+          "end": 7.3,
+          "confidence": 0.961699,
+          "word": "caramelo"
+        },
+        {
+          "start": 7.3,
+          "end": 7.7,
+          "confidence": 0.841133,
+          "word": "fica"
+        },
+        {
+          "start": 7.7,
+          "end": 8.36,
+          "confidence": 0.98144,
+          "word": "marcante,"
+        },
+        {
+          "start": 8.66,
+          "end": 9.3,
+          "confidence": 0.986613,
+          "word": "luxuoso"
+        },
+        {
+          "start": 9.3,
+          "end": 9.54,
+          "confidence": 0.967687,
+          "word": "e"
+        },
+        {
+          "start": 9.54,
+          "end": 10.08,
+          "confidence": 0.997137,
+          "word": "perfeito"
+        },
+        {
+          "start": 10.08,
+          "end": 10.32,
+          "confidence": 0.974183,
+          "word": "para"
+        },
+        {
+          "start": 10.32,
+          "end": 10.68,
+          "confidence": 0.995568,
+          "word": "roubar"
+        },
+        {
+          "start": 10.68,
+          "end": 10.96,
+          "confidence": 0.994585,
+          "word": "todos"
+        },
+        {
+          "start": 10.96,
+          "end": 11.24,
+          "confidence": 0.999003,
+          "word": "os"
+        },
+        {
+          "start": 11.24,
+          "end": 11.78,
+          "confidence": 0.973798,
+          "word": "olhares."
+        }
+      ],
+      "group_ids": [
+        "look-2-cores",
+        "look-2-estilo",
+        "look-2-resultado-a",
+        "look-2-resultado-b"
+      ],
+      "asr_text": "Pink com caramelo fica marcante, luxuoso e perfeito para roubar todos os olhares.",
+      "editorial_note": "Texto estável nas passagens globais; sem alteração de sentido."
+    },
+    {
+      "id": "look-3",
+      "start": 12.14,
+      "end": 17.74,
+      "text": "Verde-sálvia com chocolate fica refinado, chique e deixa o casal com cara de muita riqueza.",
+      "words": [
+        {
+          "start": 12.14,
+          "end": 12.88,
+          "confidence": 0.671683,
+          "word": "verde-sálvia"
+        },
+        {
+          "start": 12.88,
+          "end": 13.02,
+          "confidence": 0.994258,
+          "word": "com"
+        },
+        {
+          "start": 13.02,
+          "end": 13.46,
+          "confidence": 0.958546,
+          "word": "chocolate"
+        },
+        {
+          "start": 13.46,
+          "end": 13.86,
+          "confidence": 0.988637,
+          "word": "fica"
+        },
+        {
+          "start": 13.86,
+          "end": 14.56,
+          "confidence": 0.987571,
+          "word": "refinado,"
+        },
+        {
+          "start": 14.78,
+          "end": 15.24,
+          "confidence": 0.869083,
+          "word": "chique"
+        },
+        {
+          "start": 15.24,
+          "end": 15.7,
+          "confidence": 0.856988,
+          "word": "e"
+        },
+        {
+          "start": 15.7,
+          "end": 15.92,
+          "confidence": 0.917656,
+          "word": "deixa"
+        },
+        {
+          "start": 15.92,
+          "end": 16.02,
+          "confidence": 0.994764,
+          "word": "o"
+        },
+        {
+          "start": 16.02,
+          "end": 16.36,
+          "confidence": 0.994016,
+          "word": "casal"
+        },
+        {
+          "start": 16.36,
+          "end": 16.5,
+          "confidence": 0.991699,
+          "word": "com"
+        },
+        {
+          "start": 16.5,
+          "end": 16.72,
+          "confidence": 0.893071,
+          "word": "cara"
+        },
+        {
+          "start": 16.72,
+          "end": 16.9,
+          "confidence": 0.993075,
+          "word": "de"
+        },
+        {
+          "start": 16.9,
+          "end": 17.18,
+          "confidence": 0.974303,
+          "word": "muita"
+        },
+        {
+          "start": 17.18,
+          "end": 17.74,
+          "confidence": 0.992502,
+          "word": "riqueza."
+        }
+      ],
+      "group_ids": [
+        "look-3-cores",
+        "look-3-estilo",
+        "look-3-resultado-a",
+        "look-3-resultado-b"
+      ],
+      "asr_text": "Verde salvia com chocolate fica refinado, chique e deixa o casal com cara de muita riqueza.",
+      "editorial_note": "Normalização editorial de verde salvia para verde-sálvia; palavra composta na legenda para evitar quebra indevida."
+    },
+    {
+      "id": "look-4",
+      "start": 18.2,
+      "end": 23.68,
+      "text": "Preto com cereja escuro fica poderoso, sensual e impossível de passar despercebido.",
+      "words": [
+        {
+          "start": 18.2,
+          "end": 18.54,
+          "confidence": 0.985718,
+          "word": "Preto"
+        },
+        {
+          "start": 18.54,
+          "end": 18.68,
+          "confidence": 0.982861,
+          "word": "com"
+        },
+        {
+          "start": 18.68,
+          "end": 19.1,
+          "confidence": 0.620247,
+          "word": "cereja"
+        },
+        {
+          "start": 19.1,
+          "end": 19.5,
+          "confidence": 0.993787,
+          "word": "escuro"
+        },
+        {
+          "start": 19.5,
+          "end": 19.8,
+          "confidence": 0.989066,
+          "word": "fica"
+        },
+        {
+          "start": 19.8,
+          "end": 20.52,
+          "confidence": 0.999275,
+          "word": "poderoso,"
+        },
+        {
+          "start": 20.74,
+          "end": 21.44,
+          "confidence": 0.993806,
+          "word": "sensual"
+        },
+        {
+          "start": 21.44,
+          "end": 21.7,
+          "confidence": 0.986901,
+          "word": "e"
+        },
+        {
+          "start": 21.7,
+          "end": 22.48,
+          "confidence": 0.993699,
+          "word": "impossível"
+        },
+        {
+          "start": 22.48,
+          "end": 22.58,
+          "confidence": 0.998277,
+          "word": "de"
+        },
+        {
+          "start": 22.58,
+          "end": 22.86,
+          "confidence": 0.996731,
+          "word": "passar"
+        },
+        {
+          "start": 22.86,
+          "end": 23.68,
+          "confidence": 0.909155,
+          "word": "despercebido."
+        }
+      ],
+      "group_ids": [
+        "look-4-cores",
+        "look-4-estilo",
+        "look-4-resultado"
+      ],
+      "asr_text": "Preto com cerejo escuro fica poderoso, sensual e impossível de passar despercebido.",
+      "editorial_note": "Passagens isoladas em velocidade normal favoreceram cereja; escuro foi consistente e permanece escuro. Divergência do ASR registrada nos relatórios de trabalho."
+    }
+  ],
+  "language_probability": 1.0,
+  "source_commit": "7389515924d3fc3b7b4f32371cc2e31f77b2524e",
+  "source_blob": "a36f40bd357c03e0d1ed499c7a59516e400b8af3",
+  "source_sha256": "a781c0cca15bfbeaebde73f473154990e7069a04272bb9a80ffdc9f59232b978"
+}

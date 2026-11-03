@@ -1,0 +1,69 @@
+{
+  "scope": "Revisão de transcrição por ASR; não equivale a escuta humana integral.",
+  "model": "faster-whisper small CTranslate2 int8",
+  "passes": [
+    {
+      "name": "integral-1",
+      "condition_on_previous_text": true,
+      "beam_size": 5,
+      "texts": [
+        "Lembre-se, rosa-chá com marrom-chocolate fica usado e sofisticada.",
+        "Use preto com caramelo, e fique sofisticada e irresistível.",
+        "Use rosa-queimado com marrom, e fique moderna e poderosa.",
+        "Use verde-oliva com beje, e fique chique e autêntica.",
+        "Use vinho com cinza claro, e fique elegante e marcante."
+      ]
+    },
+    {
+      "name": "integral-2",
+      "condition_on_previous_text": false,
+      "beam_size": 8,
+      "texts": [
+        "Lembre-se, rosa-chá com marrom-chocolate fica usado e sofisticada.",
+        "Use preto com caramelo, e fique sofisticada e irresistível.",
+        "Use rosa-queimado com marrom, e fique moderna e poderosa.",
+        "Use verde-oliva com beje, e fique chique e autêntica.",
+        "Use vinho com cinza claro, e fique elegante e marcante."
+      ]
+    },
+    {
+      "name": "primeira-frase-isolada",
+      "text": "Lembre-se, rosa chá com marrom chocolate fica usado e sofisticado."
+    },
+    {
+      "name": "primeira-frase-075",
+      "text": "Lembre-se, rosa chá com marrom chocolate fica usado e sofisticado."
+    },
+    {
+      "name": "ultima-palavra-075",
+      "text": "e sofisticado."
+    }
+  ],
+  "decisions": [
+    {
+      "look": "look-1",
+      "text": "Lembre-se, rosa-chá com marrom chocolate fica usado e sofisticado.",
+      "note": "Quatro passagens reconheceram “fica usado”; preservado apesar da construção incomum. As análises isoladas normal e a 0,75× indicaram “sofisticado”. Bloco limitado a 4,14 s na troca de look. “Marrom chocolate” foi separado em duas palavras na legenda para preservar o tamanho padrão e evitar overflow, como no tratamento de “azul marinho” do vídeo anterior."
+    },
+    {
+      "look": "look-2",
+      "text": "Use preto com caramelo e fique sofisticada e irresistível.",
+      "note": "Duas passagens integrais convergentes; apenas a vírgula editorial foi omitida na legenda das cores."
+    },
+    {
+      "look": "look-3",
+      "text": "Use rosa-queimado com marrom e fique moderna e poderosa.",
+      "note": "Duas passagens integrais convergentes."
+    },
+    {
+      "look": "look-4",
+      "text": "Use verde-oliva com bege e fique chique e autêntica.",
+      "note": "Somente a grafia “beje” foi normalizada para “bege”, sem mudança de pronúncia ou conteúdo."
+    },
+    {
+      "look": "look-5",
+      "text": "Use vinho com cinza claro e fique elegante e marcante.",
+      "note": "Duas passagens integrais convergentes."
+    }
+  ]
+}

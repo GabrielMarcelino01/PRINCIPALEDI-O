@@ -1,0 +1,544 @@
+{
+  "project": "CRIATIVO-2",
+  "source": {
+    "file": "assets/original.mp4",
+    "sha256": "94cbd37a9eb5255063f4f71aecc944521ddc0d4bf52fff7adba749c3c505ae9d",
+    "duration": 56.0,
+    "frames": 1344,
+    "fps": 24,
+    "width": 720,
+    "height": 1280
+  },
+  "edit": {
+    "speed": 1.2,
+    "pitch_preserved": true,
+    "cut_frames": [
+      [
+        84,
+        90
+      ],
+      [
+        183,
+        203
+      ],
+      [
+        284,
+        290
+      ],
+      [
+        378,
+        381
+      ],
+      [
+        573,
+        577
+      ],
+      [
+        765,
+        768
+      ],
+      [
+        889,
+        893
+      ],
+      [
+        951,
+        954
+      ],
+      [
+        1033,
+        1037
+      ],
+      [
+        1144,
+        1151
+      ],
+      [
+        1313,
+        1317
+      ],
+      [
+        1341,
+        1344
+      ]
+    ],
+    "removed_frames": 67,
+    "removed_seconds": 2.7916666666666665,
+    "kept_frames": 1277,
+    "output_frames": 1064,
+    "output_duration": 44.333333333333336
+  },
+  "look": {
+    "description": "Contraste suave, realces quentes, sombras frias e vinheta discreta",
+    "font": "Inter Caption",
+    "font_size": 40,
+    "max_lines": 2,
+    "margin_v": 205,
+    "color_space": "BT.709"
+  },
+  "captions": [
+    {
+      "id": 1,
+      "first_word": 0,
+      "last_word": 6,
+      "source_start": 0.0,
+      "source_end": 2.22,
+      "start": 0.0,
+      "end": 1.8500000000000003,
+      "duration": 1.8500000000000003,
+      "lines": [
+        "Toda brasileira que quer",
+        "se vestir melhor"
+      ],
+      "text": "Toda brasileira que quer\nse vestir melhor",
+      "emphasis": [
+        "se vestir melhor"
+      ],
+      "cps": 21.621621621621617
+    },
+    {
+      "id": 2,
+      "first_word": 7,
+      "last_word": 8,
+      "source_start": 2.22,
+      "source_end": 3.36,
+      "start": 1.8500000000000003,
+      "end": 2.8,
+      "duration": 0.9499999999999995,
+      "lines": [
+        "precisa entender."
+      ],
+      "text": "precisa entender.",
+      "emphasis": [
+        "precisa entender"
+      ],
+      "cps": 17.89473684210527
+    },
+    {
+      "id": 3,
+      "first_word": 9,
+      "last_word": 13,
+      "source_start": 3.84,
+      "source_end": 5.38,
+      "start": 2.9916666666666667,
+      "end": 4.275,
+      "duration": 1.2833333333333337,
+      "lines": [
+        "Não é ter muitas roupas."
+      ],
+      "text": "Não é ter muitas roupas.",
+      "emphasis": [
+        "muitas roupas"
+      ],
+      "cps": 18.701298701298697
+    },
+    {
+      "id": 4,
+      "first_word": 14,
+      "last_word": 19,
+      "source_start": 5.78,
+      "source_end": 7.48,
+      "start": 4.608333333333333,
+      "end": 6.025,
+      "duration": 1.416666666666667,
+      "lines": [
+        "É saber combinar",
+        "as que tem."
+      ],
+      "text": "É saber combinar\nas que tem.",
+      "emphasis": [
+        "combinar"
+      ],
+      "cps": 19.05882352941176
+    },
+    {
+      "id": 5,
+      "first_word": 20,
+      "last_word": 24,
+      "source_start": 8.58,
+      "source_end": 10.02,
+      "start": 6.247222222222222,
+      "end": 7.447222222222222,
+      "duration": 1.2000000000000002,
+      "lines": [
+        "Eu tinha o armário cheio,"
+      ],
+      "text": "Eu tinha o armário cheio,",
+      "emphasis": [
+        "armário cheio"
+      ],
+      "cps": 20.83333333333333
+    },
+    {
+      "id": 6,
+      "first_word": 25,
+      "last_word": 28,
+      "source_start": 10.219999999999999,
+      "source_end": 11.65,
+      "start": 7.613888888888888,
+      "end": 8.805555555555555,
+      "duration": 1.1916666666666673,
+      "lines": [
+        "mas saía sempre igual."
+      ],
+      "text": "mas saía sempre igual.",
+      "emphasis": [
+        "sempre igual"
+      ],
+      "cps": 18.461538461538453
+    },
+    {
+      "id": 7,
+      "first_word": 29,
+      "last_word": 33,
+      "source_start": 12.16,
+      "source_end": 13.89,
+      "start": 9.022222222222222,
+      "end": 10.463888888888889,
+      "duration": 1.4416666666666664,
+      "lines": [
+        "A roupa parecia sem graça,"
+      ],
+      "text": "A roupa parecia sem graça,",
+      "emphasis": [
+        "sem graça"
+      ],
+      "cps": 18.03468208092486
+    },
+    {
+      "id": 8,
+      "first_word": 34,
+      "last_word": 38,
+      "source_start": 14.15,
+      "source_end": 15.66,
+      "start": 10.680555555555555,
+      "end": 11.938888888888888,
+      "duration": 1.2583333333333329,
+      "lines": [
+        "e eu não entendia",
+        "por quê."
+      ],
+      "text": "e eu não entendia\npor quê.",
+      "emphasis": [
+        "não entendia"
+      ],
+      "cps": 19.86754966887418
+    },
+    {
+      "id": 9,
+      "first_word": 39,
+      "last_word": 42,
+      "source_start": 15.96,
+      "source_end": 17.549999999999997,
+      "start": 12.084722222222222,
+      "end": 13.409722222222218,
+      "duration": 1.3249999999999957,
+      "lines": [
+        "A camisa ficava solta,"
+      ],
+      "text": "A camisa ficava solta,",
+      "emphasis": [
+        "solta"
+      ],
+      "cps": 16.603773584905714
+    },
+    {
+      "id": 10,
+      "first_word": 43,
+      "last_word": 46,
+      "source_start": 17.759999999999998,
+      "source_end": 19.23,
+      "start": 13.584722222222219,
+      "end": 14.809722222222224,
+      "duration": 1.225000000000005,
+      "lines": [
+        "a calça parecia errada"
+      ],
+      "text": "a calça parecia errada",
+      "emphasis": [
+        "errada"
+      ],
+      "cps": 17.959183673469315
+    },
+    {
+      "id": 11,
+      "first_word": 47,
+      "last_word": 50,
+      "source_start": 19.23,
+      "source_end": 21.15,
+      "start": 14.809722222222224,
+      "end": 16.40972222222222,
+      "duration": 1.5999999999999979,
+      "lines": [
+        "e nenhum acessório",
+        "combinava."
+      ],
+      "text": "e nenhum acessório\ncombinava.",
+      "emphasis": [
+        "nenhum acessório"
+      ],
+      "cps": 17.500000000000025
+    },
+    {
+      "id": 12,
+      "first_word": 51,
+      "last_word": 56,
+      "source_start": 21.450000000000003,
+      "source_end": 23.700000000000003,
+      "start": 16.659722222222225,
+      "end": 18.534722222222225,
+      "duration": 1.875,
+      "lines": [
+        "Eu simplesmente não gostava",
+        "do resultado."
+      ],
+      "text": "Eu simplesmente não gostava\ndo resultado.",
+      "emphasis": [
+        "não gostava"
+      ],
+      "cps": 21.333333333333332
+    },
+    {
+      "id": 13,
+      "first_word": 57,
+      "last_word": 62,
+      "source_start": 24.08,
+      "source_end": 25.81,
+      "start": 18.7125,
+      "end": 20.154166666666665,
+      "duration": 1.4416666666666664,
+      "lines": [
+        "Todo dia era",
+        "a mesma coisa,"
+      ],
+      "text": "Todo dia era\na mesma coisa,",
+      "emphasis": [
+        "mesma coisa"
+      ],
+      "cps": 18.03468208092486
+    },
+    {
+      "id": 14,
+      "first_word": 63,
+      "last_word": 65,
+      "source_start": 25.98,
+      "source_end": 27.65,
+      "start": 20.29583333333333,
+      "end": 21.6875,
+      "duration": 1.3916666666666693,
+      "lines": [
+        "experimentava várias peças,"
+      ],
+      "text": "experimentava várias peças,",
+      "emphasis": [
+        "várias peças"
+      ],
+      "cps": 19.401197604790383
+    },
+    {
+      "id": 15,
+      "first_word": 66,
+      "last_word": 75,
+      "source_start": 27.919999999999998,
+      "source_end": 31.83,
+      "start": 21.912499999999998,
+      "end": 25.170833333333334,
+      "duration": 3.2583333333333364,
+      "lines": [
+        "me atrasava e acabava usando",
+        "aquele mesmo look sem graça."
+      ],
+      "text": "me atrasava e acabava usando\naquele mesmo look sem graça.",
+      "emphasis": [
+        "mesmo look sem graça"
+      ],
+      "cps": 17.18670076726341
+    },
+    {
+      "id": 16,
+      "first_word": 76,
+      "last_word": 82,
+      "source_start": 32.1,
+      "source_end": 34.769999999999996,
+      "start": 25.291666666666668,
+      "end": 27.516666666666666,
+      "duration": 2.224999999999998,
+      "lines": [
+        "Comecei até a evitar",
+        "fotos e encontros,"
+      ],
+      "text": "Comecei até a evitar\nfotos e encontros,",
+      "emphasis": [
+        "evitar"
+      ],
+      "cps": 17.078651685393275
+    },
+    {
+      "id": 17,
+      "first_word": 83,
+      "last_word": 86,
+      "source_start": 35.050000000000004,
+      "source_end": 36.92,
+      "start": 27.750000000000004,
+      "end": 29.308333333333337,
+      "duration": 1.5583333333333336,
+      "lines": [
+        "mas descobri uma coisa."
+      ],
+      "text": "mas descobri uma coisa.",
+      "emphasis": [
+        "descobri uma coisa"
+      ],
+      "cps": 14.759358288770052
+    },
+    {
+      "id": 18,
+      "first_word": 87,
+      "last_word": 92,
+      "source_start": 37.300000000000004,
+      "source_end": 39.42,
+      "start": 29.48611111111111,
+      "end": 31.252777777777776,
+      "duration": 1.7666666666666657,
+      "lines": [
+        "Eu não precisava",
+        "comprar mais roupas."
+      ],
+      "text": "Eu não precisava\ncomprar mais roupas.",
+      "emphasis": [
+        "não precisava"
+      ],
+      "cps": 20.37735849056605
+    },
+    {
+      "id": 19,
+      "first_word": 93,
+      "last_word": 97,
+      "source_start": 39.9,
+      "source_end": 41.36,
+      "start": 31.548611111111107,
+      "end": 32.765277777777776,
+      "duration": 1.2166666666666686,
+      "lines": [
+        "No Truque dos Mil Looks,"
+      ],
+      "text": "No Truque dos Mil Looks,",
+      "emphasis": [
+        "Truque dos Mil Looks"
+      ],
+      "cps": 19.726027397260243
+    },
+    {
+      "id": 20,
+      "first_word": 98,
+      "last_word": 100,
+      "source_start": 41.46,
+      "source_end": 42.98,
+      "start": 32.84861111111111,
+      "end": 34.11527777777777,
+      "duration": 1.2666666666666586,
+      "lines": [
+        "fotografei minhas peças."
+      ],
+      "text": "fotografei minhas peças.",
+      "emphasis": [
+        "fotografei"
+      ],
+      "cps": 18.94736842105275
+    },
+    {
+      "id": 21,
+      "first_word": 101,
+      "last_word": 103,
+      "source_start": 43.28,
+      "source_end": 44.6,
+      "start": 34.226388888888884,
+      "end": 35.326388888888886,
+      "duration": 1.1000000000000014,
+      "lines": [
+        "Organizei meu closet"
+      ],
+      "text": "Organizei meu closet",
+      "emphasis": [
+        "closet"
+      ],
+      "cps": 18.18181818181816
+    },
+    {
+      "id": 22,
+      "first_word": 104,
+      "last_word": 109,
+      "source_start": 44.6,
+      "source_end": 47.64,
+      "start": 35.326388888888886,
+      "end": 37.85972222222222,
+      "duration": 2.5333333333333314,
+      "lines": [
+        "e descobri combinações",
+        "que nem imaginava."
+      ],
+      "text": "e descobri combinações\nque nem imaginava.",
+      "emphasis": [
+        "combinações"
+      ],
+      "cps": 15.789473684210538
+    },
+    {
+      "id": 23,
+      "first_word": 110,
+      "last_word": 119,
+      "source_start": 48.08,
+      "source_end": 51.06,
+      "start": 37.98333333333332,
+      "end": 40.46666666666666,
+      "duration": 2.4833333333333414,
+      "lines": [
+        "Agora monto looks elegantes",
+        "com as roupas que já tenho."
+      ],
+      "text": "Agora monto looks elegantes\ncom as roupas que já tenho.",
+      "emphasis": [
+        "looks elegantes"
+      ],
+      "cps": 21.74496644295295
+    },
+    {
+      "id": 24,
+      "first_word": 120,
+      "last_word": 129,
+      "source_start": 51.300000000000004,
+      "source_end": 54.64,
+      "start": 40.66666666666666,
+      "end": 43.44999999999999,
+      "duration": 2.7833333333333314,
+      "lines": [
+        "Conheça o Truque dos Mil Looks",
+        "e descubra novas combinações."
+      ],
+      "text": "Conheça o Truque dos Mil Looks\ne descubra novas combinações.",
+      "emphasis": [
+        "Truque dos Mil Looks",
+        "novas combinações"
+      ],
+      "cps": 21.197604790419177
+    },
+    {
+      "id": 25,
+      "first_word": 130,
+      "last_word": 131,
+      "source_start": 54.92,
+      "source_end": 55.8,
+      "start": 43.54444444444444,
+      "end": 44.277777777777764,
+      "duration": 0.7333333333333272,
+      "lines": [
+        "Saiba mais!"
+      ],
+      "text": "Saiba mais!",
+      "emphasis": [
+        "Saiba mais!"
+      ],
+      "cps": 15.000000000000126
+    }
+  ]
+}

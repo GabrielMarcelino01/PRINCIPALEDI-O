@@ -1,0 +1,84 @@
+{
+  "file": "/home/user/PRINCIPALEDI-O/entregas/CLOSET-10-EDITADO.mp4",
+  "media": {
+    "duration_seconds": 24.0,
+    "size_bytes": 24453099.0,
+    "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+    "video": {
+      "codec": "h264",
+      "width": 1080,
+      "height": 1920,
+      "fps": 24.0,
+      "pixel_format": "yuv420p"
+    },
+    "audio": {
+      "codec": "aac",
+      "sample_rate": "48000",
+      "channels": 2,
+      "channel_layout": "stereo"
+    }
+  },
+  "analysis": {
+    "loudness": {
+      "integrated_lufs": -22.7,
+      "true_peak_dbtp": -7.5
+    },
+    "visual_events": {
+      "black": [],
+      "freeze": []
+    }
+  },
+  "checks": [
+    {
+      "name": "video_stream",
+      "status": "pass",
+      "message": "h264 1080x1920 @ 24.000 fps"
+    },
+    {
+      "name": "duration",
+      "status": "pass",
+      "message": "24.000 s"
+    },
+    {
+      "name": "width",
+      "status": "pass",
+      "message": "Esperado 1080; encontrado 1080."
+    },
+    {
+      "name": "height",
+      "status": "pass",
+      "message": "Esperado 1920; encontrado 1920."
+    },
+    {
+      "name": "fps",
+      "status": "pass",
+      "message": "Mínimo 24.0; encontrado 24.0."
+    },
+    {
+      "name": "integrated_loudness",
+      "status": "pass",
+      "message": "-22.70 LUFS integrado (sem alvo configurado)."
+    },
+    {
+      "name": "true_peak",
+      "status": "pass",
+      "message": "Máximo -1.0 dBTP; encontrado -7.5."
+    },
+    {
+      "name": "black",
+      "status": "pass",
+      "message": "Nenhum evento detectado."
+    },
+    {
+      "name": "freeze",
+      "status": "pass",
+      "message": "Nenhum evento detectado."
+    }
+  ],
+  "contact_sheet": "recovered/closet-10/out/closet-10-video-qa-contact.jpg",
+  "status": "pass",
+  "summary": {
+    "failures": 0,
+    "warnings": 0
+  }
+}

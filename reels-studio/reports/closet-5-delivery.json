@@ -1,0 +1,166 @@
+{
+  "project": "closet-5",
+  "revision": "professional-editorial-captions-closet-4-style",
+  "date": "2026-10-26",
+  "reference_edit": {
+    "commit": "aacbeff454b4597f71def77824299a5a7d54238a",
+    "description": "CLOSET-4 com captions inferiores animadas e tipografia 82/102/37px"
+  },
+  "source": {
+    "original_name": "Untitled_Scene_10-27_02_36_48_20261026234440.mp4",
+    "commit": "0634452a1785e4bad6971dbefcb8d981607fc642",
+    "blob_sha": "480b89b9a23c59f58bb6914e2369f8f9f01bdfe6",
+    "bytes": 24055519,
+    "sha256": "bc129692a791a8c222d2239ddd3030ec34212eb52c4610baf6d75f180853b3ef",
+    "placeholder_used": false
+  },
+  "transcription": {
+    "method": "OpenAI Whisper small / CTranslate2 int8, local; duas passagens comparadas",
+    "language": "pt-BR",
+    "segments": 5,
+    "groups": 18,
+    "words": 49,
+    "contextual_correction": "verde-oliva → verde oliva",
+    "full_subjective_listening": false
+  },
+  "master": {
+    "path": "entregas/CLOSET-5-EDITADO.mp4",
+    "bytes": 25258817,
+    "sha256": "87ef0e1cf20878d7f0d13d4e6b8da939cb219db66da3b65d0e671594c3d5a824",
+    "container_duration_seconds": 24.512,
+    "video": {
+      "codec": "h264",
+      "profile": "High",
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "frames": 734,
+      "duration_seconds": 24.466667,
+      "pixel_format": "yuv420p",
+      "color_space": "bt709",
+      "color_range": "tv"
+    },
+    "audio": {
+      "codec": "aac",
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_seconds": 24.512
+    },
+    "full_decode": "pass"
+  },
+  "preview": {
+    "path": "entregas/CLOSET-5-PREVIA.mp4",
+    "bytes": 3041100,
+    "sha256": "21b46ab9f81627b8dd932e93fa711b187077bf6052c6e909ded447b2f628d8cd",
+    "container_duration_seconds": 24.512,
+    "video": {
+      "codec": "h264",
+      "profile": "High",
+      "width": 540,
+      "height": 960,
+      "fps": "30/1",
+      "frames": 734,
+      "duration_seconds": 24.466667,
+      "pixel_format": "yuv420p",
+      "color_space": "bt709",
+      "color_range": "tv"
+    },
+    "audio": {
+      "codec": "aac",
+      "sample_rate": 48000,
+      "channels": 2,
+      "duration_seconds": 24.512
+    },
+    "full_decode": "pass"
+  },
+  "technical_qa": {
+    "project": {
+      "status": "PASS",
+      "summary": {
+        "checks": 27,
+        "passed": 27,
+        "failed": 0,
+        "caption_groups": 18,
+        "words": 49
+      }
+    },
+    "captions": {
+      "status": "pass",
+      "blocks": 18,
+      "max_characters_per_second": 16.1,
+      "summary": {
+        "errors": 0,
+        "warnings": 0
+      }
+    },
+    "video": {
+      "status": "pass",
+      "summary": {
+        "failures": 0,
+        "warnings": 0
+      },
+      "loudness": {
+        "integrated_lufs": -13.9,
+        "true_peak_dbtp": -1.1
+      },
+      "visual_events": {
+        "black": [],
+        "freeze": []
+      }
+    },
+    "full_decode": {
+      "master": "pass",
+      "preview": "pass"
+    },
+    "duration_note": "O vídeo tem 734 frames/30 fps (24,466667 s); o contêiner chega a 24,512 s pela granularidade/padding do AAC."
+  },
+  "visual_review": {
+    "encoded_frames": [27, 75, 118, 159, 187, 225, 264, 291, 327, 375, 411, 441, 483, 537, 571, 585, 621, 650, 674, 676, 714, 733],
+    "review_sheets": [
+      "out/closet-5-encoded-sheet-1.jpg",
+      "out/closet-5-encoded-sheet-2.jpg",
+      "out/closet-5-encoded-sheet-3.jpg"
+    ],
+    "caption_groups_seen": 18,
+    "caption_groups_total": 18,
+    "settled_groups_seen": 18,
+    "scenes_seen": 5,
+    "last_frame_seen": true,
+    "cta_timing": {
+      "configured_start_seconds": 22.47,
+      "frame_621": "not visible",
+      "frame_650": "not visible",
+      "frame_674": "entrance begins",
+      "frame_676": "visible"
+    },
+    "full_audiovisual_playback": false,
+    "subjective_audio_listening": false,
+    "scope": "Revisão por quadros e folhas de contato; não equivale a playback integral ou escuta subjetiva."
+  },
+  "design": {
+    "caption_anchor": "fixed bottom baseline 1320px",
+    "caption_font_sizes": {
+      "sans": 82,
+      "serif": 102,
+      "connectors": 37
+    },
+    "additional_size_reduction": false,
+    "caption_motion": "word springs, single active pulse, short serif wave and animated underlines",
+    "container_translation": false,
+    "layout_reflow": false,
+    "camera_scale": 1.02,
+    "camera_translation": 0,
+    "animated_grain": false,
+    "transitions_added": false,
+    "cta": "single spring entrance at 22,47s, then fixed at 1400px"
+  },
+  "preservation": {
+    "closet_4_master_sha256": "1b6a95803228663b85fdff8b930a22db956a6a57f6505f203520eda79549b7d1",
+    "closet_4_preview_sha256": "781bc3adc7a308a09c3270f04aae70f9e79f5bf124367c798a09dd25d1dfe5b8"
+  },
+  "organization": {
+    "edited": "entregas/",
+    "references": "referencias/",
+    "raw_and_work": "reels-studio/ (assets e temporários ignorados)"
+  }
+}

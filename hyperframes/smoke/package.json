@@ -1,0 +1,12 @@
+{
+  "name": "hyperframes-vertical-smoke",
+  "private": true,
+  "type": "module",
+  "description": "Composição técnica de 3 segundos para validar o HyperFrames local a 60 fps.",
+  "scripts": {
+    "dev": "node ../scripts/hyperframes.mjs preview --no-open --no-browser-gpu",
+    "check": "node ../scripts/hyperframes.mjs check --strict",
+    "snapshot": "node ../scripts/hyperframes.mjs snapshot --at 0,0.5,1.5,2.95",
+    "render": "node ../scripts/hyperframes.mjs render --fps 60 --workers 1 --no-browser-gpu --strict-all"
+  }
+}

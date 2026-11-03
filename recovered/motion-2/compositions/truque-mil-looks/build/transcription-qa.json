@@ -1,0 +1,1727 @@
+{
+  "language": "pt",
+  "duration": 87.0,
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.94,
+      "text": "Ana, o que aconteceu? Dá para ver que você está triste.",
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.52,
+          "word": " Ana,",
+          "probability": 0.5897588729858398
+        },
+        {
+          "start": 0.64,
+          "end": 0.72,
+          "word": " o",
+          "probability": 0.9877150654792786
+        },
+        {
+          "start": 0.72,
+          "end": 0.76,
+          "word": " que",
+          "probability": 0.9938312768936157
+        },
+        {
+          "start": 0.76,
+          "end": 1.2,
+          "word": " aconteceu?",
+          "probability": 0.9958893656730652
+        },
+        {
+          "start": 1.68,
+          "end": 1.8,
+          "word": " Dá",
+          "probability": 0.9900976419448853
+        },
+        {
+          "start": 1.8,
+          "end": 1.92,
+          "word": " para",
+          "probability": 0.6367250084877014
+        },
+        {
+          "start": 1.92,
+          "end": 2.08,
+          "word": " ver",
+          "probability": 0.9965052604675293
+        },
+        {
+          "start": 2.08,
+          "end": 2.2,
+          "word": " que",
+          "probability": 0.9931382536888123
+        },
+        {
+          "start": 2.2,
+          "end": 2.4,
+          "word": " você",
+          "probability": 0.9961448907852173
+        },
+        {
+          "start": 2.4,
+          "end": 2.6,
+          "word": " está",
+          "probability": 0.9887606501579285
+        },
+        {
+          "start": 2.6,
+          "end": 2.94,
+          "word": " triste.",
+          "probability": 0.999170184135437
+        }
+      ]
+    },
+    {
+      "start": 3.28,
+      "end": 7.8,
+      "text": "Eu não entendia porque todo Luke parecia ficar melhor nas outras pessoas do que em mim.",
+      "words": [
+        {
+          "start": 3.28,
+          "end": 3.44,
+          "word": " Eu",
+          "probability": 0.9645789265632629
+        },
+        {
+          "start": 3.44,
+          "end": 3.58,
+          "word": " não",
+          "probability": 0.9980399012565613
+        },
+        {
+          "start": 3.58,
+          "end": 4.2,
+          "word": " entendia",
+          "probability": 0.7702247202396393
+        },
+        {
+          "start": 4.2,
+          "end": 4.4,
+          "word": " porque",
+          "probability": 0.837924063205719
+        },
+        {
+          "start": 4.4,
+          "end": 4.64,
+          "word": " todo",
+          "probability": 0.9751351475715637
+        },
+        {
+          "start": 4.64,
+          "end": 5.0,
+          "word": " Luke",
+          "probability": 0.7389434576034546
+        },
+        {
+          "start": 5.0,
+          "end": 5.68,
+          "word": " parecia",
+          "probability": 0.9502092599868774
+        },
+        {
+          "start": 5.68,
+          "end": 5.94,
+          "word": " ficar",
+          "probability": 0.9925805330276489
+        },
+        {
+          "start": 5.94,
+          "end": 6.34,
+          "word": " melhor",
+          "probability": 0.9979410767555237
+        },
+        {
+          "start": 6.34,
+          "end": 6.58,
+          "word": " nas",
+          "probability": 0.9864336252212524
+        },
+        {
+          "start": 6.58,
+          "end": 6.8,
+          "word": " outras",
+          "probability": 0.99847811460495
+        },
+        {
+          "start": 6.8,
+          "end": 7.26,
+          "word": " pessoas",
+          "probability": 0.9982720613479614
+        },
+        {
+          "start": 7.26,
+          "end": 7.42,
+          "word": " do",
+          "probability": 0.9638043642044067
+        },
+        {
+          "start": 7.42,
+          "end": 7.54,
+          "word": " que",
+          "probability": 0.9975998997688293
+        },
+        {
+          "start": 7.54,
+          "end": 7.68,
+          "word": " em",
+          "probability": 0.993010938167572
+        },
+        {
+          "start": 7.68,
+          "end": 7.8,
+          "word": " mim.",
+          "probability": 0.999234676361084
+        }
+      ]
+    },
+    {
+      "start": 8.12,
+      "end": 12.76,
+      "text": "Eu copiava ideias, comprava peças novas e ainda sentia que nada combinava comigo.",
+      "words": [
+        {
+          "start": 8.12,
+          "end": 8.24,
+          "word": " Eu",
+          "probability": 0.9833319187164307
+        },
+        {
+          "start": 8.24,
+          "end": 8.66,
+          "word": " copiava",
+          "probability": 0.8711485266685486
+        },
+        {
+          "start": 8.66,
+          "end": 9.12,
+          "word": " ideias,",
+          "probability": 0.9494448900222778
+        },
+        {
+          "start": 9.44,
+          "end": 9.86,
+          "word": " comprava",
+          "probability": 0.8211154937744141
+        },
+        {
+          "start": 9.86,
+          "end": 10.12,
+          "word": " peças",
+          "probability": 0.987165629863739
+        },
+        {
+          "start": 10.12,
+          "end": 10.52,
+          "word": " novas",
+          "probability": 0.9962500333786011
+        },
+        {
+          "start": 10.52,
+          "end": 10.8,
+          "word": " e",
+          "probability": 0.8714410066604614
+        },
+        {
+          "start": 10.8,
+          "end": 11.0,
+          "word": " ainda",
+          "probability": 0.9799560308456421
+        },
+        {
+          "start": 11.0,
+          "end": 11.48,
+          "word": " sentia",
+          "probability": 0.9955668151378632
+        },
+        {
+          "start": 11.48,
+          "end": 11.68,
+          "word": " que",
+          "probability": 0.9966302514076233
+        },
+        {
+          "start": 11.68,
+          "end": 11.88,
+          "word": " nada",
+          "probability": 0.9975207448005676
+        },
+        {
+          "start": 11.88,
+          "end": 12.44,
+          "word": " combinava",
+          "probability": 0.9679798483848572
+        },
+        {
+          "start": 12.44,
+          "end": 12.76,
+          "word": " comigo.",
+          "probability": 0.9986629486083984
+        }
+      ]
+    },
+    {
+      "start": 13.66,
+      "end": 15.78,
+      "text": "E o jantar do trabalho, você vai e não é?",
+      "words": [
+        {
+          "start": 13.66,
+          "end": 13.82,
+          "word": " E",
+          "probability": 0.5524884462356567
+        },
+        {
+          "start": 13.82,
+          "end": 13.84,
+          "word": " o",
+          "probability": 0.9935913681983948
+        },
+        {
+          "start": 13.84,
+          "end": 14.12,
+          "word": " jantar",
+          "probability": 0.9876698652903239
+        },
+        {
+          "start": 14.12,
+          "end": 14.24,
+          "word": " do",
+          "probability": 0.9358662366867065
+        },
+        {
+          "start": 14.24,
+          "end": 14.52,
+          "word": " trabalho,",
+          "probability": 0.996531069278717
+        },
+        {
+          "start": 14.96,
+          "end": 15.18,
+          "word": " você",
+          "probability": 0.9324114918708801
+        },
+        {
+          "start": 15.18,
+          "end": 15.4,
+          "word": " vai",
+          "probability": 0.9850931763648987
+        },
+        {
+          "start": 15.4,
+          "end": 15.54,
+          "word": " e",
+          "probability": 0.9431986808776855
+        },
+        {
+          "start": 15.54,
+          "end": 15.62,
+          "word": " não",
+          "probability": 0.9972690939903259
+        },
+        {
+          "start": 15.62,
+          "end": 15.78,
+          "word": " é?",
+          "probability": 0.9975327253341675
+        }
+      ]
+    },
+    {
+      "start": 16.04,
+      "end": 20.54,
+      "text": "Não sei, toda vez é igual. Eu provo tudo, não sei o que vestir e acabo querendo me",
+      "words": [
+        {
+          "start": 16.04,
+          "end": 16.2,
+          "word": " Não",
+          "probability": 0.9842224717140198
+        },
+        {
+          "start": 16.2,
+          "end": 16.4,
+          "word": " sei,",
+          "probability": 0.9964642524719238
+        },
+        {
+          "start": 16.64,
+          "end": 16.76,
+          "word": " toda",
+          "probability": 0.98496013879776
+        },
+        {
+          "start": 16.76,
+          "end": 17.02,
+          "word": " vez",
+          "probability": 0.996304988861084
+        },
+        {
+          "start": 17.02,
+          "end": 17.12,
+          "word": " é",
+          "probability": 0.6388000845909119
+        },
+        {
+          "start": 17.12,
+          "end": 17.34,
+          "word": " igual.",
+          "probability": 0.9997126460075378
+        },
+        {
+          "start": 17.8,
+          "end": 17.92,
+          "word": " Eu",
+          "probability": 0.986376941204071
+        },
+        {
+          "start": 17.92,
+          "end": 18.18,
+          "word": " provo",
+          "probability": 0.706135019659996
+        },
+        {
+          "start": 18.18,
+          "end": 18.38,
+          "word": " tudo,",
+          "probability": 0.9973272085189819
+        },
+        {
+          "start": 18.74,
+          "end": 18.86,
+          "word": " não",
+          "probability": 0.9932730197906494
+        },
+        {
+          "start": 18.86,
+          "end": 19.06,
+          "word": " sei",
+          "probability": 0.9885680675506592
+        },
+        {
+          "start": 19.06,
+          "end": 19.18,
+          "word": " o",
+          "probability": 0.9905537962913513
+        },
+        {
+          "start": 19.18,
+          "end": 19.18,
+          "word": " que",
+          "probability": 0.9906623959541321
+        },
+        {
+          "start": 19.18,
+          "end": 19.58,
+          "word": " vestir",
+          "probability": 0.9934781491756439
+        },
+        {
+          "start": 19.58,
+          "end": 19.7,
+          "word": " e",
+          "probability": 0.9893311262130737
+        },
+        {
+          "start": 19.7,
+          "end": 20.02,
+          "word": " acabo",
+          "probability": 0.8270438015460968
+        },
+        {
+          "start": 20.02,
+          "end": 20.38,
+          "word": " querendo",
+          "probability": 0.9930598437786102
+        },
+        {
+          "start": 20.38,
+          "end": 20.54,
+          "word": " me",
+          "probability": 0.8765599727630615
+        }
+      ]
+    },
+    {
+      "start": 20.54,
+      "end": 24.54,
+      "text": "esconder nas fotos. Por que era tão difícil, descobrir o que funcionava para mim?",
+      "words": [
+        {
+          "start": 20.54,
+          "end": 20.82,
+          "word": " esconder",
+          "probability": 0.980532705783844
+        },
+        {
+          "start": 20.82,
+          "end": 21.04,
+          "word": " nas",
+          "probability": 0.9942305088043213
+        },
+        {
+          "start": 21.04,
+          "end": 21.26,
+          "word": " fotos.",
+          "probability": 0.9974228143692017
+        },
+        {
+          "start": 21.6,
+          "end": 21.76,
+          "word": " Por",
+          "probability": 0.8371551036834717
+        },
+        {
+          "start": 21.76,
+          "end": 21.94,
+          "word": " que",
+          "probability": 0.9377194046974182
+        },
+        {
+          "start": 21.94,
+          "end": 22.04,
+          "word": " era",
+          "probability": 0.9853118658065796
+        },
+        {
+          "start": 22.04,
+          "end": 22.24,
+          "word": " tão",
+          "probability": 0.9977936744689941
+        },
+        {
+          "start": 22.24,
+          "end": 22.62,
+          "word": " difícil,",
+          "probability": 0.9958951473236084
+        },
+        {
+          "start": 23.02,
+          "end": 23.36,
+          "word": " descobrir",
+          "probability": 0.9667051434516907
+        },
+        {
+          "start": 23.36,
+          "end": 23.58,
+          "word": " o",
+          "probability": 0.9958276152610779
+        },
+        {
+          "start": 23.58,
+          "end": 23.66,
+          "word": " que",
+          "probability": 0.9991488456726074
+        },
+        {
+          "start": 23.66,
+          "end": 24.2,
+          "word": " funcionava",
+          "probability": 0.9962908327579498
+        },
+        {
+          "start": 24.2,
+          "end": 24.36,
+          "word": " para",
+          "probability": 0.9013358950614929
+        },
+        {
+          "start": 24.36,
+          "end": 24.54,
+          "word": " mim?",
+          "probability": 0.9991670846939087
+        }
+      ]
+    },
+    {
+      "start": 25.38,
+      "end": 29.48,
+      "text": "Eu também me sentia assim, até descobrir que o problema não era o meu armário.",
+      "words": [
+        {
+          "start": 25.38,
+          "end": 25.56,
+          "word": " Eu",
+          "probability": 0.9919013381004333
+        },
+        {
+          "start": 25.56,
+          "end": 25.84,
+          "word": " também",
+          "probability": 0.9987077713012695
+        },
+        {
+          "start": 25.84,
+          "end": 26.02,
+          "word": " me",
+          "probability": 0.997079610824585
+        },
+        {
+          "start": 26.02,
+          "end": 26.42,
+          "word": " sentia",
+          "probability": 0.9851817488670349
+        },
+        {
+          "start": 26.42,
+          "end": 26.74,
+          "word": " assim,",
+          "probability": 0.9879518151283264
+        },
+        {
+          "start": 27.2,
+          "end": 27.48,
+          "word": " até",
+          "probability": 0.9977103471755981
+        },
+        {
+          "start": 27.48,
+          "end": 27.88,
+          "word": " descobrir",
+          "probability": 0.9911569356918335
+        },
+        {
+          "start": 27.88,
+          "end": 28.14,
+          "word": " que",
+          "probability": 0.9947299957275391
+        },
+        {
+          "start": 28.14,
+          "end": 28.22,
+          "word": " o",
+          "probability": 0.9947627186775208
+        },
+        {
+          "start": 28.22,
+          "end": 28.48,
+          "word": " problema",
+          "probability": 0.9988535642623901
+        },
+        {
+          "start": 28.48,
+          "end": 28.74,
+          "word": " não",
+          "probability": 0.9980782270431519
+        },
+        {
+          "start": 28.74,
+          "end": 28.9,
+          "word": " era",
+          "probability": 0.9926177859306335
+        },
+        {
+          "start": 28.9,
+          "end": 29.0,
+          "word": " o",
+          "probability": 0.9085118770599365
+        },
+        {
+          "start": 29.0,
+          "end": 29.08,
+          "word": " meu",
+          "probability": 0.9972288012504578
+        },
+        {
+          "start": 29.08,
+          "end": 29.48,
+          "word": " armário.",
+          "probability": 0.9979067146778107
+        }
+      ]
+    },
+    {
+      "start": 29.48,
+      "end": 31.46,
+      "text": "e você simplesmente aceitou isso.",
+      "words": [
+        {
+          "start": 29.48,
+          "end": 29.88,
+          "word": " e",
+          "probability": 0.21096549928188324
+        },
+        {
+          "start": 29.88,
+          "end": 30.04,
+          "word": " você",
+          "probability": 0.9840903878211975
+        },
+        {
+          "start": 30.04,
+          "end": 30.56,
+          "word": " simplesmente",
+          "probability": 0.9621685743331909
+        },
+        {
+          "start": 30.56,
+          "end": 31.2,
+          "word": " aceitou",
+          "probability": 0.9014140566190084
+        },
+        {
+          "start": 31.2,
+          "end": 31.46,
+          "word": " isso.",
+          "probability": 0.9966088533401489
+        }
+      ]
+    },
+    {
+      "start": 31.84,
+      "end": 34.14,
+      "text": "Não, eu descobri um truque, o truque dos Mil Looks.",
+      "words": [
+        {
+          "start": 31.84,
+          "end": 31.98,
+          "word": " Não,",
+          "probability": 0.5035588145256042
+        },
+        {
+          "start": 32.18,
+          "end": 32.22,
+          "word": " eu",
+          "probability": 0.9840760827064514
+        },
+        {
+          "start": 32.22,
+          "end": 32.6,
+          "word": " descobri",
+          "probability": 0.9962964951992035
+        },
+        {
+          "start": 32.6,
+          "end": 32.72,
+          "word": " um",
+          "probability": 0.9706906080245972
+        },
+        {
+          "start": 32.72,
+          "end": 33.0,
+          "word": " truque,",
+          "probability": 0.8916708628336588
+        },
+        {
+          "start": 33.22,
+          "end": 33.36,
+          "word": " o",
+          "probability": 0.9587701559066772
+        },
+        {
+          "start": 33.36,
+          "end": 33.56,
+          "word": " truque",
+          "probability": 0.8355507850646973
+        },
+        {
+          "start": 33.56,
+          "end": 33.72,
+          "word": " dos",
+          "probability": 0.9357384443283081
+        },
+        {
+          "start": 33.72,
+          "end": 33.9,
+          "word": " Mil",
+          "probability": 0.23965995013713837
+        },
+        {
+          "start": 33.9,
+          "end": 34.14,
+          "word": " Looks.",
+          "probability": 0.09119271486997604
+        }
+      ]
+    },
+    {
+      "start": 34.46,
+      "end": 37.3,
+      "text": "Ele mostra combinações com as roupas que a gente já tem.",
+      "words": [
+        {
+          "start": 34.46,
+          "end": 34.62,
+          "word": " Ele",
+          "probability": 0.976340115070343
+        },
+        {
+          "start": 34.62,
+          "end": 34.86,
+          "word": " mostra",
+          "probability": 0.9971110820770264
+        },
+        {
+          "start": 34.86,
+          "end": 35.6,
+          "word": " combinações",
+          "probability": 0.9909035166104635
+        },
+        {
+          "start": 35.6,
+          "end": 35.92,
+          "word": " com",
+          "probability": 0.9808279871940613
+        },
+        {
+          "start": 35.92,
+          "end": 36.04,
+          "word": " as",
+          "probability": 0.9972151517868042
+        },
+        {
+          "start": 36.04,
+          "end": 36.36,
+          "word": " roupas",
+          "probability": 0.9972358644008636
+        },
+        {
+          "start": 36.36,
+          "end": 36.5,
+          "word": " que",
+          "probability": 0.9962376356124878
+        },
+        {
+          "start": 36.5,
+          "end": 36.58,
+          "word": " a",
+          "probability": 0.9966861605644226
+        },
+        {
+          "start": 36.58,
+          "end": 36.76,
+          "word": " gente",
+          "probability": 0.9994625449180603
+        },
+        {
+          "start": 36.76,
+          "end": 37.08,
+          "word": " já",
+          "probability": 0.9985536932945251
+        },
+        {
+          "start": 37.08,
+          "end": 37.3,
+          "word": " tem.",
+          "probability": 0.9803167581558228
+        }
+      ]
+    },
+    {
+      "start": 37.78,
+      "end": 40.0,
+      "text": "Foi assim que eu parei de achar que me vestia mal.",
+      "words": [
+        {
+          "start": 37.78,
+          "end": 37.98,
+          "word": " Foi",
+          "probability": 0.9872097969055176
+        },
+        {
+          "start": 37.98,
+          "end": 38.28,
+          "word": " assim",
+          "probability": 0.9987127780914307
+        },
+        {
+          "start": 38.28,
+          "end": 38.48,
+          "word": " que",
+          "probability": 0.9677908420562744
+        },
+        {
+          "start": 38.48,
+          "end": 38.6,
+          "word": " eu",
+          "probability": 0.9808003902435303
+        },
+        {
+          "start": 38.6,
+          "end": 38.86,
+          "word": " parei",
+          "probability": 0.9784097075462341
+        },
+        {
+          "start": 38.86,
+          "end": 38.9,
+          "word": " de",
+          "probability": 0.9756483435630798
+        },
+        {
+          "start": 38.9,
+          "end": 39.2,
+          "word": " achar",
+          "probability": 0.9943917393684387
+        },
+        {
+          "start": 39.2,
+          "end": 39.36,
+          "word": " que",
+          "probability": 0.9973311424255371
+        },
+        {
+          "start": 39.36,
+          "end": 39.44,
+          "word": " me",
+          "probability": 0.9800527691841125
+        },
+        {
+          "start": 39.44,
+          "end": 39.76,
+          "word": " vestia",
+          "probability": 0.9885839223861694
+        },
+        {
+          "start": 39.76,
+          "end": 40.0,
+          "word": " mal.",
+          "probability": 0.9403868317604065
+        }
+      ]
+    },
+    {
+      "start": 40.82,
+      "end": 45.02,
+      "text": "Você fotografa suas peças e a inteligência artificial organiza seu closet.",
+      "words": [
+        {
+          "start": 40.82,
+          "end": 41.04,
+          "word": " Você",
+          "probability": 0.9968721270561218
+        },
+        {
+          "start": 41.04,
+          "end": 41.54,
+          "word": " fotografa",
+          "probability": 0.7831595540046692
+        },
+        {
+          "start": 41.54,
+          "end": 41.72,
+          "word": " suas",
+          "probability": 0.6936877369880676
+        },
+        {
+          "start": 41.72,
+          "end": 42.08,
+          "word": " peças",
+          "probability": 0.9768886268138885
+        },
+        {
+          "start": 42.08,
+          "end": 42.64,
+          "word": " e",
+          "probability": 0.6495158076286316
+        },
+        {
+          "start": 42.64,
+          "end": 42.72,
+          "word": " a",
+          "probability": 0.9975388050079346
+        },
+        {
+          "start": 42.72,
+          "end": 43.3,
+          "word": " inteligência",
+          "probability": 0.9761798083782196
+        },
+        {
+          "start": 43.3,
+          "end": 43.82,
+          "word": " artificial",
+          "probability": 0.9720085859298706
+        },
+        {
+          "start": 43.82,
+          "end": 44.52,
+          "word": " organiza",
+          "probability": 0.9799784123897552
+        },
+        {
+          "start": 44.52,
+          "end": 44.68,
+          "word": " seu",
+          "probability": 0.9374061822891235
+        },
+        {
+          "start": 44.68,
+          "end": 45.02,
+          "word": " closet.",
+          "probability": 0.8950642943382263
+        }
+      ]
+    },
+    {
+      "start": 45.88,
+      "end": 51.0,
+      "text": "Depois, cria looks para trabalho, fim de semana e jantar, tudo com o que já está aí na sua casa.",
+      "words": [
+        {
+          "start": 45.88,
+          "end": 46.3,
+          "word": " Depois,",
+          "probability": 0.984274685382843
+        },
+        {
+          "start": 46.54,
+          "end": 46.68,
+          "word": " cria",
+          "probability": 0.9879099428653717
+        },
+        {
+          "start": 46.68,
+          "end": 46.9,
+          "word": " looks",
+          "probability": 0.8380140662193298
+        },
+        {
+          "start": 46.9,
+          "end": 47.12,
+          "word": " para",
+          "probability": 0.9466382265090942
+        },
+        {
+          "start": 47.12,
+          "end": 47.5,
+          "word": " trabalho,",
+          "probability": 0.9426724314689636
+        },
+        {
+          "start": 47.88,
+          "end": 47.98,
+          "word": " fim",
+          "probability": 0.9969735145568848
+        },
+        {
+          "start": 47.98,
+          "end": 48.12,
+          "word": " de",
+          "probability": 0.9980428218841553
+        },
+        {
+          "start": 48.12,
+          "end": 48.4,
+          "word": " semana",
+          "probability": 0.9968360662460327
+        },
+        {
+          "start": 48.4,
+          "end": 48.58,
+          "word": " e",
+          "probability": 0.9879095554351807
+        },
+        {
+          "start": 48.58,
+          "end": 48.94,
+          "word": " jantar,",
+          "probability": 0.9780143102010092
+        },
+        {
+          "start": 49.36,
+          "end": 49.54,
+          "word": " tudo",
+          "probability": 0.9965476393699646
+        },
+        {
+          "start": 49.54,
+          "end": 49.78,
+          "word": " com",
+          "probability": 0.9608280062675476
+        },
+        {
+          "start": 49.78,
+          "end": 49.88,
+          "word": " o",
+          "probability": 0.9164882898330688
+        },
+        {
+          "start": 49.88,
+          "end": 49.9,
+          "word": " que",
+          "probability": 0.9987494945526123
+        },
+        {
+          "start": 49.9,
+          "end": 50.08,
+          "word": " já",
+          "probability": 0.9897177219390869
+        },
+        {
+          "start": 50.08,
+          "end": 50.3,
+          "word": " está",
+          "probability": 0.9952446818351746
+        },
+        {
+          "start": 50.3,
+          "end": 50.5,
+          "word": " aí",
+          "probability": 0.9713693857192993
+        },
+        {
+          "start": 50.5,
+          "end": 50.58,
+          "word": " na",
+          "probability": 0.9893782734870911
+        },
+        {
+          "start": 50.58,
+          "end": 50.72,
+          "word": " sua",
+          "probability": 0.9995012283325195
+        },
+        {
+          "start": 50.72,
+          "end": 51.0,
+          "word": " casa.",
+          "probability": 0.9994590878486633
+        }
+      ]
+    },
+    {
+      "start": 51.32,
+      "end": 55.22,
+      "text": "Uma peça, vários looks, sem precisar comprar roupa nova toda semana.",
+      "words": [
+        {
+          "start": 51.32,
+          "end": 51.48,
+          "word": " Uma",
+          "probability": 0.9829733371734619
+        },
+        {
+          "start": 51.48,
+          "end": 51.8,
+          "word": " peça,",
+          "probability": 0.9978317320346832
+        },
+        {
+          "start": 52.06,
+          "end": 52.32,
+          "word": " vários",
+          "probability": 0.9704369306564331
+        },
+        {
+          "start": 52.32,
+          "end": 52.6,
+          "word": " looks,",
+          "probability": 0.9738591909408569
+        },
+        {
+          "start": 53.02,
+          "end": 53.2,
+          "word": " sem",
+          "probability": 0.9927474856376648
+        },
+        {
+          "start": 53.2,
+          "end": 53.62,
+          "word": " precisar",
+          "probability": 0.9990845620632172
+        },
+        {
+          "start": 53.62,
+          "end": 53.92,
+          "word": " comprar",
+          "probability": 0.9959619641304016
+        },
+        {
+          "start": 53.92,
+          "end": 54.36,
+          "word": " roupa",
+          "probability": 0.9946802854537964
+        },
+        {
+          "start": 54.36,
+          "end": 54.58,
+          "word": " nova",
+          "probability": 0.9985049962997437
+        },
+        {
+          "start": 54.58,
+          "end": 54.8,
+          "word": " toda",
+          "probability": 0.9942856431007385
+        },
+        {
+          "start": 54.8,
+          "end": 55.22,
+          "word": " semana.",
+          "probability": 0.9774011373519897
+        }
+      ]
+    },
+    {
+      "start": 55.22,
+      "end": 61.68,
+      "text": "E quando você quiser algo novo, o app também indica lojas com descontos de até 50%.",
+      "words": [
+        {
+          "start": 55.22,
+          "end": 55.9,
+          "word": " E",
+          "probability": 0.36382514238357544
+        },
+        {
+          "start": 55.9,
+          "end": 56.4,
+          "word": " quando",
+          "probability": 0.9557772874832153
+        },
+        {
+          "start": 56.4,
+          "end": 56.66,
+          "word": " você",
+          "probability": 0.9873756170272827
+        },
+        {
+          "start": 56.66,
+          "end": 56.96,
+          "word": " quiser",
+          "probability": 0.9976879358291626
+        },
+        {
+          "start": 56.96,
+          "end": 57.26,
+          "word": " algo",
+          "probability": 0.9991565942764282
+        },
+        {
+          "start": 57.26,
+          "end": 57.52,
+          "word": " novo,",
+          "probability": 0.9960338473320007
+        },
+        {
+          "start": 58.0,
+          "end": 58.16,
+          "word": " o",
+          "probability": 0.9794324636459351
+        },
+        {
+          "start": 58.16,
+          "end": 58.36,
+          "word": " app",
+          "probability": 0.9077593684196472
+        },
+        {
+          "start": 58.36,
+          "end": 58.68,
+          "word": " também",
+          "probability": 0.9948315620422363
+        },
+        {
+          "start": 58.68,
+          "end": 59.06,
+          "word": " indica",
+          "probability": 0.9978194534778595
+        },
+        {
+          "start": 59.06,
+          "end": 59.38,
+          "word": " lojas",
+          "probability": 0.9339748919010162
+        },
+        {
+          "start": 59.38,
+          "end": 59.6,
+          "word": " com",
+          "probability": 0.9948034882545471
+        },
+        {
+          "start": 59.6,
+          "end": 60.16,
+          "word": " descontos",
+          "probability": 0.9931329687436422
+        },
+        {
+          "start": 60.16,
+          "end": 60.36,
+          "word": " de",
+          "probability": 0.9872849583625793
+        },
+        {
+          "start": 60.36,
+          "end": 60.54,
+          "word": " até",
+          "probability": 0.9976671934127808
+        },
+        {
+          "start": 60.54,
+          "end": 61.68,
+          "word": " 50%.",
+          "probability": 0.8941531181335449
+        }
+      ]
+    },
+    {
+      "start": 61.68,
+      "end": 65.4,
+      "text": "Tem sugestões para o seu estilo, favoritos, ofertas e muito mais.",
+      "words": [
+        {
+          "start": 61.68,
+          "end": 62.0,
+          "word": " Tem",
+          "probability": 0.8965532779693604
+        },
+        {
+          "start": 62.0,
+          "end": 62.44,
+          "word": " sugestões",
+          "probability": 0.99828173716863
+        },
+        {
+          "start": 62.44,
+          "end": 62.68,
+          "word": " para",
+          "probability": 0.9801086783409119
+        },
+        {
+          "start": 62.68,
+          "end": 62.78,
+          "word": " o",
+          "probability": 0.8735754489898682
+        },
+        {
+          "start": 62.78,
+          "end": 62.88,
+          "word": " seu",
+          "probability": 0.9984240531921387
+        },
+        {
+          "start": 62.88,
+          "end": 63.22,
+          "word": " estilo,",
+          "probability": 0.9954645037651062
+        },
+        {
+          "start": 63.6,
+          "end": 64.04,
+          "word": " favoritos,",
+          "probability": 0.9977283477783203
+        },
+        {
+          "start": 64.36,
+          "end": 64.64,
+          "word": " ofertas",
+          "probability": 0.994440495967865
+        },
+        {
+          "start": 64.64,
+          "end": 64.9,
+          "word": " e",
+          "probability": 0.9738633036613464
+        },
+        {
+          "start": 64.9,
+          "end": 65.1,
+          "word": " muito",
+          "probability": 0.9937062859535217
+        },
+        {
+          "start": 65.1,
+          "end": 65.4,
+          "word": " mais.",
+          "probability": 0.9980248212814331
+        }
+      ]
+    },
+    {
+      "start": 66.2,
+      "end": 68.6,
+      "text": "Três semanas depois, eu parei de me esconder.",
+      "words": [
+        {
+          "start": 66.2,
+          "end": 66.56,
+          "word": " Três",
+          "probability": 0.7940568625926971
+        },
+        {
+          "start": 66.56,
+          "end": 66.8,
+          "word": " semanas",
+          "probability": 0.9972671270370483
+        },
+        {
+          "start": 66.8,
+          "end": 67.2,
+          "word": " depois,",
+          "probability": 0.9978553652763367
+        },
+        {
+          "start": 67.62,
+          "end": 67.74,
+          "word": " eu",
+          "probability": 0.9725512862205505
+        },
+        {
+          "start": 67.74,
+          "end": 68.08,
+          "word": " parei",
+          "probability": 0.9873796701431274
+        },
+        {
+          "start": 68.08,
+          "end": 68.12,
+          "word": " de",
+          "probability": 0.9928336143493652
+        },
+        {
+          "start": 68.12,
+          "end": 68.22,
+          "word": " me",
+          "probability": 0.9952279329299927
+        },
+        {
+          "start": 68.22,
+          "end": 68.6,
+          "word": " esconder.",
+          "probability": 0.9857020676136017
+        }
+      ]
+    },
+    {
+      "start": 69.1,
+      "end": 72.26,
+      "text": "Entrava numa sala e sentia que finalmente parecia comigo.",
+      "words": [
+        {
+          "start": 69.1,
+          "end": 69.52,
+          "word": " Entrava",
+          "probability": 0.9377338488896688
+        },
+        {
+          "start": 69.52,
+          "end": 69.68,
+          "word": " numa",
+          "probability": 0.872252881526947
+        },
+        {
+          "start": 69.68,
+          "end": 70.0,
+          "word": " sala",
+          "probability": 0.9989567995071411
+        },
+        {
+          "start": 70.0,
+          "end": 70.2,
+          "word": " e",
+          "probability": 0.9606909155845642
+        },
+        {
+          "start": 70.2,
+          "end": 70.62,
+          "word": " sentia",
+          "probability": 0.993565022945404
+        },
+        {
+          "start": 70.62,
+          "end": 70.92,
+          "word": " que",
+          "probability": 0.9581875205039978
+        },
+        {
+          "start": 70.92,
+          "end": 71.34,
+          "word": " finalmente",
+          "probability": 0.9855879545211792
+        },
+        {
+          "start": 71.34,
+          "end": 71.92,
+          "word": " parecia",
+          "probability": 0.9866501986980438
+        },
+        {
+          "start": 71.92,
+          "end": 72.26,
+          "word": " comigo.",
+          "probability": 0.9972782731056213
+        }
+      ]
+    },
+    {
+      "start": 72.6,
+      "end": 74.24,
+      "text": "Não é sobre mudar quem você é.",
+      "words": [
+        {
+          "start": 72.6,
+          "end": 72.74,
+          "word": " Não",
+          "probability": 0.9884767532348633
+        },
+        {
+          "start": 72.74,
+          "end": 72.86,
+          "word": " é",
+          "probability": 0.994536280632019
+        },
+        {
+          "start": 72.86,
+          "end": 72.98,
+          "word": " sobre",
+          "probability": 0.9953110814094543
+        },
+        {
+          "start": 72.98,
+          "end": 73.3,
+          "word": " mudar",
+          "probability": 0.9915062785148621
+        },
+        {
+          "start": 73.3,
+          "end": 73.56,
+          "word": " quem",
+          "probability": 0.9873468279838562
+        },
+        {
+          "start": 73.56,
+          "end": 73.9,
+          "word": " você",
+          "probability": 0.9865090250968933
+        },
+        {
+          "start": 73.9,
+          "end": 74.24,
+          "word": " é.",
+          "probability": 0.9911871552467346
+        }
+      ]
+    },
+    {
+      "start": 74.64,
+      "end": 77.42,
+      "text": "É sobre enxergar mil possibilidades no que você já tem.",
+      "words": [
+        {
+          "start": 74.64,
+          "end": 74.78,
+          "word": " É",
+          "probability": 0.991981565952301
+        },
+        {
+          "start": 74.78,
+          "end": 74.98,
+          "word": " sobre",
+          "probability": 0.9977421760559082
+        },
+        {
+          "start": 74.98,
+          "end": 75.44,
+          "word": " enxergar",
+          "probability": 0.9896119236946106
+        },
+        {
+          "start": 75.44,
+          "end": 75.66,
+          "word": " mil",
+          "probability": 0.9451395869255066
+        },
+        {
+          "start": 75.66,
+          "end": 76.38,
+          "word": " possibilidades",
+          "probability": 0.9938210844993591
+        },
+        {
+          "start": 76.38,
+          "end": 76.7,
+          "word": " no",
+          "probability": 0.8919870853424072
+        },
+        {
+          "start": 76.7,
+          "end": 76.78,
+          "word": " que",
+          "probability": 0.99924635887146
+        },
+        {
+          "start": 76.78,
+          "end": 76.98,
+          "word": " você",
+          "probability": 0.9799441695213318
+        },
+        {
+          "start": 76.98,
+          "end": 77.18,
+          "word": " já",
+          "probability": 0.9989513158798218
+        },
+        {
+          "start": 77.18,
+          "end": 77.42,
+          "word": " tem.",
+          "probability": 0.9895725846290588
+        }
+      ]
+    },
+    {
+      "start": 77.64,
+      "end": 79.66,
+      "text": "Meu próximo Luke já estava no meu armário.",
+      "words": [
+        {
+          "start": 77.64,
+          "end": 77.8,
+          "word": " Meu",
+          "probability": 0.9754540324211121
+        },
+        {
+          "start": 77.8,
+          "end": 78.06,
+          "word": " próximo",
+          "probability": 0.999244213104248
+        },
+        {
+          "start": 78.06,
+          "end": 78.42,
+          "word": " Luke",
+          "probability": 0.49525338411331177
+        },
+        {
+          "start": 78.42,
+          "end": 78.78,
+          "word": " já",
+          "probability": 0.9963615536689758
+        },
+        {
+          "start": 78.78,
+          "end": 79.08,
+          "word": " estava",
+          "probability": 0.9878568649291992
+        },
+        {
+          "start": 79.08,
+          "end": 79.2,
+          "word": " no",
+          "probability": 0.9713165163993835
+        },
+        {
+          "start": 79.2,
+          "end": 79.3,
+          "word": " meu",
+          "probability": 0.9812172651290894
+        },
+        {
+          "start": 79.3,
+          "end": 79.66,
+          "word": " armário.",
+          "probability": 0.9973396956920624
+        }
+      ]
+    },
+    {
+      "start": 80.12,
+      "end": 81.5,
+      "text": "Eu só precisava de truque certo.",
+      "words": [
+        {
+          "start": 80.12,
+          "end": 80.22,
+          "word": " Eu",
+          "probability": 0.9783289432525635
+        },
+        {
+          "start": 80.22,
+          "end": 80.38,
+          "word": " só",
+          "probability": 0.9968660473823547
+        },
+        {
+          "start": 80.38,
+          "end": 80.84,
+          "word": " precisava",
+          "probability": 0.9980762302875519
+        },
+        {
+          "start": 80.84,
+          "end": 80.98,
+          "word": " de",
+          "probability": 0.8182533979415894
+        },
+        {
+          "start": 80.98,
+          "end": 81.22,
+          "word": " truque",
+          "probability": 0.7171637018521627
+        },
+        {
+          "start": 81.22,
+          "end": 81.5,
+          "word": " certo.",
+          "probability": 0.9566053152084351
+        }
+      ]
+    },
+    {
+      "start": 82.14,
+      "end": 84.76,
+      "text": "Clique no link, conheça o truque dos meu looks.",
+      "words": [
+        {
+          "start": 82.14,
+          "end": 82.66,
+          "word": " Clique",
+          "probability": 0.5707556009292603
+        },
+        {
+          "start": 82.66,
+          "end": 82.82,
+          "word": " no",
+          "probability": 0.9153016805648804
+        },
+        {
+          "start": 82.82,
+          "end": 83.08,
+          "word": " link,",
+          "probability": 0.9885820746421814
+        },
+        {
+          "start": 83.42,
+          "end": 83.8,
+          "word": " conheça",
+          "probability": 0.9544816315174103
+        },
+        {
+          "start": 83.8,
+          "end": 83.92,
+          "word": " o",
+          "probability": 0.9420747756958008
+        },
+        {
+          "start": 83.92,
+          "end": 84.08,
+          "word": " truque",
+          "probability": 0.5779275074601173
+        },
+        {
+          "start": 84.08,
+          "end": 84.26,
+          "word": " dos",
+          "probability": 0.7225219011306763
+        },
+        {
+          "start": 84.26,
+          "end": 84.44,
+          "word": " meu",
+          "probability": 0.3478301465511322
+        },
+        {
+          "start": 84.44,
+          "end": 84.76,
+          "word": " looks.",
+          "probability": 0.8112199306488037
+        }
+      ]
+    }
+  ]
+}

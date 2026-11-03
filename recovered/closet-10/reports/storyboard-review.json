@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "scope": "Revisão visual por quadros do storyboard; não equivale a playback, escuta integral ou aprovação estética.",
+  "frames_reviewed": 19,
+  "frames": [
+    0,
+    56,
+    101,
+    134,
+    144,
+    172,
+    220,
+    253,
+    280,
+    288,
+    320,
+    363,
+    403,
+    423,
+    432,
+    465,
+    512,
+    565,
+    575
+  ],
+  "capture_policy": "frame 0; cada grupo em end-0,14 s; quadros de corte; último quadro",
+  "checks": [
+    {
+      "name": "caption_lines",
+      "status": "pass",
+      "message": "Todos os 14 grupos aparecem em no máximo duas linhas reais."
+    },
+    {
+      "name": "horizontal_bounds",
+      "status": "pass",
+      "message": "Sem corte lateral ou overflow nos quadros de máxima revelação revisados."
+    },
+    {
+      "name": "knee_position",
+      "status": "pass",
+      "message": "Bloco centralizado com topo em 1210 px, na altura dos joelhos."
+    },
+    {
+      "name": "cut_boundaries",
+      "status": "pass",
+      "message": "Quadros 144, 288 e 432 sem legenda residual do look anterior."
+    },
+    {
+      "name": "scope",
+      "status": "pass",
+      "message": "Somente imagem melhorada e superlegendas; nenhum elemento externo identificado."
+    }
+  ]
+}

@@ -1,0 +1,376 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-27",
+  "status": "pass",
+  "method": "SHA-256 de arquivos e árvores, validação estrutural e leitura dos relatórios de comandos realmente executados. Não reinstala nem rerenderiza.",
+  "summary": {
+    "checks": 32,
+    "passed": 32,
+    "failed": 0,
+    "official_skills": 7,
+    "exposed_symlinks": 21,
+    "registry_usable_items": 448,
+    "registry_examples": 8,
+    "smoke_frames_compared": 180
+  },
+  "checks": [
+    {
+      "name": "runtime_manifest_pin",
+      "status": "pass",
+      "detail": "0.8.206"
+    },
+    {
+      "name": "runtime_lock_pin_and_integrity",
+      "status": "pass",
+      "detail": {
+        "version": "0.8.206",
+        "integrity": "sha512-8rf+yF3iADkiV6FTG6IxEf0sZZqXS+dhe7QZQ/f4xHXxFkr7ooUuGjPDSBrdRabxaXEvwTvYaujYIoTYTcJJPg=="
+      }
+    },
+    {
+      "name": "local_binary_dependency_pins",
+      "status": "pass",
+      "detail": {
+        "@sparticuz/chromium": "153.0.0",
+        "@ffmpeg-installer/ffmpeg": "1.1.0",
+        "ffprobe-static": "3.1.0"
+      }
+    },
+    {
+      "name": "user_source_document_preserved",
+      "status": "pass",
+      "detail": "cbb206b0711a9a6612236d7b521e84761a20e02b432176e119ad154b48f39bc1"
+    },
+    {
+      "name": "apache_license_preserved",
+      "status": "pass",
+      "detail": "4259155fb06f127687ee7b0a8a3682d45132db0f2da26cbc0b7a2d1e796436b8"
+    },
+    {
+      "name": "upstream_skill_manifest_preserved",
+      "status": "pass",
+      "detail": "ba4b094d6c3bd067d987278fd4939c5fe13c0983569fa663e7d3255b4d3cd433"
+    },
+    {
+      "name": "official_skill_hyperframes",
+      "status": "pass",
+      "detail": {
+        "expected": {
+          "name": "hyperframes",
+          "path": "skills/hyperframes",
+          "upstream_hash": "9aaba3205d9e3f32",
+          "files": 77,
+          "tree_sha256": "9aaba3205d9e3f329a166ac8c5fb8725c66f54ab2a33ea5afb8bf5a391f4f7ec"
+        },
+        "actual": {
+          "files": 77,
+          "tree_sha256": "9aaba3205d9e3f329a166ac8c5fb8725c66f54ab2a33ea5afb8bf5a391f4f7ec"
+        }
+      }
+    },
+    {
+      "name": "official_skill_hyperframes-cli",
+      "status": "pass",
+      "detail": {
+        "expected": {
+          "name": "hyperframes-cli",
+          "path": "skills/hyperframes-cli",
+          "upstream_hash": "08a4a3a815d71988",
+          "files": 13,
+          "tree_sha256": "08a4a3a815d71988225be90e40f412509848ec8c90631f00aed731f6680a4883"
+        },
+        "actual": {
+          "files": 13,
+          "tree_sha256": "08a4a3a815d71988225be90e40f412509848ec8c90631f00aed731f6680a4883"
+        }
+      }
+    },
+    {
+      "name": "official_skill_hyperframes-registry",
+      "status": "pass",
+      "detail": {
+        "expected": {
+          "name": "hyperframes-registry",
+          "path": "skills/hyperframes-registry",
+          "upstream_hash": "221af9e7fbffe732",
+          "files": 13,
+          "tree_sha256": "221af9e7fbffe7325490ef99079facd5dafc574c411f6b8de0e392d370175826"
+        },
+        "actual": {
+          "files": 13,
+          "tree_sha256": "221af9e7fbffe7325490ef99079facd5dafc574c411f6b8de0e392d370175826"
+        }
+      }
+    },
+    {
+      "name": "official_skill_media-use",
+      "status": "pass",
+      "detail": {
+        "expected": {
+          "name": "media-use",
+          "path": "skills/media-use",
+          "upstream_hash": "7603d1411b14d829",
+          "files": 116,
+          "tree_sha256": "7603d1411b14d829392bd86e9207fc6dee6ae788f527016381816b567f9555f5"
+        },
+        "actual": {
+          "files": 116,
+          "tree_sha256": "7603d1411b14d829392bd86e9207fc6dee6ae788f527016381816b567f9555f5"
+        }
+      }
+    },
+    {
+      "name": "official_skill_figma",
+      "status": "pass",
+      "detail": {
+        "expected": {
+          "name": "figma",
+          "path": "skills/figma",
+          "upstream_hash": "af57c9b6411c81f5",
+          "files": 2,
+          "tree_sha256": "af57c9b6411c81f5fe4d3ee3ca8b29bb6e75f9739c79eab60ee34dc363d8cd74"
+        },
+        "actual": {
+          "files": 2,
+          "tree_sha256": "af57c9b6411c81f5fe4d3ee3ca8b29bb6e75f9739c79eab60ee34dc363d8cd74"
+        }
+      }
+    },
+    {
+      "name": "official_skill_slideshow",
+      "status": "pass",
+      "detail": {
+        "expected": {
+          "name": "slideshow",
+          "path": "skills/slideshow",
+          "upstream_hash": "c8a591e2aa7a6d86",
+          "files": 2,
+          "tree_sha256": "c8a591e2aa7a6d863cf8f0f5db134029285ea87488909fea2551ea84e64db2a0"
+        },
+        "actual": {
+          "files": 2,
+          "tree_sha256": "c8a591e2aa7a6d863cf8f0f5db134029285ea87488909fea2551ea84e64db2a0"
+        }
+      }
+    },
+    {
+      "name": "official_skill_remotion-to-hyperframes",
+      "status": "pass",
+      "detail": {
+        "expected": {
+          "name": "remotion-to-hyperframes",
+          "path": "skills/remotion-to-hyperframes",
+          "upstream_hash": "37ed4536305b3c64",
+          "files": 78,
+          "tree_sha256": "37ed4536305b3c64ccdf06ae6b5207f76c2e4b1ce4fae48516568962a8cb1ca6"
+        },
+        "actual": {
+          "files": 78,
+          "tree_sha256": "37ed4536305b3c64ccdf06ae6b5207f76c2e4b1ce4fae48516568962a8cb1ca6"
+        }
+      }
+    },
+    {
+      "name": "exposure_.agents",
+      "status": "pass",
+      "detail": {
+        "expected": 7,
+        "invalid": []
+      }
+    },
+    {
+      "name": "exposure_.claude",
+      "status": "pass",
+      "detail": {
+        "expected": 7,
+        "invalid": []
+      }
+    },
+    {
+      "name": "exposure_.codex",
+      "status": "pass",
+      "detail": {
+        "expected": 7,
+        "invalid": []
+      }
+    },
+    {
+      "name": "registry_metadata_integrity",
+      "status": "pass",
+      "detail": {
+        "expected": {
+          "source": "https://github.com/heygen-com/hyperframes/tree/v0.8.206/registry",
+          "commit": "85fdc9aa888b4d26c8150fd09acae7b23fb392f5",
+          "path": "hyperframes/registry-metadata",
+          "includes": [
+            "registry.json",
+            "**/registry-item.json"
+          ],
+          "excludes": [
+            "HTML dos componentes",
+            "assets",
+            "vetores de busca on-device"
+          ],
+          "usable_items": 448,
+          "examples": 8,
+          "item_manifests": 456,
+          "files": 457,
+          "tree_sha256": "5e81ca23b836609d74a5884cf91d8e811d2c6a4bf4ea14a2e0c103a7eb48c008",
+          "scope": "Descoberta offline pelo cache do CLI. hyperframes add ainda requer rede para obter os arquivos do item."
+        },
+        "actual": {
+          "files": 457,
+          "tree_sha256": "5e81ca23b836609d74a5884cf91d8e811d2c6a4bf4ea14a2e0c103a7eb48c008"
+        }
+      }
+    },
+    {
+      "name": "registry_manifest_counts",
+      "status": "pass",
+      "detail": {
+        "total": 456,
+        "usable": 448,
+        "examples": 8
+      }
+    },
+    {
+      "name": "registry_offline_search_validated",
+      "status": "pass",
+      "detail": {
+        "total": 448,
+        "tier": "words",
+        "first": "bottom-up-letters"
+      }
+    },
+    {
+      "name": "local_gsap_preserved",
+      "status": "pass",
+      "detail": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
+    },
+    {
+      "name": "legacy_integration_not_upgraded",
+      "status": "pass",
+      "detail": "0.8.33"
+    },
+    {
+      "name": "smoke_vertical_60fps_contract",
+      "status": "pass",
+      "detail": [
+        "data-width=\"1080\"",
+        "data-height=\"1920\"",
+        "data-duration=\"3\"",
+        "data-fps=\"60\"",
+        "src=\"assets/gsap.min.js\""
+      ]
+    },
+    {
+      "name": "smoke_no_nondeterministic_or_network_clock",
+      "status": "pass",
+      "detail": []
+    },
+    {
+      "name": "smoke_paused_timelines_registered",
+      "status": "pass",
+      "detail": true
+    },
+    {
+      "name": "smoke_strict_browser_check",
+      "status": "pass",
+      "detail": {
+        "ok": true,
+        "contrast_passed": 35,
+        "craft_samples": 24
+      }
+    },
+    {
+      "name": "required_runtime_doctor",
+      "status": "pass",
+      "detail": {
+        "required": {
+          "Node.js": true,
+          "FFmpeg": true,
+          "FFprobe": true,
+          "Chrome": true
+        },
+        "unexpected_failures": [],
+        "global_ok_includes_optional": false
+      }
+    },
+    {
+      "name": "smoke_encoded_format",
+      "status": "pass",
+      "detail": {
+        "codec": "h264",
+        "width": 1080,
+        "height": 1920,
+        "fps": "60/1",
+        "frames": "180",
+        "duration": "3.000000"
+      }
+    },
+    {
+      "name": "smoke_video_qa",
+      "status": "pass",
+      "detail": {
+        "summary": {
+          "failures": 0,
+          "warnings": 1
+        },
+        "warnings": [
+          "audio_stream"
+        ]
+      }
+    },
+    {
+      "name": "smoke_two_render_determinism",
+      "status": "pass",
+      "detail": {
+        "status": "pass",
+        "method": "Dois renders independentes; ffmpeg -map 0:v:0 -f framemd5; comparação byte a byte dos hashes de todos os quadros decodificados.",
+        "renders": [
+          "hyperframes/out/HYPERFRAMES-SMOKE.mp4",
+          "hyperframes/out/HYPERFRAMES-SMOKE-REPEAT.mp4"
+        ],
+        "frames_compared": 180,
+        "framemd5_sha256": [
+          "cba98ae47711304e2a5aa495dcd6b728eda106c111176ba509eec7d764badb2c",
+          "cba98ae47711304e2a5aa495dcd6b728eda106c111176ba509eec7d764badb2c"
+        ],
+        "mp4_sha256": [
+          "63f30eeaa2f139c8876471d2a059c90c66dda5956b6052165eb629ac28d72173",
+          "63f30eeaa2f139c8876471d2a059c90c66dda5956b6052165eb629ac28d72173"
+        ],
+        "decoded_frames_identical": true,
+        "mp4_bytes_identical": true,
+        "scope": "Determinismo técnico; não equivale a playback ou escuta integral."
+      }
+    },
+    {
+      "name": "smoke_frame_review_recorded",
+      "status": "pass",
+      "detail": {
+        "scope": "Revisão por quadros do projeto e do MP4 codificado; não é playback nem escuta integral.",
+        "checks": {
+          "first_frame_readable": true,
+          "text_inside_safe_area": true,
+          "no_missing_glyph_after_fix": true,
+          "motion_visible_between_samples": true,
+          "encoded_frames_match_intended_design": true
+        }
+      }
+    },
+    {
+      "name": "launcher_pinned_privacy_and_skills",
+      "status": "pass",
+      "detail": true
+    },
+    {
+      "name": "generated_files_ignored",
+      "status": "pass",
+      "detail": {
+        "not_ignored": []
+      }
+    }
+  ],
+  "scope": "Integridade, setup e QA técnico do smoke test. Não é revisão de um Reel de cliente, playback ou escuta integral. hyperframes add requer rede para os arquivos do componente."
+}
