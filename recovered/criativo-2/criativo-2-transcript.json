@@ -1,0 +1,917 @@
+{
+  "language": "pt-BR",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.28,
+      "text": "Toda brasileira que quer se vestir melhor precisa entender.",
+      "words": [
+        {
+          "start": 0.0,
+          "end": 0.36,
+          "word": "Toda",
+          "probability": 0.8471406698226929
+        },
+        {
+          "start": 0.36,
+          "end": 0.96,
+          "word": "brasileira",
+          "probability": 0.9213464856147766
+        },
+        {
+          "start": 0.96,
+          "end": 1.12,
+          "word": "que",
+          "probability": 0.9786754250526428
+        },
+        {
+          "start": 1.12,
+          "end": 1.34,
+          "word": "quer",
+          "probability": 0.9936222434043884
+        },
+        {
+          "start": 1.34,
+          "end": 1.48,
+          "word": "se",
+          "probability": 0.9765270948410034
+        },
+        {
+          "start": 1.48,
+          "end": 1.84,
+          "word": "vestir",
+          "probability": 0.996692031621933
+        },
+        {
+          "start": 1.84,
+          "end": 2.22,
+          "word": "melhor",
+          "probability": 0.9930627942085266
+        },
+        {
+          "start": 2.22,
+          "end": 2.64,
+          "word": "precisa",
+          "probability": 0.9019244313240051
+        },
+        {
+          "start": 2.64,
+          "end": 3.28,
+          "word": "entender.",
+          "probability": 0.99922776222229
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start": 3.9,
+      "end": 7.4,
+      "text": "Não é ter muitas roupas. É saber combinar as que tem.",
+      "words": [
+        {
+          "start": 3.9,
+          "end": 4.06,
+          "word": "Não",
+          "probability": 0.9654147028923035
+        },
+        {
+          "start": 4.06,
+          "end": 4.22,
+          "word": "é",
+          "probability": 0.9966604709625244
+        },
+        {
+          "start": 4.22,
+          "end": 4.42,
+          "word": "ter",
+          "probability": 0.9930830001831055
+        },
+        {
+          "start": 4.42,
+          "end": 4.76,
+          "word": "muitas",
+          "probability": 0.9942110776901245
+        },
+        {
+          "start": 4.76,
+          "end": 5.3,
+          "word": "roupas.",
+          "probability": 0.9960970282554626
+        },
+        {
+          "start": 5.88,
+          "end": 6.06,
+          "word": "É",
+          "probability": 0.9920255541801453
+        },
+        {
+          "start": 6.06,
+          "end": 6.28,
+          "word": "saber",
+          "probability": 0.9977207779884338
+        },
+        {
+          "start": 6.28,
+          "end": 6.8,
+          "word": "combinar",
+          "probability": 0.996292382478714
+        },
+        {
+          "start": 6.8,
+          "end": 7.02,
+          "word": "as",
+          "probability": 0.9899985194206238
+        },
+        {
+          "start": 7.02,
+          "end": 7.16,
+          "word": "que",
+          "probability": 0.998473584651947
+        },
+        {
+          "start": 7.16,
+          "end": 7.4,
+          "word": "tem.",
+          "probability": 0.5862294435501099
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "start": 8.63,
+      "end": 11.57,
+      "text": "Eu tinha o armário cheio, mas saía sempre igual.",
+      "words": [
+        {
+          "start": 8.63,
+          "end": 8.77,
+          "word": "Eu",
+          "probability": 0.8874030709266663
+        },
+        {
+          "start": 8.77,
+          "end": 8.97,
+          "word": "tinha",
+          "probability": 0.9969798922538757
+        },
+        {
+          "start": 8.97,
+          "end": 9.13,
+          "word": "o",
+          "probability": 0.9096653461456299
+        },
+        {
+          "start": 9.13,
+          "end": 9.45,
+          "word": "armário",
+          "probability": 0.9972947537899017
+        },
+        {
+          "start": 9.45,
+          "end": 9.95,
+          "word": "cheio,",
+          "probability": 0.9981610476970673
+        },
+        {
+          "start": 10.27,
+          "end": 10.51,
+          "word": "mas",
+          "probability": 0.9963427186012268
+        },
+        {
+          "start": 10.51,
+          "end": 10.87,
+          "word": "saía",
+          "probability": 0.8777365982532501
+        },
+        {
+          "start": 10.87,
+          "end": 11.21,
+          "word": "sempre",
+          "probability": 0.9966890215873718
+        },
+        {
+          "start": 11.21,
+          "end": 11.57,
+          "word": "igual.",
+          "probability": 0.9993413090705872
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "start": 12.21,
+      "end": 15.57,
+      "text": "A roupa parecia sem graça, e eu não entendia por quê.",
+      "words": [
+        {
+          "start": 12.21,
+          "end": 12.37,
+          "word": "A",
+          "probability": 0.9901485443115234
+        },
+        {
+          "start": 12.37,
+          "end": 12.65,
+          "word": "roupa",
+          "probability": 0.9994348585605621
+        },
+        {
+          "start": 12.65,
+          "end": 13.11,
+          "word": "parecia",
+          "probability": 0.962378740310669
+        },
+        {
+          "start": 13.11,
+          "end": 13.35,
+          "word": "sem",
+          "probability": 0.9903224110603333
+        },
+        {
+          "start": 13.35,
+          "end": 13.81,
+          "word": "graça,",
+          "probability": 0.9921175241470337
+        },
+        {
+          "start": 14.25,
+          "end": 14.41,
+          "word": "e",
+          "probability": 0.9921391606330872
+        },
+        {
+          "start": 14.41,
+          "end": 14.51,
+          "word": "eu",
+          "probability": 0.9822773337364197
+        },
+        {
+          "start": 14.51,
+          "end": 14.61,
+          "word": "não",
+          "probability": 0.9994688630104065
+        },
+        {
+          "start": 14.61,
+          "end": 15.11,
+          "word": "entendia",
+          "probability": 0.9691412150859833
+        },
+        {
+          "start": 15.11,
+          "end": 15.57,
+          "word": "por quê.",
+          "probability": 0.7623954812685648
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "start": 16.01,
+      "end": 21.07,
+      "text": "A camisa ficava solta, a calça parecia errada e nenhum acessório combinava.",
+      "words": [
+        {
+          "start": 16.01,
+          "end": 16.17,
+          "word": "A",
+          "probability": 0.9695920348167419
+        },
+        {
+          "start": 16.17,
+          "end": 16.51,
+          "word": "camisa",
+          "probability": 0.9979975819587708
+        },
+        {
+          "start": 16.51,
+          "end": 16.89,
+          "word": "ficava",
+          "probability": 0.9977232813835144
+        },
+        {
+          "start": 16.89,
+          "end": 17.47,
+          "word": "solta,",
+          "probability": 0.997048944234848
+        },
+        {
+          "start": 17.81,
+          "end": 17.93,
+          "word": "a",
+          "probability": 0.9963793158531189
+        },
+        {
+          "start": 17.93,
+          "end": 18.29,
+          "word": "calça",
+          "probability": 0.9960453510284424
+        },
+        {
+          "start": 18.29,
+          "end": 18.73,
+          "word": "parecia",
+          "probability": 0.9938892722129822
+        },
+        {
+          "start": 18.73,
+          "end": 19.23,
+          "word": "errada",
+          "probability": 0.9708902537822723
+        },
+        {
+          "start": 19.23,
+          "end": 19.65,
+          "word": "e",
+          "probability": 0.5416693091392517
+        },
+        {
+          "start": 19.65,
+          "end": 19.93,
+          "word": "nenhum",
+          "probability": 0.9964469075202942
+        },
+        {
+          "start": 19.93,
+          "end": 20.47,
+          "word": "acessório",
+          "probability": 0.9731706778208414
+        },
+        {
+          "start": 20.47,
+          "end": 21.07,
+          "word": "combinava.",
+          "probability": 0.9961613416671753
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "start": 21.53,
+      "end": 23.51,
+      "text": "Eu simplesmente não gostava do resultado.",
+      "words": [
+        {
+          "start": 21.53,
+          "end": 21.65,
+          "word": "Eu",
+          "probability": 0.9950280785560608
+        },
+        {
+          "start": 21.65,
+          "end": 22.07,
+          "word": "simplesmente",
+          "probability": 0.992730438709259
+        },
+        {
+          "start": 22.07,
+          "end": 22.49,
+          "word": "não",
+          "probability": 0.997234046459198
+        },
+        {
+          "start": 22.49,
+          "end": 22.93,
+          "word": "gostava",
+          "probability": 0.9986187815666199
+        },
+        {
+          "start": 22.93,
+          "end": 23.07,
+          "word": "do",
+          "probability": 0.9961022138595581
+        },
+        {
+          "start": 23.07,
+          "end": 23.51,
+          "word": "resultado.",
+          "probability": 0.999413013458252
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "start": 24.13,
+      "end": 28.75,
+      "text": "Todo dia era a mesma coisa, experimentava várias peças, me atrasava",
+      "words": [
+        {
+          "start": 24.13,
+          "end": 24.31,
+          "word": "Todo",
+          "probability": 0.9810339212417603
+        },
+        {
+          "start": 24.31,
+          "end": 24.73,
+          "word": "dia",
+          "probability": 0.9829205870628357
+        },
+        {
+          "start": 24.73,
+          "end": 24.91,
+          "word": "era",
+          "probability": 0.9815922379493713
+        },
+        {
+          "start": 24.91,
+          "end": 24.99,
+          "word": "a",
+          "probability": 0.9955897331237793
+        },
+        {
+          "start": 24.99,
+          "end": 25.25,
+          "word": "mesma",
+          "probability": 0.9995728135108948
+        },
+        {
+          "start": 25.25,
+          "end": 25.73,
+          "word": "coisa,",
+          "probability": 0.9996669292449951
+        },
+        {
+          "start": 26.03,
+          "end": 26.71,
+          "word": "experimentava",
+          "probability": 0.9970724284648895
+        },
+        {
+          "start": 26.71,
+          "end": 27.07,
+          "word": "várias",
+          "probability": 0.9957966804504395
+        },
+        {
+          "start": 27.07,
+          "end": 27.57,
+          "word": "peças,",
+          "probability": 0.9970941543579102
+        },
+        {
+          "start": 27.97,
+          "end": 28.11,
+          "word": "me",
+          "probability": 0.9955950379371643
+        },
+        {
+          "start": 28.11,
+          "end": 28.75,
+          "word": "atrasava",
+          "probability": 0.996685524781545
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "start": 28.75,
+      "end": 31.75,
+      "text": "e acabava usando aquele mesmo look sem graça.",
+      "words": [
+        {
+          "start": 28.75,
+          "end": 29.17,
+          "word": "e",
+          "probability": 0.5873153209686279
+        },
+        {
+          "start": 29.17,
+          "end": 29.57,
+          "word": "acabava",
+          "probability": 0.9380022883415222
+        },
+        {
+          "start": 29.57,
+          "end": 29.89,
+          "word": "usando",
+          "probability": 0.9944394826889038
+        },
+        {
+          "start": 29.89,
+          "end": 30.15,
+          "word": "aquele",
+          "probability": 0.9891421794891357
+        },
+        {
+          "start": 30.15,
+          "end": 30.59,
+          "word": "mesmo",
+          "probability": 0.9920599460601807
+        },
+        {
+          "start": 30.59,
+          "end": 30.97,
+          "word": "look",
+          "probability": 0.927760660648346
+        },
+        {
+          "start": 30.97,
+          "end": 31.23,
+          "word": "sem",
+          "probability": 0.9782159924507141
+        },
+        {
+          "start": 31.23,
+          "end": 31.75,
+          "word": "graça.",
+          "probability": 0.9959890246391296
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "start": 32.15,
+      "end": 36.84,
+      "text": "Comecei até a evitar fotos e encontros, mas descobri uma coisa.",
+      "words": [
+        {
+          "start": 32.15,
+          "end": 32.83,
+          "word": "Comecei",
+          "probability": 0.9731877644856771
+        },
+        {
+          "start": 32.83,
+          "end": 33.05,
+          "word": "até",
+          "probability": 0.9522956013679504
+        },
+        {
+          "start": 33.05,
+          "end": 33.15,
+          "word": "a",
+          "probability": 0.8244398832321167
+        },
+        {
+          "start": 33.15,
+          "end": 33.37,
+          "word": "evitar",
+          "probability": 0.9972767233848572
+        },
+        {
+          "start": 33.37,
+          "end": 33.93,
+          "word": "fotos",
+          "probability": 0.9893246293067932
+        },
+        {
+          "start": 33.93,
+          "end": 34.15,
+          "word": "e",
+          "probability": 0.9973568916320801
+        },
+        {
+          "start": 34.15,
+          "end": 34.69,
+          "word": "encontros,",
+          "probability": 0.9908467531204224
+        },
+        {
+          "start": 35.1,
+          "end": 35.82,
+          "word": "mas",
+          "probability": 0.9798631072044373
+        },
+        {
+          "start": 35.82,
+          "end": 36.3,
+          "word": "descobri",
+          "probability": 0.9949100017547607
+        },
+        {
+          "start": 36.3,
+          "end": 36.44,
+          "word": "uma",
+          "probability": 0.9657207727432251
+        },
+        {
+          "start": 36.44,
+          "end": 36.84,
+          "word": "coisa.",
+          "probability": 0.9996102452278137
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "start": 37.38,
+      "end": 39.34,
+      "text": "Eu não precisava comprar mais roupas.",
+      "words": [
+        {
+          "start": 37.38,
+          "end": 37.5,
+          "word": "Eu",
+          "probability": 0.9392538666725159
+        },
+        {
+          "start": 37.5,
+          "end": 37.62,
+          "word": "não",
+          "probability": 0.9982370138168335
+        },
+        {
+          "start": 37.62,
+          "end": 38.18,
+          "word": "precisava",
+          "probability": 0.9977688193321228
+        },
+        {
+          "start": 38.18,
+          "end": 38.48,
+          "word": "comprar",
+          "probability": 0.9973951578140259
+        },
+        {
+          "start": 38.48,
+          "end": 38.82,
+          "word": "mais",
+          "probability": 0.9980656504631042
+        },
+        {
+          "start": 38.82,
+          "end": 39.34,
+          "word": "roupas.",
+          "probability": 0.9914317429065704
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "start": 39.96,
+      "end": 42.9,
+      "text": "No Truque dos Mil Looks, fotografei minhas peças.",
+      "words": [
+        {
+          "start": 39.96,
+          "end": 40.28,
+          "word": "No",
+          "probability": 0.9191362261772156
+        },
+        {
+          "start": 40.28,
+          "end": 40.62,
+          "word": "Truque",
+          "probability": 0.5986706763505936
+        },
+        {
+          "start": 40.62,
+          "end": 40.8,
+          "word": "dos",
+          "probability": 0.9656946659088135
+        },
+        {
+          "start": 40.8,
+          "end": 40.96,
+          "word": "Mil",
+          "probability": 0.8047568202018738
+        },
+        {
+          "start": 40.96,
+          "end": 41.28,
+          "word": "Looks,",
+          "probability": 0.4643481373786926
+        },
+        {
+          "start": 41.54,
+          "end": 42.18,
+          "word": "fotografei",
+          "probability": 0.6737425625324249
+        },
+        {
+          "start": 42.18,
+          "end": 42.46,
+          "word": "minhas",
+          "probability": 0.9395077228546143
+        },
+        {
+          "start": 42.46,
+          "end": 42.9,
+          "word": "peças.",
+          "probability": 0.9958575367927551
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "start": 43.34,
+      "end": 47.56,
+      "text": "Organizei meu closet e descobri combinações que nem imaginava.",
+      "words": [
+        {
+          "start": 43.34,
+          "end": 43.92,
+          "word": "Organizei",
+          "probability": 0.9316726326942444
+        },
+        {
+          "start": 43.92,
+          "end": 44.06,
+          "word": "meu",
+          "probability": 0.9195430874824524
+        },
+        {
+          "start": 44.06,
+          "end": 44.6,
+          "word": "closet",
+          "probability": 0.799020250638326
+        },
+        {
+          "start": 44.6,
+          "end": 45.34,
+          "word": "e",
+          "probability": 0.5163894891738892
+        },
+        {
+          "start": 45.34,
+          "end": 45.78,
+          "word": "descobri",
+          "probability": 0.9950721859931946
+        },
+        {
+          "start": 45.78,
+          "end": 46.42,
+          "word": "combinações",
+          "probability": 0.9961259961128235
+        },
+        {
+          "start": 46.42,
+          "end": 46.66,
+          "word": "que",
+          "probability": 0.99764084815979
+        },
+        {
+          "start": 46.66,
+          "end": 46.86,
+          "word": "nem",
+          "probability": 0.9950220584869385
+        },
+        {
+          "start": 46.86,
+          "end": 47.56,
+          "word": "imaginava.",
+          "probability": 0.9968359172344208
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "start": 48.16,
+      "end": 50.96,
+      "text": "Agora monto looks elegantes com as roupas que já tenho.",
+      "words": [
+        {
+          "start": 48.16,
+          "end": 48.46,
+          "word": "Agora",
+          "probability": 0.9949749708175659
+        },
+        {
+          "start": 48.46,
+          "end": 48.86,
+          "word": "monto",
+          "probability": 0.6602982133626938
+        },
+        {
+          "start": 48.86,
+          "end": 49.1,
+          "word": "looks",
+          "probability": 0.9029616117477417
+        },
+        {
+          "start": 49.1,
+          "end": 49.68,
+          "word": "elegantes",
+          "probability": 0.9919328391551971
+        },
+        {
+          "start": 49.68,
+          "end": 49.9,
+          "word": "com",
+          "probability": 0.9947119951248169
+        },
+        {
+          "start": 49.9,
+          "end": 50.04,
+          "word": "as",
+          "probability": 0.9964577555656433
+        },
+        {
+          "start": 50.04,
+          "end": 50.38,
+          "word": "roupas",
+          "probability": 0.9940770864486694
+        },
+        {
+          "start": 50.38,
+          "end": 50.5,
+          "word": "que",
+          "probability": 0.995574951171875
+        },
+        {
+          "start": 50.5,
+          "end": 50.68,
+          "word": "já",
+          "probability": 0.9939401149749756
+        },
+        {
+          "start": 50.68,
+          "end": 50.96,
+          "word": "tenho.",
+          "probability": 0.9910340905189514
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "start": 51.38,
+      "end": 54.56,
+      "text": "Conheça o Truque dos Mil Looks e descubra novas combinações.",
+      "words": [
+        {
+          "start": 51.38,
+          "end": 51.8,
+          "word": "Conheça",
+          "probability": 0.7631723781426748
+        },
+        {
+          "start": 51.8,
+          "end": 51.88,
+          "word": "o",
+          "probability": 0.9937170743942261
+        },
+        {
+          "start": 51.88,
+          "end": 52.16,
+          "word": "Truque",
+          "probability": 0.9175132811069489
+        },
+        {
+          "start": 52.16,
+          "end": 52.32,
+          "word": "dos",
+          "probability": 0.9931492209434509
+        },
+        {
+          "start": 52.32,
+          "end": 52.5,
+          "word": "Mil",
+          "probability": 0.9884621500968933
+        },
+        {
+          "start": 52.5,
+          "end": 52.82,
+          "word": "Looks",
+          "probability": 0.8279734253883362
+        },
+        {
+          "start": 52.82,
+          "end": 53.0,
+          "word": "e",
+          "probability": 0.9805706143379211
+        },
+        {
+          "start": 53.0,
+          "end": 53.46,
+          "word": "descubra",
+          "probability": 0.9245249330997467
+        },
+        {
+          "start": 53.46,
+          "end": 53.86,
+          "word": "novas",
+          "probability": 0.993605226278305
+        },
+        {
+          "start": 53.86,
+          "end": 54.56,
+          "word": "combinações.",
+          "probability": 0.9983486533164978
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "start": 55.02,
+      "end": 55.54,
+      "text": "Saiba mais!",
+      "words": [
+        {
+          "start": 55.02,
+          "end": 55.28,
+          "word": "Saiba",
+          "probability": 0.9546428322792053
+        },
+        {
+          "start": 55.28,
+          "end": 55.54,
+          "word": "mais!",
+          "probability": 0.9236400723457336
+        }
+      ]
+    }
+  ]
+}

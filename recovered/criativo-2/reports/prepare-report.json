@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "captions": 25,
+  "words": 132,
+  "cut_intervals": 12,
+  "removed_seconds": 2.7916666666666665,
+  "output_frames": 1064,
+  "output_duration": 44.333333333333336,
+  "max_cps": 21.74496644295295,
+  "audio": "public/criativo-2-audio.wav",
+  "loudnorm": {
+    "integrated_lufs": -16.0,
+    "true_peak_dbtp": -1.5,
+    "lra_lu": 7.0
+  }
+}

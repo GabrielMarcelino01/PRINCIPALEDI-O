@@ -1,0 +1,153 @@
+{
+  "status": "PASS",
+  "checks": 29,
+  "passed": 29,
+  "failed": 0,
+  "results": [
+    {
+      "name": "source_exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source_sha256",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source_dimensions",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "source_timing",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "speed_exact",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "pitch_preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "cut_count",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "cuts_valid",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "cuts_sorted",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "removed_duration",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "output_frames",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "output_duration",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "transcript_words",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "caption_count",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "word_coverage",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "caption_order",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "caption_duration",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "caption_lines",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "caption_line_length",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "caption_cps",
+      "status": "PASS",
+      "detail": "max=21.7450"
+    },
+    {
+      "name": "caption_emphasis",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "smaller_font",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "safe_margins",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "font_exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "font_license",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "srt_exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "ass_exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "edited_audio_exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "audio_loudnorm_plan",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}
