@@ -1,0 +1,23 @@
+{
+  "upstream": "https://github.com/bradautomates/claude-video",
+  "upstream_path": "skills/watch",
+  "version": "0.3.2",
+  "commit": "03ceb42f7fa2c4439aca01752118044baabffb8f",
+  "license": "MIT",
+  "installed_at": "2026-11-03",
+  "installed_by": "Arena Agent Mode",
+  "upstream_code_modified": false,
+  "additional_files": [
+    "LICENSE",
+    "PROVENANCE.json",
+    "ARENA.md"
+  ],
+  "validation": {
+    "tests": "249 passed",
+    "python": "3.11.2",
+    "ffmpeg": "n9.0.2-17-g2a571b6068-20260930",
+    "ffprobe": "N-66595-gc2b38619c0-static",
+    "yt_dlp": "2026.10.26",
+    "incompatible_ffmpeg_note": "Com um FFmpeg de 2018, 38 testes de escala falharam; com FFmpeg atual, 249/249 passaram."
+  }
+}
