@@ -11,6 +11,7 @@
 
   /* Imagens otimizadas salvas localmente neste repositório */
   var LOCAL_ASSETS = {
+    "assets/img/antes-depois-capa.jpg": true,
     "assets/img/antes-depois.jpg": true,
     "assets/img/antes-depois-1.jpg": true,
     "assets/img/antes-depois-2.jpg": true,
@@ -331,7 +332,7 @@
     }
     [
       "assets/img/app-preview.jpg",
-      "assets/img/antes-depois.jpg",
+      "assets/img/antes-depois-capa.jpg",
       "assets/img/antes-depois-2.jpg",
       "assets/img/antes-depois-3.jpg",
       "assets/img/antes-depois-1.jpg",
@@ -1136,7 +1137,7 @@
 
     var baSlides = [
       {
-        src: "assets/img/antes-depois.jpg",
+        src: "assets/img/antes-depois-capa.jpg",
         alt: "Antes e depois: guarda-roupa com desperdício de 70% passando para 94% de eficiência e combinação perfeita"
       },
       {
