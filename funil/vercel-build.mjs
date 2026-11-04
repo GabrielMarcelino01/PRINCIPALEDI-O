@@ -152,6 +152,32 @@ async function main() {
 
   fs.writeFileSync(path.join(DIST, "index.html"), bundledHtml, "utf8");
   console.log(`[html ok] dist/index.html gerado (${(Buffer.byteLength(bundledHtml) / 1024).toFixed(1)} KB inline)`);
+
+  /* Empacota também o Entregável Oficial (/app — PWA Mobile-First) */
+  const APP_SRC = path.join(__dirname, "app");
+  const DIST_APP = path.join(DIST, "app");
+  if (fs.existsSync(APP_SRC)) {
+    fs.mkdirSync(DIST_APP, { recursive: true });
+    for (const file of ["manifest.webmanifest", "sw.js", "icon-192.png", "icon-512.png", "app.css", "app.js"]) {
+      fs.copyFileSync(path.join(APP_SRC, file), path.join(DIST_APP, file));
+    }
+    const appHtmlRaw = fs.readFileSync(path.join(APP_SRC, "index.html"), "utf8");
+    const appCssRaw = fs.readFileSync(path.join(APP_SRC, "app.css"), "utf8");
+    const appJsRaw = fs.readFileSync(path.join(APP_SRC, "app.js"), "utf8");
+
+    const bundledAppHtml = appHtmlRaw
+      .replace(
+        /<link\s+rel="stylesheet"\s+href="\/app\/app\.css[^"]*">/i,
+        () => `<style>${appCssRaw}</style>`
+      )
+      .replace(
+        /<script\s+src="\/app\/app\.js[^"]*"><\/script>/i,
+        () => `<script>${appJsRaw.replace(/<\/script/gi, "<\\/script")}</script>`
+      );
+
+    fs.writeFileSync(path.join(DIST_APP, "index.html"), bundledAppHtml, "utf8");
+    console.log(`[app ok] dist/app/index.html gerado (${(Buffer.byteLength(bundledAppHtml) / 1024).toFixed(1)} KB inline)`);
+  }
 }
 
 main().catch((err) => {

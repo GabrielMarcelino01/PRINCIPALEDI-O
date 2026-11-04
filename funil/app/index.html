@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Truque dos Mil Looks — Aplicativo Oficial</title>
+  <meta name="description" content="Seu Closet Inteligente com IA, Provador Virtual, Montador de Mala e Método 15 Peças → 150 Looks.">
+  <meta name="theme-color" content="#6E1423">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Mil Looks">
+
+  <link rel="manifest" href="/app/manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="/app/icon-192.png">
+  <link rel="apple-touch-icon" href="/app/icon-192.png">
+
+  <!-- Meta Pixel (permite criar público de compradoras ativas e excluir de anúncios frios) -->
+  <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '619345180649856');
+    fbq('track', 'PageView');
+  </script>
+
+  <link rel="stylesheet" href="/app/app.css?v=1">
+</head>
+<body>
+
+  <!-- =========================================================
+       TELA DE ACESSO / BOAS-VINDAS DA ALUNA (1º ACESSO)
+       ========================================================= -->
+  <section class="auth-screen" id="authScreen" hidden>
+    <div class="auth-card">
+      <div class="auth-badge">✦ ÁREA EXCLUSIVA DE ALUNAS · ACESSO LIBERADO</div>
+
+      <div class="auth-brand">
+        <span class="crest">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="authG" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#9A2A3E"/>
+                <stop offset="52%" stop-color="#6E1423"/>
+                <stop offset="100%" stop-color="#430913"/>
+              </linearGradient>
+            </defs>
+            <rect width="40" height="40" rx="11" fill="url(#authG)"/>
+            <rect x="2.75" y="2.75" width="34.5" height="34.5" rx="8.5" stroke="#E8CBA0" stroke-opacity="0.55" stroke-width="1"/>
+            <path d="M18.2 11.4A2.1 2.1 0 1 1 21.8 12.8C21.1 13.5 20 14.1 20 15.2V16" stroke="#FFF8F0" stroke-width="2.1" stroke-linecap="round"/>
+            <path d="M20 16L9.2 24.2C7.8 25.2 8.5 27.4 10.2 27.4H29.8C31.5 27.4 32.2 25.2 30.8 24.2L20 16Z" fill="#FFF8F0" fill-opacity="0.10" stroke="#FFF8F0" stroke-width="2.1" stroke-linejoin="round"/>
+            <path d="M14.5 27.4H25.5" stroke="#EED2A6" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M30.4 6.8L31.25 9.35L33.8 10.2L31.25 11.05L30.4 13.6L29.55 11.05L27 10.2L29.55 9.35Z" fill="#F3D8AC"/>
+          </svg>
+        </span>
+        <div>
+          <span class="auth-eyebrow">Aplicativo Oficial</span>
+          <h1 class="auth-title">Truque <em>dos Mil Looks</em></h1>
+        </div>
+      </div>
+
+      <p class="auth-sub">Bem-vinda! Personalize seu perfil em 15 segundos para calibrarmos suas cores, proporções e o seu Closet Inteligente:</p>
+
+      <form id="authForm" class="auth-form">
+        <label class="field">
+          <span>Como você gosta de ser chamada?</span>
+          <input type="text" id="inpName" placeholder="Ex.: Camila" required maxlength="40" autocomplete="given-name">
+        </label>
+
+        <label class="field">
+          <span>Seu e-mail da compra</span>
+          <input type="email" id="inpEmail" placeholder="seuemail@exemplo.com" required autocomplete="email">
+        </label>
+
+        <div class="field-row">
+          <label class="field">
+            <span>Sua altura (cm)</span>
+            <input type="number" id="inpHeight" value="163" min="140" max="195" required inputmode="numeric">
+          </label>
+          <label class="field">
+            <span>Seu estilo favorito</span>
+            <select id="inpStyle">
+              <option value="moderna">Elegante Moderna</option>
+              <option value="classica">Clássica Atemporal</option>
+              <option value="casual">Casual Chic</option>
+              <option value="romantica">Romântica Sofisticada</option>
+              <option value="criativa">Criativa &amp; Fashion</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Sua silhueta (para calibrar caimentos)</span>
+          <select id="inpBody">
+            <option value="ampulheta">Ampulheta (cintura marcada)</option>
+            <option value="retangulo">Retângulo (linhas equilibradas)</option>
+            <option value="triangulo">Triângulo / Pera (quadril mais largo)</option>
+            <option value="invertido">Triângulo Invertido (ombros marcados)</option>
+            <option value="oval">Oval (volume suave no centro)</option>
+          </select>
+        </label>
+
+        <button type="submit" class="btn-gold btn-full">Entrar no meu Aplicativo + Bônus →</button>
+      </form>
+
+      <div class="auth-perks">
+        <span>✓ Closet IA Liberado</span>
+        <span>✓ Provador Virtual</span>
+        <span>✓ Mala &amp; 15→150 Looks</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SHELL PRINCIPAL DO APLICATIVO
+       ========================================================= -->
+  <div class="app-shell" id="appShell" hidden>
+
+    <!-- Topbar Fixa -->
+    <header class="app-header">
+      <div class="app-header__crown"></div>
+      <div class="app-header__inner">
+        <div class="app-brand">
+          <span class="crest crest--sm">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="40" height="40" rx="11" fill="#6E1423"/>
+              <rect x="2.75" y="2.75" width="34.5" height="34.5" rx="8.5" stroke="#E8CBA0" stroke-opacity="0.55" stroke-width="1"/>
+              <path d="M18.2 11.4A2.1 2.1 0 1 1 21.8 12.8C21.1 13.5 20 14.1 20 15.2V16" stroke="#FFF8F0" stroke-width="2.1" stroke-linecap="round"/>
+              <path d="M20 16L9.2 24.2C7.8 25.2 8.5 27.4 10.2 27.4H29.8C31.5 27.4 32.2 25.2 30.8 24.2L20 16Z" fill="#FFF8F0" fill-opacity="0.10" stroke="#FFF8F0" stroke-width="2.1" stroke-linejoin="round"/>
+              <path d="M14.5 27.4H25.5" stroke="#EED2A6" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M30.4 6.8L31.25 9.35L33.8 10.2L31.25 11.05L30.4 13.6L29.55 11.05L27 10.2L29.55 9.35Z" fill="#F3D8AC"/>
+            </svg>
+          </span>
+          <div class="app-brand__txt">
+            <span class="app-brand__vip">✦ Acesso Completo Liberado</span>
+            <strong>Truque <em>dos Mil Looks</em></strong>
+          </div>
+        </div>
+
+        <div class="app-header__actions">
+          <button type="button" class="btn-install" id="btnInstallTop" title="Instalar aplicativo no celular">
+            📲 <span>Instalar</span>
+          </button>
+          <button type="button" class="avatar-btn" id="btnOpenProfile" aria-label="Editar meu perfil">
+            <span id="userInitial">A</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Conteúdo das Abas -->
+    <main class="app-main" id="appMain">
+
+      <!-- =====================================================
+           ABA 1: INÍCIO & ASSISTENTE IA
+           ===================================================== -->
+      <section class="tab-view active" id="view-home" data-view="home">
+        <div class="hero-welcome">
+          <div class="hero-welcome__top">
+            <div>
+              <span class="pill-gold" id="homeStyleBadge">✦ Elegante Moderna</span>
+              <h2 class="hero-welcome__title" id="homeGreeting">Olá, Aluna!</h2>
+              <p class="hero-welcome__sub" id="homeProportionTip">Calibrando proporções para o seu perfil…</p>
+            </div>
+          </div>
+
+          <div class="kpi-grid">
+            <button type="button" class="kpi-card" data-goto-tab="closet">
+              <strong id="kpiPieces">15</strong>
+              <span>Peças no Closet</span>
+            </button>
+            <button type="button" class="kpi-card kpi-card--gold" data-goto-tab="provador">
+              <strong id="kpiPotential">150+</strong>
+              <span>Looks Possíveis</span>
+            </button>
+            <button type="button" class="kpi-card" data-goto-tab="aulas">
+              <strong id="kpiLessons">0/7</strong>
+              <span>Aulas Concluídas</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Gerador Rápido: Meu Look em 30 Segundos -->
+        <div class="card-sec">
+          <div class="sec-head">
+            <div>
+              <span class="sec-kicker">✨ PRONTA EM 5 MINUTOS</span>
+              <h3 class="sec-title">Qual é a programação de hoje?</h3>
+            </div>
+          </div>
+
+          <div class="quick-controls">
+            <div class="chip-row" id="dailyOccasionRow">
+              <button type="button" class="chip active" data-occ="trabalho">💼 Trabalho</button>
+              <button type="button" class="chip" data-occ="passeio">☕ Passeio</button>
+              <button type="button" class="chip" data-occ="encontro">🍷 Jantar / Encontro</button>
+              <button type="button" class="chip" data-occ="evento">✨ Evento</button>
+            </div>
+            <div class="chip-row chip-row--sm" id="dailyWeatherRow">
+              <button type="button" class="chip chip--soft active" data-weather="ameno">🌤️ Ameno</button>
+              <button type="button" class="chip chip--soft" data-weather="quente">☀️ Quente</button>
+              <button type="button" class="chip chip--soft" data-weather="frio">🧥 Frio / Ar-condicionado</button>
+            </div>
+          </div>
+
+          <div class="daily-look" id="dailyLookBox"></div>
+
+          <div class="daily-actions">
+            <button type="button" class="btn-wine" id="btnNewDailyLook">🎲 Gerar outra combinação</button>
+            <button type="button" class="btn-outline" id="btnSaveDailyLook">💾 Salvar Look</button>
+            <button type="button" class="btn-outline" id="btnOpenDailyInFitter">🪞 Ajustar no Provador</button>
+          </div>
+        </div>
+
+        <!-- Atalhos dos 3 Bônus VIP -->
+        <div class="bonus-shortcuts">
+          <button type="button" class="bshort" data-goto-tab="closet">
+            <span class="bshort__ico">👗</span>
+            <div>
+              <small>BÔNUS #2 ATIVO</small>
+              <strong>Closet Inteligente IA</strong>
+              <span>Fotografe e catalogue suas peças</span>
+            </div>
+            <i>›</i>
+          </button>
+          <button type="button" class="bshort" data-goto-tab="provador" data-submode="provador">
+            <span class="bshort__ico">🪞</span>
+            <div>
+              <small>BÔNUS #3 ATIVO</small>
+              <strong>Provador Virtual Realista</strong>
+              <span>Teste combinações na tela antes de vestir</span>
+            </div>
+            <i>›</i>
+          </button>
+          <button type="button" class="bshort" data-goto-tab="provador" data-submode="mala">
+            <span class="bshort__ico">🧳</span>
+            <div>
+              <small>BÔNUS #1 ATIVO</small>
+              <strong>Montador de Mala &amp; Semana</strong>
+              <span>Roteiro Dia 1 ao Dia 7 sem mala pesada</span>
+            </div>
+            <i>›</i>
+          </button>
+        </div>
+
+        <!-- Meus Looks Salvos -->
+        <div class="card-sec" id="savedLooksSection">
+          <div class="sec-head">
+            <div>
+              <span class="sec-kicker">💖 SEU ACERVO PESSOAL</span>
+              <h3 class="sec-title">Meus Looks Favoritos Salvos</h3>
+            </div>
+            <span class="badge-count" id="savedLooksCount">0</span>
+          </div>
+          <div class="saved-grid" id="savedLooksList"></div>
+        </div>
+
+        <!-- Consultora Virtual IA no Chat -->
+        <div class="card-sec">
+          <div class="sec-head">
+            <div>
+              <span class="sec-kicker">💬 CONSULTORA ONLINE 24H</span>
+              <h3 class="sec-title">Pergunte à Assistente de Estilo</h3>
+            </div>
+          </div>
+
+          <div class="stylist-prompts" id="stylistPrompts">
+            <button type="button" class="prompt-pill" data-ask="O que combina com calça preta para ficar elegante?">O que usar com calça preta?</button>
+            <button type="button" class="prompt-pill" data-ask="Como alongar minha silhueta sem usar salto?">Alongar sem salto</button>
+            <button type="button" class="prompt-pill" data-ask="Monte um look chique para jantar usando meu closet">Look para jantar hoje</button>
+            <button type="button" class="prompt-pill" data-ask="Quais 3 cores nunca erram juntas?">Regra das 3 cores</button>
+          </div>
+
+          <div class="stylist-chat" id="stylistChat"></div>
+
+          <form class="stylist-form" id="stylistForm">
+            <input type="text" id="stylistInput" placeholder="Ex.: O que combina com saia vinho?" maxlength="160">
+            <button type="submit" class="btn-wine">Enviar</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           ABA 2: MEU CLOSET INTELIGENTE (IA POR FOTO)
+           ===================================================== -->
+      <section class="tab-view" id="view-closet" data-view="closet">
+        <div class="view-banner">
+          <div>
+            <span class="pill-gold">👗 BÔNUS #2 · CLOSET INTELIGENTE</span>
+            <h2>Meu Guarda-Roupa Digital</h2>
+            <p>Fotografe suas roupas ou use a cápsula base para multiplicar combinações.</p>
+          </div>
+          <button type="button" class="btn-gold" id="btnOpenAddPiece">📸 Adicionar Peça</button>
+        </div>
+
+        <div class="closet-meter">
+          <div class="closet-meter__top">
+            <span id="closetSummaryTxt">15 peças cadastradas</span>
+            <strong id="closetEfficiencyTxt">⚡ 94% de aproveitamento</strong>
+          </div>
+          <div class="meter-track"><div class="meter-fill" id="closetMeterFill" style="width:94%"></div></div>
+        </div>
+
+        <div class="filter-bar">
+          <div class="chip-row" id="closetCatFilter">
+            <button type="button" class="chip active" data-cat="all">Todas</button>
+            <button type="button" class="chip" data-cat="top">Partes de Cima</button>
+            <button type="button" class="chip" data-cat="bottom">Partes de Baixo</button>
+            <button type="button" class="chip" data-cat="outer">3ª Peça / Casacos</button>
+            <button type="button" class="chip" data-cat="dress">Peça Única</button>
+            <button type="button" class="chip" data-cat="shoes">Calçados</button>
+            <button type="button" class="chip" data-cat="bag">Bolsas &amp; Acess.</button>
+          </div>
+        </div>
+
+        <div class="closet-grid" id="closetGrid"></div>
+      </section>
+
+      <!-- =====================================================
+           ABA 3: PROVADOR VIRTUAL & MONTADOR DE MALA
+           ===================================================== -->
+      <section class="tab-view" id="view-provador" data-view="provador">
+        <div class="mode-switch" role="tablist">
+          <button type="button" class="mode-btn active" id="modeBtnFitter" data-mode="provador">🪞 Provador Virtual</button>
+          <button type="button" class="mode-btn" id="modeBtnSuitcase" data-mode="mala">🧳 Mala &amp; Semana</button>
+        </div>
+
+        <!-- SUB-MODO 1: PROVADOR VIRTUAL -->
+        <div id="subviewProvador">
+          <div class="fitter-header">
+            <div class="fitter-mode-toggle">
+              <button type="button" class="mini-pill active" id="fitTypeSeparates">👚 + 👖 Duas Peças</button>
+              <button type="button" class="mini-pill" id="fitTypeDress">👗 Peça Única / Vestido</button>
+              <label class="toggle-third">
+                <input type="checkbox" id="chkThirdPiece" checked>
+                <span>+ 3ª Peça</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Medidor Ao Vivo de Harmonia Cromática & Proporção -->
+          <div class="harmony-bar" id="harmonyBox">
+            <div class="harmony-score">
+              <strong id="harmonyPct">96%</strong>
+              <span>Harmonia</span>
+            </div>
+            <div class="harmony-info">
+              <strong id="harmonyTitle">✦ Combinação Clássica Elegante</strong>
+              <p id="harmonyDesc">Equilíbrio neutro sofisticado que alonga a silhueta.</p>
+            </div>
+          </div>
+
+          <!-- Palco do Provador Virtual -->
+          <div class="fitter-stage" id="fitterStage"></div>
+
+          <div class="fitter-actions">
+            <button type="button" class="btn-wine" id="btnShuffleFitter">🎲 Sortear Look Perfeito</button>
+            <button type="button" class="btn-gold-dark" id="btnSaveFitterLook">💾 Salvar nos Favoritos</button>
+            <button type="button" class="btn-outline" id="btnExportLookCard">📲 Baixar Card do Look (PNG)</button>
+          </div>
+        </div>
+
+        <!-- SUB-MODO 2: MONTADOR AUTOMÁTICO DE MALA & SEMANA -->
+        <div id="subviewMala" hidden>
+          <div class="card-sec">
+            <span class="sec-kicker">🧳 BÔNUS #1 · MALA INTELIGENTE SEM EXCESSO</span>
+            <h3 class="sec-title">Monte sua Mala ou Semana em 1 Toque</h3>
+            <p class="sec-desc">Escolha o foco e os dias: o app seleciona poucas peças estratégicas do seu Closet e monta os looks completos Dia a Dia.</p>
+
+            <div class="trip-form">
+              <div class="field-row">
+                <label class="field">
+                  <span>Objetivo / Destino</span>
+                  <select id="tripOccasion">
+                    <option value="passeio">Passeio &amp; Fim de Semana Chic</option>
+                    <option value="trabalho">Semana de Trabalho &amp; Reuniões</option>
+                    <option value="encontro">Viagem Romântica &amp; Jantares</option>
+                    <option value="evento">Viagem Social &amp; Eventos</option>
+                  </select>
+                </label>
+                <label class="field">
+                  <span>Duração</span>
+                  <select id="tripDays">
+                    <option value="3">3 Dias (Fim de semana)</option>
+                    <option value="5" selected>5 Dias (Semana / Viagem)</option>
+                    <option value="7">7 Dias Completos</option>
+                  </select>
+                </label>
+              </div>
+              <label class="field">
+                <span>Clima previsto</span>
+                <select id="tripWeather">
+                  <option value="ameno">🌤️ Ameno / Meia-estação (com 3ª peça leve)</option>
+                  <option value="quente">☀️ Quente / Verão fresco</option>
+                  <option value="frio">🧥 Frio / Inverno elegante</option>
+                </select>
+              </label>
+              <button type="button" class="btn-gold btn-full" id="btnBuildTrip">✨ Gerar Roteiro Dia a Dia Agora</button>
+            </div>
+          </div>
+
+          <div id="tripResultBox"></div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           ABA 4: MÉTODO 15 PEÇAS → 150 LOOKS
+           ===================================================== -->
+      <section class="tab-view" id="view-capsula" data-view="capsula">
+        <div class="view-banner">
+          <div>
+            <span class="pill-gold">✨ MÉTODO MULTIPLICADOR</span>
+            <h2>15 Peças → 150 Looks</h2>
+            <p>Marque as peças curingas que você já tem em casa e veja quantas combinações prontas elas destravam.</p>
+          </div>
+        </div>
+
+        <div class="capsule-progress">
+          <div class="capsule-progress__nums">
+            <div>
+              <small>Você já tem</small>
+              <strong id="capOwnedCount">15 / 15 peças</strong>
+            </div>
+            <div class="capsule-progress__right">
+              <small>Combinações liberadas</small>
+              <strong id="capUnlockedLooks">150 looks</strong>
+            </div>
+          </div>
+          <div class="meter-track"><div class="meter-fill" id="capMeterFill" style="width:100%"></div></div>
+        </div>
+
+        <div class="card-sec">
+          <div class="sec-head">
+            <div>
+              <span class="sec-kicker">☑️ CHECKLIST DO ARMÁRIO INTELIGENTE</span>
+              <h3 class="sec-title">As 15 Peças Curingas</h3>
+            </div>
+          </div>
+          <div class="capsule-checklist" id="capsuleChecklist"></div>
+        </div>
+
+        <div class="card-sec">
+          <div class="sec-head">
+            <div>
+              <span class="sec-kicker">📖 CATÁLOGO DE FÓRMULAS INFALÍVEIS</span>
+              <h3 class="sec-title">Fórmulas Prontas para Usar</h3>
+            </div>
+          </div>
+          <div class="chip-row" id="formulaFilterRow">
+            <button type="button" class="chip active" data-focc="all">Todas</button>
+            <button type="button" class="chip" data-focc="trabalho">Trabalho</button>
+            <button type="button" class="chip" data-focc="passeio">Dia a Dia</button>
+            <button type="button" class="chip" data-focc="encontro">Noite &amp; Jantar</button>
+            <button type="button" class="chip" data-focc="viagem">Viagem</button>
+          </div>
+          <div class="formula-list" id="formulaList"></div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           ABA 5: ACADEMIA DE AULAS PRÁTICAS
+           ===================================================== -->
+      <section class="tab-view" id="view-aulas" data-view="aulas">
+        <div class="view-banner">
+          <div>
+            <span class="pill-gold">🎓 CONSULTORIA PASSO A PASSO</span>
+            <h2>Aulas: Como se Vestir Melhor</h2>
+            <p>Aulas diretas ao ponto (3 a 5 min de leitura prática) para dominar cores, caimento e elegância sem gastar.</p>
+          </div>
+        </div>
+
+        <div class="closet-meter">
+          <div class="closet-meter__top">
+            <span id="lessonsProgressLabel">Seu progresso na Consultoria</span>
+            <strong id="lessonsProgressPct">0% concluído</strong>
+          </div>
+          <div class="meter-track"><div class="meter-fill" id="lessonsMeterFill" style="width:0%"></div></div>
+        </div>
+
+        <div class="lessons-list" id="lessonsList"></div>
+      </section>
+
+    </main>
+
+    <!-- Barra de Navegação Inferior Nativa -->
+    <nav class="tabbar" aria-label="Navegação principal do aplicativo">
+      <button type="button" class="tabbar__btn active" data-tab="home">
+        <span class="tabbar__ico">🏠</span>
+        <span class="tabbar__lbl">Início</span>
+      </button>
+      <button type="button" class="tabbar__btn" data-tab="closet">
+        <span class="tabbar__ico">👗</span>
+        <span class="tabbar__lbl">Closet</span>
+      </button>
+      <button type="button" class="tabbar__btn tabbar__btn--center" data-tab="provador">
+        <span class="tabbar__fab">🪞</span>
+        <span class="tabbar__lbl">Provador</span>
+      </button>
+      <button type="button" class="tabbar__btn" data-tab="capsula">
+        <span class="tabbar__ico">✨</span>
+        <span class="tabbar__lbl">15→150</span>
+      </button>
+      <button type="button" class="tabbar__btn" data-tab="aulas">
+        <span class="tabbar__ico">🎓</span>
+        <span class="tabbar__lbl">Aulas</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- =========================================================
+       MODAL: ADICIONAR PEÇA AO CLOSET (CÂMERA / GALERIA + IA COR)
+       ========================================================= -->
+  <div class="modal" id="modalAddPiece" hidden>
+    <div class="modal__backdrop" data-close-modal="modalAddPiece"></div>
+    <div class="modal__sheet">
+      <div class="modal__head">
+        <h3>📸 Cadastrar Peça no Closet</h3>
+        <button type="button" class="modal__close" data-close-modal="modalAddPiece">✕</button>
+      </div>
+
+      <form id="formAddPiece" class="modal__body">
+        <label class="photo-drop" id="photoDropZone">
+          <input type="file" id="inpPiecePhoto" accept="image/*" hidden>
+          <div id="photoPreviewEmpty" class="photo-drop__empty">
+            <span class="photo-drop__ico">📷</span>
+            <strong>Tirar foto ou escolher da galeria</strong>
+            <small>A IA identifica automaticamente a cor principal da peça</small>
+          </div>
+          <img id="photoPreviewImg" class="photo-drop__img" alt="Prévia da peça" hidden>
+        </label>
+
+        <div class="ai-color-hint" id="aiColorHint" hidden>
+          ✨ Cor detectada automaticamente na foto! Você pode ajustar abaixo se preferir.
+        </div>
+
+        <label class="field">
+          <span>Nome da peça</span>
+          <input type="text" id="inpPieceName" placeholder="Ex.: Camisa Linho Areia" required maxlength="48">
+        </label>
+
+        <div class="field-row">
+          <label class="field">
+            <span>Categoria</span>
+            <select id="inpPieceCat" required>
+              <option value="top">👚 Parte de Cima</option>
+              <option value="bottom">👖 Parte de Baixo</option>
+              <option value="outer">🧥 3ª Peça / Blazer</option>
+              <option value="dress">👗 Peça Única / Vestido</option>
+              <option value="shoes">👠 Calçado</option>
+              <option value="bag">👜 Bolsa / Acessório</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Cor predominante</span>
+            <select id="inpPieceColor" required>
+              <option value="offwhite">Off-White / Branco</option>
+              <option value="preto">Preto</option>
+              <option value="bege">Bege / Areia / Nude</option>
+              <option value="vinho">Vinho / Bordô</option>
+              <option value="marinho">Azul Marinho</option>
+              <option value="jeans">Jeans / Azul</option>
+              <option value="caramelo">Caramelo / Marrom</option>
+              <option value="oliva">Verde Oliva / Militar</option>
+              <option value="rose">Rosé / Blush</option>
+              <option value="cinza">Cinza / Prata</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="field">
+          <span>Onde você usa essa peça?</span>
+          <div class="chip-row" id="newPieceOccs">
+            <button type="button" class="chip active" data-pocc="trabalho">Trabalho</button>
+            <button type="button" class="chip active" data-pocc="passeio">Passeio</button>
+            <button type="button" class="chip" data-pocc="encontro">Jantar</button>
+            <button type="button" class="chip" data-pocc="evento">Evento</button>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-gold btn-full">Salvar Peça no Meu Closet ✨</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MODAL: LEITOR DE AULA INTERATIVA
+       ========================================================= -->
+  <div class="modal" id="modalLesson" hidden>
+    <div class="modal__backdrop" data-close-modal="modalLesson"></div>
+    <div class="modal__sheet modal__sheet--tall">
+      <div class="modal__head">
+        <h3 id="lessonModalMod">Módulo 1</h3>
+        <button type="button" class="modal__close" data-close-modal="modalLesson">✕</button>
+      </div>
+      <div class="modal__body" id="lessonModalBody"></div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MODAL: PERFIL DA ALUNA & CONFIGURAÇÕES DO CLOSET
+       ========================================================= -->
+  <div class="modal" id="modalProfile" hidden>
+    <div class="modal__backdrop" data-close-modal="modalProfile"></div>
+    <div class="modal__sheet">
+      <div class="modal__head">
+        <h3>👑 Meu Perfil de Estilo</h3>
+        <button type="button" class="modal__close" data-close-modal="modalProfile">✕</button>
+      </div>
+      <form id="formEditProfile" class="modal__body">
+        <label class="field">
+          <span>Seu nome</span>
+          <input type="text" id="editName" required maxlength="40">
+        </label>
+        <div class="field-row">
+          <label class="field">
+            <span>Altura (cm)</span>
+            <input type="number" id="editHeight" min="140" max="195" required>
+          </label>
+          <label class="field">
+            <span>Estilo principal</span>
+            <select id="editStyle">
+              <option value="moderna">Elegante Moderna</option>
+              <option value="classica">Clássica Atemporal</option>
+              <option value="casual">Casual Chic</option>
+              <option value="romantica">Romântica Sofisticada</option>
+              <option value="criativa">Criativa &amp; Fashion</option>
+            </select>
+          </label>
+        </div>
+        <label class="field">
+          <span>Sua silhueta</span>
+          <select id="editBody">
+            <option value="ampulheta">Ampulheta (cintura marcada)</option>
+            <option value="retangulo">Retângulo (linhas equilibradas)</option>
+            <option value="triangulo">Triângulo / Pera (quadril mais largo)</option>
+            <option value="invertido">Triângulo Invertido (ombros marcados)</option>
+            <option value="oval">Oval (volume suave no centro)</option>
+          </select>
+        </label>
+        <button type="submit" class="btn-wine btn-full">Salvar Alterações</button>
+        <hr class="divider">
+        <button type="button" class="btn-outline btn-full" id="btnRestoreDemoCloset">🔄 Restaurar as 15 Peças Curingas Base</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       MODAL: COMO INSTALAR NA TELA INICIAL (IPHONE & ANDROID)
+       ========================================================= -->
+  <div class="modal" id="modalInstall" hidden>
+    <div class="modal__backdrop" data-close-modal="modalInstall"></div>
+    <div class="modal__sheet">
+      <div class="modal__head">
+        <h3>📲 Instalar App no Celular</h3>
+        <button type="button" class="modal__close" data-close-modal="modalInstall">✕</button>
+      </div>
+      <div class="modal__body install-guide">
+        <p>Deixe o <strong>Truque dos Mil Looks</strong> na tela inicial do seu celular igual a um aplicativo nativo (sem ocupar memória!):</p>
+        <div class="install-box">
+          <strong>🍎 No iPhone (Safari):</strong>
+          <ol>
+            <li>Toque no ícone <strong>Compartilhar (⬆️)</strong> na barra inferior do Safari.</li>
+            <li>Role para baixo e toque em <strong>“Adicionar à Tela de Início” (➕)</strong>.</li>
+            <li>Toque em <strong>Adicionar</strong> no canto superior direito. Pronto!</li>
+          </ol>
+        </div>
+        <div class="install-box">
+          <strong>🤖 No Android (Chrome):</strong>
+          <ol>
+            <li>Toque nos <strong>3 pontinhos (⋮)</strong> no canto superior direito do navegador.</li>
+            <li>Toque em <strong>“Instalar aplicativo”</strong> ou <strong>“Adicionar à tela inicial”</strong>.</li>
+          </ol>
+        </div>
+        <button type="button" class="btn-gold btn-full" data-close-modal="modalInstall">Entendi, perfeito! ✨</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast de Feedback -->
+  <div class="app-toast" id="appToast" hidden></div>
+
+  <script src="/app/app.js?v=1"></script>
+</body>
+</html>

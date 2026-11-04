@@ -1,0 +1,26 @@
+{
+  "name": "Truque dos Mil Looks — App Oficial",
+  "short_name": "Mil Looks",
+  "description": "Seu Closet Inteligente, Provador Virtual, Montador de Mala e Método 15 Peças → 150 Looks.",
+  "start_url": "/app",
+  "scope": "/app",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFFDF9",
+  "theme_color": "#6E1423",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/app/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/app/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

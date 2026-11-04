@@ -15,6 +15,7 @@ const MIME = {
   ".js": "application/javascript; charset=utf-8",
   ".mjs": "application/javascript; charset=utf-8",
   ".json": "application/json; charset=utf-8",
+  ".webmanifest": "application/manifest+json; charset=utf-8",
   ".svg": "image/svg+xml",
   ".png": "image/png",
   ".jpg": "image/jpeg",
@@ -131,6 +132,10 @@ const server = http.createServer((req, res) => {
       console.error("Bundle fallback:", err);
     }
     reqPath = "/index.html";
+  }
+
+  if (reqPath === "/app" || reqPath === "/app/") {
+    reqPath = "/app/index.html";
   }
 
   const safePath = path.normalize(reqPath).replace(/^(\.\.(\/|\\|$))+/, "");
