@@ -13,6 +13,7 @@ __pycache__/
 out/
 renders/
 artifacts/
+funil/dist/
 
 # Arquivos locais e credenciais
 .env

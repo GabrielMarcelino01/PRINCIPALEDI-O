@@ -1,5 +1,6 @@
 # Instruções para agentes
 
+- **Memória persistente:** no início de cada sessão, leia `CLAUDE.md` (e `funil/CLAUDE.md` ao mexer no site/funil) e use `skills/project-memory/SKILL.md` para consultar decisões anteriores e registrar novas entregas.
 - Para pedidos de vídeo, comece por `skills/video-editing/SKILL.md` e carregue apenas as skills especializadas necessárias.
 - Use `skills/video-quality/SKILL.md` antes de qualquer entrega de MP4.
 - `recovered/` contém snapshots de projetos de terceiros; preserve suas licenças, avisos e documentação de origem.
