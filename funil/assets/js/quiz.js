@@ -11,6 +11,7 @@
 
   /* Imagens otimizadas salvas localmente neste repositório */
   var LOCAL_ASSETS = {
+    "assets/img/antes-depois.jpg": true,
     "assets/img/antes-depois-1.jpg": true,
     "assets/img/antes-depois-2.jpg": true,
     "assets/img/antes-depois-3.jpg": true
@@ -330,10 +331,10 @@
     }
     [
       "assets/img/app-preview.jpg",
+      "assets/img/antes-depois.jpg",
       "assets/img/antes-depois-2.jpg",
       "assets/img/antes-depois-3.jpg",
       "assets/img/antes-depois-1.jpg",
-      "assets/img/antes-depois.jpg",
       "assets/img/estilo-novo.jpg",
       "assets/img/mockup-premium.jpg"
     ].forEach(function (src) {
@@ -1134,6 +1135,10 @@
     ];
 
     var baSlides = [
+      {
+        src: "assets/img/antes-depois.jpg",
+        alt: "Antes e depois: guarda-roupa com desperdício de 70% passando para 94% de eficiência e combinação perfeita"
+      },
       {
         src: "assets/img/antes-depois-2.jpg",
         alt: "Antes e depois: looks básicos virando produção elegante em vinho e blazer off-white que valoriza o corpo"
