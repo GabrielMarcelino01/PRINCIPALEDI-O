@@ -25,7 +25,10 @@ const CAROUSEL_NEW_IMAGES = [
   "antes-depois-capa.jpg",
   "antes-depois-1.jpg",
   "antes-depois-2.jpg",
-  "antes-depois-3.jpg"
+  "antes-depois-3.jpg",
+  "bonus-montador-looks.jpg",
+  "bonus-closet-inteligente.jpg",
+  "bonus-provador-virtual.jpg"
 ];
 
 const ORIGINAL_IMAGES = [
@@ -114,10 +117,10 @@ async function main() {
     totalBytes += r.bytes;
     console.log(`[img ok] ${r.fileName} (${(r.bytes / 1024).toFixed(1)} KB)`);
   }
-  console.log(`Total de imagens verificadas: ${results.length}/27 (${(totalBytes / 1024 / 1024).toFixed(2)} MB)`);
+  console.log(`Total de imagens verificadas: ${results.length}/30 (${(totalBytes / 1024 / 1024).toFixed(2)} MB)`);
 
-  if (results.length !== 27) {
-    throw new Error(`Esperadas 27 imagens, obtidas ${results.length}`);
+  if (results.length !== 30) {
+    throw new Error(`Esperadas 30 imagens, obtidas ${results.length}`);
   }
 
   const cssRaw = fs.readFileSync(path.join(__dirname, "assets/css/style.css"), "utf8");

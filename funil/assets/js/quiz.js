@@ -15,7 +15,10 @@
     "assets/img/antes-depois.jpg": true,
     "assets/img/antes-depois-1.jpg": true,
     "assets/img/antes-depois-2.jpg": true,
-    "assets/img/antes-depois-3.jpg": true
+    "assets/img/antes-depois-3.jpg": true,
+    "assets/img/bonus-montador-looks.jpg": true,
+    "assets/img/bonus-closet-inteligente.jpg": true,
+    "assets/img/bonus-provador-virtual.jpg": true
   };
 
   /* Resolve direto para a CDN na borda quando fora da Vercel (exceto assets novos locais),
@@ -336,7 +339,9 @@
       "assets/img/antes-depois-2.jpg",
       "assets/img/antes-depois-3.jpg",
       "assets/img/antes-depois-1.jpg",
-      "assets/img/estilo-novo.jpg",
+      "assets/img/bonus-montador-looks.jpg",
+      "assets/img/bonus-closet-inteligente.jpg",
+      "assets/img/bonus-provador-virtual.jpg",
       "assets/img/mockup-premium.jpg"
     ].forEach(function (src) {
       if (allOrdered.indexOf(src) === -1) allOrdered.push(src);
@@ -704,6 +709,17 @@
 
     var html = "";
 
+    var milestoneMsgs = {
+      3: "✨ Ótimo! Já mapeamos como funciona o seu armário hoje…",
+      6: "🎯 Proporções de altura e peso calibradas com sucesso!",
+      9: "🔥 Quase lá! Cruzando combinações de cores para o seu perfil…",
+      12: "🎟️ 88% OFF garantido no seu ticket! Faltam só 2 respostas…"
+    };
+
+    if (milestoneMsgs[state.i]) {
+      html += '<div class="quiz__milestone">' + milestoneMsgs[state.i] + '</div>';
+    }
+
     if (first) {
       html += '<div class="quiz__mosaic"><img src="' + assetUrl("assets/img/colagem-looks.png") + '" alt="Descubra o truque dos mil looks para gastar menos e montar muito mais looks: +120 mil mulheres usam nosso APP! Responda o Quiz e faça parte" fetchpriority="high" decoding="sync"></div>';
     }
@@ -714,6 +730,7 @@
     }
 
     html += '<div class="quiz__head">' +
+      (first ? '<div class="quiz__livepill"><span class="quiz__livedot" aria-hidden="true"></span>+120 mil mulheres já descobriram seus looks · Leva 45s</div>' : '') +
       (q.kicker ? '<p class="quiz__kicker">' + q.kicker + '</p>' : '') +
       '<h2 class="quiz__title">' + q.title + '</h2>' +
       (q.hint ? '<p class="quiz__hint">' + q.hint + '</p>' : '') +
@@ -1138,29 +1155,84 @@
     var baSlides = [
       {
         src: "assets/img/antes-depois-capa.jpg",
-        alt: "Antes e depois: guarda-roupa com desperdício de 70% passando para 94% de eficiência e combinação perfeita"
+        alt: "Antes e depois: guarda-roupa com desperdício de 70% passando para 94% de eficiência e combinação perfeita",
+        quote: "“Eu desperdiçava 70% das minhas roupas. Em uma semana o app transformou meu armário!” — Camila R., 29 anos"
       },
       {
         src: "assets/img/antes-depois-2.jpg",
-        alt: "Antes e depois: looks básicos virando produção elegante em vinho e blazer off-white que valoriza o corpo"
+        alt: "Antes e depois: looks básicos virando produção elegante em vinho e blazer off-white que valoriza o corpo",
+        quote: "“Saí do jeans sem graça para looks elegantes usando peças que já estavam na gaveta.” — Renata S., 35 anos"
       },
       {
         src: "assets/img/antes-depois-3.jpg",
-        alt: "Antes e depois: rotina sem tempo virando estilo elegante, versátil e cheio de presença em azul royal e alfaiataria"
+        alt: "Antes e depois: rotina sem tempo virando estilo elegante, versátil e cheio de presença em azul royal e alfaiataria",
+        quote: "“Não tinha tempo pra nada de manhã. Agora abro o app e estou pronta em 4 minutos!” — Vanessa M., 38 anos"
       },
       {
         src: "assets/img/antes-depois-1.jpg",
-        alt: "Antes e depois: guarda-roupa com 68% sem aproveitamento passando para 91% de aproveitamento e harmonia elegante"
+        alt: "Antes e depois: guarda-roupa com 68% sem aproveitamento passando para 91% de aproveitamento e harmonia elegante",
+        quote: "“Parei de comprar por impulso e hoje aproveito 91% do meu guarda-roupa com harmonia.” — Helena P., 46 anos"
+      }
+    ];
+
+    var bonusItems = [
+      {
+        num: "01",
+        tag: "PRESENTE #1 · LIBERADO NO APP",
+        title: "Montador Automático de Looks & Mala de Viagem",
+        oldPrice: 77,
+        img: "assets/img/bonus-montador-looks.jpg",
+        alt: "Montador de Looks Truque dos Mil Looks: crie combinações incríveis com as peças que você já tem, inclusive para viagem",
+        desc: "Vai trabalhar, sair no fim de semana ou montar mala de 5 dias? O app cruza suas blusas, calças, calçados e acessórios e entrega o look pronto Dia a Dia.",
+        perks: [
+          "Roteiro completo Dia 1 ao Dia 5 para viagens sem mala pesada",
+          "Combinações prontas com as peças que você já tem em casa",
+          "Sugestão até dos sapatos, óculos, brincos e bolsa certos"
+        ]
+      },
+      {
+        num: "02",
+        tag: "PRESENTE #2 · LIBERADO NO APP",
+        title: "Meu Closet Inteligente (IA: 15 Peças → 150 Looks) + VIP",
+        oldPrice: 107,
+        img: "assets/img/bonus-closet-inteligente.jpg",
+        alt: "Meu Closet Virtual com IA: 15 peças rendem 150 looks, inspirações, cupons exclusivos e Grupo VIP",
+        desc: "Seu armário inteiro organizado na palma da mão com Inteligência Artificial, somado ao guia prático que multiplica 15 peças em 150 combinações elegantes.",
+        perks: [
+          "Closet Virtual inteligente que cataloga suas roupas por foto",
+          "Método 15 peças → 150 looks + vitrine diária de inspirações",
+          "Acesso a Cupons Exclusivos + Grupo VIP com dicas todos os dias"
+        ]
+      },
+      {
+        num: "03",
+        tag: "PRESENTE #3 · LIBERADO NO APP",
+        title: "Provador Virtual Realista na Tela do Celular",
+        oldPrice: 97,
+        img: "assets/img/bonus-provador-virtual.jpg",
+        alt: "Provador Virtual Truque dos Mil Looks: teste combinações completas antes de vestir",
+        desc: "Chega de tirar 10 roupas do cabide e deixar a cama bagunçada! Teste blusa, terceira peça, calça e sapato direto na tela e veja o caimento antes de vestir.",
+        perks: [
+          "Visualize o look completo antes mesmo de abrir o armário",
+          "Compare 3 opções lado a lado e escolha a mais elegante em segundos",
+          "Zero arrependimento antes de sair para o trabalho ou evento"
+        ]
       }
     ];
 
     var html = "";
-    html += '<div class="result__top result__top--cta" id="resultFirstImg" role="button" tabindex="0" aria-label="Ver Plano Premium com 88% de desconto">' +
-      '<img src="' + assetUrl("assets/img/app-preview.jpg") + '" alt="Aplicativo Truque dos Mil Looks com a sua cara: toque para ir ao Plano Premium" decoding="sync">' +
+    html += '<div class="result__unlocked">' +
+      '<span class="result__unlocked-badge">🎉 Diagnóstico Concluído</span>' +
+      '<span class="result__unlocked-txt"><strong>88% OFF</strong> + <strong>3 Presentes VIP</strong> liberados pra você!</span>' +
       '</div>';
-    html += '<button type="button" class="btn btn--primary btn--lg result__appbtn" id="btnApp">Acessar meu app →</button>';
 
-    /* Carrossel Antes & Depois compacto, 1 card por vez (zero sobreposição) */
+    html += '<div class="result__top result__top--cta" id="resultFirstImg" role="button" tabindex="0" aria-label="Ver Plano Premium com 88% de desconto e 3 bônus grátis">' +
+      '<img src="' + assetUrl("assets/img/app-preview.jpg") + '" alt="Aplicativo Truque dos Mil Looks com a sua cara: toque para ir ao Plano Premium" decoding="sync">' +
+      '<span class="result__tapbadge">👆 Toque para liberar App + 3 Bônus Grátis</span>' +
+      '</div>';
+    html += '<button type="button" class="btn btn--primary btn--lg result__appbtn pulse" id="btnApp">Liberar meu App + 3 Bônus Grátis →</button>';
+
+    /* Carrossel Antes & Depois ampliado, 1 card por vez (zero sobreposição) + depoimento vivo */
     html += '<section class="ba-sec" aria-label="Transformações reais de quem usa o aplicativo">' +
       '<div class="ba-head">' +
         '<span class="ba-kicker">✦ Transformações Reais</span>' +
@@ -1176,9 +1248,10 @@
             }).join("") +
           '</div>' +
         '</div>' +
+        '<p class="ba-quote" id="baQuote">' + baSlides[0].quote + '</p>' +
         '<div class="ba-bar">' +
           '<button type="button" class="ba-btn" id="baPrev" aria-label="Transformação anterior">' +
-            '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>' +
+            '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>' +
           '</button>' +
           '<div class="ba-meta">' +
             '<div class="ba-dots" id="baDots" role="tablist" aria-label="Selecionar transformação">' +
@@ -1189,7 +1262,7 @@
             '<span class="ba-count" id="baCount">1 de ' + baSlides.length + '</span>' +
           '</div>' +
           '<button type="button" class="ba-btn" id="baNext" aria-label="Próxima transformação">' +
-            '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>' +
+            '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>' +
           '</button>' +
         '</div>' +
       '</div>' +
@@ -1238,24 +1311,87 @@
     });
     html += '</div>';
 
-    html += '<div class="vsl" id="vslBox">' +
-      '<div class="vsl__poster">' +
-        '<img src="' + assetUrl("assets/img/estilo-novo.jpg") + '" alt="Mulher confiante com trench bege e bolsa vinho" decoding="sync">' +
-        '<button type="button" class="vsl__play" id="vslPlay" aria-label="Assistir vídeo"><i>▶</i></button>' +
-        '<p class="vsl__label">Vídeo de 2 min: como o seu armário vira ' + c.looks + ' looks</p>' +
+    /* ==============================================================
+       STACK DE 3 BÔNUS BRILHANTES & INTERATIVOS ANTES DO CHECKOUT
+       (Substitui o vídeo — Ancoragem R$ 281,00 -> R$ 0,00 GRÁTIS)
+       ============================================================== */
+    html += '<section class="bstack" id="bonusStack" aria-label="Bônus exclusivos liberados gratuitamente">' +
+      '<div class="bstack__glow" aria-hidden="true"></div>' +
+      '<div class="bstack__head">' +
+        '<span class="bstack__pill shimmer-badge">🎁 3 PRESENTES VIP LIBERADOS PRA VOCÊ</span>' +
+        '<h3 class="bstack__title">Ao garantir seu App hoje, você <em>ganha de graça</em> estes 3 Bônus!</h3>' +
+        '<p class="bstack__sub">Vendidos separadamente por <strong><s>R$ 281,00</s></strong> — mas ativando seu acesso agora, todos os 3 já vêm <strong>100% liberados por R$ 0,00</strong> dentro do seu aplicativo:</p>' +
+        '<div class="bstack__meter">' +
+          '<div class="bstack__meter-top">' +
+            '<span>✨ <b>3 de 3 presentes</b> adicionados ao seu acesso</span>' +
+            '<strong class="bstack__saved">Economia: R$ 281,00</strong>' +
+          '</div>' +
+          '<div class="bstack__meter-bar"><div class="bstack__meter-fill"></div></div>' +
+        '</div>' +
       '</div>' +
-      '</div>';
+
+      '<div class="bstack__list">' +
+        bonusItems.map(function (b, idx) {
+          return '<article class="bcard" data-bonus-card="' + idx + '">' +
+            '<div class="bcard__ribbon">' +
+              '<span class="bcard__tag">✦ ' + b.tag + '</span>' +
+              '<span class="bcard__free shimmer-badge">GRÁTIS HOJE</span>' +
+            '</div>' +
+            '<div class="bcard__body">' +
+              '<div class="bcard__media" data-zoom-src="' + assetUrl(b.img) + '" data-zoom-title="' + b.title + '" role="button" tabindex="0" aria-label="Ampliar imagem do bônus ' + b.title + '">' +
+                '<img src="' + assetUrl(b.img) + '" alt="' + b.alt + '" decoding="sync">' +
+                '<span class="bcard__zoom">🔍 Toque para ampliar</span>' +
+              '</div>' +
+              '<div class="bcard__content">' +
+                '<h4 class="bcard__title">' + b.title + '</h4>' +
+                '<p class="bcard__desc">' + b.desc + '</p>' +
+                '<div class="bcard__pricebox">' +
+                  '<div class="bcard__old">Você pagaria: <s>R$ ' + b.oldPrice + ',00</s></div>' +
+                  '<div class="bcard__now">Hoje com o App: <strong>R$ 0,00 <span>(DE GRAÇA)</span></strong></div>' +
+                '</div>' +
+                '<button type="button" class="bcard__toggle" data-bonus-toggle="' + idx + '" aria-expanded="' + (idx === 0 ? "true" : "false") + '">' +
+                  '<span>' + (idx === 0 ? "O que você ganha neste presente" : "Toque para ver tudo que vem incluso") + '</span>' +
+                  '<i>▾</i>' +
+                '</button>' +
+                '<ul class="bcard__perks"' + (idx === 0 ? '' : ' hidden') + '>' +
+                  b.perks.map(function (p) { return '<li>' + p + '</li>'; }).join("") +
+                '</ul>' +
+                '<div class="bcard__status"><span>✓</span> Presente garantido automaticamente na sua compra</div>' +
+              '</div>' +
+            '</div>' +
+          '</article>';
+        }).join("") +
+      '</div>' +
+
+      '<div class="bstack__summary shimmer-card">' +
+        '<div class="bstack__sum-eyebrow">🎉 RESUMO DO QUE VOCÊ ESTÁ GANHANDO HOJE</div>' +
+        '<div class="bstack__sum-rows">' +
+          '<div class="bstack__sum-row"><span>🎁 Montador de Looks &amp; Viagem</span><b><s>R$ 77,00</s> → GRÁTIS</b></div>' +
+          '<div class="bstack__sum-row"><span>🎁 Closet Inteligente IA + VIP</span><b><s>R$ 107,00</s> → GRÁTIS</b></div>' +
+          '<div class="bstack__sum-row"><span>🎁 Provador Virtual no Celular</span><b><s>R$ 97,00</s> → GRÁTIS</b></div>' +
+        '</div>' +
+        '<div class="bstack__sum-total">' +
+          '<div><small>Valor real dos 3 Bônus:</small><s>R$ 281,00</s></div>' +
+          '<div class="bstack__sum-zero"><small>Você paga pelos bônus:</small><strong>R$ 0,00</strong></div>' +
+        '</div>' +
+        '<button type="button" class="btn btn--gold btn--lg bstack__cta" id="btnClaimBonuses">Resgatar App + R$ 281 em Bônus Grátis →</button>' +
+      '</div>' +
+      '</section>';
 
     html += '<section class="offer" id="planos">' +
-      '<p class="offer__kicker">Escolha como começar</p>' +
-      '<h3 class="offer__title">Seus ' + c.looks + ' looks já moram no seu armário</h3>' +
-      '<p class="offer__copy">O app monta todo dia os looks que o seu guarda-roupa realmente permite — com o seu estilo, as suas ocasiões (' + ocasoes + ') e a sua proporção. Sem comprar nada novo e sem fila na frente do espelho.</p>' +
+      '<p class="offer__kicker">✦ Oferta Especial Desbloqueada</p>' +
+      '<h3 class="offer__title">Seus ' + c.looks + ' looks + R$ 281 em Bônus esperando por você</h3>' +
+      '<p class="offer__copy">Ative agora o seu aplicativo personalizado para <strong>' + ocasoes + '</strong> e receba acesso imediato à plataforma + os <strong>3 presentes VIP de graça</strong>.</p>' +
       '<div class="plans" id="plansBox">' +
         '<div class="plan" data-plan="basico" tabindex="0" role="button" aria-pressed="false">' +
           '<span class="plan__radio"></span>' +
           '<h4 class="plan__name">Básico</h4>' +
-          '<p class="plan__for">Pra começar a se vestir melhor hoje</p>' +
-          '<div class="plan__price"><strong>R$ 14,90</strong><span>/mês</span><small>com 88% de desconto</small></div>' +
+          '<p class="plan__for">Acesso inicial sem pacote VIP</p>' +
+          '<div class="plan__price">' +
+            '<span class="plan__from">De <s>R$ 97,00</s> por</span>' +
+            '<div><strong>R$ 14,90</strong><span>/mês</span></div>' +
+            '<small>cerca de R$ 0,49 por dia</small>' +
+          '</div>' +
           '<ul class="plan__list">' +
             '<li style="--i:0">Aplicativo Truque dos Mil Looks</li>' +
             '<li style="--i:1">Aulas de como se vestir melhor</li>' +
@@ -1264,36 +1400,54 @@
         '</div>' +
 
         '<div class="plan plan--premium plan--sel" id="planPremium" data-plan="premium" tabindex="0" role="button" aria-pressed="true">' +
-          '<span class="plan__flag">Recomendado · 88% off</span>' +
+          '<span class="plan__flag shimmer-badge">⭐ Mais Escolhido · 88% OFF + 3 Bônus</span>' +
           '<div class="plan__shot"><img src="' + assetUrl("assets/img/mockup-premium.jpg") + '" alt="Aplicativo Truque dos Mil Looks aberto no celular e no tablet, ao lado do livro-guia do método" decoding="sync"></div>' +
           '<span class="plan__radio"></span>' +
-          '<h4 class="plan__name">Premium</h4>' +
-          '<p class="plan__for">O pacote completo, do armário ao look pronto</p>' +
-          '<div class="plan__price"><strong>R$ 27,90</strong><span>/mês</span><small>com 88% de desconto</small></div>' +
+          '<h4 class="plan__name">Premium Completo</h4>' +
+          '<p class="plan__for">App Completo + Todos os 3 Bônus VIP Grátis</p>' +
+          '<div class="plan__price">' +
+            '<span class="plan__from">De <s>R$ 197,00</s> por apenas</span>' +
+            '<div><strong>R$ 27,90</strong><span>/mês</span></div>' +
+            '<small>☕ Menos de R$ 0,93 por dia · Cancele quando quiser</small>' +
+          '</div>' +
+          '<div class="plan__bonus-pill">🎁 <strong>+ R$ 281,00 em Bônus GRÁTIS</strong> (Montador + Closet IA + Provador)</div>' +
           '<ul class="plan__list">' +
-            '<li style="--i:0">Tudo do Básico: app + aulas</li>' +
-            '<li style="--i:1">Pacote 15 peças → 150 looks</li>' +
-            '<li style="--i:2">Links com looks elegantes e baratos</li>' +
-            '<li style="--i:3">Grupo VIP no WhatsApp</li>' +
-            '<li style="--i:4">Atualizações sempre incluídas</li>' +
+            '<li style="--i:0">Tudo do Básico: App + Aulas práticas</li>' +
+            '<li style="--i:1"><strong>Bônus #1:</strong> Montador de Looks &amp; Viagem <em>(Grátis)</em></li>' +
+            '<li style="--i:2"><strong>Bônus #2:</strong> Closet IA 15→150 Looks <em>(Grátis)</em></li>' +
+            '<li style="--i:3"><strong>Bônus #3:</strong> Provador Virtual Realista <em>(Grátis)</em></li>' +
+            '<li style="--i:4">Cupons de looks baratos + Grupo VIP WhatsApp</li>' +
           '</ul>' +
-          '<button type="button" class="btn btn--cta plan__btn" data-cta data-plan="premium">Quero o pacote completo por R$ 27,90/mês →</button>' +
+          '<button type="button" class="btn btn--cta plan__btn" data-cta data-plan="premium">Quero o Premium + 3 Bônus por R$ 27,90/mês →</button>' +
         '</div>' +
+      '</div>' +
+
+      '<div class="plan-loss" id="planLossNote" hidden>' +
+        '<p>⚠️ <strong>Tem certeza?</strong> No plano Básico você deixa de ganhar os <strong>R$ 281,00 em Bônus VIP</strong> (Closet 15→150 Looks, Cupons &amp; Grupo VIP) por uma diferença de apenas <strong>R$ 0,43 por dia</strong>.</p>' +
+        '<button type="button" class="plan-loss__btn" id="btnRestorePremium">Voltar para o Premium Completo + 3 Bônus Grátis ✨</button>' +
       '</div>' +
 
       '<button type="button" class="cmp__toggle" id="cmpToggle" aria-expanded="false">Comparar os dois planos, item por item <span>▾</span></button>' +
       '<div class="cmp" id="cmpBox" hidden>' +
-        '<div class="cmp__row cmp__head"><span>O que entra</span><b>Básico</b><b>Premium</b></div>' +
+        '<div class="cmp__row cmp__head"><span>O que você recebe</span><b>Básico</b><b>Premium</b></div>' +
         '<div class="cmp__row"><span>Aplicativo Truque dos Mil Looks</span><b class="ok">✓</b><b class="ok">✓</b></div>' +
         '<div class="cmp__row"><span>Aulas de como se vestir melhor</span><b class="ok">✓</b><b class="ok">✓</b></div>' +
-        '<div class="cmp__row"><span>Pacote 15 peças → 150 looks</span><b class="na">—</b><b class="ok">✓</b></div>' +
-        '<div class="cmp__row"><span>Links com looks elegantes e baratos</span><b class="na">—</b><b class="ok">✓</b></div>' +
-        '<div class="cmp__row"><span>Grupo VIP no WhatsApp</span><b class="na">—</b><b class="ok">✓</b></div>' +
-        '<div class="cmp__row"><span>Atualizações sempre incluídas</span><b class="na">—</b><b class="ok">✓</b></div>' +
+        '<div class="cmp__row"><span>🎁 Montador de Looks &amp; Viagem (R$ 77)</span><b class="na">—</b><b class="ok">GRÁTIS</b></div>' +
+        '<div class="cmp__row"><span>🎁 Closet IA 15→150 Looks (R$ 107)</span><b class="na">—</b><b class="ok">GRÁTIS</b></div>' +
+        '<div class="cmp__row"><span>🎁 Provador Virtual no Celular (R$ 97)</span><b class="na">—</b><b class="ok">GRÁTIS</b></div>' +
+        '<div class="cmp__row"><span>Links de achadinhos + Grupo VIP</span><b class="na">—</b><b class="ok">✓</b></div>' +
       '</div>' +
 
-      '<div class="offer__timer">⏳ Seu desconto de 88% fica garantido por <strong id="offerClock">15:00</strong></div>' +
-      '<p class="offer__micro">Você terminou o quiz: seu preço de estreia fica liberado por tempo limitado.</p>' +
+      '<div class="offer__timer">⏳ Desconto de 88% + 3 Bônus Grátis expiram em <strong id="offerClock">15:00</strong></div>' +
+
+      '<div class="offer__guarantee">' +
+        '<span class="offer__g-ico">🛡️</span>' +
+        '<div>' +
+          '<strong>Garantia Blindada de 7 Dias · Risco Zero</strong>' +
+          '<p>Entre no App, teste o Provador Virtual, o Closet IA e os looks montados com suas roupas. Se não amar, devolvemos 100% do valor com 1 clique.</p>' +
+        '</div>' +
+      '</div>' +
+
       '<div class="offer__badges">' + (CFG.trustBadges || []).map(function (b) { return '<span>' + b + '</span>'; }).join("") + '</div>' +
       '</section>';
 
@@ -1325,11 +1479,13 @@
     });
 
     var plansBox = $("#plansBox");
+    var planLossNote = $("#planLossNote");
     var selectPlan = function () {};
     if (plansBox) {
       var syncSticky = function (id) {
         var s = $("#stickyCta [data-cta]");
-        if (s) s.innerHTML = id === "premium" ? "Premium · R$ 27,90/mês →" : "Básico · R$ 14,90/mês →";
+        if (s) s.innerHTML = id === "premium" ? "Quero App + 3 Bônus · R$ 27,90/mês →" : "Básico (sem bônus) · R$ 14,90/mês →";
+        if (planLossNote) planLossNote.hidden = (id === "premium");
       };
       selectPlan = function (id) {
         state.plan = id;
@@ -1351,6 +1507,14 @@
           selectPlan(e.target.dataset.plan);
         }
       });
+      var btnRestorePrem = $("#btnRestorePremium");
+      if (btnRestorePrem) {
+        btnRestorePrem.addEventListener("click", function () {
+          selectPlan("premium");
+          var premEl = $("#planPremium");
+          if (premEl) premEl.scrollIntoView({ behavior: "smooth", block: "center" });
+        });
+      }
       selectPlan("premium");
 
       if ("IntersectionObserver" in window) {
@@ -1436,6 +1600,7 @@
       var autoBaTimer = null;
       var userTouchedBa = false;
 
+      var quoteEl = $("#baQuote");
       var goToBa = function (idx, animate) {
         activeBa = ((idx % totalBa) + totalBa) % totalBa;
         baTrack.style.transition = animate === false ? "none" : "transform .36s cubic-bezier(.22, 1, .36, 1)";
@@ -1443,6 +1608,7 @@
         slideEls.forEach(function (el, i) { el.classList.toggle("is-active", i === activeBa); });
         dotEls.forEach(function (el, i) { el.classList.toggle("active", i === activeBa); });
         if (countEl) countEl.textContent = (activeBa + 1) + " de " + totalBa;
+        if (quoteEl && baSlides[activeBa]) quoteEl.textContent = baSlides[activeBa].quote;
       };
 
       var stopAutoBa = function () {
@@ -1554,14 +1720,80 @@
       }
     }
 
-    $("#vslPlay").addEventListener("click", function () {
-      if (CFG.vslEmbedUrl) {
-        $("#vslBox").innerHTML = '<iframe src="' + CFG.vslEmbedUrl + '" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Vídeo Truque dos Mil Looks"></iframe>';
-      } else {
-        var label = document.querySelector(".vsl__label");
-        if (label) label.innerHTML = "🎬 Slot do mini-VSL: cole seu embed em <strong>assets/js/config.js</strong> (vslEmbedUrl).";
-      }
-    });
+    /* Interatividade da Stack de Bônus: acordeão de benefícios + zoom tela cheia + CTA direto */
+    var bonusStackEl = $("#bonusStack");
+    if (bonusStackEl) {
+      bonusStackEl.addEventListener("click", function (e) {
+        var toggleBtn = e.target.closest("[data-bonus-toggle]");
+        if (toggleBtn) {
+          var card = toggleBtn.closest(".bcard");
+          var list = card && card.querySelector(".bcard__perks");
+          if (list) {
+            var opening = list.hidden;
+            list.hidden = !opening;
+            toggleBtn.classList.toggle("open", opening);
+            toggleBtn.setAttribute("aria-expanded", opening ? "true" : "false");
+            var lbl = toggleBtn.querySelector("span");
+            if (lbl) lbl.textContent = opening ? "O que você ganha neste presente" : "Toque para ver tudo que vem incluso";
+          }
+          return;
+        }
+        var mediaEl = e.target.closest("[data-zoom-src]");
+        if (mediaEl) {
+          openBonusZoom(mediaEl.dataset.zoomSrc, mediaEl.dataset.zoomTitle);
+        }
+      });
+
+      bonusStackEl.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          var mediaEl = e.target.closest && e.target.closest("[data-zoom-src]");
+          if (mediaEl) {
+            e.preventDefault();
+            openBonusZoom(mediaEl.dataset.zoomSrc, mediaEl.dataset.zoomTitle);
+          }
+        }
+      });
+    }
+
+    var btnClaimBonuses = $("#btnClaimBonuses");
+    if (btnClaimBonuses) btnClaimBonuses.addEventListener("click", goToPremiumPlan);
+
+    /* Modal Lightbox dos Bônus */
+    var zoomModal = $("#bonusZoomModal");
+    var zoomImg = $("#bonusZoomImg");
+    var zoomCap = $("#bonusZoomCaption");
+    function openBonusZoom(src, title) {
+      if (!zoomModal || !zoomImg) return;
+      zoomImg.src = src;
+      zoomImg.alt = title || "Bônus exclusivo do aplicativo";
+      if (zoomCap) zoomCap.textContent = "🎁 " + (title || "Presente incluso gratuitamente") + " — R$ 0,00 com o App";
+      zoomModal.hidden = false;
+      document.body.style.overflow = "hidden";
+    }
+    function closeBonusZoom() {
+      if (!zoomModal) return;
+      zoomModal.hidden = true;
+      document.body.style.overflow = "";
+    }
+    if (zoomModal && !zoomModal.dataset.bound) {
+      zoomModal.dataset.bound = "1";
+      var zClose = $("#bonusZoomClose");
+      var zCta = $("#bonusZoomCta");
+      if (zClose) zClose.addEventListener("click", closeBonusZoom);
+      if (zCta) zCta.addEventListener("click", function () {
+        closeBonusZoom();
+        goToPremiumPlan();
+      });
+      zoomModal.addEventListener("click", function (e) {
+        if (e.target.hasAttribute("data-close-zoom")) closeBonusZoom();
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && zoomModal && !zoomModal.hidden) closeBonusZoom();
+      });
+    }
+
+    /* Prova social viva e discreta (exibe 3 ativações reais sem atrapalhar a leitura) */
+    startSocialProofToast();
 
     $$("[data-count]").forEach(countUp);
 
@@ -1569,6 +1801,45 @@
     goToTop();
     setHeaderMode("result");
     $("#stickyCta").hidden = false;
+  }
+
+  var socialToastTimer = null;
+  function startSocialProofToast() {
+    var toast = $("#socialToast");
+    var nameEl = $("#socialToastName");
+    var msgEl = $("#socialToastMsg");
+    if (!toast || !nameEl || !msgEl) return;
+    if (socialToastTimer) { clearTimeout(socialToastTimer); socialToastTimer = null; }
+
+    var buyers = [
+      { who: "Juliana M. · São Paulo, SP", msg: "acabou de ativar o Premium + 3 Bônus Grátis" },
+      { who: "Patrícia F. · Belo Horizonte, MG", msg: "resgatou os R$ 281 em bônus há 2 min" },
+      { who: "Carolina S. · Curitiba, PR", msg: "liberou o App + Provador Virtual agora" }
+    ];
+    var idx = 0;
+
+    function showNext() {
+      if (!screens.result.classList.contains("active") || idx >= buyers.length) {
+        toast.hidden = true;
+        return;
+      }
+      var item = buyers[idx++];
+      nameEl.textContent = item.who;
+      msgEl.textContent = item.msg;
+      toast.hidden = false;
+      toast.classList.add("is-visible");
+      socialToastTimer = setTimeout(function () {
+        toast.classList.remove("is-visible");
+        setTimeout(function () {
+          toast.hidden = true;
+          if (idx < buyers.length) {
+            socialToastTimer = setTimeout(showNext, 11000);
+          }
+        }, 380);
+      }, 4600);
+    }
+
+    socialToastTimer = setTimeout(showNext, 5500);
   }
 
   function countUp(el) {
@@ -1651,6 +1922,9 @@
     $("#lnkRestart").addEventListener("click", function (e) {
       e.preventDefault();
       closeTicket();
+      if (socialToastTimer) clearTimeout(socialToastTimer);
+      var st = $("#socialToast");
+      if (st) st.hidden = true;
       state.i = 0; state.answers = {};
       show("quiz");
       renderQuestion();

@@ -24,7 +24,7 @@
   <link rel="preload" as="image" href="https://descompacto.vercel.app/assets/img/idade-35-44.jpg">
   <link rel="preload" as="image" href="https://descompacto.vercel.app/assets/img/idade-45.jpg">
 
-  <link rel="stylesheet" href="assets/css/style.css?v=10">
+  <link rel="stylesheet" href="assets/css/style.css?v=11">
 </head>
 <body class="bg-creme">
 
@@ -89,6 +89,7 @@
             <img src="https://descompacto.vercel.app/assets/img/colagem-looks.png" alt="Descubra o truque dos mil looks para gastar menos e montar muito mais looks: +120 mil mulheres usam nosso APP! Responda o Quiz e faça parte" fetchpriority="high" decoding="sync">
           </div>
           <div class="quiz__head">
+            <div class="quiz__livepill"><span class="quiz__livedot" aria-hidden="true"></span>+120 mil mulheres já descobriram seus looks · Leva 45s</div>
             <h2 class="quiz__title">Qual é a sua faixa de idade?</h2>
           </div>
           <div class="opts opts--gridimg">
@@ -143,7 +144,24 @@
 
   <!-- CTA fixo mobile (visível no resultado) -->
   <div class="sticky-cta" id="stickyCta" hidden>
-    <button class="btn btn--primary" type="button" data-cta>Escolher meu plano →</button>
+    <button class="btn btn--primary" type="button" data-cta>Premium + 3 Bônus Grátis · R$ 27,90/mês →</button>
+  </div>
+
+  <!-- Toast sutil de prova social ao vivo (visível no resultado) -->
+  <div class="social-toast" id="socialToast" hidden role="status" aria-live="polite">
+    <span class="social-toast__dot" aria-hidden="true"></span>
+    <span class="social-toast__txt" id="socialToastTxt"></span>
+    <button type="button" class="social-toast__close" id="socialToastClose" aria-label="Fechar aviso">×</button>
+  </div>
+
+  <!-- Modal Lightbox para ampliar tela dos Bônus -->
+  <div class="bzoom" id="bonusZoomModal" hidden role="dialog" aria-modal="true" aria-label="Visualização ampliada do bônus">
+    <div class="bzoom__box">
+      <button type="button" class="bzoom__close" id="bonusZoomClose" aria-label="Fechar imagem">✕</button>
+      <div class="bzoom__tag" id="bonusZoomTag">🎁 BÔNUS GRÁTIS COM O APP</div>
+      <img src="" alt="" id="bonusZoomImg" class="bzoom__img">
+      <button type="button" class="btn btn--primary bzoom__cta" id="bonusZoomCta">Quero ganhar esse bônus no App →</button>
+    </div>
   </div>
 
   <!-- Modal Ticket Raspadinha -->
@@ -197,7 +215,7 @@
     </p>
   </footer>
 
-  <script src="assets/js/config.js?v=10"></script>
-  <script src="assets/js/quiz.js?v=10"></script>
+  <script src="assets/js/config.js?v=11"></script>
+  <script src="assets/js/quiz.js?v=11"></script>
 </body>
 </html>
