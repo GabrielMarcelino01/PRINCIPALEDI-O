@@ -6,9 +6,11 @@
    ========================================================= */
 window.FUNIL_CONFIG = {
 
-  /* URL da sua oferta (checkout do app / assinatura).
-     Os parâmetros utm_* e fbclid da visitante são repassados automaticamente. */
-  offerUrl: "https://SEU-DOMINIO.com/oferta",
+  /* URLs de Checkout Cakto (Premium e Básico).
+     Os parâmetros utm_*, src, sck, fbclid, _fbp e _fbc da visitante são repassados automaticamente. */
+  offerUrlPremium: "https://pay.cakto.com.br/37xrvco_1279882",
+  offerUrlBasico: "https://pay.cakto.com.br/h6ztc7e",
+  offerUrl: "https://pay.cakto.com.br/37xrvco_1279882",
 
   /* Mini-VSL (opcional): cole aqui o link de embed do YouTube/Vimeo.
      Ex.: "https://www.youtube.com/embed/SEU_VIDEO?autoplay=1&rel=0"

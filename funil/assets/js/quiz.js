@@ -438,18 +438,24 @@
     return m ? decodeURIComponent(m[1]) : "";
   }
 
-  /* ---------------- UTM + fbclid/_fbp/_fbc passthrough ---------------- */
-  var UTM = window.location.search || "";
-  function offerUrl() {
-    var base = CFG.offerUrl || "#";
-    var extra = [];
-    if (UTM) extra.push(UTM.replace(/^\?/, ""));
+  /* ---------------- Checkout URLs (Premium × Básico) + UTM/fbclid/_fbp/_fbc ---------------- */
+  function offerUrl(plan) {
+    var chosen = (plan || state.plan || "premium").toLowerCase();
+    var base = (chosen === "basico"
+      ? (CFG.offerUrlBasico || CFG.offerUrl)
+      : (CFG.offerUrlPremium || CFG.offerUrl)) || "#";
+
+    var forwarded = new URLSearchParams(window.location.search || "");
+    forwarded.delete("step");
+
     var fbp = readCookie("_fbp");
     var fbc = readCookie("_fbc");
-    if (fbp && base.indexOf("fbp=") === -1 && UTM.indexOf("fbp=") === -1) extra.push("fbp=" + encodeURIComponent(fbp));
-    if (fbc && base.indexOf("fbc=") === -1 && UTM.indexOf("fbc=") === -1) extra.push("fbc=" + encodeURIComponent(fbc));
-    if (!extra.length) return base;
-    return base + (base.indexOf("?") === -1 ? "?" : "&") + extra.join("&");
+    if (fbp && !forwarded.has("fbp") && base.indexOf("fbp=") === -1) forwarded.set("fbp", fbp);
+    if (fbc && !forwarded.has("fbc") && base.indexOf("fbc=") === -1) forwarded.set("fbc", fbc);
+
+    var qs = forwarded.toString();
+    if (!qs) return base;
+    return base + (base.indexOf("?") === -1 ? "?" : "&") + qs;
   }
 
   /* ---------------- Progresso & Header ---------------- */
@@ -1531,8 +1537,7 @@
           value: pl === "basico" ? 14.90 : 27.90,
           currency: "BRL"
         });
-        var u = offerUrl();
-        if (pl) u += (u.indexOf("?") === -1 ? "?" : "&") + "plano=" + pl;
+        var u = offerUrl(pl);
         window.location.href = u;
       });
     });
@@ -2022,8 +2027,7 @@
         value: plSticky === "basico" ? 14.90 : 27.90,
         currency: "BRL"
       });
-      var dest = offerUrl();
-      if (state.plan) dest += (dest.indexOf("?") === -1 ? "?" : "&") + "plano=" + state.plan;
+      var dest = offerUrl(plSticky);
       window.location.href = dest;
     });
 
