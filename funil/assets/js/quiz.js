@@ -1145,10 +1145,6 @@
       {
         src: "assets/img/antes-depois-1.jpg",
         alt: "Antes e depois: guarda-roupa com 68% sem aproveitamento passando para 91% de aproveitamento e harmonia elegante"
-      },
-      {
-        src: "assets/img/antes-depois.jpg",
-        alt: "Antes e depois: look descoordenado virando uma produção elegante com pontuação do guarda-roupa e combinação de cores"
       }
     ];
 
@@ -1158,30 +1154,38 @@
       '</div>';
     html += '<button type="button" class="btn btn--primary btn--lg result__appbtn" id="btnApp">Acessar meu app →</button>';
 
-    /* Carrossel Antes & Depois com título destacado e final sublinhado */
+    /* Carrossel Antes & Depois compacto, 1 card por vez (zero sobreposição) */
     html += '<section class="ba-sec" aria-label="Transformações reais de quem usa o aplicativo">' +
       '<div class="ba-head">' +
         '<span class="ba-kicker">✦ Transformações Reais</span>' +
         '<h3 class="ba-title">Quem usa nosso Aplicativo <span class="ba-hl">não se arrepende!</span></h3>' +
       '</div>' +
-      '<div class="ba-wrap">' +
-        '<button type="button" class="ba-nav ba-nav--prev" id="baPrev" aria-label="Transformação anterior">‹</button>' +
-        '<div class="ba-track" id="baTrack">' +
-          baSlides.map(function (s, idx) {
-            return '<figure class="ba-slide' + (idx === 0 ? ' is-active' : '') + '" data-ba-idx="' + idx + '">' +
-              '<img src="' + assetUrl(s.src) + '" alt="' + s.alt + '" width="900" height="1125" decoding="sync" fetchpriority="' + (idx < 2 ? "high" : "auto") + '">' +
-              '</figure>';
-          }).join("") +
+      '<div class="ba-stage">' +
+        '<div class="ba-viewport" id="baViewport">' +
+          '<div class="ba-track" id="baTrack">' +
+            baSlides.map(function (s, idx) {
+              return '<div class="ba-slide' + (idx === 0 ? ' is-active' : '') + '" data-ba-idx="' + idx + '">' +
+                '<img src="' + assetUrl(s.src) + '" alt="' + s.alt + '" decoding="sync" fetchpriority="' + (idx < 2 ? "high" : "auto") + '">' +
+                '</div>';
+            }).join("") +
+          '</div>' +
         '</div>' +
-        '<button type="button" class="ba-nav ba-nav--next" id="baNext" aria-label="Próxima transformação">›</button>' +
-      '</div>' +
-      '<div class="ba-foot">' +
-        '<div class="ba-dots" id="baDots" role="tablist" aria-label="Selecionar transformação">' +
-          baSlides.map(function (_, idx) {
-            return '<button type="button" class="ba-dot' + (idx === 0 ? ' active' : '') + '" data-ba-dot="' + idx + '" aria-label="Ir para transformação ' + (idx + 1) + '"></button>';
-          }).join("") +
+        '<div class="ba-bar">' +
+          '<button type="button" class="ba-btn" id="baPrev" aria-label="Transformação anterior">' +
+            '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>' +
+          '</button>' +
+          '<div class="ba-meta">' +
+            '<div class="ba-dots" id="baDots" role="tablist" aria-label="Selecionar transformação">' +
+              baSlides.map(function (_, idx) {
+                return '<button type="button" class="ba-dot' + (idx === 0 ? ' active' : '') + '" data-ba-dot="' + idx + '" aria-label="Ir para transformação ' + (idx + 1) + '"></button>';
+              }).join("") +
+            '</div>' +
+            '<span class="ba-count" id="baCount">1 de ' + baSlides.length + '</span>' +
+          '</div>' +
+          '<button type="button" class="ba-btn" id="baNext" aria-label="Próxima transformação">' +
+            '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>' +
+          '</button>' +
         '</div>' +
-        '<span class="ba-count" id="baCount">1 / ' + baSlides.length + '</span>' +
       '</div>' +
       '</section>';
 
@@ -1414,9 +1418,10 @@
     var btnApp = $("#btnApp");
     if (btnApp) btnApp.addEventListener("click", goToPremiumPlan);
 
-    /* Carrossel interativo Antes & Depois (swipe + setas + dots + autoplay inteligente) */
+    /* Carrossel Antes & Depois: 1 slide por vez via translate3d (zero sobreposição, swipe suave) */
+    var baViewport = $("#baViewport");
     var baTrack = $("#baTrack");
-    if (baTrack) {
+    if (baViewport && baTrack) {
       var slideEls = $$("#baTrack .ba-slide");
       var dotEls = $$("#baDots .ba-dot");
       var countEl = $("#baCount");
@@ -1424,22 +1429,14 @@
       var activeBa = 0;
       var autoBaTimer = null;
       var userTouchedBa = false;
-      var scrollTicking = false;
 
-      var setBaUI = function (idx) {
+      var goToBa = function (idx, animate) {
         activeBa = ((idx % totalBa) + totalBa) % totalBa;
+        baTrack.style.transition = animate === false ? "none" : "transform .36s cubic-bezier(.22, 1, .36, 1)";
+        baTrack.style.transform = "translate3d(-" + (activeBa * 100) + "%, 0, 0)";
         slideEls.forEach(function (el, i) { el.classList.toggle("is-active", i === activeBa); });
         dotEls.forEach(function (el, i) { el.classList.toggle("active", i === activeBa); });
-        if (countEl) countEl.textContent = (activeBa + 1) + " / " + totalBa;
-      };
-
-      var scrollToBa = function (idx) {
-        var targetIdx = ((idx % totalBa) + totalBa) % totalBa;
-        var el = slideEls[targetIdx];
-        if (!el) return;
-        var left = el.offsetLeft - (baTrack.clientWidth - el.offsetWidth) / 2;
-        baTrack.scrollTo({ left: Math.max(0, left), behavior: "smooth" });
-        setBaUI(targetIdx);
+        if (countEl) countEl.textContent = (activeBa + 1) + " de " + totalBa;
       };
 
       var stopAutoBa = function () {
@@ -1447,58 +1444,87 @@
         if (autoBaTimer) { clearInterval(autoBaTimer); autoBaTimer = null; }
       };
 
-      baTrack.addEventListener("scroll", function () {
-        if (scrollTicking) return;
-        scrollTicking = true;
-        requestAnimationFrame(function () {
-          scrollTicking = false;
-          var center = baTrack.scrollLeft + baTrack.clientWidth / 2;
-          var best = 0, bestDist = Infinity;
-          slideEls.forEach(function (el, i) {
-            var c = el.offsetLeft + el.offsetWidth / 2;
-            var d = Math.abs(c - center);
-            if (d < bestDist) { bestDist = d; best = i; }
-          });
-          setBaUI(best);
-        });
+      /* Swipe tátil horizontal com arraste fluido no celular */
+      var startX = 0, startY = 0, deltaX = 0, draggingBa = false, horizLock = null, startTime = 0;
+      baViewport.addEventListener("touchstart", function (e) {
+        var t = e.touches[0];
+        if (!t) return;
+        stopAutoBa();
+        startX = t.clientX;
+        startY = t.clientY;
+        deltaX = 0;
+        draggingBa = true;
+        horizLock = null;
+        startTime = Date.now();
+        baTrack.style.transition = "none";
       }, { passive: true });
 
-      baTrack.addEventListener("touchstart", stopAutoBa, { passive: true });
-      baTrack.addEventListener("mousedown", stopAutoBa);
+      baViewport.addEventListener("touchmove", function (e) {
+        if (!draggingBa) return;
+        var t = e.touches[0];
+        if (!t) return;
+        var dx = t.clientX - startX;
+        var dy = t.clientY - startY;
+        if (horizLock === null && (Math.abs(dx) > 6 || Math.abs(dy) > 6)) {
+          horizLock = Math.abs(dx) > Math.abs(dy);
+        }
+        if (!horizLock) return;
+        if (e.cancelable) e.preventDefault();
+        deltaX = dx;
+        var vw = baViewport.clientWidth || 300;
+        var pctOffset = (-activeBa * 100) + ((dx / vw) * 100);
+        baTrack.style.transform = "translate3d(" + pctOffset.toFixed(2) + "%, 0, 0)";
+      }, { passive: false });
 
-      var prevBtn = $("#baPrev"), nextBtn = $("#baNext");
-      if (prevBtn) prevBtn.addEventListener("click", function () {
-        stopAutoBa();
-        scrollToBa(activeBa - 1);
-      });
-      if (nextBtn) nextBtn.addEventListener("click", function () {
-        stopAutoBa();
-        scrollToBa(activeBa + 1);
-      });
-      dotEls.forEach(function (dot) {
-        dot.addEventListener("click", function () {
-          stopAutoBa();
-          scrollToBa(parseInt(dot.dataset.baDot, 10) || 0);
-        });
-      });
+      var finishSwipe = function () {
+        if (!draggingBa) return;
+        draggingBa = false;
+        var vw = baViewport.clientWidth || 300;
+        var threshold = Math.min(48, vw * 0.16);
+        if (horizLock && Math.abs(deltaX) > threshold) {
+          goToBa(deltaX < 0 ? activeBa + 1 : activeBa - 1, true);
+        } else {
+          goToBa(activeBa, true);
+        }
+      };
+      baViewport.addEventListener("touchend", finishSwipe, { passive: true });
+      baViewport.addEventListener("touchcancel", finishSwipe, { passive: true });
 
-      /* Clique limpo (sem arrastar) na 1ª imagem do carrossel também leva ao Plano Premium */
+      /* Clique limpo (sem arrastar) na 1ª imagem do carrossel leva ao Plano Premium */
       var firstSlide = slideEls[0];
       if (firstSlide) {
-        var tapX = 0, tapY = 0, tapT = 0;
+        var ptrX = 0, ptrY = 0, ptrT = 0;
         firstSlide.addEventListener("pointerdown", function (e) {
-          tapX = e.clientX;
-          tapY = e.clientY;
-          tapT = Date.now();
+          ptrX = e.clientX;
+          ptrY = e.clientY;
+          ptrT = Date.now();
         }, { passive: true });
         firstSlide.addEventListener("click", function (e) {
-          var moved = Math.hypot((e.clientX || 0) - tapX, (e.clientY || 0) - tapY);
-          var elapsed = Date.now() - tapT;
-          if (tapT && (moved > 8 || elapsed > 450)) return;
+          var moved = Math.hypot((e.clientX || 0) - ptrX, (e.clientY || 0) - ptrY);
+          var elapsed = Date.now() - ptrT;
+          if (ptrT && (moved > 8 || elapsed > 450)) return;
           stopAutoBa();
           goToPremiumPlan();
         });
       }
+
+      var prevBtn = $("#baPrev"), nextBtn = $("#baNext");
+      if (prevBtn) prevBtn.addEventListener("click", function () {
+        stopAutoBa();
+        goToBa(activeBa - 1, true);
+      });
+      if (nextBtn) nextBtn.addEventListener("click", function () {
+        stopAutoBa();
+        goToBa(activeBa + 1, true);
+      });
+      dotEls.forEach(function (dot) {
+        dot.addEventListener("click", function () {
+          stopAutoBa();
+          goToBa(parseInt(dot.dataset.baDot, 10) || 0, true);
+        });
+      });
+
+      goToBa(0, false);
 
       if ("IntersectionObserver" in window) {
         var ioBa = new IntersectionObserver(function (entries) {
@@ -1510,15 +1536,15 @@
                   autoBaTimer = null;
                   return;
                 }
-                scrollToBa(activeBa + 1);
-              }, 4200);
+                goToBa(activeBa + 1, true);
+              }, 4400);
             } else if (!en.isIntersecting && autoBaTimer) {
               clearInterval(autoBaTimer);
               autoBaTimer = null;
             }
           });
         }, { threshold: 0.45 });
-        ioBa.observe(baTrack);
+        ioBa.observe(baViewport);
       }
     }
 
