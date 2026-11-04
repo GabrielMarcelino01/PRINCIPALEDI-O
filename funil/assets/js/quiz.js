@@ -394,30 +394,62 @@
     goToTop();
   }
 
-  /* ---------------- Pixel / eventos ---------------- */
+  /* ---------------- Pixel / eventos Meta Ads (todas as páginas/etapas) ---------------- */
+  var STANDARD_FB_EVENTS = {
+    PageView: 1,
+    ViewContent: 1,
+    Lead: 1,
+    InitiateCheckout: 1,
+    AddToCart: 1,
+    CompleteRegistration: 1,
+    Purchase: 1
+  };
+
   function initPixel() {
-    if (!CFG.metaPixelId) { window.fbq = window.fbq || function () {}; return; }
+    var pid = String(CFG.metaPixelId || window.__META_PIXEL_ID__ || "").trim();
+    if (!pid) { window.fbq = window.fbq || function () {}; return; }
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
       if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = "2.0"; n.queue = [];
       t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t, s);
     }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
-    window.fbq("init", CFG.metaPixelId);
-  }
-  function track(event, custom) {
-    if (!window.fbq) return;
-    if (custom === true) { window.fbq("trackCustom", event); }
-    else if (custom && typeof custom === "object") { window.fbq("trackCustom", event, custom); }
-    else { window.fbq("track", event); }
+    if (window.__META_PIXEL_ID__ !== pid) {
+      window.fbq("init", pid);
+      window.fbq("track", "PageView");
+      window.__META_PIXEL_ID__ = pid;
+    }
   }
 
-  /* ---------------- UTM passthrough ---------------- */
+  function track(event, params) {
+    if (!window.fbq) return;
+    var payload = (params && typeof params === "object") ? params : undefined;
+    if (STANDARD_FB_EVENTS[event] && params !== true) {
+      if (payload) window.fbq("track", event, payload);
+      else window.fbq("track", event);
+    } else {
+      if (payload) window.fbq("trackCustom", event, payload);
+      else window.fbq("trackCustom", event);
+    }
+  }
+
+  function readCookie(name) {
+    var m = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([.$?*|{}()[\]\\/+^])/g, "\\$1") + "=([^;]*)"));
+    return m ? decodeURIComponent(m[1]) : "";
+  }
+
+  /* ---------------- UTM + fbclid/_fbp/_fbc passthrough ---------------- */
   var UTM = window.location.search || "";
   function offerUrl() {
     var base = CFG.offerUrl || "#";
-    if (!UTM) return base;
-    return base + (base.indexOf("?") === -1 ? "?" : "&") + UTM.replace(/^\?/, "");
+    var extra = [];
+    if (UTM) extra.push(UTM.replace(/^\?/, ""));
+    var fbp = readCookie("_fbp");
+    var fbc = readCookie("_fbc");
+    if (fbp && base.indexOf("fbp=") === -1 && UTM.indexOf("fbp=") === -1) extra.push("fbp=" + encodeURIComponent(fbp));
+    if (fbc && base.indexOf("fbc=") === -1 && UTM.indexOf("fbc=") === -1) extra.push("fbc=" + encodeURIComponent(fbc));
+    if (!extra.length) return base;
+    return base + (base.indexOf("?") === -1 ? "?" : "&") + extra.join("&");
   }
 
   /* ---------------- Progresso & Header ---------------- */
@@ -1092,6 +1124,13 @@
   function advance() {
     if (state.i < QUESTIONS.length - 1) {
       state.i += 1;
+      var nextQ = QUESTIONS[state.i];
+      track("PageView");
+      track("QuizStep", {
+        step: state.i + 1,
+        step_id: nextQ ? nextQ.id : String(state.i + 1),
+        total_steps: QUESTIONS.length
+      });
       renderQuestion();
     } else {
       startAnalyzing();
@@ -1122,7 +1161,7 @@
       setTimeout(function () { li.classList.add("done"); }, 220 + idx * 320);
     });
 
-    setTimeout(showResult, 220 + steps.length * 320 + 320);
+    setTimeout(function () { showResult(true); }, 220 + steps.length * 320 + 320);
   }
 
   /* ---------------- Resultado ---------------- */
@@ -1135,7 +1174,7 @@
     return { pecas: pecas, uso: uso, looks: looks, esquecidas: esquecidas };
   }
 
-  function showResult() {
+  function showResult(fromQuiz) {
     var a = state.answers;
     var c = calc();
     var perfil = PERFIS[a.estilo] || PERFIS.moderna;
@@ -1468,11 +1507,31 @@
 
     $("#resultBox").innerHTML = html;
 
+    /* Rastreamento completo da Página de Resultado/Oferta no Meta Pixel */
+    if (fromQuiz) track("PageView");
+    track("Lead", {
+      content_name: "Diagnóstico Concluído - Perfil " + perfil.nome,
+      content_category: "Quiz Truque dos Mil Looks"
+    });
+    track("ViewContent", {
+      content_name: "Oferta Truque dos Mil Looks - " + perfil.nome,
+      content_ids: ["premium", "basico"],
+      content_type: "product",
+      value: 27.90,
+      currency: "BRL"
+    });
+
     $$("#resultBox [data-cta]").forEach(function (btn) {
       btn.addEventListener("click", function () {
-        track("InitiateCheckout");
+        var pl = btn.dataset.plan || state.plan || "premium";
+        track("InitiateCheckout", {
+          content_name: pl === "basico" ? "Plano Básico Truque dos Mil Looks" : "Plano Premium + 3 Bônus Truque dos Mil Looks",
+          content_ids: [pl],
+          content_type: "product",
+          value: pl === "basico" ? 14.90 : 27.90,
+          currency: "BRL"
+        });
         var u = offerUrl();
-        var pl = btn.dataset.plan || state.plan;
         if (pl) u += (u.indexOf("?") === -1 ? "?" : "&") + "plano=" + pl;
         window.location.href = u;
       });
@@ -1872,8 +1931,6 @@
   function boot() {
     initPixel();
     applyConfig();
-    track("ViewContent");
-    track("QuizStart", true);
 
     var params = new URLSearchParams(window.location.search);
     var stepParam = params.get("step");
@@ -1894,8 +1951,18 @@
     if (openResultNow) {
       document.body.classList.remove("bg-creme");
       startBackgroundWarmup();
-      showResult();
+      showResult(false);
     } else {
+      track("ViewContent", {
+        content_name: "Quiz Truque dos Mil Looks",
+        content_category: "Quiz Funnel"
+      });
+      track("QuizStart", true);
+      track("QuizStep", {
+        step: state.i + 1,
+        step_id: QUESTIONS[state.i] ? QUESTIONS[state.i].id : "idade",
+        total_steps: QUESTIONS.length
+      });
       show("quiz");
       hydrateOrRenderQuestion(state.i === 0);
       startBackgroundWarmup();
@@ -1947,7 +2014,14 @@
           return;
         }
       }
-      track("InitiateCheckout");
+      var plSticky = state.plan || "premium";
+      track("InitiateCheckout", {
+        content_name: plSticky === "basico" ? "Plano Básico Truque dos Mil Looks" : "Plano Premium + 3 Bônus Truque dos Mil Looks",
+        content_ids: [plSticky],
+        content_type: "product",
+        value: plSticky === "basico" ? 14.90 : 27.90,
+        currency: "BRL"
+      });
       var dest = offerUrl();
       if (state.plan) dest += (dest.indexOf("?") === -1 ? "?" : "&") + "plano=" + state.plan;
       window.location.href = dest;

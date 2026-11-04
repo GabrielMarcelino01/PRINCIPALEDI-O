@@ -15,9 +15,10 @@ window.FUNIL_CONFIG = {
      Deixe vazio ("") para manter o pôster com o aviso de configuração. */
   vslEmbedUrl: "",
 
-  /* Meta Pixel (Facebook Ads). Vazio = desativado.
-     Eventos disparados: ViewContent, QuizStart, QuizComplete, InitiateCheckout. */
-  metaPixelId: "",
+  /* Meta Pixel (Facebook / Instagram Ads). Vazio = desativado.
+     Eventos disparados automaticamente em todas as etapas do funil:
+     PageView, ViewContent, QuizStart, QuizStep, QuizComplete, Lead e InitiateCheckout. */
+  metaPixelId: "619345180649856",
 
   /* Contador de prova social do topo */
   socialCount: "12.400",
