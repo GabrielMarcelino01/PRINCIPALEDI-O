@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Como se vestir melhor — Truque dos Mil Looks</title>
+<style>
+  :root {
+    --plum: #4A1E3F;
+    --plum-d: #351529;
+    --gold: #C9A227;
+    --cream: #FAF5EF;
+    --ink: #2B2428;
+    --grey: #7A7075;
+    --line: #E4DBD2;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+  header {
+    background: var(--plum);
+    color: #fff;
+    padding: 2.5rem 1.5rem 2.2rem;
+    text-align: center;
+    position: relative;
+  }
+  header::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 5px;
+    background: var(--gold);
+  }
+  header h1 { font-size: 2rem; letter-spacing: 1px; }
+  header p { margin-top: .6rem; opacity: .9; font-size: 1rem; }
+  header .tag {
+    display: inline-block;
+    background: rgba(201,162,39,.18);
+    color: var(--gold);
+    font-weight: 700;
+    font-size: .8rem;
+    padding: .35rem .9rem;
+    border-radius: 999px;
+    margin-bottom: .8rem;
+    letter-spacing: .5px;
+  }
+  main { max-width: 980px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+  .intro {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 1.6rem;
+    box-shadow: 0 4px 20px rgba(74,30,63,.06);
+    margin-bottom: 1.6rem;
+  }
+  .intro h2 { color: var(--plum-d); font-size: 1.25rem; margin-bottom: .6rem; }
+  .intro p { line-height: 1.7; }
+  .intro .kpis { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.2rem; }
+  .kpi {
+    flex: 1 1 140px;
+    background: var(--cream);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: .9rem .6rem;
+    text-align: center;
+  }
+  .kpi b { display: block; font-size: 1.4rem; color: var(--plum-d); }
+  .kpi span { font-size: .75rem; color: var(--grey); }
+  .viewer-wrap {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(74,30,63,.06);
+  }
+  .viewer-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem 1.2rem;
+    background: var(--cream);
+    border-bottom: 1px solid var(--line);
+    flex-wrap: wrap;
+    gap: .6rem;
+  }
+  .viewer-head .label { font-weight: 700; color: var(--plum-d); font-size: .95rem; }
+  .viewer-head .label small { display: block; font-weight: 400; color: var(--grey); font-size: .78rem; }
+  a.btn {
+    display: inline-block;
+    background: var(--plum);
+    color: #fff;
+    text-decoration: none;
+    padding: .55rem 1.2rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: .88rem;
+    transition: background .2s;
+  }
+  a.btn:hover { background: var(--plum-d); }
+  .pdf-frame { width: 100%; height: 78vh; min-height: 520px; border: 0; display: block; }
+  footer { text-align: center; padding: 2rem 1rem 3rem; color: var(--grey); font-size: .85rem; }
+  footer b { color: var(--plum-d); }
+</style>
+</head>
+<body>
+  <header>
+    <span class="tag">GUIA BÁSICO</span>
+    <h1>COMO VESTIR MELHOR</h1>
+    <p>Guia básico do Truque dos Mil Looks</p>
+  </header>
+
+  <main>
+    <div class="intro">
+      <h2>Sobre este guia</h2>
+      <p>
+        Este é o <b>guia básico</b> do Truque dos Mil Looks — o primeiro passo para se vestir melhor.
+        Aprenda tom de roupa, silhueta, estilo, ocasiões e o truque na prática:
+        <b>1 peça = 5 looks lindos</b>. É a base para montar looks com o que você já tem.
+      </p>
+      <div class="kpis">
+        <div class="kpi"><b>1 peça = 5 looks</b><span>o truque na prática</span></div>
+        <div class="kpi"><b>5</b><span>silhuetas principais</span></div>
+        <div class="kpi"><b>5</b><span>perfis de estilo</span></div>
+        <div class="kpi"><b>5</b><span>ocasiões da vida real</span></div>
+      </div>
+    </div>
+
+    <div class="viewer-wrap">
+      <div class="viewer-head">
+        <div class="label">
+          Guia completo
+          <small>Como_vestir_melhor.pdf · PDF interativo</small>
+        </div>
+        <a class="btn" href="Como_vestir_melhor.pdf" download>Baixar PDF</a>
+      </div>
+      <iframe class="pdf-frame" src="Como_vestir_melhor.pdf#toolbar=0" title="Como se vestir melhor — guia completo"></iframe>
+    </div>
+  </main>
+
+  <footer>
+    <b>Truque dos Mil Looks</b> &nbsp;·&nbsp; Guia básico &nbsp;·&nbsp; 2026
+  </footer>
+</body>
+</html>
