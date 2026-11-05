@@ -4,25 +4,68 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const DIST = path.join(ROOT, "dist");
-const SRC_IMG = path.join(ROOT, "assets", "img");
 const DIST_IMG = path.join(DIST, "assets", "img");
+
+const GIT_REF = process.env.LUMINA_GIT_SHA || "arena/0045d78d-principaledi-o";
+const GH_RAW_BASE = `https://raw.githubusercontent.com/GabrielMarcelino01/PRINCIPALEDI-O/${GIT_REF}/funil-us`;
+
+const REQUIRED_IMGS = [
+  "hero-collage-en.jpg",
+  "age-18-29.jpg",
+  "age-30-39.jpg",
+  "age-40-49.jpg",
+  "age-50-plus.jpg",
+  "app-hero-en.jpg",
+  "bundle-vip-en.jpg",
+  "ba-us-1.jpg",
+  "ba-us-2.jpg",
+  "ba-us-3.jpg"
+];
+
+const APP_ICONS = ["icon-192.png", "icon-512.png"];
+
+async function readTextAsset(relPath) {
+  const localPath = path.join(ROOT, relPath);
+  if (fs.existsSync(localPath)) {
+    return fs.readFileSync(localPath, "utf8");
+  }
+  const url = `${GH_RAW_BASE}/${relPath}`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Failed to fetch text ${url}: HTTP ${res.status}`);
+  return await res.text();
+}
+
+async function ensureBinaryAsset(relPath, destPath) {
+  const localPath = path.join(ROOT, relPath);
+  if (fs.existsSync(localPath) && fs.statSync(localPath).size > 100) {
+    fs.copyFileSync(localPath, destPath);
+    return "local";
+  }
+  const url = `${GH_RAW_BASE}/${relPath}`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Failed to fetch binary ${url}: HTTP ${res.status}`);
+  fs.writeFileSync(destPath, Buffer.from(await res.arrayBuffer()));
+  return "remote";
+}
 
 fs.rmSync(DIST, { recursive: true, force: true });
 fs.mkdirSync(DIST_IMG, { recursive: true });
 fs.mkdirSync(path.join(DIST, "assets", "css"), { recursive: true });
 fs.mkdirSync(path.join(DIST, "assets", "js"), { recursive: true });
 
-// 1. Copy all local US editorial images into dist/assets/img
-const imgs = fs.readdirSync(SRC_IMG).filter((f) => /\.(jpe?g|png|webp|svg)$/i.test(f));
-for (const name of imgs) {
-  fs.copyFileSync(path.join(SRC_IMG, name), path.join(DIST_IMG, name));
-}
-console.log(`✓ Copied ${imgs.length} US editorial images to dist/assets/img/`);
+// 1. Copy/fetch all 10 US editorial images
+const imgModes = await Promise.all(
+  REQUIRED_IMGS.map((name) => ensureBinaryAsset(`assets/img/${name}`, path.join(DIST_IMG, name)))
+);
+console.log(`✓ Prepared ${REQUIRED_IMGS.length} US editorial images (${imgModes[0]})`);
 
-// 2. Copy static CSS & JS fallbacks + inline critical CSS/JS into dist/index.html for 0-RTT instant paint
-const cssRaw = fs.readFileSync(path.join(ROOT, "assets", "css", "style.css"), "utf8");
-const cfgRaw = fs.readFileSync(path.join(ROOT, "assets", "js", "config.js"), "utf8");
-const quizRaw = fs.readFileSync(path.join(ROOT, "assets", "js", "quiz.js"), "utf8");
+// 2. Bundle US Funnel (single-RTT dist/index.html)
+const [cssRaw, cfgRaw, quizRaw, indexRaw] = await Promise.all([
+  readTextAsset("assets/css/style.css"),
+  readTextAsset("assets/js/config.js"),
+  readTextAsset("assets/js/quiz.js"),
+  readTextAsset("index.html")
+]);
 
 fs.writeFileSync(path.join(DIST, "assets", "css", "style.css"), cssRaw);
 fs.writeFileSync(path.join(DIST, "assets", "js", "config.js"), cfgRaw);
@@ -34,43 +77,46 @@ const minCss = cssRaw
   .replace(/\s*([{}:;,])\s*/g, "$1")
   .trim();
 
-let html = fs.readFileSync(path.join(ROOT, "index.html"), "utf8");
-html = html.replace(
-  /<link\s+rel="stylesheet"\s+href="assets\/css\/style\.css[^"]*"\s*>/i,
-  () => `<style>${minCss}</style>`
-);
-html = html.replace(
-  /<script\s+src="assets\/js\/config\.js[^"]*"><\/script>\s*<script\s+src="assets\/js\/quiz\.js[^"]*"><\/script>/i,
-  () => `<script>${cfgRaw}\n${quizRaw}</script>`
-);
+let html = indexRaw
+  .replace(/<link\s+rel="stylesheet"\s+href="assets\/css\/style\.css[^"]*"\s*>/i, () => `<style>${minCss}</style>`)
+  .replace(
+    /<script\s+src="assets\/js\/config\.js[^"]*"><\/script>\s*<script\s+src="assets\/js\/quiz\.js[^"]*"><\/script>/i,
+    () => `<script>${cfgRaw}\n${quizRaw}</script>`
+  );
+
 fs.writeFileSync(path.join(DIST, "index.html"), html);
 console.log(`✓ Built single-RTT US Funnel dist/index.html (${(Buffer.byteLength(html) / 1024).toFixed(1)} KB)`);
 
 // 3. Bundle English Member Web App (/app) into dist/app
-const APP_SRC = path.join(ROOT, "app");
 const APP_DIST = path.join(DIST, "app");
 fs.mkdirSync(APP_DIST, { recursive: true });
 
-for (const asset of ["manifest.webmanifest", "sw.js", "icon-192.png", "icon-512.png", "app.css", "app.js"]) {
-  const s = path.join(APP_SRC, asset);
-  if (fs.existsSync(s)) fs.copyFileSync(s, path.join(APP_DIST, asset));
-}
+const [manifestRaw, swRaw, appCssRaw, appJsRaw, appIndexRaw] = await Promise.all([
+  readTextAsset("app/manifest.webmanifest"),
+  readTextAsset("app/sw.js"),
+  readTextAsset("app/app.css"),
+  readTextAsset("app/app.js"),
+  readTextAsset("app/index.html")
+]);
 
-const appCss = fs.readFileSync(path.join(APP_SRC, "app.css"), "utf8")
+fs.writeFileSync(path.join(APP_DIST, "manifest.webmanifest"), manifestRaw);
+fs.writeFileSync(path.join(APP_DIST, "sw.js"), swRaw);
+fs.writeFileSync(path.join(APP_DIST, "app.css"), appCssRaw);
+fs.writeFileSync(path.join(APP_DIST, "app.js"), appJsRaw);
+
+await Promise.all(
+  APP_ICONS.map((ic) => ensureBinaryAsset(`app/${ic}`, path.join(APP_DIST, ic)))
+);
+
+const minAppCss = appCssRaw
   .replace(/\/\*[\s\S]*?\*\//g, "")
   .replace(/\s+/g, " ")
   .replace(/\s*([{}:;,])\s*/g, "$1")
   .trim();
-const appJs = fs.readFileSync(path.join(APP_SRC, "app.js"), "utf8");
-let appHtml = fs.readFileSync(path.join(APP_SRC, "index.html"), "utf8");
 
-appHtml = appHtml.replace(
-  /<link\s+rel="stylesheet"\s+href="app\.css[^"]*"\s*>/i,
-  () => `<style>${appCss}</style>`
-);
-appHtml = appHtml.replace(
-  /<script\s+src="app\.js[^"]*"><\/script>/i,
-  () => `<script>${appJs}</script>`
-);
+const appHtml = appIndexRaw
+  .replace(/<link\s+rel="stylesheet"\s+href="app\.css[^"]*"\s*>/i, () => `<style>${minAppCss}</style>`)
+  .replace(/<script\s+src="app\.js[^"]*"><\/script>/i, () => `<script>${appJsRaw}</script>`);
+
 fs.writeFileSync(path.join(APP_DIST, "index.html"), appHtml);
 console.log(`✓ Built single-RTT US Member PWA dist/app/index.html (${(Buffer.byteLength(appHtml) / 1024).toFixed(1)} KB)`);
