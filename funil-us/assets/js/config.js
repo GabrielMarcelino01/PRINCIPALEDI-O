@@ -6,11 +6,10 @@
    ========================================================= */
 window.FUNIL_CONFIG = {
 
-  /* Your USD Checkout Links (Stripe Payment Link, Cartpanda, Hotmart Global, Whop, Digistore24, etc.)
-     Paste your $27 VIP Bundle link in offerUrlVip and your $14 Basic link in offerUrlBasic. */
-  offerUrlVip: "#paste-your-27-usd-checkout-link",
-  offerUrlBasic: "#paste-your-14-usd-checkout-link",
-  offerUrl: "#paste-your-27-usd-checkout-link",
+  /* Checkout Links (Cakto) — UTMs, src, sck, fbclid, fbp & fbc forwarded automatically */
+  offerUrlVip: "https://pay.cakto.com.br/g249pdr",
+  offerUrlBasic: "https://pay.cakto.com.br/oc53tjd_1287412",
+  offerUrl: "https://pay.cakto.com.br/g249pdr",
 
   /* Meta Pixel ID (Facebook / Instagram Ads).
      Automatically tracks: PageView, ViewContent, QuizStart, QuizStep, QuizComplete, Lead & InitiateCheckout (in USD). */
