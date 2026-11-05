@@ -1,0 +1,9 @@
+{
+  "name": "lumina-style-ai-us",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node vercel-build.mjs",
+    "start": "node preview-server.mjs"
+  }
+}

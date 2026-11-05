@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Lumina Style AI · Official Member App</title>
+  <meta name="description" content="Your Personal Seasonal Color Swatches, AI Digital Closet, Virtual Outfit Try-On Mirror, and 15→150 Capsule Planner.">
+  <meta name="theme-color" content="#6E1423">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Lumina AI">
+  <link rel="manifest" href="/app/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/app/icon-192.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/app/icon-192.png">
+
+  <!-- Meta Pixel Code (ID: 619345180649856) -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '619345180649856');
+    fbq('track', 'PageView');
+    fbq('trackCustom', 'StudentAppOpened', { market: 'US' });
+  </script>
+  <!-- End Meta Pixel Code -->
+
+  <link rel="stylesheet" href="app.css?v=1">
+</head>
+<body>
+  <!-- SCREEN 0: MEMBER LOGIN & PERSONAL CALIBRATION -->
+  <section id="gateScreen" class="gate" hidden>
+    <div class="gate__card">
+      <div class="gate__crest" aria-hidden="true">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gCrest" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#9A2A3E"/>
+              <stop offset="52%" stop-color="#6E1423"/>
+              <stop offset="100%" stop-color="#430913"/>
+            </linearGradient>
+          </defs>
+          <rect width="40" height="40" rx="11" fill="url(#gCrest)"/>
+          <rect x="2.75" y="2.75" width="34.5" height="34.5" rx="8.5" stroke="#E8CBA0" stroke-opacity="0.55"/>
+          <path d="M18.2 11.4A2.1 2.1 0 1 1 21.8 12.8C21.1 13.5 20 14.1 20 15.2V16" stroke="#FFF8F0" stroke-width="2.1" stroke-linecap="round"/>
+          <path d="M20 16L9.2 24.2C7.8 25.2 8.5 27.4 10.2 27.4H29.8C31.5 27.4 32.2 25.2 30.8 24.2L20 16Z" fill="#FFF8F0" fill-opacity="0.12" stroke="#FFF8F0" stroke-width="2.1" stroke-linejoin="round"/>
+          <path d="M14.5 27.4H25.5" stroke="#EED2A6" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M30.4 6.8L31.25 9.35L33.8 10.2L31.25 11.05L30.4 13.6L29.55 11.05L27 10.2L29.55 9.35Z" fill="#F3D8AC"/>
+        </svg>
+      </div>
+
+      <span class="gate__pill">✦ OFFICIAL VIP MEMBER PORTAL</span>
+      <h1 class="gate__title">Lumina <em>Style AI</em></h1>
+      <p class="gate__sub">Welcome! Enter your name and checkout email to unlock your Personal Color Swatches, Virtual Try-On Mirror &amp; All 3 VIP Bonuses.</p>
+
+      <form id="gateForm" class="gate__form">
+        <div class="field">
+          <label for="inpName">Your first name</label>
+          <input type="text" id="inpName" required placeholder="e.g., Lauren" autocomplete="given-name">
+        </div>
+        <div class="field">
+          <label for="inpEmail">Email used at checkout</label>
+          <input type="email" id="inpEmail" required placeholder="you@email.com" autocomplete="email">
+        </div>
+
+        <div class="gate__divider"><span>Personalize Your AI Stylist (30s)</span></div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="inpStyle">Style Archetype</label>
+            <select id="inpStyle">
+              <option value="classica">🥂 Quiet Luxury Classic</option>
+              <option value="moderna" selected>🧥 Effortless Modern Chic</option>
+              <option value="romantica">🌸 Soft &amp; Feminine</option>
+              <option value="casual">👟 Elevated Casual</option>
+              <option value="criativa">🎨 Bold &amp; Editorial</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="inpSeason">Seasonal Color Palette</label>
+            <select id="inpSeason">
+              <option value="soft_autumn" selected>🍂 Soft Warm Autumn</option>
+              <option value="deep_winter">❄️ Deep Cool Winter</option>
+              <option value="warm_spring">🌼 Light Warm Spring</option>
+              <option value="cool_summer">🕊️ Soft Cool Summer</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="inpBody">Body Silhouette</label>
+            <select id="inpBody">
+              <option value="ampulheta">⏳ Hourglass</option>
+              <option value="triangulo">🍐 Pear / Curvy Hips</option>
+              <option value="tinvertido">🔻 Inverted Triangle</option>
+              <option value="retangular">📏 Rectangle</option>
+              <option value="oval">🍎 Soft Midsection</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="inpHeight">Height: <strong id="gateHeightLbl">5'5"</strong></label>
+            <input type="range" id="inpHeight" min="58" max="73" value="65" class="range-gold">
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary btn-shine">
+          Enter My Personal Style Studio →
+        </button>
+      </form>
+      <p class="gate__safe">🔒 Lifetime VIP Access + All 3 Free Bonuses Active · Zero Monthly Fees</p>
+    </div>
+  </section>
+
+  <!-- MAIN MEMBER APP SHELL -->
+  <div id="appShell" class="shell" hidden>
+    <header class="appbar">
+      <div class="appbar__brand">
+        <span class="appbar__logo" aria-hidden="true">✦</span>
+        <div>
+          <span class="appbar__eyebrow">VIP Lifetime Access + 3 Bonuses</span>
+          <strong class="appbar__title">Lumina <em>Style AI</em></strong>
+        </div>
+      </div>
+      <div class="appbar__actions">
+        <button type="button" id="btnInstallApp" class="chip-btn chip-btn--gold" hidden>📲 Save App</button>
+        <button type="button" id="btnEditProfile" class="avatar-btn" aria-label="Edit my profile">
+          <span id="userInitial">L</span>
+        </button>
+      </div>
+    </header>
+
+    <main class="views">
+      <!-- TAB 1: HOME (Color Swatches + Outfit of the Day + Saved Looks) -->
+      <section class="view active" id="view-home" data-view="home">
+        <div class="hero-welcome">
+          <div class="hero-welcome__top">
+            <div>
+              <span class="pill-vip">👑 VIP MEMBER · ALL BONUSES UNLOCKED</span>
+              <h2 id="welcomeTitle">Good morning, Gorgeous!</h2>
+              <p id="welcomeSub">Your AI Stylist prepared an effortless outfit for your proportions &amp; color palette today.</p>
+            </div>
+          </div>
+          <div class="profile-pills" id="profilePills"></div>
+        </div>
+
+        <!-- Personal Seasonal Color Swatch Pocket Guide -->
+        <div class="season-strip" id="seasonStripBox"></div>
+
+        <!-- Outfit of the Day Generator -->
+        <div class="card card--lookdia">
+          <div class="card__head">
+            <div>
+              <span class="kicker">✦ READY IN 4 MINUTES</span>
+              <h3>Your Outfit of the Day</h3>
+            </div>
+            <button type="button" class="btn-mini" id="btnShuffleDaily">🔄 New Formula</button>
+          </div>
+
+          <div class="occ-chips" id="dailyOccChips">
+            <button type="button" class="occ-chip active" data-occ="trabalho">💼 Work</button>
+            <button type="button" class="occ-chip" data-occ="casual">☕ Casual</button>
+            <button type="button" class="occ-chip" data-occ="jantar">🍷 Date / Dinner</button>
+            <button type="button" class="occ-chip" data-occ="evento">🥂 Event</button>
+          </div>
+
+          <div class="look-grid" id="dailyLookGrid"></div>
+          <div class="stylist-tip" id="dailyStylistTip"></div>
+
+          <div class="card__actions">
+            <button type="button" class="btn-outline" id="btnOpenInMirror">🪞 Open in Virtual Try-On</button>
+            <button type="button" class="btn-primary-sm" id="btnSaveDailyLook">❤️ Save to Lookbook</button>
+          </div>
+        </div>
+
+        <!-- VIP Shortcuts -->
+        <div class="section-head">
+          <h3>Your Unlocked VIP Tools</h3>
+          <span>Included FREE</span>
+        </div>
+        <div class="bonus-shortcuts">
+          <button type="button" class="bshort" data-goto="closet">
+            <span class="bshort__tag">VIP BONUS #2</span>
+            <span class="bshort__ico">👗</span>
+            <strong>AI Digital Closet</strong>
+            <small>Snap photos + 15→150 Matrix</small>
+          </button>
+          <button type="button" class="bshort" data-goto="provador">
+            <span class="bshort__tag">VIP BONUS #3</span>
+            <span class="bshort__ico">🪞</span>
+            <strong>Virtual Try-On</strong>
+            <small>Mix &amp; check Color Harmony</small>
+          </button>
+          <button type="button" class="bshort" data-goto="malas">
+            <span class="bshort__tag">VIP BONUS #1</span>
+            <span class="bshort__ico">✈️</span>
+            <strong>Carry-On Planner</strong>
+            <small>3, 5, or 7-day smart packing</small>
+          </button>
+          <button type="button" class="bshort" data-goto="aulas">
+            <span class="bshort__tag">METHOD</span>
+            <span class="bshort__ico">🎓</span>
+            <strong>7 Style Lessons</strong>
+            <small>+ 24/7 AI Personal Stylist</small>
+          </button>
+        </div>
+
+        <!-- Saved Lookbook -->
+        <div class="section-head">
+          <h3>❤️ My Saved Lookbook</h3>
+          <span id="savedLooksCount">0 outfits</span>
+        </div>
+        <div id="savedLooksList" class="saved-looks"></div>
+      </section>
+
+      <!-- TAB 2: AI DIGITAL CLOSET + 15->150 CAPSULE -->
+      <section class="view" id="view-closet" data-view="closet">
+        <div class="view-banner">
+          <span class="pill-free">🎁 VIP BONUS #2 UNLOCKED</span>
+          <h2>AI Digital Closet &amp; Capsule</h2>
+          <p>Photograph your own clothes (our AI detects the shade!) or explore your pre-loaded 15-piece capsule.</p>
+        </div>
+
+        <div class="closet-stats" id="closetStats"></div>
+
+        <div class="closet-toolbar">
+          <button type="button" class="btn-primary-sm" id="btnOpenAddItem">📸 + Add Piece From My Closet</button>
+          <button type="button" class="btn-outline-sm" id="btnToggleMatrix">✨ 15 → 150 Matrix</button>
+        </div>
+
+        <div class="card matrix-box" id="matrixPanel" hidden>
+          <div class="card__head">
+            <div>
+              <span class="kicker">✦ OUTFIT MULTIPLIER</span>
+              <h3>15 Pieces = Up to 150 Outfits</h3>
+            </div>
+            <button type="button" class="btn-mini" id="btnCloseMatrix">Close ✕</button>
+          </div>
+          <p class="muted-txt">Formula: <strong>5 Tops × 4 Bottoms = 20 bases</strong> × <strong>3 Third Pieces = 60</strong> × <strong>3 Shoes = 180 combinations!</strong> Check off what you own:</p>
+          <div id="capsuleChecklist" class="capsule-checklist"></div>
+        </div>
+
+        <div class="cat-tabs" id="closetCatTabs">
+          <button type="button" class="cat-tab active" data-cat="all">All</button>
+          <button type="button" class="cat-tab" data-cat="top">👚 Tops</button>
+          <button type="button" class="cat-tab" data-cat="bottom">👖 Bottoms</button>
+          <button type="button" class="cat-tab" data-cat="layer">🧥 Blazers/Layers</button>
+          <button type="button" class="cat-tab" data-cat="shoes">👠 Shoes</button>
+          <button type="button" class="cat-tab" data-cat="bag">👜 Bags</button>
+        </div>
+
+        <div class="closet-grid" id="closetGrid"></div>
+      </section>
+
+      <!-- TAB 3: VIRTUAL OUTFIT TRY-ON MIRROR -->
+      <section class="view" id="view-provador" data-view="provador">
+        <div class="view-banner">
+          <span class="pill-free">🎁 VIP BONUS #3 UNLOCKED</span>
+          <h2>Virtual Outfit Try-On Mirror</h2>
+          <p>Swipe pieces side-by-side, see your live Color &amp; Proportion Harmony Score, and export Lookbook Cards!</p>
+        </div>
+
+        <div class="mirror-card">
+          <div class="mirror-score">
+            <div>
+              <span class="mirror-score__lbl">Color &amp; Proportion Harmony</span>
+              <strong id="mirrorHarmonyPct">96% · Effortless Match</strong>
+            </div>
+            <button type="button" class="btn-mini" id="btnMirrorSurprise">🎲 Surprise Me</button>
+          </div>
+
+          <div class="mirror-stage" id="mirrorStage">
+            <div class="mirror-slot" data-slot="layer">
+              <button type="button" class="slot-nav" data-dir="-1" data-cat="layer" aria-label="Previous layer">‹</button>
+              <div class="slot-item" id="slot-layer"></div>
+              <button type="button" class="slot-nav" data-dir="1" data-cat="layer" aria-label="Next layer">›</button>
+            </div>
+            <div class="mirror-slot" data-slot="top">
+              <button type="button" class="slot-nav" data-dir="-1" data-cat="top" aria-label="Previous top">‹</button>
+              <div class="slot-item" id="slot-top"></div>
+              <button type="button" class="slot-nav" data-dir="1" data-cat="top" aria-label="Next top">›</button>
+            </div>
+            <div class="mirror-slot" data-slot="bottom">
+              <button type="button" class="slot-nav" data-dir="-1" data-cat="bottom" aria-label="Previous bottom">‹</button>
+              <div class="slot-item" id="slot-bottom"></div>
+              <button type="button" class="slot-nav" data-dir="1" data-cat="bottom" aria-label="Next bottom">›</button>
+            </div>
+            <div class="mirror-row-2">
+              <div class="mirror-slot mirror-slot--half" data-slot="shoes">
+                <button type="button" class="slot-nav" data-dir="-1" data-cat="shoes" aria-label="Previous shoes">‹</button>
+                <div class="slot-item" id="slot-shoes"></div>
+                <button type="button" class="slot-nav" data-dir="1" data-cat="shoes" aria-label="Next shoes">›</button>
+              </div>
+              <div class="mirror-slot mirror-slot--half" data-slot="bag">
+                <button type="button" class="slot-nav" data-dir="-1" data-cat="bag" aria-label="Previous bag">‹</button>
+                <div class="slot-item" id="slot-bag"></div>
+                <button type="button" class="slot-nav" data-dir="1" data-cat="bag" aria-label="Next bag">›</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="stylist-tip" id="mirrorVerdict"></div>
+
+          <div class="mirror-actions">
+            <button type="button" class="btn-outline" id="btnExportLookCard">📲 Download Look Card</button>
+            <button type="button" class="btn-primary-sm" id="btnSaveMirrorLook">❤️ Save Outfit</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 4: SMART CARRY-ON & WEEKLY PLANNER -->
+      <section class="view" id="view-malas" data-view="malas">
+        <div class="view-banner">
+          <span class="pill-free">🎁 VIP BONUS #1 UNLOCKED</span>
+          <h2>Smart Carry-On &amp; Week Planner</h2>
+          <p>Travel light in a carry-on or plan your entire Monday–Friday workweek in 10 seconds with zero stress.</p>
+        </div>
+
+        <div class="card">
+          <div class="planner-controls">
+            <div class="field">
+              <label for="tripType">Trip / Week Goal</label>
+              <select id="tripType">
+                <option value="semana">🗓️ Workweek &amp; Everyday (Mon–Fri)</option>
+                <option value="trabalho">💼 Business Trip / Conference</option>
+                <option value="ferias">🌴 Vacation / Resort &amp; Sightseeing</option>
+                <option value="inverno">🧣 Crisp Fall / Winter Getaway</option>
+              </select>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="tripDays">How many days?</label>
+                <select id="tripDays">
+                  <option value="3">3 Days (Weekend)</option>
+                  <option value="5" selected>5 Days (Full Week)</option>
+                  <option value="7">7 Days (Full Trip)</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="tripClimate">Weather</label>
+                <select id="tripClimate">
+                  <option value="ameno" selected>🌤️ Mild / Layered</option>
+                  <option value="quente">☀️ Warm / Sunny</option>
+                  <option value="frio">❄️ Cool / Chilly</option>
+                </select>
+              </div>
+            </div>
+            <button type="button" class="btn-primary btn-shine" id="btnBuildTrip">
+              ✨ Build My Packing List &amp; Daily Outfits
+            </button>
+          </div>
+        </div>
+
+        <div id="tripResultBox"></div>
+      </section>
+
+      <!-- TAB 5: 7 LESSONS + 24/7 AI STYLIST -->
+      <section class="view" id="view-aulas" data-view="aulas">
+        <div class="view-banner">
+          <span class="pill-vip">🎓 METHOD + PERSONAL AI STYLIST</span>
+          <h2>Style Masterclass &amp; 24/7 AI</h2>
+          <p>Ask our AI Stylist what to wear for any event or master the 7 core pillars of intentional dressing.</p>
+        </div>
+
+        <div class="card stylist-chat">
+          <div class="card__head">
+            <div>
+              <span class="kicker">✦ INSTANT ADVICE</span>
+              <h3>Ask Your AI Personal Stylist</h3>
+            </div>
+          </div>
+          <div class="quick-prompts" id="quickPrompts">
+            <button type="button" class="qprompt" data-q="How do I look taller & leaner in flat sneakers?">👟 Look taller in flats?</button>
+            <button type="button" class="qprompt" data-q="What colors make me look rested & younger?">🎨 Colors that make me glow?</button>
+            <button type="button" class="qprompt" data-q="How do I skim my midsection comfortably?">✨ Flatter midsection?</button>
+            <button type="button" class="qprompt" data-q="Polished dinner or date night outfit with jeans?">🍷 Chic dinner with jeans?</button>
+          </div>
+          <form id="stylistForm" class="stylist-input-row">
+            <input type="text" id="inpStylistQ" placeholder="e.g., What do I wear to a casual Friday lunch?" required>
+            <button type="submit" class="btn-primary-sm">Ask</button>
+          </form>
+          <div id="stylistAnswer" class="stylist-answer" hidden></div>
+        </div>
+
+        <div class="section-head">
+          <h3>Your 7-Step Style Blueprint</h3>
+          <span id="lessonsProgressLbl">0/7 completed</span>
+        </div>
+        <div class="lessons-list" id="lessonsList"></div>
+      </section>
+    </main>
+
+    <!-- Bottom App Navigation -->
+    <nav class="tabbar" aria-label="Main navigation">
+      <button type="button" class="tab active" data-tab="home">
+        <span class="tab__ico">🏠</span>
+        <span class="tab__lbl">Today</span>
+      </button>
+      <button type="button" class="tab" data-tab="closet">
+        <span class="tab__ico">👗</span>
+        <span class="tab__lbl">Closet</span>
+      </button>
+      <button type="button" class="tab tab--center" data-tab="provador">
+        <span class="tab__fab">🪞</span>
+        <span class="tab__lbl">Try-On</span>
+      </button>
+      <button type="button" class="tab" data-tab="malas">
+        <span class="tab__ico">✈️</span>
+        <span class="tab__lbl">Pack</span>
+      </button>
+      <button type="button" class="tab" data-tab="aulas">
+        <span class="tab__ico">🎓</span>
+        <span class="tab__lbl">Stylist</span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- MODAL: ADD PHOTO / ITEM TO CLOSET -->
+  <div class="modal" id="modalAddItem" hidden>
+    <div class="modal__backdrop" data-close-modal="modalAddItem"></div>
+    <div class="modal__sheet">
+      <div class="modal__head">
+        <h3>📸 Add Piece to My Closet</h3>
+        <button type="button" class="modal__close" data-close-modal="modalAddItem">✕</button>
+      </div>
+      <form id="formAddItem" class="modal__form">
+        <label class="upload-drop" for="inpItemPhoto">
+          <input type="file" id="inpItemPhoto" accept="image/*" hidden>
+          <div id="uploadPreviewWrap" class="upload-preview">
+            <span class="upload-ico">📷</span>
+            <strong>Tap to snap a photo or choose from library</strong>
+            <small>Our AI automatically detects your garment's color!</small>
+          </div>
+        </label>
+
+        <div class="field">
+          <label for="inpItemName">Piece Name</label>
+          <input type="text" id="inpItemName" required placeholder="e.g., Camel Linen Blazer">
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="inpItemCat">Category</label>
+            <select id="inpItemCat">
+              <option value="top">👚 Top / Blouse / Shirt</option>
+              <option value="bottom">👖 Pants / Jeans / Skirt</option>
+              <option value="layer">🧥 Blazer / Third Piece</option>
+              <option value="shoes">👠 Shoes / Sneakers</option>
+              <option value="bag">👜 Bag / Accessory</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="inpItemColor">Detected Color</label>
+            <div class="color-pick-row">
+              <input type="color" id="inpItemColor" value="#C69C6D">
+              <span id="inpItemColorName">Camel Neutral</span>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary btn-shine">Save Piece to My Closet ✓</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: INSTALL PWA ON IPHONE / ANDROID -->
+  <div class="modal" id="modalInstall" hidden>
+    <div class="modal__backdrop" data-close-modal="modalInstall"></div>
+    <div class="modal__sheet">
+      <div class="modal__head">
+        <h3>📲 Add Lumina AI to Home Screen</h3>
+        <button type="button" class="modal__close" data-close-modal="modalInstall">✕</button>
+      </div>
+      <div class="install-steps">
+        <p>Open Lumina Style AI just like a native app in 1 tap:</p>
+        <div class="inst-card">
+          <strong>🍎 On iPhone (Safari):</strong>
+          <ol>
+            <li>Tap the <strong>Share</strong> icon (square with upward arrow at the bottom).</li>
+            <li>Scroll down and tap <strong>"Add to Home Screen"</strong>.</li>
+            <li>Tap <strong>Add</strong> in the top right corner!</li>
+          </ol>
+        </div>
+        <div class="inst-card">
+          <strong>🤖 On Android (Chrome):</strong>
+          <ol>
+            <li>Tap the <strong>3 dots (⋮)</strong> in the top right corner.</li>
+            <li>Tap <strong>"Install app"</strong> or <strong>"Add to Home screen"</strong>.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="appToast" class="toast" hidden></div>
+
+  <script src="app.js?v=1"></script>
+</body>
+</html>
