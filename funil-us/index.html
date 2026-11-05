@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Lumina Style AI — Personal Color Palette, Proportions &amp; Outfit Planner</title>
-  <meta name="description" content="Learn which colors and shapes flatter you most. Get your personal color palette, body proportion blueprint, virtual try-on tools, and 150+ outfits from clothes you already own.">
+  <title>Lumina Style AI — Personal Color, Proportions &amp; Smart Wardrobe App</title>
+  <meta name="description" content="Learn which colors and shapes flatter you most, and unlock up to 150+ effortless outfits from the clothes already in your closet.">
   <meta name="theme-color" content="#6E1423">
-  <meta property="og:title" content="Learn Which Colors &amp; Shapes Flatter You Most — 60-Sec Style Quiz">
-  <meta property="og:description" content="Get your personal color palette, virtual try-on tools, and daily outfit formulas tailored to your proportions. Rated 4.9/5 by 128,400+ women.">
+  <meta property="og:title" content="Lumina Style AI — Discover How Many Outfits Are Hiding in Your Closet">
+  <meta property="og:description" content="128,000+ women have multiplied their outfits &amp; found their flattering colors without buying new clothes. Take the free 60-second Style Quiz.">
   <meta property="og:type" content="website">
 
-  <!-- Brand Crest Favicon (0 extra requests) -->
+  <!-- Couture Medallion Brand Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40' fill='none'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='40' y2='40' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0%25' stop-color='%2396283B'/%3E%3Cstop offset='52%25' stop-color='%236E1423'/%3E%3Cstop offset='100%25' stop-color='%23440A14'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='40' height='40' rx='11' fill='url(%23g)'/%3E%3Crect x='2.75' y='2.75' width='34.5' height='34.5' rx='8.5' stroke='%23E8CBA0' stroke-opacity='0.52'/%3E%3Cpath d='M18.2 11.4A2.1 2.1 0 1 1 21.8 12.8C21.1 13.5 20 14.1 20 15.2V16' stroke='%23FFF8F0' stroke-width='2.15' stroke-linecap='round'/%3E%3Cpath d='M20 16L9.2 24.2C7.8 25.2 8.5 27.4 10.2 27.4H29.8C31.5 27.4 32.2 25.2 30.8 24.2L20 16Z' fill='%23FFF8F0' fill-opacity='0.10' stroke='%23FFF8F0' stroke-width='2.15' stroke-linejoin='round'/%3E%3Cpath d='M14.5 27.4H25.5' stroke='%23EED2A6' stroke-width='2.2' stroke-linecap='round'/%3E%3Cpath d='M30.4 6.8L31.25 9.35L33.8 10.2L31.25 11.05L30.4 13.6L29.55 11.05L27 10.2L29.55 9.35Z' fill='%23F3D8AC'/%3E%3C/svg%3E">
 
+  <!-- Edge CDN Preconnects for Instant 0ms Image & Pixel Delivery -->
+  <link rel="preconnect" href="https://descompacto.vercel.app" crossorigin>
+  <link rel="dns-prefetch" href="https://descompacto.vercel.app">
   <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
   <link rel="dns-prefetch" href="https://connect.facebook.net">
 
@@ -32,19 +35,19 @@
   </script>
   <!-- End Meta Pixel Code -->
 
-  <!-- Preload above-the-fold images for instant 0ms mobile LCP -->
-  <link rel="preload" as="image" href="assets/img/hero-collage-en.jpg" fetchpriority="high">
+  <!-- Above-the-fold Preload (Instant LCP) -->
+  <link rel="preload" as="image" href="assets/img/hero-banner-3d-en.jpg" fetchpriority="high">
   <link rel="preload" as="image" href="assets/img/age-18-29.jpg" fetchpriority="high">
   <link rel="preload" as="image" href="assets/img/age-30-39.jpg" fetchpriority="high">
   <link rel="preload" as="image" href="assets/img/age-40-49.jpg">
   <link rel="preload" as="image" href="assets/img/age-50-plus.jpg">
 
-  <link rel="stylesheet" href="assets/css/style.css?v=1">
+  <link rel="stylesheet" href="assets/css/style.css?v=14">
 </head>
 <body class="bg-creme">
   <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=619345180649856&amp;ev=PageView&amp;noscript=1" alt=""></noscript>
 
-  <!-- Editorial Header + Lumina Style AI Crest -->
+  <!-- Editorial Couture Medallion Header -->
   <header class="topbar" id="topbar">
     <div class="topbar__crown" aria-hidden="true"></div>
     <div class="topbar__inner">
@@ -76,7 +79,7 @@
           </svg>
         </span>
         <span class="brand__lockup">
-          <span class="brand__eyebrow">Personal Color &amp; Stylist</span>
+          <span class="brand__eyebrow">Official Stylist &amp; Color App</span>
           <span class="brand__title">Lumina <em>Style AI</em></span>
         </span>
       </a>
@@ -95,141 +98,129 @@
     </div>
   </header>
 
-  <!-- Main Funnel -->
+  <!-- Main App -->
   <main id="app">
-    <!-- SCREEN 1: SSR Pre-rendered Quiz Entry (Mosso-aligned hook, 0ms paint) -->
+    <!-- SCREEN 1: Quiz (SSR Pre-rendered Q1 for 0ms instant open) -->
     <section class="screen active" id="screen-quiz">
-      <div class="quiz" id="quizBox" data-ssr="age">
+      <div class="quiz" id="quizBox" data-ssr="idade">
         <div class="quiz__step">
-          <div class="trust-strip">
-            <span class="trust-stars">★★★★★</span>
-            <span><strong>4.9/5</strong> · Trusted by 128,400+ Women · 60-Sec Quiz</span>
-          </div>
-
           <div class="quiz__mosaic">
-            <img src="assets/img/hero-collage-en.jpg" alt="Personal color palette swatches, capsule wardrobe blazer, and Lumina Style AI app" fetchpriority="high" decoding="sync">
+            <img src="assets/img/hero-banner-3d-en.jpg" alt="Lumina Style AI — Unlock 150+ Outfits From Clothes You Already Own! 128,000+ Women Use Our App" fetchpriority="high" decoding="sync">
           </div>
-
           <div class="quiz__head">
-            <h1 class="quiz__title">Learn which <em>colors &amp; shapes</em> flatter you most</h1>
-            <p class="quiz__sub">Get personal style insights, virtual try-on tools, and daily outfit formulas to feel polished &amp; confident—select your age to begin:</p>
+            <div class="quiz__livepill"><span class="quiz__livedot" aria-hidden="true"></span>★ 4.9/5 · 128,400+ women discovered their colors &amp; outfits · 45s</div>
+            <h2 class="quiz__title">Learn which <em>colors &amp; shapes</em> flatter you most</h2>
+            <p class="quiz__hint">Select your age range to personalize your Color Palette &amp; Wardrobe Report:</p>
           </div>
-
           <div class="opts opts--gridimg">
             <button type="button" class="opt opt--img" data-id="18-29">
-              <img src="assets/img/age-18-29.jpg" alt="Age 18–29" fetchpriority="high" decoding="sync">
-              <span class="opt__txt">18–29</span>
+              <img src="assets/img/age-18-29.jpg" alt="Age 18 to 29" fetchpriority="high" decoding="sync">
+              <span class="opt__txt">18 to 29</span>
               <span class="opt__mark">✓</span>
             </button>
             <button type="button" class="opt opt--img" data-id="30-39">
-              <img src="assets/img/age-30-39.jpg" alt="Age 30–39" fetchpriority="high" decoding="sync">
-              <span class="opt__txt">30–39</span>
+              <img src="assets/img/age-30-39.jpg" alt="Age 30 to 39" fetchpriority="high" decoding="sync">
+              <span class="opt__txt">30 to 39</span>
               <span class="opt__mark">✓</span>
             </button>
             <button type="button" class="opt opt--img" data-id="40-49">
-              <img src="assets/img/age-40-49.jpg" alt="Age 40–49" decoding="async">
-              <span class="opt__txt">40–49</span>
+              <img src="assets/img/age-40-49.jpg" alt="Age 40 to 49" decoding="async">
+              <span class="opt__txt">40 to 49</span>
               <span class="opt__mark">✓</span>
             </button>
             <button type="button" class="opt opt--img" data-id="50+">
               <img src="assets/img/age-50-plus.jpg" alt="Age 50+" decoding="async">
-              <span class="opt__txt">50+</span>
+              <span class="opt__txt">50 or older</span>
               <span class="opt__mark">✓</span>
             </button>
           </div>
-
-          <p class="quiz__consent">Takes under 60 seconds · No wrong answers · By continuing, you agree to our <a href="#terms" data-config-link="termsUrl">Terms</a> &amp; <a href="#privacy" data-config-link="privacyUrl">Privacy Policy</a>.</p>
+          <p class="quiz__consent">By continuing, you agree to our <a href="#terms" data-config-link="termsUrl">Terms of Service</a> and <a href="#privacy" data-config-link="privacyUrl">Privacy Policy</a>.</p>
         </div>
       </div>
     </section>
 
-    <!-- SCREEN 2: Analyzing Color Season, Proportions & Closet -->
+    <!-- SCREEN 2: Analyzing -->
     <section class="screen" id="screen-analyzing">
       <div class="analyzing">
         <div class="analyzing__ring" aria-hidden="true"><span></span></div>
-        <h2 class="analyzing__title">Building your Personal Color &amp; Style Report…</h2>
-        <p class="analyzing__sub">Mapping your undertone, natural contrast, proportions, and existing wardrobe potential.</p>
+        <h2 class="analyzing__title">Analyzing your colors &amp; wardrobe…</h2>
+        <p class="analyzing__sub">Cross-referencing your undertone, proportions, and closet with the Lumina Style AI engine.</p>
         <ul class="analyzing__steps" id="analyzingSteps">
-          <li><span class="dot"></span>Analyzing skin undertone &amp; seasonal color harmony…</li>
-          <li><span class="dot"></span>Calibrating silhouette &amp; vertical proportion ratios…</li>
+          <li><span class="dot"></span>Mapping your seasonal color undertone &amp; contrast…</li>
+          <li><span class="dot"></span>Calibrating proportions for your exact height &amp; weight…</li>
           <li><span class="dot"></span>Calculating outfit combinations hiding in your closet…</li>
-          <li><span class="dot"></span>Unlocking your Virtual Try-On &amp; 15→150 Capsule Blueprint…</li>
-          <li><span class="dot"></span>Finalizing your personalized Style Report…</li>
+          <li><span class="dot"></span>Identifying your personal style archetype…</li>
+          <li><span class="dot"></span>Building your Personal Color &amp; Style Report…</li>
         </ul>
         <div class="analyzing__pct" id="analyzingPct">0%</div>
       </div>
     </section>
 
-    <!-- SCREEN 3: Personalized Style Report + Irresistible Offer -->
+    <!-- SCREEN 3: Result + Offer -->
     <section class="screen" id="screen-result">
       <div class="result" id="resultBox"></div>
     </section>
   </main>
 
-  <!-- Interactive Mobile Scratch-Off VIP Founder Pass -->
-  <div class="tmodal" id="ticketModal" role="dialog" aria-modal="true" aria-labelledby="ticketTitle" hidden>
-    <div class="tmodal__backdrop"></div>
+  <!-- Sticky Mobile Bottom CTA -->
+  <div class="sticky-cta" id="stickyCta" hidden>
+    <button class="btn btn--primary" type="button" data-cta>VIP Lifetime + 3 Free Bonuses · $27 Once →</button>
+  </div>
+
+  <!-- Live Social Proof Toast (exact classes from style.css) -->
+  <div class="social-toast" id="socialToast" hidden role="status" aria-live="polite">
+    <span class="social-toast__dot" aria-hidden="true"></span>
+    <span class="social-toast__txt" id="socialToastTxt"></span>
+    <button type="button" class="social-toast__close" id="socialToastClose" aria-label="Close notification">×</button>
+  </div>
+
+  <!-- Full-Screen Lightbox Zoom Modal for 3D Bonus Posters (exact .bzoom classes from style.css) -->
+  <div class="bzoom" id="bonusZoomModal" hidden role="dialog" aria-modal="true" aria-label="Enlarged bonus preview">
+    <div class="bzoom__box" data-close-zoom>
+      <button type="button" class="bzoom__close" id="bonusZoomClose" aria-label="Close image">✕</button>
+      <div class="bzoom__tag" id="bonusZoomTag">🎁 FREE BONUS INCLUDED WITH YOUR APP</div>
+      <img src="" alt="" id="bonusZoomImg" class="bzoom__img">
+      <button type="button" class="btn btn--primary bzoom__cta" id="bonusZoomCta">Claim This Free Bonus Inside My App →</button>
+    </div>
+  </div>
+
+  <!-- Interactive Mobile Scratch-Off Ticket Modal (exact .tmodal & .scratch classes from style.css) -->
+  <div class="tmodal" id="ticketModal" hidden role="dialog" aria-modal="true" aria-label="Special Founder Discount Ticket">
     <div class="tmodal__box">
-      <div class="confetti" id="confettiBox" aria-hidden="true"></div>
-      <span class="tmodal__badge">🎁 FOUNDER REWARD UNLOCKED</span>
-      <h2 class="tmodal__title" id="ticketTitle">Wait! You unlocked a <em>secret</em> Founder Pass</h2>
-      <p class="tmodal__txt">Because you completed your style profile, scratch the golden card below to reveal your one-time VIP bundle discount:</p>
+      <div class="tmodal__conf" id="confettiBox" aria-hidden="true"></div>
+      <span class="tmodal__badge">🎟️ Founder Gift Unlocked</span>
+      <p class="tmodal__txt">
+        We just built your <strong>Personalized Color &amp; Outfit Plan</strong> inside our App!<br>
+        <span>Swipe your finger across the ticket below to reveal your <strong>special Founder discount</strong>:</span>
+      </p>
       <div class="scratch" id="scratchWrap">
-        <div class="scratch__prize" aria-live="polite">
-          <span class="scratch__eyebrow">✦ VIP FOUNDER PASS UNLOCKED ✦</span>
-          <div class="scratch__off">93%<span>OFF</span></div>
-          <p class="scratch__sub">+ $291 in VIP Bonuses FREE · Zero Monthly Fees!</p>
+        <div class="scratch__prize">
+          <span class="scratch__pct">88%</span>
+          <span class="scratch__off">DISCOUNT</span>
+          <span class="scratch__sub">+ 3 VIP Bonuses FREE · $0/mo Fees!</span>
         </div>
         <canvas id="scratchCanvas"></canvas>
+        <span class="scratch__hint" id="scratchHint">Swipe your finger to scratch 👆</span>
       </div>
       <div class="scratch__prog" id="scratchProgWrap" aria-hidden="true">
         <div class="scratch__progfill" id="scratchProgFill"></div>
       </div>
-      <p class="scratch__hint" id="scratchHint">Swipe your finger across the gold card 👆</p>
-      <button type="button" class="btn btn--primary btn--lg tmodal__next pulse" id="ticketNext" hidden>
-        Reveal My Color Palette &amp; Style Report →
-      </button>
+      <button class="btn btn--primary btn--lg tmodal__next" id="ticketNext" type="button" hidden>Claim 88% OFF &amp; View My Report →</button>
     </div>
   </div>
 
-  <!-- Sticky Mobile Bottom CTA -->
-  <div class="sticky-cta" id="stickyCta" hidden>
-    <button class="btn btn--primary btn--lg" data-cta>Get Full Lifetime Access + 3 Free Bonuses ($27) →</button>
-  </div>
-
-  <!-- Live Social Proof Toast -->
-  <div class="social-toast" id="socialToast" aria-live="polite" hidden>
-    <span class="social-toast__dot" aria-hidden="true"></span>
-    <div class="social-toast__body">
-      <strong id="socialToastName">Hannah M. · Austin, TX</strong>
-      <span id="socialToastMsg">just unlocked the VIP Lifetime Bundle + 3 Free Bonuses</span>
+  <!-- Checkout Link Preview Helper Modal (only appears before pasting your real Stripe/USD link) -->
+  <div class="bzoom" id="checkoutSetupModal" hidden role="dialog" aria-modal="true" aria-label="Checkout setup helper">
+    <div class="bzoom__box" style="background:#FFFDF9;color:#1E1A17;padding:22px;border-radius:22px;max-width:410px;text-align:left">
+      <button type="button" class="bzoom__close" id="checkoutSetupClose" aria-label="Close" style="color:#6E1423;background:#F3EADB">✕</button>
+      <span class="pill-mini">⚡ PIXEL TRACKED IN USD</span>
+      <h3 style="font-family:Georgia,serif;font-size:21px;color:#6E1423;margin:8px 0 6px">InitiateCheckout Fired (Pixel 619345180649856)!</h3>
+      <p style="font-size:13.5px;line-height:1.5;color:#3A2A24;margin-bottom:14px">Tracked <strong id="setupModalPlanInfo">VIP Lifetime Bundle ($27.00 USD)</strong>! Send me your Stripe / Cartpanda / Hotmart Global / Whop link whenever ready (or paste it in <code>funil-us/assets/js/config.js</code>). Want to test the Member Web App right now?</p>
+      <a href="/app" class="btn btn--primary" style="display:flex;text-decoration:none;justify-content:center;padding:14px">Open English Member Web App (/app) →</a>
     </div>
   </div>
 
-  <!-- Bonus Preview Lightbox Modal -->
-  <div class="bmodal" id="bonusZoomModal" role="dialog" aria-modal="true" aria-label="Bonus preview" hidden>
-    <div class="bmodal__backdrop" data-close-zoom></div>
-    <div class="bmodal__box">
-      <button type="button" class="bmodal__close" id="bonusZoomClose" aria-label="Close preview">✕</button>
-      <div id="bonusZoomBody" class="bmodal__preview"></div>
-      <p id="bonusZoomCaption" class="bmodal__caption"></p>
-      <button type="button" class="btn btn--gold bmodal__cta" id="bonusZoomCta">Claim This Free Bonus With My Access →</button>
-    </div>
-  </div>
-
-  <!-- Checkout Link Preview Helper Modal (only appears before you paste your real Stripe/USD link) -->
-  <div class="bmodal" id="checkoutSetupModal" role="dialog" aria-modal="true" hidden>
-    <div class="bmodal__backdrop" data-close-setup></div>
-    <div class="bmodal__box" style="text-align:left;padding:20px">
-      <button type="button" class="bmodal__close" id="checkoutSetupClose" aria-label="Close">✕</button>
-      <span class="pill-mini">⚡ READY FOR YOUR USD CHECKOUT LINK</span>
-      <h3 style="font-family:Georgia,serif;font-size:21px;color:#6E1423;margin:8px 0 6px">InitiateCheckout Fired on Pixel 619345180649856!</h3>
-      <p style="font-size:13.5px;color:#3A2A24;margin-bottom:12px">Your Meta Pixel just tracked <strong id="setupModalPlanInfo">VIP Bundle ($27.00 USD)</strong>! Send me your Stripe / Cartpanda / Hotmart Global / Whop link whenever ready (or paste it in <code>funil-us/assets/js/config.js</code>). Want to preview the Member Web App right now?</p>
-      <a href="/app" class="btn btn--gold" style="display:flex;text-decoration:none;justify-content:center;padding:14px">Open English Member Web App (/app) →</a>
-    </div>
-  </div>
-
-  <!-- Footer -->
+  <!-- Editorial Footer -->
   <footer class="footer">
     <div class="footer__logo">
       <span class="brand__crest brand__crest--sm" aria-hidden="true">
@@ -244,19 +235,19 @@
       </span>
       <span class="footer__brand">Lumina <em>Style AI</em></span>
     </div>
-    <p class="footer__tagline">Understand your colors, dress for your proportions, and love your closet again.</p>
+    <p class="footer__tagline">Your wardrobe multiplied with color harmony, smart proportions, and effortless style.</p>
     <div class="footer__links">
       <a href="#" id="lnkRestart">Retake Quiz</a>
-      <a href="/app">Member Login</a>
+      <a href="/app">Member App Login</a>
       <a href="#terms" data-config-link="termsUrl">Terms of Service</a>
       <a href="#privacy" data-config-link="privacyUrl">Privacy Policy</a>
     </div>
     <p class="footer__disclaimer">
-      © 2026 Lumina Style AI · All rights reserved. This site is not a part of the Facebook™ website or Meta Platforms, Inc.
+      © Lumina Style AI · All rights reserved. This site is not a part of the Facebook™ website or Meta Platforms, Inc.
     </p>
   </footer>
 
-  <script src="assets/js/config.js?v=1"></script>
-  <script src="assets/js/quiz.js?v=1"></script>
+  <script src="assets/js/config.js?v=14"></script>
+  <script src="assets/js/quiz.js?v=14"></script>
 </body>
 </html>

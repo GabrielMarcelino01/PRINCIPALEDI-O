@@ -10,25 +10,27 @@ const GIT_REF = process.env.LUMINA_GIT_SHA || "arena/0045d78d-principaledi-o";
 const GH_RAW_BASE = `https://raw.githubusercontent.com/GabrielMarcelino01/PRINCIPALEDI-O/${GIT_REF}/funil-us`;
 
 const REQUIRED_IMGS = [
-  "hero-collage-en.jpg",
+  "hero-banner-3d-en.jpg",
   "age-18-29.jpg",
   "age-30-39.jpg",
   "age-40-49.jpg",
   "age-50-plus.jpg",
-  "app-hero-en.jpg",
-  "bundle-vip-en.jpg",
-  "ba-us-1.jpg",
-  "ba-us-2.jpg",
-  "ba-us-3.jpg"
+  "app-preview-3d-en.jpg",
+  "before-after-cover-en.jpg",
+  "before-after-1-en.jpg",
+  "before-after-2-en.jpg",
+  "before-after-3-en.jpg",
+  "bonus-planner-en.jpg",
+  "bonus-closet-en.jpg",
+  "bonus-tryon-en.jpg",
+  "mockup-vip-3d-en.jpg"
 ];
 
 const APP_ICONS = ["icon-192.png", "icon-512.png"];
 
 async function readTextAsset(relPath) {
   const localPath = path.join(ROOT, relPath);
-  if (fs.existsSync(localPath)) {
-    return fs.readFileSync(localPath, "utf8");
-  }
+  if (fs.existsSync(localPath)) return fs.readFileSync(localPath, "utf8");
   const url = `${GH_RAW_BASE}/${relPath}`;
   const res = await fetch(url);
   if (!res.ok) throw new Error(`Failed to fetch text ${url}: HTTP ${res.status}`);
@@ -53,13 +55,13 @@ fs.mkdirSync(DIST_IMG, { recursive: true });
 fs.mkdirSync(path.join(DIST, "assets", "css"), { recursive: true });
 fs.mkdirSync(path.join(DIST, "assets", "js"), { recursive: true });
 
-// 1. Copy/fetch all 10 US editorial images
+// 1. Prepare all 14 3D & editorial US images
 const imgModes = await Promise.all(
   REQUIRED_IMGS.map((name) => ensureBinaryAsset(`assets/img/${name}`, path.join(DIST_IMG, name)))
 );
-console.log(`✓ Prepared ${REQUIRED_IMGS.length} US editorial images (${imgModes[0]})`);
+console.log(`Prepared ${REQUIRED_IMGS.length} US 3D & editorial images (${imgModes[0]})`);
 
-// 2. Bundle US Funnel (single-RTT dist/index.html)
+// 2. Bundle single-RTT US Funnel dist/index.html
 const [cssRaw, cfgRaw, quizRaw, indexRaw] = await Promise.all([
   readTextAsset("assets/css/style.css"),
   readTextAsset("assets/js/config.js"),
@@ -77,7 +79,7 @@ const minCss = cssRaw
   .replace(/\s*([{}:;,])\s*/g, "$1")
   .trim();
 
-let html = indexRaw
+const html = indexRaw
   .replace(/<link\s+rel="stylesheet"\s+href="assets\/css\/style\.css[^"]*"\s*>/i, () => `<style>${minCss}</style>`)
   .replace(
     /<script\s+src="assets\/js\/config\.js[^"]*"><\/script>\s*<script\s+src="assets\/js\/quiz\.js[^"]*"><\/script>/i,
@@ -85,9 +87,9 @@ let html = indexRaw
   );
 
 fs.writeFileSync(path.join(DIST, "index.html"), html);
-console.log(`✓ Built single-RTT US Funnel dist/index.html (${(Buffer.byteLength(html) / 1024).toFixed(1)} KB)`);
+console.log(`Built single-RTT US Funnel dist/index.html (${(Buffer.byteLength(html) / 1024).toFixed(1)} KB)`);
 
-// 3. Bundle English Member Web App (/app) into dist/app
+// 3. Bundle single-RTT English Member Web App dist/app/index.html
 const APP_DIST = path.join(DIST, "app");
 fs.mkdirSync(APP_DIST, { recursive: true });
 
@@ -119,4 +121,4 @@ const appHtml = appIndexRaw
   .replace(/<script\s+src="app\.js[^"]*"><\/script>/i, () => `<script>${appJsRaw}</script>`);
 
 fs.writeFileSync(path.join(APP_DIST, "index.html"), appHtml);
-console.log(`✓ Built single-RTT US Member PWA dist/app/index.html (${(Buffer.byteLength(appHtml) / 1024).toFixed(1)} KB)`);
+console.log(`Built single-RTT US Member PWA dist/app/index.html (${(Buffer.byteLength(appHtml) / 1024).toFixed(1)} KB)`);

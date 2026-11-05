@@ -2293,3 +2293,87 @@ body.no-scroll { overflow: hidden; overscroll-behavior: none; }
 .bmodal__preview { margin-bottom: 10px; }
 
 
+
+/* ── US Bonus Lightbox (.bzoom) & Social Toast Text/Close ───────── */
+.bzoom {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(18, 7, 10, .84);
+  backdrop-filter: blur(8px);
+}
+.bzoom[hidden] { display: none !important; }
+.bzoom__box {
+  position: relative;
+  z-index: 2;
+  width: min(440px, 100%);
+  max-height: 92dvh;
+  overflow-y: auto;
+  background: #FFFDF9;
+  border: 2px solid #E5C687;
+  border-radius: 24px;
+  padding: 16px 14px 14px;
+  text-align: center;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, .55);
+}
+.bzoom__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(34, 14, 18, .85);
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+}
+.bzoom__tag {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--vinho);
+  margin: 0 36px 10px 8px;
+  text-align: left;
+}
+.bzoom__img {
+  width: 100%;
+  max-height: 66dvh;
+  object-fit: contain;
+  border-radius: 16px;
+  margin-bottom: 12px;
+}
+.bzoom__cta {
+  width: 100%;
+}
+.social-toast { pointer-events: auto; }
+.social-toast__txt {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--tinta);
+}
+.social-toast__txt strong {
+  color: var(--vinho);
+  font-weight: 800;
+}
+.social-toast__close {
+  margin-left: auto;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(107, 15, 26, .08);
+  color: var(--vinho);
+  font-size: 13px;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  flex: none;
+}
