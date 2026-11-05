@@ -539,7 +539,7 @@ s { text-decoration: line-through; opacity: .65; }
 }
 
 /* colagem do criativo (1ª tela) — proporção reservada para evitar pulo de layout */
-.quiz__mosaic { max-width: 460px; margin: -6px auto 16px; }
+.quiz__mosaic { max-width: 640px; margin: -8px auto 16px; }
 .quiz__mosaic img {
   width: 100%; height: auto; display: block;
   border: none; border-radius: 0; box-shadow: none; background: transparent;

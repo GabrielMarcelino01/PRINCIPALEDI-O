@@ -10,7 +10,7 @@ const GIT_REF = process.env.LUMINA_GIT_SHA || "arena/0045d78d-principaledi-o";
 const GH_RAW_BASE = `https://raw.githubusercontent.com/GabrielMarcelino01/PRINCIPALEDI-O/${GIT_REF}/funil-us`;
 
 const REQUIRED_IMGS = [
-  "hero-banner-3d-en.jpg",
+  "hero-banner-v2-en.webp",
   "age-18-29.jpg",
   "age-30-39.jpg",
   "age-40-49.jpg",

@@ -10,7 +10,7 @@
 
   /* Local bespoke English 3D & portrait assets stored inside funil-us/assets/img/ */
   var LOCAL_ASSETS = {
-    "assets/img/hero-banner-3d-en.jpg": true,
+    "assets/img/hero-banner-v2-en.webp": true,
     "assets/img/age-18-29.jpg": true,
     "assets/img/age-30-39.jpg": true,
     "assets/img/age-40-49.jpg": true,
@@ -365,7 +365,7 @@
     var q = QUESTIONS[idx];
     if (!q) return [];
     var list = [];
-    if (idx === 0) list.push("assets/img/hero-banner-3d-en.jpg");
+    if (idx === 0) list.push("assets/img/hero-banner-v2-en.webp");
     if (q.banner) list.push(q.banner);
     (q.options || []).forEach(function (o) { if (o.img) list.push(o.img); });
     return list;
@@ -788,7 +788,7 @@
     }
 
     if (first) {
-      html += '<div class="quiz__mosaic"><img src="' + assetUrl("assets/img/hero-banner-3d-en.jpg") + '" alt="Lumina Style AI — Unlock 150+ Outfits From Clothes You Already Own" fetchpriority="high" decoding="sync"></div>';
+      html += '<div class="quiz__mosaic"><img src="' + assetUrl("assets/img/hero-banner-v2-en.webp") + '" width="1360" height="765" alt="Lumina Style AI — Unlock 150+ Outfits From Clothes You Already Own" fetchpriority="high" decoding="sync"></div>';
     }
     if (q.banner) {
       html += '<div class="quiz__banner"><img src="' + assetUrl(q.banner) + '" alt="' + (q.bannerAlt || "") + '" fetchpriority="high" decoding="sync">' +
