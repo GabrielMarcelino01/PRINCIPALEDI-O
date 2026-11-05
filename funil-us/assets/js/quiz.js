@@ -1499,7 +1499,9 @@
 
     $$("#resultBox [data-cta]").forEach(function (btn) {
       btn.addEventListener("click", function () {
-        triggerCheckout(btn.dataset.plan || state.plan || "vip");
+        var chosenPlan = btn.dataset.plan || state.plan || "vip";
+        selectPlan(chosenPlan);
+        triggerCheckout(chosenPlan);
       });
     });
 
@@ -1524,7 +1526,20 @@
       plansBox.addEventListener("click", function (e) {
         if (e.target.closest("[data-cta]")) return;
         var p = e.target.closest(".plan");
-        if (p) selectPlan(p.dataset.plan);
+        if (p && p.dataset.plan) {
+          selectPlan(p.dataset.plan);
+          triggerCheckout(p.dataset.plan);
+        }
+      });
+      plansBox.addEventListener("keydown", function (e) {
+        if (e.key !== "Enter" && e.key !== " ") return;
+        if (e.target.closest("[data-cta]")) return;
+        var p = e.target.closest(".plan");
+        if (p && p.dataset.plan) {
+          e.preventDefault();
+          selectPlan(p.dataset.plan);
+          triggerCheckout(p.dataset.plan);
+        }
       });
       var btnRestorePrem = $("#btnRestorePremium");
       if (btnRestorePrem) {

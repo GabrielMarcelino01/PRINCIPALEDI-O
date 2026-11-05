@@ -885,8 +885,10 @@ body.no-scroll { overflow: hidden; overscroll-behavior: none; }
   position: relative; display: flex; flex-direction: column;
   background: var(--branco-puro); border: 1.6px solid var(--bege-linha);
   border-radius: 22px; padding: 22px 18px 18px; text-align: left;
-  cursor: pointer; transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
+  cursor: pointer; user-select: none; -webkit-tap-highlight-color: transparent;
+  transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
 }
+.plan:hover { border-color: rgba(110, 20, 35, .48); transform: translateY(-2px); }
 .plan:active { transform: scale(.985); }
 .plan--sel { border-color: var(--vinho); box-shadow: 0 0 0 3px rgba(110, 20, 35, .16), var(--sombra-forte); }
 .plan__name { font-family: var(--serif); font-weight: 700; font-size: 22px; color: var(--tinta); }
