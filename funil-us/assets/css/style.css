@@ -551,7 +551,7 @@ body.bg-creme .topbar {
 }
 
 /* banner nas perguntas intermediárias */
-.quiz__banner { margin: -4px 0 18px; }
+.quiz__banner { max-width: 440px; margin: -4px auto 18px; }
 .quiz__banner img { width: 100%; height: auto; display: block; border-radius: 18px; box-shadow: var(--sombra); }
 .quiz__banner__cap {
   margin-top: 12px; text-align: center;

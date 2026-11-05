@@ -23,7 +23,8 @@
     "assets/img/bonus-planner-en.jpg": true,
     "assets/img/bonus-closet-en.jpg": true,
     "assets/img/bonus-tryon-en.jpg": true,
-    "assets/img/mockup-vip-3d-en.jpg": true
+    "assets/img/mockup-vip-3d-en.jpg": true,
+    "assets/img/triptych-looks-en.jpg": true
   };
 
   function assetUrl(relPath) {
@@ -212,8 +213,8 @@
     {
       id: "sentir",
       kicker: "The trick in action",
-      banner: "assets/img/triptico-looks.jpg",
-      bannerAlt: "1 crisp white button-down styled into 3 chic outfits: casual denim, tailored beige trousers, and sleek black satin skirt",
+      banner: "assets/img/triptych-looks-en.jpg",
+      bannerAlt: "1 crisp white button-down styled into 3 chic outfits: Casual, Chic, and Luxury",
       bannerCap: "1 white shirt, 3 effortlessly chic outfits!",
       title: "Final step! How do you want to feel walking out the door in your new outfits?",
       type: "single",
@@ -791,7 +792,7 @@
       html += '<div class="quiz__mosaic"><img src="' + assetUrl("assets/img/hero-banner-v2-en.webp") + '" width="1360" height="765" alt="Lumina Style AI — Unlock 150+ Outfits From Clothes You Already Own" fetchpriority="high" decoding="sync"></div>';
     }
     if (q.banner) {
-      html += '<div class="quiz__banner"><img src="' + assetUrl(q.banner) + '" alt="' + (q.bannerAlt || "") + '" fetchpriority="high" decoding="sync">' +
+      html += '<div class="quiz__banner"><img src="' + assetUrl(q.banner) + '" width="1000" height="1250" alt="' + (q.bannerAlt || "") + '" fetchpriority="high" decoding="sync">' +
         (q.bannerCap ? '<p class="quiz__banner__cap">' + q.bannerCap + '</p>' : '') +
         '</div>';
     }

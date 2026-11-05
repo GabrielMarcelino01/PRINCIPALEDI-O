@@ -23,7 +23,8 @@ const REQUIRED_IMGS = [
   "bonus-planner-en.jpg",
   "bonus-closet-en.jpg",
   "bonus-tryon-en.jpg",
-  "mockup-vip-3d-en.jpg"
+  "mockup-vip-3d-en.jpg",
+  "triptych-looks-en.jpg"
 ];
 
 const APP_ICONS = ["icon-192.png", "icon-512.png"];
