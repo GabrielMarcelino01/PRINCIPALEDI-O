@@ -34,9 +34,9 @@ Coordene as skills `hypit`, `motion-design`, `reels-viral`, `captions` e `video-
 - Use transições por motivo narrativo, não como decoração automática.
 - Trate a voz antes da masterização e evite música competindo com a fala.
 
-## 4. Legendas e motion
+## 4. Áudio, legendas e motion
 
-Leia `../captions/SKILL.md` e, quando houver motion, `../motion-design/SKILL.md` ou `../reels-viral/SKILL.md`. As referências completas do Hypit estão em `../hypit/references/`.
+Para clonagem/síntese de voz (F5-TTS e fallback), tratamento vocal e mixagem EBU R128 (`audio_pipeline.py`), leia `../AUDIO.md` (e `../EDGE-TTS.md` quando usar Edge TTS). Para legendas e motion, leia `../captions/SKILL.md` e, quando houver motion, `../motion-design/SKILL.md` ou `../reels-viral/SKILL.md`. As referências completas do Hypit estão em `../hypit/references/`.
 
 ## 5. Qualidade e entrega
 
