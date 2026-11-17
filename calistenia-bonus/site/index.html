@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manual de los Primeros 21 Días · Calistenia Asiática H40+</title>
+<meta name="description" content="Tu bono del programa: el manual completo de los primeros 21 días. 20 páginas con el plan de arranque, los seis ejercicios con su escala, movilidad, respiración y la bitácora imprimible.">
+<meta name="theme-color" content="#14171A">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Manual de los Primeros 21 Días · Calistenia Asiática H40+">
+<meta property="og:description" content="20 páginas para arrancar en casa, con el peso del cuerpo y sin gimnasio.">
+<meta property="og:image" content="og-banner.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2314171A'/%3E%3Cpath d='M8 22V10h3.4l3 6 3-6H21v12h-3v-7l-2.4 5h-1.2L12 15v7z' fill='%23F4F0E8'/%3E%3C/svg%3E">
+<style>
+  @font-face{font-family:'Inter';src:url('fonts/inter-400.woff2') format('woff2');font-weight:400;font-display:swap}
+  @font-face{font-family:'Inter';src:url('fonts/inter-600.woff2') format('woff2');font-weight:600;font-display:swap}
+  @font-face{font-family:'Inter';src:url('fonts/inter-700.woff2') format('woff2');font-weight:700;font-display:swap}
+  @font-face{font-family:'Inter';src:url('fonts/inter-800.woff2') format('woff2');font-weight:800;font-display:swap}
+  @font-face{font-family:'Bebas';src:url('fonts/bebas-400.woff2') format('woff2');font-weight:400;font-display:swap}
+
+  :root{
+    --ink:#14171A; --ink-soft:#2A2F35; --graphite:#5A626B; --silver:#98A0A8;
+    --line:#D8D3CB; --paper:#FBF9F5; --paper-alt:#F3EFE7; --bone:#E8E2D6;
+    --crimson:#8E2F2F; --sage:#5F6F5E;
+    --display:'Bebas',Impact,sans-serif;
+    --body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink-soft);font-family:var(--body);
+       font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased;
+       text-rendering:optimizeLegibility}
+  .wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 24px}
+  .kicker{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+          color:var(--crimson)}
+  .rule{height:1px;background:var(--line);border:0}
+  a{color:inherit}
+
+  /* ── topo ───────────────────────────────────────────── */
+  .topbar{border-bottom:1px solid var(--line);background:rgba(251,249,245,.92);
+          backdrop-filter:blur(8px);position:sticky;top:0;z-index:20}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;
+                height:56px}
+  .brand{font-size:10.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;
+         color:var(--graphite)}
+  .brand b{color:var(--ink);font-weight:700}
+  .badge{font-size:10.5px;font-weight:600;letter-spacing:.13em;color:var(--crimson);
+         text-transform:uppercase}
+
+  /* ── hero ───────────────────────────────────────────── */
+  .hero{background:var(--ink);color:var(--paper);position:relative;overflow:hidden}
+  .hero::after{content:'';position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(120% 90% at 78% 40%,rgba(232,226,214,.10),transparent 62%)}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;
+              align-items:center;padding-top:76px;padding-bottom:76px;
+              position:relative;z-index:2}
+  .hero h1{font-family:var(--display);font-weight:400;font-size:clamp(44px,7vw,86px);
+           line-height:.92;letter-spacing:.005em;margin:14px 0 0;color:var(--paper)}
+  .hero .sub{font-size:17px;line-height:1.58;color:#BDB7AC;margin-top:22px;max-width:44ch}
+  .hero .meta{font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+              color:#7E7970;margin-top:26px}
+  .hero .meta span+span::before{content:'·';margin:0 10px;color:var(--crimson)}
+
+  .cover-frame{position:relative;border:1px solid #2E3236;display:block;
+               box-shadow:0 40px 80px -40px rgba(0,0,0,.9)}
+  .cover-frame img{display:block;width:100%;height:auto}
+  .cover-frame .tag{position:absolute;left:0;bottom:0;background:var(--crimson);
+                    color:var(--paper);font-size:9.5px;font-weight:700;
+                    letter-spacing:.12em;padding:6px 12px;text-transform:uppercase}
+
+  /* ── CTA ────────────────────────────────────────────── */
+  .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px;align-items:center}
+  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--paper);
+       color:var(--ink);font-weight:700;font-size:14.5px;letter-spacing:.01em;
+       padding:15px 26px;text-decoration:none;border:1px solid var(--paper);
+       transition:transform .16s ease,background .16s ease}
+  .btn:hover{transform:translateY(-1px);background:#fff}
+  .btn.ghost{background:transparent;color:var(--paper);border-color:#4A4F54}
+  .btn.ghost:hover{background:#1D2124;border-color:#6B7178}
+  .btn svg{flex:none}
+  .cta-note{font-size:12.5px;color:#8C8880}
+
+  /* ── seções ─────────────────────────────────────────── */
+  section{padding:72px 0}
+  section+section{border-top:1px solid var(--line)}
+  h2{font-family:var(--display);font-weight:400;font-size:clamp(30px,4.2vw,46px);
+     line-height:1;color:var(--ink);margin:10px 0 0}
+  .lead{font-size:18px;line-height:1.6;color:var(--ink);margin-top:16px;max-width:62ch}
+  .hr-ink{height:2px;background:var(--ink);margin:18px 0 0;width:100%}
+
+  .grid{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);
+        margin-top:34px}
+  .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+  .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+  .cell{background:var(--paper);padding:26px 24px}
+  .cell .n{font-family:var(--display);font-size:34px;line-height:1;color:var(--bone)}
+  .cell h3{font-size:14.5px;font-weight:700;color:var(--ink);margin:10px 0 6px}
+  .cell p{font-size:14px;line-height:1.55;color:var(--graphite)}
+
+  ol.toc{list-style:none;margin-top:30px;border-top:1px solid var(--ink)}
+  ol.toc li{display:flex;align-items:baseline;gap:16px;padding:11px 0;
+            border-bottom:1px solid var(--line);font-size:15px}
+  ol.toc li .t{flex:1;color:var(--ink-soft)}
+  ol.toc li .d{font-size:12.5px;color:var(--silver);flex:1.4}
+  ol.toc li .p{font-weight:600;font-size:13px;color:var(--crimson);
+               font-variant-numeric:tabular-nums}
+
+  /* ── viewer ─────────────────────────────────────────── */
+  .viewer{background:var(--paper-alt);padding:0}
+  .viewer .wrap{padding-top:64px;padding-bottom:64px}
+  .pages{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px}
+  .pages img{width:100%;height:auto;display:block;border:1px solid var(--line);
+             background:#fff;transition:transform .18s ease,box-shadow .18s ease}
+  .pages a:hover img{transform:translateY(-3px);
+                     box-shadow:0 18px 30px -18px rgba(0,0,0,.45)}
+  .pages .cap{font-size:10.5px;color:var(--graphite);margin-top:6px;
+              letter-spacing:.02em}
+
+  /* ── aviso ──────────────────────────────────────────── */
+  .notice{border-left:3px solid var(--crimson);background:#F6EFEA;
+          padding:26px 28px;margin-top:34px}
+  .notice .lbl{font-size:10.5px;font-weight:700;letter-spacing:.14em;
+               text-transform:uppercase;color:var(--crimson);margin-bottom:8px}
+  .notice p{font-size:14px;line-height:1.6;color:var(--ink-soft)}
+
+  /* ── footer ─────────────────────────────────────────── */
+  footer{background:var(--ink);color:#8C8880;padding:44px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
+               align-items:flex-start}
+  footer .f-brand{font-family:var(--display);font-size:26px;color:var(--paper);
+                  line-height:1;letter-spacing:.01em}
+  footer .f-note{font-size:11.5px;line-height:1.7;max-width:52ch}
+
+  /* ── download bar fixa ──────────────────────────────── */
+  .dock{position:fixed;left:0;right:0;bottom:0;background:var(--ink);
+        border-top:1px solid #2E3236;padding:10px 0;z-index:30;
+        transform:translateY(110%);transition:transform .28s ease}
+  .dock.on{transform:none}
+  .dock .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .dock .lbl{font-size:11px;font-weight:600;letter-spacing:.13em;
+             text-transform:uppercase;color:#8C8880}
+  .dock .btn{padding:11px 20px;font-size:13px}
+
+  @media (max-width:860px){
+    .hero .wrap{grid-template-columns:1fr;gap:36px;padding-top:52px;padding-bottom:56px}
+    .cover-frame{max-width:300px}
+    .grid.cols-3,.grid.cols-2{grid-template-columns:1fr}
+    .pages{grid-template-columns:repeat(2,1fr)}
+    ol.toc li .d{display:none}
+    section{padding:54px 0}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="brand">LASTAFIT &nbsp;·&nbsp; <b>CALISTENIA ASIÁTICA H40+</b></div>
+    <div class="badge">Bono 01</div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Tu bono del programa</div>
+      <h1>Manual de los<br>Primeros 21 Días</h1>
+      <p class="sub">El plan de arranque para el hombre de 40+ que quiere volver a
+        sentirse fuerte, móvil y sin dolor al despertar. En casa, con el peso del
+        cuerpo y sin gimnasio.</p>
+      <div class="meta">
+        <span>20 páginas</span><span>3 bloques de 7 días</span><span>6 ejercicios</span>
+      </div>
+      <div class="cta">
+        <a class="btn" href="manual.pdf" download="Manual-21-Dias-Calistenia-Asiatica-H40.pdf">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="square"><path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5M4 20h16"/></svg>
+          Descargar el PDF
+        </a>
+        <a class="btn ghost" href="manual.pdf" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
+          Leerlo aquí
+        </a>
+        <span class="cta-note">1,4 MB · listo para imprimir en A4</span>
+      </div>
+    </div>
+    <div>
+      <a class="cover-frame" href="manual.pdf" target="_blank" rel="noopener">
+        <img src="og-cover.jpg" width="630" height="900"
+             alt="Portada del Manual de los Primeros 21 Días">
+        <span class="tag">Edición México · 2026</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Para qué es este manual</div>
+    <h2>No es un plan para atletas</h2>
+    <div class="hr-ink" style="max-width:120px"></div>
+    <p class="lead">Tres semanas no te van a transformar el cuerpo. Lo que sí
+      alcanza para cambiar es el hábito, la técnica y tu número de partida en cada
+      ejercicio. Este manual está ordenado para eso y para nada más.</p>
+
+    <div class="grid cols-3">
+      <div class="cell">
+        <div class="n">01</div>
+        <h3>Decidir con criterio</h3>
+        <p>Un semáforo verde / ámbar / rojo para saber si hoy entrenas, ajustas
+           o paras. Sin adivinar y sin héroes de una sola sesión.</p>
+      </div>
+      <div class="cell">
+        <div class="n">02</div>
+        <h3>Saber tu nivel real</h3>
+        <p>Seis patrones, cuatro niveles cada uno, y una prueba de 15 minutos
+           para quedarte con el que te toca, no con el que te gustaría.</p>
+      </div>
+      <div class="cell">
+        <div class="n">03</div>
+        <h3>Medir sin engañarte</h3>
+        <p>Cuatro números que repites el día 0, 7, 14 y 21. Es la única forma
+           honesta de saber si algo está funcionando.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Contenido</div>
+    <h2>Las 20 páginas</h2>
+    <ol class="toc">
+      <li><span class="t">Lee esto primero</span><span class="d">Qué promete y qué no promete el manual</span><span class="p">02</span></li>
+      <li><span class="t">El semáforo de los 40+</span><span class="d">Seguir, ajustar o parar</span><span class="p">03</span></li>
+      <li><span class="t">Cómo funcionan los 21 días</span><span class="d">3 bloques, semana modelo y los 25 minutos</span><span class="p">04</span></li>
+      <li><span class="t">Los ejercicios, con su escala</span><span class="d">6 patrones × 4 niveles, tempo y descanso</span><span class="p">05</span></li>
+      <li><span class="t">Cómo encuentras tu nivel hoy</span><span class="d">La prueba de los 15 minutos</span><span class="p">06</span></li>
+      <li><span class="t">Fuerza A, B y C</span><span class="d">Las tres sesiones, el calentamiento y alternativas sin barra</span><span class="p">07–08</span></li>
+      <li><span class="t">Los cinco errores del hombre de 40+</span><span class="d">Técnica y mapa de dolor por zona</span><span class="p">09</span></li>
+      <li><span class="t">Los 12 minutos que abren el cuerpo</span><span class="d">Movilidad y tres pruebas mensuales</span><span class="p">10–11</span></li>
+      <li><span class="t">Respirar como se entrena</span><span class="d">Protocolo 4-6-2 y variante para días de estrés</span><span class="p">12–13</span></li>
+      <li><span class="t">El plato base H40+</span><span class="d">Regla de la mano y 7 días de comida mexicana</span><span class="p">14–15</span></li>
+      <li><span class="t">La bitácora de los 21 días</span><span class="d">Imprimible, una hoja, 21 filas</span><span class="p">16</span></li>
+      <li><span class="t">El test de los cuatro números</span><span class="d">Dónde anotar y cómo interpretar</span><span class="p">17–18</span></li>
+      <li><span class="t">Qué haces el día 22</span><span class="d">La progresión que sigue construyendo</span><span class="p">19</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="viewer">
+  <div class="wrap">
+    <div class="kicker">Hojear</div>
+    <h2>Así se ve por dentro</h2>
+    <div class="pages" id="pages"></div>
+    <p style="font-size:13px;color:var(--graphite);margin-top:18px">
+      Da clic en cualquier página para abrir el PDF completo.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Antes de empezar</div>
+    <h2>Un límite claro</h2>
+    <div class="hr-ink" style="max-width:120px"></div>
+    <p class="lead">Este material tiene fines informativos y educativos. No es
+      consejo médico, no diagnostica y no sustituye la valoración de un médico o
+      de un profesional de la salud.</p>
+    <div class="notice">
+      <div class="lbl">Importante</div>
+      <p>Si sientes dolor en el pecho, mareo, falta de aire anormal o dolor
+        articular agudo, detente y consulta a un profesional. Si tienes más de 45
+        años, llevas más de dos años sin entrenar, tienes presión alta, diabetes,
+        problema de corazón en la familia o una lesión diagnosticada, habla con tu
+        médico antes de empezar. Los resultados varían de una persona a otra.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="f-brand">CALISTENIA ASIÁTICA H40+</div>
+      <div style="font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;margin-top:8px">
+        Lastafit · Edición México 2026
+      </div>
+    </div>
+    <div class="f-note">
+      Material de apoyo del programa digital. Prohibida su reventa o distribución.
+      Este documento no es consejo médico. Los resultados varían.
+    </div>
+  </div>
+</footer>
+
+<div class="dock" id="dock">
+  <div class="wrap">
+    <div class="lbl">Manual de los primeros 21 días</div>
+    <a class="btn" href="manual.pdf" download="Manual-21-Dias-Calistenia-Asiatica-H40.pdf">
+      Descargar PDF
+    </a>
+  </div>
+</div>
+
+<script>
+  // miniaturas de las páginas (geradas a partir do próprio PDF)
+  const PAGES = [
+    [1,'Portada'],[2,'Índice'],[3,'Lee esto primero'],[4,'El semáforo'],
+    [5,'Los 21 días'],[6,'Los ejercicios'],[7,'Tu nivel hoy'],[8,'Fuerza A y B'],
+    [9,'Fuerza C'],[10,'Los cinco errores'],[11,'Movilidad'],[12,'Movilidad II'],
+    [13,'Respiración'],[14,'Errores del protocolo'],[15,'El plato base'],
+    [16,'Los cuatro ajustes'],[17,'La bitácora'],[18,'El test'],[19,'Día 21'],
+    [20,'Día 22']
+  ];
+  const host = document.getElementById('pages');
+  PAGES.forEach(([n,label])=>{
+    const a = document.createElement('a');
+    a.href = 'manual.pdf'; a.target = '_blank'; a.rel = 'noopener';
+    const img = document.createElement('img');
+    img.loading = 'lazy'; img.alt = label;
+    img.src = 'thumbs/p' + String(n).padStart(2,'0') + '.jpg';
+    img.width = 280; img.height = 396;
+    const cap = document.createElement('div');
+    cap.className = 'cap'; cap.textContent = String(n).padStart(2,'0') + ' · ' + label;
+    a.append(img, cap); host.append(a);
+  });
+
+  // barra fixa de download
+  const dock = document.getElementById('dock');
+  const hero = document.querySelector('.hero');
+  new IntersectionObserver(([e])=>{
+    dock.classList.toggle('on', !e.isIntersecting);
+  },{rootMargin:'-120px 0px 0px 0px'}).observe(hero);
+</script>
+</body>
+</html>

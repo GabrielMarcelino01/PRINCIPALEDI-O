@@ -1,0 +1,3 @@
+# El manual es material privado del programa: no se indexa.
+User-agent: *
+Disallow: /

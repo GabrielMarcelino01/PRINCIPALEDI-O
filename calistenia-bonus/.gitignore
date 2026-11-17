@@ -3,3 +3,6 @@ assets/img/cover-art.png
 assets/img/cover-page.png
 assets/img/cover.png
 assets/img/plate-*.png
+
+# cópia do PDF servida pelo site (gerada a partir do entregável)
+site/manual.pdf
