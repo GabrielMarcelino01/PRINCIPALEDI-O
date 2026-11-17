@@ -80,29 +80,38 @@ for i in range(len(pdf)): pdf[i].render(scale=1.2).to_pil().save(f'/tmp/p{i+1:02
 
 ## Onde o bônus está publicado
 
-| O quê | Endereço | Estado |
-|---|---|---|
-| PDF (link público, sem login) | `https://cdn.jsdelivr.net/gh/GabrielMarcelino01/PRINCIPALEDI-O@manual-h40-v1/calistenia-bonus/site/manual.pdf` | ✅ no ar |
-| PDF (espelho no Google Drive) | `https://drive.google.com/file/d/1uMJHNYCHp8e3vj3ItPB2bhruy2wPvd7w/view` | ✅ no ar, público |
-| Landing de entrega | `site/` deste repositório | ✅ pronta |
-| Projeto Vercel | `manual-calistenia-h40` (`prj_4Eu5IIIFwDfSNciN7eLayOaohQ15`) | ⏳ criado, sem deploy |
+| O quê | Link | Estado |
+| --- | --- | --- |
+| **Landing (domínio principal)** | https://manual-calistenia-h40.vercel.app | ✅ no ar |
+| PDF no mesmo domínio | https://manual-calistenia-h40.vercel.app/manual.pdf | ✅ no ar |
+| Espelho do PDF no Google Drive | https://drive.google.com/file/d/1uMJNYCHp8e3vj3ItPB2bhruy2wPvd7w/view | ✅ público |
+| Espelho da landing no jsDelivr | https://cdn.jsdelivr.net/gh/GabrielMarcelino01/PRINCIPALEDI-O@manual-h40-v2/calistenia-bonus/site/index.html | ⚠️ parcial (o pacote do repo passa de 50 MB; só arquivos soltos servem) |
 
-O link da jsDelivr fica preso à tag `manual-h40-v1`. Para publicar uma versão nova:
+### Domínio próprio
+
+A conta Vercel não tem nenhum domínio registrado, e compra/registro de domínio não é feito por aqui.
+Para usar um domínio próprio (ex.: `manual.seudominio.com`):
+
+1. Vercel → projeto `manual-calistenia-h40` → **Settings → Domains → Add**.
+2. O Vercel devolve o registro DNS (`CNAME cname.vercel-dns.com` ou `A 76.76.21.21`).
+3. Crie esse registro no registrador do domínio. A verificação é automática e o certificado TLS é emitido sozinho.
+
+### Como publicar uma nova versão
 
 ```bash
-git tag -f manual-h40-v2 HEAD && git push -f origin manual-h40-v2
+cd calistenia-bonus && PYTHONPATH=bonus /home/user/.venv-pdf/bin/python bonus/manual.py \
+  Manual-21-Dias-Calistenia-Asiatica-H40.pdf
+cp Manual-21-Dias-Calistenia-Asiatica-H40.pdf site/manual.pdf
+# gerar as miniaturas e reinjetar o base64 em site/index.html (site/thumbs + SRC[])
+git commit -am "bono: nova versao" && git push
 ```
+O deploy é automático: o projeto está ligado ao repositório `GabrielMarcelino01/PRINCIPALEDI-O`,
+com **Root Directory = `calistenia-bonus/site`**.
 
-### Por que o Vercel ainda não está no ar
+### Notas técnicas da landing
 
-O conector do Vercel não envia o campo `projectSettings` (obrigatório no primeiro
-deploy) e o repositório não está instalado no GitHub App do Vercel, então o deploy
-via Git também é recusado. Duas saídas:
-
-1. **No painel (2 cliques):** Vercel → projeto `manual-calistenia-h40` →
-   Settings → Git → Connect Git Repository → `GabrielMarcelino01/PRINCIPALEDI-O`,
-   branch de produção `main`, root directory `calistenia-bonus/site`.
-2. **Domínio próprio:** depois do primeiro deploy, Project → Settings → Domains →
-   `Add`. O Vercel devolve o registro DNS exato (`CNAME cname.vercel-dns.com`
-   para subdomínio, ou os registros `A` para apex). Sem esse passo não existe
-   domínio — comprar `.com`/`.com.mx` exige registrador e cartão.
+- `site/index.html` é **autocontido**: fontes woff2, capa e as 20 páginas do manual vão embutidas em base64.
+  Isso o torna independente de CDN e imune ao limite de 50 MB do jsDelivr.
+- Os botões de download apontam para o **Google Drive** (arquivo público, anyoneWithLink);
+  `manual.pdf` é o espelho servido pelo próprio domínio.
+- `robots.txt` bloqueia indexação: é material de cliente, não página de captura.
