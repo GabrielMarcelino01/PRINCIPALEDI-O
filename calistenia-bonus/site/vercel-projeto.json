@@ -1,0 +1,12 @@
+{
+  "_instrucoes": "Configuração do projeto Vercel 'manual-calistenia-h40' (prj_4Eu5IIIFwDfSNciN7eLayOaohQ15). O deploy automático exige que o repositório GabrielMarcelino01/PRINCIPALEDI-O esteja instalado no GitHub App do Vercel.",
+  "project": "manual-calistenia-h40",
+  "projectId": "prj_4Eu5IIIFwDfSNciN7eLayOaohQ15",
+  "teamId": "team_EJgLL58dRGiH3tmrpemV3QW0",
+  "rootDirectory": "calistenia-bonus/site",
+  "framework": null,
+  "buildCommand": null,
+  "outputDirectory": null,
+  "installCommand": null,
+  "note": "No painel: Project > Settings > Git > Connect Git Repository > GabrielMarcelino01/PRINCIPALEDI-O, Production Branch = main. Depois: Add Domain."
+}
