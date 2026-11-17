@@ -75,3 +75,34 @@ for i in range(len(pdf)): pdf[i].render(scale=1.2).to_pil().save(f'/tmp/p{i+1:02
   con el arte del embudo (`/assets/img/funnel/` del sitio).
 - El PDF no incluye enlaces rastreadores ni datos del cliente: es un archivo
   estático, entregable por correo o dentro de Hotmart.
+
+---
+
+## Onde o bônus está publicado
+
+| O quê | Endereço | Estado |
+|---|---|---|
+| PDF (link público, sem login) | `https://cdn.jsdelivr.net/gh/GabrielMarcelino01/PRINCIPALEDI-O@manual-h40-v1/calistenia-bonus/site/manual.pdf` | ✅ no ar |
+| PDF (espelho no Google Drive) | `https://drive.google.com/file/d/1uMJHNYCHp8e3vj3ItPB2bhruy2wPvd7w/view` | ✅ no ar, público |
+| Landing de entrega | `site/` deste repositório | ✅ pronta |
+| Projeto Vercel | `manual-calistenia-h40` (`prj_4Eu5IIIFwDfSNciN7eLayOaohQ15`) | ⏳ criado, sem deploy |
+
+O link da jsDelivr fica preso à tag `manual-h40-v1`. Para publicar uma versão nova:
+
+```bash
+git tag -f manual-h40-v2 HEAD && git push -f origin manual-h40-v2
+```
+
+### Por que o Vercel ainda não está no ar
+
+O conector do Vercel não envia o campo `projectSettings` (obrigatório no primeiro
+deploy) e o repositório não está instalado no GitHub App do Vercel, então o deploy
+via Git também é recusado. Duas saídas:
+
+1. **No painel (2 cliques):** Vercel → projeto `manual-calistenia-h40` →
+   Settings → Git → Connect Git Repository → `GabrielMarcelino01/PRINCIPALEDI-O`,
+   branch de produção `main`, root directory `calistenia-bonus/site`.
+2. **Domínio próprio:** depois do primeiro deploy, Project → Settings → Domains →
+   `Add`. O Vercel devolve o registro DNS exato (`CNAME cname.vercel-dns.com`
+   para subdomínio, ou os registros `A` para apex). Sem esse passo não existe
+   domínio — comprar `.com`/`.com.mx` exige registrador e cartão.
