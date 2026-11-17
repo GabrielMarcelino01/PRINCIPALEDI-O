@@ -1,0 +1,77 @@
+name: Deploy bonus site to Pages
+
+on:
+  push:
+    branches: [main, 'arena/**']
+    paths:
+      - 'calistenia-bonus/**'
+      - '.github/workflows/bonus-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-bonus
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependências
+        run: pip install --quiet reportlab==4.2.5 fonttools brotli pillow pypdfium2
+
+      - name: Gerar o PDF
+        working-directory: calistenia-bonus
+        run: |
+          mkdir -p build
+          PYTHONPATH=bonus python bonus/manual.py build/manual.pdf
+          ls -lh build/manual.pdf
+
+      - name: Gerar miniaturas
+        working-directory: calistenia-bonus
+        run: |
+          python - <<'PY'
+          import pypdfium2 as pdfium
+          from PIL import Image
+          pdf = pdfium.PdfDocument('build/manual.pdf')
+          for i in range(len(pdf)):
+              im = pdf[i].render(scale=1.35).to_pil().convert('RGB')
+              im.thumbnail((560, 800), Image.LANCZOS)
+              im.save(f'site/thumbs/p{i+1:02d}.jpg', 'JPEG',
+                      quality=80, optimize=True, progressive=True)
+          print('páginas:', len(pdf))
+          PY
+
+      - name: Montar pasta pública
+        run: |
+          mkdir -p public
+          cp -r calistenia-bonus/site/. public/
+          cp calistenia-bonus/build/manual.pdf public/manual.pdf
+          # GitHub Pages não lê vercel.json e não precisa dele
+          rm -f public/vercel.json
+          du -sh public
+          ls public
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
